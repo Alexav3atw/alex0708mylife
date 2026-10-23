@@ -227,6 +227,19 @@ figcaption .credit { color: var(--ink-3); }
 .callout p { margin: 0; }
 .callout .title { font-weight: 700; display: block; margin-bottom: 4px; }
 
+blockquote {
+  margin: 26px 0;
+  max-width: 720px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--blue);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 16px 20px;
+  font-style: italic;
+  color: var(--ink-2);
+}
+blockquote .who { display: block; margin-top: 8px; font-style: normal; font-size: 0.85rem; color: var(--ink-3); }
+
 /* tables */
 
 .table-scroll { overflow-x: auto; max-width: 820px; margin: 26px 0; }

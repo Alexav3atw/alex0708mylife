@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saturn V: How It Was Built - alex0708mylife</title>
+<meta name="description" content="The Saturn V stage by stage: the F-1 engines, the three stages, the builders, the VAB, and 13 perfect launches.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="index.html" class="active">Space</a>
+      <a href="../index.html#chapters">Kuifje <span class="soon">soon</span></a>
+      <a href="../index.html#chapters">PC &amp; Network <span class="soon">soon</span></a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Space</a> / Saturn V</p>
+  <h1>Saturn V: How It Was Built</h1>
+  <p class="tagline">110 metres, 2,970 tonnes, 5 giant engines &mdash; and 13 launches, 13 successes. The machine that made the Moon possible.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">The Saturn V remains the most powerful rocket ever to carry humans to another world. It never failed &mdash; not once. Every part of the Apollo program depended on this one machine working, and it did: thirteen times, perfectly.</p>
+
+  <div class="tiles">
+    <div class="tile">
+      <div class="label">Height with Apollo payload</div>
+      <div class="value">110.6 m</div>
+      <div class="note">Taller than a 36-storey building</div>
+    </div>
+    <div class="tile">
+      <div class="label">Thrust at liftoff</div>
+      <div class="value">34.5 MN</div>
+      <div class="note">About 7.75 million pounds of force</div>
+    </div>
+    <div class="tile">
+      <div class="label">Fully fueled mass</div>
+      <div class="value">~2,970 t</div>
+      <div class="note">Mostly fuel: it burned ~20 tonnes per second</div>
+    </div>
+    <div class="tile">
+      <div class="label">Launches</div>
+      <div class="value">13</div>
+      <div class="note">12 Apollo missions + Skylab. All successful.</div>
+    </div>
+  </div>
+
+  <figure>
+    <img src="img/saturn-v-pad.jpg" alt="A Saturn V rocket on the launch pad" loading="lazy">
+    <figcaption>A Saturn V on the pad at Kennedy Space Center. <span class="credit">Credit: NASA (public domain).</span></figcaption>
+  </figure>
+
+  <h2>The rocket, stage by stage</h2>
+  <p>The Saturn V was a three-stage machine, each stage a rocket in its own right, stacked like the floors of a tower. It dropped each empty stage as it climbed. This diagram is drawn to scale in height (the width is enlarged so you can read it).</p>
+
+  <div class="diagram">
+    <div class="chart-title">Saturn V cutaway &mdash; stages to scale</div>
+    <div class="chart-sub">Stage colors show the launch sequence, light to dark: first stage on top of the stack, fired at liftoff, is drawn lightest.</div>
+    <svg viewBox="0 0 600 780" role="img" aria-label="Scaled diagram of the Saturn V rocket showing the three stages, the instrument unit and the Apollo spacecraft">
+      <style>
+        .stage-label { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 700; }
+        .stage-sub   { font-family: system-ui, sans-serif; font-size: 10.5px; }
+        .dim         { font-family: system-ui, sans-serif; font-size: 10.5px; fill: #898781; }
+        .dim-line    { stroke: #383835; stroke-width: 1; }
+        .ann         { font-family: system-ui, sans-serif; font-size: 11px; fill: #c3c2b7; }
+        .ann-line    { stroke: #383835; stroke-width: 1; }
+        .stage-outline { stroke: rgba(255,255,255,0.10); stroke-width: 1; }
+      </style>
+
+      <!-- total height dimension line -->
+      <line class="dim-line" x1="150" y1="60" x2="150" y2="613"/>
+      <line class="dim-line" x1="144" y1="60" x2="156" y2="60"/>
+      <line class="dim-line" x1="144" y1="613" x2="156" y2="613"/>
+      <text class="dim" x="142" y="345" text-anchor="end" transform="rotate(-90 142 345)">110.6 m total</text>
+
+      <!-- payload: spacecraft + LES -->
+      <rect x="275" y="60" width="50" height="124" rx="3" fill="#222220" class="stage-outline"/>
+      <rect x="289" y="64" width="22" height="26" rx="2" fill="#383835"/>
+      <line x1="300" y1="64" x2="300" y2="48" stroke="#898781" stroke-width="1.5"/>
+      <text class="stage-label" x="300" y="100" text-anchor="middle" fill="#ffffff">Apollo spacecraft</text>
+      <text class="stage-sub" x="300" y="116" text-anchor="middle" fill="#898781">CSM + LM + escape tower</text>
+      <text class="stage-sub" x="300" y="130" text-anchor="middle" fill="#c3c2b7">&asymp;25 m</text>
+      <line class="ann-line" x1="325" y1="90" x2="380" y2="90"/>
+      <text class="ann" x="385" y="94">Crew, Lunar Module and the</text>
+      <text class="ann" x="385" y="108">escape tower that pulls the</text>
+      <text class="ann" x="385" y="122">capsule free if the rocket fails</text>
+
+      <!-- Instrument Unit -->
+      <rect x="275" y="184" width="50" height="10" fill="#383835" class="stage-outline"/>
+      <line class="ann-line" x1="325" y1="189" x2="380" y2="189"/>
+      <text class="ann" x="385" y="193">Instrument Unit &mdash; IBM's</text>
+      <text class="ann" x="385" y="207">guidance ring, 0.91 m, the</text>
+      <text class="ann" x="385" y="221">rocket's brain (drawn enlarged)</text>
+
+      <!-- S-IVB -->
+      <rect x="275" y="194" width="50" height="89.5" rx="3" fill="#184f95" class="stage-outline"/>
+      <text class="stage-label" x="300" y="230" text-anchor="middle" fill="#ffffff">S-IVB</text>
+      <text class="stage-sub" x="300" y="246" text-anchor="middle" fill="#c3c2b7">3rd stage &middot; 17.9 m</text>
+      <text class="stage-sub" x="300" y="261" text-anchor="middle" fill="#c3c2b7">1&times; J-2 &middot; LH2/LOX</text>
+      <text class="stage-sub" x="300" y="276" text-anchor="middle" fill="#c3c2b7">burns twice</text>
+      <line class="ann-line" x1="325" y1="220" x2="380" y2="220"/>
+      <text class="ann" x="385" y="224">Built by Douglas. Fired twice:</text>
+      <text class="ann" x="385" y="238">into orbit, then again to send</text>
+      <text class="ann" x="385" y="252">the crew to the Moon (TLI)</text>
+
+      <!-- S-II -->
+      <rect x="275" y="283.5" width="50" height="124.5" rx="3" fill="#2a78d6" class="stage-outline"/>
+      <text class="stage-label" x="300" y="335" text-anchor="middle" fill="#ffffff">S-II</text>
+      <text class="stage-sub" x="300" y="351" text-anchor="middle" fill="#ffffff">2nd stage &middot; 24.9 m</text>
+      <text class="stage-sub" x="300" y="366" text-anchor="middle" fill="#ffffff">5&times; J-2 &middot; LH2/LOX</text>
+      <text class="stage-sub" x="300" y="381" text-anchor="middle" fill="#ffffff">&asymp;395 s burn</text>
+      <line class="ann-line" x1="325" y1="310" x2="380" y2="310"/>
+      <text class="ann" x="385" y="314">Built by North American.</text>
+      <text class="ann" x="385" y="328">The hardest stage to build &mdash;</text>
+      <text class="ann" x="385" y="342">liquid hydrogen at &minus;253 &deg;C</text>
+      <text class="ann" x="385" y="356">in a stage lighter than the</text>
+      <text class="ann" x="385" y="370">engines' own thrust</text>
+
+      <!-- S-IC -->
+      <rect x="275" y="408" width="50" height="210" rx="3" fill="#5598e7" class="stage-outline"/>
+      <text class="stage-label" x="300" y="470" text-anchor="middle" fill="#0d0d0d">S-IC</text>
+      <text class="stage-sub" x="300" y="487" text-anchor="middle" fill="#0d0d0d">1st stage &middot; 42 m</text>
+      <text class="stage-sub" x="300" y="503" text-anchor="middle" fill="#0d0d0d">5&times; F-1 &middot; RP-1/LOX</text>
+      <text class="stage-sub" x="300" y="519" text-anchor="middle" fill="#0d0d0d">&asymp;150 s burn</text>
+      <text class="stage-sub" x="300" y="535" text-anchor="middle" fill="#0d0d0d">33 MN thrust</text>
+      <line class="ann-line" x1="325" y1="440" x2="380" y2="440"/>
+      <text class="ann" x="385" y="444">Built by Boeing at Michoud.</text>
+      <text class="ann" x="385" y="458">The biggest, loudest stage:</text>
+      <text class="ann" x="385" y="472">five F-1 engines burning</text>
+      <text class="ann" x="385" y="486">20 tonnes of fuel a second</text>
+
+      <!-- F-1 engine block -->
+      <rect x="275" y="618" width="50" height="42" rx="3" fill="#222220" class="stage-outline"/>
+      <circle cx="288" cy="638" r="9" fill="#383835"/>
+      <circle cx="312" cy="638" r="9" fill="#383835"/>
+      <circle cx="300" cy="652" r="9" fill="#383835"/>
+      <circle cx="276" cy="652" r="9" fill="#383835"/>
+      <circle cx="324" cy="652" r="9" fill="#383835"/>
+      <text class="stage-sub" x="300" y="678" text-anchor="middle" fill="#898781">5 &times; F-1 engine nozzles (arrangement simplified)</text>
+    </svg>
+  </div>
+
+  <h2>The stages in numbers</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Stage</th><th>Length</th><th>Engines</th><th>Thrust (vacuum)</th><th>Burn time</th><th>Fuel</th><th>Builder</th></tr>
+      <tr><td>S-IC (1st)</td><td>42 m</td><td>5 &times; F-1</td><td>33.0 MN at sea level</td><td>&asymp;150 s</td><td>Kerosene (RP-1) + LOX</td><td>Boeing</td></tr>
+      <tr><td>S-II (2nd)</td><td>24.9 m</td><td>5 &times; J-2</td><td>4.4 MN</td><td>&asymp;395 s</td><td>Liquid hydrogen + LOX</td><td>North American</td></tr>
+      <tr><td>S-IVB (3rd)</td><td>17.9 m</td><td>1 &times; J-2</td><td>1.0 MN</td><td>165 s + 312 s (two burns)</td><td>Liquid hydrogen + LOX</td><td>Douglas</td></tr>
+    </table>
+  </div>
+
+  <h2>The engines: F-1 and J-2</h2>
+  <p><strong>The F-1</strong> is still one of the most powerful single-chamber liquid engines ever flown: 6.77 MN of thrust at sea level, standing 5.6 m tall. Each one drank a swimming pool of kerosene in about 2.5 minutes. Five of them &mdash; four outer, one centre &mdash; made the first 60 seconds of every Moon journey possible.</p>
+  <p><strong>The J-2</strong> was smaller but more sophisticated: a 1.03 MN hydrogen engine, restartable in space. Six of them flew on every Saturn V &mdash; five on the second stage, one on the third. The third stage's single J-2 fired twice: once to reach orbit, once to push the crew to the Moon.</p>
+
+  <figure>
+    <img src="img/f1-engine.jpg" alt="An F-1 rocket engine" loading="lazy">
+    <figcaption>The F-1: 5.6 m tall, one and a half million pounds of thrust &mdash; per engine. <span class="credit">Credit: NASA (public domain).</span></figcaption>
+  </figure>
+
+  <h2>Who built it</h2>
+  <p>The Saturn V was a national project: designed at NASA's Marshall Space Flight Center under <strong>Wernher von Braun</strong>, and built by the best of American industry &mdash; Boeing (first stage), North American (second stage), Douglas (third stage), Rocketdyne (engines) and IBM (guidance). First stages were assembled in the giant Michoud Assembly Facility near New Orleans, then shipped by barge to Florida.</p>
+
+  <p>At Kennedy Space Center, the stages were stacked upright inside the <strong>Vehicle Assembly Building</strong> &mdash; 160 m tall, one of the largest buildings on Earth by volume. The finished rocket then rode to the pad on the <strong>crawler-transporter</strong>: a 2,721-tonne tracked platform that drives at about 1.6 km/h. The trip to the pad took hours.</p>
+
+  <figure>
+    <img src="img/saturn-v-crawler.jpg" alt="A Saturn V on the crawler transporter leaving the VAB" loading="lazy">
+    <figcaption>Leaving the VAB on the crawler &mdash; the slowest 6 km in rocketry. <span class="credit">Credit: NASA (public domain).</span></figcaption>
+  </figure>
+
+  <h2>Thirteen launches, zero failures</h2>
+  <div class="timeline">
+    <div class="tl-item">
+      <span class="date">9 November 1967</span>
+      <span class="what">Apollo 4 &mdash; first flight</span>
+      <p>The first Saturn V launch, uncrewed. It was so loud that the shockwave rattled buildings miles away.</p>
+    </div>
+    <div class="tl-item">
+      <span class="date">21 December 1968</span>
+      <span class="what">Apollo 8 &mdash; first crew aboard</span>
+      <p>Only the third launch ever, and it carried humans to the Moon's orbit. Bold by any standard.</p>
+    </div>
+    <div class="tl-item">
+      <span class="date">20 July 1969</span>
+      <span class="what">Apollo 11 &mdash; the Moon landing</span>
+      <p>The mission the whole machine existed for.</p>
+    </div>
+    <div class="tl-item">
+      <span class="date">7&ndash;19 December 1972</span>
+      <span class="what">Apollo 17 &mdash; last Apollo flight</span>
+      <p>The final crewed Saturn V, and still the last crewed Moon mission.</p>
+    </div>
+    <div class="tl-item">
+      <span class="date">14 May 1973</span>
+      <span class="what">Skylab &mdash; last launch ever</span>
+      <p>The thirteenth Saturn V carried America's first space station into orbit.</p>
+    </div>
+  </div>
+
+  <h2>What it cost</h2>
+  <p>The entire Apollo program cost about <strong>$25.4 billion</strong> in 1973 dollars &mdash; roughly $257 billion in today's money. Each Saturn V launch cost about $185 million (1969&ndash;71 dollars), close to a billion today. For comparison: the program employed over 400,000 people at its peak. The US spent it, and the Moon was the receipt.</p>
+
+  <div class="callout">
+    <span class="title">Read next</span>
+    <p>The Saturn V only mattered because of what it carried. Relive the flight it was built for: <a href="apollo-11.html">Apollo 11, minute by minute</a>.</p>
+  </div>
+
+  <a class="back-top" href="index.html">&larr; Back to Space chapter</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife</div>
+    <div class="credits">Specifications verified against Smithsonian Air &amp; Space and Wikipedia (Saturn V, Rocketdyne F-1, VAB, crawler-transporter). Images: NASA (public domain).</div>
+  </div>
+</footer>
+
+</body>
+</html>
