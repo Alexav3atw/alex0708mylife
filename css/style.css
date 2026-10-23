@@ -416,6 +416,15 @@ footer.site .credits { max-width: 620px; line-height: 1.6; }
 }
 .back-top:hover { color: var(--ink); }
 
+/* discreet visitor counter badge */
+.visit-counter {
+  height: 18px;
+  vertical-align: middle;
+  border-radius: 4px;
+  opacity: 0.85;
+  margin-left: 8px;
+}
+
 .chapter-list { list-style: none; padding: 0; margin: 26px 0; max-width: 720px; }
 .chapter-list li { display: flex; gap: 14px; align-items: baseline; margin: 10px 0; }
 .chapter-list .num { color: var(--blue); font-variant-numeric: tabular-nums; min-width: 26px; }
