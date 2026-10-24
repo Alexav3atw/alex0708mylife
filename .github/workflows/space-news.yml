@@ -1,0 +1,40 @@
+name: Update space news
+
+on:
+  schedule:
+    # Daily at 05:17 UTC (off the :00/:30 marks; site auto-republishes after the push)
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install feed parser
+        run: pip install feedparser
+
+      - name: Fetch news and rebuild the news page
+        run: python scripts/update_news.py
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes - nothing to push."
+          else
+            git commit -m "Daily space news update (automated)"
+            git push
+          fi

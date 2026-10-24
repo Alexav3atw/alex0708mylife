@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meade LXD75 &amp; GoTo - alex0708mylife</title>
+<meta name="description" content="The Meade LXD75 GoTo mount explained for beginners: what an equatorial mount is, all the technical specs, and how to use it step by step.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="index.html" class="active">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="../pc-network/index.html">PC &amp; Network</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Space</a> / Meade LXD75</p>
+  <h1>The Meade LXD75 &amp; GoTo</h1>
+  <p class="tagline">A German equatorial mount from 2004 that can find 30,223 objects in the night sky by itself &mdash; explained for dummies, specs included.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">The <strong>Meade LXD75</strong> is a telescope mount &mdash; the machine that holds the telescope and moves it. Its party trick is called <strong>GoTo</strong>: tell it what you want to see, and its motors point the telescope there by themselves. This page explains what the system actually is, what every specification means, and how to use it &mdash; from unboxing to your first object.</p>
+
+  <h2>First: what is an equatorial mount?</h2>
+  <p>Everything in this hobby starts with one fact: <strong>the sky appears to rotate</strong> because the Earth does. A telescope must compensate, or objects drift out of view in seconds.</p>
+  <p>A <strong>German equatorial mount</strong> solves this elegantly. It has two axes:</p>
+  <ul>
+    <li><strong>The polar axis (RA)</strong> &mdash; tilted upward until it points at the celestial pole (roughly at Polaris). The tilt angle equals your latitude. This makes the axis <em>parallel to Earth's own rotation axis</em>. One motor turns this axis at exactly the sky's speed &mdash; and the telescope stays glued to its target forever.</li>
+    <li><strong>The declination axis (DEC)</strong> &mdash; perpendicular to the first, tilting the telescope north and south in the sky. It only moves when you aim at something new.</li>
+  </ul>
+  <p>That's why an equatorial mount can <em>track</em> the sky with a single motor, while a simpler alt-azimuth mount needs two motors doing a coordinated dance.</p>
+
+  <div class="diagram">
+    <div class="chart-title">Anatomy of a German equatorial mount</div>
+    <div class="chart-sub">The blue axis is parallel to Earth's axis; one motor turns it and the telescope follows the sky. The orange axis aims north-south. Counterweights balance the tube.</div>
+    <svg viewBox="0 0 660 500" role="img" aria-label="Diagram of a German equatorial mount showing the polar axis pointing at Polaris, the declination axis holding the telescope, and counterweights">
+      <style>
+        .d-t { font-family: system-ui, sans-serif; font-size: 11.5px; fill: #c3c2b7; }
+        .d-t2 { font-family: system-ui, sans-serif; font-size: 10.5px; fill: #898781; }
+        .d-line { stroke: #383835; stroke-width: 1.5; }
+      </style>
+
+      <!-- ground -->
+      <line class="d-line" x1="60" y1="445" x2="600" y2="445"/>
+
+      <!-- tripod -->
+      <line class="d-line" x1="330" y1="302" x2="262" y2="445"/>
+      <line class="d-line" x1="330" y1="302" x2="398" y2="445"/>
+      <line class="d-line" x1="330" y1="302" x2="352" y2="445"/>
+      <rect x="316" y="296" width="28" height="10" rx="3" fill="#222220" stroke="rgba(255,255,255,0.10)"/>
+
+      <!-- polar (RA) axis: blue -->
+      <line x1="330" y1="275" x2="210" y2="140" stroke="#3987e5" stroke-width="2.5"/>
+      <line x1="210" y1="140" x2="185" y2="112" stroke="#3987e5" stroke-width="1" stroke-dasharray="4 4"/>
+
+      <!-- Polaris -->
+      <circle cx="183" cy="108" r="4" fill="#ffffff"/>
+      <line x1="183" y1="96" x2="183" y2="100" stroke="#ffffff" stroke-width="1"/>
+      <line x1="183" y1="116" x2="183" y2="120" stroke="#ffffff" stroke-width="1"/>
+      <line x1="171" y1="108" x2="175" y2="108" stroke="#ffffff" stroke-width="1"/>
+      <line x1="191" y1="108" x2="195" y2="108" stroke="#ffffff" stroke-width="1"/>
+
+      <!-- mount head -->
+      <circle cx="330" cy="275" r="17" fill="#1a1a19" stroke="#c3c2b7" stroke-width="1.5"/>
+
+      <!-- DEC axis: orange -->
+      <line x1="330" y1="275" x2="428" y2="188" stroke="#d95926" stroke-width="2.5"/>
+
+      <!-- telescope tube (rotated along DEC direction) -->
+      <g transform="rotate(-41.6 448 170)">
+        <rect x="363" y="156" width="170" height="28" rx="14" fill="#222220" stroke="rgba(255,255,255,0.15)"/>
+        <circle cx="533" cy="170" r="13" fill="#1a1a19" stroke="#898781" stroke-width="1"/>
+        <circle cx="377" cy="170" r="6" fill="#383835"/>
+      </g>
+
+      <!-- counterweight shaft + weights -->
+      <line x1="330" y1="275" x2="452" y2="412" stroke="#383835" stroke-width="2.5"/>
+      <g transform="rotate(48.4 435 370)">
+        <rect x="412" y="360" width="46" height="20" rx="4" fill="#383835" stroke="rgba(255,255,255,0.10)"/>
+      </g>
+      <g transform="rotate(48.4 452 394)">
+        <rect x="432" y="386" width="40" height="16" rx="4" fill="#2c2c2a" stroke="rgba(255,255,255,0.10)"/>
+      </g>
+
+      <!-- labels -->
+      <text class="d-t" x="60" y="232">Polar axis (RA)</text>
+      <text class="d-t2" x="60" y="248">Parallel to Earth's axis</text>
+      <text class="d-t2" x="60" y="264">One motor tracks the sky</text>
+      <line class="d-line" x1="152" y1="230" x2="238" y2="166"/>
+
+      <text class="d-t" x="142" y="80" fill="#ffffff">Polaris</text>
+      <line class="d-line" x1="183" y1="86" x2="168" y2="76"/>
+
+      <text class="d-t" x="486" y="92">Telescope tube</text>
+      <text class="d-t2" x="486" y="108">rides the DEC axis</text>
+      <text class="d-t2" x="486" y="124">(aims north-south)</text>
+
+      <text class="d-t" x="470" y="440">Counterweights</text>
+      <text class="d-t2" x="470" y="456">balance the tube</text>
+      <line class="d-line" x1="452" y1="412" x2="470" y2="432"/>
+
+      <text class="d-t" x="300" y="472" text-anchor="middle">Tripod</text>
+      <text class="d-t2" x="60" y="470">Tilt angle = your latitude</text>
+    </svg>
+  </div>
+
+  <h2>And what is GoTo?</h2>
+  <p><strong>GoTo</strong> is computerised pointing. Once you tell the mount the date, the time and where on Earth it is, and then point it manually at two known stars, the mount <em>knows exactly where it is pointing</em>. From that moment, you can select any object from its built-in database &mdash; a galaxy, a nebula, a star &mdash; and the motors swing the telescope there automatically. Then the tracking motor takes over and keeps it centred while you look.</p>
+  <p>The brain is the <strong>Autostar #497</strong> hand controller: a 2-line red-backlit LCD, 20-button keypad, and a database of <strong>30,223 objects</strong> &mdash; planets, deep-sky objects, double stars, you name it. It even offers guided tours ("Tonight's Best"). The software lives in 1 MB of flash memory and can be updated from a computer (with an optional cable). Pointing precision is about 15 arc-minutes &mdash; close enough that the object lands in the eyepiece, then you centre it with the arrow keys.</p>
+
+  <figure>
+    <img src="img/lxd75.jpg" alt="A Meade LXD75 telescope on its equatorial mount" loading="lazy">
+    <figcaption>Meade LXD75 Schmidt-Newtonian on its German equatorial mount and tripod. <span class="credit">Photo: Frankee 67, CC BY-SA 3.0 (Wikimedia Commons).</span></figcaption>
+  </figure>
+
+  <h2>The LXD75's story</h2>
+  <p>Meade announced the LXD75 on <strong>17 May 2004</strong> and shipped it from late June that year. It replaced the LXD55 (2002) as Meade's affordable GoTo equatorial mount &mdash; the slot below the fancier LX90 and LX200, above the beginner ETX. The real upgrades over the LXD55: <strong>four stainless-steel ball bearings</strong> in both axes (the LXD55 used plain journal bearings), heavier castings, a redesigned drive with better motor-gear alignment to cut backlash, and a new all-metal tripod with a locking spreader bar. It was discontinued in <strong>2008</strong>.</p>
+
+  <h2>The technical specifications &mdash; translated</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Specification</th><th>Value</th><th>What it means</th></tr>
+      <tr><td>Mount type</td><td>German equatorial, Vixen Great Polaris-derived</td><td>One tilted axis tracks the sky; a classic, proven design</td></tr>
+      <tr><td>Worm gear</td><td>72 mm diameter</td><td>The precision gear that turns the RA axis smoothly</td></tr>
+      <tr><td>Payload capacity</td><td>~30 lb (13.6 kg) visual; ~20 lb recommended for imaging</td><td>How heavy a telescope it can carry &mdash; Meade never printed an official number</td></tr>
+      <tr><td>Mount + tripod weight</td><td>~25 lb (11 kg)</td><td>The carrying weight of the mount itself</td></tr>
+      <tr><td>Tripod</td><td>All-metal tubular steel, adjustable 27&ndash;43 in</td><td>Height range; the spreader bar also holds three eyepieces</td></tr>
+      <tr><td>Polar alignment scope</td><td>Included, illuminated reticle</td><td>A small telescope built into the axis so you can aim it exactly at Polaris</td></tr>
+      <tr><td>Counterweights</td><td>10 lb each (1&ndash;3 depending on package)</td><td>Sliding weights that balance the telescope tube</td></tr>
+      <tr><td>Tube attachment</td><td>Quick-release cradle rings (no dovetail bar)</td><td>The telescope sits in rings that slide into the mount</td></tr>
+      <tr><td>Motors</td><td>DC servo motors with optical encoders</td><td>The motors know how far they've turned &mdash; that's how GoTo aims</td></tr>
+      <tr><td>Slew speeds</td><td>9 speeds: 0.004&deg;/s (guide) up to 4.5&deg;/s (max)</td><td>From hair-fine centring to fast slews across the sky</td></tr>
+      <tr><td>Tracking rates</td><td>Sidereal, lunar, + 2,000 custom rates</td><td>Follows stars at sky speed; the Moon at its own speed</td></tr>
+      <tr><td>PEC (Smart Drive)</td><td>150 positions, ~12-minute cycle</td><td>Learns and cancels the worm gear's tiny periodic errors &mdash; for photography</td></tr>
+      <tr><td>Backlash compensation</td><td>RA + DEC percentage settings, trainable</td><td>Removes the play when motors reverse direction</td></tr>
+      <tr><td>Power</td><td>8 &times; D cells (~40 h) or 12V DC external</td><td>Battery pack or mains adapter / car cord</td></tr>
+      <tr><td>Autoguider port</td><td>None</td><td>Guiding for photography needs the serial port instead &mdash; see below</td></tr>
+      <tr><td>Alignment modes</td><td>Easy (auto two-star), One-Star, Two-Star, Three-Star polar</td><td>Easy Align picks the stars for you &mdash; the beginner's friend</td></tr>
+    </table>
+  </div>
+
+  <figure>
+    <img src="img/autostar.jpg" alt="The Meade Autostar hand controller" loading="lazy">
+    <figcaption>The Autostar #497 hand controller &mdash; the same one used with the LXD75, hanging here from an LX90: 30,223 objects behind a 2-line display. <span class="credit">Photo: Rob Glover, CC BY-SA 2.0 (Wikimedia Commons).</span></figcaption>
+  </figure>
+
+  <h2>The telescope packages</h2>
+  <p>The LXD75 was sold mount-only or with six different telescopes. The key specs (from the Meade manual):</p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Model</th><th>Aperture</th><th>Focal length</th><th>f-ratio</th><th>Tube weight</th><th>Total weight</th></tr>
+      <tr><td>SN-6</td><td>152 mm (6")</td><td>762 mm</td><td>f/5</td><td>13 lb</td><td>48 lb</td></tr>
+      <tr><td>SN-8</td><td>203 mm (8")</td><td>812 mm</td><td>f/4</td><td>24 lb</td><td>69 lb</td></tr>
+      <tr><td>SN-10</td><td>254 mm (10")</td><td>1,016 mm</td><td>f/4</td><td>30 lb</td><td>85 lb</td></tr>
+      <tr><td>AR-5</td><td>127 mm (5")</td><td>1,180 mm</td><td>f/9.3</td><td>15 lb</td><td>49 lb</td></tr>
+      <tr><td>AR-6</td><td>152 mm (6")</td><td>1,200 mm</td><td>f/8</td><td>27 lb</td><td>72 lb</td></tr>
+      <tr><td>SC-8</td><td>203 mm (8")</td><td>2,000 mm</td><td>f/10</td><td>24 lb</td><td>65 lb</td></tr>
+    </table>
+  </div>
+  <p>Quick translation: <strong>aperture</strong> is the diameter of the mirror or lens &mdash; bigger collects more light. <strong>Focal length</strong> is how much it magnifies per eyepiece. <strong>f-ratio</strong> is focal length divided by aperture &mdash; low numbers (f/4&ndash;f/5) give wide, bright views; high numbers (f/10) give high magnification, good for planets. The SN (Schmidt-Newtonian) models are the all-rounders; the SC-8 is the planet specialist.</p>
+
+  <h2>How to use it &mdash; from box to first object</h2>
+  <ol>
+    <li><strong>Set up the tripod.</strong> Spread the legs, fit the spreader bar, roughly level. The leg under the fine-azimuth knobs faces north (south in the southern hemisphere).</li>
+    <li><strong>Set your latitude</strong> before anything is mounted: turn the push-pull T-handles until the latitude pointer reads your latitude (e.g. ~51&deg; for Belgium).</li>
+    <li><strong>Mount the head.</strong> Lower it over the tripod shaft so the azimuth protrusion sits between the fine-azimuth knobs; tighten.</li>
+    <li><strong>Add counterweights.</strong> Screw in the shaft, slide the weights to mid-shaft, tighten &mdash; and always refit the safety cap (it stops the weights sliding off your toes).</li>
+    <li><strong>Fit the telescope.</strong> Slide the cradle into the mount slot, tighten both knobs, then put the tube in its rings.</li>
+    <li><strong>Balance it.</strong> Unlock RA, hold the counterweight shaft horizontal, and slide the weights until the tube stays put. Lock RA. Then unlock DEC and slide the tube in its rings until it balances. A balanced mount moves smoothly and its motors last.</li>
+    <li><strong>Polar-align.</strong> For looking: aim the RA axis at Polaris (by eye is fine to start). For the full version: switch on the polar scope's illuminated reticle, and put Polaris on the marked circle, 40&ndash;60 arc-minutes from the centre, at the correct clock position. For photography, finish with drift alignment.</li>
+    <li><strong>Power up.</strong> Eight D cells or a 12V adapter; handbox into the HBX port; switch on.</li>
+    <li><strong>Tell Autostar the basics.</strong> Date, time, your location (or nearest city), telescope model. Then set the polar home position: counterweight shaft down, tube level, pointing north.</li>
+    <li><strong>Easy Align.</strong> Choose "Easy" &mdash; the mount picks two bright stars by itself. It slews near each one; you centre it first in the finder, then in the eyepiece, and press ENTER. Two stars, done &mdash; the mount now knows the whole sky.</li>
+    <li><strong>GoTo.</strong> Object menu &rarr; Solar System, Deep Sky or Star &rarr; pick &rarr; ENTER. Watch the telescope find it. Tracking is automatic from then on.</li>
+    <li><strong>Focus and fine-tune.</strong> Focus with the drawtube knob; use speed keys 1&ndash;9 to switch between hair-fine centring and fast slews. If pointing drifts during a session, re-sync on a nearby bright star.</li>
+    <li><strong>Photography.</strong> For wide-field shots, piggyback a camera on the tube. For through-the-telescope shots, use a T-adapter and T-ring (on the SN models). Train PEC first, keep the payload light, and remember: there is no autoguider port &mdash; guiding is possible via the serial port, but it takes tinkering.</li>
+  </ol>
+
+  <h2>The honest weaknesses</h2>
+  <ul>
+    <li><strong>Backlash</strong> &mdash; play in the gears, especially DEC. Usually fixed by adjusting the worm mesh (and the mount's backlash settings); some units need it more than others.</li>
+    <li><strong>DEC-axis wobble</strong> &mdash; some owners report play even with the clutch locked.</li>
+    <li><strong>The RA transfer gear</strong> can slip if its set screw isn't flush on the shaft.</li>
+    <li><strong>The tripod</strong> is solid for the era, but marginal near the 30 lb limit.</li>
+    <li><strong>GoTo accuracy varies</strong> &mdash; 15 arc-minutes is the published figure; treat the final centring as your job.</li>
+    <li><strong>No autoguider port</strong> and <strong>plastic gears inside the motor gearbox</strong> &mdash; the gearbox can shed debris with age; the encoder discs are delicate.</li>
+    <li><strong>PEC corrects RA only</strong> &mdash; declination drift is yours to manage.</li>
+  </ul>
+  <p>And the counterpoint: unit-to-unit quality varied &mdash; some owners report perfect backlash-free mounts that tracked a one-minute unguided exposure with no corrections. Buying one today means checking the specific unit.</p>
+
+  <h2>Status today</h2>
+  <p>Discontinued since 2008 &mdash; and the company behind it is gone: Meade went bankrupt in 2019, Orion acquired it in 2021, and operations ended in 2024. There is no factory support. The good news: the <strong>Autostar #497</strong> was shared with many Meade models (LX90, ETX and more), so handboxes and cables still circulate; spare parts come from parted-out mounts and the aftermarket; and an active community converts LXD75s to <strong>OnStep</strong> &mdash; modern open-source control electronics. Used prices today are roughly $250&ndash;450 for the mount alone and $450&ndash;800 for a complete 8-inch SN package, depending on condition.</p>
+
+  <div class="callout">
+    <span class="title">Read next</span>
+    <p>With an LXD75, the <a href="index.html">Space chapter</a> becomes hands-on: everything these pages describe is up there, moving at sidereal rate. If you own one, photos of your setup are always welcome on this page.</p>
+  </div>
+
+  <a class="back-top" href="index.html">&larr; Back to Space chapter</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Specifications verified against the Meade LXD75 instruction manual (archive.org), Meade's archived 2004 product pages, and the Cloudy Nights user community. Community figures (payload, used prices) are estimates. Photos credited per image.</div>
+  </div>
+</footer>
+
+</body>
+</html>

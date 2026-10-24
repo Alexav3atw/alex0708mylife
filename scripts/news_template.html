@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space News - alex0708mylife</title>
+<meta name="description" content="The latest space news from NASA's official feeds, updated daily by automation: Hubble, Webb, Roman and Artemis.">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  .news-list { list-style: none; padding: 0; margin: 26px 0; max-width: 720px; }
+  .news-list li {
+    margin: 0 0 14px;
+    padding: 12px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+  .news-list a { color: var(--ink); font-weight: 600; }
+  .news-list a:hover { color: var(--blue); text-decoration: none; }
+  .n-date { color: var(--ink-3); font-size: 0.8rem; margin-right: 8px; font-variant-numeric: tabular-nums; }
+  .n-src { color: var(--ink-3); font-size: 0.78rem; margin-left: 8px; white-space: nowrap; }
+  .n-src::before { content: "["; } .n-src::after { content: "]"; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="index.html" class="active">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="../pc-network/index.html">PC &amp; Network</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Space</a> / News</p>
+  <h1>Space News</h1>
+  <p class="tagline">The latest from NASA's official feeds &mdash; Hubble, Webb, Roman, Artemis and general space news.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">This page updates itself <strong>every day, automatically</strong>: a small script running on GitHub's servers collects the newest headlines from NASA's official news feeds and publishes them here &mdash; each headline links to the original source. Nothing is rewritten or summarised; the sources speak for themselves. Last update: <strong>{{STAMP}}</strong>.</p>
+
+  <ul class="news-list">
+{{NEWS}}
+  </ul>
+
+  <div class="callout">
+    <span class="title">How this works</span>
+    <p>The deeper stories &mdash; the pages in this chapter &mdash; are researched and verified by hand (see <a href="../pc-network/github-pages.html">how this website was created</a>). The daily feed above is the automatic layer on top: headlines with links, straight from NASA. You can read about the automation in the repository's <code>.github/workflows</code> folder.</p>
+  </div>
+
+  <a class="back-top" href="index.html">&larr; Back to Space chapter</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Headlines are fetched automatically from NASA's public RSS feeds and link to their sources. Updated daily by GitHub Actions.</div>
+  </div>
+</footer>
+
+</body>
+</html>
