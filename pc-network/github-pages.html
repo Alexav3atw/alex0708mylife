@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Pages: How This Website Was Created - alex0708mylife</title>
+<meta name="description" content="Step by step: what GitHub Pages is, how to start your own free website, publish it, give it your own domain - and how this exact site was made.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="index.html" class="active">PC &amp; Network</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">PC &amp; Network</a> / GitHub Pages</p>
+  <h1>GitHub Pages: How This Website Was Created</h1>
+  <p class="tagline">The complete beginner's guide to free website hosting &mdash; and the true story of how this very site got onto the internet.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">You are reading this on a website that costs nothing to host, needs no server, and is updated by simply saving files. This page explains exactly how that works &mdash; and how you can do the same with your own page, step by step, in about fifteen minutes.</p>
+
+  <h2>What is GitHub Pages?</h2>
+  <p>GitHub Pages is, in GitHub's own words, <em>"a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website."</em> In plain language: you put files in a folder on GitHub, GitHub puts them on the internet, free of charge. No server to rent, nothing to install, nothing to maintain.</p>
+  <p>The address always follows the same pattern:</p>
+  <ul>
+    <li><strong>Project site</strong> (any repository): <code>https://your-username.github.io/repository-name/</code> &mdash; this site lives at <code>https://alexav3atw.github.io/alex0708mylife/</code></li>
+    <li><strong>User site</strong> (a repository named exactly <code>your-username.github.io</code>): the shorter <code>https://your-username.github.io/</code> &mdash; one per account</li>
+  </ul>
+  <p>What Pages can <strong>not</strong> do: run server-side code. It serves static files &mdash; HTML pages, stylesheets, images, small scripts. For a personal site, a hobby page or a blog, that is usually all anyone needs. (This entire website is static files: 20 pages, one stylesheet and a folder of images.)</p>
+
+  <div class="factgrid">
+    <div class="factcard">
+      <div class="icon">💾</div>
+      <div class="stat">1 GB</div>
+      <div class="cap">Maximum size of the published site</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">📊</div>
+      <div class="stat">100 GB</div>
+      <div class="cap">Soft bandwidth limit per month</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">⚙️</div>
+      <div class="stat">10/h</div>
+      <div class="cap">Soft limit on builds per hour</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">⏱️</div>
+      <div class="stat">10 min</div>
+      <div class="cap">Maximum time for the first build to appear</div>
+    </div>
+  </div>
+
+  <h2>Path A &mdash; start entirely in the browser</h2>
+  <p>This path needs nothing but a GitHub account and a web browser. No software, no terminal.</p>
+  <ol>
+    <li><strong>Create the repository.</strong> On GitHub: <em>New repository</em> &rarr; give it a name (any name &mdash; the name becomes part of your web address) &rarr; choose <strong>Public</strong> &rarr; leave the "Add README" and other checkboxes <strong>unchecked</strong> &rarr; <em>Create repository</em>.</li>
+    <li><strong>Create your first page.</strong> In the repository: <em>Add file</em> &rarr; <em>Create new file</em> &rarr; name it exactly <code>index.html</code> (lowercase &mdash; this matters) &rarr; type some HTML &rarr; <em>Commit changes</em>.</li>
+    <li><strong>Switch on Pages.</strong> <em>Settings</em> &rarr; <em>Pages</em> &rarr; under <em>Build and deployment</em> choose <strong>Deploy from a branch</strong> &rarr; branch <strong>main</strong>, folder <strong>/ (root)</strong> &rarr; <em>Save</em>.</li>
+    <li><strong>Wait.</strong> The first build can take up to 10 minutes. When it is done, the same Settings &rarr; Pages page shows: <em>"Your site is live at https://&hellip;"</em> &mdash; with a <em>Visit site</em> button.</li>
+  </ol>
+
+  <div class="callout">
+    <span class="title">Where do the HTML files come from?</span>
+    <p>Every page on the web is an HTML file. If writing HTML yourself sounds like a lot, that is exactly what tools like Claude Code are for: describe the site you want, and the files are written for you &mdash; which is how this website was made.</p>
+  </div>
+
+  <h2>Path B &mdash; the Git way (how this site is really made)</h2>
+  <p>Path A is perfect for a first page. But a real site &mdash; many pages, images, changes over months &mdash; is easier to manage as a <strong>folder on your own computer</strong>, connected to GitHub with <strong>git</strong>. Git is a version control system: every change is saved as a snapshot, and any earlier version can be restored at any time. That means you can never permanently break your site &mdash; the previous version is always one command away.</p>
+  <p>The workflow, once, for a new site (with git installed, from your site's folder):</p>
+  <pre><code>git init -b main
+git add .
+git commit -m "First commit"
+git remote add origin https://github.com/your-username/your-repository.git
+git push -u origin main</code></pre>
+  <p>Then the same two minutes in Settings &rarr; Pages &rarr; <em>Deploy from a branch</em> &rarr; main &rarr; <em>Save</em>. And from then on, every update to the site is:</p>
+  <pre><code>git add .
+git commit -m "What changed"
+git push</code></pre>
+  <p>Within about a minute, the live site shows the new version. No re-publishing, no downtime, no extra clicks &mdash; the push <em>is</em> the publishing.</p>
+
+  <h2>The Jekyll thing (small but useful)</h2>
+  <p>By default, when you publish from a branch, GitHub Pages runs your files through <strong>Jekyll</strong> &mdash; a tool for building blogs. For a plain site of your own HTML files this is mostly harmless, with one trap: Jekyll ignores files and folders whose names start with <code>_</code>, <code>.</code> or <code>#</code>. So a folder like <code>_images</code> would simply not appear on your published site. The standard fix is an empty file named <strong><code>.nojekyll</code></strong> at the top of your repository &mdash; it tells GitHub Pages to skip Jekyll and publish your files exactly as they are. (This site has one. Practice what you preach.)</p>
+
+  <h2>Your own domain name</h2>
+  <p>You do not have to keep the <code>.github.io</code> address. In Settings &rarr; Pages you can attach a domain you own:</p>
+  <ol>
+    <li>Buy a domain (any registrar, a few euros per year).</li>
+    <li>Settings &rarr; Pages &rarr; <em>Custom domain</em> &rarr; type it &rarr; <em>Save</em>.</li>
+    <li>At your domain provider, point the domain at GitHub: for the bare domain (<code>example.com</code>), create <strong>A records</strong> for all four of these addresses:
+      <div class="table-scroll">
+        <table class="data">
+          <tr><th>Record</th><th>Type</th><th>Value</th></tr>
+          <tr><td>@</td><td>A</td><td>185.199.108.153</td></tr>
+          <tr><td>@</td><td>A</td><td>185.199.109.153</td></tr>
+          <tr><td>@</td><td>A</td><td>185.199.110.153</td></tr>
+          <tr><td>@</td><td>A</td><td>185.199.111.153</td></tr>
+          <tr><td>www</td><td>CNAME</td><td>your-username.github.io</td></tr>
+        </table>
+      </div>
+    </li>
+    <li>Wait. DNS changes can take up to 24 hours to spread worldwide &mdash; usually it is minutes.</li>
+    <li>Back in Settings &rarr; Pages, tick <strong>Enforce HTTPS</strong>. GitHub requests a free security certificate for you automatically and installs it &mdash; this option can take up to 24 hours to appear.</li>
+  </ol>
+
+  <h2>When things go wrong</h2>
+  <ul>
+    <li><strong>404 right after switching on Pages:</strong> normal. The first build can take up to 10 minutes.</li>
+    <li><strong>404 that never goes away:</strong> your <code>index.html</code> must be at the top level of the publishing source (the root of the repository, or <code>/docs</code> if you chose that). It must be spelled exactly <code>index.html</code> &mdash; lowercase i. (<code>Index.html</code> does not work.)</li>
+    <li><strong>No index.html at all:</strong> Pages will also accept <code>index.md</code> or <code>README.md</code> as the entry page. None of the three &rarr; 404.</li>
+    <li><strong>Images or styles missing:</strong> check the file paths in your HTML &mdash; and remember file and folder names are case-sensitive on GitHub Pages.</li>
+    <li><strong>"Mixed content" errors:</strong> an HTTPS page refuses HTTP resources. Change every <code>http://</code> link in your files to <code>https://</code>.</li>
+    <li><strong>Private repository:</strong> Pages on a private repository requires a paid GitHub plan, and the site is still visible to the public. A personal site is simplest as a public repository &mdash; the files are all public anyway, since the site is.</li>
+  </ul>
+
+  <h2>Stopping it</h2>
+  <p>Unpublishing is just as easy: Settings &rarr; Pages &rarr; open the menu next to "Your site is live at" &rarr; <em>Unpublish site</em>. The site disappears from the internet, but the repository and all files stay intact &mdash; publishing again brings it right back. To remove it completely: set the publishing source back to <em>None</em>, or simply delete the repository.</p>
+
+  <h2>Case study: how THIS website was made</h2>
+  <p>And now the story of the site you are reading &mdash; because it used both paths and a few more tricks:</p>
+  <div class="timeline">
+    <div class="tl-item">
+      <span class="date">Step 1</span>
+      <span class="what">The idea</span>
+      <p>A personal site about personal interests: space, Kuifje, PCs. Public, in English, with chapters that could grow one subject at a time.</p>
+    </div>
+    <div class="tl-item">
+      <span class="date">Step 2</span>
+      <span class="what">The files were written locally</span>
+      <p>Every page is hand-written HTML in a folder on the computer, with one shared stylesheet and a dark theme whose colours were computer-checked for contrast and colourblind-safety before use.</p>
+    </div>
+    <div class="tl-item">
+      <span class="date">Step 3</span>
+      <span class="what">The facts were verified</span>
+      <p>Research agents checked every date, number and name in the Space chapter against NASA, the Smithsonian and Wikipedia &mdash; the first review round caught 19 errors, all fixed before publishing. Photos were selected only from legally free sources (NASA public-domain and Wikimedia Commons), downloaded and compressed to 70% size so the site loads fast.</p>
+    </div>
+    <div class="tl-item">
+      <span class="date">Step 4</span>
+      <span class="what">The repository was created</span>
+      <p>An empty public repository named <code>alex0708mylife</code> &mdash; exactly Path A, step 1.</p>
+    </div>
+    <div class="tl-item">
+      <span class="date">Step 5</span>
+      <span class="what">Pushing, not uploading</span>
+      <p>From then on, everything went through git: <code>git add .</code>, <code>git commit</code>, <code>git push</code>. About forty pushes built the site &mdash; and every single one is still in the history, so any earlier version of any page can be brought back.</p>
+    </div>
+    <div class="tl-item">
+      <span class="date">Step 6</span>
+      <span class="what">Two clicks made it public</span>
+      <p>Settings &rarr; Pages &rarr; Deploy from a branch &rarr; main &rarr; Save. Ten minutes later: <em>"Your site is live at https://alexav3atw.github.io/alex0708mylife/"</em>.</p>
+    </div>
+  </div>
+  <p>That is the whole secret. No server, no costs, no maintenance &mdash; a folder of files, a push button, and the internet does the rest.</p>
+
+  <div class="callout">
+    <span class="title">Ready to try it yourself?</span>
+    <p>Start with Path A and one <code>index.html</code> &mdash; fifteen minutes from nothing to a live address. When your site grows up, the files move to a local folder and the same site switches to Path B without changing a thing.</p>
+  </div>
+
+  <a class="back-top" href="index.html">&larr; Back to PC &amp; Network chapter</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Steps and limits verified against the official documentation at docs.github.com/en/pages (October 2026). GitHub documentation changes; check the current docs when you build your own site.</div>
+  </div>
+</footer>
+
+</body>
+</html>

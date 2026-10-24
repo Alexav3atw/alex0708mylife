@@ -425,6 +425,23 @@ footer.site .credits { max-width: 620px; line-height: 1.6; }
   margin-left: 8px;
 }
 
+/* code blocks (tutorials) */
+pre {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  overflow-x: auto;
+  max-width: 720px;
+  margin: 20px 0;
+}
+pre code {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 0.86rem;
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+
 .chapter-list { list-style: none; padding: 0; margin: 26px 0; max-width: 720px; }
 .chapter-list li { display: flex; gap: 14px; align-items: baseline; margin: 10px 0; }
 .chapter-list .num { color: var(--blue); font-variant-numeric: tabular-nums; min-width: 26px; }
