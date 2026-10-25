@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30 Networking Commands - alex0708mylife</title>
+<meta name="description" content="30 networking commands every technician should know - Windows and Linux, each with its purpose and an example.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="index.html" class="active">PC &amp; Network</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">PC &amp; Network</a> / Networking Commands</p>
+  <h1>30 Networking Commands</h1>
+  <p class="tagline">The troubleshooting toolbox: 21 Windows commands and 9 Linux essentials, each with its job and an example.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">The first rule of troubleshooting: <strong>know what you're looking at</strong>. These thirty commands cover every classic diagnosis &mdash; from "is my cable even working" to "who is listening on port 443".</p>
+
+  <h2>Windows &mdash; the 21 essentials</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>#</th><th>Command</th><th>What it does</th></tr>
+      <tr><td>1</td><td><span class="cmd">ipconfig /all</span></td><td>Full IP, DNS, DHCP and MAC configuration &mdash; the first thing to look at</td></tr>
+      <tr><td>2</td><td><span class="cmd">ipconfig /release</span></td><td>Release the DHCP lease</td></tr>
+      <tr><td>3</td><td><span class="cmd">ipconfig /renew</span></td><td>Request a new DHCP lease</td></tr>
+      <tr><td>4</td><td><span class="cmd">ipconfig /flushdns</span></td><td>Clear the DNS resolver cache</td></tr>
+      <tr><td>5</td><td><span class="cmd">ping -t 8.8.8.8</span></td><td>Continuous ping (Ctrl+C to stop) &mdash; watch a flaky link live</td></tr>
+      <tr><td>6</td><td><span class="cmd">ping -n 4 example.com</span></td><td>Four pings (Linux uses <span class="cmd">-c 4</span>)</td></tr>
+      <tr><td>7</td><td><span class="cmd">tracert example.com</span></td><td>Hop-by-hop route to a host (<span class="cmd">traceroute</span> on Linux)</td></tr>
+      <tr><td>8</td><td><span class="cmd">pathping example.com</span></td><td>Route <em>plus</em> per-hop loss and latency &mdash; slow but thorough</td></tr>
+      <tr><td>9</td><td><span class="cmd">nslookup example.com</span></td><td>DNS query; add a DNS server as a second argument to ask a specific one</td></tr>
+      <tr><td>10</td><td><span class="cmd">netstat -ano</span></td><td>All connections and listeners with their PIDs; <span class="cmd">-b</span> adds the executable name (admin)</td></tr>
+      <tr><td>11</td><td><span class="cmd">arp -a</span></td><td>The ARP cache &mdash; IP-to-MAC mappings on your LAN</td></tr>
+      <tr><td>12</td><td><span class="cmd">route print</span></td><td>The routing table &mdash; where does traffic actually go?</td></tr>
+      <tr><td>13</td><td><span class="cmd">getmac /v</span></td><td>MAC addresses by adapter</td></tr>
+      <tr><td>14</td><td><span class="cmd">net use \\fileserver\share</span></td><td>Connect to an SMB share; run alone to list current mappings</td></tr>
+      <tr><td>15</td><td><span class="cmd">telnet example.com 443</span></td><td>Classic TCP port test (the Telnet client is an optional Windows feature)</td></tr>
+      <tr><td>16</td><td><span class="cmd">ssh user@host</span></td><td>Encrypted remote shell &mdash; OpenSSH client is built into Windows</td></tr>
+      <tr><td>17</td><td><span class="cmd">curl.exe -I https://example.com</span></td><td>HTTP status and headers (in PowerShell 5.1, use curl.exe &mdash; plain curl is an alias)</td></tr>
+      <tr><td>18</td><td><span class="cmd">Test-NetConnection example.com -Port 443</span></td><td>PowerShell: ping <em>plus</em> TCP port test in one line</td></tr>
+      <tr><td>19</td><td><span class="cmd">Test-Connection example.com -Count 4</span></td><td>PowerShell ICMP ping</td></tr>
+      <tr><td>20</td><td><span class="cmd">Resolve-DnsName example.com</span></td><td>PowerShell DNS records</td></tr>
+      <tr><td>21</td><td><span class="cmd">Get-NetAdapter</span></td><td>Adapter status, link speed and MAC &mdash; is the interface even up?</td></tr>
+    </table>
+  </div>
+
+  <h2>Linux / macOS &mdash; the 9 essentials</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>#</th><th>Command</th><th>What it does</th></tr>
+      <tr><td>22</td><td><span class="cmd">ip addr</span></td><td>Interface addresses &mdash; the modern replacement for ifconfig</td></tr>
+      <tr><td>23</td><td><span class="cmd">ip route</span></td><td>Routing table &mdash; replaces <span class="cmd">route -n</span></td></tr>
+      <tr><td>24</td><td><span class="cmd">dig example.com +short</span></td><td>DNS lookup; <span class="cmd">@server</span> selects a specific resolver</td></tr>
+      <tr><td>25</td><td><span class="cmd">ss -tulpn</span></td><td>Listening TCP/UDP sockets with PIDs &mdash; the modern netstat</td></tr>
+      <tr><td>26</td><td><span class="cmd">nmap -sT -p 443 192.168.1.10</span></td><td>TCP port scan &mdash; only against systems you own or are authorised to test</td></tr>
+      <tr><td>27</td><td><span class="cmd">tcpdump -i eth0 -nn port 443</span></td><td>Packet capture &mdash; needs root, and the interface name varies</td></tr>
+      <tr><td>28</td><td><span class="cmd">wget https://example.com/file</span></td><td>Download a file</td></tr>
+      <tr><td>29</td><td><span class="cmd">ifconfig -a</span></td><td>Legacy interface list &mdash; still everywhere, but <span class="cmd">ip addr</span> is current</td></tr>
+      <tr><td>30</td><td><span class="cmd">systemctl status networking</span></td><td>Networking service status (RHEL/Fedora often use NetworkManager instead)</td></tr>
+    </table>
+  </div>
+
+  <div class="callout warn">
+    <span class="title">Worth remembering</span>
+    <p>On Linux, <span class="cmd">netstat</span>, <span class="cmd">ifconfig</span> and <span class="cmd">arp</span> are legacy &mdash; the current tools are <span class="cmd">ss</span>, <span class="cmd">ip addr</span> and <span class="cmd">ip neigh</span>. <span class="cmd">tcpdump</span> and full <span class="cmd">ss -p</span> output need root. And scan only what you're allowed to scan.</p>
+  </div>
+
+  <a class="back-top" href="index.html">&larr; Back to PC &amp; Network chapter</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Commands verified against Microsoft Learn and Linux man pages (October 2026).</div>
+  </div>
+</footer>
+
+</body>
+</html>

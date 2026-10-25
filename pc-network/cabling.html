@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Network Cabling - alex0708mylife</title>
+<meta name="description" content="Network cabling essentials: copper categories Cat5e to Cat8, fiber types, T568A/B pinouts and PoE wattages.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="index.html" class="active">PC &amp; Network</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">PC &amp; Network</a> / Cabling</p>
+  <h1>Network Cabling</h1>
+  <p class="tagline">The essentials: which cable for which speed, what the pinouts are, and how much power a network cable can carry.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">Most network problems are physical. This is the cheat sheet: copper categories, fiber types, the two wiring schemes, and PoE wattages &mdash; everything a technician reaches for in the field.</p>
+
+  <h2>Copper &mdash; twisted pair</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Cable</th><th>Bandwidth</th><th>Speed / max distance</th><th>Typical use</th></tr>
+      <tr><td>Cat5e</td><td>100 MHz</td><td>1G (or 2.5G) to 100 m</td><td>Desk drops, phones, basic APs</td></tr>
+      <tr><td>Cat6</td><td>250 MHz</td><td>1G to 100 m; 10G to 55 m</td><td>General LAN, 1G backbone</td></tr>
+      <tr><td>Cat6a</td><td>500 MHz</td><td>10G to 100 m</td><td>New 10G installs &mdash; the practical choice</td></tr>
+      <tr><td>Cat7</td><td>600 MHz</td><td>10G to 100 m (ISO Class F; not TIA-recognized)</td><td>Niche/industrial &mdash; Cat6a is the practical TIA option</td></tr>
+      <tr><td>Cat8</td><td>2,000 MHz</td><td>25G/40G to ~30 m</td><td>Data-center, top-of-rack only</td></tr>
+    </table>
+  </div>
+  <p><strong>Shielding:</strong> U/UTP is unshielded. FTP usually means one overall foil; S/FTP adds a braid plus foil per pair. Shielded cable helps next to motors, variable-frequency drives and long power runs &mdash; but only if the shield is properly bonded and grounded; otherwise it can make noise <em>worse</em>. A normal office LAN is fine with UTP.</p>
+
+  <h2>Fiber &mdash; light instead of electricity</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Fiber</th><th>Core</th><th>Light source</th><th>Typical reach</th></tr>
+      <tr><td>OS2 single-mode</td><td>9/125 &micro;m</td><td>1310/1550 nm laser</td><td>5&ndash;40 km depending on optic</td></tr>
+      <tr><td>OM3 multimode</td><td>50/125 &micro;m</td><td>850 nm VCSEL</td><td>10G: 300 m; 40/100G: 100 m</td></tr>
+      <tr><td>OM4 multimode</td><td>50/125 &micro;m</td><td>850 nm VCSEL</td><td>10G: 400 m; 40/100G: 150 m</td></tr>
+      <tr><td>OM5 multimode</td><td>50/125 &micro;m</td><td>850&ndash;953 nm</td><td>OM4-like; built for shortwave WDM</td></tr>
+    </table>
+  </div>
+  <p>Single-mode = long runs, between buildings. Multimode = short runs inside a building. <strong>Connectors:</strong> LC (standard with SFP/SFP+), SC (telecom), ST (legacy), MPO/MTP (40/100/400G). <strong>Transceivers:</strong> SFP 1G, SFP+ 10G, QSFP+ 40G, QSFP28 100G. Match the optic's reach code (SR/LR/ER) to the fiber.</p>
+
+  <h2>Coax &mdash; the survivor</h2>
+  <p>RG-6 75 &Omega; coax still carries cable TV and ISP connections (DOCSIS), and MoCA runs Ethernet over existing home coax. The old coax Ethernet networks (10BASE2/10BASE5) are long obsolete.</p>
+
+  <h2>The RJ45 and the two pinouts</h2>
+  <p>"RJ45" is the everyday name for the 8P8C connector. The two wiring schemes, T568A and T568B, differ only in which pair goes where:</p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Pin</th><th>T568A</th><th>T568B</th></tr>
+      <tr><td>1</td><td>white/green</td><td>white/orange</td></tr>
+      <tr><td>2</td><td>green</td><td>orange</td></tr>
+      <tr><td>3</td><td>white/orange</td><td>white/green</td></tr>
+      <tr><td>4</td><td>blue</td><td>blue</td></tr>
+      <tr><td>5</td><td>white/blue</td><td>white/blue</td></tr>
+      <tr><td>6</td><td>orange</td><td>green</td></tr>
+      <tr><td>7</td><td>white/brown</td><td>white/brown</td></tr>
+      <tr><td>8</td><td>brown</td><td>brown</td></tr>
+    </table>
+  </div>
+  <p><strong>Straight-through</strong> = same scheme both ends (A-A or B-B) &mdash; the normal cable. <strong>Crossover</strong> = A one end, B the other &mdash; once needed between two PCs or switches, now effectively obsolete: gigabit Ethernet uses all four pairs in both directions and modern gear negotiates automatically (Auto-MDI-X).</p>
+
+  <h2>PoE &mdash; power over the same cable</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Standard</th><th>Switch output</th><th>Device receives</th><th>Typical devices</th></tr>
+      <tr><td>802.3af (Type 1)</td><td>15.4 W</td><td>12.95 W</td><td>VoIP phones, basic APs and cameras</td></tr>
+      <tr><td>802.3at (Type 2)</td><td>30 W</td><td>25.5 W</td><td>PTZ cameras, Wi-Fi 6 APs</td></tr>
+      <tr><td>802.3bt (Type 3)</td><td>60 W</td><td>51 W</td><td>High-power APs, displays</td></tr>
+      <tr><td>802.3bt (Type 4)</td><td>90 W</td><td>71.3 W</td><td>Laptops, large PTZs, access control</td></tr>
+    </table>
+  </div>
+  <p>PoE exists so APs, cameras, phones and access control need <em>one</em> cable instead of two. Type 3/4 ("PoE++") uses all four pairs and stays backward compatible.</p>
+
+  <a class="back-top" href="index.html">&larr; Back to PC &amp; Network chapter</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Standards verified against TIA-568, ISO/IEC 11801 and the IEEE PoE standards (October 2026).</div>
+  </div>
+</footer>
+
+</body>
+</html>

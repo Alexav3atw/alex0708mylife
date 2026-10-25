@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerShell Commands - alex0708mylife</title>
+<meta name="description" content="The PowerShell commands every technician should know: essential cmdlets, the pipeline, aliases and three practical one-liners.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="index.html" class="active">PC &amp; Network</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">PC &amp; Network</a> / PowerShell</p>
+  <h1>PowerShell Commands</h1>
+  <p class="tagline">The commands every technician should know &mdash; and the one idea (the pipeline) that makes PowerShell different.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">PowerShell is an <strong>object-based</strong> shell: its commands &mdash; called <em>cmdlets</em>, always Verb-Noun &mdash; pass <em>objects</em> to each other, not text. That's why <span class="cmd">Get-Process | Sort-Object CPU -Descending</span> just works: the pipeline hands whole process objects down the chain. <strong>Windows PowerShell 5.1</strong> ships with Windows 10/11; <strong>PowerShell 7.x</strong> (pwsh) is the cross-platform current release &mdash; 7.6 is the LTS as of October 2026.</p>
+
+  <h2>The essential cmdlets</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Command</th><th>What it does</th><th>Example</th></tr>
+      <tr><td><span class="cmd">Get-Help</span></td><td>Show help</td><td><span class="cmd">Get-Help Get-Process -Examples</span></td></tr>
+      <tr><td><span class="cmd">Get-Command</span></td><td>Find commands</td><td><span class="cmd">Get-Command *service*</span></td></tr>
+      <tr><td><span class="cmd">Get-Process</span></td><td>Running processes</td><td><span class="cmd">Get-Process</span></td></tr>
+      <tr><td><span class="cmd">Stop-Process</span></td><td>End a process</td><td><span class="cmd">Stop-Process -Name notepad</span></td></tr>
+      <tr><td><span class="cmd">Get-Service</span></td><td>Service status</td><td><span class="cmd">Get-Service</span></td></tr>
+      <tr><td><span class="cmd">Restart-Service</span></td><td>Restart a service</td><td><span class="cmd">Restart-Service Spooler</span></td></tr>
+      <tr><td><span class="cmd">Get-ChildItem</span></td><td>List files and folders</td><td><span class="cmd">Get-ChildItem C:\Windows</span></td></tr>
+      <tr><td><span class="cmd">Copy-Item</span></td><td>Copy files</td><td><span class="cmd">Copy-Item a.txt D:\backup\</span></td></tr>
+      <tr><td><span class="cmd">Move-Item</span></td><td>Move files</td><td><span class="cmd">Move-Item a.txt D:\</span></td></tr>
+      <tr><td><span class="cmd">Remove-Item</span></td><td>Delete files</td><td><span class="cmd">Remove-Item old.log</span></td></tr>
+      <tr><td><span class="cmd">New-Item</span></td><td>Create a file or folder</td><td><span class="cmd">New-Item -ItemType Directory .\newfolder</span></td></tr>
+      <tr><td><span class="cmd">Rename-Item</span></td><td>Rename</td><td><span class="cmd">Rename-Item a.txt b.txt</span></td></tr>
+      <tr><td><span class="cmd">Get-Content</span></td><td>Read a file</td><td><span class="cmd">Get-Content app.log -Tail 20</span></td></tr>
+      <tr><td><span class="cmd">Set-Content</span></td><td>Write / replace file content</td><td><span class="cmd">Set-Content notes.txt "hello"</span></td></tr>
+      <tr><td><span class="cmd">Add-Content</span></td><td>Append to a file</td><td><span class="cmd">Add-Content log.txt "entry"</span></td></tr>
+      <tr><td><span class="cmd">Out-File</span></td><td>Redirect output to a file</td><td><span class="cmd">Get-Process | Out-File procs.txt</span></td></tr>
+      <tr><td><span class="cmd">Where-Object</span></td><td>Filter objects</td><td><span class="cmd">Get-Service | Where-Object Status -eq Running</span></td></tr>
+      <tr><td><span class="cmd">Select-Object</span></td><td>Pick properties, or the first N</td><td><span class="cmd">Get-Process | Select-Object Name,CPU</span></td></tr>
+      <tr><td><span class="cmd">Sort-Object</span></td><td>Sort objects</td><td><span class="cmd">Get-Process | Sort-Object CPU -Descending</span></td></tr>
+      <tr><td><span class="cmd">Format-Table</span></td><td>Table output</td><td><span class="cmd">Get-Process | Format-Table Name,CPU</span></td></tr>
+      <tr><td><span class="cmd">Format-List</span></td><td>Detailed list output</td><td><span class="cmd">Get-Service | Format-List *</span></td></tr>
+      <tr><td><span class="cmd">Get-NetIPConfiguration</span></td><td>IP, DNS and gateway</td><td><span class="cmd">Get-NetIPConfiguration</span></td></tr>
+      <tr><td><span class="cmd">Get-NetAdapter</span></td><td>NIC information</td><td><span class="cmd">Get-NetAdapter</span></td></tr>
+      <tr><td><span class="cmd">Test-Connection</span></td><td>ICMP ping</td><td><span class="cmd">Test-Connection example.com -Count 4</span></td></tr>
+      <tr><td><span class="cmd">Test-NetConnection</span></td><td>Ping plus TCP port test</td><td><span class="cmd">Test-NetConnection example.com -Port 443</span></td></tr>
+      <tr><td><span class="cmd">Resolve-DnsName</span></td><td>DNS lookup</td><td><span class="cmd">Resolve-DnsName example.com</span></td></tr>
+      <tr><td><span class="cmd">Get-Disk</span></td><td>Physical disks</td><td><span class="cmd">Get-Disk</span></td></tr>
+      <tr><td><span class="cmd">Get-Volume</span></td><td>Volumes and free space</td><td><span class="cmd">Get-Volume</span></td></tr>
+      <tr><td><span class="cmd">Get-WinEvent</span></td><td>Event logs</td><td><span class="cmd">Get-WinEvent -LogName System -MaxEvents 20</span></td></tr>
+      <tr><td><span class="cmd">Get-CimInstance</span></td><td>WMI/CIM information</td><td><span class="cmd">Get-CimInstance Win32_OperatingSystem</span></td></tr>
+      <tr><td><span class="cmd">Start-Process</span></td><td>Launch a program</td><td><span class="cmd">Start-Process notepad</span></td></tr>
+      <tr><td><span class="cmd">Invoke-WebRequest</span></td><td>HTTP request</td><td><span class="cmd">(Invoke-WebRequest https://example.com).StatusCode</span></td></tr>
+      <tr><td><span class="cmd">ConvertTo-Json</span></td><td>Object to JSON</td><td><span class="cmd">Get-Service Spooler | ConvertTo-Json</span></td></tr>
+    </table>
+  </div>
+
+  <h2>The pipeline &mdash; the one idea to learn</h2>
+  <pre><code>Get-Process | Sort-Object CPU -Descending | Select-Object -First 5</code></pre>
+  <p>Read it left to right: get the process objects &rarr; sort them by CPU, biggest first &rarr; keep the first five. Second example:</p>
+  <pre><code>Get-Service | Where-Object Status -eq Running</code></pre>
+  <p>Get the service objects &rarr; keep only the ones whose Status equals Running. Once this clicks, PowerShell becomes obvious.</p>
+
+  <h2>Aliases &mdash; and when not to use them</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Alias</th><th>Real cmdlet</th></tr>
+      <tr><td><span class="cmd">ls</span> / <span class="cmd">dir</span></td><td>Get-ChildItem</td></tr>
+      <tr><td><span class="cmd">cd</span></td><td>Set-Location</td></tr>
+      <tr><td><span class="cmd">cp</span></td><td>Copy-Item</td></tr>
+      <tr><td><span class="cmd">cat</span> / <span class="cmd">gc</span></td><td>Get-Content</td></tr>
+      <tr><td><span class="cmd">rm</span></td><td>Remove-Item</td></tr>
+    </table>
+  </div>
+  <p>Aliases are fine when typing interactively. In scripts, use the full names: aliases vary by profile and edition, and <span class="cmd">Get-ChildItem</span> reads better six months later than <span class="cmd">ls</span>.</p>
+
+  <h2>Three one-liners worth stealing</h2>
+  <pre><code># Disk free space, human-readable
+Get-Volume | Where-Object { $_.DriveType -eq 'Fixed' -and $_.DriveLetter } |
+  Select-Object DriveLetter, FileSystemLabel, @{n='FreeGB';e={[math]::Round($_.SizeRemaining/1GB,1)}}</code></pre>
+  <pre><code># Top 5 memory hogs
+Get-Process | Sort-Object WorkingSet64 -Descending |
+  Select-Object -First 5 Name, Id, @{n='RAM_MB';e={[math]::Round($_.WorkingSet64/1MB)}}</code></pre>
+  <pre><code># Network adapters at a glance
+Get-NetAdapter | Select-Object Name, Status, LinkSpeed, MacAddress</code></pre>
+  <p>Some commands need an elevated (administrator) session &mdash; typically <span class="cmd">Restart-Service</span> and stopping other users' processes.</p>
+
+  <a class="back-top" href="index.html">&larr; Back to PC &amp; Network chapter</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Cmdlets and examples verified against Microsoft Learn and tested on PowerShell 7.6 (October 2026).</div>
+  </div>
+</footer>
+
+</body>
+</html>
