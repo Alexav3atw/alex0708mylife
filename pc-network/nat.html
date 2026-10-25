@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAT - Network Address Translation - alex0708mylife</title>
+<meta name="description" content="Network Address Translation explained: how one public IP serves a whole network, the NAT table, port forwarding, CGNAT and the NAT-is-not-a-firewall myth.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="index.html" class="active">PC &amp; Network</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">PC &amp; Network</a> / NAT</p>
+  <h1>NAT &mdash; Network Address Translation</h1>
+  <p class="tagline">The trick that lets a whole house share one public IP address &mdash; and the most misunderstood "security" feature in networking.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">IPv4 has about 4.3 billion addresses &mdash; and the last free blocks were handed out in <strong>February 2011</strong>. Yet billions of devices still get online today. The reason is <strong>NAT</strong>: a translator built into your router that lets hundreds of private addresses share one public one.</p>
+
+  <div class="factgrid">
+    <div class="factcard">
+      <div class="icon">🔢</div>
+      <div class="stat">4.3 B</div>
+      <div class="cap">Total IPv4 addresses &mdash; exhausted as free blocks since Feb 2011</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">🏠</div>
+      <div class="stat">1</div>
+      <div class="cap">Public IP a typical home gets &mdash; for dozens of devices</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">🔁</div>
+      <div class="stat">many:1</div>
+      <div class="cap">PAT / NAT overload &mdash; the default on every home router</div>
+    </div>
+  </div>
+
+  <h2>How NAT works &mdash; step by step</h2>
+  <p>Say your PC at <span class="cmd">192.168.1.10</span> opens a connection to a website at <span class="cmd">198.51.100.20:443</span>. The packet leaves with the source address <em>192.168.1.10</em> &mdash; which is a private address, meaningless on the public internet. The router steps in:</p>
+
+  <div class="diagram">
+    <div class="chart-title">One connection, rewritten twice</div>
+    <div class="chart-sub">The router swaps the source address on the way out and swaps it back on the way in &mdash; remembering who asked.</div>
+    <svg viewBox="0 0 660 210" role="img" aria-label="Diagram of NAT rewriting a private address to a public one outbound and back again">
+      <style>
+        .n-t { font-family: system-ui, sans-serif; font-size: 11.5px; fill: #c3c2b7; }
+        .n-t2 { font-family: system-ui, sans-serif; font-size: 10px; fill: #898781; }
+        .n-box { fill: #1a1a19; stroke: rgba(255,255,255,0.15); }
+        .n-ip { font-family: ui-monospace, Consolas, monospace; font-size: 10.5px; fill: #ffffff; }
+      </style>
+
+      <rect class="n-box" x="30" y="75" width="120" height="60" rx="8"/>
+      <text class="n-t" x="90" y="100" text-anchor="middle">Your PC</text>
+      <text class="n-ip" x="90" y="118" text-anchor="middle">192.168.1.10</text>
+
+      <rect class="n-box" x="250" y="55" width="160" height="100" rx="8"/>
+      <text class="n-t" x="330" y="82" text-anchor="middle">Router with NAT</text>
+      <text class="n-t2" x="330" y="98" text-anchor="middle">rewrites source, remembers</text>
+      <text class="n-ip" x="330" y="122" text-anchor="middle">public: 203.0.113.5</text>
+      <text class="n-t2" x="330" y="140" text-anchor="middle">in / out ports 54321 / 443</text>
+
+      <ellipse class="n-box" cx="565" cy="105" rx="60" ry="32"/>
+      <text class="n-t" x="565" y="110" text-anchor="middle">Internet</text>
+
+      <line x1="150" y1="92" x2="250" y2="96" stroke="#3987e5" stroke-width="2.5" marker-end="url(#nB)"/>
+      <text class="n-t2" x="200" y="80" text-anchor="middle" fill="#3987e5">src: 192.168.1.10</text>
+      <line x1="410" y1="96" x2="505" y2="100" stroke="#3987e5" stroke-width="2.5" marker-end="url(#nB)"/>
+      <text class="n-t2" x="458" y="80" text-anchor="middle" fill="#3987e5">src: 203.0.113.5</text>
+
+      <line x1="505" y1="115" x2="410" y2="115" stroke="#d95926" stroke-width="2.5" marker-end="url(#nO)"/>
+      <text class="n-t2" x="458" y="135" text-anchor="middle" fill="#d95926">dst: 203.0.113.5</text>
+      <line x1="250" y1="114" x2="150" y2="110" stroke="#d95926" stroke-width="2.5" marker-end="url(#nO)"/>
+      <text class="n-t2" x="200" y="134" text-anchor="middle" fill="#d95926">dst: 192.168.1.10</text>
+
+      <defs>
+        <marker id="nB" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#3987e5"/></marker>
+        <marker id="nO" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#d95926"/></marker>
+      </defs>
+    </svg>
+  </div>
+
+  <ol>
+    <li><strong>Outbound:</strong> the router rewrites the source to <span class="cmd">203.0.113.5:54321</span> (its own public address, plus a free port), recalculates the checksums, and writes the mapping into its <strong>NAT table</strong>.</li>
+    <li><strong>The reply</strong> comes back to <span class="cmd">203.0.113.5:54321</span>.</li>
+    <li><strong>Inbound:</strong> the router looks up port 54321 in the table, finds your PC, rewrites the destination back to <span class="cmd">192.168.1.10:54321</span> &mdash; and delivers.</li>
+  </ol>
+
+  <p>The table entry that makes it work:</p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Protocol</th><th>Inside global</th><th>Inside local</th><th>Outside local</th><th>Outside global</th></tr>
+      <tr><td>TCP</td><td><span class="cmd">203.0.113.5:54321</span></td><td><span class="cmd">192.168.1.10:54321</span></td><td><span class="cmd">198.51.100.20:443</span></td><td><span class="cmd">198.51.100.20:443</span></td></tr>
+    </table>
+  </div>
+  <p>Translation: <em>inside local</em> = the PC as it calls itself; <em>inside global</em> = the PC as the internet sees it. If port 54321 were already taken, the router would simply pick another free one. (The addresses <span class="cmd">203.0.113.0/24</span> and <span class="cmd">198.51.100.0/24</span> are documentation ranges &mdash; RFC 5737 &mdash; which is why every textbook uses them.)</p>
+
+  <h2>The NAT family</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Type</th><th>Mapping</th><th>Notes</th></tr>
+      <tr><td>Static NAT</td><td>1:1, fixed</td><td>One public address permanently paired with one private address</td></tr>
+      <tr><td>Dynamic NAT</td><td>Pool, 1:1 at a time</td><td>First free address from a pool of public addresses</td></tr>
+      <tr><td>PAT / NAPT / overload</td><td>many:1</td><td>Ports distinguish the sessions &mdash; the default on every home router</td></tr>
+      <tr><td>Port forwarding</td><td>Static DNAT</td><td>An inbound mapping: one public port pinned to one internal host</td></tr>
+    </table>
+  </div>
+
+  <h2>Port forwarding &mdash; the exception to the rule</h2>
+  <p>NAT is great outbound, but it blocks the other direction: nobody on the internet can reach your PC, because it has no public address. <strong>Port forwarding</strong> is the controlled exception &mdash; you pin one public port to one internal machine:</p>
+  <p>External <span class="cmd">203.0.113.5:8080</span> &rarr; internal <span class="cmd">192.168.1.20:80</span> (a web server on your LAN). On a Cisco router:</p>
+  <pre><code>ip nat inside source static tcp 192.168.1.20 80 203.0.113.5 8080</code></pre>
+  <div class="callout">
+    <span class="title">The technician's port-forwarding checklist</span>
+    <p>1. Give the target host a <strong>static IP or DHCP reservation</strong> first (its address must never change). &nbsp;2. Forward the right internal IP, port and protocol. &nbsp;3. Allow it in the host's own firewall. &nbsp;4. Test from <em>outside</em> the network &mdash; and remember that CGNAT (below) breaks everything anyway.</p>
+  </div>
+
+  <h2>UPnP &mdash; the hole puncher</h2>
+  <p><strong>UPnP</strong> lets applications ask the router to open ports automatically. Convenient &mdash; and unauthenticated. Exposed UPnP stacks have been exploited repeatedly (Rapid7's 2013 scan found ~6,900 vulnerable products from 1,500 vendors; the 2020 CallStranger bugs enabled DDoS and data theft). The technician's advice: <strong>disable UPnP unless you need it</strong>.</p>
+
+  <h2>CGNAT &mdash; when your ISP NATs too</h2>
+  <p>Some ISPs run their own NAT &mdash; <strong>carrier-grade NAT</strong> &mdash; so many subscribers share one public address (the reserved range <span class="cmd">100.64.0.0/10</span>, RFC 6598, exists for exactly this). You then sit behind <strong>double NAT</strong>: your router's NAT plus the ISP's. Consequence: inbound connections fail, so <strong>port forwarding stops working</strong> &mdash; bad news for gamers, P2P and self-hosted servers. Detect it: if your router's WAN address is in <span class="cmd">100.64.0.0/10</span> &mdash; or differs from what an external "what is my IP" site reports &mdash; you're behind CGNAT. The fixes: ask the ISP for a public IP, use a VPN/relay, or go IPv6.</p>
+
+  <h2>NAT and IPv6 &mdash; and the myth</h2>
+  <p>IPv6's 128-bit space has enough addresses for every grain of sand &mdash; so IPv6 doesn't need NAT for address saving. And now the myth, in RFC 4864's own words: <em>"NAT was not developed as a security mechanism"</em> and <em>"it is not a security mechanism."</em> NAT happens to block unsolicited inbound traffic &mdash; but only as a side effect of state tracking, not by design, and it blocks <em>everything</em> while providing no inspection. A real <strong>stateful firewall</strong> (which your router also runs) is the security layer. NAT translates; the firewall filters. They are not the same thing.</p>
+
+  <div class="callout">
+    <span class="title">Read next</span>
+    <p>NAT lives on the router &mdash; and so does its cousin <a href="vlan.html">VLAN</a> logic on the switch: one physical switch acting as several.</p>
+  </div>
+
+  <a class="back-top" href="index.html">&larr; Back to PC &amp; Network chapter</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Concepts verified against RFC 2663, RFC 3022, RFC 4864, RFC 6598, RFC 5737 and Cisco documentation (October 2026).</div>
+  </div>
+</footer>
+
+</body>
+</html>

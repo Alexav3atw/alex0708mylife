@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VLAN - Configuration and Trunking - alex0708mylife</title>
+<meta name="description" content="VLANs explained: how one switch becomes several, access vs trunk ports, 802.1Q tagging, router-on-a-stick and real Cisco configuration.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="index.html" class="active">PC &amp; Network</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">PC &amp; Network</a> / VLAN</p>
+  <h1>VLAN &mdash; Configuration and Trunking</h1>
+  <p class="tagline">One physical switch acting as several virtual switches &mdash; how it works, how to configure it, and how the traffic flows between them.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">A <strong>VLAN</strong> (Virtual Local Area Network) splits one physical switch into several <em>logical</em> switches. Devices in different VLANs cannot see each other at Layer 2 &mdash; as if they were on different hardware &mdash; until a router connects the two worlds. The reasons are security (finance can't sniff engineering), isolation and smaller broadcast domains.</p>
+
+  <div class="factgrid">
+    <div class="factcard">
+      <div class="icon">🔢</div>
+      <div class="stat">1&ndash;4094</div>
+      <div class="cap">Usable VLAN IDs &mdash; 0 and 4095 are reserved</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">🏷️</div>
+      <div class="stat">12 bits</div>
+      <div class="cap">The VLAN ID field inside an 802.1Q tag</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">🚫</div>
+      <div class="stat">VLAN 1</div>
+      <div class="cap">The default VLAN &mdash; auto-created, and best avoided for user traffic</div>
+    </div>
+  </div>
+
+  <h2>The picture to keep in mind</h2>
+
+  <div class="diagram">
+    <div class="chart-title">One switch, two worlds, one trunk</div>
+    <div class="chart-sub">Blue = VLAN 10 (Sales), orange = VLAN 20 (Engineering). Access ports carry one VLAN untagged; the trunk carries both, tagged, to the router &mdash; which is the only bridge between them.</div>
+    <svg viewBox="0 0 660 330" role="img" aria-label="Diagram of one switch with two VLANs and a trunk link to a router">
+      <style>
+        .v-t { font-family: system-ui, sans-serif; font-size: 11.5px; fill: #c3c2b7; }
+        .v-t2 { font-family: system-ui, sans-serif; font-size: 10px; fill: #898781; }
+        .v-box { fill: #1a1a19; stroke: rgba(255,255,255,0.15); }
+        .v-ip { font-family: ui-monospace, Consolas, monospace; font-size: 10px; fill: #ffffff; }
+      </style>
+
+      <!-- router (top) -->
+      <rect class="v-box" x="255" y="20" width="150" height="56" rx="8"/>
+      <text class="v-t" x="330" y="44" text-anchor="middle">Router (gateway)</text>
+      <text class="v-ip" x="330" y="60" text-anchor="middle">.1 of each VLAN</text>
+
+      <!-- trunk link -->
+      <line x1="330" y1="76" x2="330" y2="120" stroke="#c3c2b7" stroke-width="3"/>
+      <line x1="318" y1="76" x2="318" y2="120" stroke="#c3c2b7" stroke-width="3" stroke-dasharray="6 4"/>
+      <text class="v-t2" x="352" y="102" fill="#c3c2b7">trunk: both VLANs, tagged (802.1Q)</text>
+
+      <!-- switch (middle) -->
+      <rect class="v-box" x="180" y="120" width="300" height="64" rx="8"/>
+      <text class="v-t" x="330" y="146" text-anchor="middle">Switch</text>
+      <text class="v-t2" x="330" y="164" text-anchor="middle">VLAN 10 + VLAN 20 inside one box</text>
+
+      <!-- VLAN 10 side (blue) -->
+      <line x1="230" y1="184" x2="120" y2="238" stroke="#3987e5" stroke-width="2.5"/>
+      <line x1="260" y1="184" x2="170" y2="238" stroke="#3987e5" stroke-width="2.5"/>
+      <text class="v-t2" x="196" y="202" fill="#3987e5">access ports &middot; untagged</text>
+      <rect class="v-box" x="80" y="238" width="80" height="44" rx="8"/>
+      <text class="v-t" x="120" y="264" text-anchor="middle">PC</text>
+      <rect class="v-box" x="130" y="238" width="80" height="44" rx="8"/>
+      <text class="v-t" x="170" y="264" text-anchor="middle">PC</text>
+      <text class="v-t" x="170" y="302" text-anchor="middle" fill="#3987e5">VLAN 10 &mdash; Sales</text>
+
+      <!-- VLAN 20 side (orange) -->
+      <line x1="400" y1="184" x2="450" y2="238" stroke="#d95926" stroke-width="2.5"/>
+      <line x1="430" y1="184" x2="500" y2="238" stroke="#d95926" stroke-width="2.5"/>
+      <text class="v-t2" x="470" y="202" fill="#d95926">access ports &middot; untagged</text>
+      <rect class="v-box" x="420" y="238" width="80" height="44" rx="8"/>
+      <text class="v-t" x="460" y="264" text-anchor="middle">PC</text>
+      <rect class="v-box" x="470" y="238" width="80" height="44" rx="8"/>
+      <text class="v-t" x="510" y="264" text-anchor="middle">PC</text>
+      <text class="v-t" x="510" y="302" text-anchor="middle" fill="#d95926">VLAN 20 &mdash; Engineering</text>
+    </svg>
+  </div>
+
+  <h2>Access ports vs trunk ports</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Port type</th><th>Carries</th><th>Cisco configuration</th></tr>
+      <tr><td>Access</td><td>One VLAN, untagged &mdash; connects end devices (PCs, printers)</td><td><span class="cmd">switchport mode access</span> + <span class="cmd">switchport access vlan 10</span></td></tr>
+      <tr><td>Trunk</td><td>Multiple VLANs, tagged with 802.1Q &mdash; connects switches to switches, or a switch to a router</td><td><span class="cmd">switchport mode trunk</span> + allowed-VLAN list</td></tr>
+    </table>
+  </div>
+
+  <h2>802.1Q &mdash; the tag</h2>
+  <p>A trunk carries frames from several VLANs on one cable. To tell them apart, each frame gets a <strong>4-byte 802.1Q tag</strong> inserted after the source MAC address: a 16-bit <strong>TPID</strong> (<span class="cmd">0x8100</span> = "this frame is tagged"), a 3-bit priority field, one DEI bit, and the <strong>12-bit VLAN ID</strong> &mdash; which is why the range stops at 4094.</p>
+  <p>Every trunk also has a <strong>native VLAN</strong> (default: VLAN 1): frames that arrive <em>without</em> a tag belong to it. Both ends of the trunk must agree on the native VLAN &mdash; a mismatch can create loops. And the native VLAN is the chink in the armour: <strong>VLAN hopping</strong> attacks abuse it (double-tagging a frame so the outer tag is stripped and the inner one delivers the packet to a protected VLAN). The mitigations: keep hosts off VLAN 1, set the native VLAN to an unused ID, tag the native VLAN where supported, disable DTP auto-negotiation and unused ports, and prune trunks to only the VLANs they need.</p>
+
+  <h2>Inter-VLAN routing &mdash; the bridge between worlds</h2>
+  <p>Devices in different VLANs cannot talk at Layer 2 &mdash; that's the point. The bridge is a <strong>router</strong>, connected by a trunk. The classic design is <strong>router-on-a-stick</strong>: one trunk, and one subinterface per VLAN, each acting as that VLAN's gateway:</p>
+  <pre><code>interface GigabitEthernet0/0
+ no shutdown
+interface GigabitEthernet0/0.10
+ encapsulation dot1q 10
+ ip address 192.168.10.1 255.255.255.0</code></pre>
+  <p>Repeat the subinterface for VLAN 20, and the router routes between 192.168.10.x and 192.168.20.x. The alternative is a <strong>Layer 3 switch</strong>, which does the same job in hardware with an SVI per VLAN (<span class="cmd">interface vlan 10</span> + <span class="cmd">ip routing</span>).</p>
+
+  <h2>Configuration &mdash; the whole recipe</h2>
+  <pre><code>Switch(config)# vlan 10
+Switch(config-vlan)# name SALES
+Switch(config)# interface GigabitEthernet0/1
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 10
+Switch(config)# interface GigabitEthernet0/24
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# switchport trunk allowed vlan 10,20
+Switch# show vlan brief
+Switch# show interfaces trunk</code></pre>
+  <p>Interface naming varies by platform (<span class="cmd">Gi0/1</span> on older switches, <span class="cmd">Gi1/0/1</span> on newer ones) &mdash; check with <span class="cmd">show interfaces status</span>.</p>
+
+  <h2>Voice VLAN &mdash; one port, two VLANs</h2>
+  <p>An IP phone sits between the wall and the PC, sharing one access port. The <strong>voice VLAN</strong> solves it: the phone's traffic is tagged onto the voice VLAN (<span class="cmd">switchport voice vlan 20</span>), while the PC's data stays untagged on the access VLAN. One cable, two worlds.</p>
+
+  <div class="callout warn">
+    <span class="title">Best practices</span>
+    <p>Never use VLAN 1 for user traffic. Change the native VLAN on trunks. Prune trunks to the VLANs they actually carry (<span class="cmd">switchport trunk allowed vlan</span>). Disable unused ports and DTP negotiation. And document every VLAN: ID, name, subnet, gateway and purpose &mdash; the next technician will thank you.</p>
+  </div>
+
+  <div class="callout">
+    <span class="title">Read next</span>
+    <p>The cables under all of this have their own chapter: <a href="cabling.html">Network Cabling &mdash; Types and Purpose</a>.</p>
+  </div>
+
+  <a class="back-top" href="index.html">&larr; Back to PC &amp; Network chapter</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Configuration and standards verified against Cisco Catalyst 9300 documentation (IOS-XE 17.9), IEEE 802.1Q and Wikipedia (October 2026).</div>
+  </div>
+</footer>
+
+</body>
+</html>

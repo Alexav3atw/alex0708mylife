@@ -442,6 +442,26 @@ pre code {
   line-height: 1.6;
 }
 
+/* inline command chips (essentials pages) */
+.cmd {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 0.85em;
+  color: var(--ink);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 1px 7px;
+  white-space: nowrap;
+}
+.cmd.alt { color: var(--blue); border-color: rgba(57,135,229,0.35); }
+
+/* compact two-column key/action table for shortcuts */
+table.keys td:first-child {
+  white-space: nowrap;
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color: var(--ink);
+}
+
 .chapter-list { list-style: none; padding: 0; margin: 26px 0; max-width: 720px; }
 .chapter-list li { display: flex; gap: 14px; align-items: baseline; margin: 10px 0; }
 .chapter-list .num { color: var(--blue); font-variant-numeric: tabular-nums; min-width: 26px; }

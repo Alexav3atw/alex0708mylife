@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Networking Concepts - alex0708mylife</title>
+<meta name="description" content="Basic networking concepts explained in plain language: OSI and TCP/IP, IP addresses, subnets, MAC, DNS, DHCP, ports, and the path of a packet from your PC to the internet.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="index.html" class="active">PC &amp; Network</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">PC &amp; Network</a> / Basic Networking</p>
+  <h1>Basic Networking Concepts</h1>
+  <p class="tagline">Everything a technician needs to know about how networks actually work &mdash; explained in plain language, with the numbers that matter.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">A network is just computers talking. Everything else &mdash; addresses, models, protocols &mdash; exists so that the talking works reliably. This page covers the vocabulary and the mechanics, one concept at a time.</p>
+
+  <h2>The two models: OSI and TCP/IP</h2>
+  <p>The <strong>OSI model</strong> is the classic way to think about networking: seven layers, each with one job, each building on the one below. It is a <em>reference</em> model &mdash; a way of understanding &mdash; not a piece of software. The <strong>TCP/IP model</strong> is the four-layer model that the internet actually runs on. They map onto each other:</p>
+
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>#</th><th>OSI layer</th><th>Plain-language job</th><th>TCP/IP</th></tr>
+      <tr><td>7</td><td>Application</td><td>Network services for apps (HTTP, DNS, SMTP)</td><td rowspan="3">Application</td></tr>
+      <tr><td>6</td><td>Presentation</td><td>Formats, encodes, compresses, encrypts data</td></tr>
+      <tr><td>5</td><td>Session</td><td>Opens, manages and closes dialogues</td></tr>
+      <tr><td>4</td><td>Transport</td><td>End-to-end delivery, segmentation, reliability, ports</td><td>Transport</td></tr>
+      <tr><td>3</td><td>Network</td><td>Logical addressing and routing between networks</td><td>Internet</td></tr>
+      <tr><td>2</td><td>Data link</td><td>Frames and MAC addressing on the local link</td><td rowspan="2">Link</td></tr>
+      <tr><td>1</td><td>Physical</td><td>Bits and signals on the medium (cable, radio, light)</td></tr>
+    </table>
+  </div>
+
+  <h2>IP addresses &mdash; the postal system</h2>
+  <p>An <strong>IPv4 address</strong> is 32 bits, written as four numbers of 0&ndash;255: <span class="cmd">192.168.1.10</span>. There are 2&sup3;&sup2; = 4,294,967,296 possible addresses. <strong>IPv6</strong> is the 128-bit successor, written as eight hex groups (<span class="cmd">2001:db8::1</span>) &mdash; an unimaginably larger space, which is why IPv6 doesn't need NAT.</p>
+  <p>Addresses come in three flavours:</p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Kind</th><th>Ranges</th><th>Meaning</th></tr>
+      <tr><td>Private (RFC 1918)</td><td><span class="cmd">10.0.0.0/8</span> &middot; <span class="cmd">172.16.0.0/12</span> &middot; <span class="cmd">192.168.0.0/16</span></td><td>Free for anyone, never routed on the public internet &mdash; what your home network uses</td></tr>
+      <tr><td>Public</td><td>Everything else</td><td>Globally routable, allocated through registries and ISPs</td></tr>
+      <tr><td>Special</td><td><span class="cmd">127.0.0.1</span> (loopback) &middot; <span class="cmd">169.254.0.0/16</span> (APIPA)</td><td>Loopback never leaves the machine; APIPA means "DHCP failed, I gave myself an address" &mdash; only works on the local link</td></tr>
+    </table>
+  </div>
+
+  <h2>Subnets and CIDR &mdash; slicing the pie</h2>
+  <p>A <strong>subnet mask</strong> is 32 bits that say which part of an address is the <em>network</em> and which part is the <em>host</em>. CIDR notation (<span class="cmd">/24</span>) simply counts the network bits. The rule of thumb: if the destination is in <em>my</em> subnet, I talk to it directly; if not, I send it to the router. Each subnet loses two addresses: the network address and the broadcast address.</p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>CIDR</th><th>Mask</th><th>Total addresses</th><th>Usable hosts</th></tr>
+      <tr><td>/24</td><td>255.255.255.0</td><td>256</td><td>254</td></tr>
+      <tr><td>/16</td><td>255.255.0.0</td><td>65,536</td><td>65,534</td></tr>
+      <tr><td>/8</td><td>255.0.0.0</td><td>16,777,216</td><td>16,777,214</td></tr>
+    </table>
+  </div>
+
+  <h2>MAC addresses &mdash; the name tag</h2>
+  <p>A <strong>MAC address</strong> is 48 bits, written as six hex pairs: <span class="cmd">00:1A:2B:3C:4D:5E</span>. It is burned into every network interface and identifies it on the local link (Layer 2). The first 24 bits are the manufacturer's OUI, assigned by IEEE. The broadcast MAC &mdash; "everyone on this link" &mdash; is <span class="cmd">FF:FF:FF:FF:FF:FF</span>. Roughly: IP addresses route <em>between</em> networks; MAC addresses deliver <em>within</em> one.</p>
+
+  <h2>DNS &mdash; the phone book</h2>
+  <p><strong>DNS</strong> turns names into records. When you type a name, your computer asks a recursive resolver, which walks the hierarchy &mdash; root servers, then the top-level domain, then the authoritative server for the domain &mdash; and caches the answer. The record types you'll meet:</p>
+  <ul>
+    <li><strong>A</strong> = IPv4 address &middot; <strong>AAAA</strong> = IPv6 address &middot; <strong>CNAME</strong> = alias to another name</li>
+    <li><strong>MX</strong> = mail servers &middot; <strong>NS</strong> = authoritative name servers &middot; <strong>TXT</strong> = text records (SPF, DKIM, DMARC live here)</li>
+  </ul>
+
+  <h2>DHCP &mdash; the address desk</h2>
+  <p><strong>DHCP</strong> hands out IP addresses automatically. The dance is called <strong>DORA</strong>: the client broadcasts <em>Discover</em>, a server answers with an <em>Offer</em>, the client <em>Requests</em> that offer, and the server <em>Acknowledges</em>. The address comes as a <strong>lease</strong> with an expiry &mdash; the client renews before it runs out. Servers listen on UDP 67, clients on 68.</p>
+
+  <h2>The default gateway &mdash; the front door</h2>
+  <p>The <strong>default gateway</strong> is the router a device sends everything to that isn't on its own subnet &mdash; the "router of last resort". No gateway configured = no internet, no matter how healthy the rest of the network is. It's one of the first things to check when a device "has no internet but the Wi-Fi works".</p>
+
+  <h2>Ports &mdash; the doors on the house</h2>
+  <p>A <strong>port</strong> is a 16-bit number (0&ndash;65535) that identifies which service on a machine should receive the data. One IP address, 65,535 doors. The famous ones:</p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Service</th><th>Port</th><th>Protocol</th><th>Service</th><th>Port</th><th>Protocol</th></tr>
+      <tr><td>FTP data / control</td><td>20 / 21</td><td>TCP</td><td>POP3</td><td>110</td><td>TCP</td></tr>
+      <tr><td>SSH</td><td>22</td><td>TCP</td><td>IMAP</td><td>143</td><td>TCP</td></tr>
+      <tr><td>Telnet</td><td>23</td><td>TCP</td><td>HTTPS</td><td>443</td><td>TCP</td></tr>
+      <tr><td>SMTP</td><td>25</td><td>TCP</td><td>RDP</td><td>3389</td><td>TCP/UDP</td></tr>
+      <tr><td>DNS</td><td>53</td><td>TCP+UDP</td><td>MySQL</td><td>3306</td><td>TCP</td></tr>
+      <tr><td>DHCP server / client</td><td>67 / 68</td><td>UDP</td><td>PostgreSQL</td><td>5432</td><td>TCP</td></tr>
+      <tr><td>HTTP</td><td>80</td><td>TCP</td><td></td><td></td><td></td></tr>
+    </table>
+  </div>
+
+  <h2>The devices &mdash; who does what</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Device</th><th>Layer</th><th>Job</th></tr>
+      <tr><td>Router</td><td>3</td><td>Routes packets between IP networks; home routers bundle NAT, DHCP and a firewall</td></tr>
+      <tr><td>Switch</td><td>2</td><td>Forwards Ethernet frames by MAC address within a LAN; supports VLANs</td></tr>
+      <tr><td>Access point</td><td>2</td><td>Bridges Wi-Fi clients onto the wired network</td></tr>
+      <tr><td>Modem</td><td>1</td><td>Converts data to and from the ISP's medium (DSL, cable, fibre). A home "modem" is usually a combo: modem + router + switch + AP + firewall</td></tr>
+    </table>
+  </div>
+
+  <h2>A packet's journey &mdash; the whole story at once</h2>
+
+  <div class="diagram">
+    <div class="chart-title">From your PC to the internet, step by step</div>
+    <div class="chart-sub">Blue = outbound, orange = the reply. This is the entire home network in one picture.</div>
+    <svg viewBox="0 0 660 240" role="img" aria-label="Diagram of a packet travelling from a PC through a switch and router to the internet and back">
+      <style>
+        .p-t { font-family: system-ui, sans-serif; font-size: 11.5px; fill: #c3c2b7; }
+        .p-t2 { font-family: system-ui, sans-serif; font-size: 10px; fill: #898781; }
+        .p-box { fill: #1a1a19; stroke: rgba(255,255,255,0.15); }
+        .p-ip { font-family: ui-monospace, Consolas, monospace; font-size: 10px; fill: #ffffff; }
+      </style>
+
+      <!-- PC -->
+      <rect class="p-box" x="30" y="90" width="110" height="60" rx="8"/>
+      <text class="p-t" x="85" y="115" text-anchor="middle">Your PC</text>
+      <text class="p-ip" x="85" y="133" text-anchor="middle">192.168.1.10</text>
+
+      <!-- switch -->
+      <rect class="p-box" x="210" y="95" width="90" height="50" rx="8"/>
+      <text class="p-t" x="255" y="116" text-anchor="middle">Switch</text>
+      <text class="p-t2" x="255" y="132" text-anchor="middle">by MAC address</text>
+
+      <!-- router -->
+      <rect class="p-box" x="380" y="75" width="130" height="90" rx="8"/>
+      <text class="p-t" x="445" y="100" text-anchor="middle">Router</text>
+      <text class="p-t2" x="445" y="116" text-anchor="middle">routes + NAT + DHCP</text>
+      <text class="p-ip" x="445" y="136" text-anchor="middle">inside 192.168.1.1</text>
+      <text class="p-ip" x="445" y="151" text-anchor="middle">outside 203.0.113.5</text>
+
+      <!-- internet cloud -->
+      <ellipse class="p-box" cx="590" cy="120" rx="58" ry="34"/>
+      <text class="p-t" x="590" y="125" text-anchor="middle">Internet</text>
+
+      <!-- outbound arrows (blue) -->
+      <line x1="140" y1="112" x2="210" y2="115" stroke="#3987e5" stroke-width="2.5" marker-end="url(#arrB)"/>
+      <line x1="300" y1="116" x2="380" y2="112" stroke="#3987e5" stroke-width="2.5" marker-end="url(#arrB)"/>
+      <line x1="510" y1="112" x2="532" y2="115" stroke="#3987e5" stroke-width="2.5" marker-end="url(#arrB)"/>
+      <text class="p-t2" x="172" y="96" text-anchor="middle" fill="#3987e5">1. frame</text>
+      <text class="p-t2" x="340" y="96" text-anchor="middle" fill="#3987e5">2. route + NAT</text>
+
+      <!-- reply arrows (orange) -->
+      <line x1="532" y1="128" x2="510" y2="128" stroke="#d95926" stroke-width="2.5" marker-end="url(#arrO)"/>
+      <line x1="380" y1="128" x2="300" y2="124" stroke="#d95926" stroke-width="2.5" marker-end="url(#arrO)"/>
+      <line x1="210" y1="126" x2="140" y2="128" stroke="#d95926" stroke-width="2.5" marker-end="url(#arrO)"/>
+      <text class="p-t2" x="340" y="150" text-anchor="middle" fill="#d95926">3. NAT maps it back</text>
+      <text class="p-t2" x="172" y="148" text-anchor="middle" fill="#d95926">4. delivered to PC</text>
+
+      <defs>
+        <marker id="arrB" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 z" fill="#3987e5"/>
+        </marker>
+        <marker id="arrO" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 z" fill="#3997e5"/>
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <ol>
+    <li>Your PC (<span class="cmd">192.168.1.10</span>) wants to reach <span class="cmd">8.8.8.8</span>. The mask says "not my subnet" &mdash; so the PC ARPs for the gateway <span class="cmd">192.168.1.1</span>.</li>
+    <li>The frame reaches the <strong>switch</strong>, which forwards it by MAC address to the router's port.</li>
+    <li>The <strong>router</strong> routes and NATs: the source address becomes the public IP, and the packet heads to the ISP.</li>
+    <li>The ISP routes it across the internet; the reply comes back to the router.</li>
+    <li>The <strong>NAT table</strong> maps the reply back to <span class="cmd">192.168.1.10</span>; the switch delivers the frame to your PC.</li>
+  </ol>
+
+  <div class="callout">
+    <span class="title">Read next</span>
+    <p>Step 3 hides a whole science: <a href="nat.html">NAT, Network Address Translation</a> &mdash; how one public address serves a whole house.</p>
+  </div>
+
+  <a class="back-top" href="index.html">&larr; Back to PC &amp; Network chapter</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Concepts verified against RFC 1122, RFC 1918, RFC 4291 and Wikipedia references (October 2026).</div>
+  </div>
+</footer>
+
+</body>
+</html>
