@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing - alex0708mylife</title>
+<meta name="description" content="My portfolio watchlist: latest prices, daily and longer trends, and recent headlines for each stock, updated twice a day automatically.">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  /* investing chapter - stock cards on the site's dark theme */
+  :root {
+    --up:   #0ca30c;   /* delta up - validated on this surface */
+    --down: #e66767;   /* delta down - validated pair; always shown with arrow + sign */
+    --flat: #898781;   /* unchanged - muted ink */
+  }
+  .up   { color: var(--up); }
+  .down { color: var(--down); }
+  .flat { color: var(--flat); }
+
+  .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 26px 0; }
+  .s-tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; }
+  .s-tile .label { color: var(--ink-3); font-size: 0.8rem; }
+  .s-tile .value { font-size: 1.3rem; font-weight: 650; margin-top: 4px; line-height: 1.2; }
+  .s-tile .note { color: var(--ink-2); font-size: 0.8rem; margin-top: 4px; }
+
+  .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 16px; margin: 26px 0; }
+  @media (max-width: 460px) { .stock-grid { grid-template-columns: 1fr; } }
+  .stock-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+
+  .sc-name { font-size: 1.06rem; margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .sc-tick { font-size: 0.7rem; color: var(--ink-3); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; font-variant-numeric: tabular-nums; }
+  .sc-stale { font-size: 0.7rem; color: var(--ink-3); font-style: italic; }
+  .sc-desc { margin: 0; color: var(--ink-2); font-size: 0.85rem; line-height: 1.5; }
+
+  .sc-quote { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .sc-price { font-size: 1.4rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .sc-ccy { font-size: 0.8rem; color: var(--ink-3); font-weight: 400; }
+  .sc-day { font-size: 0.95rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .sc-eur { font-size: 0.8rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+  .sc-trends { display: flex; gap: 8px; flex-wrap: wrap; }
+  .tb { font-size: 0.75rem; border-radius: 6px; padding: 2px 8px; border: 1px solid var(--border); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  .sc-spark { width: 100%; height: 36px; display: block; }
+
+  .sc-news { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); padding-top: 8px; display: flex; flex-direction: column; gap: 5px; }
+  .sc-news li { font-size: 0.82rem; line-height: 1.45; color: var(--ink-2); }
+  .sc-news a { color: var(--ink-2); }
+  .sc-news a:hover { color: var(--blue); }
+  .n-date { color: var(--ink-3); font-size: 0.75rem; margin-right: 6px; font-variant-numeric: tabular-nums; }
+  .sc-none { color: var(--ink-3); font-size: 0.8rem; border-top: 1px solid var(--border); padding-top: 8px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="../pc-network/index.html">PC &amp; Network</a>
+      <a href="index.html" class="active">Investing</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / Investing</p>
+  <h1>Investing</h1>
+  <p class="tagline">My portfolio watchlist &mdash; latest prices, trends and headlines, all on one page.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">This page updates itself <strong>twice a day, automatically</strong> (around 06:00 and 16:00 Belgian time in winter; one hour later in summer). A script on GitHub's servers fetches the latest price and up to three recent headlines per stock &mdash; prices from Yahoo Finance, headlines from Google News, each linking to its source. Last update: <strong>{{STAMP}}</strong>.</p>
+
+  <div class="summary">
+{{SUMMARY}}
+    <div class="s-tile"><div class="label">Updates</div><div class="value">2&times; daily</div><div class="note">06:00 &amp; 16:00 Belgian time (winter)</div></div>
+    <div class="s-tile"><div class="label">Sorted</div><div class="value">A&ndash;Z</div><div class="note">alphabetically by company name</div></div>
+  </div>
+
+  <div class="stock-grid">
+{{ROWS}}
+  </div>
+
+  <div class="callout">
+    <span class="title">How this works</span>
+    <p>The page is rebuilt automatically by a script in the repository (<code>scripts/update_investing.py</code>, scheduled in <code>.github/workflows/investing.yml</code>), the same pattern as the Space news page. If a data source fails, the last known values stay on the page. Colours show the daily change and the one-week / one-month trend: green up, red down, grey unchanged &mdash; the arrow and sign always carry the meaning too. Nothing here is financial advice; it is a personal watchlist.</p>
+  </div>
+
+  <a class="back-top" href="../index.html">&larr; Back to home</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Prices from Yahoo Finance, headlines from Google News. A personal watchlist, not investment advice. Updated twice a day by GitHub Actions.</div>
+  </div>
+</footer>
+
+</body>
+</html>

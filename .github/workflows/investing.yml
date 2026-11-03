@@ -1,0 +1,38 @@
+name: Update investing portfolio
+
+on:
+  schedule:
+    # 05:00 and 15:00 UTC = 06:00 and 16:00 Belgian time in winter
+    # (one hour later in summer - GitHub cron schedules run on UTC only)
+    - cron: "0 5,15 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-investing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch prices and news, rebuild the investing page
+        run: python scripts/update_investing.py
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes - nothing to push."
+          else
+            git commit -m "Investing portfolio update (automated)"
+            git push
+          fi

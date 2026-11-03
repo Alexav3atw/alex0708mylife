@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investing - alex0708mylife</title>
+<meta name="description" content="My portfolio watchlist: latest prices, daily and longer trends, and recent headlines for each stock, updated twice a day automatically.">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  /* investing chapter - stock cards on the site's dark theme */
+  :root {
+    --up:   #0ca30c;   /* delta up - validated on this surface */
+    --down: #e66767;   /* delta down - validated pair; always shown with arrow + sign */
+    --flat: #898781;   /* unchanged - muted ink */
+  }
+  .up   { color: var(--up); }
+  .down { color: var(--down); }
+  .flat { color: var(--flat); }
+
+  .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 26px 0; }
+  .s-tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; }
+  .s-tile .label { color: var(--ink-3); font-size: 0.8rem; }
+  .s-tile .value { font-size: 1.3rem; font-weight: 650; margin-top: 4px; line-height: 1.2; }
+  .s-tile .note { color: var(--ink-2); font-size: 0.8rem; margin-top: 4px; }
+
+  .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 16px; margin: 26px 0; }
+  @media (max-width: 460px) { .stock-grid { grid-template-columns: 1fr; } }
+  .stock-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+
+  .sc-name { font-size: 1.06rem; margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .sc-tick { font-size: 0.7rem; color: var(--ink-3); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; font-variant-numeric: tabular-nums; }
+  .sc-stale { font-size: 0.7rem; color: var(--ink-3); font-style: italic; }
+  .sc-desc { margin: 0; color: var(--ink-2); font-size: 0.85rem; line-height: 1.5; }
+
+  .sc-quote { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .sc-price { font-size: 1.4rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .sc-ccy { font-size: 0.8rem; color: var(--ink-3); font-weight: 400; }
+  .sc-day { font-size: 0.95rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .sc-eur { font-size: 0.8rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+  .sc-trends { display: flex; gap: 8px; flex-wrap: wrap; }
+  .tb { font-size: 0.75rem; border-radius: 6px; padding: 2px 8px; border: 1px solid var(--border); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  .sc-spark { width: 100%; height: 36px; display: block; }
+
+  .sc-news { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); padding-top: 8px; display: flex; flex-direction: column; gap: 5px; }
+  .sc-news li { font-size: 0.82rem; line-height: 1.45; color: var(--ink-2); }
+  .sc-news a { color: var(--ink-2); }
+  .sc-news a:hover { color: var(--blue); }
+  .n-date { color: var(--ink-3); font-size: 0.75rem; margin-right: 6px; font-variant-numeric: tabular-nums; }
+  .sc-none { color: var(--ink-3); font-size: 0.8rem; border-top: 1px solid var(--border); padding-top: 8px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="../pc-network/index.html">PC &amp; Network</a>
+      <a href="index.html" class="active">Investing</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / Investing</p>
+  <h1>Investing</h1>
+  <p class="tagline">My portfolio watchlist &mdash; latest prices, trends and headlines, all on one page.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">This page updates itself <strong>twice a day, automatically</strong> (around 06:00 and 16:00 Belgian time in winter; one hour later in summer). A script on GitHub's servers fetches the latest price and up to three recent headlines per stock &mdash; prices from Yahoo Finance, headlines from Google News, each linking to its source. Last update: <strong>03 November 2026, 09:38 UTC</strong>.</p>
+
+  <div class="summary">
+    <div class="s-tile"><div class="label">Best today</div><div class="value up">&#9650; +2,51 %</div><div class="note">Berkshire Hathaway Inc.</div></div>
+    <div class="s-tile"><div class="label">Worst today</div><div class="value down">&#9660; -2,53 %</div><div class="note">C3.ai</div></div>
+    <div class="s-tile"><div class="label">Updates</div><div class="value">2&times; daily</div><div class="note">06:00 &amp; 16:00 Belgian time (winter)</div></div>
+    <div class="s-tile"><div class="label">Sorted</div><div class="value">A&ndash;Z</div><div class="note">alphabetically by company name</div></div>
+  </div>
+
+  <div class="stock-grid">
+    <div class="stock-card">
+      <h2 class="sc-name">Aker ASA <span class="sc-tick">AKER.OL</span></h2>
+      <p class="sc-desc">Norwegian industrial investment group with holdings in energy, offshore services and marine industries.</p>
+      <div class="sc-quote">
+        <span class="sc-price">1.120,00 <span class="sc-ccy">NOK</span></span> <span class="sc-day up">&#9650; +0,18 %</span> <span class="sc-eur">&asymp; &euro;108,36</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb down">1W &#9660; -3,78 %</span>
+        <span class="tb down">1M &#9660; -20,11 %</span>
+      </div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 1.402,00 to 1.120,00 (-20,11 %)</title><polyline points="0.0,4.7 10.5,2.5 21.0,3.1 31.4,9.8 41.9,9.0 52.4,10.4 62.9,14.2 73.3,16.1 83.8,19.1 94.3,19.1 104.8,28.2 115.2,26.4 125.7,25.4 136.2,30.1 146.7,30.3 157.1,29.5 167.6,28.9 178.1,27.8 188.6,27.2 199.0,28.9 209.5,33.5 220.0,33.3" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">27 Oct</span> <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQbTAzTlkwWm5aYWV3bkU0UDFzNnFtWHlwZ3NDR0dJNUZiQ194LWwzVEwyTTJKV1RMeEJlWHk2UUhxWTdaODgySk1PUWh6YWlRS3pfVUs3UmltT3pCVlk3VlgxZkJTdHZXUUV5TmlHMHkySkNneFNUNFp4X01QVDNNN01rUGp5QTFramRRTGJiNjROQkdHSDJBbjB3dEZEXzRNOTVmQ2dSN2VMczVNd0E4N2hFcDV5SkQ0T3o0eGhEdFhOVDZNZkJvczJwYw?oc=5" target="_blank" rel="noopener">Aker ASA: Invitation to Presentation of Third Quarter Results 2026</a></li>
+      <li><span class="n-date">01 Oct</span> <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQN0tJWHV2d052cHJ0clhEeXhrTXVleUs3VW9mSGdDYmk2Z0I5alNwYlUyWXRJbmhNUDZZVzBTanJyNlBSbGVvYmNLZThIU1I1TWtENnl2YTV0NERRUTRRajlIQ0RQZUxGMWZxc0lmTG4zUl9TWThkbnFjNk1naTU5V0ZKZlVucGlFTWw5UklVVlJBOWwwemJSU0Nxb2RVN3Q1TkZJOXVCa3NwVU90cEZzb01B?oc=5" target="_blank" rel="noopener">Aker ASA (AKER) Completes Merger With Aker BioMarine</a></li>
+      <li><span class="n-date">29 Sep</span> <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVjZNWU9LQWdnTnJ6Y1RpZTJIMkNZMWlUMTltOUlObFdvTVkwR3V1MlBaMXR3RldvX3I3d0JkMW5nWk5HcUhIam45NlJBeFJCYjZXUTZ3RW8yTkFZNTVzeTJ1MF91UG1mbFAzbGZKd0VhWnZnc3dqTjROR0dfaE14Nk9iSkxLQnZFdGdXQUdnMjJXRV9BQmo0bldrTnk2SEM4SmhzNWJmenBFXzZRWDJFWkZEa0EzRzZ4UXJnWHRSdmlobUk2Uk5CcFlybUlWWmtHS1FYNjBRZw?oc=5" target="_blank" rel="noopener">Aker ASA: Conditions for completion of merger with Aker BioMarine satisfied</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">Ascencio SA <span class="sc-tick">ASCE.BR</span></h2>
+      <p class="sc-desc">Belgian real-estate investment trust (SIR) focused on out-of-town retail: retail parks and supermarkets in Belgium and France.</p>
+      <div class="sc-quote">
+        <span class="sc-price">53,00 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,38 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb down">1W &#9660; -0,93 %</span>
+        <span class="tb up">1M &#9650; +2,91 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 51,50 to 53,00 (+2,91 %)</title><polyline points="0.0,33.5 10.5,20.0 21.0,22.7 31.4,28.1 41.9,20.0 52.4,21.4 62.9,11.9 73.3,7.9 83.8,18.7 94.3,20.0 104.8,17.3 115.2,21.4 125.7,7.9 136.2,7.9 146.7,6.5 157.1,2.5 167.6,6.5 178.1,11.9 188.6,9.2 199.0,16.0 209.5,16.0 220.0,13.3" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-none">No recent headlines.</div>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">bpost NV/SA <span class="sc-tick">BPOST.BR</span></h2>
+      <p class="sc-desc">Belgian postal operator: mail, parcels and e-commerce logistics in Belgium and abroad.</p>
+      <div class="sc-quote">
+        <span class="sc-price">1,12 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,71 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb up">1W &#9650; +5,45 %</span>
+        <span class="tb up">1M &#9650; +0,54 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 1,12 to 1,12 (+0,54 %)</title><polyline points="0.0,8.7 10.5,4.3 21.0,11.3 31.4,14.9 41.9,8.7 52.4,14.0 62.9,3.4 73.3,13.1 83.8,15.8 94.3,2.5 104.8,9.6 115.2,20.2 125.7,15.8 136.2,18.4 146.7,22.0 157.1,26.4 167.6,31.7 178.1,33.5 188.6,32.6 199.0,30.0 209.5,2.5 220.0,6.0" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">21 Oct</span> <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE94NHZpM2s5THJoLWl0OVNVSFRRTUhsU2h6Wm01bDVYUFVpZlROcmVCX2VyanJadzZVNEs0bHFuSXY4UVJ6VHllaFRKZ3B1cTR4YUNaS2RfbjA1NkVWZXNwZXktdXJTYkM3MVlldk5UaURNT2s?oc=5" target="_blank" rel="noopener">More than 4 in 10 Bpost vans are Electric</a></li>
+      <li><span class="n-date">05 Oct</span> <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRE9hMXVha1BsVmlRVGFPdGNPcTk0ZHlmelF4VFo3ZnI2UGFobE1CZ2tMOElFX3V1bERsaHFiTUZpdDFqdlFWMUk0N2xGMWtTZy1DOWoyeVl4N2gyNV9kb0R3MHhQNVVzY3Y4alp1WWdjRU42eldQT2N3cW5DUTZ2LWhWN1YzTnlrbDFwcDJZcnBvbTEtcE40UkVtcHRLX25GQW9mTGpZcVg?oc=5" target="_blank" rel="noopener">Bpost increases cost of sending parcels and letters from 1 January 2027</a></li>
+      <li><span class="n-date">04 Sep</span> <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPLWI4VG9ERTJVQ0l1Y0tmd2U0ZFI1Mk5mNFJYMWloUEZfY3ROa2FzRUtqZXZvWlR6aEcwUmx6dEZucUxQbkdRMER1WlFpaHpPX1BCWVA3RWUtbk55Wm9PUGZ3aXUwVWUzRDhMVlZ6MXE3RjRsWTlHYThvWFRSUmgtNXVkWExMWXFXcDBGVEEzeUJ1SEN5ZFF3blZIVVRadXNWdHhUM3ozYmduNWNESGZOMA?oc=5" target="_blank" rel="noopener">Bpost equips 93,000 parcel containers with live trackers to optimize its logistics flows</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">Berkshire Hathaway Inc. <span class="sc-tick">BRK-B</span></h2>
+      <p class="sc-desc">Warren Buffett's US holding company: insurance, railroads, energy and a large portfolio of listed companies.</p>
+      <div class="sc-quote">
+        <span class="sc-price">556,11 <span class="sc-ccy">USD</span></span> <span class="sc-day up">&#9650; +2,51 %</span> <span class="sc-eur">&asymp; &euro;496,66</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb up">1W &#9650; +1,38 %</span>
+        <span class="tb up">1M &#9650; +10,64 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 502,65 to 556,11 (+10,64 %)</title><polyline points="0.0,33.5 10.5,32.6 21.0,31.8 31.4,31.4 41.9,28.6 52.4,26.0 62.9,24.8 73.3,23.1 83.8,19.8 94.3,20.1 104.8,16.5 115.2,16.3 125.7,11.9 136.2,12.4 146.7,7.8 157.1,10.6 167.6,6.9 178.1,10.1 188.6,11.6 199.0,10.7 209.5,10.4 220.0,2.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQdzg5Z0JmTGJKTXNlaWROTlRkLW5FYkxFN1pNT0dBcE85d1Y5akRqOFBfeWc5MU4xcFAxOU9oWnFIYm40ejNnRkNxUkJsbnVxR2RYb0ZUdzFGZmFNTDB6TDYwOURHbmxZaTJGeU41VXBtWG0yTExhYU1JTlJvQzVORU5KU0lNdzYwQmdsaDVBMGNWMkdNY0dMNTktMA?oc=5" target="_blank" rel="noopener">Berkshire Hathaway’s Alphabet Loss Exposes Weak Stock-Picking Record</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPTGI0X1ZyaHhPM3BJeFBlRmtFZzBuTm9sbXRLdy1aU1BvQXFUOFZCVG1KWTRoNy1pR1N3dV8waExaeEdNRFVWZ3ZPZHRGdUdrQ1FxbWFGNnF1VzlJVlQtVjRidncwYjB3emk2c3FkR2VYM2tSLW5kWXNlcURwMHViZF93MV9GRDNJOGhMTV9OU0lxT3IwcUZueg?oc=5" target="_blank" rel="noopener">1 of Greg Abel&#x27;s Favorite Stocks and a Top 5 Berkshire Hathaway Holding Just Suffered a Devastating Decline</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPWEpBZDRaVGZiU1gyRXdOQ0IwYkFINklhcXpIT1RNVmNHWnFWY2VWNkNFc0N4NDZrSTdmQTREQVFReTJlaV84VUlDOFFIY25hLW1yaGFtamJnQTQyVkxoUkp4ZlN0aGExeTdKLTZNOXNqUUdOTnctQ0dTZldSaFNiY281RTlUY05HRTQtUjBnU0ZKVmpzRzA0M181N3I4VDJHLUY2bA?oc=5" target="_blank" rel="noopener">History Says Berkshire Hathaway Stock Rewards Patience: It Rose in 50 of the Last 61 Years</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">BYD Company Limited <span class="sc-tick">BY6.VI</span></h2>
+      <p class="sc-desc">Chinese maker of electric vehicles and batteries, among the world's largest EV producers.</p>
+      <div class="sc-quote">
+        <span class="sc-price">8,19 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,38 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb up">1W &#9650; +1,90 %</span>
+        <span class="tb down">1M &#9660; -2,60 %</span>
+      </div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 8,41 to 8,19 (-2,60 %)</title><polyline points="0.0,10.5 10.5,2.8 21.0,5.6 31.4,10.2 41.9,13.7 52.4,2.5 62.9,2.5 73.3,11.9 83.8,14.1 94.3,13.0 104.8,12.9 115.2,13.1 125.7,12.3 136.2,15.4 146.7,29.5 157.1,19.7 167.6,22.8 178.1,23.8 188.6,33.5 199.0,29.8 209.5,16.7 220.0,17.7" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPRU1oODR6MVZQV3NJazVfWHlmaUYtaFNaeU9zVFpwb1VaYlB2REZnU3ZYV0JTYWdydWVMWTBmRmlYYkM5NHEzcTZqZDNvSFFJQkxDbmtsdGlxOGJSWDZGVldYMU5aVWFwY2dKU29Ib0dUbWRTc1VEdVFLNlZKTlRaNUYtWUUzT3VDcExKdnh3dTY0My1tZWZXcFZXSDBURzhYN1RKdlVqV0xyRlpZRTZoOFo1aW0?oc=5" target="_blank" rel="noopener">BYD Reports Higher Sales for Sixth Month on Exports; Shares Gain</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxObzVodU83U1RYSHNBU1JkbFNNSmstWXBaMmJWQV9LcGI3S2VEdDNEUjNKU0xLRDJrdGxPazFkT2RJYnQwUEJ2aHRXclIxck1yRnFIdnF1YU54eElDRDBmZUQ5NUdqRV9mQmY2VVhCMjJyQ2ZFSjQ1U2FqaHBFVEIzMGJNY1Jqai14MFhPOXJGZHozc3pSekMwdEFtUm5Dc2ZL?oc=5" target="_blank" rel="noopener">BYD’s 3 million USD supercar Yangwang U9 Xtreme crashed in China</a></li>
+      <li><span class="n-date">03 Nov</span> <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRnpNcVZHSkRjVXJLLU1xTVdjLVVuNjZVUDk1Y2U1N1JKVF9EWGNPeGt4cWFnQWFGUnpSZDBvaE1PRjcwMzNBSi04NWZzX3dkd0hNTXF6WXptdjltTjRZMmhtOUJvRG8yQTAySzhhV1EteGFrWnd6eHJldXhCSnVKeC1WWGRrX3ZVYVFReks5SkpuMFZJUWY3NW8ycjdoM1lrc0t3Nm56c0pGQQ?oc=5" target="_blank" rel="noopener">BYD’s 300-MPH Electric Hypercar Crashed During Testing. The Driver Survived</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">C3.ai <span class="sc-tick">AI</span></h2>
+      <p class="sc-desc">US enterprise software company offering AI applications for industry and government.</p>
+      <div class="sc-quote">
+        <span class="sc-price">11,55 <span class="sc-ccy">USD</span></span> <span class="sc-day down">&#9660; -2,53 %</span> <span class="sc-eur">&asymp; &euro;10,32</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb down">1W &#9660; -9,70 %</span>
+        <span class="tb up">1M &#9650; +4,90 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 11,01 to 11,55 (+4,90 %)</title><polyline points="0.0,33.5 10.5,32.1 21.0,29.5 31.4,29.7 41.9,27.8 52.4,24.5 62.9,23.1 73.3,16.1 83.8,22.0 94.3,13.5 104.8,28.1 115.2,28.8 125.7,21.7 136.2,19.9 146.7,15.7 157.1,8.2 167.6,2.5 178.1,11.2 188.6,10.5 199.0,13.3 209.5,18.9 220.0,24.1" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNamtVMFd1ek9aOEhIaVBSdGU1REE2VDdhWDl1VlJEbFFFdE13Z25kQUcyeWJtekQyZDhqWm9fZmVBZDlSVmptRmVCbm56bUx4TE5fMUFVdmZtUXloRW4xSWVPdm9ZUDgwdnVEVElQNmNOM1k4VEpmUGFpX1BSaFJiN2lhYTEzSEpiNGc?oc=5" target="_blank" rel="noopener">C3.ai, Inc. (AI) Sees a More Significant Dip Than Broader Market: Some Facts to Know</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNSWNnSjl5WC02dnNKd3hQTUxHU21SRk9yZXpKcUc1akI5N0RzUzhQVHYtZ3JRbmFKZS0tWnQ4WXg4MHFlOU1NWGZOU3UyRmwyVVRLM1h6dnF6NWV2RGdxUkgwOS1XNmJPOEdaSlhKbEdSUVJBaGswVGowXzcxQ0RtODNobFFJWHZYRXU3SHpnYUVBdEMzenB6SnFfYUMzdWV6M204?oc=5" target="_blank" rel="noopener">C3.ai vs. SentinelOne: Falling Revenue vs. Steady Sales Growth</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOWV9ScW5FRW1jQnJhMUtSRlJ0WjdmU1BPZGdnYVA0UnlWRGx5LVJKcnRWem5KN2kwcnhfaXlBWTZrZXpCMkRpN1pMUC00ZHIwU05uNzlTVGJ1cFpXYk5sUWJobDV2M3dGbVhyd0ZEVWtuLUFVMlhRdmh6eWVRNnpKV00xcnlibjkxS242V3RwN1pkcGZ6aTBtU1MwcHpYZi10b2RB?oc=5" target="_blank" rel="noopener">C3.ai: What&#x27;s Behind the Stock&#x27;s Surge in the Past 3 Months?</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">Care Property Invest NV <span class="sc-tick">CPINV.BR</span></h2>
+      <p class="sc-desc">Belgian healthcare real-estate investor: care homes and housing with care in Belgium, the Netherlands, Spain and Ireland.</p>
+      <div class="sc-quote">
+        <span class="sc-price">12,40 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,32 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb down">1W &#9660; -0,32 %</span>
+        <span class="tb up">1M &#9650; +3,51 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 11,98 to 12,40 (+3,51 %)</title><polyline points="0.0,30.2 10.5,26.9 21.0,33.5 31.4,33.5 41.9,23.5 52.4,23.5 62.9,20.2 73.3,13.6 83.8,19.1 94.3,14.7 104.8,23.5 115.2,19.1 125.7,16.9 136.2,18.0 146.7,3.6 157.1,2.5 167.6,4.7 178.1,10.2 188.6,6.9 199.0,12.5 209.5,4.7 220.0,6.9" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">28 May</span> <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQT1NGOWZpMktfSE9rd0RVZFhlSE5RbGJRTHhDYmFYMzNVWjJUcmJEWFFzYVlqOEdoSDRQczB4WUpBTHhhWmJDLUppQUNEdXFlUHZDSGdfY3RYSndwX1UybUt3bXU4UzBkUFVZVHhNS0NaSExNbXNtTDhxcVdEZWNXZG9BbHN3WndOS3BqbU1selB5OG9XZVJtZXQ2clVOdTRVYW5kX3lvdHFLUXVibGdzeUp0OE9SSHhRVkN2dA?oc=5" target="_blank" rel="noopener">Care Property Invest Offers Optional Dividend to Shareholders</a></li>
+      <li><span class="n-date">17 Oct</span> <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ01Jb2M0cnZ3LTZCWVZ4cFQyQUstOW04Q2dFclBaNUdBMC00Y0dGdmdEaFVrS1d5ZkMzNFYySEJRZlJvaFgtYXFEZ0p1dW9ORk1wb1l0WmlpVE1NZU1aWnFwdWNSQ1Z5VXFJVFVVQkhvQS1JSUk2VVhKbXBadmttcV9RX1d4UkZTQVhfSDJmdHFrRzZseEwza2FWQ2pIa2RkMXktVzdaVUpubk9RMUZRTmlEOF9Qdw?oc=5" target="_blank" rel="noopener">Ireland: Care Property Invest takes another step in Ireland strategy</a></li>
+      <li><span class="n-date">21 Jun</span> <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPYlI0ZnlxMC1rTEZDUjdBclZJaUhFdy1wUk9oU2wzVWx0UEtZdFNCU0l6bzNKZGFLcE9tUXZvYkhoT2tmUThZUG1VcmtpMnFWV1FSM3FJbnlnV3lVTVAzeWxXSEY2RHhIZjZVcXV6clVCbTV4dmdXWmFVMy15SmQ0dHBZWGowRDJQU1RiNW8zcjZVcEowREVDWkVITzBLd09EdkFrSlFtXy1LV2l0akFN?oc=5" target="_blank" rel="noopener">Belgium: Care Property Invest announces new CEO</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">Gaztransport &amp; Technigaz SA <span class="sc-tick">GTT.PA</span></h2>
+      <p class="sc-desc">French engineering company: cryogenic membrane containment systems for LNG carriers and tanks.</p>
+      <div class="sc-quote">
+        <span class="sc-price">187,85 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +1,76 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb down">1W &#9660; -0,13 %</span>
+        <span class="tb down">1M &#9660; -11,81 %</span>
+      </div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 213,00 to 187,85 (-11,81 %)</title><polyline points="0.0,5.6 10.5,5.5 21.0,4.8 31.4,2.7 41.9,2.7 52.4,2.5 62.9,3.4 73.3,5.5 83.8,10.9 94.3,6.9 104.8,10.5 115.2,15.8 125.7,13.0 136.2,18.3 146.7,12.6 157.1,33.5 167.6,27.4 178.1,24.6 188.6,24.7 199.0,29.5 209.5,30.5 220.0,27.6" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-none">No recent headlines.</div>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">Groupe Bruxelles Lambert SA <span class="sc-tick">GBLB.BR</span></h2>
+      <p class="sc-desc">Belgian investment holding company with stakes in listed companies such as SGS, adidas and Pernod Ricard.</p>
+      <div class="sc-quote">
+        <span class="sc-price">77,85 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,32 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb up">1W &#9650; +1,76 %</span>
+        <span class="tb up">1M &#9650; +12,91 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 68,95 to 77,85 (+12,91 %)</title><polyline points="0.0,31.2 10.5,30.4 21.0,32.4 31.4,33.5 41.9,31.8 52.4,28.7 62.9,25.7 73.3,24.7 83.8,22.2 94.3,21.9 104.8,22.5 115.2,20.0 125.7,12.2 136.2,12.0 146.7,9.7 157.1,9.2 167.6,7.5 178.1,5.9 188.6,4.7 199.0,3.6 209.5,2.5 220.0,3.3" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxNWjJwaWNOUlhvdWdtcEpZdVBiQ1VhbmpieFJ3OWcxVF93TGlla1NzRFd2cDNtdGFSTVRsaldQRFVLa0U3TkdYdVVWM2tWVTFBeVlBQ2w3RjVjc2hXWTZPajVYcXRNMUNKSVROYzR6bHhIQXdycHdnb3c1dExWbmtnTjBRSTNHRnNzMy0ybmtyTmF6RVdObUZ4eC12QTlUS3VOOUgzcTR4aThwNmpnenIyR1daYnE3Znd1dkV3d3JR?oc=5" target="_blank" rel="noopener">Groupe Bruxelles Lambert : GBL – Transactions on GBL shares 02-11-2026</a></li>
+      <li><span class="n-date">21 Oct</span> <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPaHBucEhlb2RVbzV3Y3ZiV1N1RER3Ty1WY3JSby1LTnpfOHdrVHhsN0Jqd2lJR3psM3RyTjI4WDk4QnpLWWtRQ2JuVlRkVG1BRTU3NWg2WGU3SnZJVFEtQ09TTDF6aFhHQXYzeUxuYXlRQlBwblhXcVlyNzFSZFcyLXpNbzY2QUFZRFJ3Nnk2Vk9KTldPaWhsOW9PNEVWRy15ZUh4UnE3YUhERThpaGFJRTgzSDg0dlVpYlFaNXkzRERoWDlSZVR5cUlkUXhvQTFhVmUyVWJoOHRzY1BudXc?oc=5" target="_blank" rel="noopener">Groupe Bruxelles Lambert Initiated at Buy as Berenberg Notes Five-year Transformation Payoff</a></li>
+      <li><span class="n-date">21 Dec</span> <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeFN2N0dMUGlyU0c1WnktbnBKVU1hMDI3SVZkaWVwZlBCZTRYV3M5S1FBVnhKTS1aOTZIZXcxS1ZwN19Ya1JVWlFKX05tRWo1bEx4TDcwTC1JUnNsWjBQc0lRVlNZeFJsOGhVM0FnYlR3NG1OeEh5Y1hoNC0ySGVhTWR2TUxybzV4eTltVUt0S3c2TkVaSmItY0JxNHZUbFBlVHA3Q2xrcDg3QQ?oc=5" target="_blank" rel="noopener">Groupe Bruxelles Lambert: The Ultimate Turnaround Play (OTCMKTS:GBLBF)</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">iShares Global Clean Energy Transition UCITS ETF <span class="sc-tick">INRG.MI</span></h2>
+      <p class="sc-desc">Exchange-traded fund tracking a global index of companies active in the clean-energy transition.</p>
+      <div class="sc-quote">
+        <span class="sc-price">8,17 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,11 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb up">1W &#9650; +0,13 %</span>
+        <span class="tb down">1M &#9660; -7,86 %</span>
+      </div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 8,87 to 8,17 (-7,86 %)</title><polyline points="0.0,4.2 10.5,2.5 21.0,5.5 31.4,7.2 41.9,5.1 52.4,5.0 62.9,7.5 73.3,10.3 83.8,15.5 94.3,15.3 104.8,18.7 115.2,18.5 125.7,16.7 136.2,21.1 146.7,23.5 157.1,29.7 167.6,24.3 178.1,27.3 188.6,27.2 199.0,33.5 209.5,24.2 220.0,24.0" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMitAJBVV95cUxPVGlma1R1b3VHcnJ3QmV1YjkxNHZ6ZEZ2RGdsUHBXVHpNcjlTZnNNa3NvcUM1bi02QjNkLU5sQ1liSTd2RHRHWDhzOGNKUjlKeHVLTjJQYUVuRzA0dWhkNUc0UnFGRDVZeWJYMko2b3RoY0JkWFVHS1A4YnVMY1Z0YUg3azJxa3VaVTBSbjVzOWZDMldCMTlkVWlobmI0bWhneWpMa29sd3lsd1o5LTR6dXRUVFNQbndwRXBpR05odUVsNmE2TG4tb1prS0lON09kVGVVUThEX0c4RFF2c0JEQThBYUhGYWlUNWhpejdRQ2VOX2pQYzU4eDZiZTJsMmtYRjZURUNsV3UwSV9BQ3ZKNjZTZU1PY2U2YmRhTHo3WGxnelRuZndfSVQxTDctQUFmcnpLSQ?oc=5" target="_blank" rel="noopener">Alerian MLP ETF vs. iShares Global Clean Energy ETF: Alerian MLP ETF vs. iShares Global Clean Energy ETF: Oil Prices Are Rising, but Which Energy ETF Offers More Upside?</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOWdtLU9RSl8ybExSWGNYVXhMVFNhdGhxZEFIOWNPa01iQW9BaXBBVVd3VjdOOGpJZEFJcjljZlduVGtBVGlKS1JCM0JzWkRGR2FvWWRTa2l4U251dW1lLU50RlVlWUE0MlJvRDFZUk1CVEphRDRlekZlbUlQazIwYnp0QjYyVFhjNjFiak50REhmUHJCT0lSc0tEekdVaDU4cGlYaHVGbVVUdHo5R1RpV3ZkZ2JIR01DTnhmaktYTUdDTXhWbjhnNDQ5blBoNHdPdmU0M3ZmZ242LXVmRFBmbWk3cjBkUF9KUDNv?oc=5" target="_blank" rel="noopener">Kalshi, Polymarket Put Democrats At 70%+: 5 ETFs To Watch - iShares Global Clean Energy ETF (NASDAQ:ICLN)</a></li>
+      <li><span class="n-date">04 Jun</span> <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ3VIWFlDYmJXV28wVHVhRU44cXN3YWNuM3g2TnU3MkFhdDJzTFRfWUxZYjdEZzJFcEFwQmlKTTJEX2Q0bzhua0ZQSDA3VGxBRDB5cF94eUhpU1hxVnhLLUxKQVg3NVdJUVJWVy1tMVJSTVhzT0RhZWRYS1BlUmRIdjg0VmkzUmloc3ZkYjNEMDZ6bEZJeVk3SHZ2YVN1bEZZQ2JBRENrVk9UelRKLVlyR0J1OVA4NHo4T0dyOTdDNHA5MHllX040amZwdkU?oc=5" target="_blank" rel="noopener">iShares Global Clean Energy ETF (ICLN) vs Invesco Solar ETF (TAN): Which Is the Better Buy?</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">KBC Ancora SA <span class="sc-tick">KBCA.BR</span></h2>
+      <p class="sc-desc">Belgian holding company whose core asset is its stake in KBC Group, the bank-insurer.</p>
+      <div class="sc-quote">
+        <span class="sc-price">92,00 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -1,08 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb down">1W &#9660; -2,75 %</span>
+        <span class="tb down">1M &#9660; -3,06 %</span>
+      </div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 94,90 to 92,00 (-3,06 %)</title><polyline points="0.0,11.2 10.5,2.5 21.0,14.5 31.4,16.1 41.9,13.9 52.4,6.8 62.9,3.0 73.3,3.0 83.8,5.7 94.3,2.5 104.8,15.5 115.2,18.3 125.7,12.8 136.2,33.5 146.7,29.2 157.1,17.7 167.6,12.8 178.1,11.2 188.6,13.9 199.0,23.7 209.5,21.5 220.0,27.0" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">28 Aug</span> <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdFdrR1UzLTZycm5ORVNXWFNGSGlCQXdSUjZ2SlBJSGw3NnJCcGJ5YUljN1R2bXRSdFh6VFdwV0Vhc2U1WlFmUlV5Uk1PVG9nRkk2ZnRVaE5JTTcyTFdTZVJWMmFCamRCS3JqeUVfNnc2RWRvc0oxZ3M5SG9hSEw2ekRrMXc3eHJfRWgyWkttMVpvdUh0TDJTNWtGNnN3cFNUX3JwQlpQN0JPeTNEVmJYTTZEcXlsYzk4MlNzaVR2S0U4Vk40bTEtLWoyOXhVS3Axemc?oc=5" target="_blank" rel="noopener">Belgium&#x27;s KBC Ancora FY profit rises on higher KBC Group dividends</a></li>
+      <li><span class="n-date">02 Feb</span> <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQdzRBZ3FRblFSOWZibTB0TklYeHlVdFRFdnFnSUNKTnN2WVFfQzFQbkFoZWxjWWgtUXlQRlZMUVNCSHluN0FHc0FNdkhXRlhOSHhKVk80aWI3ei1zcl9mRk9pclBfemFaRWRwLTdhZ0NORGR4eFE0QkpoWl9DRWQ1UG9LeEhyN0hwdjhMNVpmZ2RyMWFjcnFvLXFMVDQ4Tm12VEUtMERrMy1uY3VWb0trNkpfOGRGYUZLMU5WVXJBMW5mYTlCaC1takRR?oc=5" target="_blank" rel="noopener">KBC Ancora Reports a Semi-Annual Profit of 74.4 Million Euros, Slightly Up</a></li>
+      <li><span class="n-date">22 May</span> <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQV2l3TjlKNXBsdG9fS1JFWGZqenM4Y3llY2JoNW5LQURiRGFROFBKR2M2WDZOa0sxWGo5V01sbHNUYmZqNzUxRmVYR3JjV0VRZXoxV2x4MzVNMGYzOWFwY2wwcmJybVZmaHJMX1RzOVF4bkJabENjLTlnXzhvekJFWWRQaUFWOVRIWERfcEpJN2dUcE1yNnBjZTc3NzBBM05UV3NrM0JGNA?oc=5" target="_blank" rel="noopener">KBC Ancora distributes an interim dividend of EUR 4.32 per share on 4 June 2026</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">NN Group N.V. <span class="sc-tick">NN.AS</span></h2>
+      <p class="sc-desc">Dutch insurance and asset-management group, best known for the Nationale-Nederlanden brand.</p>
+      <div class="sc-quote">
+        <span class="sc-price">77,56 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,21 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb down">1W &#9660; -0,08 %</span>
+        <span class="tb up">1M &#9650; +0,81 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 76,94 to 77,56 (+0,81 %)</title><polyline points="0.0,16.2 10.5,10.2 21.0,25.0 31.4,33.5 41.9,32.3 52.4,24.8 62.9,24.8 73.3,24.8 83.8,28.5 94.3,21.2 104.8,28.7 115.2,24.8 125.7,17.7 136.2,29.6 146.7,25.2 157.1,16.4 167.6,9.1 178.1,8.1 188.6,2.5 199.0,7.5 209.5,8.1 220.0,9.8" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxQZXI3TGhGMk5JYlBiVWZMZW1DZ0pFdjByckhHa0dwR0VPUy04R0NVdjJBVkdNNDBCTTdWNXdGYVN3RzVyaldsVGJjWnhla2hTOUFxZms5U2k4akdNbmt1cjRmdlJxaWh0dVJwSjNYd3hILWRtMFlWOEpLZGR5SklZSC1DREh5YWdEd0RUZ0M0TmFzNzNiekE?oc=5" target="_blank" rel="noopener">Tjeerd Bosklopper to succeed David Knibbe as CEO of NN Group</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQeXR0ZlVxTmJ1dVJXaVJSeEVQLV8yRkpHXzVtTHlyUm1pVUhGUkY4Rkd5YTl6VXNjbEF6V25XN0tjczdyUXcwZlNaS1dyVGN5WV84d1YtaEFKaHRZeTJwU1BoaXUwRzR2eEVMeUs5TjJteHp0R253U2pLeFZxNHM1S3JXbnByaXU1cHUzOQ?oc=5" target="_blank" rel="noopener">Euronext to bring in NN Group&#x27;s Knibbe as CEO after Boujnah steps down</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOSFB6NU5OZmxhTjRST01SSFRNdnZWWjV0YWNMVjI5XzlLQW1OZllBbnR5bEVBcDRaQ1NINEpvSEhla0xXNS1MZm1CVTBNLTJzV2xYSkREeG9EY3pOcngtbG9UYmVFRWtmQkcxOGFCV1RvRkhhS0VGMWwtdm1FSGRwRW55R3Zra21qd3NSM2d4c00?oc=5" target="_blank" rel="noopener">Euronext taps NN Group&#x27;s David Knibbe to succeed Boujnah as CEO</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">PostNL N.V. <span class="sc-tick">PNL.AS</span></h2>
+      <p class="sc-desc">Dutch mail and parcel delivery company.</p>
+      <div class="sc-quote">
+        <span class="sc-price">0,82 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,49 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb up">1W &#9650; +0,80 %</span>
+        <span class="tb down">1M &#9660; -2,73 %</span>
+      </div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 0,84 to 0,82 (-2,73 %)</title><polyline points="0.0,7.0 10.5,2.5 21.0,8.1 31.4,11.2 41.9,8.6 52.4,8.9 62.9,6.7 73.3,11.2 83.8,7.8 94.3,10.0 104.8,12.3 115.2,21.2 125.7,20.1 136.2,29.9 146.7,33.5 157.1,12.5 167.6,23.5 178.1,23.7 188.6,27.1 199.0,29.3 209.5,17.9 220.0,19.8" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">29 Oct</span> <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcmtRcldFZjJ6TW5ERV9wOU1aYWRiYkt1dzN5cmlfNmdCUWdOOVF4OGp0eTFHV19nZ29WdW41NmE2cWJTb1VTdHliVmpEOU1Pa19SMDhYamxGY1pZcjNpRmN0eW1rcGVya1BER0Nub3dLT25la05IeS1DODBIV2VDY1psYVdJYjI0UWYtdFNvdktWOEhjam9CX09ncnFpMXp4OVFBM2JXQjhrYjBMcDBQS2xKeVp2cXJrUkp4b0liTFVmcWlBUlZnSndwaC1STTZPZW1NLWtHdkpwZDd5Y0NsQXhDWG0?oc=5" target="_blank" rel="noopener">&quot;I feel both vindicated and angry&quot; - British rider recalls old wounds and reaffirms &#x27;destroyed careers&#x27; at Picnic PostNL</a></li>
+      <li><span class="n-date">26 Oct</span> <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNYU1ZU3BsUlZOWnlIS1Q3bmkzd3hYMzVwcWp3TFV2d0tEdUFXUjZSZHJlSkJvUEo3cGxlejBNWWNPRmd0SGpDNVlMX1JCbmFEOUtDLUZmRk9GOGxMNGhIaldXS3Z3T21OelBOLVBvWFUzV3liaWk5Q09WOExSMVZqc2xrV0E2SXEwaGZxWGFvM2w3YkFDUzFGNnB4T2lSZ0VJVW00?oc=5" target="_blank" rel="noopener">PostNL seeks state compensation for 2027, confirms 2026 outlook as Q3 revenue rise</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBvU0xVcXhvYS0tRTVpNUFNY21JLW4yT0c4bWdNNlo3bzBvYjlZaEhrdVo0cVdwUHlIUm1yVlVlMnlfNTFDckg5VDhZb2Z0a2dPYU1hRDRaUDdYcUxCSlBMZTQzbTZ6bFZzdDVtcGhJY0U?oc=5" target="_blank" rel="noopener">PostNL stamp prices jump 8.6% to €1.52</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">Shell plc <span class="sc-tick">SHELL.AS</span></h2>
+      <p class="sc-desc">British oil and gas major active across the whole energy chain, investing in the energy transition.</p>
+      <div class="sc-quote">
+        <span class="sc-price">47,16 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,15 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb up">1W &#9650; +0,07 %</span>
+        <span class="tb up">1M &#9650; +10,03 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 42,87 to 47,17 (+10,03 %)</title><polyline points="0.0,33.5 10.5,31.8 21.0,31.5 31.4,23.5 41.9,21.9 52.4,19.1 62.9,17.1 73.3,14.4 83.8,14.8 94.3,12.1 104.8,12.2 115.2,13.7 125.7,12.3 136.2,13.9 146.7,4.5 157.1,6.6 167.6,10.8 178.1,9.4 188.6,3.9 199.0,2.5 209.5,10.9 220.0,10.6" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTnFLaUNab1BjZ0FVZ0pWRXZ2cHhRbDdWcGFKVGVOejVKaEl4YkxCU09zSTVxYl9TWjdkRFZuVG56TEdzWmdWX0ZHdlBONUw5VVFZNVNJd0xlOTNIMHh6dnR5MDBQUDM4T0RIR0Y3TUNwZ2ZnOS1Kd2pDZ25OS2cwMVdZMTNtSkE5YlZj?oc=5" target="_blank" rel="noopener">Shell PLC Stock (SHEL) Moved Down by 3.07% on Nov 2: What Investors Need To Know</a></li>
+      <li><span class="n-date">01 Nov</span> <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOdm0zY3JWM05pczJRY2hrNkJNMXZ4M09XSnNWallnNUlmRU9mWWFXbG01OUczNVRTRlpCMnZSblAyZTBDSE9xN2gxZF9kRGFFWnh1ZUdzekhNajNIWXp3S2I4azNSY0hnbE1Vb0pnOVVsYldGYlFENXlsdEw1WGE1dWVnaUJMUmpVWHhTdFVhZVl5S2gxbWVDTA?oc=5" target="_blank" rel="noopener">Shell plc 2026 Q3 - Results - Earnings Call Presentation (NYSE:SHEL) 2026-11-01</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNNWplUS0wM3VCa0V3cWhSdzE3RnJXTkRqWTE4bzNlMEJPVzlsYUJLVTA4QUNfNVh4bWpsTUJiNnNvVjZidlNYZ2d5VldaRlBTWFpjUFluMElNYngybXQ0THlWM1pPdVg2czZSS2lPaUcwbFItNjJLLWVBb1FoZ2VJVVh6VHVRVzkxZ2tLY2JBOUs0QQ?oc=5" target="_blank" rel="noopener">Form 6-K Shell plc For: Nov 02</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">Sofina S.A. <span class="sc-tick">SOF.BR</span></h2>
+      <p class="sc-desc">Belgian family holding company (Boël) investing in private and listed growth companies across Europe, North America and Asia.</p>
+      <div class="sc-quote">
+        <span class="sc-price">279,80 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -1,82 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb up">1W &#9650; +2,79 %</span>
+        <span class="tb up">1M &#9650; +15,91 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 241,40 to 279,80 (+15,91 %)</title><polyline points="0.0,33.5 10.5,30.0 21.0,31.2 31.4,32.0 41.9,29.5 52.4,28.8 62.9,25.4 73.3,23.7 83.8,21.3 94.3,20.7 104.8,21.3 115.2,21.0 125.7,19.1 136.2,18.7 146.7,17.4 157.1,13.4 167.6,11.6 178.1,12.2 188.6,11.0 199.0,9.6 209.5,2.5 220.0,6.2" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">06 Aug</span> <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1qT2pNRzExUm1ZTGRrN0NORGhONHdieDN5SU9PVVgxYUdNMHNES3ZaejQ2bDVVVDgwakI4VW1YZkgtcV93bWV1NTlTeUVqY3U2U1dXRG4zM0lPX0Q2bDhoTURSX2NFWVlCVFFUNUNlZFJoc0dSRVRQUTV4cFhIWGs?oc=5" target="_blank" rel="noopener">Sofina invests €150m in Drylock Technologies</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">Warehouses Estates Belgium S.C.A. <span class="sc-tick">WEB.BR</span></h2>
+      <p class="sc-desc">Belgian property investment company (SIR) owning mainly out-of-town retail plus semi-industrial property, mostly in Wallonia.</p>
+      <div class="sc-quote">
+        <span class="sc-price">37,30 <span class="sc-ccy">EUR</span></span> <span class="sc-day flat">&#8226; 0,00 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb up">1W &#9650; +0,54 %</span>
+        <span class="tb up">1M &#9650; +5,97 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 35,20 to 37,30 (+5,97 %)</title><polyline points="0.0,33.5 10.5,30.2 21.0,24.7 31.4,19.1 41.9,16.9 52.4,14.7 62.9,11.3 73.3,12.5 83.8,12.5 94.3,15.8 104.8,20.2 115.2,20.2 125.7,23.5 136.2,18.0 146.7,15.8 157.1,21.3 167.6,12.5 178.1,12.5 188.6,3.6 199.0,2.5 209.5,10.2 220.0,10.2" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-none">No recent headlines.</div>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">Xiaomi Corp <span class="sc-tick">3CP.DU</span></h2>
+      <p class="sc-desc">Chinese consumer-electronics company: smartphones, smart devices and a connected ecosystem.</p>
+      <div class="sc-quote">
+        <span class="sc-price">3,24 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +1,25 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb up">1W &#9650; +10,20 %</span>
+        <span class="tb up">1M &#9650; +18,17 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 2,74 to 3,24 (+18,17 %)</title><polyline points="0.0,30.1 10.5,30.9 21.0,31.5 31.4,33.5 41.9,18.3 52.4,27.0 62.9,25.1 73.3,18.4 83.8,11.8 94.3,15.2 104.8,15.1 115.2,12.3 125.7,14.7 136.2,18.4 146.7,13.8 157.1,13.5 167.6,19.1 178.1,20.9 188.6,19.3 199.0,15.4 209.5,4.7 220.0,2.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPWGdGLUtncnFBWWc1eVZkTU52aWxsQjFTRENMTlBYQ3NfblRDcl9DaW4tUktsV3V0bFJmUmhXLU5SOGlGYm02NzBLWHFWQkVxU0dTcUVjenpLQ2ZtVkczaDl6d3ZLYmRaN3lWQzNidW1CMDBtWWhITXlkYldMUFlzM0syY2t2VkdsZnlmaTdRU07SAYwBQVVfeXFMT3M2bWlwTGdPVzd0NlRMcEE3OU9RVm5NQ2ZJYkhERWp2NTluemw3WmdWNXB5NTNINnFOVUpFakNEU1E2NUNjYmJYVkYtejhEWUJiVkRCNFZHazdxSUZ0YUREVW41MElMeEtsM2xrVzJmaEt1V3FEcU9wa3JIdUtabmVTRmVoYlBkMW4yT1k?oc=5" target="_blank" rel="noopener">Xiaomi 18 Pro series is going global this month - GSMArena.com news</a></li>
+      <li><span class="n-date">01 Nov</span> <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQVGJQV25faktaWGFiUks0eTdlWmFhbkcwR0RWcXdFbk95UXJ6VjBmSUV1NjRaTk1oYXk0NEtKaGF1NTJBOWNFUm1sY2tiUVhjekJVU25tRWduZVpGVFNHMGFyOTN1RjRmS1lFcnNSRExoT216QUNtaFZjOTluU1g0d19EejFmR2pRWDJuSXc4WWQ3WHJ2UngzYmZRV3d0a2dmeHFycVhhZGdvN1dUbmc?oc=5" target="_blank" rel="noopener">Xiaomi&#x27;s October EV deliveries top 50,000, hit 2026 monthly high</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPb0Ewc1VvNHo3YXZzNWh0RExCWm9VUUlMTEFGWkpDSEU0VTFpU3dQcWsyNkg2RXEtbDJJNXhkam9rNFgzZ0NsV3Ayakt2MVNhLTlyZHRKVGNGTXRZTk9FUzNibGJ0dGJaRm55c0VnRTYtd09VQzVJbWZoeXhyUWx0OWFQTWhCb0VEaG5HQ3pqVjl4ZlVJaE0xa2pjWW5CZw?oc=5" target="_blank" rel="noopener">Tesla China EV Rivals BYD, Xiaomi, XPeng Report Strong Sales As Year-End Push Begins</a></li>
+    </ul>
+    </div>
+    <div class="stock-card">
+      <h2 class="sc-name">Xior Student Housing NV <span class="sc-tick">XIOR.BR</span></h2>
+      <p class="sc-desc">Belgian real-estate investment trust specialising in student housing across Europe.</p>
+      <div class="sc-quote">
+        <span class="sc-price">25,15 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,40 %</span>
+      </div>
+      <div class="sc-trends">
+        <span class="tb up">1W &#9650; +2,86 %</span>
+        <span class="tb up">1M &#9650; +8,64 %</span>
+      </div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 23,15 to 25,15 (+8,64 %)</title><polyline points="0.0,33.5 10.5,25.0 21.0,26.5 31.4,31.2 41.9,27.3 52.4,21.9 62.9,18.0 73.3,18.8 83.8,26.5 94.3,24.2 104.8,26.5 115.2,22.7 125.7,24.2 136.2,23.4 146.7,14.1 157.1,15.7 167.6,13.3 178.1,15.7 188.6,11.8 199.0,9.5 209.5,4.0 220.0,2.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <ul class="sc-news">
+      <li><span class="n-date">30 Oct</span> <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQWVRqVDBQZzgzRXpJSzVTNUdoWF9KV3VDcEU1TGc5ejlJSEo1X3dQSUZ4RXprVlg5X3o0OS1NWjcwSmtna0xKN05SVHY3ZmRNa25qdlNndHlJc2ZING5fWDNscXhDbi1ZVEpGZTBMQXJxM3owQk00bWFwdzFLWEFYdmIwcVNiNkRoU2pIR2pGSHg5ZUJqVjJfVDBJRU5famcyUEJOdU9Zdw?oc=5" target="_blank" rel="noopener">How Investors Are Reacting To Xior Student Housing (ENXTBR:XIOR) Strong Nine Month Earnings</a></li>
+      <li><span class="n-date">21 Sep</span> <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPSlhtUWtlOE5mV1M4X2t3bEFOdm43Z2dPczRrUGVZdEJkODdicHNYZGN2bjNvaGY4ZkZHdm9zRUpyMW12c3RVV3Fyd2l6aXF5cW5uZ283aFZIOS01YWczTlA0RWVJVm9TWnNfWEt4aXgzcHY5RnJaYkhFSVQwdWJRcnV5Q2pIbF8wSXNsbjRKZjBfd1Btbi1NOWZn?oc=5" target="_blank" rel="noopener">Xior Student Housing: Upside Exists At A Low Valuation (OTCMKTS:XIORF)</a></li>
+      <li><span class="n-date">29 Oct</span> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOaEtOQWZ4cS16M3FNYVRRN21yX2RCWVAweWR2cmRZV1UtVGs1TW4yOEpIdF9rVEtqd0xvenZnVnBUekd5MFJFaXNFVW8yMUtkSy1ZX1JhOFktZ0Z3SW5UWjRkS2dFWmNOUU5pM0Q4c3Njem42RjByYndPd2tPSzNDQ1NjY01zWWpDSVBIX2h0SmQ?oc=5" target="_blank" rel="noopener">Xior Student Housing names finance chief successor</a></li>
+    </ul>
+    </div>
+  </div>
+
+  <div class="callout">
+    <span class="title">How this works</span>
+    <p>The page is rebuilt automatically by a script in the repository (<code>scripts/update_investing.py</code>, scheduled in <code>.github/workflows/investing.yml</code>), the same pattern as the Space news page. If a data source fails, the last known values stay on the page. Colours show the daily change and the one-week / one-month trend: green up, red down, grey unchanged &mdash; the arrow and sign always carry the meaning too. Nothing here is financial advice; it is a personal watchlist.</p>
+  </div>
+
+  <a class="back-top" href="../index.html">&larr; Back to home</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Prices from Yahoo Finance, headlines from Google News. A personal watchlist, not investment advice. Updated twice a day by GitHub Actions.</div>
+  </div>
+</footer>
+
+</body>
+</html>
