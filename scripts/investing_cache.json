@@ -76,32 +76,32 @@
   ],
   "news": [
    {
-    "t": "Aker ASA: Invitation to Presentation of Third Quarter Results 2026",
-    "l": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbTAzTlkwWm5aYWV3bkU0UDFzNnFtWHlwZ3NDR0dJNUZiQ194LWwzVEwyTTJKV1RMeEJlWHk2UUhxWTdaODgySk1PUWh6YWlRS3pfVUs3UmltT3pCVlk3VlgxZkJTdHZXUUV5TmlHMHkySkNneFNUNFp4X01QVDNNN01rUGp5QTFramRRTGJiNjROQkdHSDJBbjB3dEZEXzRNOTVmQ2dSN2VMczVNd0E4N2hFcDV5SkQ0T3o0eGhEdFhOVDZNZkJvczJwYw?oc=5",
-    "d": "27 Oct"
+    "t": "Aker ASA reports second quarter and half-year results 2026",
+    "l": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT0ZvdmswY3hjY01GVkgyY0RmaFQxMkJrY2x2ZXJ6b2EzMHBJd3p1YXN0SGkwVXlkdzMyUHM0TWtvVjhRZC15c0hodlU2R3FKRDFHUDA0QlFxXy13WnJsMHBYVVR1VUNqTmM2bm93eHpQOU92b3d5T0dvVUtTdktCTnlDQlNDTGJsRllTUnkzNFNlRDdZOER4TG85Y0tOQ1pTdlk1WDB5eHJkd0t2aHpIOERzV1dyeXZ6RWdNWXZNc1g1Zw?oc=5",
+    "d": "16 Jul"
    },
    {
-    "t": "Aker ASA (AKER) Completes Merger With Aker BioMarine",
-    "l": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQN0tJWHV2d052cHJ0clhEeXhrTXVleUs3VW9mSGdDYmk2Z0I5alNwYlUyWXRJbmhNUDZZVzBTanJyNlBSbGVvYmNLZThIU1I1TWtENnl2YTV0NERRUTRRajlIQ0RQZUxGMWZxc0lmTG4zUl9TWThkbnFjNk1naTU5V0ZKZlVucGlFTWw5UklVVlJBOWwwemJSU0Nxb2RVN3Q1TkZJOXVCa3NwVU90cEZzb01B?oc=5",
-    "d": "01 Oct"
+    "t": "Aker ASA 2026 Q2 - Results - Earnings Call Presentation (OTCMKTS:AKAAF) 2026-07-21",
+    "l": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTlI2YzNDQjg3Y3I4ZWZES1duMDN0LW9mbEhjWkJobUd6U1ZQV1J5MER3ZFI5RmhkTUJDNEFScU02MGtTSmJzQnFBRi1Xbmp4ZXBDczlyVlhCcWkyYm9GYlhlWFRaZWpBQWw0dk9nUVU2QmE1djEyalBMdlFmSVkwRUZYUGZSUGxaNzRVRVl4NUU5OWxueFdN?oc=5",
+    "d": "21 Jul"
    },
    {
-    "t": "Aker ASA: Conditions for completion of merger with Aker BioMarine satisfied",
-    "l": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVjZNWU9LQWdnTnJ6Y1RpZTJIMkNZMWlUMTltOUlObFdvTVkwR3V1MlBaMXR3RldvX3I3d0JkMW5nWk5HcUhIam45NlJBeFJCYjZXUTZ3RW8yTkFZNTVzeTJ1MF91UG1mbFAzbGZKd0VhWnZnc3dqTjROR0dfaE14Nk9iSkxLQnZFdGdXQUdnMjJXRV9BQmo0bldrTnk2SEM4SmhzNWJmenBFXzZRWDJFWkZEa0EzRzZ4UXJnWHRSdmlobUk2Uk5CcFlybUlWWmtHS1FYNjBRZw?oc=5",
-    "d": "29 Sep"
+    "t": "Aker ASA (AKAAF) Q2 2026 Earnings Call Highlights: Strong NAV Growth and Strategic Liquidity Boost",
+    "l": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcnJQQkozcDdyU1ptV2ZTazV5bTNMOU8xUEdoR1JiTXRicDZGcmpwN0kwSnFpcDR5UVZKYXUzMzk5MFBDU0hlMGRmcjN6ZjNLYkV3NVlmMkdKWndkdmZ5QUVmMU1XTldkdEJDNFRhWE0tRTc3akZfcFpQdFNzQTJpX0xOLVFwcFhYbW5QRy1xOU0?oc=5",
+    "d": "16 Jul"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "ASCE.BR": {
-  "price": 53.0,
+  "price": 53.5,
   "currency": "EUR",
-  "day": 0.3787893292223288,
-  "wk": -0.9345794392523366,
-  "mo": 2.9126213592232997,
+  "day": 1.3257590398753738,
+  "wk": 0.0,
+  "mo": 3.8834951456310662,
   "closes": [
    53.0,
    52.70000076293945,
@@ -169,20 +169,20 @@
    53.29999923706055,
    52.79999923706055,
    52.79999923706055,
-   53.0
+   53.5
   ],
   "news": [],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "BPOST.BR": {
-  "price": 1.122,
+  "price": 1.106,
   "currency": "EUR",
-  "day": -0.7079641827775762,
-  "wk": 5.4511248079794905,
-  "mo": 0.5376274596661901,
+  "day": -2.123893392292342,
+  "wk": 3.947362376853958,
+  "mo": -0.8960671297812084,
   "closes": [
    1.5299999713897705,
    1.5540000200271606,
@@ -250,36 +250,36 @@
    1.062000036239624,
    1.0679999589920044,
    1.1299999952316284,
-   1.121999979019165
+   1.1059999465942383
   ],
   "news": [
    {
-    "t": "More than 4 in 10 Bpost vans are Electric",
-    "l": "https://news.google.com/rss/articles/CBMic0FVX3lxTE94NHZpM2s5THJoLWl0OVNVSFRRTUhsU2h6Wm01bDVYUFVpZlROcmVCX2VyanJadzZVNEs0bHFuSXY4UVJ6VHllaFRKZ3B1cTR4YUNaS2RfbjA1NkVWZXNwZXktdXJTYkM3MVlldk5UaURNT2s?oc=5",
-    "d": "21 Oct"
+    "t": "Bpost avoids fine in Belgian newspaper distribution procurement case",
+    "l": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZEpvNXd3OHJYWHJMNlNKY2JlWjlPVFZ2Rmxvb3ZDN21KSkdaMWFUckd2YktkYkEwcElvRklCU2NYN2toN3FrQ281MGZLYlhwUjNWc1ZXS0JYU0wwRXdCYW13a2ZudWlXSkJuOTc0MlFndHcxRTl4VkpWVHhTSURQTnkydDVvaXVJRnJVOTB2RUQ1NFlMbm8zeFJjN01JXzM2a3lfbzVCSWs0cEluNG5BcHEzOFkxb3pJQVVoQ3c5cDdQUmxHM2RYajBDQUVXajVVcUtOckRaXzQ?oc=5",
+    "d": "13 Feb"
    },
    {
-    "t": "Bpost increases cost of sending parcels and letters from 1 January 2027",
-    "l": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRE9hMXVha1BsVmlRVGFPdGNPcTk0ZHlmelF4VFo3ZnI2UGFobE1CZ2tMOElFX3V1bERsaHFiTUZpdDFqdlFWMUk0N2xGMWtTZy1DOWoyeVl4N2gyNV9kb0R3MHhQNVVzY3Y4alp1WWdjRU42eldQT2N3cW5DUTZ2LWhWN1YzTnlrbDFwcDJZcnBvbTEtcE40UkVtcHRLX25GQW9mTGpZcVg?oc=5",
-    "d": "05 Oct"
+    "t": "Bpost: 650 new Stellantis vehicles, including 500 electric ones",
+    "l": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5EMzBoN092ZThXNjJBWGMwaXpUcWh0ZnN5cndfWXp4OTl0SGxoQ0tqRFhIUzRYX0NuWVZjOG9Mb19ESWlNUHV5U2xuRlNyY0VTel9jcVZn?oc=5",
+    "d": "28 Oct"
    },
    {
-    "t": "Bpost equips 93,000 parcel containers with live trackers to optimize its logistics flows",
-    "l": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLWI4VG9ERTJVQ0l1Y0tmd2U0ZFI1Mk5mNFJYMWloUEZfY3ROa2FzRUtqZXZvWlR6aEcwUmx6dEZucUxQbkdRMER1WlFpaHpPX1BCWVA3RWUtbk55Wm9PUGZ3aXUwVWUzRDhMVlZ6MXE3RjRsWTlHYThvWFRSUmgtNXVkWExMWXFXcDBGVEEzeUJ1SEN5ZFF3blZIVVRadXNWdHhUM3ozYmduNWNESGZOMA?oc=5",
-    "d": "04 Sep"
+    "t": "Digi rolls out sales across Bpost network in Belgium",
+    "l": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZDhyc1NaZzh3eW1kVDJNRjlUN2txT3lXZUNRNEIyek1BTWJ1Rm1SQ3pLQmFmTDQ1bjEzdkZMa0p6TG5KdFVGVFRtM19jZnZHV2h3dWRVSTgyM3RwY3c4Y04tcEUzODAzU3JVMldGc0xYY2VjYVAtaTl3azZ1b1BSVzhIVkY1RzJ6UkxRdlVleE1MVGhIUExVUWZxcw?oc=5",
+    "d": "29 Oct"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "BRK-B": {
-  "price": 556.11,
+  "price": 556.81,
   "currency": "USD",
-  "day": 2.510647202861871,
-  "wk": 1.3763285377297763,
-  "mo": 10.635629584049621,
+  "day": 0.1258770147770205,
+  "wk": 2.5451679722960474,
+  "mo": 10.421208657294368,
   "closes": [
    513.1400146484375,
    517.219970703125,
@@ -345,7 +345,8 @@
    540.3400268554688,
    541.9600219726562,
    542.489990234375,
-   556.1099853515625
+   556.1099853515625,
+   556.8099975585938
   ],
   "news": [
    {
@@ -359,22 +360,22 @@
     "d": "02 Nov"
    },
    {
-    "t": "History Says Berkshire Hathaway Stock Rewards Patience: It Rose in 50 of the Last 61 Years",
-    "l": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWEpBZDRaVGZiU1gyRXdOQ0IwYkFINklhcXpIT1RNVmNHWnFWY2VWNkNFc0N4NDZrSTdmQTREQVFReTJlaV84VUlDOFFIY25hLW1yaGFtamJnQTQyVkxoUkp4ZlN0aGExeTdKLTZNOXNqUUdOTnctQ0dTZldSaFNiY281RTlUY05HRTQtUjBnU0ZKVmpzRzA0M181N3I4VDJHLUY2bA?oc=5",
-    "d": "02 Nov"
+    "t": "Buffett Successor Has Berkshire Hathaway Poised to Beat S&P 500 in 2026: His 3 New Stock Picks Are Helpin",
+    "l": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOXzl3TzRlc3hnMWp1NFQxQjNFZEU3bGdtM2JKdFZSNmFBaFFxNXI5U3UyZEFUVUxDYWRjUUlRakVRNjhFeUcxLXNMcWVMUkRQUE1nZ0xabkUxSk91eHJ1cTVQaHNBTG1lT2NyVWdfSEluVkpUWlMwdDJkXzRoMFQ4ZGgyemNONkMzaVVnLUphN1o1ZjkzQ1ZBVGZFLUFnV2pfOF9vaW1KWWMwdkNWMkNpaW1oM0RSdFBhZER5M1lTNzdFQ0FMY3NyZVFPcw?oc=5",
+    "d": "03 Nov"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "BY6.VI": {
-  "price": 8.19,
+  "price": 8.178,
   "currency": "EUR",
-  "day": -0.37707965912725516,
-  "wk": 1.9036939603590985,
-  "mo": -2.604362064608967,
+  "day": -0.5230473079783415,
+  "wk": 1.7543953328456485,
+  "mo": -2.7470559602317035,
   "closes": [
    10.447999954223633,
    10.35200023651123,
@@ -441,36 +442,36 @@
    7.711999893188477,
    7.823999881744385,
    8.220999717712402,
-   8.1899995803833
+   8.178000450134277
   ],
   "news": [
-   {
-    "t": "BYD Reports Higher Sales for Sixth Month on Exports; Shares Gain",
-    "l": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRU1oODR6MVZQV3NJazVfWHlmaUYtaFNaeU9zVFpwb1VaYlB2REZnU3ZYV0JTYWdydWVMWTBmRmlYYkM5NHEzcTZqZDNvSFFJQkxDbmtsdGlxOGJSWDZGVldYMU5aVWFwY2dKU29Ib0dUbWRTc1VEdVFLNlZKTlRaNUYtWUUzT3VDcExKdnh3dTY0My1tZWZXcFZXSDBURzhYN1RKdlVqV0xyRlpZRTZoOFo1aW0?oc=5",
-    "d": "02 Nov"
-   },
-   {
-    "t": "BYD’s 3 million USD supercar Yangwang U9 Xtreme crashed in China",
-    "l": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObzVodU83U1RYSHNBU1JkbFNNSmstWXBaMmJWQV9LcGI3S2VEdDNEUjNKU0xLRDJrdGxPazFkT2RJYnQwUEJ2aHRXclIxck1yRnFIdnF1YU54eElDRDBmZUQ5NUdqRV9mQmY2VVhCMjJyQ2ZFSjQ1U2FqaHBFVEIzMGJNY1Jqai14MFhPOXJGZHozc3pSekMwdEFtUm5Dc2ZL?oc=5",
-    "d": "02 Nov"
-   },
    {
     "t": "BYD’s 300-MPH Electric Hypercar Crashed During Testing. The Driver Survived",
     "l": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRnpNcVZHSkRjVXJLLU1xTVdjLVVuNjZVUDk1Y2U1N1JKVF9EWGNPeGt4cWFnQWFGUnpSZDBvaE1PRjcwMzNBSi04NWZzX3dkd0hNTXF6WXptdjltTjRZMmhtOUJvRG8yQTAySzhhV1EteGFrWnd6eHJldXhCSnVKeC1WWGRrX3ZVYVFReks5SkpuMFZJUWY3NW8ycjdoM1lrc0t3Nm56c0pGQQ?oc=5",
     "d": "03 Nov"
+   },
+   {
+    "t": "BYD’s 3,000-hp EV crashes at about 280 mph — Watch the driver escape unharmed",
+    "l": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQ1pUMjNBMmo3QUJKQTdkcE0tdk1NV3ByQ3FPdXFnZHdUTE12by1YSVAwOWVUVmVmMndnSHp6YXlpSDFETXdrcWpheEpON2E2ZjlWazRzNXpIaWd2X0dxeVY4SUpwMzIwSUNWdlNxRm9sUExDcEdRVEVnTzg0cGI0NlFRRkJpYkR4TFNnS0RKbFA?oc=5",
+    "d": "03 Nov"
+   },
+   {
+    "t": "BYD's U9 Xtreme Already Hit 308 MPH, Now It Wants More",
+    "l": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1INU9zejZ2MW95RGJSajFQWWlvV0VQZ1NZZnAyMWN3UmRjam0xMWhtaW54bWIxZjBESHI3Z2YwZzlLaURBeTlKdHZwZUtxUnBuSUZ3NmlPd2N6bHczQTNRaU5UcFJrZFhkRDE0Sg?oc=5",
+    "d": "02 Nov"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "AI": {
-  "price": 11.55,
+  "price": 11.56,
   "currency": "USD",
-  "day": -2.5316487072763905,
-  "wk": -9.695072516157477,
-  "mo": 4.90463170415274,
+  "day": 0.08657843376624896,
+  "wk": -5.939784739643416,
+  "mo": 4.238054648891354,
   "closes": [
    9.729999542236328,
    10.050000190734863,
@@ -536,29 +537,30 @@
    12.329999923706055,
    12.170000076293945,
    11.850000381469727,
-   11.550000190734863
+   11.550000190734863,
+   11.5600004196167
   ],
   "news": [
    {
-    "t": "C3.ai, Inc. (AI) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
-    "l": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNamtVMFd1ek9aOEhIaVBSdGU1REE2VDdhWDl1VlJEbFFFdE13Z25kQUcyeWJtekQyZDhqWm9fZmVBZDlSVmptRmVCbm56bUx4TE5fMUFVdmZtUXloRW4xSWVPdm9ZUDgwdnVEVElQNmNOM1k4VEpmUGFpX1BSaFJiN2lhYTEzSEpiNGc?oc=5",
-    "d": "02 Nov"
-   },
-   {
     "t": "C3.ai vs. SentinelOne: Falling Revenue vs. Steady Sales Growth",
-    "l": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSWNnSjl5WC02dnNKd3hQTUxHU21SRk9yZXpKcUc1akI5N0RzUzhQVHYtZ3JRbmFKZS0tWnQ4WXg4MHFlOU1NWGZOU3UyRmwyVVRLM1h6dnF6NWV2RGdxUkgwOS1XNmJPOEdaSlhKbEdSUVJBaGswVGowXzcxQ0RtODNobFFJWHZYRXU3SHpnYUVBdEMzenB6SnFfYUMzdWV6M204?oc=5",
-    "d": "02 Nov"
+    "l": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOd1hCMmE3S2pSTHpjR3RyZXBUYk1fNzc4MmJ3MUYxLXUxUFdMeWo4YXhCS0hKa1FldEJwUjRZU09uei1wSGNDOTJ4bjhlQ1oxQ01PX1Y2MjB2QVVZbDFHMDhXT0dGMFN1M01Jc2ZoRnZ0dm56U0c5bnR1VkxIV04xTVQtdUFrakQ5dzdJUVRNSzllclNFd09ESA?oc=5",
+    "d": "03 Nov"
    },
    {
     "t": "C3.ai: What's Behind the Stock's Surge in the Past 3 Months?",
     "l": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWV9ScW5FRW1jQnJhMUtSRlJ0WjdmU1BPZGdnYVA0UnlWRGx5LVJKcnRWem5KN2kwcnhfaXlBWTZrZXpCMkRpN1pMUC00ZHIwU05uNzlTVGJ1cFpXYk5sUWJobDV2M3dGbVhyd0ZEVWtuLUFVMlhRdmh6eWVRNnpKV00xcnlibjkxS242V3RwN1pkcGZ6aTBtU1MwcHpYZi10b2RB?oc=5",
     "d": "02 Nov"
+   },
+   {
+    "t": "C3.ai Inc. stock outperforms competitors despite losses on the day",
+    "l": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZDJFMWhmcjdXTUdYV3lJS1UtYUJiZGhBeWthaTFfbmVkOF91S0VITXBpUVoxZ2NRaENNYURKR09tRUo2RUZLZFFQS09xUldweFRsTk5lcFhteFpEd3kwcU1nMFFUWFFwNHluLVlyZldDVjBONnZYeGtYWXBYMXJITW8xa0lFM3NSYXE2b1Jsbk5Rdk1TOVNwaWYzUDdzNUR5OTdmT3BobE9vOG9HdndTX1dJcjRLT1dVT0VJb2Z3QkhEY2ZkOUNCX1Q3N2daZFpndVlhYlhCLUVsWmM?oc=5",
+    "d": "02 Nov"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "CPINV.BR": {
   "price": 12.4,
@@ -647,22 +649,22 @@
     "d": "17 Oct"
    },
    {
-    "t": "Belgium: Care Property Invest announces new CEO",
-    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYlI0ZnlxMC1rTEZDUjdBclZJaUhFdy1wUk9oU2wzVWx0UEtZdFNCU0l6bzNKZGFLcE9tUXZvYkhoT2tmUThZUG1VcmtpMnFWV1FSM3FJbnlnV3lVTVAzeWxXSEY2RHhIZjZVcXV6clVCbTV4dmdXWmFVMy15SmQ0dHBZWGowRDJQU1RiNW8zcjZVcEowREVDWkVITzBLd09EdkFrSlFtXy1LV2l0akFN?oc=5",
-    "d": "21 Jun"
+    "t": "Technical Analysis of Care Property Invest SA (EURONEXT:CPINV)",
+    "l": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBCVUM2S1pieEI4N090X2JGNGR6WDRTSkVmZ2JiNkZCYVpMaEptZk5oMDZ0NmRwZ2ViRXYtdndEUmxpYk0tZHZGMWlJMnBpb0I2UVZMbkxNZ2NoWER6YUx1YWtKNTJjcjYwVV9fSE5SYw?oc=5",
+    "d": "12 Dec"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "GTT.PA": {
-  "price": 187.85,
+  "price": 187.3,
   "currency": "EUR",
-  "day": 1.7605600157249768,
-  "wk": -0.1329080233322344,
-  "mo": -11.807508871588912,
+  "day": 1.4626185304513761,
+  "wk": -0.42530729707555004,
+  "mo": -12.065726266780374,
   "closes": [
    197.3000030517578,
    195.0,
@@ -730,20 +732,20 @@
    191.1999969482422,
    185.6999969482422,
    184.60000610351562,
-   187.85000610351562
+   187.3000030517578
   ],
   "news": [],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "GBLB.BR": {
-  "price": 77.85,
+  "price": 77.55,
   "currency": "EUR",
-  "day": -0.32010048528225976,
-  "wk": 1.7647038877399934,
-  "mo": 12.907907062794743,
+  "day": -0.704223412121241,
+  "wk": 1.3725530088337434,
+  "mo": 12.472815785577595,
   "closes": [
    79.0,
    79.5,
@@ -811,7 +813,7 @@
    77.4000015258789,
    77.75,
    78.0999984741211,
-   77.8499984741211
+   77.55000305175781
   ],
   "news": [
    {
@@ -825,22 +827,22 @@
     "d": "21 Oct"
    },
    {
-    "t": "Groupe Bruxelles Lambert: The Ultimate Turnaround Play (OTCMKTS:GBLBF)",
-    "l": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeFN2N0dMUGlyU0c1WnktbnBKVU1hMDI3SVZkaWVwZlBCZTRYV3M5S1FBVnhKTS1aOTZIZXcxS1ZwN19Ya1JVWlFKX05tRWo1bEx4TDcwTC1JUnNsWjBQc0lRVlNZeFJsOGhVM0FnYlR3NG1OeEh5Y1hoNC0ySGVhTWR2TUxybzV4eTltVUt0S3c2TkVaSmItY0JxNHZUbFBlVHA3Q2xrcDg3QQ?oc=5",
-    "d": "21 Dec"
+    "t": "McDermott advises Groupe Bruxelles Lambert on strategic investment in Rayner",
+    "l": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTmoxNF9vdDlRMXR5RThZbnUyYklTUWFrVTBSaXhvTnVLWVUwSU85T0pmN2t5Tktfdmp4S0hCYXNRdTFoTnFiSTBnRXlzOVpWOVBab0lOZndNOFNwTG1ZUUxhbXZ2Rmp5bDJUSUxVVXl0VWxtWUdIdjBRUXF2a2cycGJEb0c0VGJ0aGIyVFVFbDNDUnFQallHejVLeW9PdzFEYTdBR3hDSnE1OEVGckF1aTJPWDRHN2laeUE?oc=5",
+    "d": "04 Mar"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "INRG.MI": {
-  "price": 8.174,
+  "price": 8.237,
   "currency": "EUR",
-  "day": 0.11022704456853383,
-  "wk": 0.13475045230308957,
-  "mo": -7.857067757423797,
+  "day": 0.8818130861403262,
+  "wk": 0.9065338431123449,
+  "mo": -7.146880890586216,
   "closes": [
    9.02299976348877,
    9.21500015258789,
@@ -908,7 +910,7 @@
    8.059000015258789,
    7.8379998207092285,
    8.164999961853027,
-   8.173999786376953
+   8.237000465393066
   ],
   "news": [
    {
@@ -927,17 +929,17 @@
     "d": "04 Jun"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "KBCA.BR": {
-  "price": 92.0,
+  "price": 92.1,
   "currency": "EUR",
-  "day": -1.0752688172043001,
-  "wk": -2.748412807672884,
-  "mo": -3.055849820074119,
+  "day": -0.967741935483879,
+  "wk": -2.6427061737045454,
+  "mo": -2.950477351672398,
   "closes": [
    89.4000015258789,
    89.69999694824219,
@@ -1005,7 +1007,7 @@
    94.4000015258789,
    92.5999984741211,
    93.0,
-   92.0
+   92.0999984741211
   ],
   "news": [
    {
@@ -1024,17 +1026,17 @@
     "d": "22 May"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "NN.AS": {
-  "price": 77.56,
+  "price": 77.44,
   "currency": "EUR",
-  "day": -0.2058687830546524,
-  "wk": -0.07730634612856946,
-  "mo": 0.8058163471721391,
+  "day": -0.36026919236401556,
+  "wk": -0.23189938006502597,
+  "mo": 0.6498570108322665,
   "closes": [
    81.36000061035156,
    81.19999694824219,
@@ -1102,36 +1104,36 @@
    78.26000213623047,
    77.77999877929688,
    77.72000122070312,
-   77.55999755859375
+   77.44000244140625
   ],
   "news": [
-   {
-    "t": "Tjeerd Bosklopper to succeed David Knibbe as CEO of NN Group",
-    "l": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZXI3TGhGMk5JYlBiVWZMZW1DZ0pFdjByckhHa0dwR0VPUy04R0NVdjJBVkdNNDBCTTdWNXdGYVN3RzVyaldsVGJjWnhla2hTOUFxZms5U2k4akdNbmt1cjRmdlJxaWh0dVJwSjNYd3hILWRtMFlWOEpLZGR5SklZSC1DREh5YWdEd0RUZ0M0TmFzNzNiekE?oc=5",
-    "d": "02 Nov"
-   },
    {
     "t": "Euronext to bring in NN Group's Knibbe as CEO after Boujnah steps down",
     "l": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeXR0ZlVxTmJ1dVJXaVJSeEVQLV8yRkpHXzVtTHlyUm1pVUhGUkY4Rkd5YTl6VXNjbEF6V25XN0tjczdyUXcwZlNaS1dyVGN5WV84d1YtaEFKaHRZeTJwU1BoaXUwRzR2eEVMeUs5TjJteHp0R253U2pLeFZxNHM1S3JXbnByaXU1cHUzOQ?oc=5",
     "d": "02 Nov"
    },
    {
-    "t": "Euronext taps NN Group's David Knibbe to succeed Boujnah as CEO",
-    "l": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSFB6NU5OZmxhTjRST01SSFRNdnZWWjV0YWNMVjI5XzlLQW1OZllBbnR5bEVBcDRaQ1NINEpvSEhla0xXNS1MZm1CVTBNLTJzV2xYSkREeG9EY3pOcngtbG9UYmVFRWtmQkcxOGFCV1RvRkhhS0VGMWwtdm1FSGRwRW55R3Zra21qd3NSM2d4c00?oc=5",
+    "t": "Tjeerd Bosklopper to succeed David Knibbe as CEO of NN Group",
+    "l": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZXI3TGhGMk5JYlBiVWZMZW1DZ0pFdjByckhHa0dwR0VPUy04R0NVdjJBVkdNNDBCTTdWNXdGYVN3RzVyaldsVGJjWnhla2hTOUFxZms5U2k4akdNbmt1cjRmdlJxaWh0dVJwSjNYd3hILWRtMFlWOEpLZGR5SklZSC1DREh5YWdEd0RUZ0M0TmFzNzNiekE?oc=5",
     "d": "02 Nov"
+   },
+   {
+    "t": "NN Group sponsoring fourth Orange Capital Re cat bond, seeking €75m reinsurance",
+    "l": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNV0h2XzB5YnRUWUtBYUVTZEtYTXNCaGVuc1g2c1g5VTNRdDJDR2ZMU3A0U0o5OGVsLUR2dnNrMnJrQVRrbFp1amdnaTJ4M3pBTTRLRk1wTk9VRVBTZGFkQ1FnUEpFVFBvV0xpYWl6NUxEdTNKQ1A0YUlWSTJVOXF3QmVxdjlfbEtNY3JXckpSTUNjcFZBUE4wNEhJYmhYLVh2VlhIdGJ5cmZnajg?oc=5",
+    "d": "03 Nov"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "PNL.AS": {
-  "price": 0.818,
+  "price": 0.813,
   "currency": "EUR",
-  "day": -0.4866212375838175,
-  "wk": 0.8004933385568069,
-  "mo": -2.7332147756906844,
+  "day": -1.0948937239066647,
+  "wk": 0.12315846783466089,
+  "mo": -3.386804685952227,
   "closes": [
    0.9445000290870667,
    0.9589999914169312,
@@ -1199,36 +1201,36 @@
    0.8054999709129333,
    0.8015000224113464,
    0.8220000267028809,
-   0.8184999823570251
+   0.8130000233650208
   ],
   "news": [
+   {
+    "t": "'A Dictatorship': Team Picnic-PostNL Rocked by Allegations of Culture of Fear",
+    "l": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRC1RcUhMS3JKNHlTVjYyS1dkMHd5RWJRRmtiZ0Y2ZVZsV2xBMHpkYy1McUs3X3h2cUJwXzNQajk2S002Q0FlSmFYWi1rN2dFYWVjei02ZG5wY1lrQ280LVRxY1dOTXAzcjY1SkJtUnRyT0NPQzNUWW54WHhpZ3NWcnBTeFZNVXlWU1U2Mmh4TG5uMjdaYlJaQ0tmVC1Kd0paZmJyUmotcF9MNDZBWVY1NjBYZFFJWHhyd0E?oc=5",
+    "d": "15 Oct"
+   },
    {
     "t": "\"I feel both vindicated and angry\" - British rider recalls old wounds and reaffirms 'destroyed careers' at Picnic PostNL",
     "l": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcmtRcldFZjJ6TW5ERV9wOU1aYWRiYkt1dzN5cmlfNmdCUWdOOVF4OGp0eTFHV19nZ29WdW41NmE2cWJTb1VTdHliVmpEOU1Pa19SMDhYamxGY1pZcjNpRmN0eW1rcGVya1BER0Nub3dLT25la05IeS1DODBIV2VDY1psYVdJYjI0UWYtdFNvdktWOEhjam9CX09ncnFpMXp4OVFBM2JXQjhrYjBMcDBQS2xKeVp2cXJrUkp4b0liTFVmcWlBUlZnSndwaC1STTZPZW1NLWtHdkpwZDd5Y0NsQXhDWG0?oc=5",
     "d": "29 Oct"
    },
    {
-    "t": "PostNL seeks state compensation for 2027, confirms 2026 outlook as Q3 revenue rise",
-    "l": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYU1ZU3BsUlZOWnlIS1Q3bmkzd3hYMzVwcWp3TFV2d0tEdUFXUjZSZHJlSkJvUEo3cGxlejBNWWNPRmd0SGpDNVlMX1JCbmFEOUtDLUZmRk9GOGxMNGhIaldXS3Z3T21OelBOLVBvWFUzV3liaWk5Q09WOExSMVZqc2xrV0E2SXEwaGZxWGFvM2w3YkFDUzFGNnB4T2lSZ0VJVW00?oc=5",
-    "d": "26 Oct"
-   },
-   {
-    "t": "PostNL stamp prices jump 8.6% to €1.52",
-    "l": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvU0xVcXhvYS0tRTVpNUFNY21JLW4yT0c4bWdNNlo3bzBvYjlZaEhrdVo0cVdwUHlIUm1yVlVlMnlfNTFDckg5VDhZb2Z0a2dPYU1hRDRaUDdYcUxCSlBMZTQzbTZ6bFZzdDVtcGhJY0U?oc=5",
-    "d": "02 Nov"
+    "t": "Picnic-PostNL appoints investigator into team culture",
+    "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTS1JcGZ1SHFJUnF5NE51ako1YktsSk1HWExFcGlIZEg0bUJzSVppQmg0TGFtY2NoUkplLWdPWVEzQVlROFJDNUhlbG5XMDdzUEE2a3NBMnVwMHg5YnB5U2YxN01hWXp2cU1RZDI3Wm44TWpQNy1uSmxGMWJxRC1lWjRPckVZOWxCb05V?oc=5",
+    "d": "29 Oct"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "SHELL.AS": {
-  "price": 47.165,
+  "price": 46.515,
   "currency": "EUR",
-  "day": 0.1486331404236152,
-  "wk": 0.07426235225738154,
-  "mo": 10.0314920533892,
+  "day": -1.2315558035236984,
+  "wk": -1.3049048685103148,
+  "mo": 8.515099890956535,
   "closes": [
    39.80500030517578,
    38.875,
@@ -1296,36 +1298,36 @@
    48.40999984741211,
    48.68000030517578,
    47.095001220703125,
-   47.165000915527344
+   46.51499938964844
   ],
   "news": [
-   {
-    "t": "Shell PLC Stock (SHEL) Moved Down by 3.07% on Nov 2: What Investors Need To Know",
-    "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTnFLaUNab1BjZ0FVZ0pWRXZ2cHhRbDdWcGFKVGVOejVKaEl4YkxCU09zSTVxYl9TWjdkRFZuVG56TEdzWmdWX0ZHdlBONUw5VVFZNVNJd0xlOTNIMHh6dnR5MDBQUDM4T0RIR0Y3TUNwZ2ZnOS1Kd2pDZ25OS2cwMVdZMTNtSkE5YlZj?oc=5",
-    "d": "02 Nov"
-   },
    {
     "t": "Shell plc 2026 Q3 - Results - Earnings Call Presentation (NYSE:SHEL) 2026-11-01",
     "l": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdm0zY3JWM05pczJRY2hrNkJNMXZ4M09XSnNWallnNUlmRU9mWWFXbG01OUczNVRTRlpCMnZSblAyZTBDSE9xN2gxZF9kRGFFWnh1ZUdzekhNajNIWXp3S2I4azNSY0hnbE1Vb0pnOVVsYldGYlFENXlsdEw1WGE1dWVnaUJMUmpVWHhTdFVhZVl5S2gxbWVDTA?oc=5",
     "d": "01 Nov"
    },
    {
-    "t": "Form 6-K Shell plc For: Nov 02",
-    "l": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNWplUS0wM3VCa0V3cWhSdzE3RnJXTkRqWTE4bzNlMEJPVzlsYUJLVTA4QUNfNVh4bWpsTUJiNnNvVjZidlNYZ2d5VldaRlBTWFpjUFluMElNYngybXQ0THlWM1pPdVg2czZSS2lPaUcwbFItNjJLLWVBb1FoZ2VJVVh6VHVRVzkxZ2tLY2JBOUs0QQ?oc=5",
+    "t": "Shell PLC (SHEL) (Q3 2026) Earnings Call Highlights: $10. ...",
+    "l": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTFZTaURDSVgxVGxUZkt4cGtWbi11S3F6WVhVM08wUXNIQlhPMndCNTY4RW16NXNYRjhVY1BEa1FjbTN2cUFRMV95anVxb0dfemJrSXZ3d25lNDg2NS03cjExVDNLa1dhZmZJZXRRdHE0dmtnU1RuNVh1UFlSTHVGdHNMbkpQUQ?oc=5",
+    "d": "30 Oct"
+   },
+   {
+    "t": "Shell PLC Stock (SHEL) Moved Down by 3.07% on Nov 2: What Investors Need To Know",
+    "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTnFLaUNab1BjZ0FVZ0pWRXZ2cHhRbDdWcGFKVGVOejVKaEl4YkxCU09zSTVxYl9TWjdkRFZuVG56TEdzWmdWX0ZHdlBONUw5VVFZNVNJd0xlOTNIMHh6dnR5MDBQUDM4T0RIR0Y3TUNwZ2ZnOS1Kd2pDZ25OS2cwMVdZMTNtSkE5YlZj?oc=5",
     "d": "02 Nov"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "SOF.BR": {
-  "price": 279.8,
+  "price": 276.0,
   "currency": "EUR",
-  "day": -1.8245614035087732,
-  "wk": 2.7920555639641353,
-  "mo": 15.907205827416382,
+  "day": -3.157894736842104,
+  "wk": 1.3960277819820677,
+  "mo": 14.33306005730579,
   "closes": [
    248.1999969482422,
    250.60000610351562,
@@ -1393,7 +1395,7 @@
    273.0,
    275.0,
    285.0,
-   279.79998779296875
+   276.0
   ],
   "news": [
    {
@@ -1402,17 +1404,17 @@
     "d": "06 Aug"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "WEB.BR": {
-  "price": 37.3,
+  "price": 37.4,
   "currency": "EUR",
-  "day": 2.0454141269610204e-06,
-  "wk": 0.5390856365640184,
-  "mo": 5.965904626718332,
+  "day": 0.2680985656431156,
+  "wk": 0.8086335959476498,
+  "mo": 6.250002031976476,
   "closes": [
    39.79999923706055,
    39.0,
@@ -1480,20 +1482,20 @@
    37.900001525878906,
    38.0,
    37.29999923706055,
-   37.29999923706055
+   37.400001525878906
   ],
   "news": [],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "3CP.DU": {
-  "price": 3.236,
+  "price": 3.219,
   "currency": "EUR",
-  "day": 1.2515613134088222,
-  "wk": 10.19921611318213,
-  "mo": 18.16687680468099,
+  "day": 0.7196464362988264,
+  "wk": 9.620297007917955,
+  "mo": 17.54610049606038,
   "closes": [
    3.1040000915527344,
    3.0934998989105225,
@@ -1561,36 +1563,36 @@
    2.934000015258789,
    3.003999948501587,
    3.196000099182129,
-   3.2360000610351562
+   3.2190001010894775
   ],
   "news": [
+   {
+    "t": "Xiaomi's going global—the 18 Pro series is preparing for a major November launch",
+    "l": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQS19WY3AzM3FMWmF3WndmaFVLcDdVQW1iTFBIOWNrdWpYYklzeFJOeXJRNlhHNmR0M3JQQVlDYnJod1Q0MWFHZ2I4STI2S080cEdfTV9fQ0M2RmxyQi11WlplRGs4eTZJRENOQjZqRkFDMUVWdW8tLTA2UFBnT1d3YlVJdHRybG40UFdSNmJSZTgzT0hfMHNxd1N6cnM3cXpVMXhHQTQ0VFVrVWV6UzJ5MVZhRnJvUkdmNzF4Mm1pTkI2QQ?oc=5",
+    "d": "02 Nov"
+   },
    {
     "t": "Xiaomi 18 Pro series is going global this month - GSMArena.com news",
     "l": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWGdGLUtncnFBWWc1eVZkTU52aWxsQjFTRENMTlBYQ3NfblRDcl9DaW4tUktsV3V0bFJmUmhXLU5SOGlGYm02NzBLWHFWQkVxU0dTcUVjenpLQ2ZtVkczaDl6d3ZLYmRaN3lWQzNidW1CMDBtWWhITXlkYldMUFlzM0syY2t2VkdsZnlmaTdRU07SAYwBQVVfeXFMT3M2bWlwTGdPVzd0NlRMcEE3OU9RVm5NQ2ZJYkhERWp2NTluemw3WmdWNXB5NTNINnFOVUpFakNEU1E2NUNjYmJYVkYtejhEWUJiVkRCNFZHazdxSUZ0YUREVW41MElMeEtsM2xrVzJmaEt1V3FEcU9wa3JIdUtabmVTRmVoYlBkMW4yT1k?oc=5",
     "d": "02 Nov"
    },
    {
-    "t": "Xiaomi's October EV deliveries top 50,000, hit 2026 monthly high",
-    "l": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVGJQV25faktaWGFiUks0eTdlWmFhbkcwR0RWcXdFbk95UXJ6VjBmSUV1NjRaTk1oYXk0NEtKaGF1NTJBOWNFUm1sY2tiUVhjekJVU25tRWduZVpGVFNHMGFyOTN1RjRmS1lFcnNSRExoT216QUNtaFZjOTluU1g0d19EejFmR2pRWDJuSXc4WWQ3WHJ2UngzYmZRV3d0a2dmeHFycVhhZGdvN1dUbmc?oc=5",
-    "d": "01 Nov"
-   },
-   {
-    "t": "Tesla China EV Rivals BYD, Xiaomi, XPeng Report Strong Sales As Year-End Push Begins",
-    "l": "https://news.google.com/rss/articles/CBMingFBVV95cUxPb0Ewc1VvNHo3YXZzNWh0RExCWm9VUUlMTEFGWkpDSEU0VTFpU3dQcWsyNkg2RXEtbDJJNXhkam9rNFgzZ0NsV3Ayakt2MVNhLTlyZHRKVGNGTXRZTk9FUzNibGJ0dGJaRm55c0VnRTYtd09VQzVJbWZoeXhyUWx0OWFQTWhCb0VEaG5HQ3pqVjl4ZlVJaE0xa2pjWW5CZw?oc=5",
-    "d": "02 Nov"
+    "t": "Xiaomi confirms Android 17 HyperOS 4 rollout schedule for these devices",
+    "l": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTlQwOElqdHlFZjhpN3huNEgwNlFUZTVaNTRCS3NPcVZvWG51cDVORDh2YnhCQ1lBc09TQ3MzU25rNFZRTnpBdmYwak5zS0NMcC1WWVZGZTg4YUFQdWZacmVZZVU5aTEwUV9nV0x2cm10Q2dRU0hsTG1sMWZIY256d09iZ1VPa1N0bUdHTW41d3BheWFKS0d0UlpUdmFFazhTcHc?oc=5",
+    "d": "03 Nov"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  },
  "XIOR.BR": {
-  "price": 25.15,
+  "price": 25.0,
   "currency": "EUR",
-  "day": 0.39920465463130217,
-  "wk": 2.86298091512478,
-  "mo": 8.639308997651618,
+  "day": -0.1995977588157949,
+  "wk": 2.249485561956366,
+  "mo": 7.991362470645158,
   "closes": [
    27.649999618530273,
    27.649999618530273,
@@ -1658,7 +1660,7 @@
    24.549999237060547,
    24.700000762939453,
    25.049999237060547,
-   25.149999618530273
+   25.0
   ],
   "news": [
    {
@@ -1677,9 +1679,9 @@
     "d": "29 Oct"
    }
   ],
-  "when": "03 Nov 2026, 09:38 UTC",
+  "when": "03 Nov 2026, 20:46 UTC",
   "stale": false,
-  "usdeur": 1.1197,
-  "nokeur": 10.3358
+  "usdeur": 1.1196,
+  "nokeur": 10.3848
  }
 }
