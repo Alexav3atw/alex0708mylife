@@ -23,6 +23,38 @@
   .s-tile .value { font-size: 1.3rem; font-weight: 650; margin-top: 4px; line-height: 1.2; }
   .s-tile .note { color: var(--ink-2); font-size: 0.8rem; margin-top: 4px; }
 
+  /* Buffett indicator section */
+  .buffett { margin: 30px 0; }
+  .buffett h2 { font-size: 1.25rem; margin: 0 0 10px; }
+  .b-intro { color: var(--ink-2); font-size: 0.9rem; line-height: 1.6; margin: 0 0 18px; max-width: 74ch; }
+  .b-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 0 0 18px; }
+  .b-tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; }
+  .b-tile .label { color: var(--ink-3); font-size: 0.8rem; }
+  .b-tile .value { font-size: 1.3rem; font-weight: 650; margin-top: 4px; line-height: 1.2; font-variant-numeric: tabular-nums; }
+  .b-tile .note { color: var(--ink-2); font-size: 0.8rem; margin-top: 4px; }
+  .b-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  @media (max-width: 460px) { .b-grid { grid-template-columns: 1fr; } }
+  .b-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; }
+  .b-card h3 { font-size: 0.95rem; margin: 0 0 10px; font-weight: 600; }
+  .b-card svg { width: 100%; height: auto; display: block; }
+  .b-chart-label { fill: var(--ink-3); font-size: 12px; }
+  .b-gridline { stroke: var(--border); stroke-width: 1; }
+  .b-line { stroke: var(--blue); stroke-width: 2; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+  .b-ref { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 4 4; }
+  .b-dot { fill: var(--blue); }
+  .b-table { margin-top: 18px; color: var(--ink-2); font-size: 0.85rem; }
+  .b-table table { border-collapse: collapse; margin-top: 10px; min-width: 240px; }
+  .b-table th, .b-table td { border-bottom: 1px solid var(--border); padding: 4px 14px 4px 0; text-align: left; font-variant-numeric: tabular-nums; }
+  .b-table th { color: var(--ink-3); font-weight: 600; font-size: 0.78rem; }
+  .buff-note { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 18px; color: var(--ink-2); font-size: 0.9rem; }
+  .b-stale { font-size: 0.7rem; color: var(--ink-3); font-style: italic; }
+
+  /* 200-day moving average line on each stock card */
+  .sc-ma { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; font-size: 0.78rem; color: var(--ink-2); }
+  .sc-ma-label { color: var(--ink-3); }
+  .sc-ma-value { font-variant-numeric: tabular-nums; }
+  .sc-ma-pos { font-weight: 600; font-variant-numeric: tabular-nums; }
+
   .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 16px; margin: 26px 0; }
   @media (max-width: 460px) { .stock-grid { grid-template-columns: 1fr; } }
   .stock-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
@@ -73,13 +105,17 @@
 </section>
 
 <article class="wrap">
-  <p class="lede">This page updates itself <strong>twice a day, automatically</strong> (around 06:00 and 16:00 Belgian time in winter; one hour later in summer). A script on GitHub's servers fetches the latest price and up to three recent headlines per stock &mdash; prices from Yahoo Finance, headlines from Google News, each linking to its source. Last update: <strong>{{STAMP}}</strong>.</p>
+  <p class="lede">This page updates itself <strong>twice a day, automatically</strong> (around 06:00 and 16:00 Belgian time in winter; one hour later in summer). A script on GitHub's servers fetches the latest price and up to three recent headlines per stock &mdash; prices from Yahoo Finance, headlines from Google News, each linking to its source. Each card also shows the <strong>200-day moving average</strong>, and the <strong>Buffett indicator</strong> below tracks the overall US market's valuation. Last update: <strong>{{STAMP}}</strong>.</p>
 
   <div class="summary">
 {{SUMMARY}}
     <div class="s-tile"><div class="label">Updates</div><div class="value">2&times; daily</div><div class="note">06:00 &amp; 16:00 Belgian time (winter)</div></div>
     <div class="s-tile"><div class="label">Sorted</div><div class="value">A&ndash;Z</div><div class="note">alphabetically by company name</div></div>
   </div>
+
+  <section class="buffett">
+{{BUFFETT}}
+  </section>
 
   <div class="stock-grid">
 {{ROWS}}
@@ -96,7 +132,7 @@
 <footer class="site">
   <div class="wrap">
     <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
-    <div class="credits">Prices from Yahoo Finance, headlines from Google News. A personal watchlist, not investment advice. Updated twice a day by GitHub Actions.</div>
+    <div class="credits">Prices and index data from Yahoo Finance, headlines from Google News, US GDP from FRED (St. Louis Fed). A personal watchlist, not investment advice. Updated twice a day by GitHub Actions.</div>
   </div>
 </footer>
 

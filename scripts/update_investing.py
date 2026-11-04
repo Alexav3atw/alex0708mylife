@@ -14,6 +14,9 @@ Design rules, mirroring the space-news updater:
   note instead of disappearing. If every stock fails, the existing page is
   left untouched.
 - The list order is the page order: alphabetical by company name.
+- Each card shows the 200-day moving average (from the 1-year price history),
+  and the page carries a Buffett-indicator section: Wilshire 5000 index /
+  nominal US GDP, from Yahoo and FRED respectively (both keyless).
 """
 import html
 import json
@@ -122,16 +125,17 @@ def http_get(url):
         return None
 
 
-def yahoo_history(symbol):
-    """Fetch ~3 months of daily closes plus the latest quote for one symbol.
+def yahoo_history(symbol, span="3mo"):
+    """Fetch daily closes plus the latest quote for one symbol.
 
-    Returns {"price", "currency", "prev", "closes"} with closes as a list of
+    span is the Yahoo chart range ("3mo", "1y", "5y", "max"). Returns
+    {"price", "currency", "prev", "closes"} with closes as a list of
     (timestamp, close) pairs, or None if the fetch failed or is empty.
     """
-    url_tpl = "https://{host}/v8/finance/chart/{sym}?range=3mo&interval=1d"
+    url_tpl = "https://{host}/v8/finance/chart/{sym}?range={span}&interval=1d"
     raw = None
     for host in ("query1.finance.yahoo.com", "query2.finance.yahoo.com"):
-        raw = http_get(url_tpl.format(host=host, sym=urllib.parse.quote(symbol)))
+        raw = http_get(url_tpl.format(host=host, sym=urllib.parse.quote(symbol), span=span))
         if raw is not None:
             break
     if raw is None:
@@ -278,6 +282,268 @@ def sparkline(closes, change):
     )
 
 
+# ---------------------------------------------------------------------------
+# Buffett indicator - the total value of the US stock market as a share of
+# US GDP, the gauge Warren Buffett called "the best single measure of where
+# valuations stand". Two keyless sources make it computable:
+#   - the Wilshire 5000 Full Cap index (Yahoo ^W5000): by construction a
+#     close proxy for the total dollar value of all US-listed companies in
+#     billions (the 1970 Wilshire index was exactly that figure);
+#   - nominal US GDP, quarterly, billions, from FRED (St. Louis Fed CSV).
+# Dividing index by GDP and multiplying by 100 gives the indicator in
+# percent: above 100 % the market is worth more than one year of output.
+# ---------------------------------------------------------------------------
+
+W5000 = "^W5000"  # Wilshire 5000 Full Cap index on Yahoo
+GDP_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDP"
+DAILY_SPAN_DAYS = 252  # ~12 months of sessions for the daily chart
+MONTHLY_SPAN = 60      # last 60 month-ends for the monthly chart
+SIX_SPAN = 40          # last 40 half-years = 20 years for the six-monthly chart
+
+
+def fred_gdp():
+    """Quarterly nominal US GDP from FRED as [(ymd, billions)], or None.
+
+    FRED's edge resets requests that carry a browser User-Agent (bot
+    protection); a bare request with no UA header goes through."""
+    raw = None
+    for _ in range(3):
+        req = urllib.request.Request(GDP_URL)
+        try:
+            with urllib.request.urlopen(req, timeout=40) as resp:
+                raw = resp.read()
+                break
+        except Exception as exc:  # noqa: BLE001
+            print(f"  GDP fetch error: {exc}")
+            time.sleep(2)
+    if raw is None:
+        return None
+    try:
+        rows = []
+        for line in raw.decode("utf-8", "replace").splitlines()[1:]:
+            date, _, value = line.partition(",")
+            value = value.strip()
+            if value in ("", "."):
+                continue
+            rows.append((date, float(value)))
+        return rows or None
+    except Exception as exc:  # noqa: BLE001
+        print(f"  GDP parse error: {exc}")
+        return None
+
+
+def w5000_series():
+    """Wilshire 5000 closes: the daily 5-year series (for the daily and
+    monthly charts) and the longest series Yahoo serves (for the six-monthly
+    chart - on this index range=max comes back as ~quarterly points)."""
+    daily = None
+    hist = yahoo_history(W5000, "5y")
+    if hist and len(hist["closes"]) > 250:
+        daily = hist["closes"]
+    longest = None
+    hist = yahoo_history(W5000, "max")
+    if hist and len(hist["closes"]) > 40:
+        longest = hist["closes"]
+    return daily, longest
+
+
+def buffett_series(w5000, gdp):
+    """Merge the daily index closes with stepped quarterly GDP into
+    [(ymd, pct)] points: each day uses the latest GDP published so far."""
+    pts, gi = [], 0
+    for ts, close in w5000:
+        day = time.strftime("%Y-%m-%d", time.gmtime(ts))
+        while gi + 1 < len(gdp) and gdp[gi + 1][0] <= day:
+            gi += 1
+        g = gdp[gi][1]
+        if g > 0:
+            pts.append((day, close / g * 100.0))
+    return pts
+
+
+def group_last(points, keyfn):
+    """Keep the last point of each consecutive group, in order."""
+    out, cur = [], None
+    for p in points:
+        k = keyfn(p[0])
+        if k != cur:
+            out.append(p)
+            cur = k
+        else:
+            out[-1] = p
+    return out
+
+
+def fetch_buffett(cache):
+    """Compute the Buffett-indicator payload, or fall back to the cache.
+
+    Returns (buff, stale); buff holds the three point series plus 20-year
+    stats, stale says whether the numbers are yesterday's cached ones."""
+    try:
+        daily_w, long_w = w5000_series()
+        gdp = fred_gdp()
+        if not daily_w or not long_w or not gdp:
+            raise RuntimeError("no W5000/GDP data")
+        pts = buffett_series(daily_w, gdp)
+        pts_long = buffett_series(long_w, gdp)
+        if len(pts) < 250 or len(pts_long) < 40:
+            raise RuntimeError("too few merged points")
+        monthly = group_last(pts, lambda d: d[:7])[-MONTHLY_SPAN:]
+        six = group_last(pts_long, lambda d: d[:4] + ("-H1" if d[5:7] <= "06" else "-H2"))[-SIX_SPAN:]
+        six[-1] = pts[-1]  # freshest point for the current half-year
+        stats = [v for _, v in six]
+        buff = {
+            "daily": pts[-DAILY_SPAN_DAYS:],
+            "monthly": monthly,
+            "six": six,
+            "cur": pts[-1][1],
+            "avg": sum(stats) / len(stats),
+            "min": min(stats), "max": max(stats),
+            "when": time.strftime("%d %b %Y, %H:%M UTC", time.gmtime()),
+        }
+        return buff, False
+    except Exception as exc:  # noqa: BLE001
+        print(f"  buffett indicator failed ({exc}) - trying cache")
+        old = cache.get("~buffett")
+        return (dict(old, stale=True), True) if old else (None, True)
+
+
+def fmt_pct_axis(v):
+    """Compact Belgian-format number for axis labels: '172,3'."""
+    return f"{v:,.1f}".replace(",", "\x00").replace(".", ",").replace("\x00", ".")
+
+
+def label_month(d):
+    """'2025-11-04' -> 'Nov 2025'."""
+    return time.strftime("%b %Y", time.strptime(d, "%Y-%m-%d"))
+
+
+def svg_chart(points, w=300.0, h=170.0, ref=None, aria=""):
+    """Dark-theme SVG line chart from (label, pct) points.
+
+    One series, so no legend box: the heading above each chart names it.
+    Returns markup with a polyline, min/mid/max value labels, first/middle/
+    last date labels, a dashed reference line when `ref` falls inside the
+    window, and native <title> tooltips on a sparse set of hover dots (the
+    site ships no JavaScript, so hover help rides on browser tooltips)."""
+    if len(points) < 2:
+        return ""
+    vals = [v for _, v in points]
+    lo, hi = min(vals), max(vals)
+    if hi - lo < 1e-9:
+        hi = lo + 1.0
+    pad = (hi - lo) * 0.10
+    lo, hi = lo - pad, hi + pad
+    left, right, top, bottom = 38.0, 8.0, 10.0, 22.0
+    iw, ih = w - left - right, h - top - bottom
+    n = len(points)
+
+    def xy(i, v):
+        return left + iw * i / (n - 1), top + ih * (1.0 - (v - lo) / (hi - lo))
+
+    parts = []
+    for frac in (0.0, 0.5, 1.0):
+        v = hi - (hi - lo) * frac
+        y = top + ih * frac
+        parts.append(f'<line class="b-gridline" x1="{left:.1f}" y1="{y:.1f}" '
+                     f'x2="{left + iw:.1f}" y2="{y:.1f}"/>')
+        parts.append(f'<text class="b-chart-label" x="{left - 6:.1f}" y="{y + 4:.1f}" '
+                     f'text-anchor="end">{fmt_pct_axis(v)}</text>')
+
+    xlabs = [0, n - 1]
+    if n >= 40:
+        xlabs.insert(1, n // 2)
+    for i in xlabs:
+        x, _ = xy(i, vals[i])
+        anchor = "start" if i == 0 else ("middle" if i != n - 1 else "end")
+        parts.append(f'<text class="b-chart-label" x="{x:.1f}" y="{top + ih + 17:.1f}" '
+                     f'text-anchor="{anchor}">{html.escape(points[i][0])}</text>')
+
+    line = " ".join(f"{x:.1f},{y:.1f}"
+                    for x, y in (xy(i, v) for i, v in enumerate(vals)))
+
+    if ref is not None and lo <= ref <= hi:
+        _, y = xy(0, ref)
+        parts.append(f'<line class="b-ref" x1="{left:.1f}" y1="{y:.1f}" '
+                     f'x2="{left + iw:.1f}" y2="{y:.1f}"/>')
+        parts.append(f'<text class="b-chart-label" x="{left + iw + 3:.1f}" y="{y + 4:.1f}">'
+                     f'{fmt_pct_axis(ref)} %</text>')
+
+    dots = []
+    step = 1 if n <= 70 else 5
+    for i in range(0, n, step):
+        x, y = xy(i, vals[i])
+        dots.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="transparent">'
+                    f'<title>{html.escape(points[i][0])}: {fmt_num(vals[i])} %</title></circle>')
+    lx, ly = xy(n - 1, vals[-1])
+    dots.append(f'<circle class="b-dot" cx="{lx:.1f}" cy="{ly:.1f}" r="4">'
+                f'<title>{html.escape(points[-1][0])}: {fmt_num(vals[-1])} %</title></circle>')
+
+    return (f'<svg viewBox="0 0 {w:.0f} {h:.0f}" role="img" '
+            f'aria-label="{html.escape(aria)}">'
+            f'<title>{html.escape(aria)}</title>'
+            + "".join(parts)
+            + f'<polyline class="b-line" points="{line}"/>'
+            + "".join(dots) + "</svg>")
+
+
+def build_buffett(buff):
+    """Render the Buffett-indicator section: summary tiles, three charts and
+    a data table - or a short note when no data is available at all."""
+    if not buff:
+        return ('<div class="buff-note">Buffett-indicator data is temporarily '
+                'unavailable (Wilshire 5000 or GDP source did not respond). '
+                'The rest of the page is unaffected.</div>')
+    stale_html = (' <span class="b-stale">data of {}</span>'.format(buff.get("when", ""))
+                  if buff.get("stale") else "")
+    daily_l = [(label_month(d), v) for d, v in buff["daily"]]
+    monthly_l = [(label_month(d), v) for d, v in buff["monthly"]]
+    six_l = [(f"{k[5:]} {k[:4]}", v) for k, v in buff["six"]]
+
+    cur, avg = buff["cur"], buff["avg"]
+    diff = cur - avg
+    d_cls, d_arrow = direction(diff)
+    tiles = "\n".join([
+        '    <div class="b-tile"><div class="label">Now</div>'
+        f'<div class="value">{fmt_num(cur)} %</div>'
+        '<div class="note">total US stock market vs US GDP</div></div>',
+        '    <div class="b-tile"><div class="label">vs 20-year average</div>'
+        f'<div class="value {d_cls}">{d_arrow} {fmt_pct_axis(abs(diff))} pts</div>'
+        f'<div class="note">20-year average {fmt_num(avg)} %</div></div>',
+        '    <div class="b-tile"><div class="label">20-year range</div>'
+        f'<div class="value">{fmt_num(buff["min"])} % &ndash; {fmt_num(buff["max"])} %</div>'
+        '<div class="note">six-monthly points</div></div>',
+    ])
+
+    charts = "\n".join([
+        '    <div class="b-card"><h3>Daily &middot; last 12 months</h3>'
+        + svg_chart(daily_l, aria=f"Buffett indicator, daily, {daily_l[0][0]} to {daily_l[-1][0]}")
+        + "</div>",
+        '    <div class="b-card"><h3>Monthly &middot; last 5 years</h3>'
+        + svg_chart(monthly_l, aria=f"Buffett indicator, monthly, {monthly_l[0][0]} to {monthly_l[-1][0]}")
+        + "</div>",
+        '    <div class="b-card"><h3>Six-monthly &middot; last 20 years</h3>'
+        + svg_chart(six_l, ref=100.0, aria=f"Buffett indicator, six-monthly, {six_l[0][0]} to {six_l[-1][0]}")
+        + "</div>",
+    ])
+
+    rows = "\n".join(f"<tr><td>{lbl}</td><td>{fmt_num(v)} %</td></tr>"
+                     for lbl, v in six_l)
+    table = ('<details class="b-table"><summary>Data table: six-monthly points</summary>'
+             '<table><thead><tr><th>Half-year</th><th>Indicator</th></tr></thead>'
+             f'<tbody>\n{rows}\n</tbody></table></details>')
+
+    return f"""  <h2>Buffett indicator{stale_html}</h2>
+    <p class="b-intro">The classic gauge of overall market valuation: the total value of all US-listed companies (the Wilshire 5000 Full Cap index, which tracks that value in billions) divided by the country's yearly output (nominal GDP, quarterly). Above 100 % the stock market is worth more than a full year of US economic output &mdash; a rough &ldquo;is the market expensive or cheap?&rdquo; thermometer. Data: Yahoo Finance and FRED (St. Louis Fed), both without API keys.</p>
+    <div class="b-tiles">
+{tiles}
+    </div>
+    <div class="b-grid">
+{charts}
+    </div>
+    {table}"""
+
+
 def build_card(sym, entry):
     """Render one stock card from a fresh or cached entry."""
     name, tick, desc = sym, sym, ""
@@ -308,6 +574,16 @@ def build_card(sym, entry):
 
     spark = sparkline(entry.get("closes", []), entry["mo"])
 
+    ma_html = ""
+    if entry.get("ma200"):
+        rel = (price / entry["ma200"] - 1.0) * 100.0
+        ma_cls, ma_arrow = direction(rel)
+        ma_html = (
+            f'<div class="sc-ma"><span class="sc-ma-label">200-day avg</span> '
+            f'<span class="sc-ma-value">{fmt_num(entry["ma200"])} <span class="sc-ccy">{ccy}</span></span> '
+            f'<span class="sc-ma-pos {ma_cls}">{ma_arrow} {fmt_pct(rel)} vs avg</span></div>'
+        )
+
     if entry.get("news"):
         lis = []
         for item in entry["news"]:
@@ -330,6 +606,7 @@ def build_card(sym, entry):
         <span class="tb {wk_cls}">1W {wk_arrow} {fmt_pct(entry["wk"])}</span>
         <span class="tb {mo_cls}">1M {mo_arrow} {fmt_pct(entry["mo"])}</span>
       </div>
+      {ma_html}
       {spark}
       {news_html}
     </div>"""
@@ -352,7 +629,7 @@ def main():
         print(f"  {sym} ({name}) ...")
         entry = None
         try:
-            hist = yahoo_history(sym)
+            hist = yahoo_history(sym, "1y")
             if hist is None:
                 raise RuntimeError("no history from Yahoo")
             closes = hist["closes"]
@@ -362,10 +639,15 @@ def main():
             wk = (last_close / closes[-6][1] - 1.0) * 100.0 if n >= 6 else \
                  (last_close / closes[0][1] - 1.0) * 100.0 if n >= 2 else 0.0
             mo = (last_close / closes[-22][1] - 1.0) * 100.0 if n >= 22 else wk
+            # 200-day moving average: the classic long-term trend line.
+            # range=1y gives ~252 sessions, so it needs 200 days of history;
+            # very young listings simply show no average line.
+            ma200 = (sum(c for _, c in closes[-200:]) / 200.0
+                     if n >= 200 else None)
             news = google_news(queries)
             entry = {
                 "price": hist["price"], "currency": hist["currency"],
-                "day": day, "wk": wk, "mo": mo,
+                "day": day, "wk": wk, "mo": mo, "ma200": ma200,
                 "closes": [c for _, c in closes],
                 "news": news, "when": when, "stale": False,
             }
@@ -385,13 +667,26 @@ def main():
         print("No data for any stock - leaving the existing page untouched.")
         sys.exit(0)
 
+    # Buffett indicator: market-wide gauge, cached under "~buffett" exactly
+    # like a stock, so one failed fetch shows yesterday's numbers instead
+    # of an empty section.
+    time.sleep(SLEEP)
+    buff, buff_stale = fetch_buffett(cache)
+    if buff:
+        buff = dict(buff, stale=buff_stale)
+        data["~buffett"] = buff
+        print(f"  ~buffett indicator: {buff['cur']:.2f} %"
+              + (" (stale cache)" if buff_stale else ""))
+
     save_cache(data)
 
     # Page rows in the fixed alphabetical order.
     rows = [build_card(sym, data[sym]) for sym, _, _, _ in STOCKS if sym in data]
 
     # Summary tiles: best and worst mover of the day among fresh entries.
-    movers = [d for d in data.values() if not d.get("stale")]
+    # Only fresh stock entries count; "~buffett" has no "day" key and is
+    # deliberately excluded from best/worst.
+    movers = [d for d in data.values() if not d.get("stale") and d.get("day") is not None]
     best = max(movers, key=lambda d: d["day"]) if movers else None
     worst = min(movers, key=lambda d: d["day"]) if movers else None
     best_name = worst_name = ""
@@ -421,6 +716,7 @@ def main():
     template = TEMPLATE.read_text(encoding="utf-8")
     page = (template.replace("{{SUMMARY}}", summary)
                     .replace("{{ROWS}}", "\n".join(rows))
+                    .replace("{{BUFFETT}}", build_buffett(data.get("~buffett")))
                     .replace("{{STAMP}}", stamp))
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(page, encoding="utf-8")

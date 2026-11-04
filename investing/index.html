@@ -23,6 +23,38 @@
   .s-tile .value { font-size: 1.3rem; font-weight: 650; margin-top: 4px; line-height: 1.2; }
   .s-tile .note { color: var(--ink-2); font-size: 0.8rem; margin-top: 4px; }
 
+  /* Buffett indicator section */
+  .buffett { margin: 30px 0; }
+  .buffett h2 { font-size: 1.25rem; margin: 0 0 10px; }
+  .b-intro { color: var(--ink-2); font-size: 0.9rem; line-height: 1.6; margin: 0 0 18px; max-width: 74ch; }
+  .b-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 0 0 18px; }
+  .b-tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; }
+  .b-tile .label { color: var(--ink-3); font-size: 0.8rem; }
+  .b-tile .value { font-size: 1.3rem; font-weight: 650; margin-top: 4px; line-height: 1.2; font-variant-numeric: tabular-nums; }
+  .b-tile .note { color: var(--ink-2); font-size: 0.8rem; margin-top: 4px; }
+  .b-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  @media (max-width: 460px) { .b-grid { grid-template-columns: 1fr; } }
+  .b-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; }
+  .b-card h3 { font-size: 0.95rem; margin: 0 0 10px; font-weight: 600; }
+  .b-card svg { width: 100%; height: auto; display: block; }
+  .b-chart-label { fill: var(--ink-3); font-size: 12px; }
+  .b-gridline { stroke: var(--border); stroke-width: 1; }
+  .b-line { stroke: var(--blue); stroke-width: 2; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+  .b-ref { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 4 4; }
+  .b-dot { fill: var(--blue); }
+  .b-table { margin-top: 18px; color: var(--ink-2); font-size: 0.85rem; }
+  .b-table table { border-collapse: collapse; margin-top: 10px; min-width: 240px; }
+  .b-table th, .b-table td { border-bottom: 1px solid var(--border); padding: 4px 14px 4px 0; text-align: left; font-variant-numeric: tabular-nums; }
+  .b-table th { color: var(--ink-3); font-weight: 600; font-size: 0.78rem; }
+  .buff-note { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 18px; color: var(--ink-2); font-size: 0.9rem; }
+  .b-stale { font-size: 0.7rem; color: var(--ink-3); font-style: italic; }
+
+  /* 200-day moving average line on each stock card */
+  .sc-ma { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; font-size: 0.78rem; color: var(--ink-2); }
+  .sc-ma-label { color: var(--ink-3); }
+  .sc-ma-value { font-variant-numeric: tabular-nums; }
+  .sc-ma-pos { font-weight: 600; font-variant-numeric: tabular-nums; }
+
   .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 16px; margin: 26px 0; }
   @media (max-width: 460px) { .stock-grid { grid-template-columns: 1fr; } }
   .stock-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
@@ -73,77 +105,138 @@
 </section>
 
 <article class="wrap">
-  <p class="lede">This page updates itself <strong>twice a day, automatically</strong> (around 06:00 and 16:00 Belgian time in winter; one hour later in summer). A script on GitHub's servers fetches the latest price and up to three recent headlines per stock &mdash; prices from Yahoo Finance, headlines from Google News, each linking to its source. Last update: <strong>03 November 2026, 20:46 UTC</strong>.</p>
+  <p class="lede">This page updates itself <strong>twice a day, automatically</strong> (around 06:00 and 16:00 Belgian time in winter; one hour later in summer). A script on GitHub's servers fetches the latest price and up to three recent headlines per stock &mdash; prices from Yahoo Finance, headlines from Google News, each linking to its source. Each card also shows the <strong>200-day moving average</strong>, and the <strong>Buffett indicator</strong> below tracks the overall US market's valuation. Last update: <strong>04 November 2026, 09:56 UTC</strong>.</p>
 
   <div class="summary">
-    <div class="s-tile"><div class="label">Best today</div><div class="value up">&#9650; +1,46 %</div><div class="note">Gaztransport &amp; Technigaz SA</div></div>
-    <div class="s-tile"><div class="label">Worst today</div><div class="value down">&#9660; -3,16 %</div><div class="note">Sofina S.A.</div></div>
+    <div class="s-tile"><div class="label">Best today</div><div class="value up">&#9650; +4,47 %</div><div class="note">iShares Global Clean Energy Transition UCITS ETF</div></div>
+    <div class="s-tile"><div class="label">Worst today</div><div class="value down">&#9660; -0,30 %</div><div class="note">Shell plc</div></div>
     <div class="s-tile"><div class="label">Updates</div><div class="value">2&times; daily</div><div class="note">06:00 &amp; 16:00 Belgian time (winter)</div></div>
     <div class="s-tile"><div class="label">Sorted</div><div class="value">A&ndash;Z</div><div class="note">alphabetically by company name</div></div>
   </div>
+
+  <section class="buffett">
+  <h2>Buffett indicator</h2>
+    <p class="b-intro">The classic gauge of overall market valuation: the total value of all US-listed companies (the Wilshire 5000 Full Cap index, which tracks that value in billions) divided by the country's yearly output (nominal GDP, quarterly). Above 100 % the stock market is worth more than a full year of US economic output &mdash; a rough &ldquo;is the market expensive or cheap?&rdquo; thermometer. Data: Yahoo Finance and FRED (St. Louis Fed), both without API keys.</p>
+    <div class="b-tiles">
+    <div class="b-tile"><div class="label">Now</div><div class="value">228,59 %</div><div class="note">total US stock market vs US GDP</div></div>
+    <div class="b-tile"><div class="label">vs 20-year average</div><div class="value up">&#9650; 92,4 pts</div><div class="note">20-year average 136,21 %</div></div>
+    <div class="b-tile"><div class="label">20-year range</div><div class="value">60,99 % &ndash; 233,51 %</div><div class="note">six-monthly points</div></div>
+    </div>
+    <div class="b-grid">
+    <div class="b-card"><h3>Daily &middot; last 12 months</h3><svg viewBox="0 0 300 170" role="img" aria-label="Buffett indicator, daily, Oct 2025 to Nov 2026"><title>Buffett indicator, daily, Oct 2025 to Nov 2026</title><line class="b-gridline" x1="38.0" y1="10.0" x2="292.0" y2="10.0"/><text class="b-chart-label" x="32.0" y="14.0" text-anchor="end">240,2</text><line class="b-gridline" x1="38.0" y1="79.0" x2="292.0" y2="79.0"/><text class="b-chart-label" x="32.0" y="83.0" text-anchor="end">217,7</text><line class="b-gridline" x1="38.0" y1="148.0" x2="292.0" y2="148.0"/><text class="b-chart-label" x="32.0" y="152.0" text-anchor="end">195,3</text><text class="b-chart-label" x="38.0" y="165.0" text-anchor="start">Oct 2025</text><text class="b-chart-label" x="165.5" y="165.0" text-anchor="middle">May 2026</text><text class="b-chart-label" x="292.0" y="165.0" text-anchor="end">Nov 2026</text><polyline class="b-line" points="38.0,76.6 39.0,77.2 40.0,83.9 41.0,81.6 42.0,80.9 43.1,89.1 44.1,86.2 45.1,93.8 46.1,92.4 47.1,82.7 48.1,81.4 49.1,81.1 50.1,92.8 51.2,93.3 52.2,99.9 53.2,104.5 54.2,102.3 55.2,112.6 56.2,105.6 57.2,95.6 58.2,88.8 59.3,84.3 60.3,80.6 61.3,84.4 62.3,83.1 63.3,80.3 64.3,79.4 65.3,78.4 66.3,80.7 67.3,81.3 68.4,76.3 69.4,74.3 70.4,81.8 71.4,83.5 72.4,85.2 73.4,92.6 74.4,87.6 75.4,81.7 76.5,77.1 77.5,74.9 78.5,72.8 79.5,75.6 80.5,76.7 81.5,81.8 82.5,88.9 83.5,84.1 84.5,79.4 85.6,81.8 86.6,81.4 87.6,77.2 88.6,76.1 89.6,77.3 90.6,80.2 91.6,78.2 92.6,78.6 93.7,91.8 94.7,83.9 95.7,80.3 96.7,81.2 97.7,78.3 98.7,75.7 99.7,76.1 100.7,77.1 101.8,80.9 102.8,77.1 103.8,82.2 104.8,85.3 105.8,93.8 106.8,79.9 107.8,76.7 108.8,78.7 109.8,79.3 110.9,89.9 111.9,88.8 112.9,88.2 113.9,84.4 114.9,85.9 115.9,81.8 116.9,89.5 117.9,84.1 119.0,79.0 120.0,81.5 121.0,84.9 122.0,84.2 123.0,91.0 124.0,86.1 125.0,90.5 126.0,99.6 127.1,94.1 128.1,95.8 129.1,96.4 130.1,106.8 131.1,110.4 132.1,104.0 133.1,101.9 134.1,110.7 135.1,111.9 136.2,122.0 137.2,114.2 138.2,116.2 139.2,112.5 140.2,123.1 141.2,133.7 142.2,136.5 143.2,118.5 144.3,126.9 145.3,125.9 146.3,122.6 147.3,106.8 148.3,103.3 149.3,104.4 150.3,97.2 151.3,89.9 152.4,85.1 153.4,83.4 154.4,74.9 155.4,75.7 156.4,80.2 157.4,73.8 158.4,76.7 159.4,72.1 160.4,71.4 161.5,75.1 162.5,75.8 163.5,68.1 164.5,66.1 165.5,63.1 166.5,53.3 167.5,56.9 168.5,51.5 169.6,50.4 170.6,52.1 171.6,48.3 172.6,43.0 173.6,52.4 174.6,53.1 175.6,57.9 176.6,49.6 177.6,47.9 178.7,44.8 179.7,39.8 180.7,39.8 181.7,35.4 182.7,34.1 183.7,32.4 184.7,30.8 185.7,36.3 186.8,32.7 187.8,52.1 188.8,49.7 189.8,51.1 190.8,62.4 191.8,49.5 192.8,45.9 193.8,34.8 194.9,39.1 195.9,47.5 196.9,39.5 197.9,41.9 198.9,51.5 199.9,51.8 200.9,51.3 201.9,51.0 202.9,42.8 204.0,37.5 205.0,48.7 206.0,49.2 207.0,44.3 208.0,48.0 209.0,50.7 210.0,44.6 211.0,42.4 212.1,48.0 213.1,45.3 214.1,42.8 215.1,46.2 216.1,53.0 217.1,54.8 218.1,48.5 219.1,49.8 220.2,58.1 221.2,57.9 222.2,57.2 223.2,55.8 224.2,66.2 225.2,55.2 226.2,51.1 227.2,40.6 228.2,27.8 229.3,29.4 230.3,30.8 231.3,25.7 232.3,26.3 233.3,28.2 234.3,26.1 235.3,21.5 236.3,22.3 237.4,26.0 238.4,31.5 239.4,29.6 240.4,36.0 241.4,32.3 242.4,34.8 243.4,32.6 244.4,32.8 245.5,28.1 246.5,30.6 247.5,38.7 248.5,35.3 249.5,27.6 250.5,30.2 251.5,34.5 252.5,38.4 253.5,42.9 254.6,37.0 255.6,40.3 256.6,43.7 257.6,46.9 258.6,39.2 259.6,38.5 260.6,28.5 261.6,28.3 262.7,34.1 263.7,34.4 264.7,31.0 265.7,36.9 266.7,38.2 267.7,40.2 268.7,38.5 269.7,33.3 270.7,28.6 271.8,24.7 272.8,27.2 273.8,30.1 274.8,25.7 275.8,26.3 276.8,26.7 277.8,35.1 278.8,31.8 279.9,39.9 280.9,37.2 281.9,34.3 282.9,30.3 283.9,38.2 284.9,41.8 285.9,37.1 286.9,32.8 288.0,30.8 289.0,32.3 290.0,45.0 291.0,48.0 292.0,45.6"/><circle cx="38.0" cy="76.6" r="6" fill="transparent"><title>Oct 2025: 218,51 %</title></circle><circle cx="43.1" cy="89.1" r="6" fill="transparent"><title>Nov 2025: 214,44 %</title></circle><circle cx="48.1" cy="81.4" r="6" fill="transparent"><title>Nov 2025: 216,95 %</title></circle><circle cx="53.2" cy="104.5" r="6" fill="transparent"><title>Nov 2025: 209,43 %</title></circle><circle cx="58.2" cy="88.8" r="6" fill="transparent"><title>Nov 2025: 214,53 %</title></circle><circle cx="63.3" cy="80.3" r="6" fill="transparent"><title>Dec 2025: 217,29 %</title></circle><circle cx="68.4" cy="76.3" r="6" fill="transparent"><title>Dec 2025: 218,60 %</title></circle><circle cx="73.4" cy="92.6" r="6" fill="transparent"><title>Dec 2025: 213,27 %</title></circle><circle cx="78.5" cy="72.8" r="6" fill="transparent"><title>Dec 2025: 219,74 %</title></circle><circle cx="83.5" cy="84.1" r="6" fill="transparent"><title>Jan 2026: 216,06 %</title></circle><circle cx="88.6" cy="76.1" r="6" fill="transparent"><title>Jan 2026: 218,64 %</title></circle><circle cx="93.7" cy="91.8" r="6" fill="transparent"><title>Jan 2026: 213,54 %</title></circle><circle cx="98.7" cy="75.7" r="6" fill="transparent"><title>Jan 2026: 218,78 %</title></circle><circle cx="103.8" cy="82.2" r="6" fill="transparent"><title>Feb 2026: 216,67 %</title></circle><circle cx="108.8" cy="78.7" r="6" fill="transparent"><title>Feb 2026: 217,81 %</title></circle><circle cx="113.9" cy="84.4" r="6" fill="transparent"><title>Feb 2026: 215,97 %</title></circle><circle cx="119.0" cy="79.0" r="6" fill="transparent"><title>Feb 2026: 217,72 %</title></circle><circle cx="124.0" cy="86.1" r="6" fill="transparent"><title>Mar 2026: 215,42 %</title></circle><circle cx="129.1" cy="96.4" r="6" fill="transparent"><title>Mar 2026: 212,04 %</title></circle><circle cx="134.1" cy="110.7" r="6" fill="transparent"><title>Mar 2026: 207,42 %</title></circle><circle cx="139.2" cy="112.5" r="6" fill="transparent"><title>Mar 2026: 206,83 %</title></circle><circle cx="144.3" cy="126.9" r="6" fill="transparent"><title>Apr 2026: 202,13 %</title></circle><circle cx="149.3" cy="104.4" r="6" fill="transparent"><title>Apr 2026: 209,46 %</title></circle><circle cx="154.4" cy="74.9" r="6" fill="transparent"><title>Apr 2026: 219,04 %</title></circle><circle cx="159.4" cy="72.1" r="6" fill="transparent"><title>Apr 2026: 219,97 %</title></circle><circle cx="164.5" cy="66.1" r="6" fill="transparent"><title>May 2026: 221,90 %</title></circle><circle cx="169.6" cy="50.4" r="6" fill="transparent"><title>May 2026: 227,03 %</title></circle><circle cx="174.6" cy="53.1" r="6" fill="transparent"><title>May 2026: 226,13 %</title></circle><circle cx="179.7" cy="39.8" r="6" fill="transparent"><title>May 2026: 230,48 %</title></circle><circle cx="184.7" cy="30.8" r="6" fill="transparent"><title>Jun 2026: 233,40 %</title></circle><circle cx="189.8" cy="51.1" r="6" fill="transparent"><title>Jun 2026: 226,80 %</title></circle><circle cx="194.9" cy="39.1" r="6" fill="transparent"><title>Jun 2026: 230,69 %</title></circle><circle cx="199.9" cy="51.8" r="6" fill="transparent"><title>Jun 2026: 226,58 %</title></circle><circle cx="205.0" cy="48.7" r="6" fill="transparent"><title>Jul 2026: 227,56 %</title></circle><circle cx="210.0" cy="44.6" r="6" fill="transparent"><title>Jul 2026: 228,90 %</title></circle><circle cx="215.1" cy="46.2" r="6" fill="transparent"><title>Jul 2026: 228,37 %</title></circle><circle cx="220.2" cy="58.1" r="6" fill="transparent"><title>Jul 2026: 224,52 %</title></circle><circle cx="225.2" cy="55.2" r="6" fill="transparent"><title>Jul 2026: 225,44 %</title></circle><circle cx="230.3" cy="30.8" r="6" fill="transparent"><title>Aug 2026: 233,39 %</title></circle><circle cx="235.3" cy="21.5" r="6" fill="transparent"><title>Aug 2026: 236,42 %</title></circle><circle cx="240.4" cy="36.0" r="6" fill="transparent"><title>Aug 2026: 231,71 %</title></circle><circle cx="245.5" cy="28.1" r="6" fill="transparent"><title>Aug 2026: 234,29 %</title></circle><circle cx="250.5" cy="30.2" r="6" fill="transparent"><title>Sep 2026: 233,60 %</title></circle><circle cx="255.6" cy="40.3" r="6" fill="transparent"><title>Sep 2026: 230,31 %</title></circle><circle cx="260.6" cy="28.5" r="6" fill="transparent"><title>Sep 2026: 234,14 %</title></circle><circle cx="265.7" cy="36.9" r="6" fill="transparent"><title>Sep 2026: 231,43 %</title></circle><circle cx="270.7" cy="28.6" r="6" fill="transparent"><title>Oct 2026: 234,11 %</title></circle><circle cx="275.8" cy="26.3" r="6" fill="transparent"><title>Oct 2026: 234,86 %</title></circle><circle cx="280.9" cy="37.2" r="6" fill="transparent"><title>Oct 2026: 231,31 %</title></circle><circle cx="285.9" cy="37.1" r="6" fill="transparent"><title>Oct 2026: 231,35 %</title></circle><circle cx="291.0" cy="48.0" r="6" fill="transparent"><title>Nov 2026: 227,80 %</title></circle><circle class="b-dot" cx="292.0" cy="45.6" r="4"><title>Nov 2026: 228,59 %</title></circle></svg></div>
+    <div class="b-card"><h3>Monthly &middot; last 5 years</h3><svg viewBox="0 0 300 170" role="img" aria-label="Buffett indicator, monthly, Dec 2021 to Nov 2026"><title>Buffett indicator, monthly, Dec 2021 to Nov 2026</title><line class="b-gridline" x1="38.0" y1="10.0" x2="292.0" y2="10.0"/><text class="b-chart-label" x="32.0" y="14.0" text-anchor="end">243,2</text><line class="b-gridline" x1="38.0" y1="79.0" x2="292.0" y2="79.0"/><text class="b-chart-label" x="32.0" y="83.0" text-anchor="end">184,8</text><line class="b-gridline" x1="38.0" y1="148.0" x2="292.0" y2="148.0"/><text class="b-chart-label" x="32.0" y="152.0" text-anchor="end">126,3</text><text class="b-chart-label" x="38.0" y="165.0" text-anchor="start">Dec 2021</text><text class="b-chart-label" x="167.2" y="165.0" text-anchor="middle">Jun 2024</text><text class="b-chart-label" x="292.0" y="165.0" text-anchor="end">Nov 2026</text><polyline class="b-line" points="38.0,66.7 42.3,84.9 46.6,90.3 50.9,84.0 55.2,108.5 59.5,109.6 63.8,125.7 68.1,112.8 72.4,119.8 76.7,136.5 81.1,126.5 85.4,118.3 89.7,129.3 94.0,120.7 98.3,125.1 102.6,120.7 106.9,121.1 111.2,116.8 115.5,104.7 119.8,101.7 124.1,105.9 128.4,115.2 132.7,122.7 137.0,106.8 141.3,96.8 145.6,97.2 149.9,86.7 154.2,80.2 158.5,92.9 162.8,83.6 167.2,77.2 171.5,75.8 175.8,71.3 180.1,67.0 184.4,71.6 188.7,57.0 193.0,64.5 197.3,59.3 201.6,64.2 205.9,78.3 210.2,83.1 214.5,69.7 218.8,58.4 223.1,57.5 227.4,52.2 231.7,44.0 236.0,41.1 240.3,40.7 244.6,41.2 248.9,40.8 253.3,42.4 257.6,55.3 261.9,35.9 266.2,22.8 270.5,24.1 274.8,29.4 279.1,21.5 283.4,25.2 287.7,27.0 292.0,27.2"/><circle cx="38.0" cy="66.7" r="6" fill="transparent"><title>Dec 2021: 195,23 %</title></circle><circle cx="42.3" cy="84.9" r="6" fill="transparent"><title>Jan 2022: 179,80 %</title></circle><circle cx="46.6" cy="90.3" r="6" fill="transparent"><title>Feb 2022: 175,21 %</title></circle><circle cx="50.9" cy="84.0" r="6" fill="transparent"><title>Mar 2022: 180,55 %</title></circle><circle cx="55.2" cy="108.5" r="6" fill="transparent"><title>Apr 2022: 159,82 %</title></circle><circle cx="59.5" cy="109.6" r="6" fill="transparent"><title>May 2022: 158,82 %</title></circle><circle cx="63.8" cy="125.7" r="6" fill="transparent"><title>Jun 2022: 145,21 %</title></circle><circle cx="68.1" cy="112.8" r="6" fill="transparent"><title>Jul 2022: 156,14 %</title></circle><circle cx="72.4" cy="119.8" r="6" fill="transparent"><title>Aug 2022: 150,22 %</title></circle><circle cx="76.7" cy="136.5" r="6" fill="transparent"><title>Sep 2022: 136,08 %</title></circle><circle cx="81.1" cy="126.5" r="6" fill="transparent"><title>Oct 2022: 144,55 %</title></circle><circle cx="85.4" cy="118.3" r="6" fill="transparent"><title>Nov 2022: 151,46 %</title></circle><circle cx="89.7" cy="129.3" r="6" fill="transparent"><title>Dec 2022: 142,20 %</title></circle><circle cx="94.0" cy="120.7" r="6" fill="transparent"><title>Jan 2023: 149,50 %</title></circle><circle cx="98.3" cy="125.1" r="6" fill="transparent"><title>Feb 2023: 145,75 %</title></circle><circle cx="102.6" cy="120.7" r="6" fill="transparent"><title>Mar 2023: 149,44 %</title></circle><circle cx="106.9" cy="121.1" r="6" fill="transparent"><title>Apr 2023: 149,14 %</title></circle><circle cx="111.2" cy="116.8" r="6" fill="transparent"><title>May 2023: 152,73 %</title></circle><circle cx="115.5" cy="104.7" r="6" fill="transparent"><title>Jun 2023: 163,01 %</title></circle><circle cx="119.8" cy="101.7" r="6" fill="transparent"><title>Jul 2023: 165,52 %</title></circle><circle cx="124.1" cy="105.9" r="6" fill="transparent"><title>Aug 2023: 162,02 %</title></circle><circle cx="128.4" cy="115.2" r="6" fill="transparent"><title>Sep 2023: 154,11 %</title></circle><circle cx="132.7" cy="122.7" r="6" fill="transparent"><title>Oct 2023: 147,76 %</title></circle><circle cx="137.0" cy="106.8" r="6" fill="transparent"><title>Nov 2023: 161,26 %</title></circle><circle cx="141.3" cy="96.8" r="6" fill="transparent"><title>Dec 2023: 169,67 %</title></circle><circle cx="145.6" cy="97.2" r="6" fill="transparent"><title>Jan 2024: 169,38 %</title></circle><circle cx="149.9" cy="86.7" r="6" fill="transparent"><title>Feb 2024: 178,24 %</title></circle><circle cx="154.2" cy="80.2" r="6" fill="transparent"><title>Mar 2024: 183,78 %</title></circle><circle cx="158.5" cy="92.9" r="6" fill="transparent"><title>Apr 2024: 173,00 %</title></circle><circle cx="162.8" cy="83.6" r="6" fill="transparent"><title>May 2024: 180,88 %</title></circle><circle cx="167.2" cy="77.2" r="6" fill="transparent"><title>Jun 2024: 186,33 %</title></circle><circle cx="171.5" cy="75.8" r="6" fill="transparent"><title>Jul 2024: 187,46 %</title></circle><circle cx="175.8" cy="71.3" r="6" fill="transparent"><title>Aug 2024: 191,27 %</title></circle><circle cx="180.1" cy="67.0" r="6" fill="transparent"><title>Sep 2024: 194,93 %</title></circle><circle cx="184.4" cy="71.6" r="6" fill="transparent"><title>Oct 2024: 191,04 %</title></circle><circle cx="188.7" cy="57.0" r="6" fill="transparent"><title>Nov 2024: 203,41 %</title></circle><circle cx="193.0" cy="64.5" r="6" fill="transparent"><title>Dec 2024: 197,03 %</title></circle><circle cx="197.3" cy="59.3" r="6" fill="transparent"><title>Jan 2025: 201,43 %</title></circle><circle cx="201.6" cy="64.2" r="6" fill="transparent"><title>Feb 2025: 197,28 %</title></circle><circle cx="205.9" cy="78.3" r="6" fill="transparent"><title>Mar 2025: 185,38 %</title></circle><circle cx="210.2" cy="83.1" r="6" fill="transparent"><title>Apr 2025: 181,27 %</title></circle><circle cx="214.5" cy="69.7" r="6" fill="transparent"><title>May 2025: 192,61 %</title></circle><circle cx="218.8" cy="58.4" r="6" fill="transparent"><title>Jun 2025: 202,22 %</title></circle><circle cx="223.1" cy="57.5" r="6" fill="transparent"><title>Jul 2025: 202,98 %</title></circle><circle cx="227.4" cy="52.2" r="6" fill="transparent"><title>Aug 2025: 207,45 %</title></circle><circle cx="231.7" cy="44.0" r="6" fill="transparent"><title>Sep 2025: 214,39 %</title></circle><circle cx="236.0" cy="41.1" r="6" fill="transparent"><title>Oct 2025: 216,88 %</title></circle><circle cx="240.3" cy="40.7" r="6" fill="transparent"><title>Nov 2025: 217,20 %</title></circle><circle cx="244.6" cy="41.2" r="6" fill="transparent"><title>Dec 2025: 216,79 %</title></circle><circle cx="248.9" cy="40.8" r="6" fill="transparent"><title>Jan 2026: 217,08 %</title></circle><circle cx="253.3" cy="42.4" r="6" fill="transparent"><title>Feb 2026: 215,79 %</title></circle><circle cx="257.6" cy="55.3" r="6" fill="transparent"><title>Mar 2026: 204,86 %</title></circle><circle cx="261.9" cy="35.9" r="6" fill="transparent"><title>Apr 2026: 221,27 %</title></circle><circle cx="266.2" cy="22.8" r="6" fill="transparent"><title>May 2026: 232,33 %</title></circle><circle cx="270.5" cy="24.1" r="6" fill="transparent"><title>Jun 2026: 231,22 %</title></circle><circle cx="274.8" cy="29.4" r="6" fill="transparent"><title>Jul 2026: 226,78 %</title></circle><circle cx="279.1" cy="21.5" r="6" fill="transparent"><title>Aug 2026: 233,46 %</title></circle><circle cx="283.4" cy="25.2" r="6" fill="transparent"><title>Sep 2026: 230,35 %</title></circle><circle cx="287.7" cy="27.0" r="6" fill="transparent"><title>Oct 2026: 228,77 %</title></circle><circle cx="292.0" cy="27.2" r="6" fill="transparent"><title>Nov 2026: 228,59 %</title></circle><circle class="b-dot" cx="292.0" cy="27.2" r="4"><title>Nov 2026: 228,59 %</title></circle></svg></div>
+    <div class="b-card"><h3>Six-monthly &middot; last 20 years</h3><svg viewBox="0 0 300 170" role="img" aria-label="Buffett indicator, six-monthly, 06-30 2007 to 11-03 2026"><title>Buffett indicator, six-monthly, 06-30 2007 to 11-03 2026</title><line class="b-gridline" x1="38.0" y1="10.0" x2="292.0" y2="10.0"/><text class="b-chart-label" x="32.0" y="14.0" text-anchor="end">250,8</text><line class="b-gridline" x1="38.0" y1="79.0" x2="292.0" y2="79.0"/><text class="b-chart-label" x="32.0" y="83.0" text-anchor="end">147,3</text><line class="b-gridline" x1="38.0" y1="148.0" x2="292.0" y2="148.0"/><text class="b-chart-label" x="32.0" y="152.0" text-anchor="end">43,7</text><text class="b-chart-label" x="38.0" y="165.0" text-anchor="start">06-30 2007</text><text class="b-chart-label" x="168.3" y="165.0" text-anchor="middle">06-30 2017</text><text class="b-chart-label" x="292.0" y="165.0" text-anchor="end">11-03 2026</text><line class="b-ref" x1="38.0" y1="110.5" x2="292.0" y2="110.5"/><text class="b-chart-label" x="295.0" y="114.5">100,0 %</text><polyline class="b-line" points="38.0,106.1 44.5,109.3 51.0,123.9 57.5,136.5 64.1,126.4 70.6,123.9 77.1,123.7 83.6,118.3 90.1,126.4 96.6,121.0 103.1,115.3 109.6,115.9 116.2,105.5 122.7,99.7 129.2,98.2 135.7,96.0 142.2,103.8 148.7,100.5 155.2,96.7 161.7,94.5 168.3,87.2 174.8,83.1 181.3,79.1 187.8,94.6 194.3,82.6 200.8,76.2 207.3,62.0 213.8,56.0 220.4,49.7 226.9,42.6 233.4,84.8 239.9,80.8 246.4,72.5 252.9,62.4 259.4,45.7 265.9,44.2 272.5,31.7 279.0,31.3 285.5,21.5 292.0,24.8"/><circle cx="38.0" cy="106.1" r="6" fill="transparent"><title>06-30 2007: 106,67 %</title></circle><circle cx="44.5" cy="109.3" r="6" fill="transparent"><title>09-30 2007: 101,75 %</title></circle><circle cx="51.0" cy="123.9" r="6" fill="transparent"><title>06-30 2008: 79,88 %</title></circle><circle cx="57.5" cy="136.5" r="6" fill="transparent"><title>09-30 2008: 60,99 %</title></circle><circle cx="64.1" cy="126.4" r="6" fill="transparent"><title>06-30 2009: 76,11 %</title></circle><circle cx="70.6" cy="123.9" r="6" fill="transparent"><title>09-30 2009: 79,93 %</title></circle><circle cx="77.1" cy="123.7" r="6" fill="transparent"><title>06-30 2010: 80,24 %</title></circle><circle cx="83.6" cy="118.3" r="6" fill="transparent"><title>09-30 2010: 88,23 %</title></circle><circle cx="90.1" cy="126.4" r="6" fill="transparent"><title>06-30 2011: 76,12 %</title></circle><circle cx="96.6" cy="121.0" r="6" fill="transparent"><title>09-30 2011: 84,29 %</title></circle><circle cx="103.1" cy="115.3" r="6" fill="transparent"><title>06-30 2012: 92,82 %</title></circle><circle cx="109.6" cy="115.9" r="6" fill="transparent"><title>09-30 2012: 91,88 %</title></circle><circle cx="116.2" cy="105.5" r="6" fill="transparent"><title>06-30 2013: 107,49 %</title></circle><circle cx="122.7" cy="99.7" r="6" fill="transparent"><title>09-30 2013: 116,23 %</title></circle><circle cx="129.2" cy="98.2" r="6" fill="transparent"><title>06-30 2014: 118,51 %</title></circle><circle cx="135.7" cy="96.0" r="6" fill="transparent"><title>09-30 2014: 121,71 %</title></circle><circle cx="142.2" cy="103.8" r="6" fill="transparent"><title>06-30 2015: 110,06 %</title></circle><circle cx="148.7" cy="100.5" r="6" fill="transparent"><title>09-30 2015: 115,03 %</title></circle><circle cx="155.2" cy="96.7" r="6" fill="transparent"><title>06-30 2016: 120,66 %</title></circle><circle cx="161.7" cy="94.5" r="6" fill="transparent"><title>09-30 2016: 123,99 %</title></circle><circle cx="168.3" cy="87.2" r="6" fill="transparent"><title>06-30 2017: 134,95 %</title></circle><circle cx="174.8" cy="83.1" r="6" fill="transparent"><title>09-30 2017: 141,14 %</title></circle><circle cx="181.3" cy="79.1" r="6" fill="transparent"><title>06-30 2018: 147,03 %</title></circle><circle cx="187.8" cy="94.6" r="6" fill="transparent"><title>09-30 2018: 123,80 %</title></circle><circle cx="194.3" cy="82.6" r="6" fill="transparent"><title>06-30 2019: 141,85 %</title></circle><circle cx="200.8" cy="76.2" r="6" fill="transparent"><title>09-30 2019: 151,43 %</title></circle><circle cx="207.3" cy="62.0" r="6" fill="transparent"><title>06-30 2020: 172,76 %</title></circle><circle cx="213.8" cy="56.0" r="6" fill="transparent"><title>09-30 2020: 181,79 %</title></circle><circle cx="220.4" cy="49.7" r="6" fill="transparent"><title>06-30 2021: 191,20 %</title></circle><circle cx="226.9" cy="42.6" r="6" fill="transparent"><title>09-30 2021: 201,93 %</title></circle><circle cx="233.4" cy="84.8" r="6" fill="transparent"><title>06-30 2022: 138,53 %</title></circle><circle cx="239.9" cy="80.8" r="6" fill="transparent"><title>09-30 2022: 144,57 %</title></circle><circle cx="246.4" cy="72.5" r="6" fill="transparent"><title>06-30 2023: 157,08 %</title></circle><circle cx="252.9" cy="62.4" r="6" fill="transparent"><title>09-30 2023: 172,09 %</title></circle><circle cx="259.4" cy="45.7" r="6" fill="transparent"><title>06-30 2024: 197,16 %</title></circle><circle cx="265.9" cy="44.2" r="6" fill="transparent"><title>09-30 2024: 199,44 %</title></circle><circle cx="272.5" cy="31.7" r="6" fill="transparent"><title>06-30 2025: 218,24 %</title></circle><circle cx="279.0" cy="31.3" r="6" fill="transparent"><title>09-30 2025: 218,75 %</title></circle><circle cx="285.5" cy="21.5" r="6" fill="transparent"><title>06-30 2026: 233,51 %</title></circle><circle cx="292.0" cy="24.8" r="6" fill="transparent"><title>11-03 2026: 228,59 %</title></circle><circle class="b-dot" cx="292.0" cy="24.8" r="4"><title>11-03 2026: 228,59 %</title></circle></svg></div>
+    </div>
+    <details class="b-table"><summary>Data table: six-monthly points</summary><table><thead><tr><th>Half-year</th><th>Indicator</th></tr></thead><tbody>
+<tr><td>06-30 2007</td><td>106,67 %</td></tr>
+<tr><td>09-30 2007</td><td>101,75 %</td></tr>
+<tr><td>06-30 2008</td><td>79,88 %</td></tr>
+<tr><td>09-30 2008</td><td>60,99 %</td></tr>
+<tr><td>06-30 2009</td><td>76,11 %</td></tr>
+<tr><td>09-30 2009</td><td>79,93 %</td></tr>
+<tr><td>06-30 2010</td><td>80,24 %</td></tr>
+<tr><td>09-30 2010</td><td>88,23 %</td></tr>
+<tr><td>06-30 2011</td><td>76,12 %</td></tr>
+<tr><td>09-30 2011</td><td>84,29 %</td></tr>
+<tr><td>06-30 2012</td><td>92,82 %</td></tr>
+<tr><td>09-30 2012</td><td>91,88 %</td></tr>
+<tr><td>06-30 2013</td><td>107,49 %</td></tr>
+<tr><td>09-30 2013</td><td>116,23 %</td></tr>
+<tr><td>06-30 2014</td><td>118,51 %</td></tr>
+<tr><td>09-30 2014</td><td>121,71 %</td></tr>
+<tr><td>06-30 2015</td><td>110,06 %</td></tr>
+<tr><td>09-30 2015</td><td>115,03 %</td></tr>
+<tr><td>06-30 2016</td><td>120,66 %</td></tr>
+<tr><td>09-30 2016</td><td>123,99 %</td></tr>
+<tr><td>06-30 2017</td><td>134,95 %</td></tr>
+<tr><td>09-30 2017</td><td>141,14 %</td></tr>
+<tr><td>06-30 2018</td><td>147,03 %</td></tr>
+<tr><td>09-30 2018</td><td>123,80 %</td></tr>
+<tr><td>06-30 2019</td><td>141,85 %</td></tr>
+<tr><td>09-30 2019</td><td>151,43 %</td></tr>
+<tr><td>06-30 2020</td><td>172,76 %</td></tr>
+<tr><td>09-30 2020</td><td>181,79 %</td></tr>
+<tr><td>06-30 2021</td><td>191,20 %</td></tr>
+<tr><td>09-30 2021</td><td>201,93 %</td></tr>
+<tr><td>06-30 2022</td><td>138,53 %</td></tr>
+<tr><td>09-30 2022</td><td>144,57 %</td></tr>
+<tr><td>06-30 2023</td><td>157,08 %</td></tr>
+<tr><td>09-30 2023</td><td>172,09 %</td></tr>
+<tr><td>06-30 2024</td><td>197,16 %</td></tr>
+<tr><td>09-30 2024</td><td>199,44 %</td></tr>
+<tr><td>06-30 2025</td><td>218,24 %</td></tr>
+<tr><td>09-30 2025</td><td>218,75 %</td></tr>
+<tr><td>06-30 2026</td><td>233,51 %</td></tr>
+<tr><td>11-03 2026</td><td>228,59 %</td></tr>
+</tbody></table></details>
+  </section>
 
   <div class="stock-grid">
     <div class="stock-card">
       <h2 class="sc-name">Aker ASA <span class="sc-tick">AKER.OL</span></h2>
       <p class="sc-desc">Norwegian industrial investment group with holdings in energy, offshore services and marine industries.</p>
       <div class="sc-quote">
-        <span class="sc-price">1.120,00 <span class="sc-ccy">NOK</span></span> <span class="sc-day up">&#9650; +0,18 %</span> <span class="sc-eur">&asymp; &euro;107,85</span>
+        <span class="sc-price">1.142,00 <span class="sc-ccy">NOK</span></span> <span class="sc-day up">&#9650; +1,96 %</span> <span class="sc-eur">&asymp; &euro;110,19</span>
       </div>
       <div class="sc-trends">
-        <span class="tb down">1W &#9660; -3,78 %</span>
-        <span class="tb down">1M &#9660; -20,11 %</span>
+        <span class="tb down">1W &#9660; -2,73 %</span>
+        <span class="tb down">1M &#9660; -19,80 %</span>
       </div>
-      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 1.402,00 to 1.120,00 (-20,11 %)</title><polyline points="0.0,4.7 10.5,2.5 21.0,3.1 31.4,9.8 41.9,9.0 52.4,10.4 62.9,14.2 73.3,16.1 83.8,19.1 94.3,19.1 104.8,28.2 115.2,26.4 125.7,25.4 136.2,30.1 146.7,30.3 157.1,29.5 167.6,28.9 178.1,27.8 188.6,27.2 199.0,28.9 209.5,33.5 220.0,33.3" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">1.196,22 <span class="sc-ccy">NOK</span></span> <span class="sc-ma-pos down">&#9660; -4,53 % vs avg</span></div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 1.424,00 to 1.142,00 (-19,80 %)</title><polyline points="0.0,2.5 10.5,3.1 21.0,9.8 31.4,9.0 41.9,10.4 52.4,14.2 62.9,16.1 73.3,19.1 83.8,19.1 94.3,28.2 104.8,26.4 115.2,25.4 125.7,30.1 136.2,30.3 146.7,29.5 157.1,28.9 167.6,27.8 178.1,27.2 188.6,28.9 199.0,33.5 209.5,33.3 220.0,31.1" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
-      <li><span class="n-date">16 Jul</span> <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT0ZvdmswY3hjY01GVkgyY0RmaFQxMkJrY2x2ZXJ6b2EzMHBJd3p1YXN0SGkwVXlkdzMyUHM0TWtvVjhRZC15c0hodlU2R3FKRDFHUDA0QlFxXy13WnJsMHBYVVR1VUNqTmM2bm93eHpQOU92b3d5T0dvVUtTdktCTnlDQlNDTGJsRllTUnkzNFNlRDdZOER4TG85Y0tOQ1pTdlk1WDB5eHJkd0t2aHpIOERzV1dyeXZ6RWdNWXZNc1g1Zw?oc=5" target="_blank" rel="noopener">Aker ASA reports second quarter and half-year results 2026</a></li>
-      <li><span class="n-date">21 Jul</span> <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNTlI2YzNDQjg3Y3I4ZWZES1duMDN0LW9mbEhjWkJobUd6U1ZQV1J5MER3ZFI5RmhkTUJDNEFScU02MGtTSmJzQnFBRi1Xbmp4ZXBDczlyVlhCcWkyYm9GYlhlWFRaZWpBQWw0dk9nUVU2QmE1djEyalBMdlFmSVkwRUZYUGZSUGxaNzRVRVl4NUU5OWxueFdN?oc=5" target="_blank" rel="noopener">Aker ASA 2026 Q2 - Results - Earnings Call Presentation (OTCMKTS:AKAAF) 2026-07-21</a></li>
-      <li><span class="n-date">16 Jul</span> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOcnJQQkozcDdyU1ptV2ZTazV5bTNMOU8xUEdoR1JiTXRicDZGcmpwN0kwSnFpcDR5UVZKYXUzMzk5MFBDU0hlMGRmcjN6ZjNLYkV3NVlmMkdKWndkdmZ5QUVmMU1XTldkdEJDNFRhWE0tRTc3akZfcFpQdFNzQTJpX0xOLVFwcFhYbW5QRy1xOU0?oc=5" target="_blank" rel="noopener">Aker ASA (AKAAF) Q2 2026 Earnings Call Highlights: Strong NAV Growth and Strategic Liquidity Boost</a></li>
+      <li><span class="n-date">04 Nov</span> <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTFA0SV83VnFfd2YxeW40RUhCYnRaTnVRS0hxUncwRUwtQ3dweVp4Q2ZvdFJrYzFpYWdXRE9jWW5LYTJwVzNWZ1BDQXZ1WE5OTWJWLU9Da0c3MUZHb1NMRTNIT0tXN25SelRpOUpUT25Lb01RNTQ4Y3g1ZG5iNzdpQQ?oc=5" target="_blank" rel="noopener">Aker ASA Q3 profit rises 42% as dividend income offsets financial losses</a></li>
+      <li><span class="n-date">04 Nov</span> <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNbW5RYjBLd0piR3Rya0huT05qcy13Zjc0ang3R2ZfRDlTWjl6ZnBMaWk0NG4xU0ItbDlJNm1XMmppeElJQ21uQllHZUxTVmxIc2Yzb0NjNkl2N3hjclpMRkp4Q1V2a29uYlRldVg2NDF4NkJsYTV4RVRBQ2l4VkxfSjFkSE5oTHh2NU01dkRnTnZzZ2RCSlRaMWdPQndfY0lraXJqdS1xTkVDZHNwSUE?oc=5" target="_blank" rel="noopener">Aker ASA reports third quarter results 2026</a></li>
+      <li><span class="n-date">04 Nov</span> <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUE1WYmhWb2dqalRiMG1zZkxnSEViTkhobUc4N0tXZUc2SDJSdi1uV245RGFJNWd5YzVSb2Z5dXZ0bUJ4TTFXWFZGTlZDejNBUVlGTjNNNGVGYU5hbmhEODhtemlYSzI3ekVpQS0wYjNMSDJnQUlqRW5nYmJESGxOSXNUelFHWnRJemxod09BTHVneU1VZEV4SEUzWWJiVFRiR190M3I4ZXdQQQ?oc=5" target="_blank" rel="noopener">Transcript : Aker ASA, Q3 2026 Earnings Call, Nov 04, 2026</a></li>
     </ul>
     </div>
     <div class="stock-card">
       <h2 class="sc-name">Ascencio SA <span class="sc-tick">ASCE.BR</span></h2>
       <p class="sc-desc">Belgian real-estate investment trust (SIR) focused on out-of-town retail: retail parks and supermarkets in Belgium and France.</p>
       <div class="sc-quote">
-        <span class="sc-price">53,50 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +1,33 %</span>
+        <span class="sc-price">53,60 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,19 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb flat">1W &#8226; 0,00 %</span>
-        <span class="tb up">1M &#9650; +3,88 %</span>
+        <span class="tb up">1W &#9650; +0,94 %</span>
+        <span class="tb up">1M &#9650; +2,10 %</span>
       </div>
-      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 51,50 to 53,50 (+3,88 %)</title><polyline points="0.0,33.5 10.5,20.0 21.0,22.7 31.4,28.1 41.9,20.0 52.4,21.4 62.9,11.9 73.3,7.9 83.8,18.7 94.3,20.0 104.8,17.3 115.2,21.4 125.7,7.9 136.2,7.9 146.7,6.5 157.1,2.5 167.6,6.5 178.1,11.9 188.6,9.2 199.0,16.0 209.5,16.0 220.0,6.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">51,72 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos up">&#9650; +3,63 % vs avg</span></div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 52,50 to 53,60 (+2,10 %)</title><polyline points="0.0,23.7 10.5,27.0 21.0,33.5 31.4,23.7 41.9,25.4 52.4,13.9 62.9,9.0 73.3,22.1 83.8,23.7 94.3,20.5 104.8,25.4 115.2,9.0 125.7,9.0 136.2,7.4 146.7,2.5 157.1,7.4 167.6,13.9 178.1,10.6 188.6,18.8 199.0,18.8 209.5,7.4 220.0,5.7" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <div class="sc-none">No recent headlines.</div>
     </div>
     <div class="stock-card">
       <h2 class="sc-name">bpost NV/SA <span class="sc-tick">BPOST.BR</span></h2>
       <p class="sc-desc">Belgian postal operator: mail, parcels and e-commerce logistics in Belgium and abroad.</p>
       <div class="sc-quote">
-        <span class="sc-price">1,11 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -2,12 %</span>
+        <span class="sc-price">1,12 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +1,45 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb up">1W &#9650; +3,95 %</span>
-        <span class="tb down">1M &#9660; -0,90 %</span>
+        <span class="tb up">1W &#9650; +5,85 %</span>
+        <span class="tb down">1M &#9660; -0,36 %</span>
       </div>
-      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 1,12 to 1,11 (-0,90 %)</title><polyline points="0.0,8.7 10.5,4.3 21.0,11.3 31.4,14.9 41.9,8.7 52.4,14.0 62.9,3.4 73.3,13.1 83.8,15.8 94.3,2.5 104.8,9.6 115.2,20.2 125.7,15.8 136.2,18.4 146.7,22.0 157.1,26.4 167.6,31.7 178.1,33.5 188.6,32.6 199.0,30.0 209.5,2.5 220.0,13.1" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">1,62 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos down">&#9660; -30,83 % vs avg</span></div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 1,13 to 1,12 (-0,36 %)</title><polyline points="0.0,4.3 10.5,11.3 21.0,14.9 31.4,8.7 41.9,14.0 52.4,3.4 62.9,13.1 73.3,15.8 83.8,2.5 94.3,9.6 104.8,20.2 115.2,15.8 125.7,18.4 136.2,22.0 146.7,26.4 157.1,31.7 167.6,33.5 178.1,32.6 188.6,30.0 199.0,2.5 209.5,13.1 220.0,6.0" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
       <li><span class="n-date">13 Feb</span> <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZEpvNXd3OHJYWHJMNlNKY2JlWjlPVFZ2Rmxvb3ZDN21KSkdaMWFUckd2YktkYkEwcElvRklCU2NYN2toN3FrQ281MGZLYlhwUjNWc1ZXS0JYU0wwRXdCYW13a2ZudWlXSkJuOTc0MlFndHcxRTl4VkpWVHhTSURQTnkydDVvaXVJRnJVOTB2RUQ1NFlMbm8zeFJjN01JXzM2a3lfbzVCSWs0cEluNG5BcHEzOFkxb3pJQVVoQ3c5cDdQUmxHM2RYajBDQUVXajVVcUtOckRaXzQ?oc=5" target="_blank" rel="noopener">Bpost avoids fine in Belgian newspaper distribution procurement case</a></li>
-      <li><span class="n-date">28 Oct</span> <a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE5EMzBoN092ZThXNjJBWGMwaXpUcWh0ZnN5cndfWXp4OTl0SGxoQ0tqRFhIUzRYX0NuWVZjOG9Mb19ESWlNUHV5U2xuRlNyY0VTel9jcVZn?oc=5" target="_blank" rel="noopener">Bpost: 650 new Stellantis vehicles, including 500 electric ones</a></li>
-      <li><span class="n-date">29 Oct</span> <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOZDhyc1NaZzh3eW1kVDJNRjlUN2txT3lXZUNRNEIyek1BTWJ1Rm1SQ3pLQmFmTDQ1bjEzdkZMa0p6TG5KdFVGVFRtM19jZnZHV2h3dWRVSTgyM3RwY3c4Y04tcEUzODAzU3JVMldGc0xYY2VjYVAtaTl3azZ1b1BSVzhIVkY1RzJ6UkxRdlVleE1MVGhIUExVUWZxcw?oc=5" target="_blank" rel="noopener">Digi rolls out sales across Bpost network in Belgium</a></li>
+      <li><span class="n-date">21 Oct</span> <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE94NHZpM2s5THJoLWl0OVNVSFRRTUhsU2h6Wm01bDVYUFVpZlROcmVCX2VyanJadzZVNEs0bHFuSXY4UVJ6VHllaFRKZ3B1cTR4YUNaS2RfbjA1NkVWZXNwZXktdXJTYkM3MVlldk5UaURNT2s?oc=5" target="_blank" rel="noopener">More than 4 in 10 Bpost vans are Electric</a></li>
+      <li><span class="n-date">27 Apr</span> <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQZ053ZGZ4Ny1RWndydnNIU1lScWl3eGRrQjllWHpNd1J3MHMyYjhJQm5janliby13R0F1Y0xpVmNoZWxGR1M5UElTWlFObW9rV0daT1pVaHpVeVBfQWhJMVFDZzMyNUpNak1NNkpvTnZucVc5QV93a3o0UkdiTk12cnRMbjlSRkROVUhXXzg5ZTIwVzV4X3k2TllMMA?oc=5" target="_blank" rel="noopener">No resumption of dialogue, as Bpost staff continues strike</a></li>
     </ul>
     </div>
     <div class="stock-card">
       <h2 class="sc-name">Berkshire Hathaway Inc. <span class="sc-tick">BRK-B</span></h2>
       <p class="sc-desc">Warren Buffett's US holding company: insurance, railroads, energy and a large portfolio of listed companies.</p>
       <div class="sc-quote">
-        <span class="sc-price">556,81 <span class="sc-ccy">USD</span></span> <span class="sc-day up">&#9650; +0,13 %</span> <span class="sc-eur">&asymp; &euro;497,33</span>
+        <span class="sc-price">557,07 <span class="sc-ccy">USD</span></span> <span class="sc-day up">&#9650; +0,17 %</span> <span class="sc-eur">&asymp; &euro;494,51</span>
       </div>
       <div class="sc-trends">
-        <span class="tb up">1W &#9650; +2,55 %</span>
-        <span class="tb up">1M &#9650; +10,42 %</span>
+        <span class="tb up">1W &#9650; +2,59 %</span>
+        <span class="tb up">1M &#9650; +10,47 %</span>
       </div>
-      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 504,26 to 556,81 (+10,42 %)</title><polyline points="0.0,33.5 10.5,32.8 21.0,32.3 31.4,29.5 41.9,26.8 52.4,25.6 62.9,23.9 73.3,20.5 83.8,20.9 94.3,17.1 104.8,17.0 115.2,12.5 125.7,13.0 136.2,8.3 146.7,11.1 157.1,7.4 167.6,10.6 178.1,12.2 188.6,11.3 199.0,10.9 209.5,2.9 220.0,2.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">496,38 <span class="sc-ccy">USD</span></span> <span class="sc-ma-pos up">&#9650; +12,23 % vs avg</span></div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 504,26 to 557,07 (+10,47 %)</title><polyline points="0.0,33.5 10.5,32.8 21.0,32.3 31.4,29.5 41.9,26.8 52.4,25.7 62.9,23.9 73.3,20.5 83.8,20.9 94.3,17.2 104.8,17.1 115.2,12.6 125.7,13.1 136.2,8.4 146.7,11.2 157.1,7.5 167.6,10.8 178.1,12.3 188.6,11.4 199.0,11.1 209.5,3.0 220.0,2.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
       <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQdzg5Z0JmTGJKTXNlaWROTlRkLW5FYkxFN1pNT0dBcE85d1Y5akRqOFBfeWc5MU4xcFAxOU9oWnFIYm40ejNnRkNxUkJsbnVxR2RYb0ZUdzFGZmFNTDB6TDYwOURHbmxZaTJGeU41VXBtWG0yTExhYU1JTlJvQzVORU5KU0lNdzYwQmdsaDVBMGNWMkdNY0dMNTktMA?oc=5" target="_blank" rel="noopener">Berkshire Hathaway’s Alphabet Loss Exposes Weak Stock-Picking Record</a></li>
-      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPTGI0X1ZyaHhPM3BJeFBlRmtFZzBuTm9sbXRLdy1aU1BvQXFUOFZCVG1KWTRoNy1pR1N3dV8waExaeEdNRFVWZ3ZPZHRGdUdrQ1FxbWFGNnF1VzlJVlQtVjRidncwYjB3emk2c3FkR2VYM2tSLW5kWXNlcURwMHViZF93MV9GRDNJOGhMTV9OU0lxT3IwcUZueg?oc=5" target="_blank" rel="noopener">1 of Greg Abel&#x27;s Favorite Stocks and a Top 5 Berkshire Hathaway Holding Just Suffered a Devastating Decline</a></li>
+      <li><span class="n-date">03 Nov</span> <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQRm5DaTN3NmRadmh5LVczYXBueVBlUnhtaDZrQ2FGRGtmS0J1WnRkOWcwQ1FmT1pLN0dwQUV2ajRWZENUTGRFRmRBMEpJdjBMbUVmcnB0ZGxRWTNDRWV6RlItbjBfWndhNWVhVVZuWkxWdUY5RnZmU3h5dVlfaXItdEs4NDN5RVdnTFF6RnNBWXZMTExSRUoyS3B6UTNiSE9qbWx2X3VHNVZYRENl?oc=5" target="_blank" rel="noopener">Berkshire Hathaway Shares Are Up 11% This Year. Is the Stock a Buy Ahead of Earnings?</a></li>
       <li><span class="n-date">03 Nov</span> <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOXzl3TzRlc3hnMWp1NFQxQjNFZEU3bGdtM2JKdFZSNmFBaFFxNXI5U3UyZEFUVUxDYWRjUUlRakVRNjhFeUcxLXNMcWVMUkRQUE1nZ0xabkUxSk91eHJ1cTVQaHNBTG1lT2NyVWdfSEluVkpUWlMwdDJkXzRoMFQ4ZGgyemNONkMzaVVnLUphN1o1ZjkzQ1ZBVGZFLUFnV2pfOF9vaW1KWWMwdkNWMkNpaW1oM0RSdFBhZER5M1lTNzdFQ0FMY3NyZVFPcw?oc=5" target="_blank" rel="noopener">Buffett Successor Has Berkshire Hathaway Poised to Beat S&amp;P 500 in 2026: His 3 New Stock Picks Are Helpin</a></li>
     </ul>
     </div>
@@ -151,47 +244,50 @@
       <h2 class="sc-name">BYD Company Limited <span class="sc-tick">BY6.VI</span></h2>
       <p class="sc-desc">Chinese maker of electric vehicles and batteries, among the world's largest EV producers.</p>
       <div class="sc-quote">
-        <span class="sc-price">8,18 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,52 %</span>
+        <span class="sc-price">8,18 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,05 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb up">1W &#9650; +1,75 %</span>
-        <span class="tb down">1M &#9660; -2,75 %</span>
+        <span class="tb up">1W &#9650; +2,19 %</span>
+        <span class="tb down">1M &#9660; -5,30 %</span>
       </div>
-      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 8,41 to 8,18 (-2,75 %)</title><polyline points="0.0,10.5 10.5,2.8 21.0,5.6 31.4,10.2 41.9,13.7 52.4,2.5 62.9,2.5 73.3,11.9 83.8,14.1 94.3,13.0 104.8,12.9 115.2,13.1 125.7,12.3 136.2,15.4 146.7,29.5 157.1,19.7 167.6,22.8 178.1,23.8 188.6,33.5 199.0,29.8 209.5,16.7 220.0,18.1" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">9,95 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos down">&#9660; -17,80 % vs avg</span></div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 8,64 to 8,18 (-5,30 %)</title><polyline points="0.0,2.8 10.5,5.6 21.0,10.2 31.4,13.7 41.9,2.5 52.4,2.5 62.9,11.9 73.3,14.1 83.8,13.0 94.3,12.9 104.8,13.1 115.2,12.3 125.7,15.4 136.2,29.5 146.7,19.7 157.1,22.8 167.6,23.8 178.1,33.5 188.6,29.8 199.0,16.7 209.5,18.1 220.0,18.0" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
-      <li><span class="n-date">03 Nov</span> <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRnpNcVZHSkRjVXJLLU1xTVdjLVVuNjZVUDk1Y2U1N1JKVF9EWGNPeGt4cWFnQWFGUnpSZDBvaE1PRjcwMzNBSi04NWZzX3dkd0hNTXF6WXptdjltTjRZMmhtOUJvRG8yQTAySzhhV1EteGFrWnd6eHJldXhCSnVKeC1WWGRrX3ZVYVFReks5SkpuMFZJUWY3NW8ycjdoM1lrc0t3Nm56c0pGQQ?oc=5" target="_blank" rel="noopener">BYD’s 300-MPH Electric Hypercar Crashed During Testing. The Driver Survived</a></li>
-      <li><span class="n-date">03 Nov</span> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPQ1pUMjNBMmo3QUJKQTdkcE0tdk1NV3ByQ3FPdXFnZHdUTE12by1YSVAwOWVUVmVmMndnSHp6YXlpSDFETXdrcWpheEpON2E2ZjlWazRzNXpIaWd2X0dxeVY4SUpwMzIwSUNWdlNxRm9sUExDcEdRVEVnTzg0cGI0NlFRRkJpYkR4TFNnS0RKbFA?oc=5" target="_blank" rel="noopener">BYD’s 3,000-hp EV crashes at about 280 mph — Watch the driver escape unharmed</a></li>
-      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1INU9zejZ2MW95RGJSajFQWWlvV0VQZ1NZZnAyMWN3UmRjam0xMWhtaW54bWIxZjBESHI3Z2YwZzlLaURBeTlKdHZwZUtxUnBuSUZ3NmlPd2N6bHczQTNRaU5UcFJrZFhkRDE0Sg?oc=5" target="_blank" rel="noopener">BYD&#x27;s U9 Xtreme Already Hit 308 MPH, Now It Wants More</a></li>
+      <li><span class="n-date">03 Nov</span> <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPOVFPejJyS0JxcU5jYVlmUmhTX0VORHJFVHpvMjBWX2xWZ0pKam9ERjBLVkU0Q2kyb0Zuc2o3cGE0TzdMa2FVQkh0dm9KaWg5VG1wdkI2LWlOLXlZZDBvUEEwanhoUTl5RC1aVUctdEhMQTBlRVA0Tk1GR2wtY2RCVi1kcFpNdnU5RE4wd0tHZ1dCUQ?oc=5" target="_blank" rel="noopener">BYD’s flagship luxury EV with 1,000+ km of range hits 4,000 sales in just 19 days</a></li>
+      <li><span class="n-date">01 Nov</span> <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOS21scll6NjBGOTVLUm15YmNsNE9saEN4SE1oLU4zV0VCWFA3dWlVV0tHM09hcUtKMmdsOGVHZGtSVzNvenVmRndlMml1eHVSUzBsR0JPNFI3SjVTdFRncURKX1RRdV95T2s3bzdKMmFtNUNNalVzaTNpdkpzYVZoVHVBYTItSWV1VXpmVTdZRmZyN3NZQnExcnlpYmlCTmNMQ3cxQVRwSE9oODJsLUF6Q0xfMk1JZy1VTWpF?oc=5" target="_blank" rel="noopener">China&#x27;s BYD extends sales growth streak on strong exports</a></li>
+      <li><span class="n-date">03 Nov</span> <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbHpwRnlVeV9OVHNtQm4xeVNfYUJxR0tuZWRZYU93TWIyRHhycEdySXUtS1NnUXQ0TVVkQmpubjMzRTl1eUFSNjlTenVhaW5xY1B4T2RWSXdiOFU2MU5wUDlXU2dISV9TUzVjV1VIX0p2LXBOUTl5RzlSaHNleE1hTjVGdkRUWWhLM3NXNnN4UjRiRzZ5TmtOamRlTU02YVdYWDU5aEg1ZzE?oc=5" target="_blank" rel="noopener">Michael Burry adds to BYD, SFM, JD, sees up to 140% potential in Fiserv (BYDDF:OTCMKTS)</a></li>
     </ul>
     </div>
     <div class="stock-card">
       <h2 class="sc-name">C3.ai <span class="sc-tick">AI</span></h2>
       <p class="sc-desc">US enterprise software company offering AI applications for industry and government.</p>
       <div class="sc-quote">
-        <span class="sc-price">11,56 <span class="sc-ccy">USD</span></span> <span class="sc-day up">&#9650; +0,09 %</span> <span class="sc-eur">&asymp; &euro;10,33</span>
+        <span class="sc-price">11,54 <span class="sc-ccy">USD</span></span> <span class="sc-day down">&#9660; -0,09 %</span> <span class="sc-eur">&asymp; &euro;10,24</span>
       </div>
       <div class="sc-trends">
-        <span class="tb down">1W &#9660; -5,94 %</span>
-        <span class="tb up">1M &#9650; +4,24 %</span>
+        <span class="tb down">1W &#9660; -6,10 %</span>
+        <span class="tb up">1M &#9650; +4,06 %</span>
       </div>
-      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 11,09 to 11,56 (+4,24 %)</title><polyline points="0.0,33.5 10.5,30.8 21.0,31.0 31.4,29.0 41.9,25.5 52.4,24.0 62.9,16.7 73.3,22.9 83.8,14.0 94.3,29.3 104.8,30.0 115.2,22.6 125.7,20.7 136.2,16.4 146.7,8.5 157.1,2.5 167.6,11.6 178.1,10.9 188.6,13.8 199.0,19.6 209.5,25.1 220.0,24.9" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">10,02 <span class="sc-ccy">USD</span></span> <span class="sc-ma-pos up">&#9650; +15,15 % vs avg</span></div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 11,09 to 11,54 (+4,06 %)</title><polyline points="0.0,33.5 10.5,30.8 21.0,31.0 31.4,29.0 41.9,25.5 52.4,24.0 62.9,16.7 73.3,22.9 83.8,14.0 94.3,29.3 104.8,30.0 115.2,22.6 125.7,20.7 136.2,16.4 146.7,8.5 157.1,2.5 167.6,11.6 178.1,10.9 188.6,13.8 199.0,19.6 209.5,25.1 220.0,25.3" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
-      <li><span class="n-date">03 Nov</span> <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOd1hCMmE3S2pSTHpjR3RyZXBUYk1fNzc4MmJ3MUYxLXUxUFdMeWo4YXhCS0hKa1FldEJwUjRZU09uei1wSGNDOTJ4bjhlQ1oxQ01PX1Y2MjB2QVVZbDFHMDhXT0dGMFN1M01Jc2ZoRnZ0dm56U0c5bnR1VkxIV04xTVQtdUFrakQ5dzdJUVRNSzllclNFd09ESA?oc=5" target="_blank" rel="noopener">C3.ai vs. SentinelOne: Falling Revenue vs. Steady Sales Growth</a></li>
+      <li><span class="n-date">04 Nov</span> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcnd2RzJabk5SdlppWjVGRVA3aThqYm5rSDVfREI1Wm92cVlScENyX3hWdHY2QkZjX1VqSmVGY21haEhNV3hmNC1UYl9rWWd0SnBlWHRvS29vRzNFak5Iam5TWnBEMWJKTFA4ZmxEaS1laDhLWWlvMEVtVHFjZFcwbWY1ZjNDLTA0ZWZN?oc=5" target="_blank" rel="noopener">Is C3.ai (AI) Stock Too Pricey For Its Current Sales?</a></li>
       <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOWV9ScW5FRW1jQnJhMUtSRlJ0WjdmU1BPZGdnYVA0UnlWRGx5LVJKcnRWem5KN2kwcnhfaXlBWTZrZXpCMkRpN1pMUC00ZHIwU05uNzlTVGJ1cFpXYk5sUWJobDV2M3dGbVhyd0ZEVWtuLUFVMlhRdmh6eWVRNnpKV00xcnlibjkxS242V3RwN1pkcGZ6aTBtU1MwcHpYZi10b2RB?oc=5" target="_blank" rel="noopener">C3.ai: What&#x27;s Behind the Stock&#x27;s Surge in the Past 3 Months?</a></li>
-      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZDJFMWhmcjdXTUdYV3lJS1UtYUJiZGhBeWthaTFfbmVkOF91S0VITXBpUVoxZ2NRaENNYURKR09tRUo2RUZLZFFQS09xUldweFRsTk5lcFhteFpEd3kwcU1nMFFUWFFwNHluLVlyZldDVjBONnZYeGtYWXBYMXJITW8xa0lFM3NSYXE2b1Jsbk5Rdk1TOVNwaWYzUDdzNUR5OTdmT3BobE9vOG9HdndTX1dJcjRLT1dVT0VJb2Z3QkhEY2ZkOUNCX1Q3N2daZFpndVlhYlhCLUVsWmM?oc=5" target="_blank" rel="noopener">C3.ai Inc. stock outperforms competitors despite losses on the day</a></li>
+      <li><span class="n-date">04 Nov</span> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYnBXdHZYSkJUWFZndGtVUDJrVjdkX3laTWpNS193OXFPWTFmc25NN195aW9RcFRpZjFpTkt0b3VFRDMyWWkySUREY21aTkd1WTNOOU9FTlp0OElyNV85dTY5MWdJdlVRcE5pemdlV083RnczQjRCTUJsSm9HYUcwUDdndFFUdlZsTlBN?oc=5" target="_blank" rel="noopener">C3.ai (AI), Why Is The Stock Back In Focus?</a></li>
     </ul>
     </div>
     <div class="stock-card">
       <h2 class="sc-name">Care Property Invest NV <span class="sc-tick">CPINV.BR</span></h2>
       <p class="sc-desc">Belgian healthcare real-estate investor: care homes and housing with care in Belgium, the Netherlands, Spain and Ireland.</p>
       <div class="sc-quote">
-        <span class="sc-price">12,40 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,32 %</span>
+        <span class="sc-price">12,50 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,81 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb down">1W &#9660; -0,32 %</span>
-        <span class="tb up">1M &#9650; +3,51 %</span>
+        <span class="tb up">1W &#9650; +1,30 %</span>
+        <span class="tb up">1M &#9650; +3,82 %</span>
       </div>
-      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 11,98 to 12,40 (+3,51 %)</title><polyline points="0.0,30.2 10.5,26.9 21.0,33.5 31.4,33.5 41.9,23.5 52.4,23.5 62.9,20.2 73.3,13.6 83.8,19.1 94.3,14.7 104.8,23.5 115.2,19.1 125.7,16.9 136.2,18.0 146.7,3.6 157.1,2.5 167.6,4.7 178.1,10.2 188.6,6.9 199.0,12.5 209.5,4.7 220.0,6.9" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">12,56 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos down">&#9660; -0,45 % vs avg</span></div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 12,04 to 12,50 (+3,82 %)</title><polyline points="0.0,27.1 10.5,33.5 21.0,33.5 31.4,23.9 41.9,23.9 52.4,20.7 62.9,14.3 73.3,19.6 83.8,15.3 94.3,23.9 104.8,19.6 115.2,17.5 125.7,18.5 136.2,4.6 146.7,3.6 157.1,5.7 167.6,11.0 178.1,7.8 188.6,13.2 199.0,5.7 209.5,7.8 220.0,2.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
       <li><span class="n-date">28 May</span> <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQT1NGOWZpMktfSE9rd0RVZFhlSE5RbGJRTHhDYmFYMzNVWjJUcmJEWFFzYVlqOEdoSDRQczB4WUpBTHhhWmJDLUppQUNEdXFlUHZDSGdfY3RYSndwX1UybUt3bXU4UzBkUFVZVHhNS0NaSExNbXNtTDhxcVdEZWNXZG9BbHN3WndOS3BqbU1selB5OG9XZVJtZXQ2clVOdTRVYW5kX3lvdHFLUXVibGdzeUp0OE9SSHhRVkN2dA?oc=5" target="_blank" rel="noopener">Care Property Invest Offers Optional Dividend to Shareholders</a></li>
       <li><span class="n-date">17 Oct</span> <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ01Jb2M0cnZ3LTZCWVZ4cFQyQUstOW04Q2dFclBaNUdBMC00Y0dGdmdEaFVrS1d5ZkMzNFYySEJRZlJvaFgtYXFEZ0p1dW9ORk1wb1l0WmlpVE1NZU1aWnFwdWNSQ1Z5VXFJVFVVQkhvQS1JSUk2VVhKbXBadmttcV9RX1d4UkZTQVhfSDJmdHFrRzZseEwza2FWQ2pIa2RkMXktVzdaVUpubk9RMUZRTmlEOF9Qdw?oc=5" target="_blank" rel="noopener">Ireland: Care Property Invest takes another step in Ireland strategy</a></li>
@@ -202,26 +298,28 @@
       <h2 class="sc-name">Gaztransport &amp; Technigaz SA <span class="sc-tick">GTT.PA</span></h2>
       <p class="sc-desc">French engineering company: cryogenic membrane containment systems for LNG carriers and tanks.</p>
       <div class="sc-quote">
-        <span class="sc-price">187,30 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +1,46 %</span>
+        <span class="sc-price">188,10 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,43 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb down">1W &#9660; -0,43 %</span>
-        <span class="tb down">1M &#9660; -12,07 %</span>
+        <span class="tb down">1W &#9660; -1,67 %</span>
+        <span class="tb down">1M &#9660; -11,77 %</span>
       </div>
-      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 213,00 to 187,30 (-12,07 %)</title><polyline points="0.0,5.6 10.5,5.5 21.0,4.8 31.4,2.7 41.9,2.7 52.4,2.5 62.9,3.4 73.3,5.5 83.8,10.9 94.3,6.9 104.8,10.5 115.2,15.8 125.7,13.0 136.2,18.3 146.7,12.6 157.1,33.5 167.6,27.4 178.1,24.6 188.6,24.7 199.0,29.5 209.5,30.5 220.0,28.1" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">199,54 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos down">&#9660; -5,73 % vs avg</span></div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 213,20 to 188,10 (-11,77 %)</title><polyline points="0.0,5.5 10.5,4.8 21.0,2.7 31.4,2.7 41.9,2.5 52.4,3.4 62.9,5.5 73.3,10.9 83.8,6.9 94.3,10.5 104.8,15.8 115.2,13.0 125.7,18.3 136.2,12.6 146.7,33.5 157.1,27.4 167.6,24.6 178.1,24.7 188.6,29.5 199.0,30.5 209.5,28.1 220.0,27.4" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <div class="sc-none">No recent headlines.</div>
     </div>
     <div class="stock-card">
       <h2 class="sc-name">Groupe Bruxelles Lambert SA <span class="sc-tick">GBLB.BR</span></h2>
       <p class="sc-desc">Belgian investment holding company with stakes in listed companies such as SGS, adidas and Pernod Ricard.</p>
       <div class="sc-quote">
-        <span class="sc-price">77,55 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,70 %</span>
+        <span class="sc-price">78,10 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,71 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb up">1W &#9650; +1,37 %</span>
-        <span class="tb up">1M &#9650; +12,47 %</span>
+        <span class="tb up">1W &#9650; +1,43 %</span>
+        <span class="tb up">1M &#9650; +12,86 %</span>
       </div>
-      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 68,95 to 77,55 (+12,47 %)</title><polyline points="0.0,31.2 10.5,30.4 21.0,32.4 31.4,33.5 41.9,31.8 52.4,28.7 62.9,25.7 73.3,24.7 83.8,22.2 94.3,21.9 104.8,22.5 115.2,20.0 125.7,12.2 136.2,12.0 146.7,9.7 157.1,9.2 167.6,7.5 178.1,5.9 188.6,4.7 199.0,3.6 209.5,2.5 220.0,4.2" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">78,04 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos up">&#9650; +0,08 % vs avg</span></div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 69,20 to 78,10 (+12,86 %)</title><polyline points="0.0,30.4 10.5,32.4 21.0,33.5 31.4,31.8 41.9,28.7 52.4,25.7 62.9,24.7 73.3,22.2 83.8,21.9 94.3,22.5 104.8,20.0 115.2,12.2 125.7,12.0 136.2,9.7 146.7,9.2 157.1,7.5 167.6,5.9 178.1,4.7 188.6,3.6 199.0,2.5 209.5,4.2 220.0,2.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
       <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxNWjJwaWNOUlhvdWdtcEpZdVBiQ1VhbmpieFJ3OWcxVF93TGlla1NzRFd2cDNtdGFSTVRsaldQRFVLa0U3TkdYdVVWM2tWVTFBeVlBQ2w3RjVjc2hXWTZPajVYcXRNMUNKSVROYzR6bHhIQXdycHdnb3c1dExWbmtnTjBRSTNHRnNzMy0ybmtyTmF6RVdObUZ4eC12QTlUS3VOOUgzcTR4aThwNmpnenIyR1daYnE3Znd1dkV3d3JR?oc=5" target="_blank" rel="noopener">Groupe Bruxelles Lambert : GBL – Transactions on GBL shares 02-11-2026</a></li>
       <li><span class="n-date">21 Oct</span> <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPaHBucEhlb2RVbzV3Y3ZiV1N1RER3Ty1WY3JSby1LTnpfOHdrVHhsN0Jqd2lJR3psM3RyTjI4WDk4QnpLWWtRQ2JuVlRkVG1BRTU3NWg2WGU3SnZJVFEtQ09TTDF6aFhHQXYzeUxuYXlRQlBwblhXcVlyNzFSZFcyLXpNbzY2QUFZRFJ3Nnk2Vk9KTldPaWhsOW9PNEVWRy15ZUh4UnE3YUhERThpaGFJRTgzSDg0dlVpYlFaNXkzRERoWDlSZVR5cUlkUXhvQTFhVmUyVWJoOHRzY1BudXc?oc=5" target="_blank" rel="noopener">Groupe Bruxelles Lambert Initiated at Buy as Berenberg Notes Five-year Transformation Payoff</a></li>
@@ -232,13 +330,14 @@
       <h2 class="sc-name">iShares Global Clean Energy Transition UCITS ETF <span class="sc-tick">INRG.MI</span></h2>
       <p class="sc-desc">Exchange-traded fund tracking a global index of companies active in the clean-energy transition.</p>
       <div class="sc-quote">
-        <span class="sc-price">8,24 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,88 %</span>
+        <span class="sc-price">8,61 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +4,47 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb up">1W &#9650; +0,91 %</span>
-        <span class="tb down">1M &#9660; -7,15 %</span>
+        <span class="tb up">1W &#9650; +6,81 %</span>
+        <span class="tb down">1M &#9660; -3,66 %</span>
       </div>
-      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 8,87 to 8,24 (-7,15 %)</title><polyline points="0.0,4.2 10.5,2.5 21.0,5.5 31.4,7.2 41.9,5.1 52.4,5.0 62.9,7.5 73.3,10.3 83.8,15.5 94.3,15.3 104.8,18.7 115.2,18.5 125.7,16.7 136.2,21.1 146.7,23.5 157.1,29.7 167.6,24.3 178.1,27.3 188.6,27.2 199.0,33.5 209.5,24.2 220.0,22.2" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">9,36 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos down">&#9660; -8,05 % vs avg</span></div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 8,93 to 8,60 (-3,66 %)</title><polyline points="0.0,2.5 10.5,5.5 21.0,7.2 31.4,5.1 41.9,5.0 52.4,7.5 62.9,10.3 73.3,15.5 83.8,15.3 94.3,18.7 104.8,18.5 115.2,16.7 125.7,21.1 136.2,23.5 146.7,29.7 157.1,24.3 167.6,27.3 178.1,27.2 188.6,33.5 199.0,24.2 209.5,22.2 220.0,11.8" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
       <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMitAJBVV95cUxPVGlma1R1b3VHcnJ3QmV1YjkxNHZ6ZEZ2RGdsUHBXVHpNcjlTZnNNa3NvcUM1bi02QjNkLU5sQ1liSTd2RHRHWDhzOGNKUjlKeHVLTjJQYUVuRzA0dWhkNUc0UnFGRDVZeWJYMko2b3RoY0JkWFVHS1A4YnVMY1Z0YUg3azJxa3VaVTBSbjVzOWZDMldCMTlkVWlobmI0bWhneWpMa29sd3lsd1o5LTR6dXRUVFNQbndwRXBpR05odUVsNmE2TG4tb1prS0lON09kVGVVUThEX0c4RFF2c0JEQThBYUhGYWlUNWhpejdRQ2VOX2pQYzU4eDZiZTJsMmtYRjZURUNsV3UwSV9BQ3ZKNjZTZU1PY2U2YmRhTHo3WGxnelRuZndfSVQxTDctQUFmcnpLSQ?oc=5" target="_blank" rel="noopener">Alerian MLP ETF vs. iShares Global Clean Energy ETF: Alerian MLP ETF vs. iShares Global Clean Energy ETF: Oil Prices Are Rising, but Which Energy ETF Offers More Upside?</a></li>
       <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOWdtLU9RSl8ybExSWGNYVXhMVFNhdGhxZEFIOWNPa01iQW9BaXBBVVd3VjdOOGpJZEFJcjljZlduVGtBVGlKS1JCM0JzWkRGR2FvWWRTa2l4U251dW1lLU50RlVlWUE0MlJvRDFZUk1CVEphRDRlekZlbUlQazIwYnp0QjYyVFhjNjFiak50REhmUHJCT0lSc0tEekdVaDU4cGlYaHVGbVVUdHo5R1RpV3ZkZ2JIR01DTnhmaktYTUdDTXhWbjhnNDQ5blBoNHdPdmU0M3ZmZ242LXVmRFBmbWk3cjBkUF9KUDNv?oc=5" target="_blank" rel="noopener">Kalshi, Polymarket Put Democrats At 70%+: 5 ETFs To Watch - iShares Global Clean Energy ETF (NASDAQ:ICLN)</a></li>
@@ -249,30 +348,32 @@
       <h2 class="sc-name">KBC Ancora SA <span class="sc-tick">KBCA.BR</span></h2>
       <p class="sc-desc">Belgian holding company whose core asset is its stake in KBC Group, the bank-insurer.</p>
       <div class="sc-quote">
-        <span class="sc-price">92,10 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,97 %</span>
+        <span class="sc-price">94,70 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +2,82 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb down">1W &#9660; -2,64 %</span>
-        <span class="tb down">1M &#9660; -2,95 %</span>
+        <span class="tb down">1W &#9660; -0,21 %</span>
+        <span class="tb down">1M &#9660; -1,87 %</span>
       </div>
-      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 94,90 to 92,10 (-2,95 %)</title><polyline points="0.0,11.2 10.5,2.5 21.0,14.5 31.4,16.1 41.9,13.9 52.4,6.8 62.9,3.0 73.3,3.0 83.8,5.7 94.3,2.5 104.8,15.5 115.2,18.3 125.7,12.8 136.2,33.5 146.7,29.2 157.1,17.7 167.6,12.8 178.1,11.2 188.6,13.9 199.0,23.7 209.5,21.5 220.0,26.4" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">83,69 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos up">&#9650; +13,15 % vs avg</span></div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 96,50 to 94,70 (-1,87 %)</title><polyline points="0.0,2.5 10.5,14.5 21.0,16.1 31.4,13.9 41.9,6.8 52.4,3.0 62.9,3.0 73.3,5.7 83.8,2.5 94.3,15.5 104.8,18.3 115.2,12.8 125.7,33.5 136.2,29.2 146.7,17.7 157.1,12.8 167.6,11.2 178.1,13.9 188.6,23.7 199.0,21.5 209.5,26.4 220.0,12.3" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
+      <li><span class="n-date">04 Nov</span> <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5pZVF2emZjeVJyQW03aXRXVUc1WFpmYjhQUDd1SXRVVGJNT0J2VXZKLWNtdmN2ZmF4b0ozRzRrcGo5aUZCVWRDNndRYjJEalhpeWJKaA?oc=5" target="_blank" rel="noopener">KBC Ancora (KBCA) Stock Price, Chart &amp; Analysis</a></li>
+      <li><span class="n-date">03 Nov</span> <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE8wOEZJNElkX25LTTRrckRUT0NZR0FjeU1XUGdxUUhsTktHcVg4QkRWQ1FxR09TSkVWd095TWVveFE1QzFMQ3cydUVweGJTQ1o2TXZmRWU2QnRTTHM?oc=5" target="_blank" rel="noopener">KBC Ancora SA (KB9.HA) latest stock news and headlines</a></li>
       <li><span class="n-date">28 Aug</span> <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdFdrR1UzLTZycm5ORVNXWFNGSGlCQXdSUjZ2SlBJSGw3NnJCcGJ5YUljN1R2bXRSdFh6VFdwV0Vhc2U1WlFmUlV5Uk1PVG9nRkk2ZnRVaE5JTTcyTFdTZVJWMmFCamRCS3JqeUVfNnc2RWRvc0oxZ3M5SG9hSEw2ekRrMXc3eHJfRWgyWkttMVpvdUh0TDJTNWtGNnN3cFNUX3JwQlpQN0JPeTNEVmJYTTZEcXlsYzk4MlNzaVR2S0U4Vk40bTEtLWoyOXhVS3Axemc?oc=5" target="_blank" rel="noopener">Belgium&#x27;s KBC Ancora FY profit rises on higher KBC Group dividends</a></li>
-      <li><span class="n-date">02 Feb</span> <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQdzRBZ3FRblFSOWZibTB0TklYeHlVdFRFdnFnSUNKTnN2WVFfQzFQbkFoZWxjWWgtUXlQRlZMUVNCSHluN0FHc0FNdkhXRlhOSHhKVk80aWI3ei1zcl9mRk9pclBfemFaRWRwLTdhZ0NORGR4eFE0QkpoWl9DRWQ1UG9LeEhyN0hwdjhMNVpmZ2RyMWFjcnFvLXFMVDQ4Tm12VEUtMERrMy1uY3VWb0trNkpfOGRGYUZLMU5WVXJBMW5mYTlCaC1takRR?oc=5" target="_blank" rel="noopener">KBC Ancora Reports a Semi-Annual Profit of 74.4 Million Euros, Slightly Up</a></li>
-      <li><span class="n-date">22 May</span> <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQV2l3TjlKNXBsdG9fS1JFWGZqenM4Y3llY2JoNW5LQURiRGFROFBKR2M2WDZOa0sxWGo5V01sbHNUYmZqNzUxRmVYR3JjV0VRZXoxV2x4MzVNMGYzOWFwY2wwcmJybVZmaHJMX1RzOVF4bkJabENjLTlnXzhvekJFWWRQaUFWOVRIWERfcEpJN2dUcE1yNnBjZTc3NzBBM05UV3NrM0JGNA?oc=5" target="_blank" rel="noopener">KBC Ancora distributes an interim dividend of EUR 4.32 per share on 4 June 2026</a></li>
     </ul>
     </div>
     <div class="stock-card">
       <h2 class="sc-name">NN Group N.V. <span class="sc-tick">NN.AS</span></h2>
       <p class="sc-desc">Dutch insurance and asset-management group, best known for the Nationale-Nederlanden brand.</p>
       <div class="sc-quote">
-        <span class="sc-price">77,44 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,36 %</span>
+        <span class="sc-price">79,34 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +2,45 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb down">1W &#9660; -0,23 %</span>
-        <span class="tb up">1M &#9650; +0,65 %</span>
+        <span class="tb up">1W &#9650; +2,08 %</span>
+        <span class="tb up">1M &#9650; +2,35 %</span>
       </div>
-      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 76,94 to 77,44 (+0,65 %)</title><polyline points="0.0,16.2 10.5,10.2 21.0,25.0 31.4,33.5 41.9,32.3 52.4,24.8 62.9,24.8 73.3,24.8 83.8,28.5 94.3,21.2 104.8,28.7 115.2,24.8 125.7,17.7 136.2,29.6 146.7,25.2 157.1,16.4 167.6,9.1 178.1,8.1 188.6,2.5 199.0,7.5 209.5,8.1 220.0,11.0" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">74,21 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos up">&#9650; +6,91 % vs avg</span></div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 77,52 to 79,34 (+2,35 %)</title><polyline points="0.0,16.4 10.5,27.2 21.0,33.5 31.4,32.6 41.9,27.1 52.4,27.1 62.9,27.1 73.3,29.8 83.8,24.5 94.3,30.0 104.8,27.1 115.2,21.9 125.7,30.6 136.2,27.4 146.7,21.0 157.1,15.6 167.6,14.9 178.1,10.7 188.6,14.4 199.0,14.9 209.5,17.0 220.0,2.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
       <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQeXR0ZlVxTmJ1dVJXaVJSeEVQLV8yRkpHXzVtTHlyUm1pVUhGUkY4Rkd5YTl6VXNjbEF6V25XN0tjczdyUXcwZlNaS1dyVGN5WV84d1YtaEFKaHRZeTJwU1BoaXUwRzR2eEVMeUs5TjJteHp0R253U2pLeFZxNHM1S3JXbnByaXU1cHUzOQ?oc=5" target="_blank" rel="noopener">Euronext to bring in NN Group&#x27;s Knibbe as CEO after Boujnah steps down</a></li>
       <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxQZXI3TGhGMk5JYlBiVWZMZW1DZ0pFdjByckhHa0dwR0VPUy04R0NVdjJBVkdNNDBCTTdWNXdGYVN3RzVyaldsVGJjWnhla2hTOUFxZms5U2k4akdNbmt1cjRmdlJxaWh0dVJwSjNYd3hILWRtMFlWOEpLZGR5SklZSC1DREh5YWdEd0RUZ0M0TmFzNzNiekE?oc=5" target="_blank" rel="noopener">Tjeerd Bosklopper to succeed David Knibbe as CEO of NN Group</a></li>
@@ -283,47 +384,50 @@
       <h2 class="sc-name">PostNL N.V. <span class="sc-tick">PNL.AS</span></h2>
       <p class="sc-desc">Dutch mail and parcel delivery company.</p>
       <div class="sc-quote">
-        <span class="sc-price">0,81 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -1,09 %</span>
+        <span class="sc-price">0,82 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +1,48 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb up">1W &#9650; +0,12 %</span>
-        <span class="tb down">1M &#9660; -3,39 %</span>
+        <span class="tb up">1W &#9650; +1,66 %</span>
+        <span class="tb down">1M &#9660; -2,88 %</span>
       </div>
-      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 0,84 to 0,81 (-3,39 %)</title><polyline points="0.0,7.0 10.5,2.5 21.0,8.1 31.4,11.2 41.9,8.6 52.4,8.9 62.9,6.7 73.3,11.2 83.8,7.8 94.3,10.0 104.8,12.3 115.2,21.2 125.7,20.1 136.2,29.9 146.7,33.5 157.1,12.5 167.6,23.5 178.1,23.7 188.6,27.1 199.0,29.3 209.5,17.9 220.0,22.9" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">0,98 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos down">&#9660; -15,66 % vs avg</span></div>
+      <svg class="sc-spark down" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 0,85 to 0,82 (-2,88 %)</title><polyline points="0.0,2.5 10.5,8.1 21.0,11.2 31.4,8.6 41.9,8.9 52.4,6.7 62.9,11.2 73.3,7.8 83.8,10.0 94.3,12.3 104.8,21.2 115.2,20.1 125.7,29.9 136.2,33.5 146.7,12.5 157.1,23.5 167.6,23.7 178.1,27.1 188.6,29.3 199.0,17.9 209.5,22.9 220.0,16.2" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
       <li><span class="n-date">15 Oct</span> <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPRC1RcUhMS3JKNHlTVjYyS1dkMHd5RWJRRmtiZ0Y2ZVZsV2xBMHpkYy1McUs3X3h2cUJwXzNQajk2S002Q0FlSmFYWi1rN2dFYWVjei02ZG5wY1lrQ280LVRxY1dOTXAzcjY1SkJtUnRyT0NPQzNUWW54WHhpZ3NWcnBTeFZNVXlWU1U2Mmh4TG5uMjdaYlJaQ0tmVC1Kd0paZmJyUmotcF9MNDZBWVY1NjBYZFFJWHhyd0E?oc=5" target="_blank" rel="noopener">&#x27;A Dictatorship&#x27;: Team Picnic-PostNL Rocked by Allegations of Culture of Fear</a></li>
-      <li><span class="n-date">29 Oct</span> <a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcmtRcldFZjJ6TW5ERV9wOU1aYWRiYkt1dzN5cmlfNmdCUWdOOVF4OGp0eTFHV19nZ29WdW41NmE2cWJTb1VTdHliVmpEOU1Pa19SMDhYamxGY1pZcjNpRmN0eW1rcGVya1BER0Nub3dLT25la05IeS1DODBIV2VDY1psYVdJYjI0UWYtdFNvdktWOEhjam9CX09ncnFpMXp4OVFBM2JXQjhrYjBMcDBQS2xKeVp2cXJrUkp4b0liTFVmcWlBUlZnSndwaC1STTZPZW1NLWtHdkpwZDd5Y0NsQXhDWG0?oc=5" target="_blank" rel="noopener">&quot;I feel both vindicated and angry&quot; - British rider recalls old wounds and reaffirms &#x27;destroyed careers&#x27; at Picnic PostNL</a></li>
-      <li><span class="n-date">29 Oct</span> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTS1JcGZ1SHFJUnF5NE51ako1YktsSk1HWExFcGlIZEg0bUJzSVppQmg0TGFtY2NoUkplLWdPWVEzQVlROFJDNUhlbG5XMDdzUEE2a3NBMnVwMHg5YnB5U2YxN01hWXp2cU1RZDI3Wm44TWpQNy1uSmxGMWJxRC1lWjRPckVZOWxCb05V?oc=5" target="_blank" rel="noopener">Picnic-PostNL appoints investigator into team culture</a></li>
+      <li><span class="n-date">30 Oct</span> <a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOX1FwaFpUS2pFWVhHZkctclBkRGFEZk9kN1VFRHB1TTVIT2xza2pxbTNHb0tfbVlGUjlxdkwzaTg2c1QtQnhZOC1QU0x2V3dCZTBXMnM0UmVSSlpGYjlNVXpfTnFLNDRCUTRWVmNLMDdNZE4wd2ZwOXJydWxUWGM1TjFmMEZqTkFGQkVSeGNENGlvN21Pb2V5dlQzMDduM2hOWG05WWlnc0lHQTNkemNjRmlnbTFRbDcxR1pNMFlCcm5WcXNoM1pVUWVvMnJIMHdqVVdVVFU4bWdjVVdZZU8xWHoyemRZeFE?oc=5" target="_blank" rel="noopener">&quot;They thought they found the winning formula&quot; - Former coach explains Picnic PostNL managements&#x27; missteps as stubbornness</a></li>
+      <li><span class="n-date">30 Oct</span> <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNaDdxM1NoS28wQXd1cE1MOTE0NEpmcEl3WUxLLXJySjVhakdKOURGblFNTW5PaGxpeVkzQVBBSDlzaXRYeF9tSjhJSHZOYmpqcGRWUXZtR0U2Z0E0c2EzMlg1NWRhMGNNMWRzUXJkRzdQWmdWd3VEd3dvYzRXeGtkTm9rTmVDT0d6d0p3SjRoaGVjTHAxeWYxb3BXcEFoMUtHQ25KTG1Pek5lb1ZYQnhuVUYtRHZVZmxONzRkc0hnYTM0Ri1ENTU3cUlWMlJPZnczX09LQmhiVWo3QVMxcGhzNVRTNnZLSk94N3c?oc=5" target="_blank" rel="noopener">Picnic&#x27;s PostNL&#x27;s investigator knows past cycling scandals</a></li>
     </ul>
     </div>
     <div class="stock-card">
       <h2 class="sc-name">Shell plc <span class="sc-tick">SHELL.AS</span></h2>
       <p class="sc-desc">British oil and gas major active across the whole energy chain, investing in the energy transition.</p>
       <div class="sc-quote">
-        <span class="sc-price">46,52 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -1,23 %</span>
+        <span class="sc-price">46,38 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,30 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb down">1W &#9660; -1,30 %</span>
-        <span class="tb up">1M &#9650; +8,52 %</span>
+        <span class="tb down">1W &#9660; -2,13 %</span>
+        <span class="tb up">1M &#9650; +7,39 %</span>
       </div>
-      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 42,87 to 46,51 (+8,52 %)</title><polyline points="0.0,33.5 10.5,31.8 21.0,31.5 31.4,23.5 41.9,21.9 52.4,19.1 62.9,17.1 73.3,14.4 83.8,14.8 94.3,12.1 104.8,12.2 115.2,13.7 125.7,12.3 136.2,13.9 146.7,4.5 157.1,6.6 167.6,10.8 178.1,9.4 188.6,3.9 199.0,2.5 209.5,10.9 220.0,14.0" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">38,53 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos up">&#9650; +20,37 % vs avg</span></div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 43,19 to 46,38 (+7,39 %)</title><polyline points="0.0,33.5 10.5,33.2 21.0,24.7 31.4,23.1 41.9,20.1 52.4,17.9 62.9,15.0 73.3,15.5 83.8,12.6 94.3,12.8 104.8,14.4 115.2,12.9 125.7,14.5 136.2,4.7 146.7,6.8 157.1,11.2 167.6,9.8 178.1,4.0 188.6,2.5 199.0,11.4 209.5,14.7 220.0,15.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
       <li><span class="n-date">01 Nov</span> <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOdm0zY3JWM05pczJRY2hrNkJNMXZ4M09XSnNWallnNUlmRU9mWWFXbG01OUczNVRTRlpCMnZSblAyZTBDSE9xN2gxZF9kRGFFWnh1ZUdzekhNajNIWXp3S2I4azNSY0hnbE1Vb0pnOVVsYldGYlFENXlsdEw1WGE1dWVnaUJMUmpVWHhTdFVhZVl5S2gxbWVDTA?oc=5" target="_blank" rel="noopener">Shell plc 2026 Q3 - Results - Earnings Call Presentation (NYSE:SHEL) 2026-11-01</a></li>
+      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE54REhVNTRTcHVHcVdZdGI5V0hfZmpzaHFpZGhRZWpURnE4eVVrYUVTdTJGMGtNQ1V3SXB1bU1aSG9RdEZTcU5YNXhjWmJWOEJJdDVOSVFkYzVpMmZGTWx0Z0pSdHhPMnk5eXZBa3pIb25meG1nZ2dz?oc=5" target="_blank" rel="noopener">Shell Plc News — LS:A3C99G</a></li>
       <li><span class="n-date">30 Oct</span> <a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNTFZTaURDSVgxVGxUZkt4cGtWbi11S3F6WVhVM08wUXNIQlhPMndCNTY4RW16NXNYRjhVY1BEa1FjbTN2cUFRMV95anVxb0dfemJrSXZ3d25lNDg2NS03cjExVDNLa1dhZmZJZXRRdHE0dmtnU1RuNVh1UFlSTHVGdHNMbkpQUQ?oc=5" target="_blank" rel="noopener">Shell PLC (SHEL) (Q3 2026) Earnings Call Highlights: $10. ...</a></li>
-      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTnFLaUNab1BjZ0FVZ0pWRXZ2cHhRbDdWcGFKVGVOejVKaEl4YkxCU09zSTVxYl9TWjdkRFZuVG56TEdzWmdWX0ZHdlBONUw5VVFZNVNJd0xlOTNIMHh6dnR5MDBQUDM4T0RIR0Y3TUNwZ2ZnOS1Kd2pDZ25OS2cwMVdZMTNtSkE5YlZj?oc=5" target="_blank" rel="noopener">Shell PLC Stock (SHEL) Moved Down by 3.07% on Nov 2: What Investors Need To Know</a></li>
     </ul>
     </div>
     <div class="stock-card">
       <h2 class="sc-name">Sofina S.A. <span class="sc-tick">SOF.BR</span></h2>
       <p class="sc-desc">Belgian family holding company (Boël) investing in private and listed growth companies across Europe, North America and Asia.</p>
       <div class="sc-quote">
-        <span class="sc-price">276,00 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -3,16 %</span>
+        <span class="sc-price">277,80 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,65 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb up">1W &#9650; +1,40 %</span>
-        <span class="tb up">1M &#9650; +14,33 %</span>
+        <span class="tb up">1W &#9650; +2,36 %</span>
+        <span class="tb up">1M &#9650; +12,74 %</span>
       </div>
-      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 241,40 to 276,00 (+14,33 %)</title><polyline points="0.0,33.5 10.5,30.0 21.0,31.2 31.4,32.0 41.9,29.5 52.4,28.8 62.9,25.4 73.3,23.7 83.8,21.3 94.3,20.7 104.8,21.3 115.2,21.0 125.7,19.1 136.2,18.7 146.7,17.4 157.1,13.4 167.6,11.6 178.1,12.2 188.6,11.0 199.0,9.6 209.5,2.5 220.0,8.9" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">236,38 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos up">&#9650; +17,52 % vs avg</span></div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 246,40 to 277,80 (+12,74 %)</title><polyline points="0.0,31.4 10.5,32.8 21.0,33.5 31.4,31.0 41.9,30.2 52.4,26.6 62.9,24.8 73.3,22.3 83.8,21.7 94.3,22.3 104.8,22.0 115.2,20.0 125.7,19.6 136.2,18.2 146.7,14.0 157.1,12.1 167.6,12.7 178.1,11.5 188.6,10.0 199.0,2.5 209.5,9.2 220.0,7.9" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
       <li><span class="n-date">06 Aug</span> <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1qT2pNRzExUm1ZTGRrN0NORGhONHdieDN5SU9PVVgxYUdNMHNES3ZaejQ2bDVVVDgwakI4VW1YZkgtcV93bWV1NTlTeUVqY3U2U1dXRG4zM0lPX0Q2bDhoTURSX2NFWVlCVFFUNUNlZFJoc0dSRVRQUTV4cFhIWGs?oc=5" target="_blank" rel="noopener">Sofina invests €150m in Drylock Technologies</a></li>
     </ul>
@@ -332,28 +436,30 @@
       <h2 class="sc-name">Warehouses Estates Belgium S.C.A. <span class="sc-tick">WEB.BR</span></h2>
       <p class="sc-desc">Belgian property investment company (SIR) owning mainly out-of-town retail plus semi-industrial property, mostly in Wallonia.</p>
       <div class="sc-quote">
-        <span class="sc-price">37,40 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,27 %</span>
+        <span class="sc-price">37,40 <span class="sc-ccy">EUR</span></span> <span class="sc-day flat">&#8226; 0,00 %</span>
       </div>
       <div class="sc-trends">
         <span class="tb up">1W &#9650; +0,81 %</span>
-        <span class="tb up">1M &#9650; +6,25 %</span>
+        <span class="tb up">1M &#9650; +5,35 %</span>
       </div>
-      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 35,20 to 37,40 (+6,25 %)</title><polyline points="0.0,33.5 10.5,30.2 21.0,24.7 31.4,19.1 41.9,16.9 52.4,14.7 62.9,11.3 73.3,12.5 83.8,12.5 94.3,15.8 104.8,20.2 115.2,20.2 125.7,23.5 136.2,18.0 146.7,15.8 157.1,21.3 167.6,12.5 178.1,12.5 188.6,3.6 199.0,2.5 209.5,10.2 220.0,9.1" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">39,51 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos down">&#9660; -5,33 % vs avg</span></div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 35,50 to 37,40 (+5,35 %)</title><polyline points="0.0,33.5 10.5,27.3 21.0,21.1 31.4,18.6 41.9,16.1 52.4,12.4 62.9,13.7 73.3,13.7 83.8,17.4 94.3,22.3 104.8,22.3 115.2,26.1 125.7,19.9 136.2,17.4 146.7,23.6 157.1,13.7 167.6,13.7 178.1,3.7 188.6,2.5 199.0,11.2 209.5,9.9 220.0,9.9" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <div class="sc-none">No recent headlines.</div>
     </div>
     <div class="stock-card">
       <h2 class="sc-name">Xiaomi Corp <span class="sc-tick">3CP.DU</span></h2>
       <p class="sc-desc">Chinese consumer-electronics company: smartphones, smart devices and a connected ecosystem.</p>
       <div class="sc-quote">
-        <span class="sc-price">3,22 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,72 %</span>
+        <span class="sc-price">3,23 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,22 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb up">1W &#9650; +9,62 %</span>
-        <span class="tb up">1M &#9650; +17,55 %</span>
+        <span class="tb up">1W &#9650; +11,07 %</span>
+        <span class="tb up">1M &#9650; +18,39 %</span>
       </div>
-      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 2,74 to 3,22 (+17,55 %)</title><polyline points="0.0,30.0 10.5,30.8 21.0,31.4 31.4,33.5 41.9,17.9 52.4,26.8 62.9,24.8 73.3,17.9 83.8,11.1 94.3,14.6 104.8,14.5 115.2,11.7 125.7,14.1 136.2,17.9 146.7,13.2 157.1,12.8 167.6,18.7 178.1,20.5 188.6,18.8 199.0,14.8 209.5,3.8 220.0,2.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">3,21 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos up">&#9650; +0,47 % vs avg</span></div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 2,72 to 3,23 (+18,39 %)</title><polyline points="0.0,30.8 10.5,31.5 21.0,33.5 31.4,18.1 41.9,26.9 52.4,24.9 62.9,18.1 73.3,11.4 83.8,14.8 94.3,14.8 104.8,12.0 115.2,14.3 125.7,18.1 136.2,13.5 146.7,13.1 157.1,18.9 167.6,20.7 178.1,19.0 188.6,15.0 199.0,4.2 209.5,2.9 220.0,2.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
-      <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQS19WY3AzM3FMWmF3WndmaFVLcDdVQW1iTFBIOWNrdWpYYklzeFJOeXJRNlhHNmR0M3JQQVlDYnJod1Q0MWFHZ2I4STI2S080cEdfTV9fQ0M2RmxyQi11WlplRGs4eTZJRENOQjZqRkFDMUVWdW8tLTA2UFBnT1d3YlVJdHRybG40UFdSNmJSZTgzT0hfMHNxd1N6cnM3cXpVMXhHQTQ0VFVrVWV6UzJ5MVZhRnJvUkdmNzF4Mm1pTkI2QQ?oc=5" target="_blank" rel="noopener">Xiaomi&#x27;s going global—the 18 Pro series is preparing for a major November launch</a></li>
+      <li><span class="n-date">04 Nov</span> <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdi14SC1PYXZ2LVNYQVdGVXhsMUxYU2lwblF6WUtPejFZVDFfZmVsSEltWmlPR3IwY0dyXzJLMUZuRWhRRFhSM3J6endDS1JqVGpnTHFvdEpkTHVUUnFWaExnWmFZc0NmUnBaYnl0bXlscWo3UThta1BxYlliSlhQQVBkN3ZhVWVodnVJNDVSUEpTY1ZDOTN5bWFkdjN1MXY5TzVfWThqRVBfR1NYN2tCNzVUSVIzems0aTZFcUJHTUE?oc=5" target="_blank" rel="noopener">HyperOS 4 update schedule: Every Xiaomi, Redmi, and POCO phone getting Android 17</a></li>
       <li><span class="n-date">02 Nov</span> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPWGdGLUtncnFBWWc1eVZkTU52aWxsQjFTRENMTlBYQ3NfblRDcl9DaW4tUktsV3V0bFJmUmhXLU5SOGlGYm02NzBLWHFWQkVxU0dTcUVjenpLQ2ZtVkczaDl6d3ZLYmRaN3lWQzNidW1CMDBtWWhITXlkYldMUFlzM0syY2t2VkdsZnlmaTdRU07SAYwBQVVfeXFMT3M2bWlwTGdPVzd0NlRMcEE3OU9RVm5NQ2ZJYkhERWp2NTluemw3WmdWNXB5NTNINnFOVUpFakNEU1E2NUNjYmJYVkYtejhEWUJiVkRCNFZHazdxSUZ0YUREVW41MElMeEtsM2xrVzJmaEt1V3FEcU9wa3JIdUtabmVTRmVoYlBkMW4yT1k?oc=5" target="_blank" rel="noopener">Xiaomi 18 Pro series is going global this month - GSMArena.com news</a></li>
       <li><span class="n-date">03 Nov</span> <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQTlQwOElqdHlFZjhpN3huNEgwNlFUZTVaNTRCS3NPcVZvWG51cDVORDh2YnhCQ1lBc09TQ3MzU25rNFZRTnpBdmYwak5zS0NMcC1WWVZGZTg4YUFQdWZacmVZZVU5aTEwUV9nV0x2cm10Q2dRU0hsTG1sMWZIY256d09iZ1VPa1N0bUdHTW41d3BheWFKS0d0UlpUdmFFazhTcHc?oc=5" target="_blank" rel="noopener">Xiaomi confirms Android 17 HyperOS 4 rollout schedule for these devices</a></li>
     </ul>
@@ -362,17 +468,18 @@
       <h2 class="sc-name">Xior Student Housing NV <span class="sc-tick">XIOR.BR</span></h2>
       <p class="sc-desc">Belgian real-estate investment trust specialising in student housing across Europe.</p>
       <div class="sc-quote">
-        <span class="sc-price">25,00 <span class="sc-ccy">EUR</span></span> <span class="sc-day down">&#9660; -0,20 %</span>
+        <span class="sc-price">25,15 <span class="sc-ccy">EUR</span></span> <span class="sc-day up">&#9650; +0,60 %</span>
       </div>
       <div class="sc-trends">
-        <span class="tb up">1W &#9650; +2,25 %</span>
-        <span class="tb up">1M &#9650; +7,99 %</span>
+        <span class="tb up">1W &#9650; +3,50 %</span>
+        <span class="tb up">1M &#9650; +6,12 %</span>
       </div>
-      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 23,15 to 25,00 (+7,99 %)</title><polyline points="0.0,33.5 10.5,24.5 21.0,26.2 31.4,31.1 41.9,27.0 52.4,21.3 62.9,17.2 73.3,18.0 83.8,26.2 94.3,23.7 104.8,26.2 115.2,22.1 125.7,23.7 136.2,22.9 146.7,13.1 157.1,14.7 167.6,12.3 178.1,14.7 188.6,10.6 199.0,8.2 209.5,2.5 220.0,3.3" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="sc-ma"><span class="sc-ma-label">200-day avg</span> <span class="sc-ma-value">26,94 <span class="sc-ccy">EUR</span></span> <span class="sc-ma-pos down">&#9660; -6,64 % vs avg</span></div>
+      <svg class="sc-spark up" viewBox="0 0 220 36" preserveAspectRatio="none" role="img" aria-label="One-month price trend"><title>1 month: 23,70 to 25,15 (+6,12 %)</title><polyline points="0.0,26.8 10.5,28.5 21.0,33.5 31.4,29.3 41.9,23.5 52.4,19.3 62.9,20.1 73.3,28.5 83.8,26.0 94.3,28.5 104.8,24.3 115.2,26.0 125.7,25.1 136.2,15.1 146.7,16.7 157.1,14.2 167.6,16.7 178.1,12.5 188.6,10.0 199.0,4.2 209.5,5.0 220.0,2.5" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>
       <ul class="sc-news">
-      <li><span class="n-date">30 Oct</span> <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQWVRqVDBQZzgzRXpJSzVTNUdoWF9KV3VDcEU1TGc5ejlJSEo1X3dQSUZ4RXprVlg5X3o0OS1NWjcwSmtna0xKN05SVHY3ZmRNa25qdlNndHlJc2ZING5fWDNscXhDbi1ZVEpGZTBMQXJxM3owQk00bWFwdzFLWEFYdmIwcVNiNkRoU2pIR2pGSHg5ZUJqVjJfVDBJRU5famcyUEJOdU9Zdw?oc=5" target="_blank" rel="noopener">How Investors Are Reacting To Xior Student Housing (ENXTBR:XIOR) Strong Nine Month Earnings</a></li>
+      <li><span class="n-date">18 Oct</span> <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOZnVPWDNPUm5adFlKaUZpOVd5SVRkS296MzN0cDk5MFlSVE9yc05Td0RaazJnMUdybVU3UVhzVlB5QnZzOEdteW15c0ZiVkp5alpKbHBGejlYWDdKVVNkLVpDUHJnNjZJbUptNzk0Zl9YNV8yaXZwMnFVS1p6UWlSdDk0TW82UW5fR1BMZTRTZGtSTkl2akZtb2hEMGYyZw?oc=5" target="_blank" rel="noopener">Is Xior Student Housing (ENXTBR:XIOR) Still A Bargain On Cash Flow?</a></li>
       <li><span class="n-date">21 Sep</span> <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPSlhtUWtlOE5mV1M4X2t3bEFOdm43Z2dPczRrUGVZdEJkODdicHNYZGN2bjNvaGY4ZkZHdm9zRUpyMW12c3RVV3Fyd2l6aXF5cW5uZ283aFZIOS01YWczTlA0RWVJVm9TWnNfWEt4aXgzcHY5RnJaYkhFSVQwdWJRcnV5Q2pIbF8wSXNsbjRKZjBfd1Btbi1NOWZn?oc=5" target="_blank" rel="noopener">Xior Student Housing: Upside Exists At A Low Valuation (OTCMKTS:XIORF)</a></li>
-      <li><span class="n-date">29 Oct</span> <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOaEtOQWZ4cS16M3FNYVRRN21yX2RCWVAweWR2cmRZV1UtVGs1TW4yOEpIdF9rVEtqd0xvenZnVnBUekd5MFJFaXNFVW8yMUtkSy1ZX1JhOFktZ0Z3SW5UWjRkS2dFWmNOUU5pM0Q4c3Njem42RjByYndPd2tPSzNDQ1NjY01zWWpDSVBIX2h0SmQ?oc=5" target="_blank" rel="noopener">Xior Student Housing names finance chief successor</a></li>
+      <li><span class="n-date">23 Oct</span> <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPdG96S1BfM09yMU5LcUR6U09SVVZKaHJ1d19fc3JRMnFNYkN6dVNJanFFcVhEY0tmSG1UbURXMmdLSU1FdE43OGlCZUlGVmNJVWtmeHlmaGwxNTdoa0dzdlpNaWxjOGtDX2dVVS01ZDdLc09uMFNjd09FWmJZNFowRmJ0T2Q0Z1o2WVo4UFg2VVJVTUt0UmQ4b2RtMFI?oc=5" target="_blank" rel="noopener">Xior 9-month Net Income At EUR117.9 Million</a></li>
     </ul>
     </div>
   </div>
@@ -388,7 +495,7 @@
 <footer class="site">
   <div class="wrap">
     <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
-    <div class="credits">Prices from Yahoo Finance, headlines from Google News. A personal watchlist, not investment advice. Updated twice a day by GitHub Actions.</div>
+    <div class="credits">Prices and index data from Yahoo Finance, headlines from Google News, US GDP from FRED (St. Louis Fed). A personal watchlist, not investment advice. Updated twice a day by GitHub Actions.</div>
   </div>
 </footer>
 
