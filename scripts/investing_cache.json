@@ -1,13 +1,12 @@
 {
  "AKER.OL": {
-  "price": 1088.0,
+  "price": 1058.0,
   "currency": "NOK",
-  "day": -5.555555555555558,
-  "wk": -7.796610169491524,
-  "mo": -23.2722143864598,
-  "ma200": 1197.53,
+  "day": -2.757352941176472,
+  "wk": -9.106529209621995,
+  "mo": -21.74556213017751,
+  "ma200": 1198.605,
   "closes": [
-   798.0,
    776.0,
    783.0,
    790.0,
@@ -257,39 +256,23 @@
    1118.0,
    1120.0,
    1152.0,
-   1088.0
+   1088.0,
+   1058.0
   ],
-  "news": [
-   {
-    "t": "Aker ASA (AKAAF) (Q3 2026) Earnings Call Highlights: NAV Surges to NOK 106 Billion as Cognite ...",
-    "l": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQWM4TjVnejBoRUJsMmpSOW5xcnlIX1NNUHZ5VTRWRHpMcTdiTUxGNDU2NTQzNnJoUVFzeHY4NmM5MERyOFR5Nk5OejNRTjVOcjNnZXZzRUQxNHBkRjl3NmRjZmxkdThyMEFUcDJUZkpmT2FyZGpSSFBnaVF3aFowQTc3blZiSUstZUxqUmNfMVU?oc=5",
-    "d": "04 Nov"
-   },
-   {
-    "t": "Aker ASA reports third quarter results 2026",
-    "l": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbW5RYjBLd0piR3Rya0huT05qcy13Zjc0ang3R2ZfRDlTWjl6ZnBMaWk0NG4xU0ItbDlJNm1XMmppeElJQ21uQllHZUxTVmxIc2Yzb0NjNkl2N3hjclpMRkp4Q1V2a29uYlRldVg2NDF4NkJsYTV4RVRBQ2l4VkxfSjFkSE5oTHh2NU01dkRnTnZzZ2RCSlRaMWdPQndfY0lraXJqdS1xTkVDZHNwSUE?oc=5",
-    "d": "04 Nov"
-   },
-   {
-    "t": "Aker ASA 2026 Q2 - Results - Earnings Call Presentation (OTCMKTS:AKAAF) 2026-07-21",
-    "l": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTlI2YzNDQjg3Y3I4ZWZES1duMDN0LW9mbEhjWkJobUd6U1ZQV1J5MER3ZFI5RmhkTUJDNEFScU02MGtTSmJzQnFBRi1Xbmp4ZXBDczlyVlhCcWkyYm9GYlhlWFRaZWpBQWw0dk9nUVU2QmE1djEyalBMdlFmSVkwRUZYUGZSUGxaNzRVRVl4NUU5OWxueFdN?oc=5",
-    "d": "21 Jul"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "ASCE.BR": {
-  "price": 53.4,
+  "price": 53.1,
   "currency": "EUR",
-  "day": -0.18691588785046953,
-  "wk": 0.18762155769191935,
-  "mo": 2.103254885018968,
-  "ma200": 51.71224996566772,
+  "day": -0.5618005942069404,
+  "wk": 0.5681803814307163,
+  "mo": 2.3121327802732905,
+  "ma200": 51.69774995803833,
   "closes": [
-   49.95000076293945,
    50.0,
    50.29999923706055,
    50.29999923706055,
@@ -544,23 +527,23 @@
    52.79999923706055,
    53.5,
    53.5,
-   53.400001525878906
+   53.400001525878906,
+   53.099998474121094
   ],
   "news": [],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "BPOST.BR": {
-  "price": 1.154,
+  "price": 0.89,
   "currency": "EUR",
-  "day": 0.5226479166099862,
-  "wk": 8.662900611110347,
-  "mo": 3.963966576293143,
-  "ma200": 1.6173500031232835,
+  "day": -22.876952671847828,
+  "wk": -16.666664806346844,
+  "mo": -19.237750704600465,
+  "ma200": 1.6110500025749206,
   "closes": [
-   1.8140000104904175,
    1.7300000190734863,
    1.75,
    1.8079999685287476,
@@ -815,29 +798,14 @@
    1.1299999952316284,
    1.1059999465942383,
    1.1480000019073486,
-   1.1540000438690186
+   1.1540000438690186,
+   0.8899999856948853
   ],
-  "news": [
-   {
-    "t": "Bpost avoids fine in Belgian newspaper distribution procurement case",
-    "l": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZEpvNXd3OHJYWHJMNlNKY2JlWjlPVFZ2Rmxvb3ZDN21KSkdaMWFUckd2YktkYkEwcElvRklCU2NYN2toN3FrQ281MGZLYlhwUjNWc1ZXS0JYU0wwRXdCYW13a2ZudWlXSkJuOTc0MlFndHcxRTl4VkpWVHhTSURQTnkydDVvaXVJRnJVOTB2RUQ1NFlMbm8zeFJjN01JXzM2a3lfbzVCSWs0cEluNG5BcHEzOFkxb3pJQVVoQ3c5cDdQUmxHM2RYajBDQUVXajVVcUtOckRaXzQ?oc=5",
-    "d": "13 Feb"
-   },
-   {
-    "t": "More than 4 in 10 Bpost vans are Electric",
-    "l": "https://news.google.com/rss/articles/CBMic0FVX3lxTE94NHZpM2s5THJoLWl0OVNVSFRRTUhsU2h6Wm01bDVYUFVpZlROcmVCX2VyanJadzZVNEs0bHFuSXY4UVJ6VHllaFRKZ3B1cTR4YUNaS2RfbjA1NkVWZXNwZXktdXJTYkM3MVlldk5UaURNT2s?oc=5",
-    "d": "21 Oct"
-   },
-   {
-    "t": "No resumption of dialogue, as Bpost staff continues strike",
-    "l": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZ053ZGZ4Ny1RWndydnNIU1lScWl3eGRrQjllWHpNd1J3MHMyYjhJQm5janliby13R0F1Y0xpVmNoZWxGR1M5UElTWlFObW9rV0daT1pVaHpVeVBfQWhJMVFDZzMyNUpNak1NNkpvTnZucVc5QV93a3o0UkdiTk12cnRMbjlSRkROVUhXXzg5ZTIwVzV4X3k2TllMMA?oc=5",
-    "d": "27 Apr"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "BRK-B": {
   "price": 572.33,
@@ -1099,37 +1067,20 @@
    579.0900268554688,
    572.3300170898438
   ],
-  "news": [
-   {
-    "t": "Berkshire Hathaway Buys More Sirius XM, Sending Stock to 52-Week High",
-    "l": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQY2RNVTIwRWxIbGpZZFo4Zi1DTUpNNHRrWVd0emZMcWM5WUJ3ZzBoT2RjNW0wbFNOb0FSRnZ0RWMyZDdZQ20yNGprb3dzZ0RUQUZUdm5OckRxdnR2RkhLdlRvNXNIVEltZVNiRWRBRkJTOFVHNDlmQnMyYnRWUmhsMXhR?oc=5",
-    "d": "04 Nov"
-   },
-   {
-    "t": "If You Invested $1000 in Berkshire Hathaway B 10 Years Ago, This Is How Much You'd Have Now",
-    "l": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNS0djWkFCVjlzS3J5THBKWlBJQTRUN0ZqWjVuWnJjZG44NVltbFFnbmd0QzRvRlMzZTZ2cV9odWFZZkgwN21hZmo0VlVyS2VFOGMxazg4Y1JLdGtWeWpuMnY3TjNHYUtrS0J6SDlKbTFrVC12M1hzeDBEY2tGdUhDYk1SYjltMnFKem41YXFKSnhkRGhmekZvdU81XzRBUmlR?oc=5",
-    "d": "05 Nov"
-   },
-   {
-    "t": "Berkshire Hathaway Stock Has Surged. Can Earnings Keep the Rally Going?",
-    "l": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQaFk0ektfOWtITzBVYXRoYXVjVTZub3gyclBPS05TNDR1N1lPSm80Y2lid1dJclQxY2Z6VmpSVGpRTk9NSHFUdzl5M0NHX0phWFUzOXJOV0FNWlJsdnJ0UmhEZU9PSXVLQ1h0UGdlaml5dVJnSml4NVZCRmV3dDdfQzFiWUUySHVLd1pUcQ?oc=5",
-    "d": "05 Nov"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "BY6.VI": {
-  "price": 8.3,
+  "price": 8.159,
   "currency": "EUR",
-  "day": -0.9782864445355588,
-  "wk": 7.624485291626248,
-  "mo": -2.980714264693163,
-  "ma200": 9.941370024681092,
+  "day": -1.6987974396947436,
+  "wk": 4.281703988336982,
+  "mo": -3.053706728842842,
+  "ma200": 9.928815026283264,
   "closes": [
-   10.71500015258789,
    11.449999809265137,
    10.880000114440918,
    11.28499984741211,
@@ -1381,29 +1332,14 @@
    8.220999717712402,
    8.178000450134277,
    8.381999969482422,
-   8.300000190734863
+   8.300000190734863,
+   8.159000396728516
   ],
-  "news": [
-   {
-    "t": "China’s BYD Doubles Market Share in Brazil With New Plant Eyed",
-    "l": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZkYzLU5GQjVUdDZvVkE0RzhGd1JJeXk5M2FWQ2RwZHc2Ml9TcldySDc3ME5kU2hfNWlhcjRGSzh0bFV5cHhmSFF2NEdDSTZVcTduYXlqRlZFMTFKN3k5TnhRdnhqZjZBTDlDTTRmd0Fac1RKV25KRHZQZ3JadFlfWllSSWw1Wm11Nk5VTXlEWktHREs5d3lGcGd2R1ZMNUVqSmJINm1oWlBicWpUemhuYWVuRQ?oc=5",
-    "d": "03 Nov"
-   },
-   {
-    "t": "BYD’s new luxury electric SUV has one big problem: It weighs over 8,200 lbs",
-    "l": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY2ZMRGlMNHNjTkh6dkZfYXVSc1ZSTUpJNWNxU25MSk1obWN3bThmeHQxUTc3UnhZNTBTSUtKUEphalJTZHl6MWhlcjZhbEd2ZTRaQV9jYzNLb3JfOV8tS0tlT1MwUTd0cXlubGpBYzQ5ZWdjMWd0Tl8tVEE5Rk92MzdoMWVzaE1BaFE?oc=5",
-    "d": "04 Nov"
-   },
-   {
-    "t": "BYD’s Vice President on the Price of Global Success",
-    "l": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9aQ1lYZnNTNGk4WE51eXRFX2c2RFlVUUswd0hoUlZSTHpsOGh4eHh3U3VqRGdGd3owenpkdy1wb055bElKZzZsYzFzREt6LUlleUhaRDdYZ0VSaE1rX1BKMjNSQlNfU2JwQmVNT3htYnZQNFRQT0E?oc=5",
-    "d": "05 Nov"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "AI": {
   "price": 11.38,
@@ -1665,37 +1601,20 @@
    11.960000038146973,
    11.380000114440918
   ],
-  "news": [
-   {
-    "t": "Should You Buy C3.ai Stock After Its 93% Decline? The Answer Might Surprise You.",
-    "l": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUGFmWVJydVB3Mm0xeHFkanFTYjFxTXdBMjQzSWxiZ1gyOFNoZlNxZFVPTmNmT0lyb0xXcHBTTHVhOHlHWTJzLUJ3bzBudzNBMEVDbzJ2WkV4aTlRckprSXU5bDFiYmViQ1ZZcWpYclZOV3UyX09JSEUwRy1wWlJISk5acHlEenl3bWI3SU9OTzdWNGNNQmc?oc=5",
-    "d": "05 Nov"
-   },
-   {
-    "t": "Is C3.ai (AI) Stock Too Pricey For Its Current Sales?",
-    "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcnd2RzJabk5SdlppWjVGRVA3aThqYm5rSDVfREI1Wm92cVlScENyX3hWdHY2QkZjX1VqSmVGY21haEhNV3hmNC1UYl9rWWd0SnBlWHRvS29vRzNFak5Iam5TWnBEMWJKTFA4ZmxEaS1laDhLWWlvMEVtVHFjZFcwbWY1ZjNDLTA0ZWZN?oc=5",
-    "d": "04 Nov"
-   },
-   {
-    "t": "C3.ai (AI), Why Is The Stock Back In Focus?",
-    "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYnBXdHZYSkJUWFZndGtVUDJrVjdkX3laTWpNS193OXFPWTFmc25NN195aW9RcFRpZjFpTkt0b3VFRDMyWWkySUREY21aTkd1WTNOOU9FTlp0OElyNV85dTY5MWdJdlVRcE5pemdlV083RnczQjRCTUJsSm9HYUcwUDdndFFUdlZsTlBN?oc=5",
-    "d": "04 Nov"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "CPINV.BR": {
-  "price": 12.72,
+  "price": 12.68,
   "currency": "EUR",
-  "day": 0.7923939409488323,
-  "wk": 2.5806504705075506,
-  "mo": 6.711410953141472,
-  "ma200": 12.560900025367737,
+  "day": -0.31446750148655944,
+  "wk": 3.089431776815399,
+  "mo": 6.375840805515565,
+  "ma200": 12.563800024986268,
   "closes": [
-   11.640000343322754,
    11.899999618530273,
    11.819999694824219,
    11.859999656677246,
@@ -1950,39 +1869,23 @@
    12.4399995803833,
    12.399999618530273,
    12.619999885559082,
-   12.720000267028809
+   12.720000267028809,
+   12.680000305175781
   ],
-  "news": [
-   {
-    "t": "Care Property Invest NV Reports Earnings Results for the Nine Months Ended September 30, 2026",
-    "l": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNRFV3c2EzTGxvRGswX1BQckpnVnhsdHBfQ1hKb2xaR2loUVVnZWR4S0NHVDVtYW1uMVFzaE0xUEFWQmNhYWVpdlpXaEVWcnJjQjdna250X1V6RllGTkRTRV9PeTlNc19WMU9VcWJ3bzhVcFJDMUlUSlgweldrbE9kNkp4UVRiVXBMRDRyRzU0Vmw5eFlhc3VISF9zUDlOdzJqYmVQcVlDcW5QeTZFN1EtcE9uRnhaenJHeVgyT2JpQTI3R3VGVXZhbjZTeVU3a0w0VmtEMTVLZE1xdDF0bXc?oc=5",
-    "d": "04 Nov"
-   },
-   {
-    "t": "Care Property Invest Offers Optional Dividend to Shareholders",
-    "l": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQT1NGOWZpMktfSE9rd0RVZFhlSE5RbGJRTHhDYmFYMzNVWjJUcmJEWFFzYVlqOEdoSDRQczB4WUpBTHhhWmJDLUppQUNEdXFlUHZDSGdfY3RYSndwX1UybUt3bXU4UzBkUFVZVHhNS0NaSExNbXNtTDhxcVdEZWNXZG9BbHN3WndOS3BqbU1selB5OG9XZVJtZXQ2clVOdTRVYW5kX3lvdHFLUXVibGdzeUp0OE9SSHhRVkN2dA?oc=5",
-    "d": "28 May"
-   },
-   {
-    "t": "Technical Analysis of Care Property Invest SA (EURONEXT:CPINV)",
-    "l": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBCVUM2S1pieEI4N090X2JGNGR6WDRTSkVmZ2JiNkZCYVpMaEptZk5oMDZ0NmRwZ2ViRXYtdndEUmxpYk0tZHZGMWlJMnBpb0I2UVZMbkxNZ2NoWER6YUx1YWtKNTJjcjYwVV9fSE5SYw?oc=5",
-    "d": "12 Dec"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "GTT.PA": {
-  "price": 181.8,
+  "price": 180.8,
   "currency": "EUR",
-  "day": -1.1956521739130421,
-  "wk": -4.9163148778861965,
-  "mo": -15.046727545907569,
-  "ma200": 199.5440000152588,
+  "day": -0.5500566749017666,
+  "wk": -2.6386612692568256,
+  "mo": -16.45101286913896,
+  "ma200": 199.5515000152588,
   "closes": [
-   183.3000030517578,
    179.39999389648438,
    177.5,
    179.3000030517578,
@@ -2237,23 +2140,23 @@
    184.60000610351562,
    187.3000030517578,
    184.0,
-   181.8000030517578
+   181.8000030517578,
+   180.8000030517578
   ],
   "news": [],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "GBLB.BR": {
-  "price": 79.1,
+  "price": 78.05,
   "currency": "EUR",
-  "day": 0.3807067723653912,
-  "wk": 2.1963784428011834,
-  "mo": 15.39021874936699,
-  "ma200": 78.04174999237061,
+  "day": -1.3274317248749612,
+  "wk": 0.3858560151225987,
+  "mo": 14.442824844978986,
+  "ma200": 78.0367499923706,
   "closes": [
-   76.94999694824219,
    76.0,
    71.69999694824219,
    72.8499984741211,
@@ -2508,39 +2411,23 @@
    78.0999984741211,
    77.55000305175781,
    78.80000305175781,
-   79.0999984741211
+   79.0999984741211,
+   78.05000305175781
   ],
-  "news": [
-   {
-    "t": "Groupe Bruxelles Lambert : GBL - Results as at September 30, 2026",
-    "l": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZHIwRENfcHQtdWJiR1lZTVZYai1TaXdUTWFjTGU0YVRUTXI0VkRKYVBfZnBqNElHNEhwdXJTWWlTdDhEY1U5aVdQOWN3OUtnRjlMMlRIV3ZnanpBM29ITmVpbFRwM3U5MnRLWmhNblpKc1N6MURkTjA2RThUYnJyNzhFSVpyNE9rZWtCNExfMHAxbE1uclM0ZVQ2cWZUMS1xUU1UYTR0RzNTNzJMaHEwdnBFNA?oc=5",
-    "d": "05 Nov"
-   },
-   {
-    "t": "Groupe Bruxelles Lambert SA Reports Earnings Results for the Nine Months Ended September 30, 2026",
-    "l": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMU4zUlZ4MERoY2NMRFQ2VnZMcDBsT1liZjNjT0pPbWZsU3Ryak02ZlpENHRGVjhIMnZKVnQyYUlfc1RnM3JjQ1lWZ0VGaG56ckMwSnpFZ0lwTW1lZzNCaWxkZmNNY3QySndtczFmcG1PU2p4RUpWOUFNcnNZVkdBQkxUaVg2ZjJUa2RwMmNjSFpuOV90WDhyQUtiQWkzNFI1Zl9SamVrbWtRVW9jZ2wwYXBJWWxpOFpmaE01QjZNemFyMllyd09hcUF1ZmFQdWRqWVFrUnBCMGRIOE5IQzVLM1dVTQ?oc=5",
-    "d": "05 Nov"
-   },
-   {
-    "t": "Groupe Bruxelles Lambert : GBL – Transactions on GBL shares 02-11-2026",
-    "l": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWjJwaWNOUlhvdWdtcEpZdVBiQ1VhbmpieFJ3OWcxVF93TGlla1NzRFd2cDNtdGFSTVRsaldQRFVLa0U3TkdYdVVWM2tWVTFBeVlBQ2w3RjVjc2hXWTZPajVYcXRNMUNKSVROYzR6bHhIQXdycHdnb3c1dExWbmtnTjBRSTNHRnNzMy0ybmtyTmF6RVdObUZ4eC12QTlUS3VOOUgzcTR4aThwNmpnenIyR1daYnE3Znd1dkV3d3JR?oc=5",
-    "d": "02 Nov"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "INRG.MI": {
-  "price": 8.268,
+  "price": 8.442,
   "currency": "EUR",
-  "day": -3.6251364480096804,
-  "wk": 2.593369318691474,
-  "mo": -6.322236019368255,
-  "ma200": 9.35454000711441,
+  "day": 2.104503608344821,
+  "wk": 7.706054889080605,
+  "mo": -3.674116295164598,
+  "ma200": 9.352530009746552,
   "closes": [
-   9.008999824523926,
    8.880000114440918,
    8.618000030517578,
    8.871000289916992,
@@ -2792,39 +2679,23 @@
    8.164999961853027,
    8.237000465393066,
    8.579000473022461,
-   8.267999649047852
+   8.267999649047852,
+   8.442000389099121
   ],
-  "news": [
-   {
-    "t": "Kalshi, Polymarket Put Democrats At 70%+: 5 ETFs To Watch - iShares Global Clean Energy ETF (NASDAQ:ICLN)",
-    "l": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOWdtLU9RSl8ybExSWGNYVXhMVFNhdGhxZEFIOWNPa01iQW9BaXBBVVd3VjdOOGpJZEFJcjljZlduVGtBVGlKS1JCM0JzWkRGR2FvWWRTa2l4U251dW1lLU50RlVlWUE0MlJvRDFZUk1CVEphRDRlekZlbUlQazIwYnp0QjYyVFhjNjFiak50REhmUHJCT0lSc0tEekdVaDU4cGlYaHVGbVVUdHo5R1RpV3ZkZ2JIR01DTnhmaktYTUdDTXhWbjhnNDQ5blBoNHdPdmU0M3ZmZ242LXVmRFBmbWk3cjBkUF9KUDNv?oc=5",
-    "d": "02 Nov"
-   },
-   {
-    "t": "iShares Global Clean Energy ETF (ICLN) vs Invesco Solar ETF (TAN): Which Is the Better Buy?",
-    "l": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ3VIWFlDYmJXV28wVHVhRU44cXN3YWNuM3g2TnU3MkFhdDJzTFRfWUxZYjdEZzJFcEFwQmlKTTJEX2Q0bzhua0ZQSDA3VGxBRDB5cF94eUhpU1hxVnhLLUxKQVg3NVdJUVJWVy1tMVJSTVhzT0RhZWRYS1BlUmRIdjg0VmkzUmloc3ZkYjNEMDZ6bEZJeVk3SHZ2YVN1bEZZQ2JBRENrVk9UelRKLVlyR0J1OVA4NHo4T0dyOTdDNHA5MHllX040amZwdkU?oc=5",
-    "d": "04 Jun"
-   },
-   {
-    "t": "iShares Global Clean Energy ETF: We Might Be Close To A Bottom (NASDAQ:ICLN)",
-    "l": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYllOaFBoX3I3aDNnMnhOb2JQc085UlVHQlUwT2dHMEpuMEZWNzlsYmh6OUNZMFZMUTQ0RHNGOE1pTUNpX1RXMkhLOU91TjVHQkEwUEpleEtoX2l6Qnp2VkFLNENEMWtnbXpfa0FfSW50TENUOHpVaXN2anFPdkJRamkycWE4QzF4aElSNzlPWno5XzFmWWtSaEwwWFVPZw?oc=5",
-    "d": "07 Jan"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "KBCA.BR": {
-  "price": 94.0,
+  "price": 93.3,
   "currency": "EUR",
-  "day": -0.4237304231073047,
-  "wk": -0.4237304231073047,
-  "mo": -0.3181368420456465,
-  "ma200": 83.7829997253418,
+  "day": -0.7446808510638281,
+  "wk": 0.7559444807467841,
+  "mo": -0.7446776045129666,
+  "ma200": 83.85999973297119,
   "closes": [
-   67.5999984741211,
    68.19999694824219,
    69.19999694824219,
    72.30000305175781,
@@ -3079,39 +2950,23 @@
    93.0,
    92.0999984741211,
    94.4000015258789,
-   94.0
+   94.0,
+   93.30000305175781
   ],
-  "news": [
-   {
-    "t": "KBC Ancora SA (KB9.HA) Valuation Measures & Financial Statistics",
-    "l": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE03cFA1SGRuUzJISW9RaTlhaElpWG9tQU1wWWRORzJUbGFVM1hWMk9iMmR6NmlETWdEeFY2Sk9HX3ZzUFM5Qi1TZ0pSN1RUdUgyc0JOMUtsanI0cDJBZmFhaXBnMF9ob2kz?oc=5",
-    "d": "04 Nov"
-   },
-   {
-    "t": "KBC Ancora (KBCA) Stock Price, Chart & Analysis",
-    "l": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5pZVF2emZjeVJyQW03aXRXVUc1WFpmYjhQUDd1SXRVVGJNT0J2VXZKLWNtdmN2ZmF4b0ozRzRrcGo5aUZCVWRDNndRYjJEalhpeWJKaA?oc=5",
-    "d": "04 Nov"
-   },
-   {
-    "t": "KBC Ancora Reports a Semi-Annual Profit of 74.4 Million Euros, Slightly Up",
-    "l": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdzRBZ3FRblFSOWZibTB0TklYeHlVdFRFdnFnSUNKTnN2WVFfQzFQbkFoZWxjWWgtUXlQRlZMUVNCSHluN0FHc0FNdkhXRlhOSHhKVk80aWI3ei1zcl9mRk9pclBfemFaRWRwLTdhZ0NORGR4eFE0QkpoWl9DRWQ1UG9LeEhyN0hwdjhMNVpmZ2RyMWFjcnFvLXFMVDQ4Tm12VEUtMERrMy1uY3VWb0trNkpfOGRGYUZLMU5WVXJBMW5mYTlCaC1takRR?oc=5",
-    "d": "02 Feb"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "NN.AS": {
-  "price": 80.54,
+  "price": 79.26,
   "currency": "EUR",
-  "day": 0.2988753911846054,
-  "wk": 2.9133640647338366,
-  "mo": 5.834431708847054,
-  "ma200": 74.29199989318847,
+  "day": -1.589273529894597,
+  "wk": 1.9028071228609056,
+  "mo": 5.286933344143674,
+  "ma200": 74.36189990997315,
   "closes": [
-   60.29999923706055,
    60.279998779296875,
    59.599998474121094,
    60.81999969482422,
@@ -3366,39 +3221,23 @@
    77.72000122070312,
    77.44000244140625,
    80.30000305175781,
-   80.54000091552734
+   80.54000091552734,
+   79.26000213623047
   ],
-  "news": [
-   {
-    "t": "Tjeerd Bosklopper to succeed David Knibbe as CEO of NN Group",
-    "l": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZXI3TGhGMk5JYlBiVWZMZW1DZ0pFdjByckhHa0dwR0VPUy04R0NVdjJBVkdNNDBCTTdWNXdGYVN3RzVyaldsVGJjWnhla2hTOUFxZms5U2k4akdNbmt1cjRmdlJxaWh0dVJwSjNYd3hILWRtMFlWOEpLZGR5SklZSC1DREh5YWdEd0RUZ0M0TmFzNzNiekE?oc=5",
-    "d": "02 Nov"
-   },
-   {
-    "t": "NN Group Says Tjeerd Bosklopper To Succeed David Knibbe As CEO",
-    "l": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNYmJqNWlOSmtNU2lUbjJZc3ZHbDNqYVNsUEo3RGNtUjJsUUVNWmNGVnBwTzRmVExfRmZiTUpEOE4wVUc4WW92WC03aUNtaEFJOUJ1dUFpcFpUek1sLW9jenVqMW1sX3lUcVAzVlBWRl9neTB0aEhQUFRpZFRsRW53cGQtaklVQWVjS0FDZ2xsUjdyeU5LamN3cVcwQmFNNDZ0NVNHUEZ5QldxaVhVNGhNdDZXM3hvQVVNWXdENllrQ05KYlRfYVYtZk9Hemc?oc=5",
-    "d": "02 Nov"
-   },
-   {
-    "t": "Euronext to bring in NN Group's Knibbe as CEO after Boujnah steps down",
-    "l": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOOElCN1oyZ1M1RElkOHU2TmsyRVRpR2lTLVg5bGN1MnlRa2hpNURwVGtxa3ZJajhUalJoemxSTDRRLUkyY2Z1TjJzNk4xWUUzbnRoamQ0enROVUhUQXlacXdfV05jQVpNM29GVjBRdmZlVEJaM3dSdzBfSGFETWdXQVlQTmdqTURoYjRFcnhveWRyTHRBNm1aZ3RpTjdvc1llR0dSSTE4d2NDSE8wWWJ2SFh2dW1TMHMxbC1sMFIwZVI4RU1oUHZQbUljWFp0UXBkZ1d2dHZKVQ?oc=5",
-    "d": "02 Nov"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "PNL.AS": {
-  "price": 0.814,
+  "price": 0.81,
   "currency": "EUR",
-  "day": -1.8094084745870043,
-  "wk": 1.0552501408349402,
-  "mo": -3.0375222416912595,
-  "ma200": 0.9764475005865098,
+  "day": -0.4914017738166243,
+  "wk": 1.0605090124971905,
+  "mo": -2.87769655632375,
+  "ma200": 0.9746225008368492,
   "closes": [
-   0.9564999938011169,
    0.9589999914169312,
    0.9440000057220459,
    0.9639999866485596,
@@ -3653,39 +3492,23 @@
    0.8220000267028809,
    0.8130000233650208,
    0.8289999961853027,
-   0.8140000104904175
+   0.8140000104904175,
+   0.8100000023841858
   ],
-  "news": [
-   {
-    "t": "'I didn't agree with their way of working' – Ellen van Dijk critical of Picnic-PostNL management but says she didn't experience culture of fear",
-    "l": "https://news.google.com/rss/articles/CBMingJBVV95cUxPRDNsYTAycU1lWVpyX1F2NDR0UlBGR0k5a2pjbEx3QUwwZlBzejh3dnFhbVMyWWZnaEhDVWNVYlhLSHdSaGdFckRYWl84TUthQXR0Qm9kTUt0T0VCQWNyUVVjeGZLbG9QNjVsbENfcTY1Z2I1RTNLNnhQMHRNeFRjTUZVa1hiaDlzNk0tSlFCdE5RUFBiT21yWnUzQ0Fwdkl6Y2MxRFprZE0xZE5WTEdVZ3JtcDBrV0owcXp4NkRRVGlEcHR4UjVYeFZBdkhDMk80ZjRHN09pRmZ1QW5ybW9MTjVSUVZ0OFBUaGZPdm9RUTNCRFNRM3FhR0g4TENodGdtRUhQeTdESGZmV1RLcEdSXzM1dGdtX2RPTkxUVkdB?oc=5",
-    "d": "05 Nov"
-   },
-   {
-    "t": "PostNL seeks state compensation for 2027, confirms 2026 outlook as Q3 revenue rise",
-    "l": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYU1ZU3BsUlZOWnlIS1Q3bmkzd3hYMzVwcWp3TFV2d0tEdUFXUjZSZHJlSkJvUEo3cGxlejBNWWNPRmd0SGpDNVlMX1JCbmFEOUtDLUZmRk9GOGxMNGhIaldXS3Z3T21OelBOLVBvWFUzV3liaWk5Q09WOExSMVZqc2xrV0E2SXEwaGZxWGFvM2w3YkFDUzFGNnB4T2lSZ0VJVW00?oc=5",
-    "d": "25 Oct"
-   },
-   {
-    "t": "PostNL stamp prices jump 8.6% to €1.52",
-    "l": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvU0xVcXhvYS0tRTVpNUFNY21JLW4yT0c4bWdNNlo3bzBvYjlZaEhrdVo0cVdwUHlIUm1yVlVlMnlfNTFDckg5VDhZb2Z0a2dPYU1hRDRaUDdYcUxCSlBMZTQzbTZ6bFZzdDVtcGhJY0U?oc=5",
-    "d": "02 Nov"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "SHELL.AS": {
-  "price": 45.44,
+  "price": 44.355,
   "currency": "EUR",
-  "day": -0.4382107631969001,
-  "wk": -6.135098595464871,
-  "mo": 5.0635806397895555,
-  "ma200": 38.59475006103516,
+  "day": -2.387761134462796,
+  "wk": -8.884553689042619,
+  "mo": -0.8826825871813937,
+  "ma200": 38.66075005531311,
   "closes": [
-   32.57500076293945,
    32.40999984741211,
    32.470001220703125,
    32.775001525878906,
@@ -3940,39 +3763,23 @@
    47.095001220703125,
    46.51499938964844,
    45.63999938964844,
-   45.439998626708984
+   45.439998626708984,
+   44.35499954223633
   ],
-  "news": [
-   {
-    "t": "Shell PLC Stock (SHEL) Moved Down by 3.07% on Nov 2: What Investors Need To Know",
-    "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTnFLaUNab1BjZ0FVZ0pWRXZ2cHhRbDdWcGFKVGVOejVKaEl4YkxCU09zSTVxYl9TWjdkRFZuVG56TEdzWmdWX0ZHdlBONUw5VVFZNVNJd0xlOTNIMHh6dnR5MDBQUDM4T0RIR0Y3TUNwZ2ZnOS1Kd2pDZ25OS2cwMVdZMTNtSkE5YlZj?oc=5",
-    "d": "02 Nov"
-   },
-   {
-    "t": "Shell Plc",
-    "l": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1RdVMxQnZlOU1TQWJaeDcyY1VDZklfdXhrc2txdXcySlJteFFRbkNhN3hKV2I4Ny1KUmQ0MVdmZllyN2V5NVlXMk13Sk40bVI4?oc=5",
-    "d": "20 Oct"
-   },
-   {
-    "t": "Key facts: Shell Plc Sponsored ADR Q3 EPS Beats; LNG Deal with Metlen",
-    "l": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcE9PT2dnNnBiTkFrLXhiUzlfRC1sS3Z3ekg2ZklHSnY1UnRiSlNqNDBvVVYydVZWUHVCRDhBbTZRc0RsRnl3ZG5LNHZkeDVtMXBVRWZPZnZkMVhqMTlUWmhGU2FwLVdiQnFyUl93WHFKclVWd0RzRHRuQVVGUkg5dUVUNTROa0tkQWJPTl9qSml0MzFIZzRCOGlYQXJ4M0o2b1Q0SnZIQlB1S2czMkRwUlF5WFJoOXVmdjd6UTlHeF9WSlIwTnlEUw?oc=5",
-    "d": "02 Nov"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "SOF.BR": {
-  "price": 273.0,
+  "price": 265.0,
   "currency": "EUR",
-  "day": -2.080340045522422,
-  "wk": 0.0,
-  "mo": 11.610790346614053,
-  "ma200": 236.53799995422364,
+  "day": -2.930402930402931,
+  "wk": -3.6363636363636376,
+  "mo": 8.784890541993917,
+  "ma200": 236.63299995422364,
   "closes": [
-   241.39999389648438,
    239.1999969482422,
    237.60000610351562,
    241.8000030517578,
@@ -4227,29 +4034,23 @@
    285.0,
    276.0,
    278.79998779296875,
-   273.0
+   273.0,
+   265.0
   ],
-  "news": [
-   {
-    "t": "Sofina invests €150m in Drylock Technologies",
-    "l": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1qT2pNRzExUm1ZTGRrN0NORGhONHdieDN5SU9PVVgxYUdNMHNES3ZaejQ2bDVVVDgwakI4VW1YZkgtcV93bWV1NTlTeUVqY3U2U1dXRG4zM0lPX0Q2bDhoTURSX2NFWVlCVFFUNUNlZFJoc0dSRVRQUTV4cFhIWGs?oc=5",
-    "d": "06 Aug"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "WEB.BR": {
-  "price": 36.8,
+  "price": 37.1,
   "currency": "EUR",
-  "day": -1.6042820893034992,
-  "wk": -2.9023805924315194,
-  "mo": 2.222220102945971,
-  "ma200": 39.48899995803833,
+  "day": 0.8152194814105673,
+  "wk": -2.3684250681023866,
+  "mo": 1.6438314359481954,
+  "ma200": 39.47149995803833,
   "closes": [
-   37.400001525878906,
    37.400001525878906,
    37.20000076293945,
    37.0,
@@ -4504,23 +4305,23 @@
    37.29999923706055,
    37.400001525878906,
    37.400001525878906,
-   36.79999923706055
+   36.79999923706055,
+   37.099998474121094
   ],
   "news": [],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "3CP.DU": {
-  "price": 3.453,
+  "price": 3.415,
   "currency": "EUR",
-  "day": 4.162894129638417,
-  "wk": 17.68916328243386,
-  "mo": 27.229185175072935,
-  "ma200": 3.2096675086021422,
+  "day": -1.100494292177856,
+  "wk": 13.698401603404653,
+  "mo": 27.563021977518034,
+  "ma200": 3.20778000831604,
   "closes": [
-   4.896999835968018,
    4.7804999351501465,
    4.60099983215332,
    4.674499988555908,
@@ -4773,39 +4574,23 @@
    3.196000099182129,
    3.2190001010894775,
    3.315000057220459,
-   3.453000068664551
+   3.453000068664551,
+   3.4154999256134033
   ],
-  "news": [
-   {
-    "t": "Xiaomi 18 Pro Max vs Samsung Galaxy S26 Ultra: Which Flagship Is Worth Buying?",
-    "l": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbDdJaFhVNjZDaWo2RnJxZmZhQzZUb0RqV3ltZGR3M1dCbjN4N0RfNmlaZ2VHT2NlcDNWc05NdmtZVW55ZU1TQ0JMUHVkd3dIbnhpUmJhWmxtc0tpS3lQTnRlVGpyY1BjQXh5WWxGdHBFVDIwSFZ1ZGlDcGxZUTJob29ybTlGV0k?oc=5",
-    "d": "04 Nov"
-   },
-   {
-    "t": "Xiaomi sets 2028 global right-hand-drive push as Australia hiring begins",
-    "l": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPakt3eldveUl6YnpCckp3bHVnSS1NMWRaaWNWSE1SOWxqQkVLcjJ6VnhJWmJIWW5XT1lDOWE4dVNJdlN5VzI0TkVCMnJ1d2ZtdTQ3eG5rVlJOcl9QOVl0ZE43OTNLd2FHeFNzMGFGVUR2R09JMXl1RkRabjdtM0hTODJERk9kUWNHRWdQdXRPTWUxbFc5V2xQd0w0QjhmdXlZS3JCaWJIYkVSSHRjRHc?oc=5",
-    "d": "05 Nov"
-   },
-   {
-    "t": "Xiaomi tipped to be working on a wide-screen candybar smartphone - GSMArena.com news",
-    "l": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTlVocTVtYklwbHRWc0hLdHgtLUlOeG8wQnV3bTBlWjduNjBvRFVOeXM3dkVlak1OV3RaaVJ5WGZoWkVjcklndVozS3J5bFBuc3VHRFFlUmN4MHpIamJVaXV2LXJEdVFjbkdXNHBKaEtaM29OcHI1NTdnak81NVMtVXQ0UEIwbFpncFBKLTBzM1MxVlVVMmQ3c1NPQTA2SDA5dXBjUHZR0gGiAUFVX3lxTE1kaWtUVmhtaEJ6VkZuczdvX3BkZHhEZ3FyOVp6MXJxNXBXOVROazZKcWx2TTZwS0c4UGgtZVR3UVRnRFFBc1NUVzVSRDNwQ291MkFZNW5UaG1VbEFjMm9KZW93M0FZWFlILVROemMxMl9ydnVBam5WWGdLdG5kcEFRNElGTlNWbkk1TlZBay1YNnp1aXdjNTdnTE9XbjBDYWJaQQ?oc=5",
-    "d": "04 Nov"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "XIOR.BR": {
-  "price": 25.65,
+  "price": 25.4,
   "currency": "EUR",
-  "day": 1.1834304300427645,
-  "wk": 4.480653424254166,
-  "mo": 8.686437304764482,
-  "ma200": 26.926499996185303,
+  "day": -0.9746573966795236,
+  "wk": 2.8340033763930794,
+  "mo": 9.012877468809123,
+  "ma200": 26.911499996185302,
   "closes": [
-   28.5,
    28.5,
    28.399999618530273,
    28.450000762939453,
@@ -5060,36 +4845,17 @@
    25.049999237060547,
    25.0,
    25.350000381469727,
-   25.649999618530273
+   25.649999618530273,
+   25.399999618530273
   ],
-  "news": [
-   {
-    "t": "Is Xior Student Housing (ENXTBR:XIOR) Still A Bargain On Cash Flow?",
-    "l": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZnVPWDNPUm5adFlKaUZpOVd5SVRkS296MzN0cDk5MFlSVE9yc05Td0RaazJnMUdybVU3UVhzVlB5QnZzOEdteW15c0ZiVkp5alpKbHBGejlYWDdKVVNkLVpDUHJnNjZJbUptNzk0Zl9YNV8yaXZwMnFVS1p6UWlSdDk0TW82UW5fR1BMZTRTZGtSTkl2akZtb2hEMGYyZw?oc=5",
-    "d": "18 Oct"
-   },
-   {
-    "t": "Xior Student Housing: Upside Exists At A Low Valuation (OTCMKTS:XIORF)",
-    "l": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSlhtUWtlOE5mV1M4X2t3bEFOdm43Z2dPczRrUGVZdEJkODdicHNYZGN2bjNvaGY4ZkZHdm9zRUpyMW12c3RVV3Fyd2l6aXF5cW5uZ283aFZIOS01YWczTlA0RWVJVm9TWnNfWEt4aXgzcHY5RnJaYkhFSVQwdWJRcnV5Q2pIbF8wSXNsbjRKZjBfd1Btbi1NOWZn?oc=5",
-    "d": "21 Sep"
-   },
-   {
-    "t": "Xior Student Housing (ENXTBR:XIOR) Q3 Results Spotlight Debt Strain Behind Profit",
-    "l": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeUJmTDl3TWlubkR6NW1pRlV4YTNabEY1TU12M1AxNlJSYjFQVE5vaFRsazgwZC1fTDk1TjdEMnIxTzNrdWY4MjV1Z3pGUE5ISy1VcFJLYjBic3lQY2kzYm42aVFiZkluQXAxVmtxbzJicFJSY294Nk5HWEFyZXFjbV9FOGZJVjBiTkY2WTRla3hxb1RiTlNZSUZtVWtyQQ?oc=5",
-    "d": "25 Oct"
-   }
-  ],
-  "when": "05 Nov 2026, 21:20 UTC",
+  "news": [],
+  "when": "06 Nov 2026, 12:42 UTC",
   "stale": false,
-  "usdeur": 1.1222,
-  "nokeur": 10.443
+  "usdeur": 1.1178,
+  "nokeur": 10.5153
  },
  "~buffett": {
   "daily": [
-   [
-    "2025-10-29",
-    218.30821843976085
-   ],
    [
     "2025-10-30",
     216.1303793484712
@@ -6093,6 +5859,10 @@
    [
     "2026-11-04",
     232.11432861660617
+   ],
+   [
+    "2026-11-05",
+    221.94689518060508
    ]
   ],
   "monthly": [
@@ -6333,8 +6103,8 @@
     228.7683764946515
    ],
    [
-    "2026-11-04",
-    232.11432861660617
+    "2026-11-05",
+    221.94689518060508
    ]
   ],
   "six": [
@@ -6495,15 +6265,15 @@
     233.5134257315735
    ],
    [
-    "2026-11-04",
-    232.11432861660617
+    "2026-11-05",
+    221.94689518060508
    ]
   ],
-  "cur": 232.11432861660617,
-  "avg": 136.3000426082065,
+  "cur": 221.94689518060508,
+  "avg": 136.04585677230645,
   "min": 60.99181510029633,
   "max": 233.5134257315735,
-  "when": "05 Nov 2026, 21:20 UTC",
+  "when": "06 Nov 2026, 12:46 UTC",
   "stale": false
  }
 }
