@@ -276,10 +276,10 @@
     "d": "21 Jul"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "ASCE.BR": {
   "price": 52.9,
@@ -547,10 +547,10 @@
    52.900001525878906
   ],
   "news": [],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "BPOST.BR": {
   "price": 0.885,
@@ -834,10 +834,10 @@
     "d": "06 Nov"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "BRK-B": {
   "price": 570.89,
@@ -1101,25 +1101,25 @@
   ],
   "news": [
    {
-    "t": "Berkshire Hathaway speeds up stock buybacks, though profit falls",
-    "l": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPa29SbTRWcFpWdFpiekRVRjRvNmZjM1BnNzhOeVY3ajB5S25PaGgxVFAyTTItcjRDZkRmcHROSkJIZ3lNdXZkaGp0R2hOZE51eHBzR1U3MXlFRXhGOUhzV1pJR0I2RWtUZnRrQU1MVXZaSm1haDUtTHo3NEJvNGJhLU1rM2N4a240NWp2VFh5Vkd5LW1DOTd6emN0S1QyengzS1ZjdE04LVluRGppX19oSkxtVktEcDdoWXVIVk93?oc=5",
+    "t": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
+    "l": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTkNjdmJMNHlQMVFUZzMwdUFtSkNCaXAtODVHX2RSVE9OM3hsbzBQdS1INjFZWGFhcFFJTlZFczhzUzVGNnhNRXhQMUZYVk1QOUVWVnZuOExULW9JQXlWcnBfdmFrY3Rqb2lxWUZReEl5bTNLWURIcXdJWDJ3TURaYWtIaWdmS244?oc=5",
     "d": "07 Nov"
    },
    {
-    "t": "A Berkshire Hathaway Electric Utility Wants a Historic Rate Hike in California",
-    "l": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcEpoY0oyT0JCWk9ySTNRR3U5dHpKeWgwS0VMN3FxbXQtbDVyaWRGcVMyZi1abWdnRVgyY3RrTVRRX2R0Sko5VjktaFdLd3NuVW9XN3h6T2lqOUVRMmR1UjFZdXhMR3NuQU1jN1ZoRktWVk1tVFh5ZlA5N043YzkySzdETTJMMWVXbTVaNXdXdjBzaVFZZUxxcWhNbm1iMDA1NkpBVktweFNXRGV0Q0xMSWE4LUx1SG9zcndLdWNCYnVSQWFHVGc?oc=5",
-    "d": "06 Nov"
+    "t": "Berkshire Hathaway utility asks California regulators for 57% rate increase (BRK.B:NYSE)",
+    "l": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNY19WeFpIc1FrLXN1NnlGMjZOTXBxRnlCanNtOG9ZOWZXaXVQY2xrQlRUSjRLZnlsWjFXeWVvNk40eDBaU1lHdTRReWFLSFpPNWo5YmNDekZXb2syQkJRV3BscVFiRlZYU3ExYk9KT1NxNEV1cVNybmtLb01zNjhtZzNQaTFWOS1BYmlrYTBmSHpvbTRvVE1zSkJZNUVHVEVzSThPNmpRWEgzbUJZT1dITDBKVmRsMFhSMEVVZA?oc=5",
+    "d": "07 Nov"
    },
    {
-    "t": "Berkshire Hathaway Inc. News Release",
-    "l": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdFdZRkFBTThXWTJ4aHNRaTQwYXM4T3pORXVadmQ4NzRJN3ctYWZ5OGU3dHd0M0pZZjBMbnhmbklreXVHeFY4cHY4cFNzNzFaV2Z4TWR3bHh0TTFUUFkwenowZ2xwZlVRUF9aNzVDc2taQm9WSG1WSlpDUlBDdGxqcUU3M211OTEwaER2S0RpNlZTa0tzam8yUjFvMG9TR09iR1E?oc=5",
+    "t": "Forget the AI Friday Rally: Why Big Money Is Still Fleeing to Warren Buffett's Berkshire Hathaway",
+    "l": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQbDBVSXNTeVRMa0xqaWxjNFNodVpKai1ZOEdNNFRzTzdNS1dvNmU2Y1dxMzJsYzBQUWN5a0R0dmotNnoyX2tEZXAxMTlKVDVFMElleHBuajNrUW5aUE01akViLXg5ci05Mk9naktWVWpCb1F2ckFKakc0RFhpQ1RlVkYtZkJJdUkwUUdOdXdPUTdXOEFhWjdycXJSajluMkFzWmtUWUVOQUV5M0lmLXFYbjFNQXp0cl85ZTNHTFZLV3BESHoyQjVxbWQ1alF0Q3dwbmxTYUlR?oc=5",
     "d": "07 Nov"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "BY6.VI": {
   "price": 8.507,
@@ -1385,25 +1385,25 @@
   ],
   "news": [
    {
+    "t": "BYD's New Flagship Sedan Wants To Be China's Most Luxurious Car Yet",
+    "l": "https://news.google.com/rss/articles/CBMickFVX3lxTFBYRWxxZWRfNktDWmRocm04Z3pKOG9wc09FN2pjN1lkeDNVMm9uU2dCTGFiUExHaFJmV1BBdTdZemRzMDQycXhReVJHTkFaSnJGUFkzRy15YkJLTHM4dFBkaUJubnVXaGp4TW5vVjFKelVBdw?oc=5",
+    "d": "08 Nov"
+   },
+   {
     "t": "BYD is launching this 5-seat luxury electric SUV next week with over 1,000 km of range",
     "l": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOGNmMWVfOUFBTmt5Q1lLNnR6T1FaTm5zNWtCSHlzVjhzYTFRSDRQV2x1ZEZHczZPQXZiVEhTY0tIMWQ5MndLU1MyZVYyYjB3bndsbXlxYm9Lc24xYURVaHpoY0NhSENXckhLNlgyeVFyc2dIV01ncnZBajVnSDBCOGJ0NmZ0ekRmdDBzMF9QMTh3b0ZqR3o0?oc=5",
     "d": "06 Nov"
    },
    {
-    "t": "BYD's $3-Million Hypercar Crashed Hard During High-Speed Testing: Video",
-    "l": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9nNGR6MnR4eFB1bmVpNndrSkhFdU9zdDAwalNKYzR3Z2EyS1VxWnBOSnJWbll3RXRYbGpHaXMtUVpJa1B4VWp1cnBkdWFpZGw4dzV1VmJOeEVGeWJ6czJfODNuUldqRkpKUWtEVTFMOA?oc=5",
-    "d": "02 Nov"
-   },
-   {
-    "t": "BYD Yangwang debuts Altior, targeting ultra-luxury executive sedan market",
-    "l": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5PWFdfVnJwOVJPOXZtbUlvNG85U2Z5UDNwXzB0UXJkVzU2WnN2SlZPWERUZE5qWXdMNVgzQ1VONTEyVFgxYUxUNFF6Rk5pT3lxUm5QYmtvU192M0plMDhfWW44OVB6NThzYnFB?oc=5",
-    "d": "07 Nov"
+    "t": "Chinese carmaker BYD’s offices in Netherlands raided over JLR ‘copycat car’ claim",
+    "l": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVmkwQl9xRlV6aFZ5TGdhU3BUNVd3NUdkU09vdzdHZlE1aVZrYXZfVTRSSEFSZExPNXV0aHBoejItUFlpVXdlSlJMbGtINFVKQ3J3NnktSEttczBVWU14X2lQbFBYNTk5SmxxbFU0VFJZa0RFdXR2by1Hb3lpQnVkXzdCN2ZQSE00NjVWdmlhaHRHZUthSDFWRHQ4NnhzMXJNMnl5REFIWlFKSnZmVnZ2UVVnc3NsXzNMQnE1ODlB?oc=5",
+    "d": "08 Nov"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "AI": {
   "price": 11.69,
@@ -1682,10 +1682,10 @@
     "d": "06 Nov"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "CPINV.BR": {
   "price": 12.68,
@@ -1964,15 +1964,15 @@
     "d": "28 May"
    },
    {
-    "t": "Technical Analysis of Care Property Invest SA (EURONEXT:CPINV)",
-    "l": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBCVUM2S1pieEI4N090X2JGNGR6WDRTSkVmZ2JiNkZCYVpMaEptZk5oMDZ0NmRwZ2ViRXYtdndEUmxpYk0tZHZGMWlJMnBpb0I2UVZMbkxNZ2NoWER6YUx1YWtKNTJjcjYwVV9fSE5SYw?oc=5",
-    "d": "12 Dec"
+    "t": "Office of Care Property Invest NV Extension / abv+architecten",
+    "l": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNzg1Y05PZFRVMVh4MEU3X1NYYWZ2Sl9ZREdKamF5dlloQ2p0WkJzcW5QbGpCY2hLaUV1dXpaQ185emgya3BYZnR0WUVFczZPbTQzbzRmWFFGc0trNFFDdXZEQjJ3TnQzWjRYeHpzS3dGQnRWYXREWFpsa2pGV3YyUGdlQ3YzcjczZzZrNVVrb0d0YjY1aWttRWpmT2lwZw?oc=5",
+    "d": "15 Oct"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "GTT.PA": {
   "price": 181.3,
@@ -2240,10 +2240,10 @@
    181.3000030517578
   ],
   "news": [],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "GBLB.BR": {
   "price": 79.05,
@@ -2522,15 +2522,15 @@
     "d": "05 Nov"
    },
    {
-    "t": "McDermott advises Groupe Bruxelles Lambert on strategic investment in Rayner",
-    "l": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTmoxNF9vdDlRMXR5RThZbnUyYklTUWFrVTBSaXhvTnVLWVUwSU85T0pmN2t5Tktfdmp4S0hCYXNRdTFoTnFiSTBnRXlzOVpWOVBab0lOZndNOFNwTG1ZUUxhbXZ2Rmp5bDJUSUxVVXl0VWxtWUdIdjBRUXF2a2cycGJEb0c0VGJ0aGIyVFVFbDNDUnFQallHejVLeW9PdzFEYTdBR3hDSnE1OEVGckF1aTJPWDRHN2laeUE?oc=5",
-    "d": "04 Mar"
+    "t": "Is Groupe Bruxelles Lambert (ENXTBR:GBLB) Undervalued After Its Return To Profit?",
+    "l": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNbS1GeDYtOTVDUllVUlNSU0FUMWZiTG5yX29QTlkyQ3M1Rldlcjk1bWdYamZvLW9VZ3pUUmJpZUpIT1I3YnNBV3UzRnNSYkRURXBIVmdjalYyQ1BuNGZuYnFiYkQzSUUzS2c4RWFjd3J1Y3F4c1daeDNhN2hucEFKd1VlVlNuaTNZeHVGbW00WjZIcnZJLWxIWjNZdm9fTVBhTlNwQUo0TmRhWGI4b1hqV2hZTS1VcVZ6bmdDU2h1MmZUQXNjcjdWa29qX0o5Y2dmRjN5dFp4V0VrYmpVbVZBdHF0clFJT2k4LUJHSlVCWXp4R3fSAfgBQVVfeXFMTmZrQVRxSTctanQxZ3k3THFfdklUc25GYUpsTlRVakNnWS11YXhFeS1TZHJQMFBlZVJtcXdtUDVyNUQ2dGVBQUxodDNmQnNzNzdZOXhaZktjdTRObmJpcnRucE9hWkdtT0JZanhqWWJqY3NwOFhfTzF2cHd5QUlVSFFRd0JNbGJ5TW8tRzdUNjJFY2t2WDRTS3BHRHF4NXUxZG1oem9McVlVNEJSdFRnVDg1UElYRWVTd0NjQUhDcjJlZGlVcF9kZk0xVTJKSWhsTUtSWlhJQkNRRVFPQlJFQnVHRXZ5YkZBaFJlSnpCYl9Zb1l0WDc2d2U?oc=5",
+    "d": "08 Nov"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "INRG.MI": {
   "price": 8.517,
@@ -2811,10 +2811,10 @@
     "d": "04 Jun"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "KBCA.BR": {
   "price": 94.2,
@@ -3098,10 +3098,10 @@
     "d": "28 Aug"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "NN.AS": {
   "price": 79.18,
@@ -3385,10 +3385,10 @@
     "d": "17 Jul"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "PNL.AS": {
   "price": 0.816,
@@ -3672,10 +3672,10 @@
     "d": "26 Oct"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "SHELL.AS": {
   "price": 44.74,
@@ -3944,14 +3944,14 @@
   ],
   "news": [
    {
-    "t": "Shell PLC Unsponsored ADR $SHEL Stake Raised by Kornitzer Capital Management Inc. KS",
-    "l": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxObkJDbUVsU2VWN0VKU21mUHlwNnNJcF9jblRpSHMycjlkT2ctVURBdFNwZUJQeXZ0cHRZVmJLRG9UTUVfaTJCQUhxdTl2YWRIem52NkJOQVBpT01leHdSWHMwTzYwVkQ3R081cnQwWFFmVlhkSXdRSW9PMEI2RXRYUENEWkt1VFdyTldybnVpWWdScEFuQUpKZEc2UktwSFAzQks4bHV3OXBBSFRFd1JYZWNOcDF4U2RUa1FBbXBpWW9xM0hwY1lkR2J4Ty1BYTN4RWFFWTFKYWZieTQ?oc=5",
-    "d": "08 Nov"
-   },
-   {
     "t": "Shell Plc",
     "l": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1RdVMxQnZlOU1TQWJaeDcyY1VDZklfdXhrc2txdXcySlJteFFRbkNhN3hKV2I4Ny1KUmQ0MVdmZllyN2V5NVlXMk13Sk40bVI4?oc=5",
     "d": "20 Oct"
+   },
+   {
+    "t": "Shell PLC Unsponsored ADR $SHEL Stake Raised by Kornitzer Capital Management Inc. KS",
+    "l": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxObkJDbUVsU2VWN0VKU21mUHlwNnNJcF9jblRpSHMycjlkT2ctVURBdFNwZUJQeXZ0cHRZVmJLRG9UTUVfaTJCQUhxdTl2YWRIem52NkJOQVBpT01leHdSWHMwTzYwVkQ3R081cnQwWFFmVlhkSXdRSW9PMEI2RXRYUENEWkt1VFdyTldybnVpWWdScEFuQUpKZEc2UktwSFAzQks4bHV3OXBBSFRFd1JYZWNOcDF4U2RUa1FBbXBpWW9xM0hwY1lkR2J4Ty1BYTN4RWFFWTFKYWZieTQ?oc=5",
+    "d": "08 Nov"
    },
    {
     "t": "Ashton Thomas Private Wealth LLC Acquires 39,883 Shares of Shell PLC Unsponsored ADR $SHEL",
@@ -3959,10 +3959,10 @@
     "d": "08 Nov"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "SOF.BR": {
   "price": 267.6,
@@ -4236,10 +4236,10 @@
     "d": "06 Aug"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "WEB.BR": {
   "price": 37.2,
@@ -4507,10 +4507,10 @@
    37.20000076293945
   ],
   "news": [],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "3CP.DU": {
   "price": 3.447,
@@ -4782,9 +4782,9 @@
     "d": "07 Nov"
    },
    {
-    "t": "Honor 700 series phones using Xiaomi’s rear screen strategy",
-    "l": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNa3VHWGZLTmdJcjQyZG9DenhsRDFseTZ0OGh0Q3lMeV8teGE5YzhQZTRIa2NEOTRoMEVJaDZVLVAweW5IUHdNYVIzV0x1UnI4M3JxZzBDb2JHUGhSQnVDM2Q3cTdiNGJqQTBQTVJZS0IzcFBDYkJXRmk0SlJaQmswMmVQTTd1UHpEcV9GN0F3SkljMUHSAZgBQVVfeXFMTkZla19KWERoZTVFUjAxei1rMnlMc2Zqem5RaHFOdG1aV0p1cmdGd3ZfTGpueUVxeThtOGFiSnFkeUF4RUYxb2hGYWFmbVJLamg0eHNWcV9LdS1aWHBsbWt1STZteHotMmF3WG1YZXhNaVYwZEtnX1kza3JnLVBQR2VEajVoWVlhQWpyXzItbWNvb1hLWXFhc3g?oc=5",
-    "d": "07 Nov"
+    "t": "Xiaomi Lists 13 HyperOS 4 Bug Fixes for Four Phones",
+    "l": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNzBMSVlfRUdMSzBUemttdWRwMkd2RE9lcnJGbTR2U0hCVlRZVzJSaWx2UnNBUjZuYk94b0xfM1hwRW9BWmlWbHlNNXJxbFllVGw5QTNGVXAwTnhGTEpYTU9BOVVGUFZaSXhIVUNUbjRBaUhOSDdjbGdXWFVCZUdRblprYWxmYWJJQmpzQmdhUTNYdUFLZ0ZVMDhuNWw4aDFDbzVScg?oc=5",
+    "d": "08 Nov"
    },
    {
     "t": "Xiaomi 18 Pro and 18 Pro Max Global Launch Date Teased for November 17 Across 41 Markets",
@@ -4792,10 +4792,10 @@
     "d": "07 Nov"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "XIOR.BR": {
   "price": 25.5,
@@ -5079,10 +5079,10 @@
     "d": "18 Oct"
    }
   ],
-  "when": "08 Nov 2026, 11:40 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false,
-  "usdeur": 1.1143,
-  "nokeur": 10.54
+  "usdeur": 1.1148,
+  "nokeur": 10.5293
  },
  "~buffett": {
   "daily": [
@@ -6503,7 +6503,7 @@
   "avg": 136.06857772696554,
   "min": 60.99181510029633,
   "max": 233.5134257315735,
-  "when": "08 Nov 2026, 11:41 UTC",
+  "when": "08 Nov 2026, 19:20 UTC",
   "stale": false
  }
 }
