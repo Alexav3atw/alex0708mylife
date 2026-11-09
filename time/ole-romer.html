@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ole Rømer &amp; the Speed of Light - alex0708mylife</title>
+<meta name="description" content="How Ole Rømer proved in 1676 that light has a speed, using Jupiter's moon Io as a clock — with an animated infographic of the eclipse method.">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+/* animation panel (page-local) */
+.sim-tool { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.sim-tool button {
+  font: inherit; font-size: 0.85rem;
+  color: var(--ink-2); background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 8px;
+  padding: 6px 12px; cursor: pointer;
+}
+.sim-tool button:hover { color: var(--ink); border-color: rgba(57,135,229,0.55); }
+.sim-tool button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.sim-body { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 16px; }
+.sim-body svg { width: 100%; height: auto; display: block; }
+.sl { font: 11px system-ui, sans-serif; fill: var(--ink-3); letter-spacing: 0.03em; }
+.sim-readout { display: flex; flex-direction: column; gap: 10px; justify-content: center; border-left: 1px solid var(--border); padding-left: 16px; min-width: 0; }
+.ro-label { color: var(--ink-3); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; }
+.ro-value { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+#delayVal { font-size: 2.1rem; font-weight: 700; color: #F2C14E; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.ro-note { color: var(--ink-3); font-size: 0.8rem; line-height: 1.5; border-top: 1px solid var(--border); padding-top: 8px; }
+@media (max-width: 800px) {
+  .sim-body { grid-template-columns: 1fr; }
+  .sim-readout { border-left: none; border-top: 1px solid var(--border); padding-left: 0; padding-top: 12px; }
+}
+.geo svg { width: 100%; height: auto; display: block; }
+.geo .gl { font: 12px system-ui, sans-serif; fill: var(--ink-3); }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="../pc-network/index.html">PC &amp; Network</a>
+      <a href="../investing/index.html">Investing</a>
+      <a href="index.html" class="active">Time</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Time</a> / Ole R&oslash;mer</p>
+  <h1>Ole R&oslash;mer &amp; the Speed of Light</h1>
+  <p class="tagline">In 1676 a Danish astronomer working in Paris proved that light is not instant &mdash; and measured its speed with a clock he could never touch: a moon of Jupiter, eclipsed every 42&frac12; hours.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">Before 1676, most scientists believed light travelled instantly &mdash; zero travel time. Ole Christensen R&oslash;mer proved otherwise, and in doing so made <strong>the first measurement of the speed of light in history</strong>: about 220,000 km per second, only 25% below the real value of 299,792 km/s. This is his story, in simple words.</p>
+
+  <div class="factgrid">
+    <div class="factcard">
+      <div class="icon">🕐</div>
+      <div class="stat">42&frac12; h</div>
+      <div class="cap">Io&rsquo;s orbit around Jupiter &mdash; one eclipse per lap, like clockwork</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">⏱️</div>
+      <div class="stat">22 min</div>
+      <div class="cap">The lag R&oslash;mer measured over six months (modern value: &asymp;16&frac12; min)</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">💡</div>
+      <div class="stat">&asymp;220,000 km/s</div>
+      <div class="cap">His answer: the first measured speed of light</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">⚡</div>
+      <div class="stat">299,792 km/s</div>
+      <div class="cap">The real speed, measured much later with better instruments</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">📅</div>
+      <div class="stat">7 Dec 1676</div>
+      <div class="cap">Published in the <em>Journal des s&ccedil;avans</em> &mdash; 350 years ago this year</div>
+    </div>
+    <div class="factcard">
+      <div class="icon">🇫🇷</div>
+      <div class="stat">22 Nov 1676</div>
+      <div class="cap">Announced to the French Academy of Sciences in Paris</div>
+    </div>
+  </div>
+
+  <h2>Who he was</h2>
+  <p>Ole Christensen R&oslash;mer was born in Aarhus, Denmark, in 1644. At 28 he went to Paris to work at the Royal Observatory under Giovanni Domenico Cassini &mdash; at the time the best-equipped astronomy workshop in the world. There, in 1676, he made his great discovery.</p>
+  <p>In 1681 he returned to Denmark as professor of astronomy in Copenhagen, in charge of the observatory in the Round Tower (Rundet&aring;rn). He was also a doer outside astronomy: he gave Copenhagen its first street lamps, standardised Danish weights and measures, brought the modern (Gregorian) calendar to Denmark in 1700, invented his own temperature scale around 1702 &mdash; and ended his career as mayor of Copenhagen and head of its police. He died in 1710, aged 66.</p>
+
+  <h2>The moving picture: how he found it out</h2>
+  <p>Jupiter&rsquo;s moon Io disappears behind Jupiter every 42&frac12; hours &mdash; a perfect clock in the sky. Press play: every eclipse sends a pulse of light to Earth. Watch what happens to the eclipse times as Earth moves around its orbit.</p>
+
+  <div class="diagram">
+    <div class="chart-title">The sky as R&oslash;mer saw it</div>
+    <div class="chart-sub">Earth circles the Sun; Jupiter waits outside with its moon Io. Each eclipse sends a light pulse toward Earth &mdash; and the pulse clearly needs longer when Earth is far away.</div>
+    <div class="sim-tool">
+      <button id="btnPlay" type="button">Pause</button>
+      <button id="btnFar" type="button">Jump to far side</button>
+    </div>
+    <div class="sim-body">
+      <svg id="sky" viewBox="0 0 920 600" role="img" aria-label="Animated top-down view of the Sun, Earth's orbit and Jupiter with its moon Io. Each time Io is eclipsed, a light pulse travels from Jupiter to Earth. The readout shows how much later each eclipse arrives as Earth moves away from Jupiter.">
+        <defs>
+          <radialGradient id="glow">
+            <stop offset="0%" stop-color="#F2C14E" stop-opacity="0.55"></stop>
+            <stop offset="100%" stop-color="#F2C14E" stop-opacity="0"></stop>
+          </radialGradient>
+        </defs>
+        <g id="gstars"></g>
+        <circle cx="350" cy="310" r="290" fill="none" stroke="var(--grid)"></circle>
+        <circle cx="350" cy="310" r="190" fill="none" stroke="var(--grid)"></circle>
+        <text class="sl" x="350" y="14" text-anchor="middle">Jupiter&rsquo;s orbit</text>
+        <text class="sl" x="350" y="112" text-anchor="middle">Earth&rsquo;s orbit</text>
+        <circle cx="350" cy="310" r="74" fill="url(#glow)"></circle>
+        <circle cx="350" cy="310" r="32" fill="#F2C14E"></circle>
+        <text class="sl" x="350" y="362" text-anchor="middle">Sun</text>
+        <g id="gJup">
+          <circle cx="640" cy="310" r="26" fill="var(--orange)"></circle>
+          <circle cx="640" cy="310" r="20" fill="none" stroke="rgba(0,0,0,0.22)"></circle>
+          <circle cx="640" cy="310" r="13" fill="none" stroke="rgba(0,0,0,0.22)"></circle>
+        </g>
+        <text class="sl" x="640" y="354" text-anchor="middle">Jupiter</text>
+        <g id="gPulses"></g>
+        <g id="gIo"></g>
+        <g id="gFlash"></g>
+        <g id="gEarth"></g>
+        <g transform="translate(24 588)">
+          <circle cx="0" cy="-4" r="5" fill="var(--blue)"></circle><text class="sl" x="12" y="0">Earth</text>
+          <circle cx="74" cy="-4" r="9" fill="var(--orange)"></circle><text class="sl" x="90" y="0">Jupiter</text>
+          <circle cx="160" cy="-4" r="3.5" fill="#EAD9A0"></circle><text class="sl" x="170" y="0">Io</text>
+          <circle cx="216" cy="-4" r="3.5" fill="#F2C14E"></circle><text class="sl" x="226" y="0">light pulse</text>
+        </g>
+      </svg>
+      <div class="sim-readout">
+        <div>
+          <p class="ro-label">Earth&rsquo;s month</p>
+          <p class="ro-value" id="vMonth">&mdash;</p>
+          <p class="ro-value" id="vTrend" style="font-size:0.82rem; font-weight:400">&mdash;</p>
+        </div>
+        <div>
+          <p class="ro-label">Eclipses running late by</p>
+          <p id="delayVal">0m 00s</p>
+        </div>
+        <div>
+          <p class="ro-label">Earth &rarr; Jupiter distance</p>
+          <p class="ro-value" id="vDist">&mdash;</p>
+        </div>
+        <div>
+          <p class="ro-label">Light travel time</p>
+          <p class="ro-value" id="vLight">&mdash;</p>
+        </div>
+        <div>
+          <p class="ro-label">Next eclipse due in / eclipses counted</p>
+          <p class="ro-value" id="vNext">&mdash; / 0</p>
+        </div>
+        <p class="ro-note">Io&rsquo;s table time: one eclipse every 42&frac12; h, never late. R&oslash;mer&rsquo;s telescope disagreed. Distances and sizes are not to scale, and eclipses are shown far fewer than the real ~200 a year. Over half a year the lag grows to about 22 minutes &mdash; R&oslash;mer&rsquo;s measured value.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Why the clock runs late</h2>
+  <p>When Earth is on the far side of its orbit, light from Io has to cross the entire width of Earth&rsquo;s orbit &mdash; about 300 million km of extra distance. That extra stretch is exactly what the 22 minutes pay for.</p>
+
+  <div class="diagram geo">
+    <div class="chart-title">The extra 300 million kilometres</div>
+    <div class="chart-sub">Same Sun, same Jupiter &mdash; but Earth is on the far side six months later, and light has to travel the whole width of Earth&rsquo;s orbit on top of the usual trip.</div>
+    <svg viewBox="0 0 820 300" role="img" aria-label="Diagram of the Sun with Earth's orbit. Earth is shown at the close side and, six months later, at the far side. Light from Jupiter crosses the entire width of Earth's orbit on the far side — about 300 million km of extra distance.">
+      <defs>
+        <marker id="arrowInk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0 L10 5 L0 10 z" fill="var(--ink-2)"></path>
+        </marker>
+        <marker id="arrowGold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0 L10 5 L0 10 z" fill="#F2C14E"></path>
+        </marker>
+      </defs>
+      <circle cx="150" cy="170" r="130" fill="none" stroke="var(--grid)" stroke-dasharray="3 6"></circle>
+      <circle cx="150" cy="170" r="24" fill="#F2C14E"></circle>
+      <text class="gl" x="150" y="222" text-anchor="middle">Sun</text>
+      <circle cx="700" cy="170" r="22" fill="var(--orange)"></circle>
+      <text class="gl" x="700" y="216" text-anchor="middle">Jupiter</text>
+      <circle cx="280" cy="170" r="8" fill="var(--blue)"></circle>
+      <text class="gl" x="280" y="134" text-anchor="middle">Earth &mdash; close side</text>
+      <circle cx="20" cy="170" r="8" fill="var(--blue)"></circle>
+      <text class="gl" x="20" y="134">Earth &mdash; far side, six months later</text>
+      <line x1="20" y1="170" x2="276" y2="170" stroke="#F2C14E" stroke-width="4" marker-end="url(#arrowGold)"></line>
+      <line x1="284" y1="170" x2="694" y2="170" stroke="var(--ink-2)" stroke-width="2" marker-end="url(#arrowInk)"></line>
+      <text class="gl" x="150" y="150" text-anchor="middle">extra distance &asymp; 300 million km</text>
+      <text class="gl" x="490" y="192" text-anchor="middle">the trip light always makes</text>
+    </svg>
+  </div>
+
+  <h2>How he did it, in four steps</h2>
+  <ul class="chapter-list">
+    <li><span class="num">01</span><span><strong>A clock in the sky.</strong> Io, discovered by Galileo in 1610, orbits Jupiter every 42&frac12; hours. Every lap it slips behind Jupiter and disappears: an eclipse. It ticks forever, with no winding needed.</span></li>
+    <li><span class="num">02</span><span><strong>Timing the ticks.</strong> R&oslash;mer and his Paris colleagues timed eclipse after eclipse and built tables: &ldquo;next eclipse: 22:00:00&rdquo;. The rhythm never changes, so the tables should always be right.</span></li>
+    <li><span class="num">03</span><span><strong>The clock ran late.</strong> It did not. The eclipses arrived late when Earth moved away from Jupiter, early when Earth moved toward it. In 1676 R&oslash;mer predicted the 9 November eclipse would come 10 minutes late &mdash; and he was right. (Cassini had seen the drift in the data, but did not believe light had a speed.)</span></li>
+    <li><span class="num">04</span><span><strong>Light needs time.</strong> The only explanation: light takes time to travel. Divide the extra distance by the extra time &mdash; 300 million km &divide; 22 minutes &mdash; and you get &asymp; 220,000 km per second. Not instant. A speed. The first one ever measured.</span></li>
+  </ul>
+
+  <h2>His life</h2>
+  <div class="timeline">
+    <div class="tl-item"><span class="date">1644</span><span class="what">Born in Aarhus, Denmark.</span></div>
+    <div class="tl-item"><span class="date">1672</span><span class="what">Moves to Paris, age 28.</span><p>Joins the Royal Observatory under Giovanni Domenico Cassini.</p></div>
+    <div class="tl-item"><span class="date">1676</span><span class="what">Proves light has a speed.</span><p>Announces it to the French Academy on 22 November; publishes on 7 December in the <em>Journal des s&ccedil;avans</em>.</p></div>
+    <div class="tl-item"><span class="date">1681</span><span class="what">Returns to Denmark.</span><p>Professor of astronomy in Copenhagen, in charge of the observatory in the Round Tower (Rundet&aring;rn).</p></div>
+    <div class="tl-item"><span class="date">1683</span><span class="what">First street lamps in Copenhagen.</span></div>
+    <div class="tl-item"><span class="date">1700</span><span class="what">Modern calendar for Denmark.</span><p>Introduces the Gregorian calendar.</p></div>
+    <div class="tl-item"><span class="date">1702</span><span class="what">The R&oslash;mer scale.</span><p>His own temperature scale &mdash; the ancestor of Fahrenheit&rsquo;s.</p></div>
+    <div class="tl-item"><span class="date">1705</span><span class="what">Mayor of Copenhagen.</span><p>And head of its police.</p></div>
+    <div class="tl-item"><span class="date">1710</span><span class="what">Dies in Copenhagen, aged 66.</span></div>
+  </div>
+
+  <div class="callout">
+    <p><span class="title">Where I met him</span>Rundet&aring;rn, Copenhagen, November 2026 &mdash; the observatory R&oslash;mer ran, running its LYS&Aring;R 2026 programme for the 350th anniversary of the speed of light. That visit is what started this chapter.</p>
+  </div>
+
+  <h2>Where you can still meet him</h2>
+  <div class="grid cols-2">
+    <div class="card">
+      <h3>The Round Tower, Copenhagen</h3>
+      <p>The observatory R&oslash;mer ran. In 2026 it hosts <strong>LYS&Aring;R 2026</strong>, a year of events for the 350th anniversary of his discovery.</p>
+    </div>
+    <div class="card">
+      <h3>The R&oslash;mer scale</h3>
+      <p>His 1702 temperature scale. Fahrenheit visited his lab in 1708 and built the Fahrenheit scale on top of it.</p>
+    </div>
+    <div class="card">
+      <h3>Crater R&ouml;mer</h3>
+      <p>A crater on the Moon, named in his honour.</p>
+    </div>
+    <div class="card">
+      <h3>Ole R&oslash;mer Observatory</h3>
+      <p>Aarhus University&rsquo;s observatory; a museum also stands at Vridsl&oslash;semagle, on the site of his private observatory.</p>
+    </div>
+    <div class="card">
+      <h3>Ole R&oslash;mer Medal</h3>
+      <p>A Danish astronomy prize, still awarded today.</p>
+    </div>
+    <div class="card">
+      <h3>Streets and doodles</h3>
+      <p>Ole R&oslash;mers Gade in Copenhagen, R&oslash;mersgade in Aarhus &mdash; and a Google Doodle on 7 December 2016, his discovery&rsquo;s 340th birthday.</p>
+    </div>
+  </div>
+
+  <h2>Why it still matters</h2>
+  <p><strong>GPS.</strong> Every satellite signal arrives with a built-in correction for the time light needs to reach you &mdash; R&oslash;mer&rsquo;s discovery, running inside your phone.</p>
+  <p><strong>Light-years.</strong> The unit only exists because light has a speed. Before 1676, &ldquo;distance to the stars&rdquo; could not even be expressed that way.</p>
+  <p><strong>Space missions.</strong> Signals to Moon and Mars landers take seconds to minutes. Mission planners count on exactly the delay R&oslash;mer found.</p>
+
+  <h2>Sources</h2>
+  <ul>
+    <li><a href="https://www.amnh.org/learn-teach/curriculum-collections/cosmic-horizons-book/ole-roemer-speed-of-light" target="_blank" rel="noopener">American Museum of Natural History &mdash; Ole Roemer: First to Measure the Speed of Light</a></li>
+    <li><a href="https://www.esa.int/Science_Exploration/Space_Science/30_September" target="_blank" rel="noopener">ESA &mdash; space science history</a></li>
+    <li><a href="https://www.rundetaarn.dk/event/den-astronomiske-time-en-lysende-begavelse-alt-om-ole-roemer/" target="_blank" rel="noopener">Rundet&aring;rn &mdash; LYS&Aring;R 2026: &ldquo;Rundt om R&oslash;mer&rdquo;</a></li>
+    <li><a href="https://aether.lbl.gov/www/classes/p139/speedlight.html" target="_blank" rel="noopener">LBL &mdash; The Speed of Light</a></li>
+    <li><a href="https://www.dr.dk/nyheder/viden/naturvidenskab/video-praecis-340-aar-siden-opdagede-roemer-lys-har-en-hastighed?embed=true" target="_blank" rel="noopener">DR (Danish Broadcasting) &mdash; 340 years since R&oslash;mer&rsquo;s discovery</a></li>
+  </ul>
+
+  <a class="back-top" href="index.html">&larr; Back to the Time chapter</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">All illustrations on this page are hand-drawn SVG diagrams &mdash; no copyrighted images used.</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var TWO_PI = Math.PI * 2;
+  function norm(a) { return ((a % TWO_PI) + TWO_PI) % TWO_PI; }
+  function mulberry32(seed) {
+    return function () {
+      seed |= 0; seed = (seed + 0x6D2B79F5) | 0;
+      var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  var SX = 350, SY = 310, JX = 640, JY = 310;      // sun and Jupiter (fixed)
+  var ER = 190, IOR = 24;                            // Earth orbit radius, Io orbit radius
+  var MIN_PX = 100, MAX_PX = 480, AU_MIN = 4.2, AU_MAX = 6.2, MIN_PER_AU = 8.317;
+  var YEAR_MS = 18000, IO_MS = 1500;                 // 18 s = one year, 1.5 s = one Io lap
+  var MONTHS = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"];
+
+  var earthAngle = 0, ioAngle = 0, prevIo = 0;
+  var pulses = [], lastEclipseT = -1e9, ioHideUntil = 0, eclipseCount = 0, earthFlash = 0;
+  var prevDist = null;
+  var running = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var btnPlay = document.getElementById("btnPlay");
+  var btnFar = document.getElementById("btnFar");
+
+  var gEarth = document.getElementById("gEarth");
+  var gIo = document.getElementById("gIo");
+  var gPulses = document.getElementById("gPulses");
+  var gFlash = document.getElementById("gFlash");
+
+  // starfield, deterministic
+  var rand = mulberry32(1676), stars = "";
+  for (var i = 0; i < 90; i++) {
+    var sx = rand() * 920, sy = rand() * 600, sr = 0.6 + rand() * 1.1, so = 0.25 + rand() * 0.55;
+    stars += '<circle cx="' + sx.toFixed(1) + '" cy="' + sy.toFixed(1) + '" r="' + sr.toFixed(2) + '" fill="#B9C2D8" opacity="' + so.toFixed(2) + '"></circle>';
+  }
+  document.getElementById("gstars").innerHTML = stars;
+
+  gEarth.innerHTML = '<circle r="7" fill="var(--blue)"></circle>';
+  gIo.innerHTML = '<circle r="4" fill="#EAD9A0"></circle>';
+
+  function earthPos() {
+    return { x: SX + ER * Math.cos(earthAngle), y: SY + ER * Math.sin(earthAngle) };
+  }
+  function ioPos() {
+    return { x: JX + IOR * Math.cos(ioAngle), y: JY + IOR * Math.sin(ioAngle) };
+  }
+  function distToJupiter() {
+    var e = earthPos();
+    return Math.sqrt((e.x - JX) * (e.x - JX) + (e.y - JY) * (e.y - JY));
+  }
+  function auAndDelay() {
+    var d = distToJupiter();
+    var au = AU_MIN + (d - MIN_PX) / (MAX_PX - MIN_PX) * (AU_MAX - AU_MIN);
+    var lightMin = au * MIN_PER_AU;
+    var delayMin = (au - AU_MIN) * MIN_PER_AU;
+    return { au: au, lightMin: lightMin, delayMin: delayMin };
+  }
+  function fmtMS(mins) {
+    var m = Math.floor(mins), s = Math.floor((mins - m) * 60);
+    return m + "m " + (s < 10 ? "0" : "") + s + "s";
+  }
+
+  function render() {
+    var e = earthPos(), io = ioPos();
+    gEarth.setAttribute("transform", "translate(" + e.x.toFixed(2) + " " + e.y.toFixed(2) + ")");
+    gIo.setAttribute("transform", "translate(" + io.x.toFixed(2) + " " + io.y.toFixed(2) + ")");
+    gIo.style.opacity = performance.now() < ioHideUntil ? "0" : "1";
+
+    var pulsesHtml = "";
+    for (var i = pulses.length - 1; i >= 0; i--) {
+      var p = pulses[i];
+      var prog = (performance.now() - p.t0) / p.dur;
+      if (prog >= 1) {
+        pulses.splice(i, 1);
+        earthFlash = 1;
+        eclipseCount++;
+        continue;
+      }
+      var px = JX + (e.x - JX) * prog, py = JY + (e.y - JY) * prog;
+      pulsesHtml += '<line x1="' + JX + '" y1="' + JY + '" x2="' + px.toFixed(1) + '" y2="' + py.toFixed(1) +
+        '" stroke="#F2C14E" stroke-opacity="0.45" stroke-dasharray="4 4"></line>' +
+        '<circle cx="' + px.toFixed(1) + '" cy="' + py.toFixed(1) + '" r="9" fill="#F2C14E" opacity="0.25"></circle>' +
+        '<circle cx="' + px.toFixed(1) + '" cy="' + py.toFixed(1) + '" r="4" fill="#F2C14E"></circle>';
+    }
+    gPulses.innerHTML = pulsesHtml;
+
+    if (earthFlash > 0.01) {
+      gFlash.innerHTML = '<circle r="' + (10 + 14 * (1 - earthFlash)).toFixed(1) + '" fill="none" stroke="var(--blue)" stroke-width="2" opacity="' + (earthFlash * 0.8).toFixed(2) + '"></circle>';
+    } else {
+      gFlash.innerHTML = "";
+    }
+
+    var ad = auAndDelay();
+    var month = Math.floor(norm(earthAngle) / TWO_PI * 12) % 12;
+    document.getElementById("vMonth").textContent = MONTHS[month];
+    var trend = "—";
+    if (prevDist !== null) {
+      trend = (ad.au > prevDist) ? "moving away — eclipses come later"
+                                 : "moving toward — eclipses come earlier";
+    }
+    prevDist = ad.au;
+    document.getElementById("vTrend").textContent = trend;
+    document.getElementById("delayVal").textContent = fmtMS(ad.delayMin);
+    document.getElementById("vDist").textContent = ad.au.toFixed(1) + " AU";
+    document.getElementById("vLight").textContent = "≈ " + Math.round(ad.lightMin) + " min";
+    var next = Math.max(0, (lastEclipseT + IO_MS - performance.now()) / 1000);
+    document.getElementById("vNext").textContent = next.toFixed(1) + " s / " + eclipseCount;
+  }
+
+  function step(dt) {
+    earthAngle = norm(earthAngle + dt * TWO_PI / YEAR_MS);
+    prevIo = ioAngle;
+    ioAngle = norm(ioAngle + dt * TWO_PI / IO_MS);
+
+    var e = earthPos();
+    var target = norm(Math.atan2(e.y - JY, e.x - JX) + Math.PI); // Io behind Jupiter, seen from Earth
+    var sp = norm(prevIo - target); if (sp > Math.PI) sp -= TWO_PI;
+    var sn = norm(ioAngle - target); if (sn > Math.PI) sn -= TWO_PI;
+    if (sp * sn < 0 && Math.abs(sn) < 0.5 && performance.now() - lastEclipseT > 600) {
+      lastEclipseT = performance.now();
+      ioHideUntil = performance.now() + 350;
+      var ad = auAndDelay();
+      pulses.push({ t0: performance.now(), dur: 900 + ad.delayMin * 50 });
+    }
+    if (earthFlash > 0) earthFlash = Math.max(0, earthFlash - dt / 500);
+  }
+
+  var lastT = null;
+  function frame(t) {
+    if (lastT === null) lastT = t;
+    var dt = running ? Math.min(t - lastT, 50) : 0;
+    lastT = t;
+    if (dt > 0) step(dt);
+    render();
+    requestAnimationFrame(frame);
+  }
+
+  btnPlay.addEventListener("click", function () {
+    running = !running;
+    btnPlay.textContent = running ? "Pause" : "Play";
+    lastT = null;
+  });
+  btnFar.addEventListener("click", function () {
+    earthAngle = Math.PI;
+    prevIo = ioAngle;
+    lastT = null;
+  });
+  if (!running) btnPlay.textContent = "Play";
+
+  requestAnimationFrame(frame);
+})();
+</script>
+
+</body>
+</html>
