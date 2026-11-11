@@ -1,11 +1,11 @@
 {
  "AKER.OL": {
-  "price": 1116.0,
+  "price": 1130.0,
   "currency": "NOK",
-  "day": 2.010968921389389,
-  "wk": -3.125,
-  "mo": -14.678899082568808,
-  "ma200": 1202.23,
+  "day": 3.290676416819016,
+  "wk": -1.909722222222221,
+  "mo": -13.608562691131498,
+  "ma200": 1202.3,
   "closes": [
    801.0,
    813.0,
@@ -257,7 +257,7 @@
    1074.0,
    1084.0,
    1094.0,
-   1116.0
+   1130.0
   ],
   "news": [
    {
@@ -266,9 +266,9 @@
     "d": "06 Nov"
    },
    {
-    "t": "Aker ASA reports second quarter and half-year results 2026",
-    "l": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT0ZvdmswY3hjY01GVkgyY0RmaFQxMkJrY2x2ZXJ6b2EzMHBJd3p1YXN0SGkwVXlkdzMyUHM0TWtvVjhRZC15c0hodlU2R3FKRDFHUDA0QlFxXy13WnJsMHBYVVR1VUNqTmM2bm93eHpQOU92b3d5T0dvVUtTdktCTnlDQlNDTGJsRllTUnkzNFNlRDdZOER4TG85Y0tOQ1pTdlk1WDB5eHJkd0t2aHpIOERzV1dyeXZ6RWdNWXZNc1g1Zw?oc=5",
-    "d": "16 Jul"
+    "t": "Aker ASA (AKER) Completes Merger With Aker BioMarine",
+    "l": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQN0tJWHV2d052cHJ0clhEeXhrTXVleUs3VW9mSGdDYmk2Z0I5alNwYlUyWXRJbmhNUDZZVzBTanJyNlBSbGVvYmNLZThIU1I1TWtENnl2YTV0NERRUTRRajlIQ0RQZUxGMWZxc0lmTG4zUl9TWThkbnFjNk1naTU5V0ZKZlVucGlFTWw5UklVVlJBOWwwemJSU0Nxb2RVN3Q1TkZJOXVCa3NwVU90cEZzb01B?oc=5",
+    "d": "01 Oct"
    },
    {
     "t": "Aker ASA (AKAAF) (Q3 2026) Earnings Call Highlights: NAV Surges to NOK 106 Billion as Cognite ...",
@@ -276,10 +276,10 @@
     "d": "04 Nov"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "ASCE.BR": {
   "price": 53.6,
@@ -547,18 +547,18 @@
    53.599998474121094
   ],
   "news": [],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "BPOST.BR": {
-  "price": 0.871,
+  "price": 0.87,
   "currency": "EUR",
-  "day": 1.5151538282681676,
-  "wk": -24.12892069280119,
-  "mo": -22.78369009812573,
-  "ma200": 1.5915750017762185,
+  "day": 1.3986037090623515,
+  "wk": -24.21602758511263,
+  "mo": -22.872341437380772,
+  "ma200": 1.5915700018405914,
   "closes": [
    1.7719999551773071,
    1.7760000228881836,
@@ -815,14 +815,9 @@
    0.8849999904632568,
    0.8759999871253967,
    0.8579999804496765,
-   0.8709999918937683
+   0.8700000047683716
   ],
   "news": [
-   {
-    "t": "Bpost and Saint Nicholas bring the magic into every home with the Saint Nicholas Box",
-    "l": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdWZ5ajdQSmg5ZFQ5RjNobG9tcHU3RlVtX1IxaU9QSVZDVmptTHgtZk5WTFluSjdjRU5HZnRUd1dxbGx6bjd1Q0ZhbHYwZkRDWkh3QnJGWnB5Q29RQlBFTVJ0SGtJVlI2cEMza1lYU1g1OGhURS1BMGZTMC1yR0Jqc0ZsOC1CYUpWbnNFRGdFVVczQ25TVDVrZEZUdXpwbVZZOXJiRk1GS083dDBG?oc=5",
-    "d": "10 Nov"
-   },
    {
     "t": "Bnode names Nicolas Baise CEO of Bpost unit, two executives to leave",
     "l": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbkxITDFIbjlyMUFvY21mRmVub3FJMDJQMnNPR2xwVGtFY2dKMVpQSjE3S1VaTl91T1QzcTQ1Sk9TN01FeGxfSzJ2VndIY1JLUDNvQXhMTVJmN2FNaTlGYUg4YkM4bkU4MWlJMUctdXJmbU1sdkZ5UTY0ZHhWYmhjc2o1WTE0NC0tVmFRcnVqeXQ0b0dfXzBOWVhMdGRVQ3VrSGEtVWxSNVpxQ0lrc0doc1E3c1VFX25qYmFqUmFEN050Q2k1d1FmX3FRaGlMR0NRbDVR?oc=5",
@@ -832,22 +827,26 @@
     "t": "More than 4 in 10 Bpost vans are Electric",
     "l": "https://news.google.com/rss/articles/CBMic0FVX3lxTE94NHZpM2s5THJoLWl0OVNVSFRRTUhsU2h6Wm01bDVYUFVpZlROcmVCX2VyanJadzZVNEs0bHFuSXY4UVJ6VHllaFRKZ3B1cTR4YUNaS2RfbjA1NkVWZXNwZXktdXJTYkM3MVlldk5UaURNT2s?oc=5",
     "d": "21 Oct"
+   },
+   {
+    "t": "Bnode announces Nicolas Baise as CEO Bpost",
+    "l": "https://news.google.com/rss/articles/CBMidEFVX3lxTE53MEtGMUE0TDFjQmdlRGZVNGVVVzRvMlVFcTV3WW5MSmNWbHMzNkpNX3lCSVVhd1BKMjVzOEdXNnYxRmNWUEtkb3h1bGs1TWpVZkh0d3FOY2Rad2t2eF9yQmJRSmt3Q0RGTDY4OGJsZlRlTWVW?oc=5",
+    "d": "23 Oct"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "BRK-B": {
-  "price": 583.34,
+  "price": 588.24,
   "currency": "USD",
-  "day": 1.4063450673620137,
-  "wk": 4.715748323524571,
-  "mo": 12.700937861349715,
-  "ma200": 498.7037001037598,
+  "day": 0.8399857576969039,
+  "wk": 1.5800588776483826,
+  "mo": 12.994863498929043,
+  "ma200": 499.271549987793,
   "closes": [
-   497.07000732421875,
    502.3999938964844,
    513.1099853515625,
    508.94000244140625,
@@ -1097,7 +1096,8 @@
    572.3300170898438,
    570.8900146484375,
    575.25,
-   583.3400268554688
+   583.3400268554688,
+   588.239990234375
   ],
   "news": [
    {
@@ -1106,28 +1106,28 @@
     "d": "09 Nov"
    },
    {
-    "t": "Berkshire Hathaway Remains Attractive Even If Its Valuation Is Becoming Stretched (BRK.A)",
-    "l": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUVo4RktsemNtcXRGcngxbWgxVUFtcmRiQi1JOFQ5QlpiUzVVNVF0b296N3pJRW5saGthRlFQdVRuMEh2c1hNTURQcm9qOUZ5RGZvRDlobTZjU1pYT1lmajJuaUw3V1IwVVAtWTNBSWg4bFNpZjFrM20tdzJBcmZyUG95RzRZdlZObWg4SzRHYWc5TmpLeEZUMDg0RGhTeU02b1h1UDhkUHNGVkJNNUREZWVXVnNrOGt3dS1J?oc=5",
+    "t": "Berkshire Hathaway HomeServices Chicago in Libertyville collecting donations for Thanksgiving Dinner Drive",
+    "l": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxONmNBRlJ0eGpkdVl3WGs4WGRQOG5mOGtiQVh5UERYMjZOaHZRa3FqY3UzYlRfdkE4cXA5THp3WXlReTRUSFZHd1k1Q3lka05lVml3X2FySDRHdHo4QUF1ZlJSRExCZkVIVU5uMFlRZ2RxTWhTZ2x0RFZEWDFfc04zeGEwRFJrN0hIc09reEdVaGJ2Qi0wUnp2bENFTTM1N2ZtNC02Yzh6NmxzaG5nM2FJbGZOZzZVMVVKWmdEcnlTMXE1dkxBQlI2cndWdnJhVHYybDhsaHVNSURBUGxiTTNGYmFqSjZUdw?oc=5",
     "d": "10 Nov"
    },
    {
-    "t": "Berkshire Hathaway (BRK.A) Could Be 7% Overvalued On Mixed Results And $9.6b Buybacks",
-    "l": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYmZ6cWJJbXZoUkRwdzlLTTlGWUNQbzlJT3dvZlRYZFFjbDlwcDdoX3VNZ05XSWpqYjg5U1gxY09BRU13dmdhT3Z1dW5OOW9rLVhZX0NfanVOTkVLaXFsZ1dhbDJMZVBBZFpnZFdXdjJ5Ukp2R1VPZ0RzbktlRHBwRGNockFMVG5UVFRPUTctZ3ZSVXRJeVhkMXA5bw?oc=5",
-    "d": "10 Nov"
+    "t": "Berkshire Hathaway: The Margin Of Safety Has Evaporated (Rating Downgrade) (NYSE:BRK.A)",
+    "l": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVG5Zd21HMzR5TWpzbzFac1RSOTJzQWRWTzZqSTNYVUZBMzFuWW9TeHNQTzBXZDlOamdnYjB1VlNNdXJMd29sRnpVZFEybjZWZXJfUHBhTlJ0bFhueE83UEstTFRiTWk1am9MZXNvbWd1UTI2b2t0MzU5OW9pRlJ2WmtJN2FkeG1vc1Q4Rzc0dFdhRTZQSzU3NEZzaXdSd3BOMGNtOGh5aVdOQXV3UmFpMm5B?oc=5",
+    "d": "09 Nov"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "BY6.VI": {
-  "price": 7.938,
+  "price": 7.968,
   "currency": "EUR",
-  "day": -2.3616249906304176,
-  "wk": -5.297062382724915,
-  "mo": -8.23120748844951,
-  "ma200": 9.890630023479462,
+  "day": -1.992621305787745,
+  "wk": -4.939155760434099,
+  "mo": -7.884389750944354,
+  "ma200": 9.890780022144318,
   "closes": [
    11.279999732971191,
    11.045000076293945,
@@ -1381,18 +1381,18 @@
    8.506999969482422,
    8.211999893188477,
    8.130000114440918,
-   7.938000202178955
+   7.9679999351501465
   ],
   "news": [
    {
-    "t": "Jaguar Land Rover Had BYD’s Offices Raided Over the Chinese Brand’s Defender Rival",
-    "l": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLXZGNjAzVDhLVmJ0ZF96SDBUMGxxM3QwZVJpUmcwYWt3cXJFTVJqODFvTGVPdlp1cTBTUDQzcVFKYUZuTUFiN0hldkFWWVd1Y2tZbjZyNUVVLUphcUpNY1JneDZYa196aVFYNllSQmY0cXpPaWo2QTVfQVkxT24yQXgtdkpBTTlSN08tdEUycw?oc=5",
-    "d": "10 Nov"
+    "t": "Chinese carmaker BYD’s offices in Netherlands raided over JLR ‘copycat car’ claim | Jaguar Land Rover",
+    "l": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVmkwQl9xRlV6aFZ5TGdhU3BUNVd3NUdkU09vdzdHZlE1aVZrYXZfVTRSSEFSZExPNXV0aHBoejItUFlpVXdlSlJMbGtINFVKQ3J3NnktSEttczBVWU14X2lQbFBYNTk5SmxxbFU0VFJZa0RFdXR2by1Hb3lpQnVkXzdCN2ZQSE00NjVWdmlhaHRHZUthSDFWRHQ4NnhzMXJNMnl5REFIWlFKSnZmVnZ2UVVnc3NsXzNMQnE1ODlB?oc=5",
+    "d": "08 Nov"
    },
    {
-    "t": "BYD's Yangwang Altior Is A $310k Rolls-Royce Copycat That Can Tank-Turn",
-    "l": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5jV0tyZnZFMW91NDZ5aDlVMWZweTBaNUdDM085Tnc0RUZ3T3pyR1pPZVNKM0FaUUlVZTZKYlpyT1FjSGpiVk5FYXpnaDRPNFdoSVZWOTlYd2cwNktueXNPbjVDRlM?oc=5",
-    "d": "09 Nov"
+    "t": "BYD and Geely approached FIA about a 12th F1 team, says Ben Sulayem",
+    "l": "https://news.google.com/rss/articles/CBMickFVX3lxTE1PNVRUUUJYckRSUDA3S0tVd1FuQ1BkSXE3MFVKdGJicElNRVlKOHgzdTRDejE0ejhmLXFPNnNULU9ITkF6SndleWdRVnIyZ0RnNW5HTU0xcXRwdi1JeGpqbmhhNE5zSFhyNi1VakJfQzNqZw?oc=5",
+    "d": "10 Nov"
    },
    {
     "t": "BYD Apologizes for Putting SUV’s Wheels on the Wrong Way",
@@ -1400,20 +1400,19 @@
     "d": "11 Nov"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "AI": {
-  "price": 11.84,
+  "price": 12.19,
   "currency": "USD",
-  "day": -1.3333333333333308,
-  "wk": 2.5996550409580044,
-  "mo": 1.9810551482519978,
-  "ma200": 9.997649984359741,
+  "day": 2.956079754235552,
+  "wk": 1.9230730894877368,
+  "mo": 1.4987456125820753,
+  "ma200": 9.995599980354308,
   "closes": [
-   15.3100004196167,
    14.829999923706055,
    14.100000381469727,
    14.069999694824219,
@@ -1663,7 +1662,8 @@
    11.380000114440918,
    11.6899995803833,
    12.0,
-   11.84000015258789
+   11.84000015258789,
+   12.1899995803833
   ],
   "news": [
    {
@@ -1672,28 +1672,28 @@
     "d": "10 Nov"
    },
    {
-    "t": "C3.ai Inc. stock underperforms Monday when compared to competitors despite daily gains",
-    "l": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOZVVjM29MZkpBTHFGZU8xalM1SWk1QlRuX2w3ZW81X2V5R2ROWGROSXJ4eVloN2xiUTR5WTFIMHllelROLVNyalhUVDhGbjE3ckIyRzFFbkR3YjNlcERzLVF2M3B0alY5N0JfWXM4YnJ5dXVVWjJ6c0EwaVRPYmZmOUtCc3kzY3BXOFo4VkxYNnR1SVdDNkllWm51M3UxMEtfcEFjNHYtLVNZeklGeGI4dzZqaXF0ZHp3Q3lvRXFwWVJINWZ1YWVSSXc3b0hqeFJXelNhUzdDQVRhd0hIUWpYR1NhU3VRUUljbkZlVXN3eWlVYXpxbmc?oc=5",
-    "d": "09 Nov"
-   },
-   {
     "t": "C3.ai Q2 2027 Earnings Date and Estimates",
     "l": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9wSS02NGliVFIyS0xadnRrMG52MnltUlhUSVcyZGhnS0MwRkFoSWdwMkJaWDJlWndxVm9XYllWU2drUUFLRzZ3Q05SVWxnZEFvMDRubzdpTWRBYTRqNEFXcy1zNmprbnZuYktFUU9wXzFVZ2JNZ29VMg?oc=5",
     "d": "11 Nov"
+   },
+   {
+    "t": "C3.ai, Dynatrace, Amplitude, and Oracle Shares Skyrocket, What You Need To Know",
+    "l": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVlVRRkpFUzZJTWpFR1gtNGxnTjhLYVJwbHowb3dPVktJaHNVUEZGSDY1dWpiNDlfcjhWdzQ1RkJUUFdXcTdiRlpKQkw5NHg3OUl5T045WHJvdXlsSWlEQ3Y2ZjN3R1I2ZXl4Ry01Rk5qU0J0d2xxQkd4bG1DNjRuTGJRdTB5TVZxd3ZwbGpCTUNMTEo5M19YeDloZGI3dw?oc=5",
+    "d": "09 Oct"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "CPINV.BR": {
-  "price": 12.8,
+  "price": 12.84,
   "currency": "EUR",
-  "day": -0.15600386349691187,
-  "wk": 1.4263098796201579,
-  "mo": 5.263160784158716,
-  "ma200": 12.572700023651123,
+  "day": 0.1560086244296599,
+  "wk": 1.743266790996989,
+  "mo": 5.592107842998861,
+  "ma200": 12.572900023460388,
   "closes": [
    11.84000015258789,
    11.760000228881836,
@@ -1950,7 +1950,7 @@
    12.680000305175781,
    12.800000190734863,
    12.819999694824219,
-   12.800000190734863
+   12.84000015258789
   ],
   "news": [
    {
@@ -1969,18 +1969,18 @@
     "d": "21 Jun"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "GTT.PA": {
-  "price": 187.8,
+  "price": 187.0,
   "currency": "EUR",
-  "day": 1.5135135135135203,
-  "wk": 2.065219049868383,
-  "mo": -12.894249658977397,
-  "ma200": 199.62350006103514,
+  "day": 1.08108108108107,
+  "wk": 1.6304347826086918,
+  "mo": -13.265308577859669,
+  "ma200": 199.61950004577636,
   "closes": [
    179.60000610351562,
    178.60000610351562,
@@ -2237,21 +2237,21 @@
    181.3000030517578,
    184.1999969482422,
    185.0,
-   187.8000030517578
+   187.0
   ],
   "news": [],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "GBLB.BR": {
-  "price": 79.65,
+  "price": 79.4,
   "currency": "EUR",
-  "day": 0.25173449898068245,
-  "wk": 1.078678224876195,
-  "mo": 12.659130076326331,
-  "ma200": 78.03799995422364,
+  "day": -0.06292882336389471,
+  "wk": 0.7614193539142278,
+  "mo": 12.305523271812579,
+  "ma200": 78.03674995422364,
   "closes": [
    74.0,
    74.8499984741211,
@@ -2508,7 +2508,7 @@
    79.05000305175781,
    79.69999694824219,
    79.44999694824219,
-   79.6500015258789
+   79.4000015258789
   ],
   "news": [
    {
@@ -2527,18 +2527,18 @@
     "d": "09 Nov"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "INRG.MI": {
-  "price": 8.42,
+  "price": 8.432,
   "currency": "EUR",
-  "day": 0.9229244181992557,
-  "wk": -1.853367385029392,
-  "mo": -3.8263853086010546,
-  "ma200": 9.344565012454986,
+  "day": 1.0667575646384986,
+  "wk": -1.7134899720245178,
+  "mo": -3.689319817264891,
+  "ma200": 9.344625012874603,
   "closes": [
    8.812999725341797,
    8.741999626159668,
@@ -2792,7 +2792,7 @@
    8.517000198364258,
    8.458000183105469,
    8.343000411987305,
-   8.420000076293945
+   8.432000160217285
   ],
   "news": [
    {
@@ -2811,18 +2811,18 @@
     "d": "07 Jul"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "KBCA.BR": {
-  "price": 96.3,
+  "price": 97.4,
   "currency": "EUR",
-  "day": -1.2307692307692353,
-  "wk": 2.0127134482704756,
-  "mo": -0.10373285533014087,
-  "ma200": 84.15799968719483,
+  "day": -0.10256410256409554,
+  "wk": 3.177966050326364,
+  "mo": 1.037344381920513,
+  "ma200": 84.16349967956543,
   "closes": [
    73.0,
    74.30000305175781,
@@ -3079,7 +3079,7 @@
    94.19999694824219,
    96.69999694824219,
    97.5,
-   96.30000305175781
+   97.4000015258789
   ],
   "news": [
    {
@@ -3093,23 +3093,23 @@
     "d": "22 May"
    },
    {
-    "t": "Technical Analysis of KBC Ancora SCA (EURONEXT:KBCA)",
-    "l": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9qZnd5U2E3WjVvRHEtemxlVWlMTUIydzF3VWx4bzNneGwxbXgxamF5NmhtZS1zbmRGVWVuVkprTVBsUXg4N1hhampJV1NWbHFaSzhBWFNIemRFaWE0UFpzWDRpcDdEWFpqTFgxZi1R?oc=5",
-    "d": "04 Mar"
+    "t": "KBC Ancora closes financial year 2025/2026 with a profit of EUR 389.4 million",
+    "l": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY0JFMW1tYy1xa180NUxSOFVuai1PVkJsQWlaOEtocEJPMmhGRHBIbXFfZ0tVVEdjUkF4Q1FPMWRjMTUxNGcydDIwaXFaVDJlUWZlX1R3dHZRS01vQ2d2TElBVHd1bm15ejdkblBlTzdpX25zVnNFLVV0WGlPNE0za0NFdVBjVkxFaFdQcG1BWks4OHpDOFdGekhDZ1l3Zw?oc=5",
+    "d": "28 Aug"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "NN.AS": {
-  "price": 81.06,
+  "price": 81.14,
   "currency": "EUR",
-  "day": 0.29695657768129546,
-  "wk": 0.9464439326933416,
-  "mo": 6.489745971841199,
-  "ma200": 74.57839988708496,
+  "day": 0.3959419777086026,
+  "wk": 1.0460726101706452,
+  "mo": 6.594845588457132,
+  "ma200": 74.57879989624024,
   "closes": [
    60.68000030517578,
    61.880001068115234,
@@ -3366,7 +3366,7 @@
    79.18000030517578,
    80.45999908447266,
    80.81999969482422,
-   81.05999755859375
+   81.13999938964844
   ],
   "news": [
    {
@@ -3385,18 +3385,18 @@
     "d": "17 Jul"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "PNL.AS": {
-  "price": 0.821,
+  "price": 0.828,
   "currency": "EUR",
-  "day": -0.36407778521871936,
-  "wk": -1.0253293138664077,
-  "mo": -2.553443138018874,
-  "ma200": 0.9693125006556511,
+  "day": 0.4854367769048684,
+  "wk": -0.12062570928809135,
+  "mo": -1.6627076535194796,
+  "ma200": 0.9693500006198883,
   "closes": [
    0.9664999842643738,
    0.9610000252723694,
@@ -3653,14 +3653,9 @@
    0.815500020980835,
    0.8199999928474426,
    0.8240000009536743,
-   0.8205000162124634
+   0.828000009059906
   ],
   "news": [
-   {
-    "t": "Picnic PostNL Faces Independent Review as Team Owner Rejects Allegations of a Fear-Based Culture",
-    "l": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOcmp4VEZNZFRKVVdYbWlOeTFRaFJIRTBNeWZGVDJTX1FaRmdEblZURVBCUEdaelJZbHByYl95OF9ESFpHQnN6ZHBfX3FyUGhtaGVORHRKd282WW1rNDh5bW90d1Z5dV92M1dkQnNsTXdNVzBDVUMwV2psQmVBTUJlLXdoMDhjRXpfYTk3WmVtUWJ0VlVvY0E?oc=5",
-    "d": "10 Nov"
-   },
    {
     "t": "PostNL delays funeral notices, leaving families unable to attend services",
     "l": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOY1UtbkRrV1lldnMxMXhQc0Zhbk9lbzZFSzNFenBQal8ySm5YZGJmd0tPX3JzcTA3ZXBOMk1CaGoxX1dLZnpwbGd1bzlUdDgtRThjLUJMcE9UZHo3TzE0T3VKWEstQU5VdjMtOWxtdHhwNks0ekdFclRqY2U5UGF4MWdyMnl2bTREU3Yyd0xmdU0yN3hMZDNna2FNYy01ZjU1?oc=5",
@@ -3670,20 +3665,25 @@
     "t": "'A one-sided story has been told' - Picnic PostNL boss responds to allegations of 'culture of fear'",
     "l": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNOFRZRzNpMXpjdC1aQkk4TmFJcW01SzhjekxZbjk4V3gxWFhmWUJWaEhhNktLLWxJOEdWZmVDcmhTNXZNZGw1YXhXUUVCb3hleC1nR3Q1RUs5elozSXJXSVBya0NHa0FCa0pEU2tqLXNDTXFPWXdjWGRWTDBjTkUzWlA0dnkteXVKR1hFZEVXR0pQN05BSkpDOXFHMWRjeFFyYzUwQzg3RW5xMGhidW9mTWdnWnVQTlVscS1CX3UzSV92SUtORVV3UEpwX3ktbE53TlBOREh0SDNHYW0tOUR3c0ZfenY4VWczMzRnejdLN3FaNkpxYlQ5SGt4UFEtZUstQkNfaHdkME5ZVmVQS0sw?oc=5",
     "d": "07 Nov"
+   },
+   {
+    "t": "PostNL expects 1.7 million parcels per day during the year-end peak",
+    "l": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMnFTamFFQnctdkFfdlNSTG8wdS1GTWgyTW5od05uQ2Y4VV93TVBhdUF2VW9vbjVlcTFfcXctMHpyUUFFX0tpbjBUSmFEZVRBQjZ2M05vZ1VvakUtZVdEejNsbXdPaWFmamdsTkVQWERMUUVsUlV2U2pLcGhLOHlySVlYY2doS2xlWEFiVGRZQ21tM1BhUkdPT0Y4QWdCQ1lKbXVIX3VCM0lic1p1UUtfYXBNODdqMndJX1lDNkFFN1A2U3ll?oc=5",
+    "d": "11 Nov"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "SHELL.AS": {
-  "price": 44.205,
+  "price": 44.13,
   "currency": "EUR",
-  "day": 1.5273290548680318,
-  "wk": -3.1441664719198514,
-  "mo": -3.797603706009467,
-  "ma200": 38.84175006866455,
+  "day": 1.3550736611543046,
+  "wk": -3.308497681259137,
+  "mo": -3.9608262559423513,
+  "ma200": 38.841375064849856,
   "closes": [
    33.36000061035156,
    33.0,
@@ -3940,14 +3940,9 @@
    44.7400016784668,
    44.44499969482422,
    43.540000915527344,
-   44.20500183105469
+   44.130001068115234
   ],
   "news": [
-   {
-    "t": "Shell PLC (SHEL) Stock Forecasts",
-    "l": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSUZyX3JDeEROOVhVM0hVTEhFdEJ3UkVOUFRrNS1hLWl1T08wWVFsRkM4NlljdmlCWDdzMTFiWjdnZFBadnVyV0tHYWtkcDBTZGRndDRicDJaTDBBdmRRaElVU1RuUFZMMkl6dVdBejBQeF9nUGZYeDVxRl9BRk9aUEJkY0NXVUtw?oc=5",
-    "d": "10 Nov"
-   },
    {
     "t": "Shell PLC-ADR (NYSE:SHEL): Strong Long-Term Trend but Weak Entry Timing",
     "l": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNS1tTy13cGNzX2I4dnp3SW42SUEwemdQRkl5bTlIZkYxTzUxUll0aUhkUTlidzBtMm81ZzZmM0ZnQkpkYUNyeDd0Z1VrMlkxOGZyNE1xRkx6TnNjbDNwbDN3YXdjWk5ZSnNNU0lLendTaU9mXzZoSURPWVdodldwclhEUnJyNWJidEZJM1pSMTk3M1RHeUJsMzBvR0RJQUFrVnozX3VZa3N6U0hFYlc5VmpncGViRHdkUC1v?oc=5",
@@ -3957,20 +3952,25 @@
     "t": "Shell Plc",
     "l": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1RdVMxQnZlOU1TQWJaeDcyY1VDZklfdXhrc2txdXcySlJteFFRbkNhN3hKV2I4Ny1KUmQ0MVdmZllyN2V5NVlXMk13Sk40bVI4?oc=5",
     "d": "20 Oct"
+   },
+   {
+    "t": "Shell PLC Stock (SHEL) Moved Down by 3.07% on Nov 2: What Investors Need To Know",
+    "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTnFLaUNab1BjZ0FVZ0pWRXZ2cHhRbDdWcGFKVGVOejVKaEl4YkxCU09zSTVxYl9TWjdkRFZuVG56TEdzWmdWX0ZHdlBONUw5VVFZNVNJd0xlOTNIMHh6dnR5MDBQUDM4T0RIR0Y3TUNwZ2ZnOS1Kd2pDZ25OS2cwMVdZMTNtSkE5YlZj?oc=5",
+    "d": "02 Nov"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "SOF.BR": {
-  "price": 271.6,
+  "price": 270.6,
   "currency": "EUR",
-  "day": 0.4437892494831397,
-  "wk": -2.582489958643641,
-  "mo": 7.4367099781674995,
-  "ma200": 237.02399993896483,
+  "day": 0.07396675592834523,
+  "wk": -2.9411700317369727,
+  "mo": 7.041140362689591,
+  "ma200": 237.01899993896484,
   "closes": [
    244.8000030517578,
    244.60000610351562,
@@ -4227,7 +4227,7 @@
    267.6000061035156,
    270.3999938964844,
    270.3999938964844,
-   271.6000061035156
+   270.6000061035156
   ],
   "news": [
    {
@@ -4236,18 +4236,18 @@
     "d": "19 Oct"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "WEB.BR": {
-  "price": 38.1,
+  "price": 38.0,
   "currency": "EUR",
-  "day": 0.263157894736854,
-  "wk": 1.8716495178692005,
-  "mo": 2.4193486363534245,
-  "ma200": 39.44049997329712,
+  "day": 0.0,
+  "wk": 1.6042739295235808,
+  "mo": 2.1505355393904857,
+  "ma200": 39.439999980926515,
   "closes": [
    37.0,
    37.599998474121094,
@@ -4504,32 +4504,27 @@
    37.20000076293945,
    37.79999923706055,
    38.0,
-   38.099998474121094
+   38.0
   ],
   "news": [
-   {
-    "t": "WPK | Warehouses Estates Belgium S.C.A. Stock Overview (Germany: Frankfurt )",
-    "l": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ZQzZMa1MtT3BYUFozcmo2cmYxR2kzc1VMRFRkUDl1Y09ON2M1cDI0TFRhVWJSS3I5ZjFBa0p6aG1RZnBnelZ1VHFkQ2VzQXFTZEpPVDcwWjNTcTJCajlqQmJsdHVQbk1yUG9uNWdIVnVLZm5wM21YdzNR?oc=5",
-    "d": "26 Mar"
-   },
    {
     "t": "Investing In Property Through Warehouses Estates Belgium SCA (EBR:WEB)",
     "l": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNGxtbEhVbl95aWlfdDdLRjFtRFZNZXFfc2QxN3ZtOHhKbUpLcUdpN0U4bjFMWVJVV3h0MDl4cWxaeUJmeFlmSk1QZEJmRkNOakhDd21ISFZLZUdrbVk4T0hLY2ZvcWpuYlNyOWtXVlZYNlBYT00ydlJITUZmV0tGYmxWM0NfS0E4TU9GenNvVURTaGVqcmc?oc=5",
     "d": "30 Jul"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "3CP.DU": {
-  "price": 3.423,
+  "price": 3.3695,
   "currency": "EUR",
-  "day": -0.5086476057002298,
-  "wk": 3.257919704076162,
-  "mo": 20.996822265480475,
-  "ma200": 3.201875009536743,
+  "day": -2.063654135964632,
+  "wk": 1.6440381187789121,
+  "mo": 19.105688453242408,
+  "ma200": 3.2016075086593627,
   "closes": [
    4.83050012588501,
    4.843500137329102,
@@ -4784,37 +4779,37 @@
    3.446500062942505,
    3.4035000801086426,
    3.440500020980835,
-   3.4230000972747803
+   3.369499921798706
   ],
   "news": [
    {
-    "t": "Xiaomi 18 Pro in for review - GSMArena.com news",
-    "l": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5WWE84YXlydVFiRWotZlZGZ1kxdXdIeWVsSndBa1ZkRGxhUllMdTlFem43UHNDT1BpYjkwcExiNVB3aE9IRGx4dVVzOGJvOXFQODlWTDg4azZTWGZyYzgzRk1INlpwOU1yR05QTTkweUtGSDZsQ1HSAXJBVV95cUxORHVQQTFodnZLSFBpRXBSbktjX2FZbVVGNkdkcjF3RHg3RlhPRVJTd3VJV2hScTk4SlAtQ25pa0VFTVpUOUFhQ29Wd182WlY2cWcxbUlmVVhDOVFHdFlhSzA4NWU3WkU1Z2ZZYkRRZWVDekE?oc=5",
+    "t": "Xiaomi 18 Pro Max in for review - GSMArena.com news",
+    "l": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9lWHRjMlkzbS1YUkRIS2tZRHdTY0hYYWFLVjBSZXBqOGYyaER2eGZlcUFQcGd0VXRxYmZ1aVRQM29hbVhQX2JOUGkwZTI2M3FteXdfWFJrb3ZiSjZCZ0ltamJacG14SUZlQlMyNndYam9wTC1UdUxZRUY5WdIBd0FVX3lxTFB0QWxiWWM5ZHhIdjVnUlNnSFhGSm9VYkU3dnU2YzdaNTNtZm5QM1BJSHJuTTRjQUdqZGxjTmx5MlZNQmpGeFB0ZEsxNm1XOU8zY21nQmZicVRzTlNVWGJKU2dhOXBJM3pzWmNjMk1yeG9iQmNzNUs0?oc=5",
+    "d": "09 Nov"
+   },
+   {
+    "t": "Xiaomi 18 Pro Max Cheat Sheet: Price, Specs, Features, and Availability",
+    "l": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORndzRzdHUzUtbFc3N0NnMnJfblN1VGlrSGJvNUZnay1sM1ZpaC1SQlZhM2otbmRENUNJVzhwQkVjUjdZNXMwNVZ1YVlzaE4tWVk0X2tPOTZ3bEZoNExPb0RycjFXdzhNclhkMHI1amFXSnd2RHZBUEpGLU9zZ0ZDR1FpVQ?oc=5",
     "d": "10 Nov"
    },
    {
     "t": "These Xiaomi Phones Are No Longer Getting Support With The Latest HyperOS 4 Update",
     "l": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOGFPN3QtelZtQXRnWGs5bi1jSW8yZlhVZHh6UXlfSU9JSnN6R0VlTzhob2ZyUnRVdGlMdV9ucW0tUktJY3BHS3FtcXRJYzVSbzdpWm9BQ1l6d1VxQ19TcVREekRvSVJZcXR0S085NlNtVGlhQktFbzlnMkh6Wm5YaU9Id3I2eHNZU2VKWWxn?oc=5",
     "d": "10 Nov"
-   },
-   {
-    "t": "Xiaomi 18 Pro Max Cheat Sheet: Price, Specs, Features, and Availability",
-    "l": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORndzRzdHUzUtbFc3N0NnMnJfblN1VGlrSGJvNUZnay1sM1ZpaC1SQlZhM2otbmRENUNJVzhwQkVjUjdZNXMwNVZ1YVlzaE4tWVk0X2tPOTZ3bEZoNExPb0RycjFXdzhNclhkMHI1amFXSnd2RHZBUEpGLU9zZ0ZDR1FpVQ?oc=5",
-    "d": "10 Nov"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "XIOR.BR": {
-  "price": 25.65,
+  "price": 25.6,
   "currency": "EUR",
-  "day": -0.9652495066116207,
-  "wk": 1.1834289252312669,
-  "mo": 6.211180222334467,
-  "ma200": 26.872499990463258,
+  "day": -1.15829970250515,
+  "wk": 0.9861932790452554,
+  "mo": 6.004144040759596,
+  "ma200": 26.872249994277954,
   "closes": [
    28.600000381469727,
    28.700000762939453,
@@ -5071,7 +5066,7 @@
    25.5,
    25.549999237060547,
    25.899999618530273,
-   25.649999618530273
+   25.600000381469727
   ],
   "news": [
    {
@@ -5090,10 +5085,10 @@
     "d": "18 Oct"
    }
   ],
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:43 UTC",
   "stale": false,
-  "usdeur": 1.1142,
-  "nokeur": 10.6203
+  "usdeur": 1.1093,
+  "nokeur": 10.5951
  },
  "~buffett": {
   "daily": [
@@ -6514,7 +6509,7 @@
   "avg": 136.18521010696355,
   "min": 60.99181510029633,
   "max": 233.5134257315735,
-  "when": "11 Nov 2026, 12:26 UTC",
+  "when": "11 Nov 2026, 21:44 UTC",
   "stale": false
  }
 }
