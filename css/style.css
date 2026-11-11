@@ -408,6 +408,44 @@ footer.site .wrap { display: flex; gap: 20px; flex-wrap: wrap; justify-content: 
 footer.site a { color: var(--ink-2); }
 footer.site .credits { max-width: 620px; line-height: 1.6; }
 
+/* ---------- watch collection ---------- */
+
+.watch { margin: 0; padding: 34px 0; border-top: 1px solid var(--border); }
+.watch:first-of-type { border-top: none; padding-top: 8px; }
+
+.watch-head {
+  display: grid;
+  grid-template-columns: 132px 1fr;
+  gap: 26px;
+  align-items: start;
+}
+@media (max-width: 700px) { .watch-head { grid-template-columns: 1fr; } }
+
+.watch-photos { display: flex; gap: 10px; flex-wrap: wrap; margin: 0; }
+.watch-photos img {
+  width: 25mm;            /* ~25 x 30 mm on screen */
+  height: 30mm;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  transition: border-color .15s ease;
+}
+.watch-photos img:hover { border-color: rgba(57,135,229,0.55); }
+
+.watch h2 { margin: 0 0 4px; font-size: 1.25rem; }
+.watch .lede { margin: 0 0 14px; color: var(--ink-2); font-size: 0.98rem; max-width: 640px; }
+
+.watch .specs { margin: 0 0 8px; max-width: 640px; font-size: 0.85rem; }
+.watch .specs th { padding: 6px 12px; }
+.watch .specs td { padding: 6px 12px; }
+
+.watch-body { margin-top: 4px; }
+.watch-body p { max-width: 720px; font-size: 0.95rem; }
+.watch-body h3 { margin: 16px 0 6px; font-size: 1rem; }
+
+.watch .price { color: var(--ink-2); font-size: 0.92rem; max-width: 720px; }
+.watch .price strong { color: var(--ink); }
+
 /* ---------- misc ---------- */
 
 .back-top {
