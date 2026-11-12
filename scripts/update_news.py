@@ -60,7 +60,9 @@ def fetch_feed(url):
                 continue
             published = entry.get("published_parsed") or entry.get("updated_parsed")
             stamp = time.strftime("%d %b %Y", published) if published else ""
-            out.append({"title": title, "link": link, "stamp": stamp})
+            # Sortable date key: newest first later; "" (undated) sorts last.
+            sort_key = time.strftime("%Y%m%d%H%M", published) if published else ""
+            out.append({"title": title, "link": link, "stamp": stamp, "sort_key": sort_key})
         return out
     except Exception as exc:  # noqa: BLE001 - keep going on any feed failure
         print(f"  feed error {url}: {exc}")
@@ -93,12 +95,15 @@ def main():
                 "title": entry["title"],
                 "link": entry["link"],
                 "stamp": entry["stamp"],
+                "sort_key": entry["sort_key"],
                 "labels": {label},
             }
             count += 1
         print(f"  [{label}] {count} items from {url}")
 
-    rows = sorted(items.values(), key=lambda r: r["stamp"], reverse=True)[:MAX_TOTAL]
+    # Newest first, by real date (stamp is only for display and cannot be
+    # sorted: "27 Aug" > "23 Oct" alphabetically). Undated items sort last.
+    rows = sorted(items.values(), key=lambda r: r["sort_key"], reverse=True)[:MAX_TOTAL]
     if not rows:
         print("No items fetched from any feed - leaving the existing page untouched.")
         sys.exit(0)
