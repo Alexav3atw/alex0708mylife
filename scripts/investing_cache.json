@@ -282,10 +282,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "ASCE.BR": {
   "price": 53.7,
@@ -553,10 +553,10 @@
    53.70000076293945
   ],
   "news": [],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "BPOST.BR": {
   "price": 0.863,
@@ -846,18 +846,18 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "BRK-B": {
-  "price": 591.595,
+  "price": 591.48,
   "currency": "USD",
-  "day": 0.5703471068480459,
-  "wk": 3.3660568270101887,
-  "mo": 12.395743923908453,
-  "ma200": 499.86207489013674,
+  "day": 0.5507972629222424,
+  "wk": 3.3459652310880106,
+  "mo": 12.373897198400963,
+  "ma200": 499.86149993896487,
   "closes": [
    502.3999938964844,
    513.1099853515625,
@@ -1110,7 +1110,7 @@
    575.25,
    583.3400268554688,
    588.239990234375,
-   591.594970703125
+   591.47998046875
   ],
   "news": [
    {
@@ -1135,10 +1135,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "BY6.VI": {
   "price": 7.763,
@@ -1418,25 +1418,25 @@
     "s": ""
    },
    {
-    "t": "How BYD Is Combining Solar Power, Batteries And 5-Minute Charging",
-    "l": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeG81bU5XVkVRVWNVSE5GRUFMZFpvcktQT1hSc1lTSjI0WVUwSHFQbWhQcVhCX1BtdkNNanlIc1QwMDlpOVdUdmZzdE44NEVRcHczTU9rQ29abWZkVmdQeXBIWDRJdHNwZzN1TkxyX3ZqLVRkd1AtWnpPWVcyejhBWFhSWkZ5N0MxUUlYLTZuaTJQaDlBMkQyd0txdG8tLTA4LXpnTzJaenRmam5yOHZUUUR0YWJlUmdSa25YcVZTMWM?oc=5",
-    "d": "12 Nov",
+    "t": "BYD, Chery-Led China Auto Exports Boom Comes With $270 Billion Cost",
+    "l": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNX3pLSF9KRGdHZEFZRWNvcnFhQkJkUFZsTEdzUXp1MWJ2YUl3SHhOQmFCamVsTHpOREUwOW84MW8zLWptQURoZllsR2kzWk9TT2FkRERmeXNHblhYWGl3d3BwYlZlcy1uNEpmRXZJMUdUNjFRVzI3eTg5WFlqTG5vTEhiRFExSkZmR0lPTw?oc=5",
+    "d": "09 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "AI": {
-  "price": 12.02,
+  "price": 12.065,
   "currency": "USD",
-  "day": -1.394582331707972,
-  "wk": 5.623904542062452,
-  "mo": 2.999146351170179,
-  "ma200": 9.990049982070923,
+  "day": -1.025427273881585,
+  "wk": 6.019327408205699,
+  "mo": 3.384742943504726,
+  "ma200": 9.99027497768402,
   "closes": [
    14.829999923706055,
    14.100000381469727,
@@ -1689,7 +1689,7 @@
    12.0,
    11.84000015258789,
    12.1899995803833,
-   12.020000457763672
+   12.0649995803833
   ],
   "news": [
    {
@@ -1707,17 +1707,17 @@
     "s": ""
    },
    {
-    "t": "C3.ai Q2 2027 Earnings Date and Estimates",
-    "l": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9wSS02NGliVFIyS0xadnRrMG52MnltUlhUSVcyZGhnS0MwRkFoSWdwMkJaWDJlWndxVm9XYllWU2drUUFLRzZ3Q05SVWxnZEFvMDRubzdpTWRBYTRqNEFXcy1zNmprbnZuYktFUU9wXzFVZ2JNZ29VMg?oc=5",
-    "d": "11 Nov",
+    "t": "C3.ai (AI) Stock Looks Expensive Despite Its 75% Five Year Slump",
+    "l": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYkUydlBTNnlNdXVGcUVDNXdvdUV6Yk9LQ29Cek1OVmtVb0JPcWpySjhhdkxuQmplNm1fTEEwNXR0d0xjZ3hiWEMwZ1MtNGpDbk5ybXZuVV9YdU5NU3JVUG5LbjhiU3EtNjh2ZWktdV9SZUhsSk5sWkVfTHJNQ1RQbmg2YjZBSkRyWTJyN0pHdlRqUWNvUHRacXlHUk1rSU9vY2IyYTZBSWlvS1FoWDVfcnhCYXpXRXNOWTVj0gHAAUFVX3lxTE90TlNmLUlOTlBXSExHWmFYR19NV1BVWERXa1dHR2FGMm9pUFhHWHc4ZzFLUVlwSGhWX0Z0ZWl3Yi14NzNXR1pvamo5cGkxdTdOSGF6cGdHUTVLLTFmdzIxb3NKMGRIT282eHZ1MFpDNnJ6d2ZxcUZ1cHFuX29MMGRTQVJBNElWLWF6X2ZQVVRYNko4cm1icF82YmxqWnlMUDVpTlludjJ6a1JOWXp4TE8xb1lhS1Y2b0ZRejhjRG5fZQ?oc=5",
+    "d": "06 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "CPINV.BR": {
   "price": 12.8,
@@ -1993,10 +1993,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "GTT.PA": {
   "price": 186.8,
@@ -2272,24 +2272,24 @@
     "s": ""
    },
    {
-    "t": "Gaztransport & Technigaz (ENXTPA:GTT) Stock Forecast & Analyst Predictions",
-    "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbjJyc28xcEptSUtNWnA1Z2VqdjVjNU5YVGo0U3B2RlpaSmJ4ZnkwdHdEQmgzNjh1YjBUYmRGbHlYNjFrMHp1V3lUMW9qWTVCd0dXQUptb3BNaklzak1zZDVsTTZRSlVkSUI2clRhbkR0Z2cwenA1dlMwUVpCZzhlSnI4c0NBSnJnYWg4?oc=5",
-    "d": "28 Oct",
-    "nl": false,
-    "s": ""
-   },
-   {
     "t": "What Is Drawing Fresh Attention To Gaztransport & Technigaz (ENXTPA:GTT)?",
     "l": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOOU90Z3BzS1FaRlRRdzcwWG1jWXFvXy12V2hwRnYtOVB1SFdCemVyemV2SktOX01xUF83U1lMT1gycDRjYkdPcnhtQWoyaVIzaHZ1SzFYMGlzQ3hFSldwYnlZVmJBdzJaMlpJTmktb0EwODZ5cXpKYU53b0dGaUoyZkNJNnk1UVc1QUtqZ2lVTkRvd0k5aVFURUNsSnhzd0s5UGxmYVBWTzNoeldxVWs2amRYN2w3dFRqNkV0bXRoX0FFaGN4U2pjVkE2Z01Qd29UUEdXUnkwdEtSZ9IB3wFBVV95cUxNVlRORkZOZHppRC1WdGYwZW81VThLYmFGR19QbnV3NU5IV2lVeFJLeVNzRkUySlNpWHFfWDlCQnR6czVhZS1HV05vTkc0RnRONGQtYkxQQUlaa0dUVkpLcklfVFdkRzZoZEtqZTNVREs0LV9aY0MwRG93WVd4US05c1BNM3JaLWI3QWtEU1dFYV9nMmFhb0k1eEF2MDRITXVndVVXS183WDdCUFVMWm93c3ZmdTVuTndGTFBuRHFjbXBBbjNUckd1OWlobFpPWnJzcDNGWWwwd2txNXZEVFJn?oc=5",
     "d": "04 Nov",
     "nl": false,
     "s": ""
+   },
+   {
+    "t": "Gaztransport & Technigaz (ENXTPA:GTT) Stock Forecast & Analyst Predictions",
+    "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbjJyc28xcEptSUtNWnA1Z2VqdjVjNU5YVGo0U3B2RlpaSmJ4ZnkwdHdEQmgzNjh1YjBUYmRGbHlYNjFrMHp1V3lUMW9qWTVCd0dXQUptb3BNaklzak1zZDVsTTZRSlVkSUI2clRhbkR0Z2cwenA1dlMwUVpCZzhlSnI4c0NBSnJnYWg4?oc=5",
+    "d": "28 Oct",
+    "nl": false,
+    "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "GBLB.BR": {
   "price": 80.4,
@@ -2579,10 +2579,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "INRG.MI": {
   "price": 8.369,
@@ -2855,10 +2855,10 @@
     "s": "De Belegger"
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "KBCA.BR": {
   "price": 95.5,
@@ -3127,11 +3127,18 @@
   ],
   "news": [
    {
-    "t": "Ex-topper KBC stapt over naar BNP Paribas Fortis",
-    "l": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY1NXU3JUMGQ1RHEyOTRmRUFNZm9tQ3Y1MlUwQ3Bfa2NWckQxN0NUWGRkQ2x3djB2cjFIaFc4dTJKdjM2UWVseFVoY2VXczQzS3E4MUkwZ3lPcThxcVFzcTE0MFNkSEE2cjVqcExsRW9vRHVhZ01TMkRldktfdEJ6WGxzTEN5dE9HcGt4dG1LV2FmVHJCbGZFZGRra3BvQUlBLVE?oc=5",
-    "d": "02 Nov",
+    "t": "Melexis in trek | KBC zet druk op Bel20",
+    "l": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQN1AtRzEzcTl0RjgyZ05kSUNPdTFraUw3NmdlYXpBWjZSZWRLSElrYnNBOGRUSnBPbWNpdDRyTXM0MkRlZmJwV3FnV1FnQldtVWxwdmp4SEdPRnNjaDVTVy1rZ0RtUHc0TnROdnNOUHlrY0VSc2lzcTlyU3ZkRmwzUjRRaXBDeHVGMUlIZGNRZE9EV0VpMHBwVHlsMklUdDRkMFVv?oc=5",
+    "d": "12 Nov",
     "nl": true,
     "s": "De Tijd"
+   },
+   {
+    "t": "KBC: Strong Q3 earnings and loan growth; deposit mix and margin pressures remain key watchpoints",
+    "l": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPRzRfTlJtRXAzbjVoNERWNkJ2cE9NWkUtb0N2VFlvTFE4aTlPYy1mS0FVOUtUZVMtcDJEaTQ3bWRYYzR3ekcyNGg3VkVqTlZpMDk4dGdBTWMyR2I5NmJlakVpS0tJX3hWc0F6dGUxdmV2LWFhNnBTT1NLcUFXZVNGSzVyNDVxemJsUEF3QWtSMUJrMTZMX2JhLXRpdVZ3dUFPOE5mZG1iQThRZmZPajhYamI3dDRyMXZaSEw3RmhmRk9HaXJIOVFZbjY4c3oxOEg2ZGNlZW00TlJLVmJSNjg0X2lwN2tfSkJ5S0lRSWJTcVZqRkVTYkhFcjVTSVo3UGxsMzVfQnpZOFdmUU5scUE?oc=5",
+    "d": "12 Nov",
+    "nl": false,
+    "s": ""
    },
    {
     "t": "KBC Group: Third-quarter result of 1 142 million euros",
@@ -3139,19 +3146,12 @@
     "d": "12 Nov",
     "nl": false,
     "s": ""
-   },
-   {
-    "t": "KBC profit matches forecasts as insurance offsets weaker banking income",
-    "l": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRnlFZkdwRjJpdmI5cTc5Q1k0czQ0ckhUNnBxOUROYkx6Q0UzUHBTQkVva3R3cjFYazJVMTY0NjktSDBBSmpYb012TlhmTHdqSVdmOEEtMlN4SmhxNzVIY3J0M2c3REVNWU45YUlEZ1lkbXZzLW4zeUx1cjhRWlBSZHN2a0xVVWU4SF9mbENkSld3WkY3dzhIMHRMT28xWUFzcHdvUFN4aGcxX2MyV1Q2bC1rdUhKMmhlb1RqUU9xc1hvZw?oc=5",
-    "d": "12 Nov",
-    "nl": false,
-    "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "NN.AS": {
   "price": 81.26,
@@ -3434,10 +3434,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "PNL.AS": {
   "price": 0.821,
@@ -3720,17 +3720,17 @@
     "s": "De AandeelHouder"
    },
    {
-    "t": "PostNL delays funeral notices, leaving families unable to attend services",
-    "l": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOY1UtbkRrV1lldnMxMXhQc0Zhbk9lbzZFSzNFenBQal8ySm5YZGJmd0tPX3JzcTA3ZXBOMk1CaGoxX1dLZnpwbGd1bzlUdDgtRThjLUJMcE9UZHo3TzE0T3VKWEstQU5VdjMtOWxtdHhwNks0ekdFclRqY2U5UGF4MWdyMnl2bTREU3Yyd0xmdU0yN3hMZDNna2FNYy01ZjU1?oc=5",
-    "d": "09 Nov",
+    "t": "Gaia Realini heads for 'new adventure' with Picnic-PostNL, but can climber rejuvenate her career? – Analysis",
+    "l": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNMzV1bmRVNkV3U2lqenhyR3RDd0szWTktMjRzTS1CNWQxX09wRzhwMDc3QVZrZEUyQ010UlRaeUZxeXFPenMxb3RPWTNpTjF2bk15Nnpqb0xibGwzemtXZktsZnNyM2pxYXJvYVFXSEJIWEZodWdUQm9ORGY0QU9pdTk2am1wb25BbXpTM2czejRFTDRqQmc3ektqbjkxM0dXWDU3MWlLczJsUlJidHJyazE5dUQ5dndnZGFlNmlUN3p1aTZLbW5JUGpCdzZZMFNobmJEeGhrdnJOcURvcFNhbXAxallyZ0dQUHdFQk45WQ?oc=5",
+    "d": "12 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "SHELL.AS": {
   "price": 44.12,
@@ -4013,17 +4013,17 @@
     "s": "De Tijd"
    },
    {
-    "t": "White Workers Claiming Discrimination Complicates Shell’s DEI Drive",
-    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbkptTlpyNmdpMnhZZ3h1MUxyUFF2S0kxT25sZ2FreWRmQVp1X2pkOVVpalNLMDdrUFRzRmUyTGVEWDFDdDZvUzFxUGRST2NvQm1YX3VBQ25RZGQwRmlnR0hSU2RScmR1c00wYWVGS2I5TWFXdW03QXVZLXduSzgxVFBfVDVTQXlYXzdiT0R1UmozOVJ5a0pBQ3Nad0EtbmIxWW1GeWlTNi1iMzNtUUI4?oc=5",
-    "d": "11 Nov",
+    "t": "Shell Wins the Battle Over 68 Whistleblower Documents — An Independent Investigation into Legal Privilege, Corporate Secrecy and the Kent Quinlan Case",
+    "l": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNTDMzR05PaWhiWFZqWk9XSFhOR0t0NFYyQ2hjRk5LYkQxdUVhaEd2d0tfblV0b3p5U2t2b01aWldGVDByOHFyNTd1UFFYeHVBcW13ZDk2M2tSOF9TZE1ZNlBLX2dETTBvSTNtVkVDcDc5Sm5YVXZRRXJjSVFlTWVGaUJWdGdyaWpvcXA3bE1jN28wcEFleTZYbEprUjRtTFJDMWlVcmVzVWJVc2g4Sk12NHFncUFWNVYzei1RVmJ1X211eWVrVHBYZGh1cUEzaFAxRXJmS1c4TU1kbkcxckM5V2o2MFlmZ3o3Y2FCdWd4T1E5ZC1nTlZpN1ZPaEs0ZFBGUXJ0ZVJmWE1NSnd6MTZ6UkV0NUlzaDZJWHc?oc=5",
+    "d": "12 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "SOF.BR": {
   "price": 269.8,
@@ -4292,18 +4292,18 @@
   ],
   "news": [
    {
+    "t": "Na de stevige rit hoger: we verwijderen holding Sofina uit onze kooptips",
+    "l": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTkhoVU1CczZhMnZ4NzROTG5jTFNrb05BX1FGcU9RQ0U5eUlkdkdYdHo3QlgyNU42N0J1RXd6bVJQS3hUNVE4SFVpNFhoUU1IWTFxeVJfbERBOHJGUDRaSnJXc1Rya3pKTllSUVktX2NzTEVZczgxd3k2WnU3aG9rd2RiN1Vsa2hfZFNVX2gxQVRfdHl4WXhXeXNDX1FWWURfazZUMnVhRUVIZm15WFdDY05BNjJ5VUlDWmVZVzVFank2TWZmSzJr?oc=5",
+    "d": "03 Nov",
+    "nl": true,
+    "s": "De Belegger"
+   },
+   {
     "t": "Pastaproducenten Panzani en Sofina-participatie Cerealis plannen fusie",
     "l": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVWt0OFFPT0JuS3JZRXQ4azd5eGZyZV9Xa3hxNF9hYlFvSl9JTnVTMmQwSVNrRFZhbllYTVFiZnRpSDBYeUZaaXpNLTIzVWMyRk1mQkdyYllUZm5XVVc4bHEwUXU3cjQ4aldjdkFGVmZ6MUpueW9BSnlyRTJyRzdzNmhFcWRXNUxtNERwRFQ5SzRZV3ZEYzJiNlpBMEJvZndpeDlwdU50ZlJNZW1tZnJyZGVETjc5WmVDUFhEY0FFVlZyM09BVldlbQ?oc=5",
     "d": "16 Oct",
     "nl": true,
     "s": "De Tijd"
-   },
-   {
-    "t": "Via Sofina koop je SpaceX en Anthropic met een flinke korting-SHORT",
-    "l": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYkpNdms1Z29lT3VMSGRUYWNmODNMX05SN0dteUFMdV9IaTNzcmhXUGNOVVp3X2dFVTRHTkF6RVE2R1NWcFZCSTM2Nld1T21rS1dDTmxUNGh3TWdhRE5BRXpXUGd1eUt5RzZRdWd2Y0pDTTY2Y2hJYzJCZFE2LWppX2N0ekR1R1AyMWlDTUlibnN4dURqSUJyVTdqMzRHNHlpWnZabHRXUjdsUQ?oc=5",
-    "d": "22 Oct",
-    "nl": true,
-    "s": "De AandeelHouder"
    },
    {
     "t": "Trading Floor: Sofina (+5%), BlackRock Tcp(+3.8%), Wendel (+3.8%), Tamburi Investment Partners (+3.3%)",
@@ -4313,10 +4313,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "WEB.BR": {
   "price": 37.6,
@@ -4592,10 +4592,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "3CP.DU": {
   "price": 3.4035,
@@ -4862,31 +4862,31 @@
   ],
   "news": [
    {
-    "t": "Xiaomi 18 Pro in for review - GSMArena.com news",
-    "l": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5WWE84YXlydVFiRWotZlZGZ1kxdXdIeWVsSndBa1ZkRGxhUllMdTlFem43UHNDT1BpYjkwcExiNVB3aE9IRGx4dVVzOGJvOXFQODlWTDg4azZTWGZyYzgzRk1INlpwOU1yR05QTTkweUtGSDZsQ1HSAXJBVV95cUxORHVQQTFodnZLSFBpRXBSbktjX2FZbVVGNkdkcjF3RHg3RlhPRVJTd3VJV2hScTk4SlAtQ25pa0VFTVpUOUFhQ29Wd182WlY2cWcxbUlmVVhDOVFHdFlhSzA4NWU3WkU1Z2ZZYkRRZWVDekE?oc=5",
+    "t": "Xiaomi 18 Pro Max in for review - GSMArena.com news",
+    "l": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9lWHRjMlkzbS1YUkRIS2tZRHdTY0hYYWFLVjBSZXBqOGYyaER2eGZlcUFQcGd0VXRxYmZ1aVRQM29hbVhQX2JOUGkwZTI2M3FteXdfWFJrb3ZiSjZCZ0ltamJacG14SUZlQlMyNndYam9wTC1UdUxZRUY5WdIBd0FVX3lxTFB0QWxiWWM5ZHhIdjVnUlNnSFhGSm9VYkU3dnU2YzdaNTNtZm5QM1BJSHJuTTRjQUdqZGxjTmx5MlZNQmpGeFB0ZEsxNm1XOU8zY21nQmZicVRzTlNVWGJKU2dhOXBJM3pzWmNjMk1yeG9iQmNzNUs0?oc=5",
+    "d": "09 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
+    "t": "Almost an ultra, but not quite - Xiaomi Poco F9 Pro review",
+    "l": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNzF4QzVlbXhGUFBsSXgxV1FlSDUzVHVqOHd5b1ZyUWNjazNXZzY3NEM2cFhSNWpORGcxY0FpQ2hhT19ncFZ6TWtVT0NROExlZ2ZtTHNpSVdHMHQwYkFaMEdfUVZNREg5Y1lobWJMZ1NFYVcyQVZSTFJJSUR2ZF93dVVWYkFMWm0wMnpISFoxUEhSOWRJYnAwZFBMLVhXekhVRnc?oc=5",
+    "d": "12 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
+    "t": "Xiaomi 18 Pro Max Cheat Sheet: Price, Specs, Features, and Availability",
+    "l": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORndzRzdHUzUtbFc3N0NnMnJfblN1VGlrSGJvNUZnay1sM1ZpaC1SQlZhM2otbmRENUNJVzhwQkVjUjdZNXMwNVZ1YVlzaE4tWVk0X2tPOTZ3bEZoNExPb0RycjFXdzhNclhkMHI1amFXSnd2RHZBUEpGLU9zZ0ZDR1FpVQ?oc=5",
     "d": "10 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
-    "t": "Xiaomi Vision Gran Turismo debuts in Gran Turismo 7",
-    "l": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1iOV9xdmhnQ0Q5UGFKeU4tSjJtQjZTTkFhbjVvT3lHR0NGMkFSQkNJSzVfQzBPTlUxQXIxU2NGRElsZXdneGVmbzlWN280LUsza1djeXpPdGZ0cXlxRE9qNDdoM29SYV9PcEd4WVJLY1FmMUhsWVZtZmI0U3Zvdw?oc=5",
-    "d": "11 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
-    "t": "Xiaomi Wants to Make the Back of Your Phone More Useful With AI",
-    "l": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNEFvcUsxRDJibkg3cDR4SHdJQjdWd19mWmVwQkxQTnlicURWV2JiYlhNNmVfWFAwb3dfT3oteWEwZVhDOEdTcXpBcGFjeDc4SExwMllhMW9YUjFOd0dkY0lkSE5hWVEyWlplSUdld3l3N1NLLVNFV3hteVlqaHFndGw2ZUNsZw?oc=5",
-    "d": "11 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "XIOR.BR": {
   "price": 25.65,
@@ -5176,10 +5176,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 17:44 UTC",
+  "when": "12 Nov 2026, 17:56 UTC",
   "stale": false,
   "usdeur": 1.105,
-  "nokeur": 10.5751
+  "nokeur": 10.5684
  },
  "~buffett": {
   "daily": [
@@ -6600,7 +6600,7 @@
   "avg": 136.25767741470898,
   "min": 60.99181510029633,
   "max": 233.5134257315735,
-  "when": "12 Nov 2026, 09:11 UTC",
+  "when": "12 Nov 2026, 17:57 UTC",
   "stale": false
  }
 }
