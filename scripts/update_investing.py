@@ -4,9 +4,13 @@
 Fetches the latest price and up to three recent headlines for each stock in
 the watchlist and rewrites investing/index.html from the template. Dutch
 headlines come from De Tijd and De Aandeelhouder (Google News site-searches),
-English ones from Google News. Runs in GitHub Actions six times a day, from
-08:00 to 22:00 CET (see .github/workflows/investing.yml), and can also be
-run locally:  python scripts/update_investing.py
+English ones from Google News. GitHub Actions runs it on two schedules (see
+.github/workflows/investing.yml): a full run six times a day (prices, news
+and the Buffett indicator) and a quick run with --quick every 15 minutes on
+trading days (prices only - news and the Buffett indicator are reused from
+the cache, so Google News and FRED are not hammered 40 times a day). Both
+modes also run locally:
+  python scripts/update_investing.py [--quick]
 
 Design rules, mirroring the space-news updater:
 - Prices come from Yahoo Finance's chart API (free, no key); headlines come
@@ -677,7 +681,8 @@ def update_home_stamp(stamp):
 
 
 def main():
-    print("Fetching portfolio data...")
+    quick = "--quick" in sys.argv
+    print(f"Fetching portfolio data ({'quick' if quick else 'full'} run)...")
     cache = load_cache()
     fx = {}
     for pair, key in (("EURUSD=X", "usdeur"), ("EURNOK=X", "nokeur")):
@@ -708,7 +713,8 @@ def main():
             # very young listings simply show no average line.
             ma200 = (sum(c for _, c in closes[-200:]) / 200.0
                      if n >= 200 else None)
-            news = google_news(nl_queries + queries)
+            news = ((cache.get(sym) or {}).get("news") or []) if quick \
+                else google_news(nl_queries + queries)
             entry = {
                 "price": hist["price"], "currency": hist["currency"],
                 "day": day, "wk": wk, "mo": mo, "ma200": ma200,
@@ -733,14 +739,23 @@ def main():
 
     # Buffett indicator: market-wide gauge, cached under "~buffett" exactly
     # like a stock, so one failed fetch shows yesterday's numbers instead
-    # of an empty section.
-    time.sleep(SLEEP)
-    buff, buff_stale = fetch_buffett(cache)
+    # of an empty section. Quick runs reuse the cached value - the GDP
+    # figure only changes monthly, so recomputing every 15 minutes would
+    # just re-hit the flaky FRED endpoint for nothing.
+    if quick:
+        buff, buff_stale = cache.get("~buffett"), False
+        if buff:
+            print(f"  ~buffett indicator: {buff['cur']:.2f} % (cached)")
+    else:
+        buff, buff_stale = None, False
+    if buff is None:
+        time.sleep(SLEEP)
+        buff, buff_stale = fetch_buffett(cache)
+        if buff:
+            print(f"  ~buffett indicator: {buff['cur']:.2f} %"
+                  + (" (stale cache)" if buff_stale else ""))
     if buff:
-        buff = dict(buff, stale=buff_stale)
-        data["~buffett"] = buff
-        print(f"  ~buffett indicator: {buff['cur']:.2f} %"
-              + (" (stale cache)" if buff_stale else ""))
+        data["~buffett"] = dict(buff, stale=buff_stale)
 
     save_cache(data)
 
@@ -776,9 +791,29 @@ def main():
         )
     summary = "\n".join(tiles)
 
+    # Ticker tape: one compact item per stock, in page order, mirroring the
+    # card quote line (name, price, daily change). Stale items are muted and
+    # tooltipped, like the cards' "data of" notes.
+    ticker_items = []
+    for sym, name, _, _, _ in STOCKS:
+        entry = data.get(sym)
+        if not entry:
+            continue
+        cls, arrow = direction(entry["day"])
+        stale = entry.get("stale")
+        ticker_items.append(
+            f'<span class="tk-item{" tk-stale" if stale else ""}"'
+            + (f' title="data of {entry.get("when", "")}"' if stale else "")
+            + f'><span class="tk-name">{html.escape(name)}</span>'
+            f'<span class="tk-price">{fmt_num(entry["price"])} <span class="tk-ccy">{entry.get("currency", "")}</span></span>'
+            f'<span class="tk-day {cls}">{arrow} {fmt_pct(entry["day"])}</span></span>'
+        )
+    ticker = "\n".join(ticker_items)
+
     stamp = time.strftime("%d %B %Y, %H:%M UTC", time.gmtime())
     template = TEMPLATE.read_text(encoding="utf-8")
-    page = (template.replace("{{SUMMARY}}", summary)
+    page = (template.replace("{{TICKER}}", ticker)
+                    .replace("{{SUMMARY}}", summary)
                     .replace("{{ROWS}}", "\n".join(rows))
                     .replace("{{BUFFETT}}", build_buffett(data.get("~buffett")))
                     .replace("{{STAMP}}", stamp))

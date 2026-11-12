@@ -2,10 +2,16 @@ name: Update investing portfolio
 
 on:
   schedule:
-    # Six runs a day: 07:00/10:00/13:00/16:00/19:00/21:00 UTC =
-    # 08:00/11:00/14:00/17:00/20:00/22:00 CET (Belgian winter time;
-    # one hour later in summer - GitHub cron schedules run on UTC only)
+    # Full runs (prices, news and Buffett indicator): 07:00/10:00/13:00/
+    # 16:00/19:00/21:00 UTC = 08:00/11:00/14:00/17:00/20:00/22:00 CET
+    # (Belgian winter time; one hour later in summer - GitHub cron
+    # schedules run on UTC only).
     - cron: "0 7,10,13,16,19,21 * * *"
+    # Quick runs (prices only, cached news and Buffett indicator) every
+    # 15 minutes on trading days: 07:00-16:45 UTC = 08:00-17:45 CET in
+    # winter, 09:00-18:45 CEST in summer - covers Euronext Brussels
+    # 09:00-17:30 Belgian time with a little slack on either side.
+    - cron: "*/15 7-16 * * 1-5"
   workflow_dispatch:
 
 permissions:
@@ -23,8 +29,15 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch prices and news, rebuild the investing page
-        run: python scripts/update_investing.py
+      - name: Fetch data and rebuild the investing page
+        run: |
+          if [ "${{ github.event.schedule }}" = "*/15 7-16 * * 1-5" ]; then
+            echo "Quick run (prices only)"
+            python scripts/update_investing.py --quick
+          else
+            echo "Full run (prices, news, Buffett indicator)"
+            python scripts/update_investing.py
+          fi
 
       - name: Commit and push if anything changed
         run: |
