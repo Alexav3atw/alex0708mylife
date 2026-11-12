@@ -2,9 +2,11 @@
 """Investing-portfolio updater for alex0708mylife.
 
 Fetches the latest price and up to three recent headlines for each stock in
-the watchlist and rewrites investing/index.html from the template. Runs in
-GitHub Actions twice a day (see .github/workflows/investing.yml) and can also
-be run locally:  python scripts/update_investing.py
+the watchlist and rewrites investing/index.html from the template. Dutch
+headlines come from De Tijd and De Aandeelhouder (Google News site-searches),
+English ones from Google News. Runs in GitHub Actions six times a day, from
+08:00 to 22:00 CET (see .github/workflows/investing.yml), and can also be
+run locally:  python scripts/update_investing.py
 
 Design rules, mirroring the space-news updater:
 - Prices come from Yahoo Finance's chart API (free, no key); headlines come
@@ -18,6 +20,7 @@ Design rules, mirroring the space-news updater:
   and the page carries a Buffett-indicator section: Wilshire 5000 index /
   nominal US GDP, from Yahoo and FRED respectively (both keyless).
 """
+import calendar
 import html
 import json
 import re
@@ -35,6 +38,8 @@ CACHE = ROOT / "scripts" / "investing_cache.json"
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 MAX_NEWS = 3
+MAX_NL = 2  # at most this many Dutch headlines per stock; English fill the rest
+NEWS_MAX_AGE_DAYS = 30  # drop older items; Google's when:30d filter is unreliable
 MAX_SCAN = 30  # how many feed items to look at while hunting for 3 good ones
 SPARK_POINTS = 22
 SLEEP = 0.3  # politeness delay between requests
@@ -59,6 +64,7 @@ NEWS_JUNK = (
     "stock forum",
     "still be a bargain",
     "- quote ",
+    "grafieken en nieuws",  # De Tijd stock page, e.g. "Aker - Koersen, grafieken en nieuws | ISIN"
     "estimates –",
     "– euronext:", "– lse:", "– nasdaq:", "– nyse:",
     "– xetra:", "– tlv:", "– hkex:", "– six:", "– tsx:",
@@ -88,29 +94,31 @@ def title_matches(title, query):
     words = [w for w in re.split(r"\W+", query) if len(w) >= 2]
     if not words:
         return True
-    return words[0] in low
+    return words[0].lower() in low
 
 # (Yahoo symbol, display name, one-line description, [Google News queries in
-# English, tried in order]). List order = page order = alphabetical by name.
+# English, tried in order], [Dutch source queries: site:-searches on De Tijd
+# and De Aandeelhouder, tried before the English ones]). List order = page
+# order = alphabetical by name.
 STOCKS = [
-    ("AKER.OL", "Aker ASA", "Norwegian industrial investment group with holdings in energy, offshore services and marine industries.", ["Aker ASA", "Aker"]),
-    ("ASCE.BR", "Ascencio SA", "Belgian real-estate investment trust (SIR) focused on out-of-town retail: retail parks and supermarkets in Belgium and France.", ["+Ascencio shopping centres"]),
-    ("BPOST.BR", "bpost NV/SA", "Belgian postal operator: mail, parcels and e-commerce logistics in Belgium and abroad.", ["bpost", "bpost Belgium"]),
-    ("BRK-B", "Berkshire Hathaway Inc.", "Warren Buffett's US holding company: insurance, railroads, energy and a large portfolio of listed companies.", ["Berkshire Hathaway", "Warren Buffett"]),
-    ("BY6.VI", "BYD Company Limited", "Chinese maker of electric vehicles and batteries, among the world's largest EV producers.", ["BYD", "BYD Company"]),
-    ("AI", "C3.ai", "US enterprise software company offering AI applications for industry and government.", ["C3.ai", "C3 AI"]),
-    ("CPINV.BR", "Care Property Invest NV", "Belgian healthcare real-estate investor: care homes and housing with care in Belgium, the Netherlands, Spain and Ireland.", ["Care Property Invest"]),
-    ("GTT.PA", "Gaztransport & Technigaz SA", "French engineering company: cryogenic membrane containment systems for LNG carriers and tanks.", ["Gaztransport Technigaz", "+GTT LNG"]),
-    ("GBLB.BR", "Groupe Bruxelles Lambert SA", "Belgian investment holding company with stakes in listed companies such as SGS, adidas and Pernod Ricard.", ["Groupe Bruxelles Lambert", "GBL"]),
-    ("INRG.MI", "iShares Global Clean Energy Transition UCITS ETF", "Exchange-traded fund tracking a global index of companies active in the clean-energy transition.", ["iShares Global Clean Energy"]),
-    ("KBCA.BR", "KBC Ancora SA", "Belgian holding company whose core asset is its stake in KBC Group, the bank-insurer.", ["KBC Ancora", "KBC"]),
-    ("NN.AS", "NN Group N.V.", "Dutch insurance and asset-management group, best known for the Nationale-Nederlanden brand.", ["NN Group"]),
-    ("PNL.AS", "PostNL N.V.", "Dutch mail and parcel delivery company.", ["PostNL"]),
-    ("SHELL.AS", "Shell plc", "British oil and gas major active across the whole energy chain, investing in the energy transition.", ["Shell plc", "Shell"]),
-    ("SOF.BR", "Sofina S.A.", "Belgian family holding company (Boël) investing in private and listed growth companies across Europe, North America and Asia.", ["+Sofina invests", "+Sofina-backed", "Sofina Société Anonyme"]),
-    ("WEB.BR", "Warehouses Estates Belgium S.C.A.", "Belgian property investment company (SIR) owning mainly out-of-town retail plus semi-industrial property, mostly in Wallonia.", ["Warehouses Estates Belgium", "+Warehouses Estates"]),
-    ("3CP.DU", "Xiaomi Corp", "Chinese consumer-electronics company: smartphones, smart devices and a connected ecosystem.", ["Xiaomi"]),
-    ("XIOR.BR", "Xior Student Housing NV", "Belgian real-estate investment trust specialising in student housing across Europe.", ["Xior", "Xior Student Housing"]),
+    ("AKER.OL", "Aker ASA", "Norwegian industrial investment group with holdings in energy, offshore services and marine industries.", ["Aker ASA", "Aker"], ["+Aker site:tijd.be", "+Aker site:deaandeelhouder.nl"]),
+    ("ASCE.BR", "Ascencio SA", "Belgian real-estate investment trust (SIR) focused on out-of-town retail: retail parks and supermarkets in Belgium and France.", ["+Ascencio shopping centres"], ["+Ascencio site:tijd.be", "+Ascencio site:deaandeelhouder.nl"]),
+    ("BPOST.BR", "bpost NV/SA", "Belgian postal operator: mail, parcels and e-commerce logistics in Belgium and abroad.", ["bpost", "bpost Belgium"], ["+bpost site:tijd.be", "+bpost site:deaandeelhouder.nl"]),
+    ("BRK-B", "Berkshire Hathaway Inc.", "Warren Buffett's US holding company: insurance, railroads, energy and a large portfolio of listed companies.", ["Berkshire Hathaway", "Warren Buffett"], ["+Berkshire Hathaway site:tijd.be", "+Berkshire Hathaway site:deaandeelhouder.nl"]),
+    ("BY6.VI", "BYD Company Limited", "Chinese maker of electric vehicles and batteries, among the world's largest EV producers.", ["BYD", "BYD Company"], ["+BYD site:tijd.be", "+BYD site:deaandeelhouder.nl"]),
+    ("AI", "C3.ai", "US enterprise software company offering AI applications for industry and government.", ["C3.ai", "C3 AI"], ["+C3.ai site:tijd.be", "+C3.ai site:deaandeelhouder.nl"]),
+    ("CPINV.BR", "Care Property Invest NV", "Belgian healthcare real-estate investor: care homes and housing with care in Belgium, the Netherlands, Spain and Ireland.", ["Care Property Invest"], ["+Care Property Invest site:tijd.be", "+Care Property Invest site:deaandeelhouder.nl"]),
+    ("GTT.PA", "Gaztransport & Technigaz SA", "French engineering company: cryogenic membrane containment systems for LNG carriers and tanks.", ["Gaztransport Technigaz", "+GTT LNG"], ["+GTT site:tijd.be", "+GTT site:deaandeelhouder.nl"]),
+    ("GBLB.BR", "Groupe Bruxelles Lambert SA", "Belgian investment holding company with stakes in listed companies such as SGS, adidas and Pernod Ricard.", ["Groupe Bruxelles Lambert", "GBL"], ["+GBL site:tijd.be", "+GBL site:deaandeelhouder.nl"]),
+    ("INRG.MI", "iShares Global Clean Energy Transition UCITS ETF", "Exchange-traded fund tracking a global index of companies active in the clean-energy transition.", ["iShares Global Clean Energy"], ["+iShares Global Clean Energy site:tijd.be", "+iShares Global Clean Energy site:deaandeelhouder.nl"]),
+    ("KBCA.BR", "KBC Ancora SA", "Belgian holding company whose core asset is its stake in KBC Group, the bank-insurer.", ["KBC Ancora", "KBC"], ["+KBC Ancora site:tijd.be", "+KBC Ancora site:deaandeelhouder.nl"]),
+    ("NN.AS", "NN Group N.V.", "Dutch insurance and asset-management group, best known for the Nationale-Nederlanden brand.", ["NN Group"], ["+NN Group site:tijd.be", "+NN Group site:deaandeelhouder.nl"]),
+    ("PNL.AS", "PostNL N.V.", "Dutch mail and parcel delivery company.", ["PostNL"], ["+PostNL site:tijd.be", "+PostNL site:deaandeelhouder.nl"]),
+    ("SHELL.AS", "Shell plc", "British oil and gas major active across the whole energy chain, investing in the energy transition.", ["Shell plc", "Shell"], ["+Shell site:tijd.be", "+Shell site:deaandeelhouder.nl"]),
+    ("SOF.BR", "Sofina S.A.", "Belgian family holding company (Boël) investing in private and listed growth companies across Europe, North America and Asia.", ["+Sofina invests", "+Sofina-backed", "Sofina Société Anonyme"], ["+Sofina site:tijd.be", "+Sofina site:deaandeelhouder.nl"]),
+    ("WEB.BR", "Warehouses Estates Belgium S.C.A.", "Belgian property investment company (SIR) owning mainly out-of-town retail plus semi-industrial property, mostly in Wallonia.", ["Warehouses Estates Belgium", "+Warehouses Estates"], ["+Warehouses Estates site:tijd.be", "+Warehouses Estates site:deaandeelhouder.nl"]),
+    ("3CP.DU", "Xiaomi Corp", "Chinese consumer-electronics company: smartphones, smart devices and a connected ecosystem.", ["Xiaomi"], ["+Xiaomi site:tijd.be", "+Xiaomi site:deaandeelhouder.nl"]),
+    ("XIOR.BR", "Xior Student Housing NV", "Belgian real-estate investment trust specialising in student housing across Europe.", ["Xior", "Xior Student Housing"], ["+Xior site:tijd.be", "+Xior site:deaandeelhouder.nl"]),
 ]
 
 
@@ -166,10 +174,24 @@ def yahoo_history(symbol, span="3mo"):
         return None
 
 
+# Dutch financial press searched per stock: Google News site:-searches for
+# De Tijd (Belgian financial daily) and De Aandeelhouder (Dutch investor
+# site). These queries come first in each stock's query list.
+NL_DOMAINS = ("site:tijd.be", "site:deaandeelhouder.nl")
+
+
 def google_news(queries):
-    """Fetch up to MAX_NEWS headlines (title, link, short date) from Google
-    News RSS, trying each query in order until one yields results."""
+    """Collect up to MAX_NEWS headlines, trying each query in order.
+    Dutch site:-queries contribute at most MAX_NL headlines; the English
+    queries fill the remaining slots up to MAX_NEWS."""
+    items = []
+    seen = set()
     for query in queries:
+        if len(items) >= MAX_NEWS:
+            break
+        nl = any(d in query for d in NL_DOMAINS)
+        if nl and sum(1 for i in items if i.get("nl")) >= MAX_NL:
+            continue
         # A leading "+" marks an AND-query to send unquoted; anything else
         # with spaces is sent as an exact phrase so Google News does not
         # fuzzy-match wrong companies (e.g. "Sofina" also being a cosmetics
@@ -177,15 +199,14 @@ def google_news(queries):
         unquoted = query.startswith("+")
         q0 = query[1:] if unquoted else query
         q = q0 if unquoted or " " not in q0 else f'"{q0}"'
+        region = "&hl=nl-BE&gl=BE&ceid=BE:nl" if nl else "&hl=en-US&gl=US&ceid=US:en"
         url = ("https://news.google.com/rss/search?q=" + urllib.parse.quote(q)
-               + "&hl=en-US&gl=US&ceid=US:en&when:30d")
+               + region + "&when:30d")
         raw = http_get(url)
         if raw is None:
             continue
         try:
             root = ET.fromstring(raw)
-            items = []
-            seen = set()
             scanned = 0
             for item in root.findall(".//item"):
                 scanned += 1
@@ -193,27 +214,51 @@ def google_news(queries):
                     break
                 title = item.findtext("title") or ""
                 link = item.findtext("link") or ""
-                # Google News appends " - Source" to every title; drop it.
-                if " - " in title:
-                    title = title.rsplit(" - ", 1)[0]
+                # Google News appends " - Source" to every title; drop it (the
+                # separator can be a plain, en or em dash). Some De Tijd pages
+                # already end in their own outlet name ("Sofina - De Tijd - De
+                # Tijd"), so keep stripping while the tail matches <source>.
+                source_name = (item.findtext("source") or "").strip().lower()
+                while True:
+                    stripped = False
+                    for sep in (" - ", " – ", " — "):
+                        if sep in title:
+                            tail = title.rsplit(sep, 1)[1].strip().rstrip(".,;:!?").lower()
+                            if tail == source_name or not source_name:
+                                title = title.rsplit(sep, 1)[0]
+                                stripped = True
+                                break
+                    if not stripped:
+                        break
+                # Company dossier pages surface as "<Name> - De Tijd - De
+                # Tijd" and reduce to the bare name; a real headline always
+                # has words beyond the company name.
+                clean = re.sub(r"site:\S+", "", q0)
+                name_words = {w.lower() for w in re.split(r"\W+", clean) if w}
+                if name_words and all(w in name_words for w in title.lower().split()):
+                    continue
                 if (not title or not link or title in seen
                         or junk_title(title) or not title_matches(title, q0)):
                     continue
-                seen.add(title)
                 date = ""
                 pub = item.findtext("pubDate") or ""
                 try:
-                    date = time.strftime("%d %b", time.strptime(pub, "%a, %d %b %Y %H:%M:%S %Z"))
+                    ts = time.strptime(pub, "%a, %d %b %Y %H:%M:%S %Z")
+                    if time.time() - calendar.timegm(ts) > NEWS_MAX_AGE_DAYS * 86400:
+                        continue
+                    date = time.strftime("%d %b", ts)
                 except ValueError:
                     pass
-                items.append({"t": title, "l": link, "d": date})
+                if nl and sum(1 for i in items if i.get("nl")) >= MAX_NL:
+                    break
+                seen.add(title)
+                src = (item.findtext("source") or "") if nl else ""
+                items.append({"t": title, "l": link, "d": date, "nl": nl, "s": src})
                 if len(items) >= MAX_NEWS:
                     break
-            if items:
-                return items
         except Exception as exc:  # noqa: BLE001
             print(f"  news parse error for '{query}': {exc}")
-    return []
+    return items
 
 
 def load_cache():
@@ -547,7 +592,7 @@ def build_buffett(buff):
 def build_card(sym, entry):
     """Render one stock card from a fresh or cached entry."""
     name, tick, desc = sym, sym, ""
-    for s, n, d, _ in STOCKS:
+    for s, n, d, _, _ in STOCKS:
         if s == sym:
             name, tick, desc = n, s, d
             break
@@ -588,8 +633,9 @@ def build_card(sym, entry):
         lis = []
         for item in entry["news"]:
             date = f'<span class="n-date">{item["d"]}</span> ' if item.get("d") else ""
+            src = f'<span class="n-src">{html.escape(item["s"])}</span> ' if item.get("s") else ""
             lis.append(
-                f'      <li>{date}<a href="{item["l"]}" target="_blank" rel="noopener">'
+                f'      <li>{date}{src}<a href="{item["l"]}" target="_blank" rel="noopener">'
                 f'{html.escape(item["t"])}</a></li>'
             )
         news_html = '<ul class="sc-news">\n' + "\n".join(lis) + "\n    </ul>"
@@ -624,7 +670,7 @@ def main():
 
     when = time.strftime("%d %b %Y, %H:%M UTC", time.gmtime())
     data = {}
-    for sym, name, desc, queries in STOCKS:
+    for sym, name, desc, queries, nl_queries in STOCKS:
         time.sleep(SLEEP)
         print(f"  {sym} ({name}) ...")
         entry = None
@@ -644,7 +690,7 @@ def main():
             # very young listings simply show no average line.
             ma200 = (sum(c for _, c in closes[-200:]) / 200.0
                      if n >= 200 else None)
-            news = google_news(queries)
+            news = google_news(nl_queries + queries)
             entry = {
                 "price": hist["price"], "currency": hist["currency"],
                 "day": day, "wk": wk, "mo": mo, "ma200": ma200,
@@ -681,7 +727,7 @@ def main():
     save_cache(data)
 
     # Page rows in the fixed alphabetical order.
-    rows = [build_card(sym, data[sym]) for sym, _, _, _ in STOCKS if sym in data]
+    rows = [build_card(sym, data[sym]) for sym, _, _, _, _ in STOCKS if sym in data]
 
     # Summary tiles: best and worst mover of the day among fresh entries.
     # Only fresh stock entries count; "~buffett" has no "day" key and is
@@ -690,7 +736,7 @@ def main():
     best = max(movers, key=lambda d: d["day"]) if movers else None
     worst = min(movers, key=lambda d: d["day"]) if movers else None
     best_name = worst_name = ""
-    for s, n, _, _ in STOCKS:
+    for s, n, _, _, _ in STOCKS:
         if best and s in data and data[s] is best:
             best_name = n
         if worst and s in data and data[s] is worst:

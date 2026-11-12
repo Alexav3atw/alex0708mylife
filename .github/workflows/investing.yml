@@ -2,9 +2,10 @@ name: Update investing portfolio
 
 on:
   schedule:
-    # 05:00 and 15:00 UTC = 06:00 and 16:00 Belgian time in winter
-    # (one hour later in summer - GitHub cron schedules run on UTC only)
-    - cron: "0 5,15 * * *"
+    # Six runs a day: 07:00/10:00/13:00/16:00/19:00/21:00 UTC =
+    # 08:00/11:00/14:00/17:00/20:00/22:00 CET (Belgian winter time;
+    # one hour later in summer - GitHub cron schedules run on UTC only)
+    - cron: "0 7,10,13,16,19,21 * * *"
   workflow_dispatch:
 
 permissions:

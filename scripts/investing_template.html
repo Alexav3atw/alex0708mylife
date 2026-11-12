@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Investing - alex0708mylife</title>
-<meta name="description" content="My portfolio watchlist: latest prices, daily and longer trends, and recent headlines for each stock, updated twice a day automatically.">
+<meta name="description" content="My portfolio watchlist: latest prices, daily and longer trends, and recent headlines for each stock, updated six times a day automatically.">
 <link rel="stylesheet" href="../css/style.css">
 <style>
   /* investing chapter - stock cards on the site's dark theme */
@@ -80,6 +80,7 @@
   .sc-news a { color: var(--ink-2); }
   .sc-news a:hover { color: var(--blue); }
   .n-date { color: var(--ink-3); font-size: 0.75rem; margin-right: 6px; font-variant-numeric: tabular-nums; }
+  .n-src { color: var(--blue); font-size: 0.75rem; font-weight: 600; margin-right: 6px; }
   .sc-none { color: var(--ink-3); font-size: 0.8rem; border-top: 1px solid var(--border); padding-top: 8px; }
 </style>
 </head>
@@ -106,7 +107,7 @@
 </section>
 
 <article class="wrap">
-  <p class="lede">This page updates itself <strong>twice a day, automatically</strong> (around 06:00 and 16:00 Belgian time in winter; one hour later in summer). A script on GitHub's servers fetches the latest price and up to three recent headlines per stock &mdash; prices from Yahoo Finance, headlines from Google News, each linking to its source. Each card also shows the <strong>200-day moving average</strong>, and the <strong>Buffett indicator</strong> below tracks the overall US market's valuation. Last update: <strong>{{STAMP}}</strong>.</p>
+  <p class="lede">This page updates itself <strong>six times a day, automatically</strong> (08:00 to 22:00 Belgian time in winter; one hour later in summer). A script on GitHub's servers fetches the latest price and up to three recent headlines per stock &mdash; prices from Yahoo Finance, headlines from Google News, with De Tijd and De Aandeelhouder searched first, each linking to its source. Each card also shows the <strong>200-day moving average</strong>, and the <strong>Buffett indicator</strong> below tracks the overall US market's valuation. Last update: <strong>{{STAMP}}</strong>.</p>
 
   <div class="summary">
 {{SUMMARY}}
