@@ -35,6 +35,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "scripts" / "investing_template.html"
 OUTPUT = ROOT / "investing" / "index.html"
 CACHE = ROOT / "scripts" / "investing_cache.json"
+HOME = ROOT / "index.html"  # its investing card carries the last-update stamp
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 MAX_NEWS = 3
@@ -658,6 +659,23 @@ def build_card(sym, entry):
     </div>"""
 
 
+def update_home_stamp(stamp):
+    """Refresh the investing card's stamp on the home page. The span may be
+    missing (Alex edits index.html by hand) - then the old stamp just stays,
+    which is fine."""
+    try:
+        page = HOME.read_text(encoding="utf-8")
+        new = re.sub(r'(<span id="invest-last-update">)[^<]*(</span>)',
+                     lambda m: m.group(1) + stamp + m.group(2), page, count=1)
+        if new == page:
+            print(f"  no stamp span in {HOME} - home page stamp left as is")
+        else:
+            HOME.write_text(new, encoding="utf-8")
+            print(f"Stamped {HOME} with {stamp}")
+    except Exception as exc:  # noqa: BLE001
+        print(f"  home page stamp failed: {exc}")
+
+
 def main():
     print("Fetching portfolio data...")
     cache = load_cache()
@@ -766,6 +784,7 @@ def main():
                     .replace("{{STAMP}}", stamp))
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(page, encoding="utf-8")
+    update_home_stamp(stamp)
     print(f"Wrote {OUTPUT} with {len(rows)} stocks.")
 
 
