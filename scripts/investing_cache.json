@@ -1,11 +1,11 @@
 {
  "AKER.OL": {
-  "price": 1128.0,
+  "price": 1120.0,
   "currency": "NOK",
-  "day": 3.1078610603290757,
-  "wk": -2.083333333333337,
-  "mo": -13.761467889908252,
-  "ma200": 1202.29,
+  "day": 2.376599634369292,
+  "wk": -2.777777777777779,
+  "mo": -14.37308868501529,
+  "ma200": 1202.25,
   "closes": [
    813.0,
    816.0,
@@ -256,7 +256,7 @@
    1074.0,
    1084.0,
    1094.0,
-   1128.0
+   1120.0
   ],
   "news": [
    {
@@ -281,10 +281,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "ASCE.BR": {
   "price": 53.8,
@@ -551,18 +551,18 @@
    53.79999923706055
   ],
   "news": [],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "BPOST.BR": {
-  "price": 0.871,
+  "price": 0.87,
   "currency": "EUR",
-  "day": 1.5151538282681676,
-  "wk": -24.12892069280119,
-  "mo": -22.78369009812573,
-  "ma200": 1.5915750017762185,
+  "day": 1.3986037090623515,
+  "wk": -24.21602758511263,
+  "mo": -22.872341437380772,
+  "ma200": 1.5915700018405914,
   "closes": [
    1.7760000228881836,
    1.8020000457763672,
@@ -818,7 +818,7 @@
    0.8849999904632568,
    0.8759999871253967,
    0.8579999804496765,
-   0.8709999918937683
+   0.8700000047683716
   ],
   "news": [
    {
@@ -836,17 +836,17 @@
     "s": "De Tijd"
    },
    {
-    "t": "Bnode names Nicolas Baise CEO of Bpost unit, two executives to leave",
-    "l": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbkxITDFIbjlyMUFvY21mRmVub3FJMDJQMnNPR2xwVGtFY2dKMVpQSjE3S1VaTl91T1QzcTQ1Sk9TN01FeGxfSzJ2VndIY1JLUDNvQXhMTVJmN2FNaTlGYUg4YkM4bkU4MWlJMUctdXJmbU1sdkZ5UTY0ZHhWYmhjc2o1WTE0NC0tVmFRcnVqeXQ0b0dfXzBOWVhMdGRVQ3VrSGEtVWxSNVpxQ0lrc0doc1E3c1VFX25qYmFqUmFEN050Q2k1d1FmX3FRaGlMR0NRbDVR?oc=5",
-    "d": "23 Oct",
+    "t": "Bpost / : and National Lottery strengthen their partnership with 260,000 additional parcels per year",
+    "l": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbTc2UU5hNGdnazhxeFdTM000Sy1GeUhqZUhBQmx6U2R6MEM2VTVoUEg2SjVvVk9NLW9LTU0wSXJCRHFhLWdncVhjTnZlTXh4THA0b0VOaEp2QXFZdURiOThBUW5mSGNPcVo1RnE1amR6ZDhOTnVsV29sMVZjUzh0TXNFYXhCUjVDUDFzWWVKOUlsZnZ5cTN0SjNQZmRiYUg4Y2QtZC02dUEtMElEOUliZ0tkMVUxUks4WFlTX2dLQ2Vua0NjclFYLVd4ZVUzOHNjU1pwQ0p3SElTV1VzeEliRkUxcw?oc=5",
+    "d": "12 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "BRK-B": {
   "price": 588.24,
@@ -1131,18 +1131,18 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "BY6.VI": {
-  "price": 7.968,
+  "price": 7.78,
   "currency": "EUR",
-  "day": -2.9712603064067866,
-  "wk": -0.5869446447948179,
-  "mo": -6.011555225683452,
-  "ma200": 9.904340023994445,
+  "day": -4.3050443974684605,
+  "wk": -7.182053947337885,
+  "mo": -10.057797076177744,
+  "ma200": 9.889840023517609,
   "closes": [
    11.045000076293945,
    11.175000190734863,
@@ -1394,7 +1394,8 @@
    8.300000190734863,
    8.506999969482422,
    8.211999893188477,
-   8.130000114440918
+   8.130000114440918,
+   7.78000020980835
   ],
   "news": [
    {
@@ -1419,10 +1420,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "AI": {
   "price": 12.19,
@@ -1693,32 +1694,32 @@
     "s": ""
    },
    {
-    "t": "C3.ai xStock Price | AIX Price Today, Live Chart, USD converter, Market Capitalization",
-    "l": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE00WlMwSklNYkxPMHZPMFk5TDRqUnhWWHZfMXRKT3FqRTMxU1ZQYmVuamczTUlfQkFUTnM0eFlnd1BpS2NIY0RqNHZaSDJud0x5VjJ3?oc=5",
-    "d": "07 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
     "t": "C3.ai Q2 2027 Earnings Date and Estimates",
     "l": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9wSS02NGliVFIyS0xadnRrMG52MnltUlhUSVcyZGhnS0MwRkFoSWdwMkJaWDJlWndxVm9XYllWU2drUUFLRzZ3Q05SVWxnZEFvMDRubzdpTWRBYTRqNEFXcy1zNmprbnZuYktFUU9wXzFVZ2JNZ29VMg?oc=5",
     "d": "11 Nov",
     "nl": false,
     "s": ""
+   },
+   {
+    "t": "C3.ai xStock Price | AIX Price Today, Live Chart, USD converter, Market Capitalization",
+    "l": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE00WlMwSklNYkxPMHZPMFk5TDRqUnhWWHZfMXRKT3FqRTMxU1ZQYmVuamczTUlfQkFUTnM0eFlnd1BpS2NIY0RqNHZaSDJud0x5VjJ3?oc=5",
+    "d": "07 Nov",
+    "nl": false,
+    "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "CPINV.BR": {
-  "price": 12.84,
+  "price": 12.88,
   "currency": "EUR",
-  "day": 0.1560086244296599,
-  "wk": 1.743266790996989,
-  "mo": 5.592107842998861,
-  "ma200": 12.572900023460388,
+  "day": 0.4680211123562428,
+  "wk": 2.06022370237382,
+  "mo": 5.921054901838985,
+  "ma200": 12.573100023269653,
   "closes": [
    11.760000228881836,
    11.819999694824219,
@@ -1974,7 +1975,7 @@
    12.680000305175781,
    12.800000190734863,
    12.819999694824219,
-   12.84000015258789
+   12.880000114440918
   ],
   "news": [
    {
@@ -1985,18 +1986,18 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "GTT.PA": {
-  "price": 187.2,
+  "price": 186.9,
   "currency": "EUR",
-  "day": 1.189189189189177,
-  "wk": 1.7391287762185792,
-  "mo": -13.172545617479159,
-  "ma200": 199.62050003051758,
+  "day": 1.0270270270270387,
+  "wk": 1.5760836393936772,
+  "mo": -13.311693596730034,
+  "ma200": 199.6190000152588,
   "closes": [
    178.60000610351562,
    177.1999969482422,
@@ -2252,7 +2253,7 @@
    181.3000030517578,
    184.1999969482422,
    185.0,
-   187.1999969482422
+   186.89999389648438
   ],
   "news": [
    {
@@ -2277,10 +2278,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "GBLB.BR": {
   "price": 79.9,
@@ -2569,10 +2570,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "INRG.MI": {
   "price": 8.4,
@@ -2844,18 +2845,18 @@
     "s": "De Belegger"
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "KBCA.BR": {
-  "price": 95.15,
+  "price": 95.1,
   "currency": "EUR",
-  "day": -2.410256410256406,
-  "wk": 0.7944915125815966,
-  "mo": -1.2966804774006468,
-  "ma200": 84.15224967956543,
+  "day": -2.4615384615384706,
+  "wk": 0.7415221789485837,
+  "mo": -1.348550862220499,
+  "ma200": 84.15199966430664,
   "closes": [
    74.30000305175781,
    73.80000305175781,
@@ -3111,7 +3112,7 @@
    94.19999694824219,
    96.69999694824219,
    97.5,
-   95.1500015258789
+   95.0999984741211
   ],
   "news": [
    {
@@ -3122,32 +3123,32 @@
     "s": "De Tijd"
    },
    {
-    "t": "KBC Ancora SA (KB9.HA) Interactive Stock Chart",
-    "l": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBCTEhHOHZodDJqYzdyQXYya2RtaUVwVG5CMmJKVF9ndE9jSXBSZFR0VXliWll5ZFB2LUdSdjdDaWNmNmdHeFpqbF9VV3FrVm1GYjJsQ3QzODF0MFpI?oc=5",
-    "d": "26 Oct",
-    "nl": false,
-    "s": ""
-   },
-   {
     "t": "KBC Group: Third-quarter result of 1 142 million euros",
     "l": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTXQzZXJCdDlqdFQ5aThTV3dsdk4yazVJZTRFTkVzMVBJR25tOUF0WWh0QVpESFY0Y3hWc0JyODlzZzlPV2NEeTZaeFpiVXJQX19HNTRUTlpZcjZ4dGNvZDVOb2pFQS1zN0doeFNxV1d5LWFiU0hCOVdyQkNsZDhJby1qU216Zw?oc=5",
     "d": "12 Nov",
     "nl": false,
     "s": ""
+   },
+   {
+    "t": "KBC Group NV 2026 Q3 - Results - Earnings Call Presentation (OTCMKTS:KBCSY) 2026-11-12",
+    "l": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUHJ5c3FvMjNBVWRhYmFfeTVwSXEzTUFNUWlpQkFwQlZrS1AwODI3eUpxTi1nT3RMaENsYWJIRjlmY01IVDRkZG9lNGM0Y3JSNEJES2IxbmsxbU1ZNjVISHFHSUFwd2JCb0dXQ2NFLTZ0NEhSMUFkVVFpTTVZRXlOTmZpOWlRSEtjblR4X3BJMWVId2pham54SjRxTDg?oc=5",
+    "d": "12 Nov",
+    "nl": false,
+    "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "NN.AS": {
-  "price": 81.5,
+  "price": 81.46,
   "currency": "EUR",
-  "day": 0.8413762778315403,
-  "wk": 1.4943921577047936,
-  "mo": 7.067783840377673,
-  "ma200": 74.580599899292,
+  "day": 0.7918835778178757,
+  "wk": 1.444577818966164,
+  "mo": 7.015234032069717,
+  "ma200": 74.58039989471436,
   "closes": [
    61.880001068115234,
    62.34000015258789,
@@ -3403,7 +3404,7 @@
    79.18000030517578,
    80.45999908447266,
    80.81999969482422,
-   81.5
+   81.45999908447266
   ],
   "news": [
    {
@@ -3421,18 +3422,18 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "PNL.AS": {
-  "price": 0.827,
+  "price": 0.826,
   "currency": "EUR",
-  "day": 0.36407755374436856,
-  "wk": -0.2412514185761716,
-  "mo": -1.7814709689987884,
-  "ma200": 0.9693450006842613,
+  "day": 0.2427183305838465,
+  "wk": -0.42219357748086717,
+  "mo": -1.959619481685937,
+  "ma200": 0.9693375006318092,
   "closes": [
    0.9610000252723694,
    0.9700000286102295,
@@ -3688,7 +3689,7 @@
    0.815500020980835,
    0.8199999928474426,
    0.8240000009536743,
-   0.8270000219345093
+   0.8255000114440918
   ],
   "news": [
    {
@@ -3713,18 +3714,18 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "SHELL.AS": {
-  "price": 43.95,
+  "price": 43.945,
   "currency": "EUR",
-  "day": 0.941660716241377,
-  "wk": -3.7028892403804248,
-  "mo": -4.352557055043793,
-  "ma200": 38.84047506332397,
+  "day": 0.9301770233271389,
+  "wk": -3.7138468831983795,
+  "mo": -4.363440772197658,
+  "ma200": 38.8404500579834,
   "closes": [
    33.0,
    32.51499938964844,
@@ -3980,7 +3981,7 @@
    44.7400016784668,
    44.44499969482422,
    43.540000915527344,
-   43.95000076293945
+   43.94499969482422
   ],
   "news": [
    {
@@ -4005,18 +4006,18 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "SOF.BR": {
-  "price": 272.0,
+  "price": 270.6,
   "currency": "EUR",
-  "day": 0.5917182469050486,
-  "wk": -2.4390201186157423,
-  "mo": 7.594935409993342,
-  "ma200": 237.02599990844726,
+  "day": 0.07396675592834523,
+  "wk": -2.9411700317369727,
+  "mo": 7.041140362689591,
+  "ma200": 237.01899993896484,
   "closes": [
    244.60000610351562,
    242.39999389648438,
@@ -4272,7 +4273,7 @@
    267.6000061035156,
    270.3999938964844,
    270.3999938964844,
-   272.0
+   270.6000061035156
   ],
   "news": [
    {
@@ -4297,10 +4298,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "WEB.BR": {
   "price": 38.0,
@@ -4575,10 +4576,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "3CP.DU": {
   "price": 3.4145,
@@ -4865,18 +4866,18 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "XIOR.BR": {
-  "price": 25.8,
+  "price": 25.85,
   "currency": "EUR",
-  "day": -0.38609891893097714,
-  "wk": 1.775143387846878,
-  "mo": 6.832296664983084,
-  "ma200": 26.87324998855591,
+  "day": -0.1930487230374256,
+  "wk": 1.9723865580905109,
+  "mo": 7.0393407444820255,
+  "ma200": 26.873499994277953,
   "closes": [
    28.700000762939453,
    28.600000381469727,
@@ -5132,7 +5133,7 @@
    25.5,
    25.549999237060547,
    25.899999618530273,
-   25.799999237060547
+   25.850000381469727
   ],
   "news": [
    {
@@ -5157,10 +5158,10 @@
     "s": ""
    }
   ],
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false,
-  "usdeur": 1.1091,
-  "nokeur": 10.5956
+  "usdeur": 1.1093,
+  "nokeur": 10.5988
  },
  "~buffett": {
   "daily": [
@@ -6581,7 +6582,7 @@
   "avg": 136.25767741470898,
   "min": 60.99181510029633,
   "max": 233.5134257315735,
-  "when": "12 Nov 2026, 08:19 UTC",
+  "when": "12 Nov 2026, 08:33 UTC",
   "stale": false
  }
 }
