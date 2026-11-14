@@ -2,10 +2,10 @@
  "AKER.OL": {
   "price": 1092.0,
   "currency": "NOK",
-  "day": -1.4440433212996373,
-  "wk": 1.6759776536312776,
-  "mo": -13.33333333333333,
-  "ma200": 1204.445,
+  "day": -3.362831858407078,
+  "wk": 1.8382352941176405,
+  "mo": -14.108527131782944,
+  "ma200": 1203.445,
   "closes": [
    816.0,
    804.0,
@@ -256,8 +256,7 @@
    1084.0,
    1094.0,
    1130.0,
-   1108.0,
-   1092.0
+   1108.0
   ],
   "news": [
    {
@@ -282,18 +281,18 @@
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "ASCE.BR": {
   "price": 53.8,
   "currency": "EUR",
-  "day": 0.18621831590281968,
-  "wk": 1.7013188756551445,
-  "mo": 2.2813703379285233,
-  "ma200": 51.64024993896484,
+  "day": 0.37313718576963417,
+  "wk": 0.5617963080303712,
+  "mo": 0.5617963080303712,
+  "ma200": 51.65224994659424,
   "closes": [
    50.29999923706055,
    50.20000076293945,
@@ -549,22 +548,21 @@
    53.099998474121094,
    53.599998474121094,
    53.599998474121094,
-   53.70000076293945,
-   53.79999923706055
+   53.70000076293945
   ],
   "news": [],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "BPOST.BR": {
   "price": 0.827,
   "currency": "EUR",
-  "day": -4.171492085255779,
-  "wk": -6.5536688309326685,
-  "mo": -24.81818145365755,
-  "ma200": 1.578045001924038,
+  "day": -4.942529256631434,
+  "wk": -25.21664273183881,
+  "mo": -21.971065338765662,
+  "ma200": 1.5849350014328956,
   "closes": [
    1.8020000457763672,
    1.809999942779541,
@@ -820,8 +818,7 @@
    0.8759999871253967,
    0.8579999804496765,
    0.8700000047683716,
-   0.8629999756813049,
-   0.8270000219345093
+   0.8629999756813049
   ],
   "news": [
    {
@@ -846,10 +843,10 @@
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "BRK-B": {
   "price": 592.94,
@@ -1127,25 +1124,25 @@
     "s": "De Tijd"
    },
    {
-    "t": "Berkshire Hathaway (BRK.A) Stock Fair Value Edges Higher After Split Analyst Revisions",
-    "l": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVGJZYUROQlVVN3JGd0N3NVdBaTBZOU9yYUVQakVGa1Nua3pDS1J1N1U2TDJIZmFxUVV6Y1Y1bXNJTS1NcXhZblpGa2Z4RUZob3NWS2x2WDZua1IxNzlJa2trQVpFZkx3MnFCZ2dCZ2hVOFFMeC1rTmJKSWVvRWQ2cHoxcUd0d0MtT0R2NEVOWFREWk1rQlF2Ml9ETVJ1ZTQ?oc=5",
-    "d": "13 Nov",
+    "t": "Berkshire Hathaway Stock Trades at Record Levels. CEO Greg Abel Clearly Sees More Room to Run.",
+    "l": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRVNpQWloWHRILTZOZlJKU2p0Y3FkNDZzQ0JZVzdHR2JuTmlrc3VEelNqRDNiWXpPWXBFWFlrUmtiQmlWNDBESTRfdVR0b2ZpRjdqNEtoc2dhOE0xT0NIVnlVS1BCUVpxWEs3azdGWDFnUVBSYmJvVW5RalBHeTFfOEREczlhYW5OSUpBei1iaXB6Q2NyT1NqV2VpbkpNM2dmWm5wTzRB?oc=5",
+    "d": "12 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "BY6.VI": {
   "price": 7.539,
   "currency": "EUR",
-  "day": -2.885482559756214,
-  "wk": -11.37886374306689,
-  "mo": -9.157727094923407,
-  "ma200": 9.865290024280547,
+  "day": -5.384035374519147,
+  "wk": -6.469881529523514,
+  "mo": -7.19665004358514,
+  "ma200": 9.876895022392272,
   "closes": [
    11.175000190734863,
    11.130000114440918,
@@ -1398,8 +1395,7 @@
    8.211999893188477,
    8.130000114440918,
    7.9679999351501465,
-   7.763000011444092,
-   7.539000034332275
+   7.763000011444092
   ],
   "news": [
    {
@@ -1410,24 +1406,24 @@
     "s": "De Tijd"
    },
    {
-    "t": "BYD’s new 5-seat luxury SUV brings big screens, big range, and starts at about $40,000",
-    "l": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVW9kMXdGSFh1cjJuamhzUFh5QXp0RS0zTjk2a1p6Z2Q0Z0NuUExlR24xbDdUWjBWcnNoS05NanpMNG0wZDI3OVFCdnNiV2UwZUM5NEJBOHVxbzNnOC1jSG15c2VvZHRPNnJRbmVTWDVVc09RR1ZsdzlDUnRVVm82Q21nMmFfRGdLMWZxZThJdWN2WHF3MlpONVhWWm0?oc=5",
-    "d": "12 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
     "t": "BYD launches luxury brand Denza in India, taking on Mercedes, Toyota",
     "l": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSm5YUEdGS1YxQ0FsVGhGb3huMnZJZ1dCLXpPQzkxZGFMNXlCcXpXb0xULVJFS18yeFJjTG5iLXpTTDIyXzFzTC1HQ19SczRiejhCbHZhVzEwdVg1OGUxTWphNVhSZG02QVNSV0M1UnoyMWRCUExDTmkzUFpLaV8wQ2VKOEUxdVJIemgyRlVSVnF6TGFVQ2toaWJRVVU4VHJuVGJwZ3prTDlQazJGQ25US3VfOA?oc=5",
     "d": "13 Nov",
     "nl": false,
     "s": ""
+   },
+   {
+    "t": "Tesla vs. BYD: One Has a $14 Billion Problem, and the Other Has a Sky-High Valuation",
+    "l": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUmYyRGh2MjJHNERaWmdleEs3cXN1YUpXYVNXRmhDTkZRbnRzMnZWcFA0QVY1R09BZVFwcmc1NW5sY1Z0VFhvUEJVQV9PWHFLZTU5YzlBTzJVLVhYYWhUdEo1c0lhdUxVRUdsei1leVhZVnpoaUpQMWRnRTExUnc5NWN5ajhSMUZGck1vaw?oc=5",
+    "d": "13 Nov",
+    "nl": false,
+    "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "AI": {
   "price": 11.82,
@@ -1691,16 +1687,16 @@
   ],
   "news": [
    {
-    "t": "C3.ai CEO Thomas Siebel sells $5.05 million in stock By Investing.com",
-    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPT29hNXozb051SzlWeENLQVd5bS1GczB5Z3c1ZmFVNjZYSWhpTG9OSUFNQ01GYnB6QnpEb3h3WmRhcW93Sl9TcnpTNXZsbVJfazNyNzgwbG9ZcWo2Z3dyZUR6YnBPeTFpM0VwX29WUTNsd0VucV9xQkg4RnMwMGh0WS1XTzljSVNadnczT1pHemdHSjhQam40SGdrc0I0OU52TFFlUllmbFRUZ0RDZTEw?oc=5",
-    "d": "13 Nov",
+    "t": "Wix, Elastic, Atlassian, C3.ai, and Five9 stocks trade down, what you need to know",
+    "l": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNR0xzNGlBSExJYXBPVVZRM3k0b3c3LXRxMGRvanhrSG9qTGluYlpOYVctRWtmdGtsNHRybmRXYUduRFBaMFlJNjZMUWhhS2dBY2xVcDJpZW13anJOX2t6alBid3BkTG05bmZ5cEthTFhncWM5amNJXzZ4WV9nTTBsb0Q1VEJGODdEbHdzdjVUcW96STNrZVZ1RDk4VlpCelRGLW5oQzdWT1JnUGZ6a29MYkUyMFVuZl9ERFpEVzhsY2tpOHhYajlDSUtlRXFsc0FlRlhURA?oc=5",
+    "d": "10 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "Wix, Elastic, Atlassian, C3.ai, and Five9 stocks trade down, what you need to know",
-    "l": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNR0xzNGlBSExJYXBPVVZRM3k0b3c3LXRxMGRvanhrSG9qTGluYlpOYVctRWtmdGtsNHRybmRXYUduRFBaMFlJNjZMUWhhS2dBY2xVcDJpZW13anJOX2t6alBid3BkTG05bmZ5cEthTFhncWM5amNJXzZ4WV9nTTBsb0Q1VEJGODdEbHdzdjVUcW96STNrZVZ1RDk4VlpCelRGLW5oQzdWT1JnUGZ6a29MYkUyMFVuZl9ERFpEVzhsY2tpOHhYajlDSUtlRXFsc0FlRlhURA?oc=5",
-    "d": "10 Nov",
+    "t": "C3.ai CEO Thomas Siebel sells $5.05 million in stock By Investing.com",
+    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPT29hNXozb051SzlWeENLQVd5bS1GczB5Z3c1ZmFVNjZYSWhpTG9OSUFNQ01GYnB6QnpEb3h3WmRhcW93Sl9TcnpTNXZsbVJfazNyNzgwbG9ZcWo2Z3dyZUR6YnBPeTFpM0VwX29WUTNsd0VucV9xQkg4RnMwMGh0WS1XTzljSVNadnczT1pHemdHSjhQam40SGdrc0I0OU52TFFlUllmbFRUZ0RDZTEw?oc=5",
+    "d": "13 Nov",
     "nl": false,
     "s": ""
    },
@@ -1712,18 +1708,18 @@
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "CPINV.BR": {
   "price": 12.92,
   "currency": "EUR",
-  "day": 0.9374984959140686,
-  "wk": 1.8927426288799065,
-  "mo": 6.07553163035397,
-  "ma200": 12.578100023269654,
+  "day": 0.6230517637181299,
+  "wk": 0.6289302046118772,
+  "mo": 4.234531507093564,
+  "ma200": 12.575400023460388,
   "closes": [
    11.819999694824219,
    11.739999771118164,
@@ -1979,8 +1975,7 @@
    12.800000190734863,
    12.819999694824219,
    12.84000015258789,
-   12.800000190734863,
-   12.920000076293945
+   12.800000190734863
   ],
   "news": [
    {
@@ -1998,18 +1993,18 @@
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "GTT.PA": {
   "price": 186.2,
   "currency": "EUR",
-  "day": -0.3212007719248122,
-  "wk": 2.7026992906809433,
-  "mo": -10.048310653023096,
-  "ma200": 199.67350006103516,
+  "day": -0.42780748663102663,
+  "wk": 2.7502749813356875,
+  "mo": -12.382736526442539,
+  "ma200": 199.65450004577636,
   "closes": [
    177.1999969482422,
    177.10000610351562,
@@ -2265,8 +2260,7 @@
    184.1999969482422,
    185.0,
    187.0,
-   186.8000030517578,
-   186.1999969482422
+   186.8000030517578
   ],
   "news": [
    {
@@ -2291,18 +2285,18 @@
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "GBLB.BR": {
   "price": 80.3,
   "currency": "EUR",
-  "day": -0.12438000495151869,
-  "wk": 1.581277611313392,
-  "mo": 11.838439608244421,
-  "ma200": 78.02899997711182,
+  "day": 1.1334993159008322,
+  "wk": 1.6434931439134326,
+  "mo": 13.239438768843526,
+  "ma200": 78.03474994659423,
   "closes": [
    74.6500015258789,
    74.4000015258789,
@@ -2558,8 +2552,7 @@
    79.69999694824219,
    79.44999694824219,
    79.4000015258789,
-   80.4000015258789,
-   80.30000305175781
+   80.4000015258789
   ],
   "news": [
    {
@@ -2584,18 +2577,18 @@
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "INRG.MI": {
   "price": 8.215,
   "currency": "EUR",
-  "day": -1.840129368780219,
-  "wk": -3.545849932401879,
-  "mo": -3.0564057732296646,
-  "ma200": 9.339090011119843,
+  "day": -2.573531262974893,
+  "wk": 1.2215867212726383,
+  "mo": -3.337948229958221,
+  "ma200": 9.342160012722015,
   "closes": [
    8.34000015258789,
    8.45300006866455,
@@ -2848,8 +2841,7 @@
    8.458000183105469,
    8.343000411987305,
    8.432000160217285,
-   8.369000434875488,
-   8.21500015258789
+   8.369000434875488
   ],
   "news": [
    {
@@ -2860,18 +2852,18 @@
     "s": "De Belegger"
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "KBCA.BR": {
   "price": 96.1,
   "currency": "EUR",
-  "day": 0.6282722513089034,
-  "wk": 2.016986823176703,
-  "mo": 0.20854738796662886,
-  "ma200": 84.31749969482422,
+  "day": -1.3347038044280835,
+  "wk": 1.5957446808510634,
+  "mo": -0.9336115265903833,
+  "ma200": 84.23749969482422,
   "closes": [
    73.80000305175781,
    72.4000015258789,
@@ -3127,17 +3119,9 @@
    96.69999694824219,
    97.5,
    97.4000015258789,
-   95.5,
-   96.0999984741211
+   95.5
   ],
   "news": [
-   {
-    "t": "\"Main Theek Hoon\": Amitabh Bachchan Makes Comeback On KBC 18 Set Amid Health Concerns",
-    "l": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUjNydHp0eXVfUUpUVWxNZzBoUnIyQk4xYW5UbV80MnNLY2FWUTRpQkpJNkx2LTFEWjhTa3paVDRyb3hnWUFzOUEzS3djZnN0V2VPVm1GWWY0bTRqTTQxOC1haE1YRW44MjJkM2pqSDNBNU8yeW42b29BNWVLQ0wwOXE0amg3VE9KZHA5RWNQXy14M19wSF9QVkJRVXlxUXAwRnBNZ2Ztd2xhLXpPdTA0U24xVHhsSWk0bHlvdUlpbHNZbmg2UG5V0gHPAUFVX3lxTE9pNjhmRnhSeVlRVHJKYXQ2WFFlV2tWMWs5c2djYlNnOUlfbVpzODRBU3FxSmNjcW9uUzdKQzhEaktKR1hPbTBiU25sR2k2N2FqY01HVHZtVS02dWlVY3NjcG1waVNWYlVXY1hobUFHMnRtV2VCTnNRT095RGozY3VVUWF3em4xdlpiZnRSTGZwNnBIRmpJRFZEYllZd1A5a1Z3clZjeDRHTHZYdHU2b0pPMDl1OU5nWm0yZXFrWHNILTZ2bU04OGNoZU54d2FjTQ?oc=5",
-    "d": "13 Nov",
-    "nl": false,
-    "s": ""
-   },
    {
     "t": "KBC honors five for distinguished Christian service",
     "l": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNa3k0MjdDUEMxbWl0UGJIY3lRM3RoNDRhVlRGQU14cWFfT2JfZS1rOW1LdU1SSEFYNTdsYVFxbjJSR2NkVENwZWhOTEk1b0ctSW84cldoeTB6LVJOMFd1NVY2OTJxSjRCdGRIWWhsYmNoeldMMUVUbFpLY1ZoNU9Dd1NtUEtVanozZ24tdFNQTWRiYVdKQjVScHd1UnlrZWZJT3BjRzY5Z0syWndZdnZNT1hXTHQ0enpaUmk1d2FlaXRjdTFwVkFuTDVyTzJwdDg5eHp1RVJFa2o1M0RC?oc=5",
@@ -3146,25 +3130,32 @@
     "s": ""
    },
    {
-    "t": "Amitabh Bachchan addresses health concerns after missing ‘KBC 18’ shoot",
-    "l": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNV3h2NTNVRFYwSC1UOEhqSXgxSmNGTkxKdXQwV01BdHZGM1R5OVIxX25fZmNnM0luS1NBRHFvZVRaMzcxMDVEeU1LWUtLS0hwNGQ5d0x5eUZEalZzekNyVHNGZjBpS1pMdFNfOHh6VVRQOGs0M2plQ2FKZ284Y3dOelEtWnRreUdvZXFyUE9rd21RcExSbU9QWDNtaTJ2RElhaHdEZ2F2R0JOZTRSaFhiMWV2bE5qMnBMbHZabjVEM1dsRVlCVXc?oc=5",
+    "t": "\"Main Theek Hoon\": Amitabh Bachchan Makes Comeback On KBC 18 Set Amid Health Concerns",
+    "l": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUjNydHp0eXVfUUpUVWxNZzBoUnIyQk4xYW5UbV80MnNLY2FWUTRpQkpJNkx2LTFEWjhTa3paVDRyb3hnWUFzOUEzS3djZnN0V2VPVm1GWWY0bTRqTTQxOC1haE1YRW44MjJkM2pqSDNBNU8yeW42b29BNWVLQ0wwOXE0amg3VE9KZHA5RWNQXy14M19wSF9QVkJRVXlxUXAwRnBNZ2Ztd2xhLXpPdTA0U24xVHhsSWk0bHlvdUlpbHNZbmg2UG5V0gHPAUFVX3lxTE9pNjhmRnhSeVlRVHJKYXQ2WFFlV2tWMWs5c2djYlNnOUlfbVpzODRBU3FxSmNjcW9uUzdKQzhEaktKR1hPbTBiU25sR2k2N2FqY01HVHZtVS02dWlVY3NjcG1waVNWYlVXY1hobUFHMnRtV2VCTnNRT095RGozY3VVUWF3em4xdlpiZnRSTGZwNnBIRmpJRFZEYllZd1A5a1Z3clZjeDRHTHZYdHU2b0pPMDl1OU5nWm0yZXFrWHNILTZ2bU04OGNoZU54d2FjTQ?oc=5",
     "d": "13 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
+    "t": "KBC Group: Third-quarter result of 1 142 million euros",
+    "l": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTXQzZXJCdDlqdFQ5aThTV3dsdk4yazVJZTRFTkVzMVBJR25tOUF0WWh0QVpESFY0Y3hWc0JyODlzZzlPV2NEeTZaeFpiVXJQX19HNTRUTlpZcjZ4dGNvZDVOb2pFQS1zN0doeFNxV1d5LWFiU0hCOVdyQkNsZDhJby1qU216Zw?oc=5",
+    "d": "12 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "NN.AS": {
   "price": 81.34,
   "currency": "EUR",
-  "day": 0.09844679013841784,
-  "wk": 2.727956585488478,
-  "mo": 7.365356447094995,
-  "ma200": 74.71199989318848,
+  "day": 0.2464883064530632,
+  "wk": 0.8939672367998641,
+  "mo": 6.752495013380999,
+  "ma200": 74.64599990844727,
   "closes": [
    62.34000015258789,
    61.540000915527344,
@@ -3420,8 +3411,7 @@
    80.45999908447266,
    80.81999969482422,
    81.13999938964844,
-   81.26000213623047,
-   81.33999633789062
+   81.26000213623047
   ],
   "news": [
    {
@@ -3439,18 +3429,18 @@
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "PNL.AS": {
   "price": 0.821,
   "currency": "EUR",
-  "day": 2.4393618902607273e-06,
-  "wk": 0.6744278173517859,
-  "mo": -2.2619040945624835,
-  "ma200": 0.9656300002336502,
+  "day": -0.8454117129604533,
+  "wk": 0.8599470997800784,
+  "mo": -1.5587543858370245,
+  "ma200": 0.9675250005722046,
   "closes": [
    0.9700000286102295,
    0.968999981880188,
@@ -3706,7 +3696,6 @@
    0.8199999928474426,
    0.8240000009536743,
    0.828000009059906,
-   0.8209999799728394,
    0.8209999799728394
   ],
   "news": [
@@ -3732,18 +3721,18 @@
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "SHELL.AS": {
   "price": 44.77,
   "currency": "EUR",
-  "day": 1.4732572163447921,
-  "wk": 0.06705135934608197,
-  "mo": -3.4609154549570365,
-  "ma200": 38.962525062561035,
+  "day": 1.4502581382151325,
+  "wk": -2.9049289936561307,
+  "mo": -5.026375647689663,
+  "ma200": 38.90085006713867,
   "closes": [
    32.51499938964844,
    32.505001068115234,
@@ -3999,8 +3988,7 @@
    44.44499969482422,
    43.540000915527344,
    44.130001068115234,
-   44.119998931884766,
-   44.77000045776367
+   44.119998931884766
   ],
   "news": [
    {
@@ -4018,25 +4006,25 @@
     "s": "De Tijd"
    },
    {
-    "t": "THE SHELL LEAKS FILES — 13 NOVEMBER 2026",
-    "l": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUlFTWkxzbVBnOTJkQk9oaUFwcVBQblo5ZkJYZmg5WlpyZDRCX3FvWHpnWkZxU3Ywd1k1UzBzUWRfUjE5dnc0Q1p1RklWYWRDbGVEbEc4MjNzOXJpYXpoekdWNkt3VEo5aWxJTWhaczZXcWp6Y2F6RmZKcHY0aFhKZUMwejFOM1Y3?oc=5",
-    "d": "13 Nov",
+    "t": "Shell's Latest LNG Move Has Me Rethinking My Oil Major Pecking Order. Here's Where I'd Rank Exxon and Chevron Now.",
+    "l": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUHRoR0hsWGZIemNhQVpFUmN3ZFJMc3VsM24td0ZOTkNsUFpnUzNsSVdOWmJNSUxrYWplbUdZNGY5NGkwc2dFdmU4bzMzam92MVVSajJIZnVpRTNnZFkxTEZmOWdGQlRlZXNkSnhRZFhjYXNOSFJsX0dtRWFvc0pTbE9YMnI0RHI1MzVDci1ReUlWd20y?oc=5",
+    "d": "20 Oct",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "SOF.BR": {
   "price": 270.0,
   "currency": "EUR",
-  "day": 0.07413351226122078,
-  "wk": 0.8968586852557747,
-  "mo": 4.408350203952072,
-  "ma200": 237.31099990844726,
+  "day": -0.2217317405699193,
+  "wk": -1.1721656436011862,
+  "mo": 5.720999615720079,
+  "ma200": 237.1479998779297,
   "closes": [
    242.39999389648438,
    241.0,
@@ -4292,8 +4280,7 @@
    270.3999938964844,
    270.3999938964844,
    270.6000061035156,
-   269.79998779296875,
-   270.0
+   269.79998779296875
   ],
   "news": [
    {
@@ -4318,18 +4305,18 @@
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "WEB.BR": {
   "price": 37.7,
   "currency": "EUR",
-  "day": 0.265961515790325,
-  "wk": 1.344085993939359,
-  "mo": 1.617256909692033,
-  "ma200": 39.41249998092651,
+  "day": -0.7894736842105177,
+  "wk": 2.1739110153428554,
+  "mo": 1.3477089503083794,
+  "ma200": 39.42799997329712,
   "closes": [
    36.599998474121094,
    37.599998474121094,
@@ -4585,8 +4572,7 @@
    37.79999923706055,
    38.0,
    38.0,
-   37.599998474121094,
-   37.70000076293945
+   37.599998474121094
   ],
   "news": [
    {
@@ -4611,18 +4597,18 @@
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "3CP.DU": {
   "price": 3.3295,
   "currency": "EUR",
-  "day": -2.28906905224715,
-  "wk": -3.39475122182169,
-  "mo": 8.488105367805133,
-  "ma200": 3.1976450085639954,
+  "day": -1.1871174573986454,
+  "wk": -1.317695891964421,
+  "mo": 15.52805328547986,
+  "ma200": 3.1994650089740753,
   "closes": [
    4.700500011444092,
    4.667500019073486,
@@ -4876,8 +4862,7 @@
    3.4035000801086426,
    3.440500020980835,
    3.369499921798706,
-   3.4075000286102295,
-   3.3294999599456787
+   3.4075000286102295
   ],
   "news": [
    {
@@ -4895,25 +4880,25 @@
     "s": ""
    },
    {
-    "t": "Xiaomi confirms Google Maps, Spotify and YouTube Music for the 18 Pro rear display - GSMArena.com news",
-    "l": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQkVoNEw3Q1RXQ25sV0Q4ZV9qcVRVa0ZLMzlyY3dVUzJ6YmdCYXdTVDhvRnh5UkhoME5XNF9aR1FYYkhnTTllYnNKcFgwVUFKeEdIODhqc0lDcmlsZTh3ZTZHNUtvM1JOM0FONkpseVczTGFWYTJ6UmpGdnliYVFNbHJnbEJ6Tk9sdy1CUkYtUUp0ZUM2UTBwMnVwaVZrOTI4QXZHVmx4S3pTcmxkaGg0cmZxS0VlMlhicVh5WGZR0gG6AUFVX3lxTE1WOGU3OXIzV1owbURnWlNTaFBMY1RMdzdMMWpGMWxUWnVKMk1VMHdTNE9FbDZFbHd3M1hlLWZXZ0lJZmNTakRkMmZnUDlIdWhySXJUUlhONTlTYXRuRlZpcnVqS0RLejBpNlhQSDJiYjh2b0hiUnp1NEFyUl9IeC1BTEh5Q3JLaHVOVFpiVTFCSWttd2dqNGpCYlVKMW5mZ1NTRTZqSEhXVUtwVmJ6YWo3WDA5V3poNFpSZw?oc=5",
-    "d": "12 Nov",
+    "t": "Xiaomi 18 Pro gets one step closer to launching in India - GSMArena.com news",
+    "l": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMGVOeTNzX2xsZ2Z2TkhxUzU5UllrV1BPX1dqZWZCRmUzYndVbEVBMHNuRnhHd3gyWWJKRGxPNk0wcjlSZ2o5QUE0dW03ZVNIb0dHVkEzU1NhZU9sQjFwZHJCa293QXpQWlA1N1lacFhpNm1tR0VPTElzbzU0Z2dWZXg2eHhGdk96bkNmb0Jsd3JmVXY4VXV3MW5rN0vSAZgBQVVfeXFMUGpwcE9JcmV1RFkweWNIRTE4OGlKenB2eWNZblh2Vmx5eEFnVnpja29UZGZiYk1ua2Jaak43emRKdkJEcmFySm1rT0pqb0sySHN1dTlmWFMyMlVGOS1BcXE3RnJBMF9LeHY4MWV2b3ljZkNRQWdRYlZJNmFOM3Z6VWdTN1RIc2djZENha3pLeVlCMjJDUUJPekw?oc=5",
+    "d": "13 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "XIOR.BR": {
   "price": 25.75,
   "currency": "EUR",
-  "day": 0.3898650407678117,
-  "wk": 0.9803921568627416,
-  "mo": 9.110167727871787,
-  "ma200": 26.843999996185303,
+  "day": 0.5859360011527537,
+  "wk": 0.0,
+  "mo": 6.431532002183404,
+  "ma200": 26.857999992370605,
   "closes": [
    28.600000381469727,
    28.350000381469727,
@@ -5169,8 +5154,7 @@
    25.549999237060547,
    25.899999618530273,
    25.600000381469727,
-   25.649999618530273,
-   25.75
+   25.649999618530273
   ],
   "news": [
    {
@@ -5195,17 +5179,13 @@
     "s": ""
    }
   ],
-  "when": "13 Nov 2026, 21:48 UTC",
+  "when": "14 Nov 2026, 05:58 UTC",
   "stale": false,
-  "usdeur": 1.1024,
-  "nokeur": 10.5436
+  "usdeur": 1.1028,
+  "nokeur": 10.5485
  },
  "~buffett": {
   "daily": [
-   [
-    "2025-11-06",
-    212.88879947739727
-   ],
    [
     "2025-11-07",
     213.36741950891857
@@ -6209,201 +6189,13 @@
    [
     "2026-11-12",
     229.34933144271642
+   ],
+   [
+    "2026-11-13",
+    228.43029276005637
    ]
   ],
   "monthly": [
-   [
-    "2021-12-31",
-    195.22535240736588
-   ],
-   [
-    "2022-01-31",
-    179.79605357753084
-   ],
-   [
-    "2022-02-28",
-    175.214667278992
-   ],
-   [
-    "2022-03-31",
-    180.5490353084831
-   ],
-   [
-    "2022-04-29",
-    159.8183331063595
-   ],
-   [
-    "2022-05-31",
-    158.81687662424338
-   ],
-   [
-    "2022-06-30",
-    145.20746022813174
-   ],
-   [
-    "2022-07-29",
-    156.1381969551676
-   ],
-   [
-    "2022-08-31",
-    150.2194704924259
-   ],
-   [
-    "2022-09-30",
-    136.07903147682657
-   ],
-   [
-    "2022-10-31",
-    144.55191930325844
-   ],
-   [
-    "2022-11-30",
-    151.46128581943526
-   ],
-   [
-    "2022-12-30",
-    142.20428410860387
-   ],
-   [
-    "2023-01-31",
-    149.49722607585062
-   ],
-   [
-    "2023-02-28",
-    145.750772325069
-   ],
-   [
-    "2023-03-31",
-    149.43646982638336
-   ],
-   [
-    "2023-04-28",
-    149.13983669691117
-   ],
-   [
-    "2023-05-31",
-    152.73223736717523
-   ],
-   [
-    "2023-06-30",
-    163.01202743524578
-   ],
-   [
-    "2023-07-31",
-    165.51512893799438
-   ],
-   [
-    "2023-08-31",
-    162.01673974537943
-   ],
-   [
-    "2023-09-29",
-    154.1093624082598
-   ],
-   [
-    "2023-10-31",
-    147.76383172226295
-   ],
-   [
-    "2023-11-30",
-    161.25774658795476
-   ],
-   [
-    "2023-12-29",
-    169.66996808652212
-   ],
-   [
-    "2024-01-31",
-    169.3798755884681
-   ],
-   [
-    "2024-02-29",
-    178.24085725250112
-   ],
-   [
-    "2024-03-28",
-    183.77893687608298
-   ],
-   [
-    "2024-04-30",
-    172.9977805406595
-   ],
-   [
-    "2024-05-31",
-    180.87635428022284
-   ],
-   [
-    "2024-06-28",
-    186.33300460483585
-   ],
-   [
-    "2024-07-31",
-    187.46401493463122
-   ],
-   [
-    "2024-08-30",
-    191.26742343630275
-   ],
-   [
-    "2024-09-30",
-    194.92844422833053
-   ],
-   [
-    "2024-10-31",
-    191.04422173609547
-   ],
-   [
-    "2024-11-29",
-    203.41346332631375
-   ],
-   [
-    "2024-12-31",
-    197.02940936519866
-   ],
-   [
-    "2025-01-31",
-    201.4292772070072
-   ],
-   [
-    "2025-02-28",
-    197.28393934650427
-   ],
-   [
-    "2025-03-31",
-    185.3819089062736
-   ],
-   [
-    "2025-04-30",
-    181.26514111542429
-   ],
-   [
-    "2025-05-30",
-    192.61003565471094
-   ],
-   [
-    "2025-06-30",
-    202.22082265595355
-   ],
-   [
-    "2025-07-31",
-    202.982353221612
-   ],
-   [
-    "2025-08-29",
-    207.4482614017681
-   ],
-   [
-    "2025-09-30",
-    214.38995127498467
-   ],
-   [
-    "2025-10-31",
-    216.88378066501534
-   ],
-   [
-    "2025-11-28",
-    217.1991360165235
-   ],
    [
     "2025-12-31",
     216.79342018279968
@@ -6449,177 +6241,12 @@
     228.7683764946515
    ],
    [
-    "2026-11-12",
-    229.34933144271642
+    "2026-11-13",
+    228.43029276005637
    ]
   ],
-  "six": [
-   [
-    "2007-06-30",
-    106.66526916906875
-   ],
-   [
-    "2007-09-30",
-    101.7540581287901
-   ],
-   [
-    "2008-06-30",
-    79.88462943153505
-   ],
-   [
-    "2008-09-30",
-    60.99181510029633
-   ],
-   [
-    "2009-06-30",
-    76.10688227049816
-   ],
-   [
-    "2009-09-30",
-    79.9259773610858
-   ],
-   [
-    "2010-06-30",
-    80.24315893743827
-   ],
-   [
-    "2010-09-30",
-    88.2342282303655
-   ],
-   [
-    "2011-06-30",
-    76.11795206250166
-   ],
-   [
-    "2011-09-30",
-    84.29108730096091
-   ],
-   [
-    "2012-06-30",
-    92.82429135868722
-   ],
-   [
-    "2012-09-30",
-    91.88414252888609
-   ],
-   [
-    "2013-06-30",
-    107.49456719167499
-   ],
-   [
-    "2013-09-30",
-    116.23344104665267
-   ],
-   [
-    "2014-06-30",
-    118.50587354528135
-   ],
-   [
-    "2014-09-30",
-    121.71187301690362
-   ],
-   [
-    "2015-06-30",
-    110.06300346259563
-   ],
-   [
-    "2015-09-30",
-    115.03254861825798
-   ],
-   [
-    "2016-06-30",
-    120.6553520458748
-   ],
-   [
-    "2016-09-30",
-    123.9946382027413
-   ],
-   [
-    "2017-06-30",
-    134.95458424618428
-   ],
-   [
-    "2017-09-30",
-    141.1402099209119
-   ],
-   [
-    "2018-06-30",
-    147.02856857120813
-   ],
-   [
-    "2018-09-30",
-    123.8042933540894
-   ],
-   [
-    "2019-06-30",
-    141.84506900559765
-   ],
-   [
-    "2019-09-30",
-    151.43196266792762
-   ],
-   [
-    "2020-06-30",
-    172.7616334046337
-   ],
-   [
-    "2020-09-30",
-    181.7907562230248
-   ],
-   [
-    "2021-06-30",
-    191.20343421591812
-   ],
-   [
-    "2021-09-30",
-    201.9312270051424
-   ],
-   [
-    "2022-06-30",
-    138.5304142511798
-   ],
-   [
-    "2022-09-30",
-    144.57338409642483
-   ],
-   [
-    "2023-06-30",
-    157.0764094884765
-   ],
-   [
-    "2023-09-30",
-    172.0899509601828
-   ],
-   [
-    "2024-06-30",
-    197.16420615524996
-   ],
-   [
-    "2024-09-30",
-    199.43692157985237
-   ],
-   [
-    "2025-06-30",
-    218.24180218499575
-   ],
-   [
-    "2025-09-30",
-    218.75433363898384
-   ],
-   [
-    "2026-06-30",
-    233.5134257315735
-   ],
-   [
-    "2026-11-12",
-    229.34933144271642
-   ]
-  ],
-  "cur": 229.34933144271642,
-  "avg": 136.23091767885924,
-  "min": 60.99181510029633,
-  "max": 233.5134257315735,
-  "when": "13 Nov 2026, 21:49 UTC",
+  "cur": 228.43029276005637,
+  "when": "14 Nov 2026, 05:59 UTC",
   "stale": false
  }
 }

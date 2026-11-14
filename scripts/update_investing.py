@@ -346,9 +346,10 @@ def sparkline(closes, change):
 
 W5000 = "^W5000"  # Wilshire 5000 Full Cap index on Yahoo
 GDP_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDP"
-DAILY_SPAN_DAYS = 252  # ~12 months of sessions for the daily chart
-MONTHLY_SPAN = 60      # last 60 month-ends for the monthly chart
-SIX_SPAN = 40          # last 40 half-years = 20 years for the six-monthly chart
+DAILY_SPAN_DAYS = 252   # ~12 months of sessions: the 12-month chart and stats
+WEEK_SPAN_DAYS = 7      # last 7 sessions for the 7-day chart
+THIRTY_SPAN_DAYS = 30   # last 30 sessions for the 30-day chart
+MONTHLY_SPAN = 12       # last 12 month-ends for the data table and stats
 
 
 def fred_gdp():
@@ -383,18 +384,13 @@ def fred_gdp():
 
 
 def w5000_series():
-    """Wilshire 5000 closes: the daily 5-year series (for the daily and
-    monthly charts) and the longest series Yahoo serves (for the six-monthly
-    chart - on this index range=max comes back as ~quarterly points)."""
+    """Wilshire 5000 closes: the daily 5-year series, the only series the
+    charts need since the long-horizon (5y/20y) views are gone."""
     daily = None
     hist = yahoo_history(W5000, "5y")
     if hist and len(hist["closes"]) > 250:
         daily = hist["closes"]
-    longest = None
-    hist = yahoo_history(W5000, "max")
-    if hist and len(hist["closes"]) > 40:
-        longest = hist["closes"]
-    return daily, longest
+    return daily
 
 
 def buffett_series(w5000, gdp):
@@ -427,28 +423,24 @@ def group_last(points, keyfn):
 def fetch_buffett(cache):
     """Compute the Buffett-indicator payload, or fall back to the cache.
 
-    Returns (buff, stale); buff holds the three point series plus 20-year
-    stats, stale says whether the numbers are yesterday's cached ones."""
+    Returns (buff, stale); buff holds the daily 12-month series plus the
+    last 12 month-ends, stale says whether the numbers are the cached
+    ones. The 7-day and 30-day views and the 12-month stats are derived
+    from the daily series in build_buffett, so an older cached payload
+    (with a 60-point monthly list) still renders correctly."""
     try:
-        daily_w, long_w = w5000_series()
+        daily_w = w5000_series()
         gdp = fred_gdp()
-        if not daily_w or not long_w or not gdp:
+        if not daily_w or not gdp:
             raise RuntimeError("no W5000/GDP data")
         pts = buffett_series(daily_w, gdp)
-        pts_long = buffett_series(long_w, gdp)
-        if len(pts) < 250 or len(pts_long) < 40:
+        if len(pts) < 250:
             raise RuntimeError("too few merged points")
         monthly = group_last(pts, lambda d: d[:7])[-MONTHLY_SPAN:]
-        six = group_last(pts_long, lambda d: d[:4] + ("-H1" if d[5:7] <= "06" else "-H2"))[-SIX_SPAN:]
-        six[-1] = pts[-1]  # freshest point for the current half-year
-        stats = [v for _, v in six]
         buff = {
             "daily": pts[-DAILY_SPAN_DAYS:],
             "monthly": monthly,
-            "six": six,
             "cur": pts[-1][1],
-            "avg": sum(stats) / len(stats),
-            "min": min(stats), "max": max(stats),
             "when": time.strftime("%d %b %Y, %H:%M UTC", time.gmtime()),
         }
         return buff, False
@@ -466,6 +458,11 @@ def fmt_pct_axis(v):
 def label_month(d):
     """'2025-11-04' -> 'Nov 2025'."""
     return time.strftime("%b %Y", time.strptime(d, "%Y-%m-%d"))
+
+
+def label_day(d):
+    """'2025-11-04' -> '04 Nov'."""
+    return time.strftime("%d %b", time.strptime(d, "%Y-%m-%d"))
 
 
 def svg_chart(points, w=300.0, h=170.0, ref=None, aria=""):
@@ -546,41 +543,49 @@ def build_buffett(buff):
                 'The rest of the page is unaffected.</div>')
     stale_html = (' <span class="b-stale">data of {}</span>'.format(buff.get("when", ""))
                   if buff.get("stale") else "")
-    daily_l = [(label_month(d), v) for d, v in buff["daily"]]
-    monthly_l = [(label_month(d), v) for d, v in buff["monthly"]]
-    six_l = [(f"{k[5:]} {k[:4]}", v) for k, v in buff["six"]]
+    # The 12 monthly points drive the stats; the 7-day and 30-day views come
+    # from the tail of the daily series. Slicing monthly with [-MONTHLY_SPAN:]
+    # keeps old cached payloads (60 points) working too.
+    stats = buff["monthly"][-MONTHLY_SPAN:]
+    vals = [v for _, v in stats]
+    avg, mn, mx = sum(vals) / len(vals), min(vals), max(vals)
+    daily = buff["daily"]
+    week_l = [(label_day(d), v) for d, v in daily[-WEEK_SPAN_DAYS:]]
+    days30_l = [(label_day(d), v) for d, v in daily[-THIRTY_SPAN_DAYS:]]
+    daily_l = [(label_month(d), v) for d, v in daily]
+    month_l = [(label_month(d), v) for d, v in stats]
 
-    cur, avg = buff["cur"], buff["avg"]
+    cur = buff["cur"]
     diff = cur - avg
     d_cls, d_arrow = direction(diff)
     tiles = "\n".join([
         '    <div class="b-tile"><div class="label">Now</div>'
         f'<div class="value">{fmt_num(cur)} %</div>'
         '<div class="note">total US stock market vs US GDP</div></div>',
-        '    <div class="b-tile"><div class="label">vs 20-year average</div>'
+        '    <div class="b-tile"><div class="label">vs 12-month average</div>'
         f'<div class="value {d_cls}">{d_arrow} {fmt_pct_axis(abs(diff))} pts</div>'
-        f'<div class="note">20-year average {fmt_num(avg)} %</div></div>',
-        '    <div class="b-tile"><div class="label">20-year range</div>'
-        f'<div class="value">{fmt_num(buff["min"])} % &ndash; {fmt_num(buff["max"])} %</div>'
-        '<div class="note">six-monthly points</div></div>',
+        f'<div class="note">12-month average {fmt_num(avg)} %</div></div>',
+        '    <div class="b-tile"><div class="label">12-month range</div>'
+        f'<div class="value">{fmt_num(mn)} % &ndash; {fmt_num(mx)} %</div>'
+        '<div class="note">monthly points, 12 months</div></div>',
     ])
 
     charts = "\n".join([
+        '    <div class="b-card"><h3>Daily &middot; last 7 days</h3>'
+        + svg_chart(week_l, aria=f"Buffett indicator, daily, {week_l[0][0]} to {week_l[-1][0]}")
+        + "</div>",
+        '    <div class="b-card"><h3>Daily &middot; last 30 days</h3>'
+        + svg_chart(days30_l, aria=f"Buffett indicator, daily, {days30_l[0][0]} to {days30_l[-1][0]}")
+        + "</div>",
         '    <div class="b-card"><h3>Daily &middot; last 12 months</h3>'
-        + svg_chart(daily_l, aria=f"Buffett indicator, daily, {daily_l[0][0]} to {daily_l[-1][0]}")
-        + "</div>",
-        '    <div class="b-card"><h3>Monthly &middot; last 5 years</h3>'
-        + svg_chart(monthly_l, aria=f"Buffett indicator, monthly, {monthly_l[0][0]} to {monthly_l[-1][0]}")
-        + "</div>",
-        '    <div class="b-card"><h3>Six-monthly &middot; last 20 years</h3>'
-        + svg_chart(six_l, ref=100.0, aria=f"Buffett indicator, six-monthly, {six_l[0][0]} to {six_l[-1][0]}")
+        + svg_chart(daily_l, ref=100.0, aria=f"Buffett indicator, daily, {daily_l[0][0]} to {daily_l[-1][0]}")
         + "</div>",
     ])
 
     rows = "\n".join(f"<tr><td>{lbl}</td><td>{fmt_num(v)} %</td></tr>"
-                     for lbl, v in six_l)
-    table = ('<details class="b-table"><summary>Data table: six-monthly points</summary>'
-             '<table><thead><tr><th>Half-year</th><th>Indicator</th></tr></thead>'
+                     for lbl, v in month_l)
+    table = ('<details class="b-table"><summary>Data table: monthly points, last 12 months</summary>'
+             '<table><thead><tr><th>Month</th><th>Indicator</th></tr></thead>'
              f'<tbody>\n{rows}\n</tbody></table></details>')
 
     return f"""  <h2>Buffett indicator{stale_html}</h2>
