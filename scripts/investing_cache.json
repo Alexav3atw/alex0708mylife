@@ -2,10 +2,10 @@
  "AKER.OL": {
   "price": 1092.0,
   "currency": "NOK",
-  "day": -3.362831858407078,
-  "wk": 1.8382352941176405,
-  "mo": -14.108527131782944,
-  "ma200": 1203.445,
+  "day": -1.4440433212996373,
+  "wk": 1.6759776536312776,
+  "mo": -13.33333333333333,
+  "ma200": 1204.445,
   "closes": [
    816.0,
    804.0,
@@ -256,7 +256,8 @@
    1084.0,
    1094.0,
    1130.0,
-   1108.0
+   1108.0,
+   1092.0
   ],
   "news": [
    {
@@ -274,14 +275,14 @@
     "s": ""
    },
    {
-    "t": "Margaret J. Aker Obituary Nov 13, 2026 - Altogether",
-    "l": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNbTExZE0wM3R2UlNIdlRpNUEzUzU3bHdfcTNicWd6eE5FZGNVWmx1QktoQ21Ya3c2dXhGdkVfWGdGQTJ0S0hpZXFJVmZPWnk4elFqNVJPVFQ5Wk5jdlIxQlk0SjZjY3V5TUxQRzVtNjQ3azkzVkhhbGpELWdCVjNLV2Y5VjJ4OTVKQ0w2Tk9HTzRxNERmRVlzeEI1clRpR05FamRmT0FmMkxWaEZDY0xLU1JjLTYzeWZMU0I1X1lYNU1Vc2JfTjZwcEVzVDVfaVJWS3NkNURRcDFFQ0pjRmhWckdBV3RaZ0l5WWxwVWMxWXJoM0ZIckdFeHFGcHZGLXhTRTJCNi1hZzRBb3Ixci05U244SDBPbWFZaW9CWHR0SVhHY3BhTGZDS0cxbw?oc=5",
-    "d": "13 Nov",
+    "t": "BP Sells 5% Stake in Aker BP for $1 Billion as Balance Sheet Repair Continues",
+    "l": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWlZRQlotVm1qbGJ4WjR6M3ltMk9IYUF5X0NKSVJ1TEZxa3hEWjBVdGtfWXEtMk5tUktyakxoc2pkemFjQUdkTEZ6dXMwaTBUT3dSQTY5WVlEZGVxc3cxTktQU2xRWUpUZ3RNZVBfZndlS1NjVnZYV2hiaEtVaUltMnpMazBGakpSaEgzTlR5WWUzOEhQeXNtaVhsbTRpTGpRWTl4eEpRQjJldzN5QndGa3VNd2Y5RVFLcU11SDAxTl9ndw?oc=5",
+    "d": "05 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -289,10 +290,10 @@
  "ASCE.BR": {
   "price": 53.8,
   "currency": "EUR",
-  "day": 0.37313718576963417,
-  "wk": 0.5617963080303712,
-  "mo": 0.5617963080303712,
-  "ma200": 51.65224994659424,
+  "day": 0.18621831590281968,
+  "wk": 1.7013188756551445,
+  "mo": 2.2813703379285233,
+  "ma200": 51.64024993896484,
   "closes": [
    50.29999923706055,
    50.20000076293945,
@@ -548,10 +549,11 @@
    53.099998474121094,
    53.599998474121094,
    53.599998474121094,
-   53.70000076293945
+   53.70000076293945,
+   53.79999923706055
   ],
   "news": [],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -559,10 +561,10 @@
  "BPOST.BR": {
   "price": 0.827,
   "currency": "EUR",
-  "day": -4.942529256631434,
-  "wk": -25.21664273183881,
-  "mo": -21.971065338765662,
-  "ma200": 1.5849350014328956,
+  "day": -4.171492085255779,
+  "wk": -6.5536688309326685,
+  "mo": -24.81818145365755,
+  "ma200": 1.578045001924038,
   "closes": [
    1.8020000457763672,
    1.809999942779541,
@@ -818,16 +820,10 @@
    0.8759999871253967,
    0.8579999804496765,
    0.8700000047683716,
-   0.8629999756813049
+   0.8629999756813049,
+   0.8270000219345093
   ],
   "news": [
-   {
-    "t": "Bpost shares hit a record low of €0.826, RSI at 24",
-    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUy1ZZF9Sd0w4cjBvbXhtaGZEdzEteTlCX1FkSWpsd3Rva3d3SWdYUUVYT1dxeHpCN3JZRk5pTUk2QUF3anRfbFYyR0ttZGJqYmdRUUFIWjFZRzMxbEYxTDdLQW9WZHNlMEN2WWxjMnRJazhIYTBaVFdNNFU2d3M3aDhLNmx5T2JnaERYQmVBcHNWYTRCUWZIc3ZkeGhMSFQ4VDZxbW5aNTZkQ1oydmNV?oc=5",
-    "d": "13 Nov",
-    "nl": false,
-    "s": ""
-   },
    {
     "t": "Bnode names Nicolas Baise CEO of Bpost unit, two executives to leave",
     "l": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbkxITDFIbjlyMUFvY21mRmVub3FJMDJQMnNPR2xwVGtFY2dKMVpQSjE3S1VaTl91T1QzcTQ1Sk9TN01FeGxfSzJ2VndIY1JLUDNvQXhMTVJmN2FNaTlGYUg4YkM4bkU4MWlJMUctdXJmbU1sdkZ5UTY0ZHhWYmhjc2o1WTE0NC0tVmFRcnVqeXQ0b0dfXzBOWVhMdGRVQ3VrSGEtVWxSNVpxQ0lrc0doc1E3c1VFX25qYmFqUmFEN050Q2k1d1FmX3FRaGlMR0NRbDVR?oc=5",
@@ -843,7 +839,7 @@
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -1124,14 +1120,14 @@
     "s": "De Tijd"
    },
    {
-    "t": "Berkshire Hathaway Stock Trades at Record Levels. CEO Greg Abel Clearly Sees More Room to Run.",
-    "l": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRVNpQWloWHRILTZOZlJKU2p0Y3FkNDZzQ0JZVzdHR2JuTmlrc3VEelNqRDNiWXpPWXBFWFlrUmtiQmlWNDBESTRfdVR0b2ZpRjdqNEtoc2dhOE0xT0NIVnlVS1BCUVpxWEs3azdGWDFnUVBSYmJvVW5RalBHeTFfOEREczlhYW5OSUpBei1iaXB6Q2NyT1NqV2VpbkpNM2dmWm5wTzRB?oc=5",
-    "d": "12 Nov",
+    "t": "Berkshire Hathaway (BRK.A) Stock Fair Value Edges Higher After Split Analyst Revisions",
+    "l": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVGJZYUROQlVVN3JGd0N3NVdBaTBZOU9yYUVQakVGa1Nua3pDS1J1N1U2TDJIZmFxUVV6Y1Y1bXNJTS1NcXhZblpGa2Z4RUZob3NWS2x2WDZua1IxNzlJa2trQVpFZkx3MnFCZ2dCZ2hVOFFMeC1rTmJKSWVvRWQ2cHoxcUd0d0MtT0R2NEVOWFREWk1rQlF2Ml9ETVJ1ZTQ?oc=5",
+    "d": "13 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -1139,10 +1135,10 @@
  "BY6.VI": {
   "price": 7.539,
   "currency": "EUR",
-  "day": -5.384035374519147,
-  "wk": -6.469881529523514,
-  "mo": -7.19665004358514,
-  "ma200": 9.876895022392272,
+  "day": -2.885482559756214,
+  "wk": -11.37886374306689,
+  "mo": -9.157727094923407,
+  "ma200": 9.865290024280547,
   "closes": [
    11.175000190734863,
    11.130000114440918,
@@ -1395,7 +1391,8 @@
    8.211999893188477,
    8.130000114440918,
    7.9679999351501465,
-   7.763000011444092
+   7.763000011444092,
+   7.539000034332275
   ],
   "news": [
    {
@@ -1406,21 +1403,21 @@
     "s": "De Tijd"
    },
    {
-    "t": "BYD launches luxury brand Denza in India, taking on Mercedes, Toyota",
-    "l": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSm5YUEdGS1YxQ0FsVGhGb3huMnZJZ1dCLXpPQzkxZGFMNXlCcXpXb0xULVJFS18yeFJjTG5iLXpTTDIyXzFzTC1HQ19SczRiejhCbHZhVzEwdVg1OGUxTWphNVhSZG02QVNSV0M1UnoyMWRCUExDTmkzUFpLaV8wQ2VKOEUxdVJIemgyRlVSVnF6TGFVQ2toaWJRVVU4VHJuVGJwZ3prTDlQazJGQ25US3VfOA?oc=5",
+    "t": "BYD’s new flagship Tang SUV starts at about $34,000 with two enormous screens",
+    "l": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNLWgyT1NENXVhRUNwZUhwWkdfalRUT3dMZ2FiUTNYQ2pxLXRNeDd6NVNybm8tUHVROVppYWlqUDNoV2dVWlhLbGM0RWJOOXhwUHl0SEczX1paREw5QTRWN1BMZzNNa3dIS1Z5SjY5MjhNUHBYVXJCczZiLXZVYnJ2S0xkYXdUUEp6TkZpeFFxWW8?oc=5",
     "d": "13 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "Tesla vs. BYD: One Has a $14 Billion Problem, and the Other Has a Sky-High Valuation",
-    "l": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUmYyRGh2MjJHNERaWmdleEs3cXN1YUpXYVNXRmhDTkZRbnRzMnZWcFA0QVY1R09BZVFwcmc1NW5sY1Z0VFhvUEJVQV9PWHFLZTU5YzlBTzJVLVhYYWhUdEo1c0lhdUxVRUdsei1leVhZVnpoaUpQMWRnRTExUnc5NWN5ajhSMUZGck1vaw?oc=5",
+    "t": "BYD launches luxury brand Denza in India, taking on Mercedes, Toyota",
+    "l": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSm5YUEdGS1YxQ0FsVGhGb3huMnZJZ1dCLXpPQzkxZGFMNXlCcXpXb0xULVJFS18yeFJjTG5iLXpTTDIyXzFzTC1HQ19SczRiejhCbHZhVzEwdVg1OGUxTWphNVhSZG02QVNSV0M1UnoyMWRCUExDTmkzUFpLaV8wQ2VKOEUxdVJIemgyRlVSVnF6TGFVQ2toaWJRVVU4VHJuVGJwZ3prTDlQazJGQ25US3VfOA?oc=5",
     "d": "13 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -1687,6 +1684,13 @@
   ],
   "news": [
    {
+    "t": "C3.ai, Inc. (AI) Laps the Stock Market: Here's Why",
+    "l": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRzUySmhPZ3YzbWE3SGpubkptZkxGNk9tT1NmdTR6V3dwUTBxdmdtaTh5SWJKbkhEY1djUjVMQUxOZi1jSWItRENsdmgtWFAxNnptWFpqVDFtNU10cDBVREVhbmd1NlVhTmk2azIyVDAyZkpudy1hMnJoajZfaXdNenVnTjNmT2hSM3c?oc=5",
+    "d": "26 Oct",
+    "nl": false,
+    "s": ""
+   },
+   {
     "t": "Wix, Elastic, Atlassian, C3.ai, and Five9 stocks trade down, what you need to know",
     "l": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNR0xzNGlBSExJYXBPVVZRM3k0b3c3LXRxMGRvanhrSG9qTGluYlpOYVctRWtmdGtsNHRybmRXYUduRFBaMFlJNjZMUWhhS2dBY2xVcDJpZW13anJOX2t6alBid3BkTG05bmZ5cEthTFhncWM5amNJXzZ4WV9nTTBsb0Q1VEJGODdEbHdzdjVUcW96STNrZVZ1RDk4VlpCelRGLW5oQzdWT1JnUGZ6a29MYkUyMFVuZl9ERFpEVzhsY2tpOHhYajlDSUtlRXFsc0FlRlhURA?oc=5",
     "d": "10 Nov",
@@ -1694,21 +1698,14 @@
     "s": ""
    },
    {
-    "t": "C3.ai CEO Thomas Siebel sells $5.05 million in stock By Investing.com",
-    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPT29hNXozb051SzlWeENLQVd5bS1GczB5Z3c1ZmFVNjZYSWhpTG9OSUFNQ01GYnB6QnpEb3h3WmRhcW93Sl9TcnpTNXZsbVJfazNyNzgwbG9ZcWo2Z3dyZUR6YnBPeTFpM0VwX29WUTNsd0VucV9xQkg4RnMwMGh0WS1XTzljSVNadnczT1pHemdHSjhQam40SGdrc0I0OU52TFFlUllmbFRUZ0RDZTEw?oc=5",
-    "d": "13 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
-    "t": "Form 4 C3.ai Inc: Thomas M. Siebel (Director, 10% Owner, CEO and Chairman of the Board) For: 10 November",
-    "l": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPOGpWaWEyQ2NvUVpTakgwckh4VlV4OE9LRXNndzlzREtzTzFXUTVkSDdUMEtmcWc3ZVFnMTN0aUIxb0NRUThrZXgtOUlaZlJ3QjhIY01OWUdjaHRsVU1DMkpidzl5STlfX19jdVlSRjJ1SllnZHFGWkJoSkJSb0dlZ2pqRElQQ0lWTXhrbklyR293eWFTVGdySHlQR1Y1MlYyN2FpcHNld0tXVi1COHlTcUFCckhTY0JXbXkxbTBiaE5CeFVqTFduR2o2TDFTOXg1dDhnN09hWFF3TFhzSVQ0X1VkbDk2M295Y2dodQ?oc=5",
-    "d": "13 Nov",
+    "t": "C3.ai (AI) Stock Looks Expensive Despite Its 75% Five Year Slump",
+    "l": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYkUydlBTNnlNdXVGcUVDNXdvdUV6Yk9LQ29Cek1OVmtVb0JPcWpySjhhdkxuQmplNm1fTEEwNXR0d0xjZ3hiWEMwZ1MtNGpDbk5ybXZuVV9YdU5NU3JVUG5LbjhiU3EtNjh2ZWktdV9SZUhsSk5sWkVfTHJNQ1RQbmg2YjZBSkRyWTJyN0pHdlRqUWNvUHRacXlHUk1rSU9vY2IyYTZBSWlvS1FoWDVfcnhCYXpXRXNOWTVj0gHAAUFVX3lxTE90TlNmLUlOTlBXSExHWmFYR19NV1BVWERXa1dHR2FGMm9pUFhHWHc4ZzFLUVlwSGhWX0Z0ZWl3Yi14NzNXR1pvamo5cGkxdTdOSGF6cGdHUTVLLTFmdzIxb3NKMGRIT282eHZ1MFpDNnJ6d2ZxcUZ1cHFuX29MMGRTQVJBNElWLWF6X2ZQVVRYNko4cm1icF82YmxqWnlMUDVpTlludjJ6a1JOWXp4TE8xb1lhS1Y2b0ZRejhjRG5fZQ?oc=5",
+    "d": "06 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -1716,10 +1713,10 @@
  "CPINV.BR": {
   "price": 12.92,
   "currency": "EUR",
-  "day": 0.6230517637181299,
-  "wk": 0.6289302046118772,
-  "mo": 4.234531507093564,
-  "ma200": 12.575400023460388,
+  "day": 0.9374984959140686,
+  "wk": 1.8927426288799065,
+  "mo": 6.07553163035397,
+  "ma200": 12.578100023269654,
   "closes": [
    11.819999694824219,
    11.739999771118164,
@@ -1975,7 +1972,8 @@
    12.800000190734863,
    12.819999694824219,
    12.84000015258789,
-   12.800000190734863
+   12.800000190734863,
+   12.920000076293945
   ],
   "news": [
    {
@@ -1993,7 +1991,7 @@
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -2001,10 +1999,10 @@
  "GTT.PA": {
   "price": 186.2,
   "currency": "EUR",
-  "day": -0.42780748663102663,
-  "wk": 2.7502749813356875,
-  "mo": -12.382736526442539,
-  "ma200": 199.65450004577636,
+  "day": -0.3212007719248122,
+  "wk": 2.7026992906809433,
+  "mo": -10.048310653023096,
+  "ma200": 199.67350006103516,
   "closes": [
    177.1999969482422,
    177.10000610351562,
@@ -2260,7 +2258,8 @@
    184.1999969482422,
    185.0,
    187.0,
-   186.8000030517578
+   186.8000030517578,
+   186.1999969482422
   ],
   "news": [
    {
@@ -2285,7 +2284,7 @@
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -2293,10 +2292,10 @@
  "GBLB.BR": {
   "price": 80.3,
   "currency": "EUR",
-  "day": 1.1334993159008322,
-  "wk": 1.6434931439134326,
-  "mo": 13.239438768843526,
-  "ma200": 78.03474994659423,
+  "day": -0.12438000495151869,
+  "wk": 1.581277611313392,
+  "mo": 11.838439608244421,
+  "ma200": 78.02899997711182,
   "closes": [
    74.6500015258789,
    74.4000015258789,
@@ -2552,7 +2551,8 @@
    79.69999694824219,
    79.44999694824219,
    79.4000015258789,
-   80.4000015258789
+   80.4000015258789,
+   80.30000305175781
   ],
   "news": [
    {
@@ -2577,7 +2577,7 @@
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -2585,10 +2585,10 @@
  "INRG.MI": {
   "price": 8.215,
   "currency": "EUR",
-  "day": -2.573531262974893,
-  "wk": 1.2215867212726383,
-  "mo": -3.337948229958221,
-  "ma200": 9.342160012722015,
+  "day": -1.840129368780219,
+  "wk": -3.545849932401879,
+  "mo": -3.0564057732296646,
+  "ma200": 9.339090011119843,
   "closes": [
    8.34000015258789,
    8.45300006866455,
@@ -2841,7 +2841,8 @@
    8.458000183105469,
    8.343000411987305,
    8.432000160217285,
-   8.369000434875488
+   8.369000434875488,
+   8.21500015258789
   ],
   "news": [
    {
@@ -2852,7 +2853,7 @@
     "s": "De Belegger"
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -2860,10 +2861,10 @@
  "KBCA.BR": {
   "price": 96.1,
   "currency": "EUR",
-  "day": -1.3347038044280835,
-  "wk": 1.5957446808510634,
-  "mo": -0.9336115265903833,
-  "ma200": 84.23749969482422,
+  "day": 0.6282722513089034,
+  "wk": 2.016986823176703,
+  "mo": 0.20854738796662886,
+  "ma200": 84.31749969482422,
   "closes": [
    73.80000305175781,
    72.4000015258789,
@@ -3119,15 +3120,16 @@
    96.69999694824219,
    97.5,
    97.4000015258789,
-   95.5
+   95.5,
+   96.0999984741211
   ],
   "news": [
    {
-    "t": "KBC honors five for distinguished Christian service",
-    "l": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNa3k0MjdDUEMxbWl0UGJIY3lRM3RoNDRhVlRGQU14cWFfT2JfZS1rOW1LdU1SSEFYNTdsYVFxbjJSR2NkVENwZWhOTEk1b0ctSW84cldoeTB6LVJOMFd1NVY2OTJxSjRCdGRIWWhsYmNoeldMMUVUbFpLY1ZoNU9Dd1NtUEtVanozZ24tdFNQTWRiYVdKQjVScHd1UnlrZWZJT3BjRzY5Z0syWndZdnZNT1hXTHQ0enpaUmk1d2FlaXRjdTFwVkFuTDVyTzJwdDg5eHp1RVJFa2o1M0RC?oc=5",
-    "d": "10 Nov",
-    "nl": false,
-    "s": ""
+    "t": "Ex-topper KBC stapt over naar BNP Paribas Fortis",
+    "l": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY1NXU3JUMGQ1RHEyOTRmRUFNZm9tQ3Y1MlUwQ3Bfa2NWckQxN0NUWGRkQ2x3djB2cjFIaFc4dTJKdjM2UWVseFVoY2VXczQzS3E4MUkwZ3lPcThxcVFzcTE0MFNkSEE2cjVqcExsRW9vRHVhZ01TMkRldktfdEJ6WGxzTEN5dE9HcGt4dG1LV2FmVHJCbGZFZGRra3BvQUlBLVE?oc=5",
+    "d": "02 Nov",
+    "nl": true,
+    "s": "De Tijd"
    },
    {
     "t": "\"Main Theek Hoon\": Amitabh Bachchan Makes Comeback On KBC 18 Set Amid Health Concerns",
@@ -3144,7 +3146,7 @@
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -3152,10 +3154,10 @@
  "NN.AS": {
   "price": 81.34,
   "currency": "EUR",
-  "day": 0.2464883064530632,
-  "wk": 0.8939672367998641,
-  "mo": 6.752495013380999,
-  "ma200": 74.64599990844727,
+  "day": 0.09844679013841784,
+  "wk": 2.727956585488478,
+  "mo": 7.365356447094995,
+  "ma200": 74.71199989318848,
   "closes": [
    62.34000015258789,
    61.540000915527344,
@@ -3411,7 +3413,8 @@
    80.45999908447266,
    80.81999969482422,
    81.13999938964844,
-   81.26000213623047
+   81.26000213623047,
+   81.33999633789062
   ],
   "news": [
    {
@@ -3429,7 +3432,7 @@
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -3437,10 +3440,10 @@
  "PNL.AS": {
   "price": 0.821,
   "currency": "EUR",
-  "day": -0.8454117129604533,
-  "wk": 0.8599470997800784,
-  "mo": -1.5587543858370245,
-  "ma200": 0.9675250005722046,
+  "day": 2.4393618902607273e-06,
+  "wk": 0.6744278173517859,
+  "mo": -2.2619040945624835,
+  "ma200": 0.9656300002336502,
   "closes": [
    0.9700000286102295,
    0.968999981880188,
@@ -3696,6 +3699,7 @@
    0.8199999928474426,
    0.8240000009536743,
    0.828000009059906,
+   0.8209999799728394,
    0.8209999799728394
   ],
   "news": [
@@ -3721,7 +3725,7 @@
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -3729,10 +3733,10 @@
  "SHELL.AS": {
   "price": 44.77,
   "currency": "EUR",
-  "day": 1.4502581382151325,
-  "wk": -2.9049289936561307,
-  "mo": -5.026375647689663,
-  "ma200": 38.90085006713867,
+  "day": 1.4732572163447921,
+  "wk": 0.06705135934608197,
+  "mo": -3.4609154549570365,
+  "ma200": 38.962525062561035,
   "closes": [
    32.51499938964844,
    32.505001068115234,
@@ -3988,7 +3992,8 @@
    44.44499969482422,
    43.540000915527344,
    44.130001068115234,
-   44.119998931884766
+   44.119998931884766,
+   44.77000045776367
   ],
   "news": [
    {
@@ -4013,7 +4018,7 @@
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -4021,10 +4026,10 @@
  "SOF.BR": {
   "price": 270.0,
   "currency": "EUR",
-  "day": -0.2217317405699193,
-  "wk": -1.1721656436011862,
-  "mo": 5.720999615720079,
-  "ma200": 237.1479998779297,
+  "day": 0.07413351226122078,
+  "wk": 0.8968586852557747,
+  "mo": 4.408350203952072,
+  "ma200": 237.31099990844726,
   "closes": [
    242.39999389648438,
    241.0,
@@ -4280,7 +4285,8 @@
    270.3999938964844,
    270.3999938964844,
    270.6000061035156,
-   269.79998779296875
+   269.79998779296875,
+   270.0
   ],
   "news": [
    {
@@ -4305,7 +4311,7 @@
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -4313,10 +4319,10 @@
  "WEB.BR": {
   "price": 37.7,
   "currency": "EUR",
-  "day": -0.7894736842105177,
-  "wk": 2.1739110153428554,
-  "mo": 1.3477089503083794,
-  "ma200": 39.42799997329712,
+  "day": 0.265961515790325,
+  "wk": 1.344085993939359,
+  "mo": 1.617256909692033,
+  "ma200": 39.41249998092651,
   "closes": [
    36.599998474121094,
    37.599998474121094,
@@ -4572,20 +4578,14 @@
    37.79999923706055,
    38.0,
    38.0,
-   37.599998474121094
+   37.599998474121094,
+   37.70000076293945
   ],
   "news": [
    {
-    "t": "Georgia towns opposed plans to turn two huge warehouses into ICE detention centers, including one designe",
-    "l": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxNZmdsNWV1SEx6bXV5LVl6c19jT25Ta3NrTjdnWHNEQWVuTnJJUGZtY25ibjB2c2tpMGdmTE44a0x3bXJZWUVfRHRfY2lIWW9jRU5EZzc0OFBUNVlrZkktU1BiV3NST3JGN0tacEhFb3Y2Q1lmbjNYXzZaa1MxcFAtZzRqeGI2TGp5bWVicE9aWnNHcDUyeFpxV25weDZpS3FtYU10YnluTDdXQ3pKQUJhd2QzVFVuRnJmd3I4YVowVGRFNlR4Mi1kc3NwbmE5RWRNWE9RWFJ5Vm9iamhfNkliYlJFdUF0SDhqRERZUkpPazlIY2pUU0ZiN2NmR3BlQUdfdTc1THI2U19jS1JVRzBOTDM5Q043U0dLQXRmQWpVdUlFZ0tTNnN0bi0xNGVsMkhvTGd3VnRyN0lnSU9naUpjZ2hUTi1VZzJHQ0Y1eWR3OVMwQklPQmdvT2JaTUtTUVJFYkkyS2RtQ09vR2NoRVhQalVfa2UwbDRmSHfSAf8CQVVfeXFMTXN5ZE1HWDdpSXlRUUlDaUpnVDhQOUtlR09QUlBrc3Vvd29KNHQ0N3hJdWkta2tOMU1xNmxZdkZOWGZ4ak84a2lVeHZCS2pkZjhlV2NtN0ZlMUlmeXh2UTlkcV9kQ2F4blZhOWZIVWFPcmZHYlhPcTlpTHJuWUZFVXo1ZHVCeU4yQ0hDZU8ycHJuU2p1RVVrb1dXTnRXWmVGMWhaWUJVN3pXcHhSWXM5MUNDZWNTNWlEbWh2aXlheDR1ZEpzWXNhQWM0WnZEbHczRURHLUZwbjdNMS14YW9kNkpXMTdDdnVsN2h6ZHBybXhBaFN1QllMcjVMMThWQThxS0RjanpJX0hTb1A3TXRhVHM4RXo0T1lhb3JpSkYwM2NYS08wZWhWYm5KSGkzTFF2WG1BbWJoMFd5dGFQVm9reENJTFZ4by12UHhMWVkyYkZuTUZyQV82V0VzdENRMlJWaXBBRDhIUjBjc1lDQ0FULVJHeHFVZkNQVFFNYmplSDQ?oc=5",
-    "d": "13 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
-    "t": "Georgia warehouses purchased by ICE to turn into detention centers up for sale after plan scrapped",
-    "l": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR2ZwVE5oNEQtWVpiWTI1aUI4WVdNazZ5MG9DSmZLWUQwTC1mNk5YeVdqY3BucjZuUEtwdnVZWHpwejI2SllQRjA3Mi1yWS0zbHZZR3R2M0R5bmRLbTVIaHNFTXpuSGVwelVRaDJZSmJVRGJoMkt3QzRIWVZnUVhCZld6cFZVb3NpYk9SOE9lT0RrT3ZiVjZEUndyNnpFaFVLcUN6NFJvVjBldGR3UmpwbE5zM3FhcDNTOGEwU3huOV9JSEttWWEwdnVVZUFWcGZQY3c?oc=5",
-    "d": "12 Nov",
+    "t": "MS Property Group to build five warehouses in Seaford",
+    "l": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBEZkE3ODNFeWpPOENtNVRybTB1c0x5TmFReEcyeFBkdE9FR3gwRmZXS2dveFRvSVJTX2NUWTdYSnFwVmc3X1RuaVF3NDJZTGZySGhqN0dqenJvUDd5S3k5dGZ6V2lUYkhyRk5MVUVaTHh5bDRkOG5GdWxB?oc=5",
+    "d": "04 Nov",
     "nl": false,
     "s": ""
    },
@@ -4597,7 +4597,7 @@
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -4605,10 +4605,10 @@
  "3CP.DU": {
   "price": 3.3295,
   "currency": "EUR",
-  "day": -1.1871174573986454,
-  "wk": -1.317695891964421,
-  "mo": 15.52805328547986,
-  "ma200": 3.1994650089740753,
+  "day": -2.28906905224715,
+  "wk": -3.39475122182169,
+  "mo": 8.488105367805133,
+  "ma200": 3.1976450085639954,
   "closes": [
    4.700500011444092,
    4.667500019073486,
@@ -4862,16 +4862,10 @@
    3.4035000801086426,
    3.440500020980835,
    3.369499921798706,
-   3.4075000286102295
+   3.4075000286102295,
+   3.3294999599456787
   ],
   "news": [
-   {
-    "t": "Xiaomi 18 Pro hands-on: This compact flagship might be my new favorite",
-    "l": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ycVpPNTJmU2IyRHhKdU5TcU1ndjI2SGRiWkxVNUJfUXBhNXFzVzY5bWZEREJSajFuZFc1N29kWXMwdlFOSHNDeWRWZk1aX2k0YXp2UGEyaUxqZWVqT0J3dGt6UFpYTnFTSGZQSQ?oc=5",
-    "d": "12 Nov",
-    "nl": false,
-    "s": ""
-   },
    {
     "t": "Xiaomi Wants a Bigger Piece of the Clip-On Earbuds Action",
     "l": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ZdThMeTUzV29acUpLT3lHYWhlM2pqdjlYMEc4alpROG85a1Z1YXZLd0p1bktOb0xMZ19yZ29ROXJydjYxeDZTZVZwODBqVGYyUVh6WEVZWk5yUDJFUGFDWUxzUjhRQVc4MnMtem52Sk5mZw?oc=5",
@@ -4880,14 +4874,21 @@
     "s": ""
    },
    {
-    "t": "Xiaomi 18 Pro gets one step closer to launching in India - GSMArena.com news",
-    "l": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMGVOeTNzX2xsZ2Z2TkhxUzU5UllrV1BPX1dqZWZCRmUzYndVbEVBMHNuRnhHd3gyWWJKRGxPNk0wcjlSZ2o5QUE0dW03ZVNIb0dHVkEzU1NhZU9sQjFwZHJCa293QXpQWlA1N1lacFhpNm1tR0VPTElzbzU0Z2dWZXg2eHhGdk96bkNmb0Jsd3JmVXY4VXV3MW5rN0vSAZgBQVVfeXFMUGpwcE9JcmV1RFkweWNIRTE4OGlKenB2eWNZblh2Vmx5eEFnVnpja29UZGZiYk1ua2Jaak43emRKdkJEcmFySm1rT0pqb0sySHN1dTlmWFMyMlVGOS1BcXE3RnJBMF9LeHY4MWV2b3ljZkNRQWdRYlZJNmFOM3Z6VWdTN1RIc2djZENha3pLeVlCMjJDUUJPekw?oc=5",
+    "t": "Xiaomi Redmi Note 17 Pro Max 5G: Huge battery, little progress",
+    "l": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPN0d0dTNZNW5ibjNFRnBJR3dEQU1HRV9tRGhZLVJhNE1iTTd6VnRrV0tWQUFhdjlicDVZVWJSWTNxUXQtNGtJczF0N2MyNW9RTEZ4QnlVUm4xbXUxVDJSS1RzZkwxU0xmcXRkX2c3MUZuUHA5WV9FeVdoRmlpd1AtdS1HanR1QV9pbmFSZzlHNU5qaVljb3RFN19SVjczTVo1eTJRTm9DU3E?oc=5",
+    "d": "13 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
+    "t": "Google Maps, Spotify, and more are coming to Xiaomi 18 Pro's rear display",
+    "l": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaWl3OWxTZUpHb3hfQkVzSnhrdEg5eE5Ea3B2RkN2S1Q2SGtuQzUxc2xmcnphVlJpNXdTdW0zV0wzdmd0NXlZeUhTRUtGd2w0ZU5tZkQ5bFdYYmxHb2ZOVGRlNHJ6MUVuWVA0Ulh0Vm5KNklHbHV2a2prc1FwYmFGNGNraw?oc=5",
     "d": "13 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -4895,10 +4896,10 @@
  "XIOR.BR": {
   "price": 25.75,
   "currency": "EUR",
-  "day": 0.5859360011527537,
-  "wk": 0.0,
-  "mo": 6.431532002183404,
-  "ma200": 26.857999992370605,
+  "day": 0.3898650407678117,
+  "wk": 0.9803921568627416,
+  "mo": 9.110167727871787,
+  "ma200": 26.843999996185303,
   "closes": [
    28.600000381469727,
    28.350000381469727,
@@ -5154,7 +5155,8 @@
    25.549999237060547,
    25.899999618530273,
    25.600000381469727,
-   25.649999618530273
+   25.649999618530273,
+   25.75
   ],
   "news": [
    {
@@ -5172,14 +5174,14 @@
     "s": "De Tijd"
    },
    {
-    "t": "Xior Student Housing (ENXTBR:XIOR) Stock Looks Undervalued On Cash Flow",
-    "l": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVnA3X0NxVU9XWGJJUXNBemJhTXJteHlVV2VNaUZibF9kaG4yTUxoSjhQeGtvZGhobHA2R3NKcWt1bDB4QmxQR0ZUMGp3dWVmQmNQOXE0YXNSU1BBa2k1bWRwYkk1anE2QV9oYzJlZ0UycnBOZjRENmc5Z0htOXlPTndxZWg0VzdVaWlJZzh4SUhHcWZGcy1oUEppTUJRZw?oc=5",
-    "d": "07 Nov",
+    "t": "Is Xior Student Housing (ENXTBR:XIOR) Still A Bargain On Cash Flow?",
+    "l": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZnVPWDNPUm5adFlKaUZpOVd5SVRkS296MzN0cDk5MFlSVE9yc05Td0RaazJnMUdybVU3UVhzVlB5QnZzOEdteW15c0ZiVkp5alpKbHBGejlYWDdKVVNkLVpDUHJnNjZJbUptNzk0Zl9YNV8yaXZwMnFVS1p6UWlSdDk0TW82UW5fR1BMZTRTZGtSTkl2akZtb2hEMGYyZw?oc=5",
+    "d": "18 Oct",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "14 Nov 2026, 05:58 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false,
   "usdeur": 1.1028,
   "nokeur": 10.5485
@@ -6246,7 +6248,7 @@
    ]
   ],
   "cur": 228.43029276005637,
-  "when": "14 Nov 2026, 05:59 UTC",
+  "when": "14 Nov 2026, 13:58 UTC",
   "stale": false
  }
 }
