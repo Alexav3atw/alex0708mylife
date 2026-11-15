@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Telescope: The Complete Imaging Guide - alex0708mylife</title>
-<meta name="description" content="The complete lucky-imaging guide for the Bresser MC-152/2250 and SVBONY SV705C: SharpCap capture settings, AutoStakkert!4 stacking and AstroSurface/RegiStax sharpening, click by click.">
+<meta name="description" content="The complete lucky-imaging guide for the Bresser MC-152/2250 and SVBONY SV705C: SharpCap capture settings, AutoStakkert!4 stacking and RegiStax 6 sharpening, click by click.">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -42,19 +42,20 @@
     <li>In <strong>SharpCap</strong>: Colour Space = <strong>RAW8</strong>, Debayer Preview = <strong>On</strong>, Exposure <strong>5&ndash;15&nbsp;ms</strong>, Gain until the histogram peak sits at <strong>60&ndash;75%</strong>.</li>
     <li>Focus on a crater or a planet edge &mdash; coarse knob first, then the <strong>1:8 microfocuser</strong>.</li>
     <li>Output format = <strong>SER</strong>, capture <strong>60&ndash;90&nbsp;s</strong> of the Moon (2,000&ndash;3,000 frames).</li>
-    <li>Stack in <strong>AutoStakkert!4</strong> (best 20%), sharpen in <strong>AstroSurface</strong> or <strong>RegiStax&nbsp;6</strong>.</li>
+    <li>Stack in <strong>AutoStakkert!4</strong> (best 20%), sharpen in <strong>RegiStax&nbsp;6</strong>.</li>
   </ol>
 
   <h2 id="lucky">The idea: lucky imaging</h2>
   <p>You never take <em>a</em> photo of a planet &mdash; you film it. The atmosphere bends the light constantly (this is called <em>seeing</em>), so every single frame is distorted differently. The trick: record <strong>thousands of short video frames</strong>, then let free software automatically pick the sharpest moments, lay them exactly on top of each other (stacking) and sharpen the result. Every now and then the air is momentarily calm &mdash; those are the &ldquo;lucky&rdquo; frames, and that is where all the detail lives.</p>
 
   <h2 id="phase0">Phase 0 &mdash; install the free software</h2>
-  <p>Four free programs on your Windows laptop (on Mac/Linux, FireCapture or AstroSurface cover the same ground):</p>
+  <p>Four free programs on your Windows laptop (on Mac/Linux, FireCapture covers the same capture ground), plus GIMP for the optional final polish. The stacker and the sharpener are the same programs as in the D300 workflow:</p>
   <ol>
     <li><strong>SVBONY Camera Driver</strong> &mdash; <code>https://www.svbony.com/support-software-driver/</code> (also install the ASCOM platform if you plan to autoguide later).</li>
     <li><strong>SharpCap</strong> (capture) &mdash; <code>https://www.sharpcap.co.uk/sharpcap/downloads</code> &mdash; the free version has everything Moon and planet capture needs.</li>
     <li><strong>AutoStakkert!4</strong> (stacking) &mdash; <code>https://www.autostakkert.com/wp/download/</code> &mdash; the standard for aligning and stacking videos.</li>
-    <li><strong>AstroSurface</strong> (<code>http://astrosurface.com/</code>) or <strong>RegiStax&nbsp;6</strong> (<code>https://www.astronomie.be/registax/</code>) for wavelet sharpening.</li>
+    <li><strong>RegiStax&nbsp;6</strong> (wavelet sharpening) &mdash; <code>https://www.astronomie.be/registax/</code> &mdash; the same sharpener as the D300 workflow.</li>
+    <li><strong>GIMP</strong> (optional final polish) &mdash; <code>https://www.gimp.org</code> &mdash; levels, colour and export, shared with the D300 workflow.</li>
   </ol>
 
   <h2 id="phase1">Phase 1 &mdash; set up outside</h2>
@@ -117,22 +118,32 @@
     <li><strong>Stack settings:</strong> set <em>Frame percentage to stack</em> to <strong><code>20</code></strong> (the best 20% of frames; <code>10</code> in bad seeing, <code>30</code> in very steady air). Tick <em>Sharpened</em> only for a quick preview &mdash; the real sharpening happens in the next phase on the unsharpened file. Click <em>3) Stack</em> &mdash; AutoStakkert writes a new <code>.tif</code> into a subfolder (e.g. <code>AS_P20</code>).</li>
   </ol>
 
-  <h2 id="phase4">Phase 4 &mdash; sharpen in AstroSurface (or RegiStax 6)</h2>
-  <p>The <code>.tif</code> from AutoStakkert still looks soft and hazy. That is normal: all the fine detail is hidden in the data and comes out through <strong>wavelet sharpening</strong>.</p>
-
-  <h3>Method A &mdash; AstroSurface (recommended for beginners)</h3>
+  <h2 id="phase4">Phase 4 &mdash; sharpen in RegiStax 6</h2>
+  <p>The <code>.tif</code> from AutoStakkert still looks soft and hazy. That is normal: all the fine detail is hidden in the data and comes out through <strong>wavelet sharpening</strong> &mdash; the same tool and the same settings approach as in the D300 workflow.</p>
   <ol>
-    <li><strong>Open:</strong> AstroSurface &rarr; <em>File</em> &rarr; <em>Open</em> &rarr; the AutoStakkert <code>.tif</code> (pick the file <em>without</em> <code>_conv</code> in its name).</li>
-    <li><strong>Colour balance:</strong> drag a small square over the planet or a white patch of lunar surface. In the top menu: <em>RGB Balance</em> &rarr; <em>Auto</em> &rarr; <em>OK</em>. Any colour cast disappears at once.</li>
-    <li><strong>Sharpen (wavelets / deconvolution):</strong> top bar &rarr; <em>Wavelets - Deconvolution</em>. Slide the top slider (<em>Wavelets HF / Fine</em>) slowly to the right (e.g. <code>30</code>&ndash;<code>60</code>) until cloud belts or craters snap into focus. <em>Stop as soon as grainy noise appears!</em> Then use the <em>Denoise</em> slider (bottom right, e.g. <code>0.15</code>&ndash;<code>0.25</code>) to smooth it away. Click <em>OK</em>.</li>
-    <li><strong>Contrast &amp; save:</strong> optionally pull the background to true black with <em>Levels / Curves</em>, then <em>File</em> &rarr; <em>Save As</em> &rarr; <strong>PNG</strong> or JPEG (100%) to share.</li>
+    <li><strong>Open:</strong> launch RegiStax 6 &rarr; <strong>&ldquo;Select&rdquo;</strong> (top-left) &rarr; open your <code>AS_..._stack.tif</code> from AutoStakkert (not the <code>_conv</code> variant).</li>
+    <li><strong>Colour balance:</strong> on the right, <em>RGB Balance</em> &rarr; <em>Auto Balance</em> &mdash; any colour cast disappears. For planets with a red/blue edge from the atmosphere: tab <em>RGB Align</em> &rarr; <em>Estimate</em> &rarr; <em>Do All</em>.</li>
+    <li><strong>Sharpen (wavelets):</strong> go to the <em>Wavelet</em> tab &mdash; six layers, finest (1) to coarsest (6).
+      <ul>
+        <li><strong>Planets:</strong> raise <strong>layers 2&ndash;3</strong> first (the disc&rsquo;s detail lives there), layer 1 just a touch.</li>
+        <li><strong>Moon:</strong> raise <strong>layers 1&ndash;3</strong> gently &mdash; layers 1&ndash;2 carry the crater detail.</li>
+        <li>Per layer: set <em>Denoise</em> to about <code>0.10</code>&ndash;<code>0.30</code> (more if the image is noisy).</li>
+      </ul>
+    </li>
+    <li><strong>How much is too much?</strong> bright rings around craters or around the planet edge (&ldquo;onion rings&rdquo;) and a plastic look mean: too far. Back the layers off, raise denoise.</li>
+    <li>Click <strong>&ldquo;Do All&rdquo;</strong> (applies the wavelets to the full image) &rarr; then <strong>&ldquo;Save Image&rdquo;</strong> (top bar) &rarr; save as TIFF or PNG.</li>
   </ol>
 
-  <h3>Method B &mdash; RegiStax 6</h3>
+  <div class="callout warn">
+    <span class="title">RegiStax says &ldquo;invalid TIFF header&rdquo;?</span>
+    <p>Known quirk with some TIFF variants. Open the file in GIMP &rarr; File &rarr; Export As&hellip; &rarr; <strong>PNG</strong> &rarr; open that PNG in RegiStax.</p>
+  </div>
+
+  <h3>Optional final polish with GIMP</h3>
   <ol>
-    <li>Drag the <code>.tif</code> into RegiStax 6 (it jumps straight to the <em>Wavelet</em> tab).</li>
-    <li>Slide <strong>Layer 1</strong>, <strong>Layer 2</strong> and <strong>Layer 3</strong> up slowly until the detail appears. Use the up-arrow next to <em>Denoise</em> on Layer 1 (e.g. <code>0.10</code>&ndash;<code>0.20</code>) to suppress noise.</li>
-    <li>On the right: <em>RGB Balance</em> &rarr; <em>Auto Balance</em> for natural colour, then <em>Do All</em> &rarr; <em>Save image</em>.</li>
+    <li><strong>Colors &rarr; Levels:</strong> move the white/black triangles inward until the histogram touches the data &mdash; the background turns true black.</li>
+    <li><strong>Colors &rarr; Color Balance:</strong> Saturn likes a warm yellow push in the highlights, Jupiter a gentle warm cream &mdash; subtle is enough (&plusmn;10).</li>
+    <li><strong>File &rarr; Export As&hellip;</strong> &rarr; PNG or JPEG (quality 90) to share.</li>
   </ol>
 
   <h2 id="troubleshooting">Troubleshooting</h2>
@@ -145,7 +156,7 @@
       <tr><td>Histogram over 80%</td><td>Gain too high</td><td>Lower Gain (and/or Exposure) until the peak sits at 60&ndash;75%</td></tr>
       <tr><td>Planet drifts out of frame during capture</td><td>Rough polar alignment</td><td>Re-align; keep the ROI generous (640x480) &mdash; AutoStakkert centres the rest</td></tr>
       <tr><td>GoTo connection drops</td><td>Weak voltage or Wi-Fi congestion</td><td>Stable 12&nbsp;V supply (2&ndash;5&nbsp;A); or connect the mount by mini-USB</td></tr>
-      <tr><td>Sharp but grainy after wavelets</td><td>Too much sharpening, too few frames</td><td>Back off the wavelet slider; apply Denoise (0.15&ndash;0.25)</td></tr>
+      <tr><td>Sharp but grainy after wavelets</td><td>Too much sharpening, too few frames</td><td>Back off the layers; raise Denoise per layer (0.10&ndash;0.30)</td></tr>
     </table>
   </div>
 
@@ -162,7 +173,7 @@
       <tr><td><strong>RAW8</strong></td><td>Unprocessed 8-bit sensor data &mdash; small files, full speed</td></tr>
       <tr><td><strong>Debayer</strong></td><td>Turning raw colour-filter-sensor data into a colour image</td></tr>
       <tr><td><strong>Stacking</strong></td><td>Laying many frames exactly on top of each other and averaging &rarr; more detail, less noise</td></tr>
-      <tr><td><strong>Wavelets</strong></td><td>Sharpening that works per detail level (RegiStax / AstroSurface)</td></tr>
+      <tr><td><strong>Wavelets</strong></td><td>Sharpening that works per detail level (RegiStax 6)</td></tr>
       <tr><td><strong>AP (alignment point)</strong></td><td>Reference point AutoStakkert uses to align the frames</td></tr>
       <tr><td><strong>Nyquist sampling</strong></td><td>Rule: ideal f-ratio &asymp; 5 &times; pixel size in &micro;m &mdash; f/14.5 for the 2.9&nbsp;&micro;m IMX585</td></tr>
       <tr><td><strong>UV/IR-cut</strong></td><td>Filter blocking ultraviolet and infrared light &mdash; mandatory with the SV705C</td></tr>
@@ -173,7 +184,7 @@
 
   <div class="callout">
     <span class="title">Sources</span>
-    <p>All facts verified 15 November 2026 against: the <a href="https://www.bresser.com/p/bresser-messier-mc-152-2250-exos-2-pmc-eight-goto-telescope-set-4742190" rel="noopener">official Bresser MC-152/2250 product page</a>, <a href="https://www.svbony.com/products/sv705c-color-planetary-camera-imx585" rel="noopener">SVBONY SV705C specifications</a> (IMX585, 45&nbsp;fps, 128&nbsp;MB DDR3, ST-4), <a href="https://www.apm-telescopes.net/en/svbony-sv705c-f9198j-usb30-color-planetary-camera" rel="noopener">APM Telescopes</a> (AR window), <a href="https://www.bresser.com/p/bresser-gear-set-1-8-messier-hexfoc-0625720" rel="noopener">Bresser 1:8 gear set</a>, and the official pages of <a href="https://www.sharpcap.co.uk/sharpcap/downloads" rel="noopener">SharpCap</a>, <a href="https://www.autostakkert.com/wp/download/" rel="noopener">AutoStakkert!4</a>, <a href="http://astrosurface.com/" rel="noopener">AstroSurface</a> and <a href="https://www.astronomie.be/registax/" rel="noopener">RegiStax 6</a>.</p>
+    <p>All facts verified 15 November 2026 against: the <a href="https://www.bresser.com/p/bresser-messier-mc-152-2250-exos-2-pmc-eight-goto-telescope-set-4742190" rel="noopener">official Bresser MC-152/2250 product page</a>, <a href="https://www.svbony.com/products/sv705c-color-planetary-camera-imx585" rel="noopener">SVBONY SV705C specifications</a> (IMX585, 45&nbsp;fps, 128&nbsp;MB DDR3, ST-4), <a href="https://www.apm-telescopes.net/en/svbony-sv705c-f9198j-usb30-color-planetary-camera" rel="noopener">APM Telescopes</a> (AR window), <a href="https://www.bresser.com/p/bresser-gear-set-1-8-messier-hexfoc-0625720" rel="noopener">Bresser 1:8 gear set</a>, and the official pages of <a href="https://www.sharpcap.co.uk/sharpcap/downloads" rel="noopener">SharpCap</a>, <a href="https://www.autostakkert.com/wp/download/" rel="noopener">AutoStakkert!4</a>, <a href="https://www.astronomie.be/registax/" rel="noopener">RegiStax 6</a> and <a href="https://www.gimp.org" rel="noopener">GIMP</a>.</p>
   </div>
 
   <a class="back-top" href="telescope.html">&larr; Back to Telescope</a>

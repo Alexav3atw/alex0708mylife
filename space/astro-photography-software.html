@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Astro Photography: Post-Processing How-To - alex0708mylife</title>
-<meta name="description" content="Click-by-click how-to for the free astrophotography software stack: Nikon NX Studio, PIPP, AutoStakkert!3, RegiStax 6 and GIMP — from raw frames to a sharp, stacked Moon or planet.">
+<meta name="description" content="Click-by-click how-to for the free astrophotography software stack: Nikon NX Studio, PIPP, AutoStakkert!4, RegiStax 6 and GIMP — from raw frames to a sharp, stacked Moon or planet.">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -26,11 +26,11 @@
 <section class="hero">
   <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Space</a> / <a href="astro-photography.html">Astro Photography</a> / Post-Processing How-To</p>
   <h1>Post-Processing How-To</h1>
-  <p class="tagline">Every program, click by click: NX Studio, PIPP, AutoStakkert!3, RegiStax&nbsp;6 and GIMP &mdash; from the files on your memory card to a sharp, stacked Moon or planet. All free.</p>
+  <p class="tagline">Every program, click by click: NX Studio, PIPP, AutoStakkert!4, RegiStax&nbsp;6 and GIMP &mdash; from the files on your memory card to a sharp, stacked Moon or planet. All free.</p>
 </section>
 
 <article class="wrap">
-  <p class="lede">This page assumes you have shot your frames (see the <a href="astro-photography-guide.html">complete guide</a>). One rule runs through everything: <strong>PIPP reads your NEF files, AutoStakkert!3 and RegiStax 6 do not</strong> &mdash; so every frame passes through PIPP first. The field companion is the <a href="astro-photography-cheatsheet.html">cheat sheet</a>.</p>
+  <p class="lede">This page assumes you have shot your frames (see the <a href="astro-photography-guide.html">complete guide</a>). One rule runs through everything: <strong>PIPP reads your NEF files, AutoStakkert!4 and RegiStax 6 do not</strong> &mdash; so every frame passes through PIPP first. The stacker and the sharpener are the same programs as in the <a href="telescope-imaging-guide.html">Telescope guide</a> &mdash; one common stack for both rigs; only the preparation tools on this page (FastStone, NX Studio, PIPP) are D300-specific. The field companion is the <a href="astro-photography-cheatsheet.html">cheat sheet</a>.</p>
 
   <h2 id="pipeline">The pipeline at a glance</h2>
   <div class="table-scroll">
@@ -39,7 +39,7 @@
       <tr><td>1. Get the files off the camera</td><td colspan="2">copy to <span class="cmd">fotos\maan\RAW\</span> or <span class="cmd">fotos\planeten\RAW\</span></td></tr>
       <tr><td>2. Cull (optional but smart)</td><td colspan="2">FastStone: delete the obviously bad frames</td></tr>
       <tr><td>3. Pre-process</td><td>PIPP &mdash; &ldquo;Solar/Lunar Full Disc&rdquo;</td><td>PIPP &mdash; &ldquo;Planetary&rdquo; (centre, crop, sort)</td></tr>
-      <tr><td>4. Stack</td><td>AutoStakkert!3 &mdash; Surface, best 50%</td><td>AutoStakkert!3 &mdash; Planet, best 10&ndash;50%, drizzle 3&times;</td></tr>
+      <tr><td>4. Stack</td><td>AutoStakkert!4 &mdash; Surface, best 50%</td><td>AutoStakkert!4 &mdash; Planet, best 10&ndash;50%, drizzle 3&times;</td></tr>
       <tr><td>5. Sharpen</td><td colspan="2">RegiStax 6 &mdash; wavelets, layers 1&ndash;3 + denoise</td></tr>
       <tr><td>6. Polish</td><td>NX Studio</td><td>GIMP or NX Studio (colours, levels, export)</td></tr>
     </table>
@@ -52,7 +52,7 @@
       <tr><td>Nikon NX Studio</td><td>1.11.0</td><td>Installer; first launch asks for a free Nikon ID</td><td><a href="https://downloadcenter.nikonimglib.com/en/download/sw/279.html" rel="noopener">Nikon Download Center</a></td></tr>
       <tr><td>FastStone Image Viewer</td><td>&mdash;</td><td>Small installer, no account</td><td><a href="https://www.faststone.org" rel="noopener">faststone.org</a></td></tr>
       <tr><td>PIPP</td><td>2.5.9</td><td>Installer, no account</td><td><a href="https://sites.google.com/site/astropipp" rel="noopener">sites.google.com/site/astropipp</a></td></tr>
-      <tr><td>AutoStakkert!3</td><td>3.1.4</td><td>No installer: unzip the folder and run <span class="cmd">AutoStakkert.exe</span></td><td><a href="https://www.autostakkert.com" rel="noopener">autostakkert.com</a></td></tr>
+      <tr><td>AutoStakkert!4</td><td>4.0.13</td><td>No installer: unzip the folder and run <span class="cmd">AutoStakkert.exe</span></td><td><a href="https://www.autostakkert.com" rel="noopener">autostakkert.com</a></td></tr>
       <tr><td>RegiStax 6</td><td>6.x</td><td>Installer, no account</td><td><a href="https://www.astronomie.be/registax" rel="noopener">astronomie.be/registax</a></td></tr>
       <tr><td>GIMP</td><td>2.10+</td><td>Installer, no account</td><td><a href="https://www.gimp.org" rel="noopener">gimp.org</a></td></tr>
       <tr><td>Siril (optional)</td><td>1.4.5</td><td>For later (deep sky); skip for now if you like</td><td><a href="https://siril.org" rel="noopener">siril.org</a></td></tr>
@@ -127,14 +127,14 @@
     <p>Object detection failed: click &ldquo;Test Options&rdquo; again and loosen the detection threshold, or untick &ldquo;Enable Object Detection&rdquo; and set the crop manually around where the Moon/planet sits.</p>
   </div>
 
-  <h2 id="autostakkert">Step 4 &mdash; AutoStakkert!3: stacking</h2>
-  <p>AutoStakkert (AS!3) is the heart of the workflow: it measures the quality of every frame, picks the best ones, and averages them into one noise-free image. No installer &mdash; unzip and run <span class="cmd">AutoStakkert.exe</span>.</p>
+  <h2 id="autostakkert">Step 4 &mdash; AutoStakkert!4: stacking</h2>
+  <p>AutoStakkert (AS!4) is the heart of the workflow: it measures the quality of every frame, picks the best ones, and averages them into one noise-free image. No installer &mdash; unzip and run <span class="cmd">AutoStakkert.exe</span>.</p>
   <ol>
     <li><strong>Open:</strong> button 1. Open &rarr; select the PIPP output (the <span class="cmd">_pipp.avi</span> or the TIFF folder). The frames load in the top window.</li>
     <li><strong>Image Stabilization:</strong> choose <strong>Surface</strong> for the Moon, <strong>Planet (COG)</strong> for planets.</li>
     <li><strong>Alignment points (APs):</strong>
       <ul>
-        <li>Moon: AP size <span class="cmd">48 px</span>, tick &ldquo;Auto&rdquo; &rarr; AS!3 places a grid of APs across the disc.</li>
+        <li>Moon: AP size <span class="cmd">48 px</span>, tick &ldquo;Auto&rdquo; &rarr; AS!4 places a grid of APs across the disc.</li>
         <li>Planets: AP size <span class="cmd">24 px</span>; with &ldquo;Place AP grid&rdquo; click <em>on the planet</em> to add one AP around it; right-click removes stray APs. One or two APs is enough at 300 mm.</li>
       </ul>
     </li>
@@ -145,7 +145,7 @@
         <li><em>Frame percentage to stack:</em> Moon <strong>50%</strong> &middot; Jupiter <strong>10&ndash;20%</strong> &middot; Saturn <strong>30&ndash;50%</strong> &mdash; or drag the line in the quality graph to just above the frames where the curve collapses.</li>
         <li><em>Drizzle:</em> planets <strong>3.0&times;</strong> (a 12 px planet becomes 36 px &mdash; essential at 300 mm; takes a few minutes), Moon Off or 1.5&times;.</li>
         <li><em>Normalize Stack:</em> <strong>75&ndash;80%</strong>.</li>
-        <li><em>Sharpen:</em> leave <strong>off</strong> &mdash; RegiStax wavelets do it better. (Tick &ldquo;Sharpened&rdquo; only if you want AS!3&rsquo;s quick version for comparison.)</li>
+        <li><em>Sharpen:</em> leave <strong>off</strong> &mdash; RegiStax wavelets do it better. (Tick &ldquo;Sharpened&rdquo; only if you want AS!4&rsquo;s quick version for comparison.)</li>
         <li><em>RGB Align:</em> tick for planets (fixes the red/blue fringes from the atmosphere).</li>
         <li>Output format: <strong>TIFF (16-bit)</strong>.</li>
       </ul>
@@ -154,8 +154,8 @@
   </ol>
 
   <div class="callout warn">
-    <span class="title">AS!3 refuses your files?</span>
-    <p>You fed it NEF files directly &mdash; AS!3 cannot read NEF. Run them through PIPP first (or convert to 16-bit TIFF with NX Studio, see step 2B).</p>
+    <span class="title">AS!4 refuses your files?</span>
+    <p>You fed it NEF files directly &mdash; AS!4 cannot read NEF. Run them through PIPP first (or convert to 16-bit TIFF with NX Studio, see step 2B).</p>
   </div>
 
   <h2 id="registax">Step 5 &mdash; RegiStax 6: wavelets (the sharpening)</h2>
@@ -190,7 +190,7 @@
   </ol>
 
   <h2 id="siril">Siril (optional, for later)</h2>
-  <p>Siril is a free all-round astro processor that also reads NEF. For Moon and planets, the PIPP &rarr; AS!3 &rarr; RegiStax route above gives the best result &mdash; Siril becomes interesting later, for <strong>deep sky</strong> (nebulae, galaxies) and star trails with its scripts. Skip it for now; it costs you nothing to leave installed.</p>
+  <p>Siril is a free all-round astro processor that also reads NEF. For Moon and planets, the PIPP &rarr; AS!4 &rarr; RegiStax route above gives the best result &mdash; Siril becomes interesting later, for <strong>deep sky</strong> (nebulae, galaxies) and star trails with its scripts. Skip it for now; it costs you nothing to leave installed.</p>
 
   <h2 id="recipes">Two complete recipes, start to finish</h2>
 
@@ -199,7 +199,7 @@
     <li>Copy the NEFs to <span class="cmd">fotos\maan\RAW\2026-11-17\</span>.</li>
     <li>FastStone: delete the obviously bad frames, keep 20+.</li>
     <li>PIPP: Solar/Lunar Full Disc &middot; colour &middot; keep best 90% &middot; output AVI (ULRG).</li>
-    <li>AutoStakkert!3: Surface &middot; AP 48 px auto grid &middot; Noise Robust 3 &middot; Analyse &middot; stack <strong>best 50%</strong> &middot; drizzle off &middot; 16-bit TIFF.</li>
+    <li>AutoStakkert!4: Surface &middot; AP 48 px auto grid &middot; Noise Robust 3 &middot; Analyse &middot; stack <strong>best 50%</strong> &middot; drizzle off &middot; 16-bit TIFF.</li>
     <li>RegiStax 6: Wavelet layers 1&ndash;3 gently + denoise 0.3 &middot; Do All &middot; save TIFF to <span class="cmd">fotos\maan\gestackt\</span>.</li>
     <li>NX Studio (workflow 2A): exposure, white balance 5200 K, sharpening +3&hellip;5, clarity +2&hellip;4, contrast +15 &middot; Convert Files &rarr; JPEG &rarr; <span class="cmd">fotos\maan\bewerkt\maan-2026-11-17.jpg</span>. Done &#127769;</li>
   </ol>
@@ -209,7 +209,7 @@
     <li>Copy the JPEG bursts to <span class="cmd">fotos\planeten\RAW\2026-11-17-saturnus\</span>.</li>
     <li>FastStone: keep the best 60&ndash;80 frames of your series.</li>
     <li>PIPP: Planetary &middot; centre + crop 400&times;400 &middot; keep best 80% &middot; output AVI (ULRG).</li>
-    <li>AutoStakkert!3: Planet (COG) &middot; AP 24 px on the planet &middot; Noise Robust 4 &middot; Analyse &middot; stack <strong>best 30&ndash;50%</strong> &middot; <strong>drizzle 3.0&times;</strong> &middot; RGB Align on &middot; 16-bit TIFF.</li>
+    <li>AutoStakkert!4: Planet (COG) &middot; AP 24 px on the planet &middot; Noise Robust 4 &middot; Analyse &middot; stack <strong>best 30&ndash;50%</strong> &middot; <strong>drizzle 3.0&times;</strong> &middot; RGB Align on &middot; 16-bit TIFF.</li>
     <li>RegiStax 6: RGB Align (if fringes) &middot; Wavelet layers 2&ndash;3 + denoise 0.3&ndash;0.5 &middot; Do All &middot; save to <span class="cmd">fotos\planeten\gestackt\</span>.</li>
     <li>GIMP: Levels &middot; Color Balance (warm yellow) &middot; Unsharp Mask 0.5/1.5 px &middot; export JPEG &rarr; <span class="cmd">fotos\planeten\bewerkt\saturnus-2026-11-17.jpg</span>. A tiny oval with a ring &mdash; from 300 mm. &#129680;</li>
   </ol>
@@ -218,13 +218,13 @@
   <div class="table-scroll">
     <table class="data">
       <tr><th>Symptom</th><th>Cause</th><th>Fix</th></tr>
-      <tr><td>AS!3/RegiStax refuse to open files</td><td>NEF not supported</td><td>Through PIPP first (or NX Studio batch &rarr; 16-bit TIFF)</td></tr>
+      <tr><td>AS!4/RegiStax refuse to open files</td><td>NEF not supported</td><td>Through PIPP first (or NX Studio batch &rarr; 16-bit TIFF)</td></tr>
       <tr><td>PIPP output is empty</td><td>Object detection failed</td><td>&ldquo;Test Options&rdquo; &rarr; loosen threshold or crop manually</td></tr>
       <tr><td>Stack looks worse than your best single frame</td><td>Too many bad frames stacked, or bad seeing</td><td>Lower the stack % (drag the quality line up); reshoot on a calmer night</td></tr>
       <tr><td>Onion rings / halos after wavelets</td><td>Wavelets too strong</td><td>Lower layers 1&ndash;3, raise denoise per layer</td></tr>
       <tr><td>Colours are blue/green after stacking</td><td>Wrong white balance at debayering</td><td>Set camera WB to &ldquo;sunlight&rdquo;; or fix afterwards in NX Studio / GIMP</td></tr>
       <tr><td>RegiStax &ldquo;invalid TIFF header&rdquo;</td><td>TIFF variant RegiStax dislikes</td><td>Re-save as PNG via GIMP, reopen</td></tr>
-      <tr><td>AS!3 is slow / freezes on a TIFF series</td><td>Huge frames (4288&times;2848)</td><td>Use AVI from PIPP, or crop tighter in PIPP</td></tr>
+      <tr><td>AS!4 is slow / freezes on a TIFF series</td><td>Huge frames (4288&times;2848)</td><td>Use AVI from PIPP, or crop tighter in PIPP</td></tr>
       <tr><td>Planet looks elongated after stacking</td><td>Frames from different moments (Jupiter rotates!)</td><td>Keep Jupiter series &le;1&ndash;2 minutes</td></tr>
       <tr><td>NX Studio asks for a login</td><td>Free Nikon ID required once</td><td>Register a free account; only needed at first launch</td></tr>
     </table>
