@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Telescope - alex0708mylife</title>
-<meta name="description" content="My Bresser Messier MC-152/2250 EXOS-2 PMC-Eight GoTo telescope: what it can show, the SVBONY SV705C imaging setup, and the lucky-imaging workflow.">
+<meta name="description" content="My Bresser Messier MC-152/2250 EXOS-2 PMC-Eight GoTo telescope: what it can show, the SVBONY SV705C imaging setup, and how to get ready for a night of imaging.">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -26,11 +26,11 @@
 <section class="hero">
   <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Space</a> / Telescope</p>
   <h1>Telescope</h1>
-  <p class="tagline">My own telescope: a Bresser Messier MC-152/2250 Maksutov on an EXOS-2 PMC-Eight GoTo mount &mdash; what it can show, the SVBONY SV705C camera setup, and the workflow that turns video into sharp pictures of the Moon and the planets.</p>
+  <p class="tagline">My own telescope: a Bresser Messier MC-152/2250 Maksutov on an EXOS-2 PMC-Eight GoTo mount &mdash; what it can show, the SVBONY SV705C camera setup, and how to get ready for a night of imaging. The complete imaging workflow lives in the Astro Photography subject.</p>
 </section>
 
 <article class="wrap">
-  <p class="lede">My telescope project, started <strong>15 November 2026</strong>. The gear: a <strong>BRESSER Messier MC-152/2250 EXOS-2 PMC-Eight GoTo</strong> &mdash; a 152&nbsp;mm Maksutov-Cassegrain (2250&nbsp;mm focal length, f/14.8) on a German equatorial mount with Wi-Fi GoTo control &mdash; plus the <strong>SVBONY SV705C</strong> planetary camera (Sony IMX585). Everything below was verified against official Bresser and SVBONY sources in November 2026.</p>
+  <p class="lede">My telescope project, started <strong>15 November 2026</strong>. The gear: a <strong>BRESSER Messier MC-152/2250 EXOS-2 PMC-Eight GoTo</strong> &mdash; a 152&nbsp;mm Maksutov-Cassegrain (2250&nbsp;mm focal length, f/14.8) on a German equatorial mount with Wi-Fi GoTo control &mdash; plus the <strong>SVBONY SV705C</strong> planetary camera (Sony IMX585). Everything below was verified against official Bresser and SVBONY sources in November 2026. The imaging workflow &mdash; capture, stacking, sharpening &mdash; lives in the <a href="astro-photography.html">Astro Photography</a> subject.</p>
 
   <div class="tiles">
     <div class="tile">
@@ -82,7 +82,7 @@
   <h3>Double stars &amp; globular clusters</h3>
   <p>The 0.91&Prime; resolving power splits close double stars and resolves individual stars in compact globular clusters like M13 and M3 &mdash; impressive through any eyepiece.</p>
   <h3>Deep sky &mdash; the honest limit</h3>
-  <p>Compact, bright objects (the Ring Nebula M57, the Dumbbell M27, the core of the Orion Nebula M42) are beautiful. Large nebulae and open clusters like the Pleiades do not fit the narrow field of view, and the slow f/14.8 optics make faint extended nebulae a long-exposure project &mdash; that is what the camera guide is for.</p>
+  <p>Compact, bright objects (the Ring Nebula M57, the Dumbbell M27, the core of the Orion Nebula M42) are beautiful. Large nebulae and open clusters like the Pleiades do not fit the narrow field of view, and the slow f/14.8 optics make faint extended nebulae a long-exposure project &mdash; that is where the <a href="astro-photography-software.html">Software How-To</a> comes in.</p>
 
   <h2 id="gear">The mount &amp; the reviews</h2>
   <p>The <strong>EXOS-2</strong> German equatorial mount carries the tube vibration-free (13&nbsp;kg payload), and the open-source <strong>PMC-Eight</strong> GoTo system drives both axes over Wi-Fi or USB &mdash; ASCOM-compatible, with an ST-4 autoguider port, and controlled by the free ExploreStars app. No hand controller is included; a tablet, smartphone or laptop is the remote. An illuminated polar finder is pre-installed for polar alignment.</p>
@@ -116,13 +116,38 @@
   </div>
   <p>Prices checked 15 November 2026 at <a href="https://teleskopy.pl/product_info.php?products_id=8176&language=en" rel="noopener">Teleskopy.pl</a>, <a href="https://www.apm-telescopes.net/en/svbony-sv705c-f9198j-usb30-color-planetary-camera" rel="noopener">APM Telescopes</a> (&euro; 284 incl. VAT) and <a href="https://www.bresser.com/p/bresser-gear-set-1-8-messier-hexfoc-0625720" rel="noopener">Bresser</a>.</p>
 
+  <h2 id="ready">Getting ready to image</h2>
+  <p>The full capture and processing workflow lives in the <a href="astro-photography-software.html">Software How-To</a> (Astro Photography subject); this is the physical preparation that happens outside, before the laptop opens.</p>
+  <ol>
+    <li><strong>Cooldown (60&ndash;90 minutes):</strong> put the telescope outside so the mirror and the thick meniscus lens reach outside temperature. Fit a dew shield on the front.</li>
+    <li><strong>Polar alignment &amp; GoTo:</strong> level the tripod with the north leg pointing north, roughly align the EXOS-2 on Polaris, then run a 2-star or 3-star alignment in the ExploreStars app.</li>
+    <li><strong>Centre visually:</strong> find your target (Jupiter, or a lunar crater) with the included <strong>26&nbsp;mm eyepiece</strong> and the star diagonal, and put it exactly in the middle of the field.</li>
+    <li><strong>Mount the camera (prime focus):</strong> remove the eyepiece <em>and</em> the 90&deg; star diagonal. Leave the included Hexafoc extension tube(s) between the tube and the focuser in place &mdash; they set the back-focus distance for camera use; without them the camera may not reach focus. Screw the <strong>1.25&Prime; UV/IR-cut filter</strong> onto the nose piece of the SV705C, slide the camera straight into the 1.25&Prime; holder of the focuser, and connect it to a <strong>blue USB&nbsp;3.0 port</strong> of your laptop.</li>
+  </ol>
+  <p>Then open SharpCap and follow the <a href="astro-photography-software.html#workflow-b">Workflow B steps</a> in the Software How-To.</p>
+
+  <h3>Imaging terms in a nutshell</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Term</th><th>Meaning</th></tr>
+      <tr><td><strong>Prime focus</strong></td><td>The camera sits directly in the focuser without eyepiece or lens</td></tr>
+      <tr><td><strong>Back focus</strong></td><td>The distance behind the focuser where the image comes to focus &mdash; set by the Hexafoc extension tube(s)</td></tr>
+      <tr><td><strong>ROI</strong></td><td>Region Of Interest: reading out only part of the sensor &rarr; much higher frame rate</td></tr>
+      <tr><td><strong>SER</strong></td><td>The lossless video format for planetary imaging (never compressed AVI/MP4)</td></tr>
+      <tr><td><strong>RAW8</strong></td><td>Unprocessed 8-bit sensor data &mdash; small files, full speed</td></tr>
+      <tr><td><strong>Debayer</strong></td><td>Turning raw colour-filter-sensor data into a colour image</td></tr>
+      <tr><td><strong>Nyquist sampling</strong></td><td>Rule: ideal f-ratio &asymp; 5 &times; pixel size in &micro;m &mdash; f/14.5 for the 2.9&nbsp;&micro;m IMX585, and the MC-152 is f/14.8</td></tr>
+      <tr><td><strong>UV/IR-cut</strong></td><td>Filter blocking ultraviolet and infrared light &mdash; mandatory with the SV705C</td></tr>
+    </table>
+  </div>
+
   <h2>The pages</h2>
   <div class="grid cols-3">
-    <a class="card" href="telescope-imaging-guide.html">
-      <span class="emoji">&#127760;</span>
-      <h3>The Complete Imaging Guide</h3>
-      <p>From a cold telescope to a sharp picture: install, set up, capture in SharpCap, stack in AutoStakkert!4, sharpen in RegiStax&nbsp;6 &mdash; click by click.</p>
-      <span class="go">Read the guide &rarr;</span>
+    <a class="card" href="astro-photography-software.html">
+      <span class="emoji">&#128187;</span>
+      <h3>The Software How-To</h3>
+      <p>The complete imaging workflow for this telescope &mdash; SharpCap capture, AutoStakkert!4 stacking, RegiStax&nbsp;6 sharpening &mdash; lives in the Astro Photography subject, click by click.</p>
+      <span class="go">Open the how-to &rarr;</span>
     </a>
 
     <a class="card" href="#tips">
@@ -134,9 +159,9 @@
 
     <a class="card" href="astro-photography.html">
       <span class="emoji">&#128248;</span>
-      <h3>Astro Photography (D300)</h3>
-      <p>The sister subject: shooting the Moon and the planets with the Nikon D300 and a 300&nbsp;mm lens &mdash; and how both rigs compare.</p>
-      <span class="go">Open the D300 guide &rarr;</span>
+      <h3>Astro Photography</h3>
+      <p>The sister subject: both rigs side by side &mdash; the D300 with a 300&nbsp;mm lens and this telescope &mdash; two workflows, one shared software stack.</p>
+      <span class="go">Open the subject &rarr;</span>
     </a>
   </div>
 
