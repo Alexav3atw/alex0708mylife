@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astro Photography: The Complete D300 Guide - alex0708mylife</title>
+<meta name="description" content="The complete beginner's guide to shooting the Moon and planets with a Nikon D300 and 70-300 mm lens: every setting, exposure tables, and the free PIPP/AutoStakkert/RegiStax stacking workflow.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="index.html" class="active">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="../pc-network/index.html">PC &amp; Network</a>
+      <a href="../investing/index.html">Investing</a>
+      <a href="../time/index.html">Time</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Space</a> / <a href="astro-photography.html">Astro Photography</a> / Complete Guide</p>
+  <h1>The Complete D300 Guide</h1>
+  <p class="tagline">For the absolute beginner with a Nikon D300 and an AF-S VR 70&ndash;300&nbsp;mm f/4.5&ndash;5.6G: the basics, every single camera setting, the shooting plans for Moon and planets, and the post-processing that makes them sharp.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">Last verified <strong>15 November 2026</strong> &mdash; every setting, number and software version was checked against the official Nikon manual and current sources. The printed companion is the <a href="astro-photography-cheatsheet.html">field cheat sheet</a>.</p>
+
+  <h2 id="quickstart">Quick start &mdash; shoot the Moon tonight</h2>
+  <p>The ten-minute version (the full explanations follow in the chapters below):</p>
+  <ol>
+    <li><strong>Tripod</strong> up, camera mounted, <strong>VR on the lens set to OFF</strong> (crucial on a tripod!).</li>
+    <li><strong>MENU &rarr; Custom Setting Menu &rarr; d9 &ldquo;Exposure delay mode&rdquo; &rarr; On</strong> &mdash; the mirror goes up, the camera waits about a second, then fires: no vibration.</li>
+    <li><strong>MENU &rarr; Shooting Menu</strong>: Image quality = <strong>RAW (NEF)</strong>, NEF bit depth = <strong>12-bit</strong>, compression = <strong>Lossless</strong>, ISO = <strong>200</strong>, Active D-Lighting = <strong>Off</strong>.</li>
+    <li>Release mode dial on <strong>S</strong> (single frame). Camera in <strong>M</strong> (manual), lens switch on <strong>M</strong> (manual focus).</li>
+    <li><strong>Live View on</strong> (LV dial position) &rarr; choose <strong>tripod mode</strong> (MENU &rarr; Shooting Menu &rarr; Live view &rarr; Live view mode &rarr; <strong>Tripod</strong>) &rarr; zoom in with the magnify button (&oplus;) &rarr; focus on the Moon&rsquo;s edge until the craters snap into place &rarr; Live View can stay on (in tripod mode the mirror is already up).</li>
+    <li><strong>Exposure:</strong> aperture <strong>f/8</strong>, ISO <strong>200</strong>, shutter speed from this table:</li>
+  </ol>
+
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Moon phase (November 2026)</th><th>Shutter speed at f/8, ISO 200</th></tr>
+      <tr><td>Full moon (24 Nov, high in the sky)</td><td>1/400 s</td></tr>
+      <tr><td>Between quarter and full (gibbous)</td><td>1/200 s</td></tr>
+      <tr><td><strong>Waxing Moon this week &mdash; heading to first quarter (17 Nov)</strong></td><td><strong>1/100 s</strong> (try 1/50&ndash;1/200 and check the blinkies)</td></tr>
+      <tr><td>Wide crescent</td><td>1/50 s</td></tr>
+      <tr><td>Thin crescent</td><td>1/25 s</td></tr>
+      <tr><td>Moon low above the horizon</td><td>+1 to +2 stops longer</td></tr>
+    </table>
+  </div>
+
+  <ol start="7">
+    <li>Take <strong>15&ndash;25 shots</strong> in a row. One is often already nice, but stacking (chapter &ldquo;Post-processing&rdquo;) makes it truly sharp.</li>
+  </ol>
+
+  <h2 id="expectations">What to expect &mdash; the honest story</h2>
+  <p>Before you invest nights in this: here is what your gear can do, and what it cannot.</p>
+
+  <h3>The maths of your camera</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Quantity</th><th>Value</th><th>Meaning</th></tr>
+      <tr><td>D300 sensor</td><td>DX format, 23.6 &times; 15.8 mm, 4288 &times; 2848 px (12.3 MP)</td><td>APS-C</td></tr>
+      <tr><td>Pixel size</td><td>5.5 &micro;m</td><td>the size of one light-sensitive cell</td></tr>
+      <tr><td>Crop factor</td><td>1.5&times;</td><td>300 mm behaves like <strong>450 mm</strong> on full frame</td></tr>
+      <tr><td>Pixel scale at 300 mm</td><td><strong>3.78 arcseconds per pixel</strong></td><td>your true &ldquo;magnification&rdquo;</td></tr>
+    </table>
+  </div>
+
+  <p>The pixel scale is the measure that matters: how much sky fits on one pixel. The Moon has an apparent diameter of about 1860 arcseconds (0.5&deg;). At 3.78&Prime;/px that makes the Moon <strong>about 490 pixels</strong> across &mdash; roughly one sixth of the frame height (2848 px). A beautiful, detailed Moon ball &mdash; not a frame-filling disc.</p>
+
+  <h3>How big will things really be (at 300 mm)?</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Object</th><th>Apparent size</th><th>Pixels on your D300</th><th>Verdict</th></tr>
+      <tr><td><strong>Moon</strong></td><td>1860&Prime; (&plusmn;0.5&deg;)</td><td><strong>&plusmn;490 px</strong></td><td>&#9989; Real detail possible &mdash; the main target</td></tr>
+      <tr><td><strong>Saturn</strong> (with rings)</td><td>&plusmn;40&Prime;</td><td><strong>&plusmn;11 px</strong></td><td>&#9989; Tiny oval with ring &mdash; achievable</td></tr>
+      <tr><td><strong>Jupiter</strong> (disc)</td><td>&plusmn;45&Prime;</td><td><strong>&plusmn;12 px</strong></td><td>&#9989; Small disc &mdash; achievable</td></tr>
+      <tr><td>Jupiter&rsquo;s Galilean moons</td><td>dots, up to 160 px from the planet</td><td>dots</td><td>&#9989; Visible as dots in a row</td></tr>
+      <tr><td><strong>Venus</strong> (phase)</td><td>&plusmn;40&ndash;50&Prime; (Nov&ndash;Dec 2026)</td><td>&plusmn;10&ndash;13 px</td><td>&#9989; Crescent shape visible</td></tr>
+      <tr><td><strong>Mars</strong></td><td>&plusmn;8&Prime; (Nov&ndash;Dec 2026)</td><td>&plusmn;2&ndash;3 px</td><td>&#9203; Small &mdash; wait for opposition Feb 2027 (then &plusmn;14&Prime;)</td></tr>
+      <tr><td>Nebulae / galaxies</td><td>&mdash;</td><td>&mdash;</td><td>&#10060; Not with this lens without a tracking mount</td></tr>
+    </table>
+  </div>
+
+  <div class="callout warn">
+    <span class="title">Manage your expectations</span>
+    <p>These will not be Hubble pictures. Jupiter will be a small disc of about 12 pixels on which &mdash; on a good night &mdash; you can <em>see</em> a band or two. The fun is squeezing the maximum out of 300&nbsp;mm with smart technique &mdash; and 90% of that maximum comes from <strong>stacking</strong>, not from better hardware.</p>
+  </div>
+
+  <h3>Why the full Moon is the worst Moon</h3>
+  <p>At full Moon the Sun is straight behind us: craters are lit from above and cast <strong>no shadows</strong>. Result: a bright, flat, boring disc. Along the <strong>terminator</strong> (the day/night line) the Sun sits low over the lunar surface and every crater casts long shadows &mdash; that is where the detail pops. So shoot the Moon preferably <strong>between crescent and quarter phase</strong>, like this week.</p>
+
+  <h2 id="basics">The basics you need to know</h2>
+
+  <h3>The three dials: aperture, shutter, ISO</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Dial</th><th>What it does</th><th>For astro</th></tr>
+      <tr><td><strong>Aperture (f/)</strong></td><td>How much light passes through the lens; f/8 = smaller opening than f/4</td><td><strong>f/8</strong> = the sharpest point of this lens at 300 mm; f/11 maximum (beyond that, diffraction blur)</td></tr>
+      <tr><td><strong>Shutter speed</strong></td><td>How long the sensor collects light</td><td>Moon: 1/25&ndash;1/400 s. Planets: 1/30&ndash;1/1000 s</td></tr>
+      <tr><td><strong>ISO</strong></td><td>Sensor sensitivity</td><td><strong>ISO 200</strong> (D300 base value, least noise) for the Moon; 400&ndash;1600 for planets (noise disappears in stacking)</td></tr>
+    </table>
+  </div>
+
+  <h3>Why stacking is the secret</h3>
+  <p>The atmosphere is never still: layers of air at different temperatures bend the light (you see it as &ldquo;twinkling&rdquo; stars). A single exposure therefore captures a slightly distorted image. The trick: take <strong>20 to 100 identical shots in quick succession</strong> &mdash; every now and then the air is momentarily calm (the &ldquo;lucky&rdquo; frames). Software picks the sharpest frames, lays them perfectly on top of each other and averages them: noise and atmospheric distortion average out, real detail gets reinforced.</p>
+  <ul>
+    <li><strong>Moon:</strong> a single well-focused exposure is already nice; stacking 15&ndash;50 frames makes it measurably sharper.</li>
+    <li><strong>Planets:</strong> without stacking you see nothing. This is called <strong>lucky imaging</strong>.</li>
+    <li>The free software that does this: <strong>PIPP &rarr; AutoStakkert!3 &rarr; RegiStax 6</strong> (chapter &ldquo;Post-processing&rdquo;).</li>
+  </ul>
+
+  <h3>Seeing and transparency</h3>
+  <ul>
+    <li><strong>Seeing</strong> = how calm the air is. Bad seeing: stars twinkle violently, the Moon&rsquo;s edge &ldquo;boils&rdquo;. In bad seeing Jupiter becomes soup no matter how much you stack. Best moments: shortly after the planet has risen high, over cold ground (grass) instead of rooftops (rising warm air disturbs the image).</li>
+    <li><strong>Transparency</strong> = how clear the air is (moisture, dust, thin haze). Bad transparency makes everything fainter and greyer.</li>
+    <li>Never shoot <strong>through an open window</strong> and never above a heated roof &mdash; it ruins everything.</li>
+  </ul>
+
+  <h3>NEF (RAW) &mdash; why you asked for it</h3>
+  <p>A NEF file contains the <strong>raw measurements</strong> of the sensor, not the finished picture of a JPEG. You can adjust exposure, white balance and sharpening afterwards without quality loss. JPEG throws away about 90% of the data when saving. For the Moon: NEF. For planet bursts: JPEG is allowed (explained in the planets chapter), because there speed and frame count beat file format.</p>
+
+  <h2 id="planning">Planning &mdash; what is in the sky (autumn/winter 2026)</h2>
+
+  <h3>The planets, autumn/winter 2026 (Belgium, &plusmn;51&deg; N)</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Object</th><th>When</th><th>Where</th><th>Status</th></tr>
+      <tr><td><strong>Saturn</strong> &#11088;</td><td><strong>Now! Evening planet</strong> &mdash; after sunset, &plusmn;38&deg; high</td><td>South, in Cetus</td><td>Opposition was 4 Oct 2026; rings tilted &plusmn;7&deg; open. <strong>The evening planet of these months</strong></td></tr>
+      <tr><td><strong>Jupiter</strong></td><td>Morning planet until mid-December; <strong>evenings from &plusmn;20:40 in late December</strong></td><td>Leo/Cancer</td><td>Opposition 11 Feb 2027 &mdash; gets better every month. Bright (mag &minus;2.4)</td></tr>
+      <tr><td><strong>Venus</strong></td><td>Morning planet (Nov&ndash;Dec 2026)</td><td>East, before sunrise</td><td>Very bright; only the crescent phase is visible</td></tr>
+      <tr><td><strong>Mars</strong></td><td>Morning planet; 16 Nov 2026 conjunction with Jupiter (1.2&deg; apart!)</td><td>Leo</td><td>Small (&plusmn;8&Prime;) until opposition 19 Feb 2027</td></tr>
+      <tr><td>Moon</td><td>Always &#128578;</td><td>&mdash;</td><td>See the phase calendar below</td></tr>
+    </table>
+  </div>
+
+  <ul>
+    <li><strong>November&ndash;December, evenings:</strong> shoot Saturn (don&rsquo;t be put off: it is a small oval, but <em>with a ring</em>!).</li>
+    <li><strong>Late December&ndash;February:</strong> Jupiter becomes an evening object &mdash; that is when it gets interesting: disc + 4 moons.</li>
+    <li><strong>Early mornings (November):</strong> Venus, Mars and Jupiter stand together in the east &mdash; a planet parade.</li>
+    <li><strong>24&ndash;28 December:</strong> even a grand parade &mdash; Venus, Mercury, Saturn, Jupiter and Mars visible at the same time.</li>
+  </ul>
+
+  <h3>Moon phase calendar &mdash; November/December 2026</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Date</th><th>Phase</th><th>Shoot it?</th></tr>
+      <tr><td>9 Nov</td><td>New Moon</td><td>&#10060; invisible</td></tr>
+      <tr><td><strong>15&ndash;19 Nov</strong></td><td><strong>Waxing Moon &rarr; first quarter (17 Nov)</strong></td><td>&#9989;&#9989; <strong>Ideal &mdash; terminator full of detail, visible in the evening</strong></td></tr>
+      <tr><td>24 Nov</td><td>Full Moon (supermoon)</td><td>&#9888;&#65039; Bright but flat; good for practising exposure</td></tr>
+      <tr><td>1 Dec</td><td>Last quarter</td><td>&#9989; morning, beautiful terminator</td></tr>
+      <tr><td>9 Dec</td><td>New Moon</td><td>&#10060;</td></tr>
+      <tr><td><strong>13&ndash;21 Dec</strong></td><td><strong>Waxing Moon &rarr; first quarter (17 Dec)</strong></td><td>&#9989;&#9989; <strong>Ideal &mdash; and in late December: Moon + Jupiter together in the evening!</strong></td></tr>
+      <tr><td>24 Dec</td><td>Full Moon (supermoon, biggest of 2026)</td><td>&#9888;&#65039; spectacular to see, photographically flat</td></tr>
+    </table>
+  </div>
+
+  <p>Rule of thumb: <strong>shoot the Moon when it is waxing in the evening</strong> (between 3 and 11 days after New Moon) &mdash; the terminator is full of shadows and you don&rsquo;t have to get up early.</p>
+
+  <h3>Stellarium &mdash; your free sky map</h3>
+  <p>Install <a href="https://stellarium.org" rel="noopener">Stellarium</a> (free, Windows): it shows exactly what is above you right now.</p>
+  <ol>
+    <li>Set your location (location icon bottom right &rarr; Brussels or your town).</li>
+    <li>Click on Saturn or Jupiter &rarr; you see rise/set times and how high it gets.</li>
+    <li>Before you go out, check at which hour the planet is highest &mdash; the higher, the less atmosphere between you and the planet.</li>
+  </ol>
+
+  <h2 id="settings">The D300 &mdash; every setting, one by one</h2>
+  <p>Every setting that matters, with the correct value and the reason. Menus top to bottom, in the order they appear on the camera (the menu language does not matter; the order is identical).</p>
+
+  <h3>The Shooting Menu (MENU &rarr; camera icon)</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Setting</th><th>Value</th><th>Why</th></tr>
+      <tr><td><strong>Image quality</strong></td><td><strong>RAW (NEF)</strong> for Moon and single shots; <strong>JPEG Fine L</strong> for planet bursts</td><td>NEF = all the data; JPEG = longer bursts (see planets chapter)</td></tr>
+      <tr><td><strong>Image size</strong></td><td><strong>L</strong> (4288 &times; 2848)</td><td>Full resolution</td></tr>
+      <tr><td><strong>NEF (RAW) recording &rarr; Bit depth</strong></td><td><strong>12-bit</strong></td><td>12-bit gives the full 6 frames/s; 14-bit drops to &plusmn;2.5 fps. For Moon and planets, 12-bit dynamic range is plenty</td></tr>
+      <tr><td><strong>NEF (RAW) recording &rarr; Compression</strong></td><td><strong>Lossless compressed</strong></td><td>Smaller files, nothing lost</td></tr>
+      <tr><td><strong>White balance</strong></td><td><strong>Direct sunlight</strong></td><td>Neutral starting point; freely adjustable afterwards in NEF. Planet JPEGs get realistic colours this way</td></tr>
+      <tr><td><strong>Picture Control</strong></td><td><strong>Neutral</strong></td><td>Honest histogram and calm JPEG preview (Standard adds contrast/saturation that do not touch your NEF but do influence your judgement)</td></tr>
+      <tr><td><strong>Active D-Lighting</strong></td><td><strong>Off</strong></td><td>ADL messes with exposure and contrast; in astro you want the raw truth</td></tr>
+      <tr><td><strong>High ISO noise reduction</strong></td><td><strong>Low</strong> (lowest setting)</td><td>Works on JPEG/preview only and costs buffer capacity; leave the noise to the stacking software</td></tr>
+      <tr><td><strong>Long exposure NR</strong></td><td><strong>Off</strong></td><td>Only kicks in at shutter speeds longer than 8 s &mdash; Moon and planets never go there</td></tr>
+      <tr><td><strong>ISO sensitivity</strong></td><td><strong>ISO 200</strong>, Auto ISO <strong>Off</strong></td><td>Base value = least noise. Auto ISO makes decisions you now want to make yourself</td></tr>
+      <tr><td><strong>Color space</strong></td><td><strong>sRGB</strong></td><td>Irrelevant for NEF (chosen at conversion); for JPEG the safe choice</td></tr>
+      <tr><td><strong>Interval timer shooting</strong></td><td>(not needed now)</td><td>For time-lapses/star trails later (see &ldquo;Next steps&rdquo;)</td></tr>
+      <tr><td><strong>Multiple exposure</strong></td><td>(not needed now)</td><td>&mdash;</td></tr>
+    </table>
+  </div>
+
+  <h3>Custom Setting Menu (MENU &rarr; pencil icon)</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Function</th><th>Value</th><th>Why</th></tr>
+      <tr><td><strong>d9 &mdash; Exposure delay mode</strong></td><td><strong>On</strong></td><td><em>The</em> anti-vibration setting: mirror goes up, the camera waits about a second, and only then fires. One press = vibration-free exposure. Use for single Moon shots (dial on S).</td></tr>
+      <tr><td><strong>c3 &mdash; Self-timer</strong></td><td><strong>2 s</strong></td><td>Alternative to d9: dial on self-timer, 2 seconds of waiting = same effect</td></tr>
+      <tr><td><strong>d1 &mdash; Beep</strong></td><td><strong>Off</strong></td><td>Silence at the telescope &#128578;</td></tr>
+      <tr><td>All AF functions (a1&ndash;a10)</td><td>default</td><td>You focus manually; autofocus plays no role</td></tr>
+      <tr><td>Everything else</td><td>default</td><td>The factory values are fine</td></tr>
+    </table>
+  </div>
+
+  <h3>The release mode dial (top left)</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Position</th><th>Use</th></tr>
+      <tr><td><strong>S</strong></td><td>Single frame &mdash; Moon shots with d9 delay</td></tr>
+      <tr><td><strong>CH</strong></td><td>Continuous 6 fps &mdash; planet bursts (8 fps with the MB-D10 battery grip)</td></tr>
+      <tr><td><strong>CL</strong></td><td>Continuous, adjustable 1&ndash;7 fps &mdash; handy to stretch a burst</td></tr>
+      <tr><td><strong>LV</strong></td><td>Live View &mdash; focusing</td></tr>
+      <tr><td><strong>M-UP</strong></td><td>Mirror up (1st press), exposure (2nd press); fires by itself after &plusmn;30 s. Alternative to d9</td></tr>
+      <tr><td><strong>Self-timer</strong></td><td>2/5/10/20 s (duration via c3)</td></tr>
+    </table>
+  </div>
+
+  <p><strong>Exposure mode:</strong> camera on <strong>M</strong> (manual). The meter can sit on spot or matrix &mdash; you only use it as a rough check; the tables in the Moon and planets chapters are your real guide. Lens switch on <strong>M</strong> (manual focus) once focused.</p>
+
+  <h3>Focusing: Live View tripod mode (the most important trick)</h3>
+  <p>The D300 has two Live View modes. For astro you use the <strong>tripod mode</strong>:</p>
+  <ol>
+    <li>Dial to <strong>LV</strong> &rarr; Live View starts. Choose the mode via <strong>MENU &rarr; Shooting Menu &rarr; Live view &rarr; Live view mode &rarr; Tripod</strong> (the other mode, <strong>Hand-held</strong>, flips the mirror while focusing &mdash; not what you want).</li>
+    <li>Aim at the Moon (or planet). In tripod mode you focus with the <strong>AF-ON button</strong> (contrast autofocus; half-pressing the shutter does <em>not</em> focus in this mode). You move the AF point with the multi selector, and it blinks <strong>green</strong> when sharp. Or turn the focus ring manually.</li>
+    <li>Press the <strong>magnify button (&oplus;)</strong> to zoom in and fine-tune. Turn until the Moon&rsquo;s edge/craters (or the planet dot) are as small and sharp as possible.</li>
+    <li>Set the lens to <strong>M</strong> &mdash; focus is now locked.</li>
+    <li><strong>Important:</strong> in tripod mode the mirror is already up; the exposure happens without mirror slap. So you can simply stay in Live View and shoot. (If you want planet bursts with CH, exit Live View and shoot through the viewfinder &mdash; the focus stays, because the lens is on M.)</li>
+  </ol>
+
+  <div class="callout">
+    <span class="title">&#128161; Focus tip for planets</span>
+    <p>A planet is only &plusmn;12 px &mdash; focusing on it is hard. First focus on the <strong>Moon</strong> (big and bright) if it is out, or on a bright star: it must become the smallest possible dot. Then swing to the planet without touching the focus ring.</p>
+  </div>
+
+  <h3>Lens, tripod and accessories</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Item</th><th>Advice</th></tr>
+      <tr><td><strong>VR (vibration reduction)</strong></td><td><strong>OFF on a tripod!</strong> The VR of this lens generation does <em>not</em> compensate tripod vibrations and actually causes blur &mdash; Nikon specifies it itself (&ldquo;no correction on a tripod&rdquo;). D300 owners exist who thought their lens was broken until they switched VR off.</td></tr>
+      <tr><td><strong>Aperture</strong></td><td><strong>f/8 at 300 mm</strong> = this lens&rsquo;s sharpest point. Wide open at f/5.6 it is noticeably softer and lower-contrast at 300 mm. Never smaller than f/11 (diffraction).</td></tr>
+      <tr><td><strong>Tripod</strong></td><td>The 70&ndash;300 has <em>no</em> tripod collar and is front-heavy at 300 mm &mdash; mount the camera firmly, hang your camera bag under the head as extra weight if needed, and shoot when there is no wind.</td></tr>
+      <tr><td><strong>Remote release</strong></td><td>Optional: the D300 has a 10-pin connector (MC-30/MC-36, or cheap third-party). Without one: d9 delay, 2 s self-timer, or M-UP.</td></tr>
+      <tr><td><strong>Memory card</strong></td><td>CompactFlash (UDMA recommended). Format in the camera.</td></tr>
+      <tr><td><strong>Battery</strong></td><td>EN-EL3e. Live View + cold night = fast drain. Keep a spare battery in an inside pocket (warm = lasts longer).</td></tr>
+    </table>
+  </div>
+
+  <h3>The two master setting blocks (also on the <a href="astro-photography-cheatsheet.html">cheat sheet</a>)</h3>
+  <div class="callout">
+    <span class="title">Moon &mdash; all settings</span>
+    <p>M mode &middot; f/8 &middot; ISO 200 &middot; shutter from the phase table &middot; NEF 12-bit lossless &middot; WB sunlight &middot; Picture Control Neutral &middot; ADL off &middot; NR off/Low &middot; d9 On &middot; dial S &middot; VR OFF &middot; focus via Live View tripod mode on the terminator &middot; 15&ndash;25 shots per series.</p>
+  </div>
+  <div class="callout">
+    <span class="title">Planets &mdash; all settings</span>
+    <p>M mode &middot; f/8 &middot; ISO 400&ndash;1600 (table in planets chapter) &middot; JPEG Fine L (or 12-bit NEF) &middot; WB sunlight &middot; ADL off &middot; NR off/Low &middot; d9 Off (bursts) &middot; dial CH (6 fps) &middot; VR OFF &middot; focus first on Moon/star via Live View &middot; 30&ndash;100 shots per series &middot; the planet may be exposed dark.</p>
+  </div>
+
+  <h2 id="moon">Shooting the Moon &mdash; step by step</h2>
+
+  <h3>Preparation (10 minutes at home)</h3>
+  <ol>
+    <li>Battery full, CF card empty and formatted.</li>
+    <li>Settings per the chapter above (or the cheat sheet).</li>
+    <li>Pick your moment: this week (waxing Moon, terminator!) or 13&ndash;21 December. The Moon stands higher in winter, so quality is better than in summer.</li>
+  </ol>
+
+  <h3>Exposure &mdash; the &ldquo;Looney 11&rdquo; rule</h3>
+  <p>The classic rule of thumb: <strong>at f/11, the shutter speed equals 1/ISO</strong>. Because you work at f/8 (one stop more light), the shutter speed doubles:</p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Moon phase</th><th>Shutter speed at <strong>f/8, ISO 200</strong></th><th>Memory aid</th></tr>
+      <tr><td>Full Moon, high in the sky</td><td><strong>1/400 s</strong></td><td>Looney 11: f/11 &rarr; 1/200; at f/8 &rarr; 1/400</td></tr>
+      <tr><td>Between quarter and full (gibbous, &gt;50% lit)</td><td><strong>1/200 s</strong></td><td>+1 stop</td></tr>
+      <tr><td>First/last quarter</td><td><strong>1/100 s</strong></td><td>+2 stops</td></tr>
+      <tr><td>Wide crescent</td><td><strong>1/50 s</strong></td><td>+3 stops</td></tr>
+      <tr><td>Thin crescent</td><td><strong>1/25 s</strong></td><td>+4 stops</td></tr>
+      <tr><td>Moon low above the horizon</td><td><strong>+1 to +2 stops longer</strong></td><td>the atmosphere swallows light</td></tr>
+    </table>
+  </div>
+
+  <div class="callout">
+    <span class="title">This week (15&ndash;17 Nov)</span>
+    <p>The Moon sits between wide crescent and first quarter: start at <strong>1/100 s</strong> and adjust with the blinkies.</p>
+  </div>
+
+  <p><strong>Checking &mdash; two tools in your camera:</strong></p>
+  <ul>
+    <li><strong>Histogram (RGB):</strong> the peak should sit right of centre, without sticking against the right edge.</li>
+    <li><strong>Blinkies:</strong> set playback to &ldquo;Highlights&rdquo; (blinking overexposed zones). The Moon may barely blink &mdash; if a large area blinks, shorten the exposure.</li>
+  </ul>
+
+  <div class="callout warn">
+    <span class="title">Do not trust the exposure meter blindly</span>
+    <p>It meters on a pitch-black sky and turns the Moon into a white blob. Spot metering on the Moon works as a rough start, but manual + the table above + blinkies is more reliable.</p>
+  </div>
+
+  <h3>At the sky &mdash; the script</h3>
+  <ol>
+    <li>Tripod up, camera level, VR <strong>OFF</strong>, lens at 300 mm.</li>
+    <li>Aim at the Moon, focus via Live View tripod mode: zoom in, turn until the <strong>terminator</strong> (the day/night line, not the outer edge!) is razor sharp. Lens on <strong>M</strong>.</li>
+    <li>Set M exposure: f/8, ISO 200, shutter speed from the table.</li>
+    <li>Release dial <strong>S</strong>, d9 <strong>On</strong> (or 2 s self-timer). One press per shot.</li>
+    <li>Take <strong>15&ndash;25 shots</strong> &mdash; give the stacking software something to choose from. No refocusing needed between shots.</li>
+    <li>After each series: zoom in on the screen and check sharpness. Blurry? Adjust focus, new series.</li>
+    <li>Feel free to vary: 200 mm and 135 mm also give usable Moon shots with more &ldquo;context&rdquo;.</li>
+  </ol>
+
+  <h3>Common mistakes</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Mistake</th><th>Result</th><th>Fix</th></tr>
+      <tr><td>VR on, on a tripod</td><td>systematically blurry photos</td><td>VR OFF</td></tr>
+      <tr><td>Focus turned to &ldquo;infinity&rdquo;</td><td>unsharp (the infinity mark is no guarantee on a zoom lens)</td><td>Live View zoom + manual focus</td></tr>
+      <tr><td>Exposure via matrix metering</td><td>white Moon blob without detail</td><td>M mode + table + blinkies</td></tr>
+      <tr><td>Shooting through a window or above rooftops</td><td>&ldquo;boiling&rdquo; image</td><td>outside, away from heat sources</td></tr>
+      <tr><td>Only one single photo</td><td>noise and seeing not averaged out</td><td>15&ndash;25 frames, stack</td></tr>
+    </table>
+  </div>
+
+  <h2 id="planets">Shooting the planets &mdash; step by step</h2>
+
+  <h3>The principle: lucky imaging</h3>
+  <p>A planet is tiny (&plusmn;12 px) and the atmosphere distorts it constantly. So you take <strong>dozens to a hundred shots in a short time</strong> and the software stacks the sharpest ones. Key difference from the Moon: <strong>a planet may be exposed dark</strong> (half as bright as &ldquo;correct&rdquo;). You see noise on a single frame, but stacking averages noise away and recovers the brightness &mdash; overexposure, by contrast, is gone forever.</p>
+
+  <h3>Exposure table (starting points at f/8, 300 mm)</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Planet</th><th>ISO</th><th>Shutter speed</th><th>Frames</th><th>Notes</th></tr>
+      <tr><td><strong>Saturn</strong></td><td>800&ndash;1600</td><td>1/30&ndash;1/60 s</td><td>50&ndash;100</td><td>In the evening sky now; rings &plusmn;7&deg; open. Dimmest of the three &mdash; higher ISO</td></tr>
+      <tr><td><strong>Jupiter</strong></td><td>400&ndash;800</td><td>1/60&ndash;1/250 s</td><td>50&ndash;100</td><td>Bright. <strong>Max &plusmn;1&ndash;2 minutes per series</strong> (Jupiter rotates fast; long series smear the bands). Evenings from late December</td></tr>
+      <tr><td><strong>Venus</strong></td><td>200&ndash;400</td><td>1/500&ndash;1/1000 s</td><td>30&ndash;50</td><td>Very bright; you only see the crescent phase</td></tr>
+      <tr><td><strong>Mars</strong></td><td>800&ndash;1600</td><td>1/60&ndash;1/125 s</td><td>50&ndash;100</td><td>Worth waiting until Feb 2027</td></tr>
+    </table>
+  </div>
+
+  <p>Start with these values, take a test frame and check the blinkies: the planet must NOT blink (overexposed). In doubt, pick the shorter shutter speed.</p>
+
+  <h3>JPEG or NEF? The buffer story</h3>
+  <p>The D300 shoots 6 fps, but the buffer (temporary memory) fills up fast:</p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Format</th><th>&plusmn; Frames before the buffer is full</th><th>Consequence</th></tr>
+      <tr><td>NEF 14-bit</td><td>&plusmn;13&ndash;17</td><td>burst stops after &plusmn;2.5 s</td></tr>
+      <tr><td>NEF 12-bit</td><td>&plusmn;16&ndash;20</td><td>burst stops after &plusmn;3 s</td></tr>
+      <tr><td><strong>JPEG Fine L</strong></td><td><strong>&plusmn;35&ndash;40</strong></td><td><strong>&plusmn;6 s of continuous shooting &mdash; the best choice for planets</strong></td></tr>
+    </table>
+  </div>
+
+  <p>Therefore: <strong>shoot planets as JPEG Fine L</strong>. The small quality loss does not weigh up against twice as many frames (and lucky imaging lives on frames). If you prefer NEF, choose 12-bit and accept shorter bursts (or CL at 3&ndash;4 fps to spread the buffer). The Moon (single frames) you simply shoot as NEF.</p>
+
+  <h3>The Saturn script (and later Jupiter)</h3>
+  <ol>
+    <li>Wait until the planet is high (&plusmn;30&ndash;40&deg;) &mdash; see Stellarium.</li>
+    <li>Tripod, VR OFF, 300 mm. Focus via Live View on the Moon or a bright star (see the D300 chapter); lens on M.</li>
+    <li>Settings: M, f/8, ISO and shutter speed from the table, JPEG Fine L, ADL off.</li>
+    <li>Release dial <strong>CH</strong>. Aim at the planet &mdash; the dot sits somewhere in the middle of the frame.</li>
+    <li>Press and hold: <strong>30&ndash;100 frames</strong>. Let the buffer drain in between (green lamp off) and repeat for 2&ndash;3 series.</li>
+    <li>Between series check: is the planet still in frame (it slowly drifts away due to Earth&rsquo;s rotation &mdash; &plusmn;4 pixels per second at 300 mm), is it not overexposed, is the focus still sharp?</li>
+    <li><strong>Jupiter:</strong> keep series shorter (&plusmn;1&ndash;2 min per series) because of its fast rotation. The 4 Galilean moons show on every good frame as dots in a row.</li>
+  </ol>
+
+  <h3>Why it sometimes &ldquo;fails&rdquo; (and that is OK)</h3>
+  <ul>
+    <li><strong>Bad seeing:</strong> the image &ldquo;boils&rdquo; &mdash; stacking cannot beat it. Wait a quarter of an hour or pick another night.</li>
+    <li><strong>Planet = shapeless dot after stacking:</strong> normal at 300 mm when seeing is mediocre; a calm night + 3&times; drizzle makes the difference.</li>
+    <li><strong>Saturn looks like a bean:</strong> correct! At &plusmn;11 px you see the ring as an oval, not a separation. That is already a serious achievement with a 300 mm lens.</li>
+  </ul>
+
+  <h2 id="post">Post-processing &mdash; software and workflow</h2>
+
+  <h3>Installing the software (all free, Windows 10/11)</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Tool</th><th>Version (Nov 2026)</th><th>For</th><th>Download</th></tr>
+      <tr><td><strong>Nikon NX Studio</strong></td><td>1.11.0</td><td>Viewing/editing NEF, batch NEF&rarr;TIFF</td><td><a href="https://downloadcenter.nikonimglib.com/en/download/sw/279.html" rel="noopener">Nikon Download Center</a> (free Nikon ID needed)</td></tr>
+      <tr><td><strong>PIPP</strong></td><td>2.5.9</td><td>Pre-processing: read NEF, centre planet/Moon, crop, remove bad frames</td><td><a href="https://sites.google.com/site/astropipp" rel="noopener">sites.google.com/site/astropipp</a></td></tr>
+      <tr><td><strong>AutoStakkert!3</strong></td><td>3.1.4</td><td>Stacking &mdash; the heart of the workflow</td><td><a href="https://www.autostakkert.com" rel="noopener">autostakkert.com</a> (zip, no installer)</td></tr>
+      <tr><td><strong>RegiStax 6</strong></td><td>6.x</td><td>Wavelet sharpening of the stacked image</td><td><a href="https://www.astronomie.be/registax" rel="noopener">astronomie.be/registax</a></td></tr>
+      <tr><td><strong>Siril</strong></td><td>1.4.5</td><td>(optional) alternative, later also for deep sky</td><td><a href="https://siril.org" rel="noopener">siril.org</a></td></tr>
+      <tr><td><strong>GIMP</strong></td><td>2.10+</td><td>(optional) final polish</td><td><a href="https://www.gimp.org" rel="noopener">gimp.org</a></td></tr>
+      <tr><td><strong>FastStone Image Viewer</strong></td><td>&mdash;</td><td>(optional) quick browsing/selecting</td><td><a href="https://www.faststone.org" rel="noopener">faststone.org</a></td></tr>
+      <tr><td><strong>Stellarium</strong></td><td>&mdash;</td><td>Planning the sky</td><td><a href="https://stellarium.org" rel="noopener">stellarium.org</a></td></tr>
+    </table>
+  </div>
+
+  <div class="callout warn">
+    <span class="title">Important to know</span>
+    <p>PIPP <em>does</em> read NEF files (via built-in dcraw code), but <strong>AutoStakkert!3 and RegiStax 6 do NOT read NEF</strong>. Your NEFs therefore always go through PIPP first (or through NX Studio if you want to convert manually).</p>
+  </div>
+
+  <h3>Folder structure for your photos</h3>
+<pre><code>fotos/
+&#9500;&#9472;&#9472; maan/
+&#9474;   &#9500;&#9472;&#9472; RAW/        &larr; the NEFs/JPEGs straight from the card
+&#9474;   &#9500;&#9472;&#9472; gestackt/   &larr; the AutoStakkert! result
+&#9474;   &#9492;&#9472;&#9472; bewerkt/    &larr; the final result (JPEG/TIFF)
+&#9500;&#9472;&#9472; planeten/
+&#9474;   &#9500;&#9472;&#9472; RAW/
+&#9474;   &#9500;&#9472;&#9472; gestackt/
+&#9474;   &#9492;&#9472;&#9472; bewerkt/
+&#9492;&#9472;&#9472; test-en-oefening/   &larr; the first nights, to learn</code></pre>
+  <p>After every session, copy the files from the card into the right RAW folder. Name the folder with the date if you like: <span class="cmd">RAW\2026-11-17-saturnus\</span>.</p>
+
+  <h3>Moon &mdash; workflow A: one nice shot (10 minutes)</h3>
+  <p>The easiest route to a nice Moon photo:</p>
+  <ol>
+    <li>Open <strong>NX Studio</strong> &rarr; browse to your folder &rarr; double-click the sharpest NEF.</li>
+    <li>In the right panel:
+      <ul>
+        <li><strong>Exposure</strong> (Exposure Compensation): adjust until the Moon is bright but nowhere blows out to white.</li>
+        <li><strong>White balance</strong>: Direct sunlight or manual &plusmn;5200 K.</li>
+        <li><strong>Picture Control &rarr; Sharpness/Clarity</strong>: raise carefully (3&ndash;5) &mdash; this is where the craters &ldquo;pop&rdquo;.</li>
+        <li><strong>Contrast</strong>: +10 to +20 gives punch.</li>
+        <li><strong>Noise reduction</strong>: Low (at ISO 200 barely needed).</li>
+      </ul>
+    </li>
+    <li><strong>File &rarr; Convert Files</strong> &rarr; choose JPEG (high quality) &rarr; save in <span class="cmd">fotos\maan\bewerkt\</span>.</li>
+  </ol>
+
+  <h3>Moon &mdash; workflow B: stacking (sharper, 30 minutes)</h3>
+  <p><strong>Step 1 &mdash; PIPP:</strong> open PIPP &rarr; add your 15&ndash;25 Moon shots (NEF works directly) &rarr; tab <strong>&ldquo;Solar/Lunar Full Disc&rdquo;</strong> &rarr; Output: AVI or TIFF series &rarr; &ldquo;Start Processing&rdquo;. PIPP centres the Moon in every frame and removes the worst ones.</p>
+  <p><strong>Step 2 &mdash; AutoStakkert!3:</strong> open PIPP&rsquo;s output &rarr; choose <strong>Surface</strong> mode &rarr; let AS!3 place alignment points automatically (AP size 48&ndash;96 px) &rarr; &ldquo;Analyse&rdquo; &rarr; <strong>Stack: best 50%</strong> of the frames &rarr; output 16-bit TIFF.</p>
+  <p><strong>Step 3 &mdash; RegiStax 6:</strong> open the stacked TIFF (not the <span class="cmd">_conv</span> version, the unsharpened one) &rarr; tab <strong>Wavelet</strong> &rarr; nudge the lower layers carefully (layers 1&ndash;3, the fine details): each slider a few steps, watch the preview. Use some <strong>Denoise</strong> per layer. Too much = &ldquo;plastic&rdquo; Moon. &rarr; <strong>Do All</strong> &rarr; save as TIFF/JPEG in <span class="cmd">fotos\maan\gestackt\</span>.</p>
+  <p><strong>Step 4 (optional):</strong> NX Studio or GIMP for exposure, contrast and one last sharpening tick &rarr; <span class="cmd">fotos\maan\bewerkt\</span>.</p>
+
+  <h3>Planets &mdash; the full workflow (the most important chapter)</h3>
+  <p><strong>Step 1 &mdash; Selecting (FastStone or NX Studio):</strong> browse the burst JPEGs and delete obviously shaken frames. (PIPP also does a quality sort later, so this does not need to be perfect.)</p>
+  <p><strong>Step 2 &mdash; PIPP:</strong> add all frames &rarr; tab <strong>&ldquo;Planetary&rdquo;</strong> &rarr; options: centre the planet, crop window &plusmn;300&ndash;500 px around the planet, quality sort on (keep the best 80&ndash;90% &mdash; the real selection is done by AS!3) &rarr; Output AVI or TIFF &rarr; &ldquo;Start Processing&rdquo;.</p>
+  <p><strong>Step 3 &mdash; AutoStakkert!3:</strong> open the PIPP output &rarr; mode <strong>Planet (Surface)</strong> &rarr; place the alignment point (AP) on the planet (AP larger than the planet itself) &rarr; &ldquo;Analyse&rdquo; &rarr; <strong>Stack:</strong></p>
+  <ul>
+    <li>Jupiter: <strong>best 10&ndash;20%</strong></li>
+    <li>Saturn: <strong>best 30&ndash;50%</strong></li>
+    <li><strong>Drizzle: 1.5&times; or 3&times;</strong> &mdash; enlarges the tiny planet in software before stacking (at 300 mm, 3&times; is recommended; &plusmn;12 px becomes &plusmn;36 px)</li>
+  </ul>
+  <p>&rarr; output 16-bit TIFF.</p>
+  <p><strong>Step 4 &mdash; RegiStax 6:</strong> open the stacked TIFF &rarr; tab <strong>Wavelet</strong> &rarr; the planet lives in the fine layers: nudge layers 1&ndash;3 up carefully, with Denoise per layer, until the disc turns crisp (too far = ring-shaped artefacts, &ldquo;onion rings&rdquo;) &rarr; <strong>Do All</strong> &rarr; save.</p>
+  <p><strong>Step 5 &mdash; Polish (NX Studio or GIMP):</strong> colours (Saturn: yellow-beige; Jupiter: cream with brownish bands), a light levels correction, optionally a final gentle sharpen &rarr; <span class="cmd">fotos\planeten\bewerkt\</span>.</p>
+
+  <div class="callout">
+    <span class="title">&#128161; What to expect</span>
+    <p>A stacked Saturn from 100 frames in good seeing is &plusmn;30&ndash;40 px after 3&times; drizzle &mdash; a recognisable oval with a ring. Jupiter sometimes shows 1&ndash;2 cloud bands and almost always its moons as dots (those sit on the single frames too &mdash; keep one!).</p>
+  </div>
+
+  <h3>The golden rules of post-processing</h3>
+  <ol>
+    <li><strong>Stack before sharpening; sharpen last.</strong> Wavelets are the last big step; everything after that is cosmetic.</li>
+    <li><strong>Less is more:</strong> an over-sharpened Moon looks like plastic; an over-processed planet like a cartoon.</li>
+    <li><strong>Always keep the NEFs/JPEGs</strong> in <span class="cmd">RAW\</span> &mdash; in a year, with more experience, you will re-stack them and get more out of them.</li>
+    <li>Something does not work? The troubleshooting chapter.</li>
+  </ol>
+
+  <h2 id="troubleshooting">Troubleshooting</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Symptom</th><th>Cause</th><th>Fix</th></tr>
+      <tr><td>Everything systematically blurry, even on a tripod</td><td>VR on; wrong focus; mirror vibration</td><td>VR OFF; focus via Live View zoom; d9 On or 2 s self-timer</td></tr>
+      <tr><td>Moon = white blob without detail</td><td>Overexposed (trusted the meter on a dark sky)</td><td>M mode + phase table + check blinkies</td></tr>
+      <tr><td>Moon = grey, dull disc</td><td>Underexposed</td><td>+1 to +2 stops; histogram right of centre</td></tr>
+      <tr><td>Planet = dot without detail, even after stacking</td><td>Bad seeing; too few frames; no drizzle</td><td>More frames (30&ndash;100); drizzle 3&times;; another night/moment; planet higher in the sky</td></tr>
+      <tr><td>Buffer full after 2&ndash;3 seconds</td><td>14-bit NEF</td><td>JPEG Fine L (or 12-bit NEF, or CL at 3&ndash;4 fps)</td></tr>
+      <tr><td>AS!3 refuses your files</td><td>NEF not supported</td><td>Through PIPP first (or NX Studio batch &rarr; 16-bit TIFF)</td></tr>
+      <tr><td>RegiStax: &ldquo;invalid TIFF header&rdquo; or refuses the file</td><td>TIFF variant RegiStax dislikes</td><td>Save as PNG (or re-save the TIFF via GIMP), then open</td></tr>
+      <tr><td>Planet drifts out of frame during a burst</td><td>Earth&rsquo;s rotation (&plusmn;4 px/s at 300 mm)</td><td>Aim, then burst immediately; PIPP centres the rest</td></tr>
+      <tr><td>Images blue/green after PIPP</td><td>Wrong white balance at debayering</td><td>Correct white balance in NX Studio; or WB &ldquo;sunlight&rdquo; already in camera</td></tr>
+      <tr><td>Image &ldquo;boils&rdquo; in Live View</td><td>Warm air currents (roof, asphalt, heating)</td><td>Different spot (grass, field), let the planet rise higher</td></tr>
+      <tr><td>Camera quits quickly in the cold</td><td>Cold battery</td><td>Spare battery in an inside pocket; swap when drained</td></tr>
+      <tr><td>Lens soft at 300 mm</td><td>f/5.6 wide open; VR on; light tripod</td><td>f/8; VR OFF; weight the tripod, shoot in no wind</td></tr>
+      <tr><td>Saturn looks like a &ldquo;bean&rdquo;</td><td>That is correct &mdash; &plusmn;11 px</td><td>More frames + 3&times; drizzle; that is what 300 mm can do</td></tr>
+    </table>
+  </div>
+
+  <h2 id="glossary">Glossary</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Term</th><th>Meaning</th></tr>
+      <tr><td><strong>NEF</strong></td><td>Nikon RAW format: the raw sensor data</td></tr>
+      <tr><td><strong>Crop factor 1.5&times;</strong></td><td>DX sensor is 1.5&times; smaller than full frame &rarr; 300 mm behaves like 450 mm</td></tr>
+      <tr><td><strong>Pixel scale</strong></td><td>How much sky (arcseconds) falls on one pixel; for you: 3.78&Prime;/px</td></tr>
+      <tr><td><strong>Terminator</strong></td><td>The day/night line on the Moon &mdash; where crater shadows are longest</td></tr>
+      <tr><td><strong>Seeing</strong></td><td>How calm the atmosphere is; determines planetary sharpness</td></tr>
+      <tr><td><strong>Transparency</strong></td><td>How clear the air is (moisture, dust)</td></tr>
+      <tr><td><strong>Stacking</strong></td><td>Laying multiple exposures on top of each other and averaging &rarr; more detail, less noise</td></tr>
+      <tr><td><strong>Lucky imaging</strong></td><td>Shooting many short exposures and stacking only the sharpest</td></tr>
+      <tr><td><strong>Wavelets</strong></td><td>Sharpening technique in RegiStax that works per detail level</td></tr>
+      <tr><td><strong>Drizzle</strong></td><td>Software enlargement before stacking (1.5&times;/3&times;) &mdash; indispensable for small planets</td></tr>
+      <tr><td><strong>Debayering</strong></td><td>Turning raw colour-filter-sensor data into a colour image</td></tr>
+      <tr><td><strong>AP (alignment points)</strong></td><td>Points AutoStakkert uses to lay frames on top of each other</td></tr>
+      <tr><td><strong>Buffer</strong></td><td>Temporary memory; full = burst stops (hence JPEG for planets)</td></tr>
+      <tr><td><strong>Blinkies</strong></td><td>Blinking warning for overexposed zones on the screen</td></tr>
+      <tr><td><strong>Histogram</strong></td><td>Graph of brightness distribution &mdash; your exposure dashboard</td></tr>
+      <tr><td><strong>Opposition</strong></td><td>Planet opposite the Sun: closest, biggest, visible all night &mdash; <em>the</em> moment</td></tr>
+      <tr><td><strong>Magnitude (mag)</strong></td><td>Brightness scale; lower = brighter (Jupiter: &minus;2.4; Saturn: +0.3)</td></tr>
+      <tr><td><strong>Looney 11</strong></td><td>Rule of thumb: full Moon = f/11 with shutter speed 1/ISO</td></tr>
+      <tr><td><strong>M-UP / d9</strong></td><td>Mirror up before the shot &rarr; no vibration during exposure</td></tr>
+    </table>
+  </div>
+
+  <h2 id="next">Next steps</h2>
+  <ol>
+    <li><strong>This week:</strong> Moon at the terminator + Saturn in the evening (chapters Moon and Planets).</li>
+    <li><strong>Late December:</strong> Jupiter becomes an evening object &mdash; disc + 4 moons, and on 24 Dec the biggest supermoon of 2026 (nice for a composition exercise).</li>
+    <li><strong>February 2027:</strong> Mars opposition (19 Feb) and Jupiter opposition (11 Feb) &mdash; the planet month.</li>
+    <li><strong>Star trails</strong> (no new hardware needed): 18 mm, f/3.5, ISO 400&ndash;800, 30 s, &plusmn;60&ndash;100 shots with the interval timer, stack with StarStaX (free).</li>
+    <li><strong>Milky Way:</strong> with a wide-angle lens (e.g. the 18&ndash;55 mm kit lens at f/3.5), ISO 1600, 20&ndash;25 s, from a dark location (the Ardennes!).</li>
+    <li><strong>If it starts to itch for more:</strong> a second-hand 150&ndash;600 mm (Tamron/Sigma) or a small telescope with a T2 adapter on the D300 &mdash; planets become genuinely interesting then. (A teleconverter on the 70&ndash;300 is not officially supported by Nikon &mdash; not a good route.)</li>
+  </ol>
+
+  <p>Clear skies! &#127769;&#129680;</p>
+
+  <div class="callout">
+    <span class="title">Sources</span>
+    <p>All facts verified 15 November 2026 against: the <a href="https://www.manualslib.com/manual/839596/Nikon-D300.html" rel="noopener">Nikon D300 User&rsquo;s Manual</a>, <a href="https://www.nikonusa.com/p/d300/25432/overview" rel="noopener">Nikon D300 specifications</a>, <a href="https://old.imaging-resource.com/PRODS/D300/D300DAT.HTM" rel="noopener">Imaging Resource D300 test</a> (pixel size 5.5 &micro;m, buffer figures), <a href="https://ftp.astropix.com/html/astrophotography/tripod4.html" rel="noopener">Jerry Lodriguss&rsquo;s Moon exposure guide</a> (Looney 11), the <a href="https://www.nikon.com.mx/p/af-s-vr-zoom-nikkor-70-300mm-f45-56g-if-ed/2161/overview" rel="noopener">AF-S VR 70&ndash;300 mm specifications</a>, <a href="https://www.cambridge.org/turnleft/pages/the_planets/jupiter_and_saturn_2026" rel="noopener">Jupiter and Saturn in 2026</a>, <a href="https://www.timeanddate.com/moon/phases/@4804320" rel="noopener">Moon phases 2026</a>, and the official pages of <a href="https://www.autostakkert.com" rel="noopener">AutoStakkert!</a>, <a href="https://sites.google.com/site/astropipp" rel="noopener">PIPP</a>, <a href="https://www.astronomie.be/registax" rel="noopener">RegiStax 6</a> and <a href="https://siril.org" rel="noopener">Siril</a>.</p>
+  </div>
+
+  <a class="back-top" href="astro-photography.html">&larr; Back to Astro Photography</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Text-only page: all camera settings and numbers verified against the Nikon D300 manual and current sources, November 2026.</div>
+  </div>
+</footer>
+
+</body>
+</html>
