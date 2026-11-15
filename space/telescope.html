@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telescope - alex0708mylife</title>
+<meta name="description" content="My Bresser Messier MC-152/2250 EXOS-2 PMC-Eight GoTo telescope: what it can show, the SVBONY SV705C imaging setup, and the lucky-imaging workflow.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="index.html" class="active">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="../pc-network/index.html">PC &amp; Network</a>
+      <a href="../investing/index.html">Investing</a>
+      <a href="../time/index.html">Time</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Space</a> / Telescope</p>
+  <h1>Telescope</h1>
+  <p class="tagline">My own telescope: a Bresser Messier MC-152/2250 Maksutov on an EXOS-2 PMC-Eight GoTo mount &mdash; what it can show, the SVBONY SV705C camera setup, and the workflow that turns video into sharp pictures of the Moon and the planets.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">My telescope project, started <strong>15 November 2026</strong>. The gear: a <strong>BRESSER Messier MC-152/2250 EXOS-2 PMC-Eight GoTo</strong> &mdash; a 152&nbsp;mm Maksutov-Cassegrain (2250&nbsp;mm focal length, f/14.8) on a German equatorial mount with Wi-Fi GoTo control &mdash; plus the <strong>SVBONY SV705C</strong> planetary camera (Sony IMX585). Everything below was verified against official Bresser and SVBONY sources in November 2026.</p>
+
+  <div class="tiles">
+    <div class="tile">
+      <div class="label">Aperture</div>
+      <div class="value">152 mm</div>
+      <div class="note">Maksutov-Cassegrain &mdash; a 6&Prime; light bucket with no chromatic aberration</div>
+    </div>
+    <div class="tile">
+      <div class="label">Focal length</div>
+      <div class="value">2250 mm</div>
+      <div class="note">f/14.8 &mdash; built for high magnification on the Moon and the planets</div>
+    </div>
+    <div class="tile">
+      <div class="label">Resolving power</div>
+      <div class="value">0.91&Prime;</div>
+      <div class="note">Rayleigh criterion &mdash; splits close double stars, resolves globular clusters</div>
+    </div>
+    <div class="tile">
+      <div class="label">Pixel scale</div>
+      <div class="value">0.27&Prime;/px</div>
+      <div class="note">With the SV705C: perfect sampling, no Barlow lens needed</div>
+    </div>
+    <div class="tile">
+      <div class="label">Included eyepiece</div>
+      <div class="value">26 mm &rarr; 87&times;</div>
+      <div class="note">Super Pl&ouml;ssl 1.25&Prime; &mdash; the visual view while the camera does the rest</div>
+    </div>
+    <div class="tile">
+      <div class="label">Mount payload</div>
+      <div class="value">13 kg</div>
+      <div class="note">EXOS-2 carries the 6.5&ndash;6.8 kg tube rock-steady, with room for a camera</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <span class="title">&#9200; Right now (15&ndash;19 November 2026)</span>
+    <p>Two perfect first targets: the waxing Moon heading to first quarter (17 Nov) &mdash; craters in long shadows along the terminator &mdash; and <strong>Saturn</strong>, this autumn&rsquo;s evening planet, high in the south. The full workflow to capture both is in the imaging guide.</p>
+  </div>
+
+  <h2 id="see">What you can see</h2>
+  <h3>The Moon &amp; the planets &mdash; the sweet spot</h3>
+  <p>The long 2250&nbsp;mm focal length and a colour-free Mak design deliver extremely sharp, high-contrast views:</p>
+  <ul>
+    <li><strong>Moon:</strong> crater details, mountain ranges, rilles and shadow lines along the terminator.</li>
+    <li><strong>Jupiter:</strong> cloud belts, the Great Red Spot, and the shadow transits of the Galilean moons.</li>
+    <li><strong>Saturn:</strong> ring structure (the Cassini division on steady nights) and bright moons like Titan.</li>
+    <li><strong>Mars &amp; Venus:</strong> polar caps and phase changes.</li>
+  </ul>
+  <h3>Double stars &amp; globular clusters</h3>
+  <p>The 0.91&Prime; resolving power splits close double stars and resolves individual stars in compact globular clusters like M13 and M3 &mdash; impressive through any eyepiece.</p>
+  <h3>Deep sky &mdash; the honest limit</h3>
+  <p>Compact, bright objects (the Ring Nebula M57, the Dumbbell M27, the core of the Orion Nebula M42) are beautiful. Large nebulae and open clusters like the Pleiades do not fit the narrow field of view, and the slow f/14.8 optics make faint extended nebulae a long-exposure project &mdash; that is what the camera guide is for.</p>
+
+  <h2 id="gear">The mount &amp; the reviews</h2>
+  <p>The <strong>EXOS-2</strong> German equatorial mount carries the tube vibration-free (13&nbsp;kg payload), and the open-source <strong>PMC-Eight</strong> GoTo system drives both axes over Wi-Fi or USB &mdash; ASCOM-compatible, with an ST-4 autoguider port, and controlled by the free ExploreStars app. No hand controller is included; a tablet, smartphone or laptop is the remote. An illuminated polar finder is pre-installed for polar alignment.</p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Element</th><th>Pluses</th><th>Points of attention</th></tr>
+      <tr><td><strong>Optics (MC-152)</strong></td><td>Extremely sharp contrast; robust metal finish; solid 2.5&Prime; Hexafoc focuser (65&nbsp;mm) that holds heavy eyepieces and cameras.</td><td>Heavy for a 6&Prime; Mak. The closed tube needs a long thermal cooldown.</td></tr>
+      <tr><td><strong>Mount (EXOS-2)</strong></td><td>Stable, solid, carries the tube with room to spare.</td><td>An EQ head needs an accurate polar alignment.</td></tr>
+      <tr><td><strong>PMC-Eight GoTo</strong></td><td>Open-source/ASCOM; works with ExploreStars, KStars/EKOS, N.I.N.A., SharpCap or Stellarium.</td><td>No physical hand controller &mdash; control is digital (app or PC).</td></tr>
+    </table>
+  </div>
+
+  <h2 id="setup">The imaging setup: SVBONY SV705C</h2>
+  <p>For Moon and planet photography the choice is the <strong>SVBONY SV705C</strong>, built around the modern Sony <strong>IMX585 (STARVIS&nbsp;2)</strong> sensor. Why this combination matches optically:</p>
+  <ul>
+    <li><strong>Perfect sampling:</strong> the Nyquist rule says a 2.9&nbsp;&micro;m pixel wants about f/14.5 (5 &times; 2.9) &mdash; the MC-152 is f/14.8. You get the telescope&rsquo;s full optical resolution at prime focus, with no Barlow lens and no light loss.</li>
+    <li><strong>A big 4K field (11.2 &times; 6.3&nbsp;mm):</strong> four times the sensor area of entry-level planetary cameras (like the IMX662) &mdash; large parts of the lunar surface fit in one frame and planets stay easy to keep in view. At 0.27&Prime;/px the sensor covers 1026 &times; 580&Prime;, so the whole Moon is a small mosaic &mdash; but every detail you capture is fully resolved.</li>
+    <li><strong>A UV/IR-cut filter is mandatory:</strong> the SV705C has a clear AR-coated window that also passes infrared &mdash; which focuses at a different point and wrecks colours. A 1.25&Prime; UV/IR-cut filter restores sharp detail and natural colour.</li>
+    <li><strong>1:8 microfocuser reduction:</strong> at 2250&nbsp;mm the focus zone is razor-thin. The Bresser 1:8 gear set on the Hexafoc focuser makes fine focusing possible without touching the tube.</li>
+  </ul>
+
+  <h3>Shopping list (verified prices, incl. VAT)</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Part</th><th>Spec &amp; function</th><th>Guide price</th></tr>
+      <tr><td><strong>SVBONY SV705C colour camera</strong></td><td>Sony IMX585 (4K, 2.9&nbsp;&micro;m pixels, USB&nbsp;3.0, 45&nbsp;fps full frame, 128&nbsp;MB DDR3 buffer, ST-4 port)</td><td>&euro; 285&ndash;315</td></tr>
+      <tr><td><strong>SVBONY UV/IR-cut filter 1.25&Prime;</strong></td><td>Blocks UV (&lt; 400&nbsp;nm) and IR (&gt; 700&nbsp;nm) for maximum sharpness</td><td>&euro; 12&ndash;22</td></tr>
+      <tr><td><strong>Bresser 1:8 gear set Hexafoc</strong></td><td>Fine-focus reduction (art. 0625720 / new no. 12009) for the 2.5&Prime; Hexafoc</td><td>&euro; 99&ndash;100</td></tr>
+      <tr><td><strong>Total</strong></td><td>Complete astrophotography extension</td><td><strong>&plusmn; &euro; 400&ndash;435</strong></td></tr>
+    </table>
+  </div>
+  <p>Prices checked 15 November 2026 at <a href="https://teleskopy.pl/product_info.php?products_id=8176&language=en" rel="noopener">Teleskopy.pl</a>, <a href="https://www.apm-telescopes.net/en/svbony-sv705c-f9198j-usb30-color-planetary-camera" rel="noopener">APM Telescopes</a> (&euro; 284 incl. VAT) and <a href="https://www.bresser.com/p/bresser-gear-set-1-8-messier-hexfoc-0625720" rel="noopener">Bresser</a>.</p>
+
+  <h2>The pages</h2>
+  <div class="grid cols-3">
+    <a class="card" href="telescope-imaging-guide.html">
+      <span class="emoji">&#127760;</span>
+      <h3>The Complete Imaging Guide</h3>
+      <p>From a cold telescope to a sharp picture: install, set up, capture in SharpCap, stack in AutoStakkert!4, sharpen in AstroSurface or RegiStax&nbsp;6 &mdash; click by click.</p>
+      <span class="go">Read the guide &rarr;</span>
+    </a>
+
+    <a class="card" href="#tips">
+      <span class="emoji">&#128161;</span>
+      <h3>Tips &amp; Forums</h3>
+      <p>What experienced Mak owners say: cooldown, dew control, the focal-reducer trap, and keeping the GoTo connection alive.</p>
+      <span class="go">Jump to the tips &rarr;</span>
+    </a>
+
+    <a class="card" href="astro-photography.html">
+      <span class="emoji">&#128248;</span>
+      <h3>Astro Photography (D300)</h3>
+      <p>The sister subject: shooting the Moon and the planets with the Nikon D300 and a 300&nbsp;mm lens &mdash; and how both rigs compare.</p>
+      <span class="go">Open the D300 guide &rarr;</span>
+    </a>
+  </div>
+
+  <h2 id="tips">Tips &amp; tricks from the forums</h2>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Topic</th><th>Why</th><th>The tip</th></tr>
+      <tr><td><strong>Cooldown</strong></td><td>A Mak has a thick glass meniscus up front and a closed tube &mdash; indoor air causes internal currents that blur the view.</td><td>Set the telescope outside <strong>60&ndash;90 minutes</strong> before use.</td></tr>
+      <tr><td><strong>Dew on the front lens</strong></td><td>The big meniscus fogs quickly in the Belgian/Dutch climate.</td><td>Use a flexible dew shield &mdash; or make one from a black yoga/camping mat.</td></tr>
+      <tr><td><strong>No focal reducers</strong></td><td>0.5&times;/0.63&times; reducers are designed for Schmidt-Cassegrains.</td><td>On the MC-152 they cause strong vignetting and distorted stars &mdash; do not buy one.</td></tr>
+      <tr><td><strong>GoTo connection drops</strong></td><td>Weak voltage from dying batteries kills the PMC-Eight Wi-Fi link.</td><td>Feed it a stable 12&nbsp;V (2&ndash;5&nbsp;A supply); in Wi-Fi-congested areas, connect the mount to the laptop with a mini-USB cable instead.</td></tr>
+    </table>
+  </div>
+
+  <h2 id="forums">Forums &amp; support</h2>
+  <ul>
+    <li><strong><a href="https://groups.io/g/ESPMC-Eight" rel="noopener">PMC-Eight Support (Groups.io)</a></strong> &mdash; the most active community for this mount, with direct Explore Scientific support, firmware and ASCOM drivers.</li>
+    <li><strong><a href="https://www.cloudynights.com" rel="noopener">Cloudy Nights</a></strong> &mdash; sections <em>Mounts</em>, <em>Cats &amp; Casses</em> and <em>Planetary Imaging</em>: reviews, Mak collimation and IMX585 settings.</li>
+    <li><strong><a href="https://www.astroforum.nl" rel="noopener">Astroforum.nl</a></strong> &mdash; Dutch-language support for the EXOS-2, polar alignment and SVBONY cameras.</li>
+    <li><strong><a href="https://explorescientific.com/pages/pmc-eight-documentation-files" rel="noopener">Explore Scientific / Bresser knowledge base</a></strong> &mdash; official PDF manuals (EXOS-2, PMC-Eight, 1:8 Hexafoc), ExploreStars software and ASCOM drivers.</li>
+  </ul>
+
+  <div class="callout">
+    <span class="title">Sources</span>
+    <p>All facts verified 15 November 2026 against: the <a href="https://www.bresser.com/p/bresser-messier-mc-152-2250-exos-2-pmc-eight-goto-telescope-set-4742190" rel="noopener">official Bresser MC-152/2250 EXOS-2 PMC-Eight product page</a>, the <a href="https://www.bresseruk.com/p/bresser-messier-mc-152-hexafoc-optical-tube-assembly-4852190" rel="noopener">MC-152 Hexafoc OTA page</a>, <a href="https://www.svbony.com/products/sv705c-color-planetary-camera-imx585" rel="noopener">SVBONY SV705C specifications</a>, <a href="https://www.apm-telescopes.net/en/svbony-sv705c-f9198j-usb30-color-planetary-camera" rel="noopener">APM Telescopes</a>, <a href="https://www.bresser.com/p/bresser-gear-set-1-8-messier-hexfoc-0625720" rel="noopener">Bresser 1:8 gear set</a> and <a href="https://teleskopy.pl/product_info.php?products_id=4626&language=en&__ck=1" rel="noopener">Teleskopy.pl</a>.</p>
+  </div>
+
+  <a class="back-top" href="index.html">&larr; Back to Space</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Text-only page: all telescope and camera specifications were verified against official Bresser and SVBONY sources, November 2026.</div>
+  </div>
+</footer>
+
+</body>
+</html>
