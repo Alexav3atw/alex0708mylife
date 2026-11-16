@@ -275,17 +275,17 @@
     "s": ""
    },
    {
-    "t": "Equinor and Aker BP proceed as planned after Supreme Court ruling",
-    "l": "https://news.google.com/rss/articles/CBMickFVX3lxTE5sQUJoekw1cnRUdUNLVHFBYVR1Q1NUWE1mV01JZm5HZVBoSDlpclZCdlFqc0cyTWpuWGFKdjlBSGR2aW8yLXlqSFlTN3A5bFlFNkRGQ1pkQjgzbWZkT1pwc1NpLTZjc2hYbVFQVXN0MTRBZw?oc=5",
-    "d": "13 Nov",
+    "t": "BP Sells 5% Stake in Aker BP for $1 Billion as Balance Sheet Repair Continues",
+    "l": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWlZRQlotVm1qbGJ4WjR6M3ltMk9IYUF5X0NKSVJ1TEZxa3hEWjBVdGtfWXEtMk5tUktyakxoc2pkemFjQUdkTEZ6dXMwaTBUT3dSQTY5WVlEZGVxc3cxTktQU2xRWUpUZ3RNZVBfZndlS1NjVnZYV2hiaEtVaUltMnpMazBGakpSaEgzTlR5WWUzOEhQeXNtaVhsbTRpTGpRWTl4eEpRQjJldzN5QndGa3VNd2Y5RVFLcU11SDAxTl9ndw?oc=5",
+    "d": "05 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "ASCE.BR": {
   "price": 53.8,
@@ -553,10 +553,10 @@
    53.79999923706055
   ],
   "news": [],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "BPOST.BR": {
   "price": 0.827,
@@ -825,31 +825,17 @@
   ],
   "news": [
    {
-    "t": "Bpost shares hit a record low of €0.826, RSI at 24",
-    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUy1ZZF9Sd0w4cjBvbXhtaGZEdzEteTlCX1FkSWpsd3Rva3d3SWdYUUVYT1dxeHpCN3JZRk5pTUk2QUF3anRfbFYyR0ttZGJqYmdRUUFIWjFZRzMxbEYxTDdLQW9WZHNlMEN2WWxjMnRJazhIYTBaVFdNNFU2d3M3aDhLNmx5T2JnaERYQmVBcHNWYTRCUWZIc3ZkeGhMSFQ4VDZxbW5aNTZkQ1oydmNV?oc=5",
-    "d": "13 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
-    "t": "BPOST SA (BPOSTb) Turquoise Price and Quote",
-    "l": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4tNEs1OWpzS01SRjItdDdvSXJsUWNrMHZlSFRFS016NnJWdzJBVVBBZ204MldTR04wM1d4RU9pbEhaNDF2ay1uTWxzYlhFYnJmc213Q0xiQkJPN19NTjhVVmxYZDc5NFlSQlpQOFM3RDlYVzlQaWxXWVNR?oc=5",
-    "d": "12 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
-    "t": "Bnode names Nicolas Baise CEO of Bpost unit, two executives to leave",
-    "l": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbkxITDFIbjlyMUFvY21mRmVub3FJMDJQMnNPR2xwVGtFY2dKMVpQSjE3S1VaTl91T1QzcTQ1Sk9TN01FeGxfSzJ2VndIY1JLUDNvQXhMTVJmN2FNaTlGYUg4YkM4bkU4MWlJMUctdXJmbU1sdkZ5UTY0ZHhWYmhjc2o1WTE0NC0tVmFRcnVqeXQ0b0dfXzBOWVhMdGRVQ3VrSGEtVWxSNVpxQ0lrc0doc1E3c1VFX25qYmFqUmFEN050Q2k1d1FmX3FRaGlMR0NRbDVR?oc=5",
-    "d": "23 Oct",
+    "t": "More than 4 in 10 Bpost vans are Electric",
+    "l": "https://news.google.com/rss/articles/CBMic0FVX3lxTE94NHZpM2s5THJoLWl0OVNVSFRRTUhsU2h6Wm01bDVYUFVpZlROcmVCX2VyanJadzZVNEs0bHFuSXY4UVJ6VHllaFRKZ3B1cTR4YUNaS2RfbjA1NkVWZXNwZXktdXJTYkM3MVlldk5UaURNT2s?oc=5",
+    "d": "21 Oct",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "BRK-B": {
   "price": 592.94,
@@ -1134,10 +1120,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "BY6.VI": {
   "price": 7.539,
@@ -1424,10 +1410,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "AI": {
   "price": 11.82,
@@ -1692,7 +1678,7 @@
   "news": [
    {
     "t": "Form 144 C3 AI INC For: 15 November By Investing.com",
-    "l": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZjQ3NDJJR2wzaDVUT3VjTW1yeVBNZThDS3RqVHBqQWp6RlRJZGJ1eHRwVUJmN2J2aHBCRmVCZXJJWmE3XzhhSjRrQUZYeS1NOTBZR3JMZ2psWnNBMXk0ME1yd3dCN0JzTXd0Mjk4RnlQZUd3ci1TSU1aUWVfN2JwenUyZjFTcE1aS2JnWjV4dlhTdFJvYWZIRktzQQ?oc=5",
+    "l": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUlpkMFl1STN6UEhfUXlsck5hR3B4TEdKRUpqbzY3VnBTbnJMVzVsTElGenRydDVSWXF1bTk0RzUxeXpjMnpydDNMUVN6ZXJxdm5ZSXlOT1hlR1hPU1ltcWtlcGVON1lqc25ITjQwTGh0dmloQndCYmxCQ1pqUjdXU2pZVVViTFdxeUw1X1VPNDNhdXdfc2Yxano2dw?oc=5",
     "d": "15 Nov",
     "nl": false,
     "s": ""
@@ -1712,10 +1698,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "CPINV.BR": {
   "price": 12.92,
@@ -1998,10 +1984,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "GTT.PA": {
   "price": 186.2,
@@ -2291,10 +2277,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "GBLB.BR": {
   "price": 80.3,
@@ -2584,10 +2570,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "INRG.MI": {
   "price": 8.215,
@@ -2860,10 +2846,10 @@
     "s": "De Belegger"
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "KBCA.BR": {
   "price": 96.1,
@@ -3146,17 +3132,17 @@
     "s": ""
    },
    {
-    "t": "KBC: Strong Q3 earnings and loan growth; deposit mix and margin pressures remain key watchpoints",
-    "l": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPRzRfTlJtRXAzbjVoNERWNkJ2cE9NWkUtb0N2VFlvTFE4aTlPYy1mS0FVOUtUZVMtcDJEaTQ3bWRYYzR3ekcyNGg3VkVqTlZpMDk4dGdBTWMyR2I5NmJlakVpS0tJX3hWc0F6dGUxdmV2LWFhNnBTT1NLcUFXZVNGSzVyNDVxemJsUEF3QWtSMUJrMTZMX2JhLXRpdVZ3dUFPOE5mZG1iQThRZmZPajhYamI3dDRyMXZaSEw3RmhmRk9HaXJIOVFZbjY4c3oxOEg2ZGNlZW00TlJLVmJSNjg0X2lwN2tfSkJ5S0lRSWJTcVZqRkVTYkhFcjVTSVo3UGxsMzVfQnpZOFdmUU5scUE?oc=5",
+    "t": "KBC Group NV 2026 Q3 - Results - Earnings Call Presentation (OTCMKTS:KBCSY) 2026-11-12",
+    "l": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUHJ5c3FvMjNBVWRhYmFfeTVwSXEzTUFNUWlpQkFwQlZrS1AwODI3eUpxTi1nT3RMaENsYWJIRjlmY01IVDRkZG9lNGM0Y3JSNEJES2IxbmsxbU1ZNjVISHFHSUFwd2JCb0dXQ2NFLTZ0NEhSMUFkVVFpTTVZRXlOTmZpOWlRSEtjblR4X3BJMWVId2pham54SjRxTDg?oc=5",
     "d": "12 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "NN.AS": {
   "price": 81.34,
@@ -3439,10 +3425,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "PNL.AS": {
   "price": 0.821,
@@ -3718,24 +3704,24 @@
     "s": "De AandeelHouder"
    },
    {
-    "t": "Beursblik: uitstel Postwet zet PostNL verder onder druk",
-    "l": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaW9nT2paSFJRQUVkOFU4MmRTTEh2TG1xREVsVDk0VXVXY1hGTzhVdEtWRjNHcmJFek1fU1Qyd0NGZ0ZNWURyNHdlVmUzajVid2g5dVVGS25pNGtxTTFYMWhxTk4wSkFWQlVab1hHdWZiWEQ3SFVrRHVyMTYyTl9rQlBlUW5qcU8yRmNPVVp6azhDa0NuMkVtNDJPNm5lR2xiaEdIMGM5UQ?oc=5",
-    "d": "20 Oct",
+    "t": "PostNL: Van volume naar waarde, maar de postwet blijft het knelpunt",
+    "l": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQenZtNGhRd29lOHdKLVNLeGpPalQydDBMWVZULVFLS3J0d2hvZFNndEVqMEI1Vy1zdU5sMHMzRHI3U2dmWVZjRlJCLWdKa0xZZU53UFVEM2NmWHR4cjZXYk9XZ1hNYThQOUxHekRfV1NybWk4UV9mTjUyeFY0YVRyNHZrOW52RTRMMlFibWNWcXZCWWJEelVWNk9McWU1eWk4TjQ3cktpZzk?oc=5",
+    "d": "26 Oct",
     "nl": true,
     "s": "De AandeelHouder"
    },
    {
-    "t": "Spekenbrink hits back over Picnic PostNL fear claims: 'Like having Grolsch investigate Heineken'",
-    "l": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNSmIxSzdVcUhOczZkR1JUZVFRUWZ2Tm1fRXpleG0xVzNSQndPNUMzNVVLeTEtSURDZVZpazJnaE9XblN3cHpSaUthVXB3M0pOZ0h5cnhTNjYtYm10VGY5SThuamVxQ3p6emIxYWFmWU5tajhfLVpXNWhMcEVmZ2NCMGhvZzZWVWZYSFc3SG5Sb0hPRHE1WE1nTlNxWlZTaW5sYVF2VzdwN0FPQkJRbEtxLVBxLUxFczFBc2wzMU9lc0NLSHA0VXlEYg?oc=5",
-    "d": "13 Nov",
+    "t": "Gaia Realini heads for 'new adventure' with Picnic-PostNL, but can climber rejuvenate her career? – Analysis",
+    "l": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNMzV1bmRVNkV3U2lqenhyR3RDd0szWTktMjRzTS1CNWQxX09wRzhwMDc3QVZrZEUyQ010UlRaeUZxeXFPenMxb3RPWTNpTjF2bk15Nnpqb0xibGwzemtXZktsZnNyM2pxYXJvYVFXSEJIWEZodWdUQm9ORGY0QU9pdTk2am1wb25BbXpTM2czejRFTDRqQmc3ektqbjkxM0dXWDU3MWlLczJsUlJidHJyazE5dUQ5dndnZGFlNmlUN3p1aTZLbW5JUGpCdzZZMFNobmJEeGhrdnJOcURvcFNhbXAxallyZ0dQUHdFQk45WQ?oc=5",
+    "d": "12 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "SHELL.AS": {
   "price": 44.77,
@@ -4025,10 +4011,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "SOF.BR": {
   "price": 270.0,
@@ -4318,10 +4304,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "WEB.BR": {
   "price": 37.7,
@@ -4604,10 +4590,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "3CP.DU": {
   "price": 3.3295,
@@ -4874,9 +4860,9 @@
   ],
   "news": [
    {
-    "t": "Galaxy S27 dummies, Xiaomi 18s land in the office, Week 46 in review - GSMArena.com news",
-    "l": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWU40WW9EMExqbjVRRldYNFphQUNHWXpnMTNRbjhRRk1BZ09rNVNNX0FSc1Z3bzMzdW5yeWJrazJ1eHJNV205UFZsbnFPSl96MUVJd0R0RHlOZmRwb1VQM1hCdnNKSjgteFI3RHFVeTRvZDNpRGhoZFZGZjYxak9PY2xjM0xnaGJjS3ZkdHEyQ1lQZzd3aVZkMmVFTk9OdUVsYUZFZ3BWVDhKUdIBpgFBVV95cUxOMXcxaFZ1WFFXU0h2R0tsSV9ZeHhZaEhRTFRzQTBDUWE2bEZjbmtmRDRoUGNJMWNEM1FpbmlrOTg2ZTNGeXllV2duamlmT1VBQnlOVjhnWmgyOWxIWENoZG1fM0ZBcnZ4M2xadE14N3JLbmZHUDU1Mnk0VmhFcUxfSjB0WVdHbmlRb3lCUmZHOGVDME9aYlFYMVM3cnlZWVVuRzlTd1Zn?oc=5",
-    "d": "15 Nov",
+    "t": "Xiaomi 18 Pro hands-on: This compact flagship might be my new favorite",
+    "l": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ycVpPNTJmU2IyRHhKdU5TcU1ndjI2SGRiWkxVNUJfUXBhNXFzVzY5bWZEREJSajFuZFc1N29kWXMwdlFOSHNDeWRWZk1aX2k0YXp2UGEyaUxqZWVqT0J3dGt6UFpYTnFTSGZQSQ?oc=5",
+    "d": "12 Nov",
     "nl": false,
     "s": ""
    },
@@ -4895,10 +4881,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "XIOR.BR": {
   "price": 25.75,
@@ -5188,10 +5174,10 @@
     "s": ""
    }
   ],
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:47 UTC",
   "stale": false,
-  "usdeur": 1.1031,
-  "nokeur": 10.5594
+  "usdeur": 1.1025,
+  "nokeur": 10.5474
  },
  "~buffett": {
   "daily": [
@@ -6255,7 +6241,7 @@
    ]
   ],
   "cur": 228.43029276005637,
-  "when": "15 Nov 2026, 20:51 UTC",
+  "when": "16 Nov 2026, 00:48 UTC",
   "stale": false
  }
 }
