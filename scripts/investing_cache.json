@@ -261,39 +261,39 @@
   ],
   "news": [
    {
-    "t": "Photos: First Look at THE HUNDRED AKER WOOD at Cape Rep Theatre",
-    "l": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdEswdW1VemZHSHlEZ2x0MGVHSi12cHg2eERMc0JLVnlsa0l6YzhNcHJTcVZsMTFxYV9lU0RmcnE0X3ZUU2JWZGhBZGZGcDVNWTF0RFR5WlFPdkZZTUhQcGY2b3hnc2piRzREdjE2OXdDMVVzanloVVF6ZTRwY1VhdWVhOWpnc19fNVNCazAxdjNoU01pRjMtUHA2NE4teFZzWjZHRHBRT3VGaTVyaE5CSUVkcXh4Q1U?oc=5",
-    "d": "16 Nov",
+    "t": "Aker QRILL recertified to MSC Fisheries Standard, with additional conditions",
+    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbWZOcVlNT25ZTHlGME5Zc3g5TmI3ck5VdUd3amZkTHpoWkJYZ0drTlg4QThCa3U5U21qVURKeDNOaWhhOGoyamxWb1c4cjg2YTNDTUZqTHRwMVRibDZzaS1ITi15bnhrWlVadjlYX1FDRE1CRFByUkhxZWczUFNnOVpkSXBfRlFkVTkwN0hKeG5VTlFJaTlUVkMydGFpd1VSelVNcEZPdlprMm9TaFZz?oc=5",
+    "d": "17 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "BP Sells 5% Stake in Aker BP for $1 Billion as Balance Sheet Repair Continues",
-    "l": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWlZRQlotVm1qbGJ4WjR6M3ltMk9IYUF5X0NKSVJ1TEZxa3hEWjBVdGtfWXEtMk5tUktyakxoc2pkemFjQUdkTEZ6dXMwaTBUT3dSQTY5WVlEZGVxc3cxTktQU2xRWUpUZ3RNZVBfZndlS1NjVnZYV2hiaEtVaUltMnpMazBGakpSaEgzTlR5WWUzOEhQeXNtaVhsbTRpTGpRWTl4eEpRQjJldzN5QndGa3VNd2Y5RVFLcU11SDAxTl9ndw?oc=5",
-    "d": "05 Nov",
+    "t": "Here's Why BP's Partial Aker BP Stake Sale Is a Timely Move",
+    "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOb0xCZTZNRGNZRFJHV0toSm1oR1p0QXdfS1dfallDcGtZSGg4UFoydFZkMDhKbEhpVHpqTnVhV1RhX0pZWWRmelpNekluZEUxeVhwd2FxRUxSbFZ3cWhoRGRjUElockZnLXpvakZLTFBkcGNnSlRYV2pJZTFqUEFja19ySHFieFBXZ21Z?oc=5",
+    "d": "17 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "Aker BP : LTIP share awards completed and new grants issued",
-    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMl9SQnJ0blFSQTVHZzlxUEszNGtxTnRfeWxhcjFBRTU0UXJRWllKYkFGVmZqdS1pQmVQMjQxT1I2czl0Y0YwOFp0RldWRE5mQXVRcEdaTjNnM2EzR2t5Nkp0aU9lLUM2TmRSNDVQbTFEYWR4SlMyWXNHM3IxVDRHOHlpMFd4aG5wM1A5YlR0a3p0Qmt1WW43VDZNYkk2TktrWVBBQVRBTmhfN3dMNEtF?oc=5",
-    "d": "16 Nov",
+    "t": "Aker Solutions to dismantle and recycle Statfjord A topside where it was built",
+    "l": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYl9hY1EtYlJqX3Rra2QxQ0VaQlVJN2lkNUFHcEdsYkhJcHFFMUpIczM0bm9vcVFpZTM0UWZPUWhvNWpadlJ2OXZsYUd2UTNtQlNQcGpSREEzMDdEaGRfV1NzeGQwaWJSeV9iUTRZc1hFdVYzQXlONG41aDVlamw2NjRPWmV4b3cxZ3hWeFQ4RFdibzJaTFBHMGp6dTdMQlViWG5RM19jWTlhcHEzRy1NMnEzUmZEVWtVWEtUaw?oc=5",
+    "d": "17 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "ASCE.BR": {
-  "price": 53.2,
+  "price": 53.0,
   "currency": "EUR",
-  "day": -1.2987040928798765,
-  "wk": -0.746264407777486,
-  "mo": 0.9487665896802389,
-  "ma200": 51.63524993896485,
+  "day": -1.6697615962901091,
+  "wk": -1.1194001701525846,
+  "mo": 0.569258506105208,
+  "ma200": 51.634249935150144,
   "closes": [
    50.5,
    50.5,
@@ -550,21 +550,21 @@
    53.70000076293945,
    53.79999923706055,
    53.900001525878906,
-   53.20000076293945
+   53.0
   ],
   "news": [],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "BPOST.BR": {
-  "price": 0.785,
+  "price": 0.787,
   "currency": "EUR",
-  "day": -3.4440372152915955,
-  "wk": -8.508153366783722,
-  "mo": -29.533208937615118,
-  "ma200": 1.5636600026488303,
+  "day": -3.198034762336932,
+  "wk": -8.27505612944518,
+  "mo": -29.353678029395468,
+  "ma200": 1.5636700025200845,
   "closes": [
    1.777999997138977,
    1.7380000352859497,
@@ -821,21 +821,36 @@
    0.8629999756813049,
    0.8270000219345093,
    0.8130000233650208,
-   0.7850000262260437
+   0.7870000004768372
   ],
-  "news": [],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "news": [
+   {
+    "t": "Bpost shares hit a record low of €0.826, RSI at 24",
+    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUy1ZZF9Sd0w4cjBvbXhtaGZEdzEteTlCX1FkSWpsd3Rva3d3SWdYUUVYT1dxeHpCN3JZRk5pTUk2QUF3anRfbFYyR0ttZGJqYmdRUUFIWjFZRzMxbEYxTDdLQW9WZHNlMEN2WWxjMnRJazhIYTBaVFdNNFU2d3M3aDhLNmx5T2JnaERYQmVBcHNWYTRCUWZIc3ZkeGhMSFQ4VDZxbW5aNTZkQ1oydmNV?oc=5",
+    "d": "13 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
+    "t": "More than 4 in 10 Bpost vans are Electric",
+    "l": "https://news.google.com/rss/articles/CBMic0FVX3lxTE94NHZpM2s5THJoLWl0OVNVSFRRTUhsU2h6Wm01bDVYUFVpZlROcmVCX2VyanJadzZVNEs0bHFuSXY4UVJ6VHllaFRKZ3B1cTR4YUNaS2RfbjA1NkVWZXNwZXktdXJTYkM3MVlldk5UaURNT2s?oc=5",
+    "d": "21 Oct",
+    "nl": false,
+    "s": ""
+   }
+  ],
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "BRK-B": {
-  "price": 589.09,
+  "price": 588.645,
   "currency": "USD",
-  "day": -0.6342204167624876,
-  "wk": 0.9857029751576762,
-  "mo": 10.683360290346755,
-  "ma200": 501.50460006713865,
+  "day": -0.7092815651685846,
+  "wk": 0.9094168806447422,
+  "mo": 10.59974844198248,
+  "ma200": 501.50237503051756,
   "closes": [
    503.260009765625,
    504.3699951171875,
@@ -1088,35 +1103,35 @@
    589.8300170898438,
    592.9400024414062,
    592.8499755859375,
-   589.0900268554688
+   588.64501953125
   ],
   "news": [
    {
+    "t": "Berkshire Hathaway verliest beurskorting en krijgt een adviesverlaging",
+    "l": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQN1VGNWJYaGFubGxxVkVmZHBYQk1zNkdCNWhRX3lTTU1LNnVOdVNWcDQySUF3Ni1oNFgzZk15VVFNZlhjVEtId2FwMlBLeHdNdkUtc1VQeFlGelRLUktZUVZUZkZPX0xaRFd3M19IMkFFWFp4NW9JeWdhOVNDQ1pGUWFpZmpDV3h1UU1CM0Nnc2pPN0VRLXNxYjBCY0huNmRSYUMySWZ0T3piX3BweTZZZnBLRy1sVnhvdUhBUTRKNVM1bklsMXNUNWQ4QQ?oc=5",
+    "d": "17 Nov",
+    "nl": true,
+    "s": "De Belegger"
+   },
+   {
     "t": "Berkshire Hathaway koopt steeds meer eigen aandelen in",
     "l": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPd1g4a2NGN3o5UVBVaUZVNWtoUExfbVg1ejVsZC05MEJMZkE5Q0E5YUxSSkR2alBZc1Mtak1tSnc2ZEVjZkZTc3RsZ0NuUWhlNkJ2WWNsT0tfX045SUVYblB5TERyNDJrdm5NalRIempva29GOU9TT0FzTm1rcXkyOVNtMDVEVFdCRnV2NmJhTW9fZW95SWc1WUpFaGt0UWk4NElEM2x0dG9DamRo?oc=5",
-    "d": "11 Nov",
+    "d": "07 Nov",
     "nl": true,
     "s": "De Tijd"
    },
    {
-    "t": "Berkshire Hathaway versnelt met aankoop eigen aandelen",
-    "l": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOLXFZV2xZcGkwRFpLOTVVYmdUME5EX1dhY09wcjJlT3ZLQTc3aVJuckdsdVVLWjdYMVNLM3hIZXF2anBtYzFkdk9rQm5BZFB3ZDZ4dlZDRDdEUXB1by1URllVUmR0Yk5zZkF3SjZIYjR0TUxqY3VEd2RjVWt6ZllCQ2Myb2RYdFViMG1JRlRmajVYbU0xUW5fUXJHQmtZeW1hOTg0UXlB?oc=5",
-    "d": "08 Nov",
-    "nl": true,
-    "s": "De Tijd"
-   },
-   {
-    "t": "Berkshire Hathaway Hits an All-Time High: Here’s What $10,000 Invested a Year Ago Is Worth Now",
-    "l": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNd0hqNy1GWDNUU1BxVHhjYkpxOUVDTTFKczBzc3hMNFA3LTNWOExfRXJSOTlnSTJlLTZWQTZNeFZFR3kyazZIT3otRWxoRDB3d2hWQWNzYklLZFlLM2JlLUs1WmEtcVhKblhFS1locGdsSEZhNl9TandTUlUyR0pRSVZRNGhUMmhESUdfVEVpTmljZUJ4RldiSXpRTEFGMEU?oc=5",
+    "t": "Berkshire Hathaway Doubles Down on U.S. Housing",
+    "l": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOeERJZnVuLUYtaFpHVmlycmt3Ti10MUVsT1pkRjdkZmh5OTUzYVpIYVJLV2dhMTd1TlZYQm5rMm1tZHVfVkI2VXVaSjVyLUhCOXJ6bFNyajJ0YUd4LVJOY2IxSVprbDh3d1lBMHd0ZXpCWE94dFhCdVRHUHJBUUJIRTZ1QVY4YVZENjFEZzV5ek5fVkJxZEpPaDEzY1l4T0lzRTNhSzJYcDVJYU1mdTlDdDZtSTRjdVVQNTEwZW5XUTdVaERDVHQ0eV8tbXdnd05yTWw5d0ZhQmkxSUN3dnp1amp5d2ZMeDJM?oc=5",
     "d": "16 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "BY6.VI": {
   "price": 7.309,
@@ -1389,32 +1404,32 @@
     "s": "De Tijd"
    },
    {
-    "t": "Geely Monjaro takes aim at BYD Seal U, Europe’s bestselling plug-in hybrid",
-    "l": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9CT2o5dFg0ZEE0THJ2d1N3TUFITF9UeWREdVotbjdKMW1acTFSSklkRS1yWWNseHZvOUl5SHN3ckFMMjJycm1faTVCcFdpdk9fNGQ5RHFnR2tzSlVNT2VUX0ppeVBBcHBLNEVENlM3eXNBT0dFSnAtY3AzbzY0Zw?oc=5",
+    "t": "BYD is bringing its $10,000 ‘Great’ Seagull overseas, but it won’t replace the Dolphin Surf",
+    "l": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUERjd29CaWF6ZDFfWXZodm93UEphYjlFUzhkRFQtVTlNSjUyMmlmaUZZSVZIMGRNY3lja3JuY25hcGRNTW1VOWRrMndLZXdOdGx3d01vSm5EaEZhUjBaaVM0NTV3TzZZNzg0UENfX05QeUZJWGJEQzN3TnlvaGVfa2Fn?oc=5",
     "d": "16 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "BYD to launch third-gen Tang 5-seat electric SUV on November 24 with up to 850 km range",
-    "l": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1RcWpFQndaV0lvcDNmS1ZqVGV5WDdHSWZyQjJmVkU2aThpTE5QbERIZFNleFhGWUNYNURBdEVMc2dDYThJYm1wY05kUW1CRTVaRjdIVDlqREJ5dl9LQmhJOXNNcDNEdXRQcGZpUm9adkp6dER3?oc=5",
-    "d": "16 Nov",
+    "t": "BYD Is Winning Over Japan With A Very Japanese Kind Of EV",
+    "l": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40QlpIUW9wNXFTR1lkeXFXdzRtLVprYmNCc1NXYnlWS2ZMU1B3OHh0SDR5Vjc3VVlHWDh3YVN3RWhCVnoxS3o0RHI4aERMSUVBSWtEYmVJM2FqQndqV2RKSGhsUnJaRUhudW9vcHdB?oc=5",
+    "d": "17 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "AI": {
-  "price": 9.935,
+  "price": 9.915,
   "currency": "USD",
-  "day": -6.975658088836722,
-  "wk": -16.089524564362545,
-  "mo": -11.923753060233578,
-  "ma200": 9.981524977684021,
+  "day": -7.162924001088699,
+  "wk": -16.2584473473517,
+  "mo": -12.101062087158565,
+  "ma200": 9.981424975395203,
   "closes": [
    13.4399995803833,
    13.739999771118164,
@@ -1667,7 +1682,7 @@
    12.069999694824219,
    11.819999694824219,
    10.680000305175781,
-   9.9350004196167
+   9.914999961853027
   ],
   "news": [
    {
@@ -1678,24 +1693,24 @@
     "s": ""
    },
    {
+    "t": "C3.ai vs. SentinelOne: Which Technology Stock Is a Better Buy for 2027?",
+    "l": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOM1dOVC1tMVNHam5DYmZ1NVROb25NS0Q5eFpwYVc4LVUwZWU1Z1hJV3ZDV3JZQ3pZQkJrQVBJWmhiSDV0ZTlrcHEycUhGdEdZY1F1SGFoMkk4Zm1mVjN5enI0RE9sNXdsb2Z5NTYyczFrLWd6U2k2S2RtbGZqZWF4czNKNEYtSFp5ampGbmhIU01zcFJzRzBvT3VOd0E?oc=5",
+    "d": "14 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
     "t": "C3.ai (AI) Drops 7.2% After Hours, Settling at $10.75 - 24/7 Wall St.",
     "l": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQM2EyR2R6RFl6TGdEek5ORUswcGg5Z3REMGdjZnowVGhnWThjcmFOT0U4SnRfNjFWb0FQekt3bmhhRGR6SWRUNTdyczZOdnYycEJYUUdrbks0LTJlOVhVazdiU0hvU2ZUdmRQeFFOT1NscW9FdTdnUFo3VHZCZ3VQRA?oc=5",
     "d": "16 Nov",
     "nl": false,
     "s": ""
-   },
-   {
-    "t": "Adeia, C3.ai, Datadog, Palantir Technologies, and Appian shares are soaring and falling, what you need to know",
-    "l": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQYXNJUFV5U3JvM2xEcURBSnBjTGVHS1ZRWFpHYjlBeVU5ZTVXLXpzaWl0NlVZQjAyVEViZVhWZnprdXVQa19fNWpsbmFhU0loX1FkNkZhQzBFTGFRTFdub1gyN2puSE5qLUhleW0tQTA3c3lZYzBTQzVJM0JJX3BadEh4elFuUS1sbkR5VDlwS3VWZE1EM2hIaHBlVjVYOGluYmh6MnhzbVoyaDFKVUNVQnZDcFN0X2dwYXh4RzdqWFpyeGh6MWZSWkIxR1VoV1hCZ0Zud3ZxVHBrbGpPMXVzV095Q2VFakNReGFWMVl0TGhsaFhzYnlaN2ln?oc=5",
-    "d": "16 Nov",
-    "nl": false,
-    "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "CPINV.BR": {
   "price": 12.76,
@@ -1962,11 +1977,26 @@
    12.880000114440918,
    12.760000228881836
   ],
-  "news": [],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "news": [
+   {
+    "t": "Care Property Invest verhoogt opnieuw winstverwachtingen. Wat betekent dit voor het dividend?",
+    "l": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOMFV2NVF3M3o0T1RldGVYa2FKY0phTXVaa3ZzQU1qdktCUU9EanI5UW5YbXZtSXl1bFhOR2U1a3NUbEM5MlFuQmh5cUM2OXBpTHNNUWNEeEVWRkFWaUJ0RXY5U3VhbHhKYkMzM0JWazlfZlRmQ2RGUE8xR0tzVGRTeVRQeHlSY1lKR2hkeWlLVndpWnluQ09RaUdUczNvNWJKOTg3NUMxZ2xKeTB0bldkOU9SeEJqT2x6VEJCNFE3LVh6QkRzQTA3MnFuSEN5bGpmNnZJOGJmNFlST1RXV2NncTZn?oc=5",
+    "d": "05 Nov",
+    "nl": true,
+    "s": "De Belegger"
+   },
+   {
+    "t": "Care Property Invest NV Reports Earnings Results for the Nine Months Ended September 30, 2026",
+    "l": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNRFV3c2EzTGxvRGswX1BQckpnVnhsdHBfQ1hKb2xaR2loUVVnZWR4S0NHVDVtYW1uMVFzaE0xUEFWQmNhYWVpdlpXaEVWcnJjQjdna250X1V6RllGTkRTRV9PeTlNc19WMU9VcWJ3bzhVcFJDMUlUSlgweldrbE9kNkp4UVRiVXBMRDRyRzU0Vmw5eFlhc3VISF9zUDlOdzJqYmVQcVlDcW5QeTZFN1EtcE9uRnhaenJHeVgyT2JpQTI3R3VGVXZhbjZTeVU3a0w0VmtEMTVLZE1xdDF0bXc?oc=5",
+    "d": "04 Nov",
+    "nl": false,
+    "s": ""
+   }
+  ],
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "GTT.PA": {
   "price": 184.2,
@@ -2242,9 +2272,9 @@
     "s": ""
    },
    {
-    "t": "What Is Drawing Fresh Attention To Gaztransport & Technigaz (ENXTPA:GTT)?",
-    "l": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOOU90Z3BzS1FaRlRRdzcwWG1jWXFvXy12V2hwRnYtOVB1SFdCemVyemV2SktOX01xUF83U1lMT1gycDRjYkdPcnhtQWoyaVIzaHZ1SzFYMGlzQ3hFSldwYnlZVmJBdzJaMlpJTmktb0EwODZ5cXpKYU53b0dGaUoyZkNJNnk1UVc1QUtqZ2lVTkRvd0k5aVFURUNsSnhzd0s5UGxmYVBWTzNoeldxVWs2amRYN2w3dFRqNkV0bXRoX0FFaGN4U2pjVkE2Z01Qd29UUEdXUnkwdEtSZ9IB3wFBVV95cUxNVlRORkZOZHppRC1WdGYwZW81VThLYmFGR19QbnV3NU5IV2lVeFJLeVNzRkUySlNpWHFfWDlCQnR6czVhZS1HV05vTkc0RnRONGQtYkxQQUlaa0dUVkpLcklfVFdkRzZoZEtqZTNVREs0LV9aY0MwRG93WVd4US05c1BNM3JaLWI3QWtEU1dFYV9nMmFhb0k1eEF2MDRITXVndVVXS183WDdCUFVMWm93c3ZmdTVuTndGTFBuRHFjbXBBbjNUckd1OWlobFpPWnJzcDNGWWwwd2txNXZEVFJn?oc=5",
-    "d": "04 Nov",
+    "t": "9TG.HA Interactive Stock Chart | Gaztransport Technigaz A Stock",
+    "l": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE00bDd3YzZDclpld2lpT2Zab04xTXk5dmxVVnQtM21na3hpRjVGSW1ieGVMVFl2aWxWc09XdHlnekJxQ0FlOThyWjN4dHVTODg?oc=5",
+    "d": "16 Nov",
     "nl": false,
     "s": ""
    },
@@ -2256,18 +2286,18 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "GBLB.BR": {
-  "price": 79.05,
+  "price": 79.1,
   "currency": "EUR",
-  "day": -1.433911461348747,
-  "wk": -0.5034536335412954,
-  "mo": 10.251054973993012,
-  "ma200": 78.01324996948242,
+  "day": -1.3715673193255729,
+  "wk": -0.44052673072989545,
+  "mo": 10.320783599503791,
+  "ma200": 78.01349994659424,
   "closes": [
    73.8499984741211,
    72.9000015258789,
@@ -2524,7 +2554,7 @@
    80.4000015258789,
    80.30000305175781,
    80.19999694824219,
-   79.05000305175781
+   79.0999984741211
   ],
   "news": [
    {
@@ -2542,25 +2572,25 @@
     "s": "De Tijd"
    },
    {
-    "t": "GBL Round 7 (Regular Season): Olympiacos lose their first game against Aris",
-    "l": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcElsTGhjSTFzY3RHMEV2MDdROUFkOFFDaS1hcTRhSnVSSm93R1B4c0JFc3Fyd09icjhPWVM4TmdMR0lOeXoxNmFvci1ONzQzMjdPb2VzUlE3S253V3R1X05RNTI4ZTZUSjJ1T2hfS0szOTVXakFvT1hRMzRMbWQ5ZXpZV0JhVzY3SWluNER2RmJwaHdaVnk0OEZ3RVRjM0FjRkFCemJ1QmZFUHBZVTV3QUY3T0tNaFdyLWl3?oc=5",
+    "t": "Groupe Bruxelles Lambert : GBL – Transactions on GBL shares 16-11-2026",
+    "l": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSXNhOHQ1aEw5dVdCS2NNZkpzNkN6VlExeV9mYVpJTGI5aE9MRG1EMndEZWlYWXd2ZzhOdUE3TW43YV9mTzNPOEs3dXVycEZna2tCeWFxVUZfQTRhRHVldmxvY0JJTjFFTEp4NkU3V3FMTzdZVDZTNjI5RDBJUHNSWDMyQzd1MmdKSC1mcVNPQ3FWcmtmbTNJOVo5MVdNOHpOMnpiOF83UWhjajQ4TnZFSGxBUmlZUEpwX1ZMWWpR?oc=5",
     "d": "16 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "INRG.MI": {
-  "price": 7.835,
+  "price": 7.847,
   "currency": "EUR",
-  "day": -3.0561715603738326,
-  "wk": -6.088941013480376,
-  "mo": -6.268694280817888,
-  "ma200": 9.327430012226104,
+  "day": -2.907693456828764,
+  "wk": -5.945106861127969,
+  "mo": -6.125135438520757,
+  "ma200": 9.327490012645722,
   "closes": [
    8.357999801635742,
    8.251999855041504,
@@ -2814,21 +2844,29 @@
    8.369000434875488,
    8.21500015258789,
    8.081999778747559,
-   7.835000038146973
+   7.8470001220703125
   ],
-  "news": [],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "news": [
+   {
+    "t": "iShares Global Clean Energy Dis : Advies, analyses en beleggersinformatie",
+    "l": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1TRGhZd09FQ2IyMGtpam9jY0VjZjEyOHR0UEIyUm04eUZFNDV2UFlBNl9YU3B0U09ZS0gzbG94NzdKd2RHcjZRNm92OFZVdHZyMVJTaGVaZmc3Vm5yTDJoYndHOE1aeFV5ZEpHQmg4aTZ5MHlScUtwa3pReEU2dw?oc=5",
+    "d": "06 Nov",
+    "nl": true,
+    "s": "De Belegger"
+   }
+  ],
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "KBCA.BR": {
-  "price": 94.5,
+  "price": 94.6,
   "currency": "EUR",
-  "day": -1.8691619882819421,
-  "wk": -3.076923076923077,
-  "mo": 0.4250813308875001,
-  "ma200": 84.48699974060058,
+  "day": -1.7653198316557983,
+  "wk": -2.9743605393629857,
+  "mo": 0.5313496366713633,
+  "ma200": 84.48749973297119,
   "closes": [
    72.30000305175781,
    70.9000015258789,
@@ -3085,21 +3123,43 @@
    95.5,
    96.0999984741211,
    96.30000305175781,
-   94.5
+   94.5999984741211
   ],
-  "news": [],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "news": [
+   {
+    "t": "Ex-topper KBC stapt over naar BNP Paribas Fortis",
+    "l": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY1NXU3JUMGQ1RHEyOTRmRUFNZm9tQ3Y1MlUwQ3Bfa2NWckQxN0NUWGRkQ2x3djB2cjFIaFc4dTJKdjM2UWVseFVoY2VXczQzS3E4MUkwZ3lPcThxcVFzcTE0MFNkSEE2cjVqcExsRW9vRHVhZ01TMkRldktfdEJ6WGxzTEN5dE9HcGt4dG1LV2FmVHJCbGZFZGRra3BvQUlBLVE?oc=5",
+    "d": "02 Nov",
+    "nl": true,
+    "s": "De Tijd"
+   },
+   {
+    "t": "KBC Ancora (KBCA) Stock Price, Chart & Analysis",
+    "l": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5pZVF2emZjeVJyQW03aXRXVUc1WFpmYjhQUDd1SXRVVGJNT0J2VXZKLWNtdmN2ZmF4b0ozRzRrcGo5aUZCVWRDNndRYjJEalhpeWJKaA?oc=5",
+    "d": "04 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
+    "t": "\"Main Theek Hoon\": Amitabh Bachchan Makes Comeback On KBC 18 Set Amid Health Concerns",
+    "l": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUjNydHp0eXVfUUpUVWxNZzBoUnIyQk4xYW5UbV80MnNLY2FWUTRpQkpJNkx2LTFEWjhTa3paVDRyb3hnWUFzOUEzS3djZnN0V2VPVm1GWWY0bTRqTTQxOC1haE1YRW44MjJkM2pqSDNBNU8yeW42b29BNWVLQ0wwOXE0amg3VE9KZHA5RWNQXy14M19wSF9QVkJRVXlxUXAwRnBNZ2Ztd2xhLXpPdTA0U24xVHhsSWk0bHlvdUlpbHNZbmg2UG5V0gHPAUFVX3lxTE9pNjhmRnhSeVlRVHJKYXQ2WFFlV2tWMWs5c2djYlNnOUlfbVpzODRBU3FxSmNjcW9uUzdKQzhEaktKR1hPbTBiU25sR2k2N2FqY01HVHZtVS02dWlVY3NjcG1waVNWYlVXY1hobUFHMnRtV2VCTnNRT095RGozY3VVUWF3em4xdlpiZnRSTGZwNnBIRmpJRFZEYllZd1A5a1Z3clZjeDRHTHZYdHU2b0pPMDl1OU5nWm0yZXFrWHNILTZ2bU04OGNoZU54d2FjTQ?oc=5",
+    "d": "13 Nov",
+    "nl": false,
+    "s": ""
+   }
+  ],
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "NN.AS": {
-  "price": 80.84,
+  "price": 80.86,
   "currency": "EUR",
-  "day": -0.5168620787461276,
-  "wk": 0.02474219641415143,
-  "mo": 6.733560361718327,
-  "ma200": 74.84489990234376,
+  "day": -0.4922497239907453,
+  "wk": 0.049493832811653427,
+  "mo": 6.7599721296417,
+  "ma200": 74.84499992370606,
   "closes": [
    61.34000015258789,
    60.02000045776367,
@@ -3356,9 +3416,16 @@
    81.26000213623047,
    81.33999633789062,
    81.26000213623047,
-   80.83999633789062
+   80.86000061035156
   ],
   "news": [
+   {
+    "t": "Beursblik: Bank of America zet ASR en NN op de kooplijst",
+    "l": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUWdRSktjTnZGT2FmY3E5OVRKZUNxNlFFNU1jZ29ySkVXYkxHVVVzbEJVMzMtaWRoWHVLM3ZwUWI3VEZ4Y2lDTFhYb3B3RHYyN1phOG1WVzgyYXVEc0gtUVB6MUVQbzQ2ZDJDU1UxcFVMekE2alRucU1oMm4zN3hkYXlTckctN3dTTDlfV3RaS0xmdk5NYWNHYUVOZFVkZWF6QmN1ZWVIaXE?oc=5",
+    "d": "17 Nov",
+    "nl": true,
+    "s": "De AandeelHouder"
+   },
    {
     "t": "David Knibbe van NN naar Euronext",
     "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYmR4ZHFrbksxYXZXRWtTWnkwM1NxSWUtYVFMTTJtMHd4NjRXMnZUQTlydGVEeDgxbm9SOVJSWDFmY05OZ2g0cUtCWTRISlQ2ZEpFVUR4S2dkblU1ZXRRX05WSUo4UHNFeEtoSDdjTFVrUWlpVk9JdDdBbFB3bkdkcmNiTDloUE1PX0xn?oc=5",
@@ -3367,25 +3434,25 @@
     "s": "De AandeelHouder"
    },
    {
-    "t": "Tjeerd Bosklopper to succeed David Knibbe as CEO of NN Group",
-    "l": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZXI3TGhGMk5JYlBiVWZMZW1DZ0pFdjByckhHa0dwR0VPUy04R0NVdjJBVkdNNDBCTTdWNXdGYVN3RzVyaldsVGJjWnhla2hTOUFxZms5U2k4akdNbmt1cjRmdlJxaWh0dVJwSjNYd3hILWRtMFlWOEpLZGR5SklZSC1DREh5YWdEd0RUZ0M0TmFzNzNiekE?oc=5",
-    "d": "02 Nov",
+    "t": "NN Group targets upsized €80m-100m reinsurance from fourth Orange Capital Re cat bond",
+    "l": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTzNqMFpCY3MtVXN5MjNabFBmd0plVUx2YjZadWxkeHBsTU9qVnJobDlreXEweFpRcDd5dWtIQ0hxeVFXWndaaUFaWEI4WTQ0YTBUMGJyV0sxVnpCOXpCUTJKa2VRNU5oQ3o1RThlRklKQjNNeUt2WnFpdGJvYmZ1UGVubG5zaFYwZUdYZ1RXcGhubk9peEp2ajAtR01vQVMwTW5Pb295VmdXV1dpZUJLVkNKaVY?oc=5",
+    "d": "17 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "PNL.AS": {
-  "price": 0.798,
+  "price": 0.795,
   "currency": "EUR",
-  "day": -1.6029580367126317,
-  "wk": -3.216017793433157,
-  "mo": -4.146634873702637,
-  "ma200": 0.9611274999380112,
+  "day": -1.9728717283039376,
+  "wk": -3.5194155619915124,
+  "mo": -4.4471153501729805,
+  "ma200": 0.9611149999499321,
   "closes": [
    0.9595000147819519,
    0.953499972820282,
@@ -3642,7 +3709,7 @@
    0.8209999799728394,
    0.8209999799728394,
    0.8109999895095825,
-   0.7975000143051147
+   0.7950000166893005
   ],
   "news": [
    {
@@ -3667,18 +3734,18 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "SHELL.AS": {
-  "price": 44.335,
+  "price": 44.345,
   "currency": "EUR",
-  "day": -0.5718774427344142,
-  "wk": 1.825902967911519,
-  "mo": -5.388394137837727,
-  "ma200": 39.081000061035155,
+  "day": -0.5494508897723627,
+  "wk": 1.8488752601029557,
+  "mo": -5.367049417180036,
+  "ma200": 39.081050071716305,
   "closes": [
    32.57500076293945,
    32.119998931884766,
@@ -3935,35 +4002,35 @@
    44.119998931884766,
    44.77000045776367,
    44.59000015258789,
-   44.334999084472656
+   44.345001220703125
   ],
   "news": [
    {
-    "t": "Beursupdate: Shell voert groene AEX aan",
-    "l": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQTVEbkdzOFhUM2ppT19nRHJ3dDZuZXItV2lRNGZCX1dsYXU1WkdJRXhzR3otb3o0TTdkeUQ0Vks5U2dGQUxzemt1dUZEQ0Y5SnZaUFNyVjIxdDVINXpKWmpGYXFrbXdPa1FQQUd4b3Y1dlRMemxleXZNbEZkQ1pjQ1RVRi1OSGJCb3UzWFluN2lpdw?oc=5",
-    "d": "29 Oct",
+    "t": "Verdienen TotalEnergies, BP of Shell nog een plaats in uw portefeuille, na een uitzonderlijk kwartaal?",
+    "l": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPY0o2ZEpaZExYSWxiZFpDVi1ZUnpPY0ZfWkxQYWU3TzZ1Zi1oQmFCa1ppNHVIZDBWVUo4Y0pMQTVyXzFSZUhwZDVMOEdrc2U3SzhWQ1NmWms5ZFRGT0dPOUVrX2FtRHRWdEhTcFlPU1EzM3prbVV5VlJkZThKQ2hsY1VvcHNGeEtkMHcwTFhMV0w3bWlqT3I0Tllack1KRHV1NzNybTQ4N2hxMWtsalU2SWEyVEpfWDFxSGFiclJxekFETkk4TWRhRDVHUXoyOTUyVnFSYmpTaXdEZTdfMm92YWc5SjZBY3ZrUWFGemFDQ0lUUjQ?oc=5",
+    "d": "12 Nov",
     "nl": true,
-    "s": "De AandeelHouder"
+    "s": "De Belegger"
    },
    {
-    "t": "Sterke kasstroom Shell levert hoge aandeleninkoop op",
-    "l": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTnRUbFMyNTZqbUdRTmZNYjdkUmplc3gzUUNBV25Fa0kxdEctLVdIcHkxSU5SRnQyRzNkWHpRX05IbUpVUmhZRFN1Y2hZVHJUNmxud2JFLW1ORmh2U2J4MVNhbmhUNFpDMFh1cmtmbTdObmQzQno0RktCd19meXRtYWxIR2VzVkhQNUw0LUpDVlo4UlJKLUtJbkFOSENfV2pRZHhxTw?oc=5",
+    "t": "Raffinagebonanza bezorgt Shell en TotalEnergies miljardenwinsten",
+    "l": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSEVKZTNuSWNRNndGeXVCS1lGbzRxZnFRMlVzcFJMQ0FHRlpGdzdqQzRaTTBkMmNybElvTHFhNGN3QmVocm9UcnhwLUVWazNUUGdTY3dxZVN0SWxMMFZQVl9ONXFWeF9icFA4VWhvNlZlWllGTmVheldGUTJjQWdoNGFBX3dlUHI5cHc0cXhlalVYZzVTU0c4OXN1ZC1pVl91RzhSeWdrTFVXZ3pVM2hjZEZGYXc2TWZkYXdBUXhHeUF5UQ?oc=5",
     "d": "29 Oct",
     "nl": true,
-    "s": "De AandeelHouder"
+    "s": "De Tijd"
    },
    {
-    "t": "'Everybody's shell-shocked': Republican operatives face 2028 prospects after bruising midterm defeats - ABC News - Breaking News, Latest News and Videos",
-    "l": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS0dOeGlDaEplVjE5NTdiR0ZQWDREUHdPRlBxNE93NlpRYlF0d2pvWF9yZnVVRW5WSTFHa0RyMXJQQTNMVTlaSl9YbDk1MkxIRnBIT211WnlJd3F2UTZOZzBNTzBlb0JtVG14MThyQWFPSTRsOTVfV0RzU09pdl8tMWlmOTZZQ1hnd00wNXNjeklRS0xweDR2aE0zUWtJdE9qdG0zcGNkX2F3em95ZE16XzJMZXHSAboBQVVfeXFMTUQ2cm9HMUwxeGhjdWdtUkxCSWFJdjhFbXF3Qk1OWnZoRjhoRGlGd1ZlaEZSV1pDY0h2VVJEOUhrVlRHZ2tHNWVnM2tQaDA0WlZaWk11Rk9UdF9kRUxlSlFLUnphVE1HYzVNRGdjRmpTVThRUko1ZXRtYkM1MWJOQjJ0SHo1Tk9vdFEzNGlsVWczZzVZVlJiT0oxX053YkpDUWZjSXRYdlhmT1JvMTYyV1E1YW5wTEtXbldR?oc=5",
-    "d": "16 Nov",
+    "t": "Shell starts gas production from Egypt's Mina West field",
+    "l": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONFpPcFd2Y19laU1VYmh0dTYtVjRYQUhBQ2F4YTVZbE9UX1l6TWRfNjAyWnZXY2tKell3NDYzTHZYa2RIUnlfQ0tld2MwY24wSDBKYWZLUnl2cWpJcExYaTRLTW8waWxLS3cxWmxNX2ZFMGw5ay1HR3ZJLW5qVTlSejVoR09QeVdtMl8yUnp0UWhqMjRqbGs5TDF0SW5lUHR2bmE2Rw?oc=5",
+    "d": "15 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "SOF.BR": {
   "price": 265.2,
@@ -4246,25 +4313,25 @@
     "s": "De Belegger"
    },
    {
-    "t": "CVC’s Panzani in exclusive talks to merge with Sofina-backed Cerealis",
-    "l": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTTNsMEdxcGxZdDJWRU9IbVFlT1F3VnIxaHlQV2FwR2owRXNJQzJzSXJEOHdzTy1NcDF5R2h3TVd6U0MyNlVjRDIzeTFsVHlHYWt0OXFrTGRGZjhpVVJNaXR0S2lQNE5EbGh6SlJyY3FMUmNNR213Qmhaam1PSlcwQ09pOHFsQmcyNFZ2SzBQeDk2OHJSSFBMdG1tS3FmT1lfQW5id0JpeTY0QlYyWHJiMm53?oc=5",
+    "t": "Trading Floor: Sofina (+5%), BlackRock Tcp(+3.8%), Wendel (+3.8%), Tamburi Investment Partners (+3.3%)",
+    "l": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWFA2QnpuUkkzbmxsRHRvZXA1MDJCVlkzS2tRa2F3UDkxYncxWnpwNk9UY2p3S2xMZWFXR0Y5MlFmSk9wVTJlV0xPSG1qTlRPNkd3bzA5M21GeG4tTTNCZl9vd3psQXNzRU0tMlBDZkltMVJod3QtNUZfcnZOOFV5U1RDdldNbE5Uc2U1ZEhsRWpXRVMyckoxZUx3bmJHTFBnSk9DdXRoNmNFZnlUX1N4UGN3?oc=5",
     "d": "19 Oct",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "WEB.BR": {
-  "price": 38.0,
+  "price": 37.6,
   "currency": "EUR",
-  "day": 0.5291025581380504,
-  "wk": 0.0,
-  "mo": 4.395600019366919,
-  "ma200": 39.38449996948242,
+  "day": -0.5290985214212895,
+  "wk": -1.052635594418172,
+  "mo": 3.29669477455663,
+  "ma200": 39.38249996185303,
   "closes": [
    38.20000076293945,
    37.400001525878906,
@@ -4521,7 +4588,7 @@
    37.599998474121094,
    37.70000076293945,
    37.79999923706055,
-   38.0
+   37.599998474121094
   ],
   "news": [
    {
@@ -4530,12 +4597,19 @@
     "d": "12 Nov",
     "nl": false,
     "s": ""
+   },
+   {
+    "t": "Private capital moves into the fenced yards behind US warehouses",
+    "l": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNU1Z2ZENyc0k4bEh5SVAzbTU3bTEwcnRrT2ZSOVR1ZDFUTlpUSF95U181SkpDNk9pYzE5b1dxbEp0VE5sVnRmRGJHRElmR3JZMFdzRGpnR3psNmpaNUZtanNBUFZ0SlJpYnVZQTJDQjhEMkxyQUp2WFdjcEVlb2M3Yk5LOE9LN3J1VlN4WVpmR2RoTVVQbEsyWHVkY0ZWQ1o1S2toT1l3ZU9Jd2JHYkpmeEJyUHNEcEdsakplejBHN2ExUVVORmNDN25Ocnl4Z1pPNm5GTzV5OW9QUWJFcEFRc2s2d04?oc=5",
+    "d": "17 Nov",
+    "nl": false,
+    "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "3CP.DU": {
   "price": 3.414,
@@ -4802,6 +4876,13 @@
   ],
   "news": [
    {
+    "t": "India says Xiaomi, Flextronics hid royalty deals in tariff fight",
+    "l": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNa3o5aWpWd1B5T1dCekZvVHRxa3BnREVFQ0hpYTVhVE9GOEVQbzNEZWVZM25PN3VJZUNDZ0ppMHZLODl2b29xTmhRT0J1RWswT0NTTXMyTHhfSUhpT05XUjFzRS1MZUlRQWJkMWxGUGZGbkNKR3d3ZUw5dERfdlRJRldzcVYzbEVrRUpGUmZ2NG05ZEpzNkp3ZEEyUVNSR2lSMEJRa09XMUR1dFhtbFdlWUt6T2lRZ3g3eGJ4SU9B?oc=5",
+    "d": "17 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
     "t": "I Put Xiaomi’s 18 Pro Max Camera to the Test and I Love the Results",
     "l": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNlBZRTg0S3JiaWt3ckVnVmxEVnBpTUtiVXBncFNkMFpLVTVqb0JuNDJqWFl5U0NLUlRNQ2p6NnJEM2d1SDRwNkdMZkZrdHFFOW1Hd0lxTlJhV3hEU2dqRnpCM3E4aS04ZjJpS0ZGYW1reFF2eUpocF9wQ0JpUU9RT2NkSmVPUlFLR1l2eUFUeHQ4dXBaNTlWdWQ5c3FKeFE?oc=5",
     "d": "16 Nov",
@@ -4809,32 +4890,25 @@
     "s": ""
    },
    {
-    "t": "Watch the Xiaomi 18 Pro and Xiaomi 18 Pro Max global launch event here - GSMArena.com news",
-    "l": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTGlNb0hENEVTRVhhNkJ2MWZCdlY3bnZBX0g3a01jZ1RqYzRQbnFMVHZtVnJfUzd1TDlSc0pidENRVUJSbGhsc3VKeWhUR2ZOT1JFNG8wc2c4TV9fV184MHBHSTFrT1ZoamZOV0hlUzQwdUJMbHVyUklfdlFjNXVBektIWC05ZVBRZnQzRWNQRVQwcXZUNGd3U0hTRlluOEtUQmZXSVI2U1Z3VEN4bDdvT2dtck42aWxxOUt4dNIBuwFBVV95cUxPZlJqckxnTHhjbkwyRHg4MHVmd29xWDlIY1JwclBpOXQtQmoxNG8weXNfUWwtajBMa2RreDJpYW9XcnFreE00dzFvLXhzLU1MN3JuSndPWDlfaHRlaVREbGVtcmZLRDd4OVJMTUFWR29pU0YzWUhQNTdha2xrcmVqZmI0VzlJNVVfMWEzV2lRQ1B3RXg3cHlLNzRnVVJPSEYybnlWUDhCemZmbGhna0dTdTd3aGw0aXpsREVz?oc=5",
-    "d": "15 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
-    "t": "Budget Xiaomi smartwatch receives surprise release in new countries with 21 days battery life",
-    "l": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOQ3FJMUNsTnM1SDlDdV9hMVNhTzI5aV9uMEdteWJWQkxrZGJJUUtKMlpiVmZvaGRTTS1fNjhhWVNocjE4ekJod1BVWWRoQUpDVzgzaVlJTXNBeWZ2dzd5SV9SeUpqTEVmdWlpQzNTVS1YM2N0WGtqRlBfZ0VCdTZBREtYNlN0azBsb0dydTlTMGVDYWdUdUprRGM1dlNVcDhiRzJFbndsdGpKWTM1NWRhM3ZxZXk5WjktUTFtaFU3V2pSN1NXQTNCTUxVaFBadGxyMU5Cdg?oc=5",
-    "d": "16 Nov",
+    "t": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+    "l": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUFFsSUR6MXNjS3llS0stM3ZiM2xEOTNISXNldW9uYnRURzhLZUcxV3RlS0FqWkFrZ3FubXJMNXZMSjZFb2dVVDZUZ0ZjOWdKTEFHSXZYVXFacWU0X2ZxYm1qaFFYdG5Vb2N4d3Ixcjd6bGRWaXl3anVpcTY1WFdDZTVyckY1OE9OLU1HUkpLajE5TUNaTEhVcFNuWF9yQUpKLUtvOHhLbzIwMlVRaEoxMjdPZw?oc=5",
+    "d": "17 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "XIOR.BR": {
-  "price": 25.3,
+  "price": 25.25,
   "currency": "EUR",
-  "day": -1.171876472653799,
-  "wk": -2.3166038235786446,
-  "mo": 7.203384864881723,
-  "ma200": 26.811999998092652,
+  "day": -1.3671889697434159,
+  "wk": -2.5096510737599664,
+  "mo": 6.991523694320878,
+  "ma200": 26.81175000190735,
   "closes": [
    28.600000381469727,
    28.25,
@@ -5091,20 +5165,20 @@
    25.649999618530273,
    25.75,
    25.600000381469727,
-   25.299999237060547
+   25.25
   ],
   "news": [
    {
-    "t": "Vastgoedanalist vervangt grootaandeelhouder als CFO van kotmadam Xior",
-    "l": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVkItNjNDVWtZVl84SUpfY1IyVW1oR2hhRW9OeGFaWXNlUlVCcmZEUzQxbnZsQUhOaTIxY2NuWGZtdFVXYzhGaGxwTWdlQXk5SHdENm0wSkUxTWFrU2lNak5LS1EtYjVsbDV3dHp5TFlQVE52Ymx2b09LT0tNRmdQQnpSV3pLM2QxeU1weURaVDZoNXFvY3JRRm9DWjMycHlERzgweElGNUNnTy1tVGVHUVdZOEhzYUFldG1VamlZOXY?oc=5",
-    "d": "29 Oct",
+    "t": "'Kotmadam' Xior blijft worstelen met hoge schuldgraad",
+    "l": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNU94UHdMeVlIaEtrTVdJbkIweUFIUXpyb0xTa2kwcFZocWRxSnA5MkwwSGdNaFp4S3JBczdqeDVab1kzbmVsamlTcVUwRjI3ci1admpyc3hvZHpQa1J0R0RlT0g3R1pldGtSOHRXMDZPdi04YlBOcDZmUEQ0UHpUaTFsWFRpWEx2WTUtYWZaczk4cnFpeDJ5NXpTdkFmQkFxalE?oc=5",
+    "d": "02 Nov",
     "nl": true,
     "s": "De Tijd"
    },
    {
-    "t": "'Kotmadam' Xior blijft worstelen met hoge schuldgraad",
-    "l": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOT29nRS1PaUNseU9mcG4xS0RNWEMxT184clZPYk5KWG92QTVsV3BIVnNJVWRkY2VnZi10SXEwbmtzZHRhUDVRMTU1UHc1S2F2X1hvRE9RU3lEV1VDR3Y4eGwyRFVNdUpScVpRSUN0cmd5bXhzeFZsYUd1VkMzYzRNX244dk9xc3Jrb2FLT1R4d3VOSnFLWkFfTVpRRjVLVEp6ODc1bFcxdnE?oc=5",
-    "d": "23 Oct",
+    "t": "Vastgoedanalist vervangt grootaandeelhouder als CFO van kotmadam Xior",
+    "l": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVkItNjNDVWtZVl84SUpfY1IyVW1oR2hhRW9OeGFaWXNlUlVCcmZEUzQxbnZsQUhOaTIxY2NuWGZtdFVXYzhGaGxwTWdlQXk5SHdENm0wSkUxTWFrU2lNak5LS1EtYjVsbDV3dHp5TFlQVE52Ymx2b09LT0tNRmdQQnpSV3pLM2QxeU1weURaVDZoNXFvY3JRRm9DWjMycHlERzgweElGNUNnTy1tVGVHUVdZOEhzYUFldG1VamlZOXY?oc=5",
+    "d": "29 Oct",
     "nl": true,
     "s": "De Tijd"
    },
@@ -5116,17 +5190,13 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 16:36 UTC",
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false,
-  "usdeur": 1.1018,
-  "nokeur": 10.5912
+  "usdeur": 1.1017,
+  "nokeur": 10.5914
  },
  "~buffett": {
   "daily": [
-   [
-    "2025-11-07",
-    213.36741950891857
-   ],
    [
     "2025-11-10",
     216.51178550588583
@@ -6130,6 +6200,10 @@
    [
     "2026-11-13",
     228.43029276005637
+   ],
+   [
+    "2026-11-16",
+    224.03839926136402
    ]
   ],
   "monthly": [
@@ -6178,12 +6252,12 @@
     228.7683764946515
    ],
    [
-    "2026-11-13",
-    228.43029276005637
+    "2026-11-16",
+    224.03839926136402
    ]
   ],
-  "cur": 228.43029276005637,
-  "when": "17 Nov 2026, 02:20 UTC",
+  "cur": 224.03839926136402,
+  "when": "17 Nov 2026, 16:43 UTC",
   "stale": false
  }
 }
