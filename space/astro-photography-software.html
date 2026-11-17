@@ -30,7 +30,7 @@
 </section>
 
 <article class="wrap">
-  <p class="lede">Last verified <strong>15 November 2026</strong>. This is the only place on this site with the step-by-step software handling &mdash; for <em>both</em> hardware setups. The camera settings for the D300 live in the <a href="astro-photography-guide.html">complete D300 guide</a>; the telescope itself and its physical preparation live on the <a href="telescope.html">Telescope page</a>.</p>
+  <p class="lede">Last verified <strong>15 November 2026</strong>, expanded <strong>17 November 2026</strong> with a plain-English explainer of what each program does. This is the only place on this site with the step-by-step software handling &mdash; for <em>both</em> hardware setups. The camera settings for the D300 live in the <a href="astro-photography-guide.html">complete D300 guide</a>; the telescope itself and its physical preparation live on the <a href="telescope.html">Telescope page</a>.</p>
 
   <h2 id="pipelines">The two pipelines at a glance</h2>
   <div class="table-scroll">
@@ -48,6 +48,88 @@
     <span class="title">Why two workflows?</span>
     <p>The D300 (2007) is a <strong>photo camera</strong>: it takes individual stills and cannot record video, and its buffer is small. The SV705C is a <strong>video camera built for lucky imaging</strong>: thousands of frames in one SER file. So the D300 needs preparation steps (PIPP, NX Studio, FastStone) that turn stills into a video-like stream &mdash; the video camera skips all of that. From stacking onward both rigs use <em>exactly the same programs and the same steps</em>; only the parameter values differ, because the two rigs see the sky at very different pixel scales.</p>
   </div>
+
+  <h2 id="what-programs-do">What each program does &mdash; plain English first</h2>
+  <p>Before the click-by-click steps, the conceptual part: what the three core programs actually do, and why they must run in this order. Once this clicks, every step below becomes obvious.</p>
+
+  <h3>The problem these programs solve</h3>
+  <p>When you photograph the Moon through a telescope or telephoto lens, the air above you is constantly moving. Each frame is distorted and blurred in a slightly different way. Most frames are mediocre, a few are sharp, and every frame has some noise (random speckle).</p>
+  <p>The idea is to take many frames, throw away the bad ones, line up the good ones perfectly, and average them. Averaging cancels the noise and keeps the real detail. Only then do you sharpen. Each program handles one part of that job.</p>
+
+  <div class="callout">
+    <span class="title">The chain</span>
+    <p>Capture many frames &rarr; <strong>PIPP</strong> (tidy up) &rarr; <strong>AutoStakkert!4</strong> (select, align, average) &rarr; <strong>RegiStax&nbsp;6</strong> (sharpen).</p>
+  </div>
+
+  <h3>1 &mdash; PIPP: the preparation tool</h3>
+  <p><em>Analogy: a person sorting and cropping a pile of photos before they go to the printer.</em></p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Input</th><td>Your raw frames, either a video file (SER/AVI) or a pile of stills (including RAW files from a DSLR).</td></tr>
+      <tr><th>Task</th><td><ul>
+        <li>Converts the files into a format the stacker reads reliably, and turns raw colour data into a normal colour image (debayering).</li>
+        <li>Finds the Moon in each frame and recentres it, so drifting or shaky framing doesn&rsquo;t matter.</li>
+        <li>Crops away empty black sky, so the files are smaller and later steps are faster.</li>
+        <li>Scores each frame for sharpness and can remove the worst ones.</li>
+        <li>Can apply flat and dark frames to remove dust spots and sensor patterns.</li>
+      </ul></td></tr>
+      <tr><th>Output</th><td>A clean, centred, cropped set of frames (a TIFF sequence or one SER file).</td></tr>
+      <tr><th>Not done</th><td>It doesn&rsquo;t sharpen or stack. If your camera already gives a ready video file, you can often skip PIPP and go straight to AutoStakkert!4.</td></tr>
+    </table>
+  </div>
+
+  <h3>2 &mdash; AutoStakkert!4: the stacking tool</h3>
+  <p><em>Analogy: a careful editor who picks the best frames, lines each one up with pinpoint accuracy, and then averages them into one image.</em></p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Input</th><td>The frames from PIPP (or directly from the camera).</td></tr>
+      <tr><th>Task</th><td><ol>
+        <li><strong>Quality ranking:</strong> it measures the sharpness of every frame and puts them in order.</li>
+        <li><strong>Alignment points:</strong> it places a grid of small points across the image. Turbulence distorts different parts of the Moon differently, so each small patch is aligned separately to a reference frame.</li>
+        <li><strong>Selection:</strong> you tell it to keep only the best percentage of frames. Frames in good moments of seeing are kept and the rest are discarded.</li>
+        <li><strong>Stacking (averaging):</strong> it combines the kept frames into one image. Noise averages out and the real detail stays.</li>
+        <li><strong>Optional drizzle:</strong> a trick that can recover extra resolution when the image is undersampled, which means the pixels are too big for the detail the optics deliver. Use it only with many frames.</li>
+      </ol></td></tr>
+      <tr><th>Output</th><td>One stacked image (usually a 16-bit TIFF). It is cleaner and more detailed than any single frame, but looks slightly soft. That is normal.</td></tr>
+    </table>
+  </div>
+
+  <h3>3 &mdash; RegiStax 6: the sharpening tool</h3>
+  <p><em>Analogy: a darkroom artist who brings out detail that is already hidden in the image.</em></p>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Input</th><td>The stacked image from AutoStakkert!4.</td></tr>
+      <tr><th>Task</th><td><ul>
+        <li><strong>Wavelets:</strong> it splits the image into layers by detail size. Layer 1 holds the finest detail, higher layers hold coarser features. You raise the sliders on the layers to make details clearer, and a denoise setting keeps the noise from growing.</li>
+        <li><strong>RGB align:</strong> it can fix small colour fringes caused by the atmosphere acting like a prism.</li>
+        <li>It is sharpening only. It cannot create detail that wasn&rsquo;t captured.</li>
+      </ul></td></tr>
+      <tr><th>Output</th><td>The final sharpened image, ready for light finishing (contrast, colour, crop) in any photo editor.</td></tr>
+    </table>
+  </div>
+
+  <h3>Why this order matters</h3>
+  <ul>
+    <li><strong>Sharpening first would fail.</strong> Sharpening a single noisy frame amplifies the noise. Stack first, and the noise is already gone.</li>
+    <li><strong>Stacking without selection is weak.</strong> Averaging blurry and sharp frames together gives a blurry result. Selection is what produces the sharp look.</li>
+    <li><strong>Alignment makes averaging possible.</strong> If the frames aren&rsquo;t lined up precisely, averaging them just smears the image.</li>
+  </ul>
+
+  <h3>Summary</h3>
+  <div class="table-scroll">
+    <table class="data">
+      <tr><th>Program</th><th>Input</th><th>Task</th><th>Output</th></tr>
+      <tr><td>PIPP</td><td>Raw video or stills</td><td>Convert, debayer, centre, crop, filter</td><td>Clean, centred frames</td></tr>
+      <tr><td>AutoStakkert!4</td><td>Prepared frames</td><td>Rank, align, select, average</td><td>One stacked image (soft but clean)</td></tr>
+      <tr><td>RegiStax 6</td><td>Stacked image</td><td>Wavelet sharpening, colour alignment</td><td>Final sharp image</td></tr>
+    </table>
+  </div>
+
+  <h3>With your gear</h3>
+  <ul>
+    <li><strong>Nikon D300 and telelens:</strong> you shoot burst stills, so PIPP converts and centres them, and NX Studio is only needed if PIPP can&rsquo;t read your RAW files.</li>
+    <li><strong>Bresser MC-152/2250 and SV705C:</strong> you record SER video, so PIPP is optional, and you stitch several panes together after stacking.</li>
+  </ul>
 
   <h2 id="install">Install everything (in this order)</h2>
   <div class="table-scroll">
@@ -69,6 +151,17 @@
   <h2 id="workflow-a">Workflow A &mdash; the D300 + 300&nbsp;mm lens</h2>
   <p>You have shot your frames (settings and shooting plans are in the <a href="astro-photography-guide.html">complete D300 guide</a>). These are the D300-specific preparation steps &mdash; after PIPP, continue with the <a href="#shared">shared stack</a> below.</p>
 
+  <h3 id="a-capture">A0 &mdash; what the software expects from the camera</h3>
+  <p>The full shooting plan &mdash; every menu setting, the exposure tables and the Live View focusing trick &mdash; lives in the <a href="astro-photography-guide.html">complete D300 guide</a>. These are the capture facts that decide how the steps below run:</p>
+  <ul>
+    <li><strong>No video mode:</strong> the D300 cannot record movies (only the D300S can), so you shoot <em>bursts of stills</em> at <strong>6 fps</strong> (8 fps with the MB-D10 grip).</li>
+    <li><strong>Shoot plenty:</strong> <strong>100 to 300 RAW frames</strong> per session, so the stacker can choose the frames with the best seeing.</li>
+    <li><strong>File format:</strong> NEF (RAW), noise reduction and Active D-Lighting off, white balance fixed (never auto). A <strong>12-bit NEF</strong> keeps the full 6 fps burst speed (14-bit slows the burst down).</li>
+    <li><strong>Vibration-free:</strong> sturdy mount, remote release or Exposure Delay mode (d9), mirror lock-up or Live View (mirror already up), VR/IS off on a tripod.</li>
+    <li><strong>Focus:</strong> Live View, 10&times; magnification on the terminator, manual focus &mdash; and recheck every 15&ndash;20 minutes, because temperature shifts focus.</li>
+    <li><strong>Moon size on the sensor:</strong> &plusmn;490 px at 300 mm &middot; &plusmn;660 px at 400 mm &middot; &plusmn;990 px at 600 mm &middot; &plusmn;1320 px at 800 mm &middot; &plusmn;1650 px at 1000 mm (full table on the <a href="astro-photography-guide.html#expectations">guide page</a>). At f/5.6&ndash;f/8 the image is heavily undersampled, so drizzle in AutoStakkert!4 can help.</li>
+  </ul>
+
   <h3 id="a-copy">A1 &mdash; getting the photos off the camera</h3>
   <ol>
     <li>Take the CF card out of the camera, put it in a card reader, and plug it into the PC.</li>
@@ -80,7 +173,7 @@
   <ol>
     <li>Open FastStone &rarr; browse to your RAW folder &rarr; double-click the first photo (full screen).</li>
     <li>Arrow keys to walk through the frames. <kbd>Delete</kbd> (or the red cross) removes hopeless frames: blown-out, half-out-of-frame, or visibly shaken.</li>
-    <li>Keep the rest &mdash; PIPP and AutoStakkert do the fine sorting. For planets keep at least 40&ndash;60 frames; for the Moon 15&ndash;25 is plenty.</li>
+    <li>Keep the rest &mdash; PIPP and AutoStakkert do the fine sorting. For planets keep at least 40&ndash;60 frames; for the Moon 15&ndash;25 is plenty &mdash; though more is better: sessions of 100&ndash;300 frames give the stacker the most to choose from.</li>
   </ol>
 
   <h3 id="a-nxstudio">A2 &mdash; Nikon NX Studio: your NEF workbench</h3>
@@ -103,10 +196,10 @@
   </ol>
 
   <h4>2B &mdash; Batch-converting NEF &rarr; TIFF (the PIPP alternative)</h4>
-  <p>If you ever want to stack without PIPP: select all NEFs in the browser (Ctrl+A) &rarr; <strong>File &rarr; Convert Files</strong> &rarr; format <strong>TIFF (16-bit)</strong> &rarr; pick a new folder &rarr; Convert. The TIFFs go straight into AutoStakkert!. RawTherapee is a free alternative that applies identical neutral settings to a whole batch. (PIPP does this conversion + centring + cropping in one go, which is why the normal route goes through PIPP.)</p>
+  <p>If you ever want to stack without PIPP: select all NEFs in the browser (Ctrl+A) &rarr; <strong>File &rarr; Convert Files</strong> &rarr; format <strong>TIFF (16-bit)</strong> &rarr; pick a new folder &rarr; Convert. Use <strong>identical neutral settings on every frame</strong>: no sharpening, no noise reduction, no D-Lighting, no tone curve changes, and the same white balance and exposure on all frames. The TIFFs go straight into AutoStakkert!. RawTherapee is a free alternative that applies identical neutral settings to a whole batch. (PIPP does this conversion + centring + cropping in one go, which is why the normal route goes through PIPP.)</p>
 
   <h3 id="a-pipp">A3 &mdash; PIPP: pre-processing</h3>
-  <p>PIPP turns a pile of raw frames into a tidy, centred, sorted stream &mdash; ready for AutoStakkert!. It works as a left-to-right wizard with five tabs: <strong>Source Files &rarr; Processing Options &rarr; Quality Options &rarr; Output Options &rarr; Do Processing</strong>. It reads your NEF files directly and debayers them &mdash; but test your own NEFs once, because very old PIPP versions lacked NEF support; if yours refuses them, use the NX Studio batch (step 2B). PIPP also stretches the histogram (white point at its 75% default) and can calibrate with dark and flat frames.</p>
+  <p>PIPP turns a pile of raw frames into a tidy, centred, sorted stream &mdash; ready for AutoStakkert!. It works as a left-to-right wizard with five tabs: <strong>Source Files &rarr; Processing Options &rarr; Quality Options &rarr; Output Options &rarr; Do Processing</strong>. It reads your NEF files directly and debayers them &mdash; but test your own NEFs once, because very old PIPP versions lacked NEF support; if yours refuses them, use the NX Studio batch (step 2B). PIPP also stretches the histogram (white point at its 75% default, black point at 0% &mdash; one guide prefers a 100% white point) and can calibrate with dark and flat frames. What it never does: sub-pixel alignment, stacking or sharpening &mdash; those jobs belong to AutoStakkert!4 and RegiStax&nbsp;6.</p>
 
   <h4>3A &mdash; Planets (Saturn / Jupiter)</h4>
   <ol>
@@ -118,7 +211,7 @@
         <li>Leave the debayer settings on their defaults (PIPP debayers your NEFs automatically).</li>
       </ul>
     </li>
-    <li><strong>Quality Options:</strong> tick <em>&ldquo;Only Keep The Best Quality Frames&rdquo;</em> and keep the <strong>best 80&ndash;90%</strong> (PIPP does the coarse sort; AutoStakkert does the fine one).</li>
+    <li><strong>Quality Options:</strong> tick <em>&ldquo;Only Keep The Best Quality Frames&rdquo;</em> and keep the <strong>best 80&ndash;90%</strong> &mdash; or leave the filter off entirely (PIPP&rsquo;s coarse sort is optional; AutoStakkert does the fine one anyway).</li>
     <li><strong>Output Options:</strong> format <strong>AVI</strong> with codec <strong>ULRG</strong> (lossless) &mdash; one tidy file. (A TIFF series or a single SER file work too, and a TIFF series is easier to inspect.) Tick <em>&ldquo;Use Source File Directory&rdquo;</em> so the output lands next to your frames with a <span class="cmd">_pipp</span> suffix.</li>
     <li><strong>Do Processing &rarr; Start Processing.</strong> Watch the progress bar; it ends with a success message and the output filename.</li>
   </ol>
@@ -126,9 +219,9 @@
   <h4>3B &mdash; The Moon</h4>
   <ol>
     <li><strong>Source Files:</strong> add your 15&ndash;25 Moon NEFs &rarr; &ldquo;Optimise Options For&rdquo; = <strong>Solar/Lunar Full Disc</strong>.</li>
-    <li><strong>Processing Options:</strong> object detection finds the disc automatically. Click <strong>&ldquo;Test Options&rdquo;</strong> and check that the crop box (roughly 600&ndash;900 px, your Moon is &plusmn;490 px) contains the whole disc with some margin. <em>Convert Colour to Monochrome</em>: unticked.</li>
-    <li><strong>Quality Options:</strong> keep the best 90%.</li>
-    <li><strong>Output Options:</strong> AVI (ULRG), a TIFF series or a single SER file &mdash; all fine.</li>
+    <li><strong>Processing Options:</strong> object detection finds the disc automatically (stabilisation mode stays &ldquo;Object/Planetary&rdquo; &mdash; PIPP&rsquo;s &ldquo;Surface&rdquo; mode is only for extreme close-ups through a telescope). Click <strong>&ldquo;Test Options&rdquo;</strong> and check that the crop box &mdash; about 15&ndash;25% larger than the disc diameter, roughly 600 px for your &plusmn;490 px Moon &mdash; contains the whole disc with some margin. <em>Convert Colour to Monochrome</em>: unticked.</li>
+    <li><strong>Quality Options:</strong> keep the best 90% &mdash; or set the filter off and let AutoStakkert do the main selection.</li>
+    <li><strong>Output Options:</strong> AVI (ULRG), a 16-bit TIFF sequence or a single SER file (PIPP also writes PNG and FITS) &mdash; all fine.</li>
     <li><strong>Do Processing &rarr; Start Processing.</strong></li>
   </ol>
 
@@ -196,8 +289,8 @@
   <div class="table-scroll">
     <table class="data">
       <tr><th>Setting</th><th>D300 + 300&nbsp;mm</th><th>MC-152 + SV705C</th></tr>
-      <tr><td>AP size</td><td>Moon <span class="cmd">48 px</span> (auto grid) &middot; planets <span class="cmd">24 px</span> on the planet</td><td>Moon <span class="cmd">64&ndash;104 px</span> (up to 128 in poor seeing) &middot; planets <span class="cmd">48 px</span></td></tr>
-      <tr><td>Frame percentage to stack</td><td>Moon <strong>50%</strong> &middot; Jupiter <strong>10&ndash;20%</strong> &middot; Saturn <strong>30&ndash;50%</strong> &mdash; or drag the line in the quality graph to just above where the curve collapses</td><td><strong>20%</strong> (10% in bad seeing, 30% in very steady air)</td></tr>
+      <tr><td>AP size</td><td>Moon <span class="cmd">48 px</span> (auto grid &mdash; 64&ndash;128 px is the classic range for typical lunar detail) &middot; planets <span class="cmd">24 px</span> on the planet</td><td>Moon <span class="cmd">64&ndash;104 px</span> (up to 128 in poor seeing) &middot; planets <span class="cmd">48 px</span></td></tr>
+      <tr><td>Frame percentage to stack</td><td>Moon <strong>10&ndash;30%</strong> of a big session (100&ndash;300 frames &mdash; 50% only if you kept just 15&ndash;25) &middot; Jupiter <strong>10&ndash;20%</strong> &middot; Saturn <strong>30&ndash;50%</strong> &mdash; or drag the line in the quality graph to just above where the curve collapses</td><td><strong>20%</strong> (10% in bad seeing, 30% in very steady air)</td></tr>
       <tr><td>Drizzle</td><td>Planets <strong>3.0&times;</strong> (a 12 px planet becomes 36 px &mdash; essential at 300 mm), Moon off or 1.5&times;</td><td>Off &mdash; planets are already &plusmn;170 px on the sensor</td></tr>
       <tr><td>Normalize Stack</td><td colspan="2"><strong>75&ndash;80%</strong></td></tr>
       <tr><td>Sharpen</td><td colspan="2">Leave <strong>off</strong> &mdash; RegiStax wavelets do it better. (Tick &ldquo;Sharpened&rdquo; only for a quick preview.)</td></tr>
@@ -238,27 +331,28 @@
     <p>Known quirk with some TIFF variants. Open the file in GIMP &rarr; File &rarr; Export As&hellip; &rarr; <strong>PNG</strong> &rarr; open that PNG in RegiStax.</p>
   </div>
 
-  <p>Alternatives for this sharpening step exist &mdash; ImPPG (Lucy-Richardson deconvolution) or Siril &mdash; but one sharpener is enough, and this site standardises on RegiStax&nbsp;6. One nuance for telescope close-ups: oversampled detail (0.27&Prime;/px) responds more on wavelet <strong>layers 2&ndash;4</strong>, so keep layer 1 gentle there.</p>
+  <p>Alternatives for this sharpening step exist &mdash; ImPPG (Lucy-Richardson deconvolution), Siril or Photoshop Smart Sharpen &mdash; but one sharpener is enough, and this site standardises on RegiStax&nbsp;6. One nuance for telescope close-ups: oversampled detail (0.27&Prime;/px) responds more on wavelet <strong>layers 2&ndash;4</strong>, so keep layer 1 gentle there.</p>
 
   <h3 id="s-gimp">S3 &mdash; GIMP: the final polish</h3>
-  <p>Optional but worth it, especially for planets. Four moves, in order:</p>
+  <p>Optional but worth it, especially for planets. Five moves, in order:</p>
   <ol>
     <li><strong>Colors &rarr; Levels:</strong> move the white/black triangles inward until the histogram touches the data &mdash; or try &ldquo;Auto&rdquo; and refine. This sets the brightness floor and ceiling (the background turns true black).</li>
     <li><strong>Colors &rarr; Color Balance:</strong> Saturn likes a warm yellow push in the highlights; Jupiter a gentle warm cream. Subtle is enough (&plusmn;10).</li>
+    <li><strong>Colors &rarr; Hue-Saturation:</strong> a gentle saturation boost (+10&ndash;15) brings out the Moon&rsquo;s subtle mineral colours &mdash; for planets, prefer Color Balance (step 2).</li>
     <li><strong>Filters &rarr; Enhance &rarr; Sharpen (Unsharp Mask):</strong> radius <span class="cmd">1&ndash;2 px</span>, amount <span class="cmd">0.3&ndash;0.8</span> &mdash; a whisper, not a shout (the wavelets already did the heavy lifting).</li>
-    <li><strong>Image &rarr; Scale Image</strong> (for sharing: 1200&ndash;1600 px wide is plenty) &rarr; <strong>File &rarr; Export As&hellip;</strong> &rarr; JPEG, quality 90 &rarr; <span class="cmd">fotos\...\bewerkt\</span>.</li>
+    <li><strong>Image &rarr; Scale Image</strong> (for sharing: 1200&ndash;1600 px wide is plenty) &rarr; <strong>File &rarr; Export As&hellip;</strong> &rarr; JPEG, quality 90 &rarr; <span class="cmd">fotos\...\bewerkt\</span>. Keep the RegiStax TIFF as your master archive.</li>
   </ol>
 
   <h2 id="mosaic">Special case &mdash; the full-disc Moon mosaic</h2>
-  <p>With the telescope the sensor covers 1026 &times; 580&Prime; (17.1&prime; &times; 9.7&prime;) while the Moon is about 31&prime; across &mdash; so a full disc is <strong>about 9 to 12 overlapping panes</strong>. The pane workflow:</p>
+  <p>With the telescope the sensor covers 1026 &times; 580&Prime; (17.1&prime; &times; 9.7&prime;) while the Moon is about 31&prime; across &mdash; so a full disc is <strong>about 9 to 12 overlapping panes</strong>. PIPP is optional on this rig: AutoStakkert!4 reads SER files directly, and auto-centring is pointless when the Moon fills the frame (if you do use PIPP on such close-ups, its &ldquo;Surface&rdquo; stabilisation mode suits them). The pane workflow:</p>
   <ol>
     <li><strong>Plan the grid:</strong> panes with 20&ndash;25% overlap, so no crater falls between two panes.</li>
-    <li><strong>Capture each pane:</strong> RAW8 keeps the data volume manageable &mdash; a 12-bit mosaic approaches 250&nbsp;GB, 8-bit halves that (use a fast SSD and a USB&nbsp;3 port). Take 1,000&ndash;2,000 frames per pane, exposure by histogram (start around 2&ndash;8&nbsp;ms, peak at 60&ndash;75%, no clipping). Record <strong>flat frames</strong> too &mdash; dust shadows show clearly on this sensor. Finish all panes within about 15&ndash;20 minutes: shadows at the terminator change quickly &mdash; and refocus between panes when the temperature is shifting.</li>
+    <li><strong>Capture each pane:</strong> RAW8 keeps the data volume manageable &mdash; a raw 12-bit frame stored as 16-bit is about 16.8&nbsp;MB, so 1,500 frames &asymp; 25&nbsp;GB per pane and a 12-bit mosaic approaches 250&nbsp;GB; 8-bit halves that (use a fast SSD and a USB&nbsp;3 port). Take 1,000&ndash;2,000 frames per pane, exposure by histogram (start around 2&ndash;8&nbsp;ms, peak at 60&ndash;75%, no clipping). Record <strong>flat frames</strong> too &mdash; dust shadows show clearly on this sensor. Finish all panes within about 15&ndash;20 minutes: shadows at the terminator change quickly &mdash; and refocus between panes when the temperature is shifting, always finishing the focus turn in the same direction (mirror flop).</li>
     <li><strong>Stack each pane:</strong> AutoStakkert!4 &rarr; Surface &middot; AP size 64&ndash;128&nbsp;px (larger in poor seeing) &middot; stack the best <strong>10&ndash;25%</strong> &middot; no drizzle &middot; one 16-bit TIFF per pane.</li>
     <li><strong>Stitch the panes</strong> (Hugin, PTGui or similar) &mdash; and only then sharpen the whole mosaic, so the sharpening is consistent across the seams. Oversampled telescope detail responds more on wavelet layers 2&ndash;4: keep layer 1 gentle. Use RGB Align to fix colour fringing from low altitude.</li>
     <li><strong>Check the scale:</strong> a stitched full disc should measure close to <strong>7,000&nbsp;px</strong> across &mdash; if it is far off, a pane was skipped.</li>
   </ol>
-  <p>At f/14.8 the sampling is already dense (some guides call it slightly oversampled &mdash; the green-light Nyquist rule of thumb is about f/10.5 for 2.9&nbsp;&micro;m pixels), so drizzle and a Barlow lens add nothing here.</p>
+  <p>At f/14.8 the sampling is already dense (some guides call it slightly oversampled &mdash; the green-light Nyquist rule of thumb is about f/10.5 for 2.9&nbsp;&micro;m pixels), so drizzle and a Barlow lens add nothing here. The 152&nbsp;mm aperture resolves about 0.91&Prime; (Rayleigh) &mdash; roughly 3.4 px per resolution element at 0.27&Prime;/px, so the sensor already captures everything the optics can deliver.</p>
 
   <h2 id="recipes">Three complete recipes, start to finish</h2>
 
@@ -266,8 +360,8 @@
   <ol>
     <li>Copy the NEFs to <span class="cmd">fotos\maan\RAW\2026-11-17\</span>.</li>
     <li>FastStone: delete the obviously bad frames, keep 20+.</li>
-    <li>PIPP: Solar/Lunar Full Disc &middot; colour &middot; keep best 90% &middot; output AVI (ULRG).</li>
-    <li>AutoStakkert!4: Surface &middot; AP 48 px auto grid &middot; Noise Robust 3 &middot; Analyse &middot; stack <strong>best 50%</strong> &middot; drizzle off &middot; 16-bit TIFF.</li>
+    <li>PIPP: Solar/Lunar Full Disc &middot; colour &middot; keep best 90% (or off) &middot; output AVI (ULRG).</li>
+    <li>AutoStakkert!4: Surface &middot; AP 48 px auto grid &middot; Noise Robust 3 &middot; Analyse &middot; stack <strong>best 10&ndash;30%</strong> &middot; drizzle off &middot; 16-bit TIFF.</li>
     <li>RegiStax 6: Wavelet layers 1&ndash;3 gently + denoise 0.10&ndash;0.30 &middot; Do All &middot; save TIFF to <span class="cmd">fotos\maan\gestackt\</span>.</li>
     <li>NX Studio (step 2A): exposure, white balance 5200 K, sharpening +3&hellip;5, clarity +2&hellip;4, contrast +15 &middot; Convert Files &rarr; JPEG &rarr; <span class="cmd">fotos\maan\bewerkt\maan-2026-11-17.jpg</span>. Done &#127769;</li>
   </ol>
@@ -298,6 +392,7 @@
       <tr><td>AS!4/RegiStax refuse to open files</td><td>D300</td><td>NEF not supported</td><td>Through PIPP first (or NX Studio batch &rarr; 16-bit TIFF)</td></tr>
       <tr><td>PIPP refuses your NEFs</td><td>D300</td><td>Very old PIPP version (NEF support was once missing)</td><td>Update PIPP; or batch-convert to 16-bit TIFF with NX Studio</td></tr>
       <tr><td>Saved frames are 3856&times;2176 instead of 3856&times;2180</td><td>Telescope</td><td>Known small SharpCap quirk with the SV705C</td><td>Harmless (a few sensor-edge rows); check once after the first capture</td></tr>
+      <tr><td>FireCapture misbehaves with the SV705C</td><td>Telescope</td><td>Known issues for some users (noted in the camera manual)</td><td>Test before a session &mdash; SharpCap is the safe default</td></tr>
       <tr><td>PIPP output is empty</td><td>D300</td><td>Object detection failed</td><td>&ldquo;Test Options&rdquo; &rarr; loosen threshold or crop manually</td></tr>
       <tr><td>Stack looks worse than your best single frame</td><td>Both</td><td>Too many bad frames stacked, or bad seeing</td><td>Lower the stack %; reshoot on a calmer night</td></tr>
       <tr><td>Onion rings / grainy after wavelets</td><td>Both</td><td>Wavelets too strong, too few frames</td><td>Back off the layers, raise denoise (0.10&ndash;0.30)</td></tr>
