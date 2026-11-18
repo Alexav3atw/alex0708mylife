@@ -260,6 +260,13 @@
   ],
   "news": [
    {
+    "t": "Aker ASA N (FKM.F) Q3 FY2026 earnings call transcript",
+    "l": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSzdHMnZ0emxRNlowUTN4T0xBLWZJQjVJRE9tdXl1cEU4RlNPb2tCSlM0RW9oMHFOWGVaNjY1SzdFcGlPNVFHM2daSmZtY0ZCbFIwZHpwT2VIQ1pTUXpDakl1eXgxMmFIM1Fzc3lrTUsyUzdlWFFQLURmcWRZLVhiNXNoZ20tTWEyZWxfSDAtOA?oc=5",
+    "d": "04 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
     "t": "Aker QRILL recertified to MSC Fisheries Standard, with additional conditions",
     "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbWZOcVlNT25ZTHlGME5Zc3g5TmI3ck5VdUd3amZkTHpoWkJYZ0drTlg4QThCa3U5U21qVURKeDNOaWhhOGoyamxWb1c4cjg2YTNDTUZqTHRwMVRibDZzaS1ITi15bnhrWlVadjlYX1FDRE1CRFByUkhxZWczUFNnOVpkSXBfRlFkVTkwN0hKeG5VTlFJaTlUVkMydGFpd1VSelVNcEZPdlprMm9TaFZz?oc=5",
     "d": "17 Nov",
@@ -267,24 +274,17 @@
     "s": ""
    },
    {
-    "t": "Here's Why BP's Partial Aker BP Stake Sale Is a Timely Move",
-    "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOb0xCZTZNRGNZRFJHV0toSm1oR1p0QXdfS1dfallDcGtZSGg4UFoydFZkMDhKbEhpVHpqTnVhV1RhX0pZWWRmelpNekluZEUxeVhwd2FxRUxSbFZ3cWhoRGRjUElockZnLXpvakZLTFBkcGNnSlRYV2pJZTFqUEFja19ySHFieFBXZ21Z?oc=5",
-    "d": "17 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
-    "t": "Aker Solutions to dismantle and recycle Statfjord A topside where it was built",
-    "l": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYl9hY1EtYlJqX3Rra2QxQ0VaQlVJN2lkNUFHcEdsYkhJcHFFMUpIczM0bm9vcVFpZTM0UWZPUWhvNWpadlJ2OXZsYUd2UTNtQlNQcGpSREEzMDdEaGRfV1NzeGQwaWJSeV9iUTRZc1hFdVYzQXlONG41aDVlamw2NjRPWmV4b3cxZ3hWeFQ4RFdibzJaTFBHMGp6dTdMQlViWG5RM19jWTlhcHEzRy1NMnEzUmZEVWtVWEtUaw?oc=5",
+    "t": "Theater Review - Cape Rep’s ‘The Hundred Aker Wood:’ A Winnie-the-Pooh Musical As Sweet As Honey",
+    "l": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOLTdiMnh2WDVxNzl1b3AwLUJtaFR5R3ZqaE45Rm9VTE5YeWJKbHJWb0ppcDF4T1ZCN0l4c3lOaXhvRUtSM3RLYVZmSWY3QUQxb01XYWxBUVUwLXVMWlFnZGtpUlQxOUUwUzQwZ1EwcmxBT2VPUFFMRkM5Tldic1JUVG5RQzhtQm1rUWprcVFLS0lvRFItUUw0Ymp0VGJnamZDMGY4bzFsM1hEaG1aM3JtRzNsMk5hOXZveGJBR3J3aUdHeVhTbU9xX3JDY3YtM1dWbGp6NzFCVE0wTTQ?oc=5",
     "d": "17 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "ASCE.BR": {
   "price": 53.2,
@@ -551,10 +551,10 @@
    53.900001525878906
   ],
   "news": [],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "BPOST.BR": {
   "price": 0.788,
@@ -836,18 +836,18 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "BRK-B": {
   "price": 586.76,
   "currency": "USD",
-  "day": -1.0272372162820065,
-  "wk": 0.5862760573094761,
-  "mo": 10.245576404555191,
-  "ma200": 501.49294998168943,
+  "day": -1.0422643802004194,
+  "wk": 3.059535086647114,
+  "mo": 11.433772005099229,
+  "ma200": 500.99559997558595,
   "closes": [
    504.3699951171875,
    501.260009765625,
@@ -1098,8 +1098,7 @@
    588.239990234375,
    589.8300170898438,
    592.9400024414062,
-   592.8499755859375,
-   586.760009765625
+   592.8499755859375
   ],
   "news": [
    {
@@ -1117,17 +1116,17 @@
     "s": "De Tijd"
    },
    {
-    "t": "Berkshire Hathaway Doubles Down on U.S. Housing",
-    "l": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOeERJZnVuLUYtaFpHVmlycmt3Ti10MUVsT1pkRjdkZmh5OTUzYVpIYVJLV2dhMTd1TlZYQm5rMm1tZHVfVkI2VXVaSjVyLUhCOXJ6bFNyajJ0YUd4LVJOY2IxSVprbDh3d1lBMHd0ZXpCWE94dFhCdVRHUHJBUUJIRTZ1QVY4YVZENjFEZzV5ek5fVkJxZEpPaDEzY1l4T0lzRTNhSzJYcDVJYU1mdTlDdDZtSTRjdVVQNTEwZW5XUTdVaERDVHQ0eV8tbXdnd05yTWw5d0ZhQmkxSUN3dnp1amp5d2ZMeDJM?oc=5",
+    "t": "Warren Buffett’s Berkshire Just Revealed a New $689 Million Stock. The Company’s IPO Was Less Than Five Months Ago",
+    "l": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNy1zREdTaHR2aVMxWXgxR2FsSi12Si1xOVhPdFg2RC1TbnpBYllacHdsOTRyb1V0M2RHaHduc2pFWTh6UWJjVU5WclNHU2pad3hvaS1FU09tZEoxYk9wT2YzRGp2ekRQLV9wUkVHS0RKSmdyVGNDMmVvLWM4SUoxM256WEJkeGdiNUpFM0QxekRSTXN3M08xZE02TndHeVFxajg0ZF9n?oc=5",
     "d": "16 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "BY6.VI": {
   "price": 7.386,
@@ -1399,32 +1398,32 @@
     "s": "De Tijd"
    },
    {
-    "t": "BYD is bringing its $10,000 ‘Great’ Seagull overseas, but it won’t replace the Dolphin Surf",
-    "l": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUERjd29CaWF6ZDFfWXZodm93UEphYjlFUzhkRFQtVTlNSjUyMmlmaUZZSVZIMGRNY3lja3JuY25hcGRNTW1VOWRrMndLZXdOdGx3d01vSm5EaEZhUjBaaVM0NTV3TzZZNzg0UENfX05QeUZJWGJEQzN3TnlvaGVfa2Fn?oc=5",
-    "d": "16 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
     "t": "BYD Is Winning Over Japan With A Very Japanese Kind Of EV",
     "l": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40QlpIUW9wNXFTR1lkeXFXdzRtLVprYmNCc1NXYnlWS2ZMU1B3OHh0SDR5Vjc3VVlHWDh3YVN3RWhCVnoxS3o0RHI4aERMSUVBSWtEYmVJM2FqQndqV2RKSGhsUnJaRUhudW9vcHdB?oc=5",
     "d": "17 Nov",
     "nl": false,
     "s": ""
+   },
+   {
+    "t": "BYD is bringing its $10,000 ‘Great’ Seagull overseas, but it won’t replace the Dolphin Surf",
+    "l": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUERjd29CaWF6ZDFfWXZodm93UEphYjlFUzhkRFQtVTlNSjUyMmlmaUZZSVZIMGRNY3lja3JuY25hcGRNTW1VOWRrMndLZXdOdGx3d01vSm5EaEZhUjBaaVM0NTV3TzZZNzg0UENfX05QeUZJWGJEQzN3TnlvaGVfa2Fn?oc=5",
+    "d": "16 Nov",
+    "nl": false,
+    "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "AI": {
   "price": 9.95,
   "currency": "USD",
-  "day": -6.8352086546477615,
-  "wk": -15.962840531802303,
-  "mo": -11.79077974459959,
-  "ma200": 9.981599974632264,
+  "day": -15.820640804610687,
+  "wk": -10.999997456868494,
+  "mo": -5.653705007969756,
+  "ma200": 9.986449975967407,
   "closes": [
    13.739999771118164,
    13.539999961853027,
@@ -1675,10 +1674,16 @@
    12.1899995803833,
    12.069999694824219,
    11.819999694824219,
-   10.680000305175781,
-   9.949999809265137
+   10.680000305175781
   ],
   "news": [
+   {
+    "t": "Asana, Snowflake, PagerDuty, C3.ai, and GoDaddy shares plummet, what you need to know",
+    "l": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUWVSbnp0NHhNMGxGVmxjdnRwWjU1eHBlMldpSTlvOVdFT2FzQ0x1MlNrdlJwSVZXRlBvb0xpZHpyUTR1a1gyX0lvZnBPNWEtOExaYnVEbXY2WENITlJETG5KbHR1d1Iyc1R4TDRFSUdrT2IzaWtsMWFycnRiMnl1NVhhZFhwdWdnNFhfS0laU3lXVVFmdmZCZ2R4VmlmbzhkdHF1RWY5b1lmdVlXYWtOdlRMM3RzMGFRTUh0amE1N1o0Q3N5ZzNXdW1PQVhOUXhJVXpHb0FWb18?oc=5",
+    "d": "17 Nov",
+    "nl": false,
+    "s": ""
+   },
    {
     "t": "C3.ai, Inc. (AI) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
     "l": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTElxRWJWWDRTREh2Q3FvTE9JZUtjTnk4dzg1X056U0pUVEhvZDBxeE5ET19PNl9PUlhPS3hOeHNCdEg4SUQ0aG9mUEM4NDdZLVc5d1ZoM0NzU2dOWWdxMEdfVDVJWlVCOWRISVY0dGlmZF9sR2RHYUVNeTljbkpLeHBWSURqU1NzRVE?oc=5",
@@ -1692,19 +1697,12 @@
     "d": "14 Nov",
     "nl": false,
     "s": ""
-   },
-   {
-    "t": "C3.ai (AI) Drops 7.2% After Hours, Settling at $10.75 - 24/7 Wall St.",
-    "l": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQM2EyR2R6RFl6TGdEek5ORUswcGg5Z3REMGdjZnowVGhnWThjcmFOT0U4SnRfNjFWb0FQekt3bmhhRGR6SWRUNTdyczZOdnYycEJYUUdrbks0LTJlOVhVazdiU0hvU2ZUdmRQeFFOT1NscW9FdTdnUFo3VHZCZ3VQRA?oc=5",
-    "d": "16 Nov",
-    "nl": false,
-    "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "CPINV.BR": {
   "price": 12.76,
@@ -1986,10 +1984,10 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "GTT.PA": {
   "price": 184.3,
@@ -2273,15 +2271,15 @@
    {
     "t": "Gaztransport & Technigaz (ENXTPA:GTT) Stock Forecast & Analyst Predictions",
     "l": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbjJyc28xcEptSUtNWnA1Z2VqdjVjNU5YVGo0U3B2RlpaSmJ4ZnkwdHdEQmgzNjh1YjBUYmRGbHlYNjFrMHp1V3lUMW9qWTVCd0dXQUptb3BNaklzak1zZDVsTTZRSlVkSUI2clRhbkR0Z2cwenA1dlMwUVpCZzhlSnI4c0NBSnJnYWg4?oc=5",
-    "d": "28 Oct",
+    "d": "10 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "GBLB.BR": {
   "price": 79.15,
@@ -2570,10 +2568,10 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "INRG.MI": {
   "price": 7.83,
@@ -2845,10 +2843,10 @@
     "s": "De Belegger"
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "KBCA.BR": {
   "price": 94.6,
@@ -3137,10 +3135,10 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "NN.AS": {
   "price": 80.98,
@@ -3429,10 +3427,10 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "PNL.AS": {
   "price": 0.794,
@@ -3714,17 +3712,17 @@
     "s": "De AandeelHouder"
    },
    {
-    "t": "Picnic PostNL head coach speaks about his life-threatening fall and what the investigation means for the future",
-    "l": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPeW9TeXVJbU1ub2VhZ2lUNGxyUVRXWVpreDFQWkVfdjZUbWpYUUxCUVFDdEkzQW1XWjFPU1VWN0wtSF8tSWZyWkpVaFQ2VmxKNEpla3pmVEhFWll2c1RNSncyMEJOVlU3MmdVV0NCelVNaUhUYWRTYXFqWmxwTkxLeGpqWXNDcWdGV0tIYjdrYlUtelBoNGFDV1hFY1JPbTByU1pwSFlZel91aXRpN195WVlOdWxDaTdxNnR0ZnRtbV9fV3JtckRLZ3pOSHRKWHN5ZHh5blh3NFFHN0dqYWpoMnNn?oc=5",
+    "t": "Nika Bobnar joins Picnic PostNL for 2027 after Slovenian national title double",
+    "l": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5wTUE1WU54eE42cUJXcnVNVzctTU5LSjJVRkRiVF9MQ3NMNVFCXzlQZGtjcTRDR190azIzRDc3UUxVbnZrSXVNcEd2d1RFMjR5bFJPMzI5NkF6VjB3QmZUdU56a3hYbFVhRG9UX0dzWQ?oc=5",
     "d": "16 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "SHELL.AS": {
   "price": 44.3,
@@ -4013,10 +4011,10 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "SOF.BR": {
   "price": 265.6,
@@ -4305,10 +4303,10 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "WEB.BR": {
   "price": 37.6,
@@ -4576,13 +4574,6 @@
   ],
   "news": [
    {
-    "t": "Georgia warehouses purchased by ICE to turn into detention centers up for sale after plan scrapped",
-    "l": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR2ZwVE5oNEQtWVpiWTI1aUI4WVdNazZ5MG9DSmZLWUQwTC1mNk5YeVdqY3BucjZuUEtwdnVZWHpwejI2SllQRjA3Mi1yWS0zbHZZR3R2M0R5bmRLbTVIaHNFTXpuSGVwelVRaDJZSmJVRGJoMkt3QzRIWVZnUVhCZld6cFZVb3NpYk9SOE9lT0RrT3ZiVjZEUndyNnpFaFVLcUN6NFJvVjBldGR3UmpwbE5zM3FhcDNTOGEwU3huOV9JSEttWWEwdnVVZUFWcGZQY3c?oc=5",
-    "d": "12 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
     "t": "Private capital moves into the fenced yards behind US warehouses",
     "l": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNU1Z2ZENyc0k4bEh5SVAzbTU3bTEwcnRrT2ZSOVR1ZDFUTlpUSF95U181SkpDNk9pYzE5b1dxbEp0VE5sVnRmRGJHRElmR3JZMFdzRGpnR3psNmpaNUZtanNBUFZ0SlJpYnVZQTJDQjhEMkxyQUp2WFdjcEVlb2M3Yk5LOE9LN3J1VlN4WVpmR2RoTVVQbEsyWHVkY0ZWQ1o1S2toT1l3ZU9Jd2JHYkpmeEJyUHNEcEdsakplejBHN2ExUVVORmNDN25Ocnl4Z1pPNm5GTzV5OW9QUWJFcEFRc2s2d04?oc=5",
     "d": "17 Nov",
@@ -4590,10 +4581,10 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "3CP.DU": {
   "price": 3.384,
@@ -4880,10 +4871,10 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "XIOR.BR": {
   "price": 25.15,
@@ -5172,10 +5163,10 @@
     "s": ""
    }
   ],
-  "when": "17 Nov 2026, 23:39 UTC",
+  "when": "18 Nov 2026, 01:29 UTC",
   "stale": false,
-  "usdeur": 1.0996,
-  "nokeur": 10.5774
+  "usdeur": 1.0993,
+  "nokeur": 10.5803
  },
  "~buffett": {
   "daily": [
@@ -6239,7 +6230,7 @@
    ]
   ],
   "cur": 224.03839926136402,
-  "when": "17 Nov 2026, 16:43 UTC",
+  "when": "18 Nov 2026, 01:30 UTC",
   "stale": false
  }
 }
