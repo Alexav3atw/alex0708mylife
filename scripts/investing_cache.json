@@ -261,28 +261,28 @@
   ],
   "news": [
    {
-    "t": "BP Sells 5% Stake in Aker BP for $1 Billion as Balance Sheet Repair Continues",
-    "l": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWlZRQlotVm1qbGJ4WjR6M3ltMk9IYUF5X0NKSVJ1TEZxa3hEWjBVdGtfWXEtMk5tUktyakxoc2pkemFjQUdkTEZ6dXMwaTBUT3dSQTY5WVlEZGVxc3cxTktQU2xRWUpUZ3RNZVBfZndlS1NjVnZYV2hiaEtVaUltMnpMazBGakpSaEgzTlR5WWUzOEhQeXNtaVhsbTRpTGpRWTl4eEpRQjJldzN5QndGa3VNd2Y5RVFLcU11SDAxTl9ndw?oc=5",
+    "t": "BP sells stake in Norway's Aker BP at 12% discount",
+    "l": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSmg3WmE2UWpNamgtN0w4cFo3VHFjRnphUjFheWlnelZ0U3FXNWJMYWpnOEpUTWVrd1BVdmE3MmZ4Q19tbnBjM0gyakNackxBSU9lOTNUckxTNVJweG00QURscFc2NEZEWVA0V1VnTmU5ZkNTRmNKTVZFcEFWTmdUSFdqRUlTbVF4alpLa2NrVElRRFUydlp3ZHNMeFlrTkE?oc=5",
+    "d": "04 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
+    "t": "Aker ASA (AKER) Shares Go Ex-Dividend at NOK 29.00",
+    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdmZFbUsxZ1p0RGwzajhoSnktQXloZjgtY1NRbDlIak92Mm1KbS1EYVVJMTBzR21tUTZZWmp1cjdhNGd3WHZiS2NDYU9qR3R4eEY4T2FQWGcyZWtiSndmbFJuZWZfTkZnQ3hJeGVtNzZsbDd4RWx1eWRJeFZnU25ldDFkdFVQeVAweFhkLWF0OUdPVUt6R3VKcFJfNXNNN3JfNVhJbUNmUEpaZFRkbFY4?oc=5",
     "d": "05 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "Aker A falls 3.00% in Friday's session",
-    "l": "https://news.google.com/rss/articles/CBMifEFVX3lxTE43UXc3WkNzZVVPV2J5UnNURGZBS2NDVk9WMkxFS2EwR2ZLZU9ZVldaUlJZbWxXTV9QZlZHQzFaczNYUjlIM3RSTGpyS1ZIOXFhNUtZby1OWWhfUU9ieTlFOVpiR2dLVENHVHRzYk8xMXRvcm5XRi1lQ005WEY?oc=5",
-    "d": "20 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
-    "t": "Antarctic Krill Fishery Behind Aker BioMarine’s Krill Ingredients Recertified by the MSC",
-    "l": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUWtaV2xvdUtZVF96Nl9EQUNKTl9GRDNzRXg3WnZUQlpkTXkydjhtb0RGSEQ4LUljeEdSeUV6cjBqSlpzaE1JUGlRLUw3dkdRdWNLOVExVUVac2U1NkwtNmp0bE9ralZablZYSHJGYnhuUXU1bHllZ1lUazluVEZrd3JVR2JRUjdUWk5FYTlWdkVzZDhfemNTWUFUVjBiZHBMSjVhNjQxQ0FveFdNTHByVlRob2JleUo4WkNrRXVPenk?oc=5",
-    "d": "20 Nov",
+    "t": "Aker ASA: Ex-dividend NOK 29.00 today",
+    "l": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQM3RVS3lPRk5HRjNQMTlzc1A2bjdZS1p0RXR5YkdxTFo4VmNHbjF1djNodWI2UGp0QWJrc25WVGYwZzVZVjVxUmNXZkVZbTZ3c09BYWVUY2tGdU40TmpXQUcyTjhnTm9ha2VMUUhWZE9UZ2h5TVRueG9SZ3QyU0dMNWZxaU0xOHo2aXZ1dEdhX19KV2tJTzZlZ3VRVHkzWGxGblloZA?oc=5",
+    "d": "05 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -553,7 +553,7 @@
    52.400001525878906
   ],
   "news": [],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -846,7 +846,7 @@
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -1127,14 +1127,14 @@
     "s": "De Belegger"
    },
    {
-    "t": "Intuit Selling Mailchimp for $3.68 Billion to Berkshire Hathaway-Backed Bending Spoons",
-    "l": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUFlmLXRMU01PMnc0NWFXWXhPck5ad1pSR2xQMUdlTEhvam9pZmdXamg4eFlqaktJX2RvZWtYVjR5ZW9Xd0IxdHNSNHdBeHpnQkhQVjBvVzVLSjM0Y2d1Ukg5SS03V0hxV2hzRWptTTJFTEJqeGcyekZUQjVhdjJxRC1wcHNUeUR1N19fMEkzYTc3UQ?oc=5",
-    "d": "19 Nov",
+    "t": "In 1993, A 79-Year-Old Maine Shoemaker Sold His Company To Warren Buffett For Berkshire Shares Instead Of Cash. Buffett Called It His \"Worst Deal\" As The Shoe Company's Value Went To Zero, While Harold Alfond's Berkshire Shares Are Now Worth An E - 24/7 Wall St.",
+    "l": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOcG9RSXVaQTBCS0hITnFqODJVOW9YUnRyWl9XSFgwRDRtX3NxbEl0eW4xM2ZxMEY3ejVWUHcxZERTSFluRmlwbXhLOF9rWXBFWDZEQi1ERDJneXVFVkpKUFhodGJCZlZQYUlFYjJsNjl3WFRRQWNVcEY1VFhFa2hZVXNaSnFyRFk2N3daUnhwSU5yUTBUZ3dfSnBMTlB2Z013MWZnSk8xWEFEUzVwakRsbDB2R2xoRTRhYlZVdDNPVW4yQ2puSDlWY0FfMHN3d2k2VFNRWEh4VUxLVVB2TVhNc0dLRTVWYXZxbUN4aE1vMGhiLV9rdVNvbzFBM2xxQjBvMnRTcVo4cVA4UHR5M3hOM09nbFlGbnR6bXpIMW83cmpGUVplRVRseC1XNEpjN2dJQXlieVJxWUZCUkJqNXkxR2gxMzQya3lrM3Mtbk4tQVhpYXZqclE?oc=5",
+    "d": "20 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -1417,14 +1417,14 @@
     "s": ""
    },
    {
-    "t": "BYD has SUV that infringes on JLR Defender design, Dutch court rules",
+    "t": "BYD’s Ti7 SUV barred from EU market over Defender design infringement",
     "l": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWkVGUlpGNXhTSjFGaG1uYWV1Qjc2bGF2UU9hUDFzdTlnUnM5ckxFZndfNkkxMnRHZThTbzJfMTJoUGRybGNJU0lLeXNmZjd3eFdKYUdjbDl3ZmVELUpTVnpRbTFDYWJ4YmdCaVRObXVWTHJuRktxa0ZTaFJZT1ZJZHp1dFNaaTdQdE5VNV91Y3BiYjhaT1VfNjRscmtXa3MxVS1DazVfMUI?oc=5",
     "d": "20 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -1698,21 +1698,21 @@
     "s": ""
    },
    {
-    "t": "C3.ai Inc. stock underperforms Friday when compared to competitors",
-    "l": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeUdOZE5vSTlDZVBQclNfZnM5c1lFZksxS0RhWmc0bE1scmtiX3FNR0FHS09DS0RqVWtCaW05OEp0V1VSQ1REQ0tsb3lfa2o2X3dyeEZOcDRqZDF5MXY1c2luMUhsY0xreS1FQ0VzczNoa3dCVFIxUjVSN2VoQ0x3TWFYMU5VOXNhVzFLOElTdENwaUh6d0lhQkN1a1paZlI5TXhYakl1b3RtT1NrRjhpZXhkbnBaaUljTmNPc0l4NnVKWW8?oc=5",
-    "d": "20 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
     "t": "C3.ai, Inc. (AI) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
     "l": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTElxRWJWWDRTREh2Q3FvTE9JZUtjTnk4dzg1X056U0pUVEhvZDBxeE5ET19PNl9PUlhPS3hOeHNCdEg4SUQ0aG9mUEM4NDdZLVc5d1ZoM0NzU2dOWWdxMEdfVDVJWlVCOWRISVY0dGlmZF9sR2RHYUVNeTljbkpLeHBWSURqU1NzRVE?oc=5",
     "d": "16 Nov",
     "nl": false,
     "s": ""
+   },
+   {
+    "t": "C3.ai Inc. stock underperforms Friday when compared to competitors",
+    "l": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeUdOZE5vSTlDZVBQclNfZnM5c1lFZksxS0RhWmc0bE1scmtiX3FNR0FHS09DS0RqVWtCaW05OEp0V1VSQ1REQ0tsb3lfa2o2X3dyeEZOcDRqZDF5MXY1c2luMUhsY0xreS1FQ0VzczNoa3dCVFIxUjVSN2VoQ0x3TWFYMU5VOXNhVzFLOElTdENwaUh6d0lhQkN1a1paZlI5TXhYakl1b3RtT1NrRjhpZXhkbnBaaUljTmNPc0l4NnVKWW8?oc=5",
+    "d": "20 Nov",
+    "nl": false,
+    "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -1991,7 +1991,7 @@
     "s": "De Belegger"
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -2277,14 +2277,14 @@
     "s": ""
    },
    {
-    "t": "Gaztransport & Technigaz (ENXTPA:GTT) Names A New Chairwoman, Is It Still 12% Undervalued?",
-    "l": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOMzZJd3c0NGprdndyTVU2dXRpamg1UFA0VWM0bjZXTWNOVENfNkNaYnQzelBtRnY2dWlRVmtXaWUzLTkzcnB2THR3bHkzTFhQYVBlajhZNjNxQkdXVnBTb01RaWx6V3Q0VVdrdVBhWjZmYXU5TGJHVW84Z05wT1dTSUpKQ0xXXzFQMGVBQnRSUlNibFF5dmpKbHJycEVPV3ltWHpYa0h6WGpuX1RBejc4OGFkXzdfNGE4SmYwd2hiWkdaeFpRVzFBSFZZT3pUeEVMcEc1RkdJV2x4UdIB3wFBVV95cUxNSXhueERFdFRZVTU4ajdTRHczMTB6d0h2ZEdlZHQ4bjBwMW02NnVhMFVLS19EQUpIX1d6OGxFdE5iUGs0WEVCNHkzMDFrY2tJYnc1YjA4Nmo4UzR3ZWZJLXZmOU81bmt1OG1JUlp0SWhZaG1SQmh2RTlmbDBVSzZnTlQxbzBDVjlsOENFVEEzaTd4X2R6eWktYnNHbXAta2dxQURhbnk5U1lqNXZIUXgwdXplYkVEbEdta2ozaXlhemgwb3NFQ1hZaXhhOEhpR0JQN3Vxc2VzQmVxbkRtR0p3?oc=5",
-    "d": "25 Oct",
+    "t": "Gaztransport Technigaz A (9TG.HA) Q3 FY2026 earnings call transcript",
+    "l": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWDBER0REOUpQZm9faTZ2T2NCcU5hR3Z6OHhpZTA5TkNLZkpSLThjaTVwcjhmQzE5ZDBoYU04dXhrQUI5cU1xVEpSakR0aGlfdVp5akNLMVZEUjgzLXRybUUwYnphNi04bE1KMmEtaUlscXN0M21RemRaT2EyN2FIZW9fRnp6cUhTRzA2Z3A3enB2QQ?oc=5",
+    "d": "23 Oct",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -2577,7 +2577,7 @@
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -2853,7 +2853,7 @@
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -3139,14 +3139,14 @@
     "s": ""
    },
    {
-    "t": "KBC Ancora (KBCA) Stock Price, Chart & Analysis",
-    "l": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5pZVF2emZjeVJyQW03aXRXVUc1WFpmYjhQUDd1SXRVVGJNT0J2VXZKLWNtdmN2ZmF4b0ozRzRrcGo5aUZCVWRDNndRYjJEalhpeWJKaA?oc=5",
-    "d": "04 Nov",
+    "t": "KBC president names new slate of committee chairs",
+    "l": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSlZ2UmZtOHQwQXlYVktNRkJlei1Qdkp3akNaSWQ2aXVZd1M4SC0xN1FmVUpmWnhLTWR0VVhrdGU5NHhlekJ2d080dk9JMk52bGt5NkpSWkVzYVYwaEphU0xBbmt1dlYzaWU3VHFCTk5xRzhMa2NneWlzQUVRUVBsSVZJek56VWNHOVQtS1VjUVo3ckVEaUItM0dydmpxd091NUJ3c1V0dXB3VGVPQjFVSE5QcXVQTmRzVlJrQXhrNElLNkdaRmhSenNPTXhCWktYNUY5ZkJwNjlaZw?oc=5",
+    "d": "20 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -3432,14 +3432,14 @@
     "s": "De AandeelHouder"
    },
    {
-    "t": "NN Group secures upsized €100m reinsurance from fourth Orange Capital Re cat bond",
-    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTmk5MFp6U09vSUtPZFJ2VVlwT3VkQng4dEdGTHJEdHJYVnd0bEwxWlQtMHVPdUpTLWlJOXV3cFFnVE1PcjdySWNURlhQZzdxZi1ZbVNVbVF1Y21ZSjU2TnZnOFBNQlo1VUJ3RzJ5aW1hQjVXWlFNclNBS0ZZRnUyRGVQWDBDR3JYZmhManhJWnF2SVRqUzlaeEtCREt1T0trRkIzdDBoODFUZUZNT0s0?oc=5",
-    "d": "20 Nov",
+    "t": "Tjeerd Bosklopper to succeed David Knibbe as CEO of NN Group",
+    "l": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZXI3TGhGMk5JYlBiVWZMZW1DZ0pFdjByckhHa0dwR0VPUy04R0NVdjJBVkdNNDBCTTdWNXdGYVN3RzVyaldsVGJjWnhla2hTOUFxZms5U2k4akdNbmt1cjRmdlJxaWh0dVJwSjNYd3hILWRtMFlWOEpLZGR5SklZSC1DREh5YWdEd0RUZ0M0TmFzNzNiekE?oc=5",
+    "d": "02 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -3732,7 +3732,7 @@
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -4018,14 +4018,14 @@
     "s": "De Tijd"
    },
    {
-    "t": "Shell Appeals €1 Billion Ethylene-Cartel Defeat — A Documentary Investigation into What the Courts Actually Found",
-    "l": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQbjVkS0hCZ3NjU09lZ3FHQ3kzTTdxTkwzT1I1cVpkanNTclhjZUhSRnNoMmRPMmI2TkpSdklRUEdGRjkwdWpJcE8xeXhROGplQlAyY0NyT2xXRFI4VkFUWUpCM1pZNUlpaS1kQVZkMFc1bklUUFdBeWZRUUo2UjV5Z19aRkQ4c1dIX083OFEyck55MUVYTDltRjBkOHg1c1pHcEFYMEVqRzEwUUdyWGZNVDNMVjlXVkUwRnVVdVdEbEdoUlk5S1ZRcE42SEdDRlQwcjJ3THhuYjlneXBfMXVHeGhVUWg5eGFnYnc?oc=5",
-    "d": "20 Nov",
+    "t": "THE SHELL LEAKS FILES — 21 NOVEMBER 2026",
+    "l": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQc0RZMVJZUjhyWXN2TVBGMHBtdlRWYlpGdUNTaHFNRDRCdkhlN096LV9hdnZpMTlJdjlfYU1MX2VCcHJ6NWl3SmNlSUpCMHJoUmdTcHBycGJob1l5NlJZT2NfTkJ3WWszQ2hDOThfa01hQ2ItLTFZOXNyYnJ6YzktNWVoby15N2hu?oc=5",
+    "d": "21 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -4311,7 +4311,7 @@
     "s": "De Tijd"
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -4597,7 +4597,7 @@
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -4867,16 +4867,16 @@
   ],
   "news": [
    {
-    "t": "Xiaomi 18 Pro (Global) review",
-    "l": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA0V1gwSHMwS0FaZFRZSUlhcmZEcVh2dnJRaE03NTJjdmc2NXY0ek9xVmc3c1ZLbjA3bkJvMHVKaWpuU1RCQWQzU2h1YXM1bFBoQWlsVDAtTkRpQWV3a0tNdWc3b0o?oc=5",
-    "d": "19 Nov",
+    "t": "The Xiaomi 18 Pro proves two screens aren’t better than one",
+    "l": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zbWQ0eUJhRUFhWFA0a3k0ZllFakpPSElCWkl2VEMwYkZfRzd1Qk90WXJjd0tremFsRm5HbTJZanVLVUtWN0k2WE5UY0xEQ3hCY1BDdVZkT0JmZUEyRGFnMTFlUU8tUDBXVkFROUhBZw?oc=5",
+    "d": "21 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "The Xiaomi 18 Pro proves two screens aren’t better than one",
-    "l": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zbWQ0eUJhRUFhWFA0a3k0ZllFakpPSElCWkl2VEMwYkZfRzd1Qk90WXJjd0tremFsRm5HbTJZanVLVUtWN0k2WE5UY0xEQ3hCY1BDdVZkT0JmZUEyRGFnMTFlUU8tUDBXVkFROUhBZw?oc=5",
-    "d": "21 Nov",
+    "t": "Xiaomi 18 Pro (Global) review",
+    "l": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA0V1gwSHMwS0FaZFRZSUlhcmZEcVh2dnJRaE03NTJjdmc2NXY0ek9xVmc3c1ZLbjA3bkJvMHVKaWpuU1RCQWQzU2h1YXM1bFBoQWlsVDAtTkRpQWV3a0tNdWc3b0o?oc=5",
+    "d": "19 Nov",
     "nl": false,
     "s": ""
    },
@@ -4888,7 +4888,7 @@
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -5181,7 +5181,7 @@
     "s": ""
    }
   ],
-  "when": "21 Nov 2026, 15:07 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false,
   "usdeur": 1.0975,
   "nokeur": 10.7025
@@ -6248,7 +6248,7 @@
    ]
   ],
   "cur": 208.89740736726247,
-  "when": "21 Nov 2026, 15:08 UTC",
+  "when": "21 Nov 2026, 21:28 UTC",
   "stale": false
  }
 }
