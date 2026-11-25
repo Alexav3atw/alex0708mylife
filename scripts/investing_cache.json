@@ -284,11 +284,11 @@
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "ASCE.BR": {
   "price": 53.4,
@@ -558,11 +558,11 @@
   "qtime": 1795624573,
   "state": "POSTPOST",
   "news": [],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "BPOST.BR": {
   "price": 0.719,
@@ -833,9 +833,16 @@
   "state": "POSTPOST",
   "news": [
    {
-    "t": "Aandeel Bpost verliest 40 procent in twee weken",
-    "l": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOd3FFVGhwemRzZkNzWXRCR1dWRWRQZ0ktU1FHTnZTQUlDNG53VWoycGxTSUdqWHlvc3BiMDVVZThBUERERE1SaUZwcHAzU3llaTQ5TElkZzROWjVKRmJWc1NXV3VzOWhFLU9yUENISUFvMzBEWG84OTlBTzRaVklHQTBsSFJJcHFwS0Q1Y1NBd2puU1ZoQlVjTGx2VGlsa2N4Mi1PTQ?oc=5",
-    "d": "21 Nov",
+    "t": "Nicolas Baise nieuwe CEO van Bpost, Chris Peeters blijft Bnode leiden",
+    "l": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWHZOUzBOSGpiZ05NRG1zOHlxbmpHOGFSbHBlb3BsM1c3X1hHdW5FcXVRNG4yZm5SQTk1Z29qMlFBOWhkOVFzNzlwZjRQbUxzd3dXMkxBQ0dMX0J1X25FcEJxcHBVWjIzMW1UdW93aU9rS2Zfd19mbWNFLTRKVm1ZMWZjcWw3TDllTGZkbnhYZVgtOUt4ZV9VQk9GQm5zZWdaWjFxX2JmSHNhUGU1YWVmSkRNVEYxaHJzaFE?oc=5",
+    "d": "25 Nov",
+    "nl": true,
+    "s": "De Tijd"
+   },
+   {
+    "t": "Herbruikbare verzendzak van Bpost, Juttu en Torfs kan werken, maar alleen op grote schaal",
+    "l": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPM2VoOXFnbU5mLWRDZ2xMbEkyLVBPYTVxc0FKamtoem9HMHlyUTdzM28xUktJdjZpbWRKMzV2Yi1XQkk5ZHJhWUd1QnBmUVNKMG9oQmNFNERJVjNvQ3c0OEhTMTJ2S0RTSXlWWl8wUzJPdXB0TDdpRTZESVZTS1MxRG16V0ktdGhEQjJiZVZMTXl1ZDR3djBQeHljSDBJX2N2ZEg2VkVsSUNzTE16QWpfeXl1Nm5adkdlQ29kNkYyRHo4STJpUjBLR0ZxSWMwc00?oc=5",
+    "d": "25 Nov",
     "nl": true,
     "s": "De Tijd"
    },
@@ -845,28 +852,21 @@
     "d": "13 Nov",
     "nl": false,
     "s": ""
-   },
-   {
-    "t": "BPOST shares fall to €0.92, a record low after its target was cut",
-    "l": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNc0pjSTdpVjNBbzJXa19mT1QzVU9tcnJXQUxIVUpQS3poUk10SERVanl3cWQzOXNIUGc1RWx6NmRZS3pBeXBOQW1wLXBLVlN5dzFsLXYycTFVUnQ2akdOb1FvTVZuOGhUV3I3Ti1VNXpobGdsTUdtMmVmVEtGU09VLVFwbHJqbVZwb0NPbGlTdldFcnhiOGRYN0dEOHF3d0lfMlRSampVa0o4dl9EYjVpLTRaa1YxdjFIa0UzOEFOdWNsRWs?oc=5",
-    "d": "06 Nov",
-    "nl": false,
-    "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "BRK-B": {
-  "price": 579.925,
+  "price": 579.67,
   "currency": "USD",
-  "day": 0.47036607127386443,
-  "wk": 0.9293144862422942,
-  "mo": 6.808602810951192,
-  "ma200": 503.68425018310546,
+  "day": 0.42618804248020226,
+  "wk": 0.8893764072596344,
+  "mo": 6.766338277234651,
+  "ma200": 503.683102722168,
   "closes": [
    508.57000732421875,
    511.2300109863281,
@@ -1119,9 +1119,9 @@
    570.0,
    572.3599853515625,
    577.2100219726562,
-   579.9600219726562
+   579.7305297851562
   ],
-  "qtime": 1795628590,
+  "qtime": 1795628951,
   "state": "REGULAR",
   "news": [
    {
@@ -1139,18 +1139,18 @@
     "s": "De Tijd"
    },
    {
-    "t": "Warren Buffett’s Successor, Greg Abel, Has Invested Nearly 47% of Berkshire Hathaway’s $360 Billion Stock Portfolio in Just 3 Stocks (and None Are AI Hyperscalers)",
-    "l": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPam9lcUIybDhzMEFMZkFsU2xZWkdJR19fOGplTllISm95UXQ5SmVkLXlUMnZobzhDMmVWWlAtYjFsVzFfQjhPWGZwSkl2bnFvLTZnajEtYnlyQkFYcFUyYVRDMVoxb25UYmJNdWZnaXlJQzhMdHFZYUl3Z0RxbGxLUWNoeU5fQW85REdLWmMtRmNONnV4MXBWLU8zWVlLV3lF?oc=5",
-    "d": "22 Nov",
+    "t": "Warren Buffett Finished Buying Coca-Cola in August 1994 and Never Bought Another Share. Under Greg Abel, Berkshire Now Collects $2.3 Million a Day From It - 24/7 Wall St.",
+    "l": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOb3hTS1k1UFJUTWFrd1ZkZ3gtcGxKbE9ER3NSOTFlOXozTGctNnVJLUhjYk5PY2pmeDlFQUh0cjB3OVlNZWpJelhmOENHeGZlbXRCd3l2b3FNaW5pblpSdUptaWtUeVFjVjc4d2NOYmtvU1ViUjNJb3RVT3FUZTVJdHFDbjNvem5FejZfdEcwc0NiakxkR3VBR0Nsc1RmeXF5eExIeHJYVmo1dEZjTWIxN1JhNk5ENGZ4NjE4RkhlUHFta0tCWTRRT2lzOWpJT1lsMGxXa2FkbDExRDBYNUYybXFqalZTcFVxTGMxU1p5TllQakdhb25ZQTZMQmI0c1lLdzFsT05OeTVybXNTUlZCT1F4azhFZXU1Q1MyR2U3S2g?oc=5",
+    "d": "25 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "1211.HK": {
   "price": 57.95,
@@ -1432,19 +1432,19 @@
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "AI": {
-  "price": 9.828,
+  "price": 9.815,
   "currency": "USD",
-  "day": -0.12195121951219523,
-  "wk": -1.8962128281182045,
-  "mo": -20.016273765521365,
-  "ma200": 9.941799983978271,
+  "day": -0.2540650406504086,
+  "wk": -2.045916846456153,
+  "mo": -20.138327006931554,
+  "ma200": 9.941724982261658,
   "closes": [
    14.180000305175781,
    14.15999984741211,
@@ -1697,21 +1697,21 @@
    9.130000114440918,
    9.960000038146973,
    9.84000015258789,
-   9.829999923706055
+   9.8149995803833
   ],
-  "qtime": 1795628591,
+  "qtime": 1795628946,
   "state": "REGULAR",
   "news": [
    {
-    "t": "C3 AI to Announce Financial Results for Fiscal Second Quarter 2027 on December 2, 2026",
-    "l": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaTJ6dnJXdVdwVW9ucU11SGtOMDJreXV4ZkVTVXNmM0tSSDBZRmc2SG1LVWF6MklqcGdxeWdHbUZmbGRlZ183Y0FzMG15X3FFQWhQQnFiaTNoQ0kzeldLV1NaVFhCaF9uSFR1TWs3dDBBeHF2aVkxQm5QSmVmMXVHOGVMWkpld05JMzlpck9FNFdoemh0cHFKdnM0WU8?oc=5",
-    "d": "24 Nov",
+    "t": "C3.ai options signal 9.7% stock move ahead of earnings",
+    "l": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbHdxYjZFWURlZ1RGUlZtRnBRQXZWdkU2dlZBYVB1NGJLUDJKNk5pOE45bk9EQktYN1A5cXVGcUZtaFJETXNYMWpIbEpfczZrTjBnckMzdzBQc2c4ZzZ5MWxHS0FaSU9aM0UxMTlnbVhhenpaSld3NG1hVkZhMW9LLUF2dk1ieFd3dWs1cVhINVdabHN0d0M3V280RWtxMjdlZXBFdmw5RHRmcVBsTUhwWTdWUQ?oc=5",
+    "d": "25 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "Slashed C3.ai award exposes vulnerability of software trade secret damages",
-    "l": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNS1loVWo5ZUdXemxGaHI4d1ZSY1dxSThxbDRtdzdLSkM1dWNjWTRMRkQ4SGcwd0RHem5Jc3RrTUduTVRYUnJDQUQzQnROSDVmWXRvSm5XN0s1Z0VfSUVNNS1lSjQ1aS1ma3UzNVRGSzZXSHJrTTBDZ0tjSG9LOXdhWGc0LVBpanBVMTZWSlRwZFpmZHl3anR0OGM5MWx2MmpTNlpCcHg5eXRYVm5lalViODg3T1RoaTJxNXc5bk1aeFpFcXFnY1BTclk3WWU4ci1NeXVJeExR0gFaQVVfeXFMTmZfSkFHVVEwbm9BSC1SWE0ta0J6TkptdTVrVHQ4SmtYS19NN0pNbWtsdGpvUTJkVno4NzRkN2tPbG9fbHNzako4aWZ5SXJsZW1sVzl0Z3cyRURB?oc=5",
+    "t": "C3 AI to Announce Financial Results for Fiscal Second Quarter 2027 on December 2, 2026",
+    "l": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaTJ6dnJXdVdwVW9ucU11SGtOMDJreXV4ZkVTVXNmM0tSSDBZRmc2SG1LVWF6MklqcGdxeWdHbUZmbGRlZ183Y0FzMG15X3FFQWhQQnFiaTNoQ0kzeldLV1NaVFhCaF9uSFR1TWs3dDBBeHF2aVkxQm5QSmVmMXVHOGVMWkpld05JMzlpck9FNFdoemh0cHFKdnM0WU8?oc=5",
     "d": "24 Nov",
     "nl": false,
     "s": ""
@@ -1724,11 +1724,11 @@
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "CPINV.BR": {
   "price": 12.86,
@@ -2013,11 +2013,11 @@
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "GTT.PA": {
   "price": 180.4,
@@ -2302,11 +2302,11 @@
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "GBLB.BR": {
   "price": 78.65,
@@ -2585,7 +2585,7 @@
    },
    {
     "t": "GBL krijgt zijn grootste investering ooit rond: Italiaanse farmareus Recordati ingelijfd",
-    "l": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQRGNLaFhWcFVSdXN1NGY0MWdvN3hoRkdGTzJYYVBGdkNFbm0xdzhBeDZWY0ptQ1hLX3k5YUk0YTJiaG9vSlVheGdCaEVsaDlpN2NBNU9QYUJUc1h4Q1A1N0lVNWpTSVFEYnpTTXBDLWl0alBsTGdubGlUNV9PU054STI0c1R1dVV6OEZRTlNoemc1Z3VZOGtSVWhsU0ZuckFHNE45VmgxTmhXN0VMMjVCUG1wdGpxZ1ZhQkNUZUo5TDY2NFVoUFVtTlc2eDlQbE41LWpHS0ZPd3E?oc=5",
+    "l": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWXFJQmdSRE9SblRPMFBXSFpiVG80azRRUzliTEJjSHFCU2o0LVMyNndCcGt4VThHMkFjYlFWUWFZRUYycHRwbDlHRWxQQ3ZNRWk4WEEwS3RqdjlNQ2otSnByUUpRcW9adFNiMFBSM0dBMk1UTFJCTDY4Y2RYZVY4LXllZnQ0YmdzMXZyRUYzZHE2eVB1MXZPVzRqd1RhX0FwRnBrblNwUWpjNmREWHhyNHAwSDB5QVR5Z0lNWXl6UTdQNW1MVHJNWEtuSlpUUTgyZ0tqd1F6MTIzWHlGelZJ?oc=5",
     "d": "25 Nov",
     "nl": true,
     "s": "De Tijd"
@@ -2598,11 +2598,11 @@
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "INRG.MI": {
   "price": 7.185,
@@ -2870,32 +2870,18 @@
   "state": "POSTPOST",
   "news": [
    {
-    "t": "iShares Global Clean Energy Transition UCITS ETF (Dist) | IE00B1XNHC34 | A0MW0M",
-    "l": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1udV81VDNBVldwTmNkQlJUYWxOMUxEWlk0WXgwVm1ia191WjBMemwyRUh3YUo0bkd2akx0LTVURVJWMUI4MFVFb3NFek0tZ0tScVNxVTFnR0JObWIt?oc=5",
-    "d": "19 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
     "t": "Alerian MLP ETF vs. iShares Global Clean Energy ETF: Alerian MLP ETF vs. iShares Global Clean Energy ETF: Oil Prices Are Rising, but Which Energy ETF Offers More Upside?",
     "l": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPVGlma1R1b3VHcnJ3QmV1YjkxNHZ6ZEZ2RGdsUHBXVHpNcjlTZnNNa3NvcUM1bi02QjNkLU5sQ1liSTd2RHRHWDhzOGNKUjlKeHVLTjJQYUVuRzA0dWhkNUc0UnFGRDVZeWJYMko2b3RoY0JkWFVHS1A4YnVMY1Z0YUg3azJxa3VaVTBSbjVzOWZDMldCMTlkVWlobmI0bWhneWpMa29sd3lsd1o5LTR6dXRUVFNQbndwRXBpR05odUVsNmE2TG4tb1prS0lON09kVGVVUThEX0c4RFF2c0JEQThBYUhGYWlUNWhpejdRQ2VOX2pQYzU4eDZiZTJsMmtYRjZURUNsV3UwSV9BQ3ZKNjZTZU1PY2U2YmRhTHo3WGxnelRuZndfSVQxTDctQUFmcnpLSQ?oc=5",
     "d": "02 Nov",
     "nl": false,
     "s": ""
-   },
-   {
-    "t": "iShares Global Clean Energy Transition UCITS ETF (OTCPK:INRA.F) Price, Holdings, Fees & Analysis",
-    "l": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxN3FjSzduVFB2MjFKRzl5YnZYYmJSaFNIT0RjaDQ2VUU0b0JuUTI2M1pRUW1HZENxcDJrUHhBNWxyb3d2cjk4N3JtalpyX3ZMSWc?oc=5",
-    "d": "22 Nov",
-    "nl": false,
-    "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "KBCA.BR": {
   "price": 87.2,
@@ -3180,18 +3166,18 @@
     "s": ""
    },
    {
-    "t": "Lincoln eighth-graders win KBC Invitational championship",
-    "l": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUFhUaDYtcEo4LTZJdDZNV0hoOF9Xbmg1cmt0eTA1NmJNcGlBQVZ5MzljcXk3NVJaMXI0N0lmc2hVVTE4RktTLVg0ZkdWRHh2RmVVLTBhRFBEckZOZ0QzRUUtRWpEYzlOaE1hUmdjR0R5b3NVZXVGR1ZVTDN6blVteEZlVUYwbnlTRlRXd2pJNWlHY0pQU3dmMEFhTGlacTZf?oc=5",
+    "t": "Behind Notice To Amitabh Bachchan Over KBC, A 'Punjab Question' That Was An AI Clip",
+    "l": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRGhNcGdoaWIzMWtnSVB4aGNvTnlfbVpVd0JrX09vUXNzdXo2ZkJUZTZlUDhKUlowNEhHOFR2ZlVJSGlKSGRWTUo1MkhsNTI3WVdGR3hzREtLVWhkODM3dW42VzI0S2FVWmlUOHBqTVVDYnFmVm9TS0JFVU1ZR2d5MVRqSHZzYUVhdV9JY0JEdjBIbXhWV1JRSHRiODhqR0ZyZWRSY3psZUdibElkQzB1ZDJEODZEUlVfR2xMXzJFUHA1QmtIV1NreGN1bUtDZ9IB1gFBVV95cUxOMlR3a1RqaFItMk5wTTZrbkJieGpicjREZVdVU29yZllNdmMxSHpZUUtPSGlRRHU4Sk15MzlzZXJlT3FXSi1CUmNadDM4N25NQUpwclBWODFhYzdaanNJdVZtcnpHTFNXTjZJS0VnLUtIZ242U1duT0V0T01semRrWkYxZm00SjZMMlZIQk5VblFrUVE2UDNSMGlIdTBTalJmbE8yLTJZRkltVjUzTTZBQmdjcnZxSUwtWUNGT3R1YTlHb1JQZV9LRHltRlNfM3oxUDR3NXB3?oc=5",
     "d": "23 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "NN.AS": {
   "price": 76.9,
@@ -3483,11 +3469,11 @@
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "PNL.AS": {
   "price": 0.786,
@@ -3758,6 +3744,13 @@
   "state": "POSTPOST",
   "news": [
    {
+    "t": "Picnic PostNL’s problems are already taking their toll: the team loses one of its biggest prospects due to its delayed license",
+    "l": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNSXJkWjBEVkJpVFZ2ZHh5TmxBZjBvaU0ya3Rzb1dBeVRxYm1zLUlvdHJ1NkpqQTlBdS0wai1OMVk3OFQ4cWdsQ2JvcFBmQ25ZbTZyZ29aR2hfb29DTC1EQm5SMTZRVHFIc2YzSFFwOFdPOWFKVU44N2xoR1ZOWmliekdESS1hYXlXS3dQQzlfS3d5OW1VaE5wbmhaRlRQVXZ0SEh5cEM0VnFaWEtTaU16bW9GV1N0NkNGYzZOUUd1OVZDOEItNXBmWjE3b2NuWE9wSDZ1U1RZNkFWVThyZ0VaclpNZkNUUVE?oc=5",
+    "d": "25 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
     "t": "Matt Winston credits Romain Bardet with 'major role' in his move from Picnic PostNL to Decathlon",
     "l": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQU3hfVkoxMVBHcFpJcktfNWVyTGRtYzZqbHRQajdISlA4bzdyTm5fZWFlWmZWY3UtaWxheURobFRkMU9OYmRQUE83LTRUZ05WeTU3TlVqMkZ3U05lYVpBS3lTLVJ2T1UzNnBoNFJjcEpoQm4tcjhWQVNOX3B0OWJteEM3OWRPM1c5VE5vaGFibV9RckdBaW5TaktvMHhlZnY4eEtNWkJjT0xwUDRiRmoyb3dTbW9ZVGhtYWtMUlctN0l0cnlIWW0yTkhYa0I?oc=5",
     "d": "24 Nov",
@@ -3770,20 +3763,13 @@
     "d": "20 Nov",
     "nl": false,
     "s": ""
-   },
-   {
-    "t": "PostNL expects 1.7 million parcels per day during the year-end peak",
-    "l": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMnFTamFFQnctdkFfdlNSTG8wdS1GTWgyTW5od05uQ2Y4VV93TVBhdUF2VW9vbjVlcTFfcXctMHpyUUFFX0tpbjBUSmFEZVRBQjZ2M05vZ1VvakUtZVdEejNsbXdPaWFmamdsTkVQWERMUUVsUlV2U2pLcGhLOHlySVlYY2doS2xlWEFiVGRZQ21tM1BhUkdPT0Y4QWdCQ1lKbXVIX3VCM0lic1p1UUtfYXBNODdqMndJX1lDNkFFN1A2U3ll?oc=5",
-    "d": "11 Nov",
-    "nl": false,
-    "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "SHELL.AS": {
   "price": 42.565,
@@ -4068,18 +4054,18 @@
     "s": "De Tijd"
    },
    {
-    "t": "Shell on Both Sides of Egypt’s Gas Crisis — An Independent Documentary Investigation into New Production, LNG Imports and the Battle for Energy Security",
-    "l": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOQTZZbVVMaHpXcFFyZUJtekNpZVZpdHhNd0RZbnJxLWZSbEZWcDE2NXNONGluVHVzc3pGdlpJVWpRTkx1dE9NR1ZYenlHUEVQWmxLSXlKTzNNMmN5UFRQOFVLSzZ6dUNHYkhzWVh4dndWeDFCTmtzdXhndE91UkhLWVZEeGhwYjR5bXBsZm9wME82djJyLXJsdVdCeFhtekpUd0hUQVBWc25hQ2JncW5KQlVqVnBZY0hIZEVwTlZzRmRrSnhFSnNGOU40VWVvdGZmUlBUX3dlUF96dmE1TW4zQWZTY2ZPUXpUREtPeVJRaWNPcjF1S1NnMGRDU1FabUN2STZKSnRYbFNaTXpJNFBFVUlCSjVGWVgwa3ZN?oc=5",
-    "d": "24 Nov",
+    "t": "If You Invested $100 In Shell Stock 5 Years Ago, You Would Have This Much Today",
+    "l": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZnBLekZyYTVaQVRRRkdPZEk2TE9IRXdoT0FOY0x6Q3FNb3JHRkp0WUV4Rkp3alphc1VTZEFva0QyZGxFNUlVcF9HcW52aUREU3dVaUVucW54LWFzTmlzOVpFVDBfUnRBWFRrVmk3VTlYNDJXcUk1a1JaVTBfU2pJUFlscHJ4WkhhelRacTY5VjhYZmc0YXBmd2JfY3F3UDFJVjQxNDNFTm5nVlVMNUlvanBPYzk?oc=5",
+    "d": "25 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "SOF.BR": {
   "price": 267.6,
@@ -4357,11 +4343,11 @@
     "s": "De Tijd"
    },
    {
-    "t": "Na de stevige rit hoger: we verwijderen holding Sofina uit onze kooptips",
-    "l": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTkhoVU1CczZhMnZ4NzROTG5jTFNrb05BX1FGcU9RQ0U5eUlkdkdYdHo3QlgyNU42N0J1RXd6bVJQS3hUNVE4SFVpNFhoUU1IWTFxeVJfbERBOHJGUDRaSnJXc1Rya3pKTllSUVktX2NzTEVZczgxd3k2WnU3aG9rd2RiN1Vsa2hfZFNVX2gxQVRfdHl4WXhXeXNDX1FWWURfazZUMnVhRUVIZm15WFdDY05BNjJ5VUlDWmVZVzVFank2TWZmSzJr?oc=5",
-    "d": "03 Nov",
+    "t": "Belang Sofina in TikTok-moeder ByteDance is 600 miljoen euro waard",
+    "l": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObVZzeTZEbEVuN1hKbjlzUFBqTnZ2c0VXaktSWVpYWFBnS1NmaEI1WjV1a1VYcEhiWmZFNXRpaVpXcWpicUx6X3dfN3A1OGpxWGdSd3V4OWhlbWpEcDh2VlpDUGpwSlZsaGotVE54cTMzN3B4dFhqNFJxcW5yVjNYbG1HbTItTnhobHFfOXZ0LW91T2lSeTdyOUpqV0NZZzZSdllBX2JuWF9qNEl6Nm5yV0VabXYtUUxCcnc?oc=5",
+    "d": "13 Nov",
     "nl": true,
-    "s": "De Belegger"
+    "s": "De Tijd"
    },
    {
     "t": "Sofina Société Anonyme (OTCPK:SFNX.F) - Stock Analysis",
@@ -4371,11 +4357,11 @@
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "WEB.BR": {
   "price": 37.9,
@@ -4644,20 +4630,12 @@
   ],
   "qtime": 1795615834,
   "state": "POSTPOST",
-  "news": [
-   {
-    "t": "Lincoln Properties & DRA Advisors Acquire Pay $45 Million for Portland Warehouses",
-    "l": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMjZSNVlxOWRKRkROQ2VPeHRSbGxCb29JMDVyWWpOVWVxYld0MEFyLUN6cTVjckcyaENyMXhyZDBxdkZGQzFIb2dyNVh3ZFFWSmczcUxKeFlxQW1hSmlLeTBZeHdxdjRtLU1zTG9SWVlrUnVxN25oSXhGN2VNRFpPUnJOdnE2TnM?oc=5",
-    "d": "12 Nov",
-    "nl": false,
-    "s": ""
-   }
-  ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "news": [],
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "1810.HK": {
   "price": 26.56,
@@ -4925,8 +4903,8 @@
     "s": ""
    },
    {
-    "t": "Xiaomi’s Profit Continues to Fall Amid Weaker Revenue Across Businesses",
-    "l": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNR0F1SlV1M1B0a19vZzVkWWluMkZqQ2ExbXB4S2dpQlF2QW01NnJjY21jUjczTkdpaUo5ck12NHRBdzVvWDFHX2p5dlltS1NXSnoxY3BJY2NCYjhUb2hJS0hRZmhPeU95ZWJtc1F6SmtzYVRETDBCWGdrQ2ZJWDJKR2ZPZnpqOFptdlUxMnlmNTllQkt4bFkyRUptdWo3bGkyS2V2b2dkYXRmUjNkbzk5M0UzcDdSbk1l?oc=5",
+    "t": "Xiaomi's Sales Slip After Memory Shortages Weigh on Smartphones",
+    "l": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSFQzVVo0NVMtVTJwTkZEaVZVaWdsclhITHhxOUpodkRCWlNxdm9OY0N3SmJRNHdGUjQtNU0zRUNZTTV1VVdmLVU1ZGhwcG9iZ1dIbzd0dmM5dzd0UG5VaWc3cl9ENDNCaHlKT20zUmY5Mzd3eDBtWDNhN2VJWFpWdndHOVlzTlduSEhRV0FLaVRmcjVTei1MTzlQWUFycDdo?oc=5",
     "d": "24 Nov",
     "nl": false,
     "s": ""
@@ -4939,11 +4917,11 @@
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "XIOR.BR": {
   "price": 24.95,
@@ -5214,6 +5192,13 @@
   "state": "POSTPOST",
   "news": [
    {
+    "t": "Vastgoedanalist vervangt grootaandeelhouder als CFO van kotmadam Xior",
+    "l": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOR3picHNLYnd3aHZ2eHQtTUozTm1mQ0JfX2RhSGxieFFpcEk3U2N4SW5keWtVS2xxc21Tc01PQXpEX3FQdkEzRkNubVZPcmdUbHRyTnAteE5CeDVBQjI5enB5eWZPWTF4SWxTUmlKaEtubGxDWTBIb3oxeFZ1RHVSMzhjRS1QZFRudEd2VDQzSHNnRnZyaTZKWnFvb2xtQlNnRVJhWHJGSFdBRFlUZ0UxTFhIaHJfRHJOVnc?oc=5",
+    "d": "25 Nov",
+    "nl": true,
+    "s": "De Tijd"
+   },
+   {
     "t": "'Kotmadam' Xior blijft worstelen met hoge schuldgraad",
     "l": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNU94UHdMeVlIaEtrTVdJbkIweUFIUXpyb0xTa2kwcFZocWRxSnA5MkwwSGdNaFp4S3JBczdqeDVab1kzbmVsamlTcVUwRjI3ci1admpyc3hvZHpQa1J0R0RlT0g3R1pldGtSOHRXMDZPdi04YlBOcDZmUEQ0UHpUaTFsWFRpWEx2WTUtYWZaczk4cnFpeDJ5NXpTdkFmQkFxalE?oc=5",
     "d": "24 Nov",
@@ -5221,25 +5206,18 @@
     "s": "De Tijd"
    },
    {
-    "t": "Zorgen over schuldenlast duwen Xior naar laagste koers in ruim tien jaar",
-    "l": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWjlmVXRnQmJpT0MyZnhXZHRocHB5SkdLQ1Z4b29oWlA3QVVlejNLSnJmRzVhdHUxcFZNR0JtbDk2VEhnNlRIdEROcnp3OTdyWW5CQ095TFhXLUVVTFJmaHM4MndESnQ2WTU2ZzQwbElsNExjazlFOGV3VFc4V3EzX3JtWENMMkF2bmhSaWRYMlVIbGdRc0dxZU1lWlZSNjZQMkp3R2RsLU9VdndmMVdkU085U0U2THZ0SW9lQmZB?oc=5",
-    "d": "19 Nov",
-    "nl": true,
-    "s": "De Tijd"
-   },
-   {
-    "t": "Xior Student Housing (ENXTBR:XIOR) Stock Looks Undervalued On Cash Flow",
-    "l": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVnA3X0NxVU9XWGJJUXNBemJhTXJteHlVV2VNaUZibF9kaG4yTUxoSjhQeGtvZGhobHA2R3NKcWt1bDB4QmxQR0ZUMGp3dWVmQmNQOXE0YXNSU1BBa2k1bWRwYkk1anE2QV9oYzJlZ0UycnBOZjRENmc5Z0htOXlPTndxZWg0VzdVaWlJZzh4SUhHcWZGcy1oUEppTUJRZw?oc=5",
-    "d": "07 Nov",
+    "t": "Xior Student Housing names finance chief successor",
+    "l": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaEtOQWZ4cS16M3FNYVRRN21yX2RCWVAweWR2cmRZV1UtVGs1TW4yOEpIdF9rVEtqd0xvenZnVnBUekd5MFJFaXNFVW8yMUtkSy1ZX1JhOFktZ0Z3SW5UWjRkS2dFWmNOUU5pM0Q4c3Njem42RjByYndPd2tPSzNDQ1NjY01zWWpDSVBIX2h0SmQ?oc=5",
+    "d": "29 Oct",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "25 Nov 2026, 17:43 UTC",
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false,
   "usdeur": 1.0987804,
-  "nokeur": 10.77031,
-  "hkdeur": 8.60873
+  "nokeur": 10.77316,
+  "hkdeur": 8.60939
  },
  "~buffett": {
   "daily": [
@@ -5845,411 +5823,411 @@
    ],
    [
     "2026-07-01",
-    227.55820949422775
+    227.24039683263078
    ],
    [
     "2026-07-02",
-    227.39495421937738
+    227.0773695635884
    ],
    [
     "2026-07-06",
-    229.0126440637629
+    228.69280010774378
    ],
    [
     "2026-07-07",
-    227.79021753414628
+    227.47208084515935
    ],
    [
     "2026-07-08",
-    226.92116365004873
+    226.6042407003006
    ],
    [
     "2026-07-09",
-    228.8965808761917
+    228.5768990165023
    ],
    [
     "2026-07-10",
-    229.61087595451275
+    229.2901964950421
    ],
    [
     "2026-07-13",
-    227.7919925625043
+    227.47385339447484
    ],
    [
     "2026-07-14",
-    228.67356631328727
+    228.35419592050545
    ],
    [
     "2026-07-15",
-    229.48215089798748
+    229.16165121868352
    ],
    [
     "2026-07-16",
-    228.37311317988264
+    228.05416240637192
    ],
    [
     "2026-07-17",
-    226.17569907376048
+    225.859817255781
    ],
    [
     "2026-07-20",
-    225.5876440122634
+    225.27258348455808
    ],
    [
     "2026-07-21",
-    227.6540373585173
+    227.33609086167576
    ],
    [
     "2026-07-22",
-    227.22057543348333
+    226.9032343188357
    ],
    [
     "2026-07-23",
-    224.51850893164735
+    224.2049415808585
    ],
    [
     "2026-07-24",
-    224.58224428322345
+    224.26858791827965
    ],
    [
     "2026-07-27",
-    224.8221097820069
+    224.50811841577809
    ],
    [
     "2026-07-28",
-    225.27791339730743
+    224.96328544600237
    ],
    [
     "2026-07-29",
-    221.87011928735853
+    221.5602507341814
    ],
    [
     "2026-07-30",
-    225.443346040277
+    225.12848704220505
    ],
    [
     "2026-07-31",
-    226.777315351913
+    226.46059330377417
    ],
    [
     "2026-08-03",
-    230.21107220997882
+    229.88955450358287
    ],
    [
     "2026-08-04",
-    234.38227051615453
+    234.05492722500526
    ],
    [
     "2026-08-05",
-    233.85951283118865
+    233.5328996346011
    ],
    [
     "2026-08-06",
-    233.38659794251663
+    233.06064522897563
    ],
    [
     "2026-08-07",
-    235.06120702958336
+    234.73291552118067
    ],
    [
     "2026-08-10",
-    234.85139867766276
+    234.523400192091
    ],
    [
     "2026-08-11",
-    234.24128593043645
+    233.91413954137442
    ],
    [
     "2026-08-12",
-    234.92479018350662
+    234.59668919778838
    ],
    [
     "2026-08-13",
-    236.42303245291828
+    236.09283899000738
    ],
    [
     "2026-08-14",
-    236.15003309145135
+    235.82022090528665
    ],
    [
     "2026-08-17",
-    234.95823171777212
+    234.630084026892
    ],
    [
     "2026-08-18",
-    233.1657370806866
+    232.8400928261482
    ],
    [
     "2026-08-19",
-    233.79580114665734
+    233.4692769311708
    ],
    [
     "2026-08-20",
-    231.71329054291246
+    231.38967480626857
    ],
    [
     "2026-08-21",
-    232.90031117354735
+    232.57503761850685
    ],
    [
     "2026-08-24",
-    232.1011460726671
+    231.77698864869626
    ],
    [
     "2026-08-25",
-    232.82176025194278
+    232.49659640279918
    ],
    [
     "2026-08-26",
-    232.7626163070528
+    232.43753505960743
    ],
    [
     "2026-08-27",
-    234.29134173013324
+    233.96412543207092
    ],
    [
     "2026-08-28",
-    233.4619774801215
+    233.1359194899063
    ],
    [
     "2026-09-01",
-    230.816593550519
+    230.4942301600701
    ],
    [
     "2026-09-02",
-    231.9297730014593
+    231.60585492078445
    ],
    [
     "2026-09-03",
-    234.4332729976423
+    234.1058584753367
    ],
    [
     "2026-09-04",
-    233.5965246296611
+    233.27027872801963
    ],
    [
     "2026-09-08",
-    232.20390838107537
+    231.87960743706708
    ],
    [
     "2026-09-09",
-    230.9392835106269
+    230.61674876875605
    ],
    [
     "2026-09-10",
-    229.46553663255625
+    229.14506015709063
    ],
    [
     "2026-09-11",
-    231.39229441464408
+    231.0691269880573
    ],
    [
     "2026-09-14",
-    230.31482853426758
+    229.99316591957037
    ],
    [
     "2026-09-15",
-    229.18692818147787
+    228.866840816533
    ],
    [
     "2026-09-16",
-    228.17386032993116
+    227.85518783721164
    ],
    [
     "2026-09-17",
-    230.6782360067708
+    230.3560658494262
    ],
    [
     "2026-09-18",
-    230.8940321210192
+    230.57156057820674
    ],
    [
     "2026-09-21",
-    234.13883129361022
+    233.81182799488496
    ],
    [
     "2026-09-22",
-    234.22377231730374
+    233.89665038812834
    ],
    [
     "2026-09-23",
-    232.31952189479586
+    231.995059482482
    ],
    [
     "2026-09-24",
-    232.2395272834601
+    231.91517659333107
    ],
    [
     "2026-09-25",
-    233.32705165786552
+    233.001182107939
    ],
    [
     "2026-09-28",
-    231.42741630908853
+    231.10419983051287
    ],
    [
     "2026-09-29",
-    230.97658277319053
+    230.653995938372
    ],
    [
     "2026-09-30",
-    230.35129945026415
+    230.02958589950575
    ],
    [
     "2026-10-01",
-    230.87990289528918
+    230.55745108565554
    ],
    [
     "2026-10-02",
-    232.58636782462156
+    232.26153272957575
    ],
    [
     "2026-10-05",
-    234.11296321367234
+    233.7859960428607
    ],
    [
     "2026-10-06",
-    235.3776354182104
+    235.04890197915353
    ],
    [
     "2026-10-07",
-    234.56521677225678
+    234.237617974454
    ],
    [
     "2026-10-08",
-    233.6347232399262
+    233.30842398928877
    ],
    [
     "2026-10-09",
-    235.06061535346402
+    234.73232467140886
    ],
    [
     "2026-10-12",
-    234.85923246948292
+    234.53122304307
    ],
    [
     "2026-10-13",
-    234.74293261146397
+    234.41508561191978
    ],
    [
     "2026-10-14",
-    231.99466803822935
+    231.6706593237584
    ],
    [
     "2026-10-15",
-    233.07424028559072
+    232.74872381743296
    ],
    [
     "2026-10-16",
-    230.4423229044646
+    230.12048222840355
    ],
    [
     "2026-10-19",
-    231.31450083847227
+    230.99144206005752
    ],
    [
     "2026-10-20",
-    232.26127729760734
+    231.93689623094338
    ],
    [
     "2026-10-21",
-    233.56511846124616
+    233.23891642213113
    ],
    [
     "2026-10-22",
-    230.98044050148872
+    230.65784827888427
    ],
    [
     "2026-10-23",
-    229.80238968082313
+    229.48144274918687
    ],
    [
     "2026-10-26",
-    231.34848671476757
+    231.02538047095123
    ],
    [
     "2026-10-27",
-    232.74943376311376
+    232.4243709266911
    ],
    [
     "2026-10-28",
-    233.41241868836497
+    233.08642991301812
    ],
    [
     "2026-10-29",
-    232.9110560118747
+    232.58576745036325
    ],
    [
     "2026-10-30",
-    228.7683764946515
+    228.44887368794292
    ],
    [
     "2026-11-02",
-    227.79596862602634
+    227.47782390494154
    ],
    [
     "2026-11-03",
-    228.59435271442905
+    228.2750929530533
    ],
    [
     "2026-11-04",
-    232.11432861660617
+    231.79015278161253
    ],
    [
     "2026-11-05",
-    221.94689518060508
+    221.63691940057362
    ],
    [
     "2026-11-06",
-    222.85573336696754
+    222.54448828408994
    ],
    [
     "2026-11-09",
-    228.3962358826267
+    228.07725281545493
    ],
    [
     "2026-11-10",
-    227.52102856688796
+    227.20326783296917
    ],
    [
     "2026-11-11",
-    230.4197208767055
+    230.09791176711977
    ],
    [
     "2026-11-12",
-    229.34933144271642
+    229.02901726190393
    ],
    [
     "2026-11-13",
-    228.43029276005637
+    228.11126212832127
    ],
    [
     "2026-11-16",
-    224.03839926136402
+    223.72550244200764
    ],
    [
     "2026-11-17",
-    221.66047660475135
+    221.35090084302783
    ],
    [
     "2026-11-18",
-    221.30270188890435
+    220.99362580299982
    ],
    [
     "2026-11-19",
-    216.80170331380432
+    216.49891341876136
    ],
    [
     "2026-11-20",
-    208.89740736726247
+    208.60565678096785
    ],
    [
     "2026-11-23",
-    218.54421315232736
+    218.23898963078125
    ],
    [
     "2026-11-24",
-    217.56695353952352
+    217.26309487965088
    ]
   ],
   "monthly": [
@@ -6283,27 +6261,27 @@
    ],
    [
     "2026-07-31",
-    226.777315351913
+    226.46059330377417
    ],
    [
     "2026-08-28",
-    233.4619774801215
+    233.1359194899063
    ],
    [
     "2026-09-30",
-    230.35129945026415
+    230.02958589950575
    ],
    [
     "2026-10-30",
-    228.7683764946515
+    228.44887368794292
    ],
    [
     "2026-11-24",
-    217.56695353952352
+    217.26309487965088
    ]
   ],
-  "cur": 217.56695353952352,
-  "when": "25 Nov 2026, 09:46 UTC",
+  "cur": 217.26309487965088,
+  "when": "25 Nov 2026, 17:49 UTC",
   "stale": false
  }
 }
