@@ -2,10 +2,10 @@
  "AKER.OL": {
   "price": 1032.0,
   "currency": "NOK",
-  "day": -4.444444444444439,
-  "wk": -3.1894934333958735,
-  "mo": -10.880829015544046,
-  "ma200": 1210.26,
+  "day": -0.19342359767892114,
+  "wk": 0.18552875695732052,
+  "mo": -6.086956521739129,
+  "ma200": 1209.555,
   "closes": [
    770.0,
    768.0,
@@ -256,8 +256,7 @@
    1064.0,
    1066.0,
    1034.0,
-   1080.0,
-   1032.0
+   1080.0
   ],
   "news": [
    {
@@ -282,18 +281,18 @@
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "ASCE.BR": {
   "price": 53.2,
   "currency": "EUR",
-  "day": 0.7575772134835512,
-  "wk": 0.0,
-  "mo": -1.1152388152968262,
-  "ma200": 51.654749965667726,
+  "day": 1.5267146008115962,
+  "wk": -2.04082051517237,
+  "mo": -1.3084126410083274,
+  "ma200": 51.651249961853026,
   "closes": [
    50.20000076293945,
    50.099998474121094,
@@ -549,22 +548,21 @@
    53.099998474121094,
    52.70000076293945,
    52.400001525878906,
-   52.79999923706055,
-   53.20000076293945
+   52.79999923706055
   ],
   "news": [],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "BPOST.BR": {
   "price": 0.69,
   "currency": "EUR",
-  "day": -0.14471559526668676,
-  "wk": -12.436547148258082,
-  "mo": -35.87360469179413,
-  "ma200": 1.5248050034046172,
+  "day": -2.816898471375884,
+  "wk": -15.006154381010916,
+  "mo": -36.37200676002313,
+  "ma200": 1.5325800028443337,
   "closes": [
    1.753999948501587,
    1.75,
@@ -820,8 +818,7 @@
    0.765999972820282,
    0.7440000176429749,
    0.7099999785423279,
-   0.6909999847412109,
-   0.6899999976158142
+   0.6909999847412109
   ],
   "news": [
    {
@@ -832,34 +829,33 @@
     "s": "De Tijd"
    },
    {
-    "t": "Bpost shares hit a record low of €0.826, RSI at 24",
-    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUy1ZZF9Sd0w4cjBvbXhtaGZEdzEteTlCX1FkSWpsd3Rva3d3SWdYUUVYT1dxeHpCN3JZRk5pTUk2QUF3anRfbFYyR0ttZGJqYmdRUUFIWjFZRzMxbEYxTDdLQW9WZHNlMEN2WWxjMnRJazhIYTBaVFdNNFU2d3M3aDhLNmx5T2JnaERYQmVBcHNWYTRCUWZIc3ZkeGhMSFQ4VDZxbW5aNTZkQ1oydmNV?oc=5",
-    "d": "13 Nov",
+    "t": "bpost Q3 2026 Earnings Call Is Live",
+    "l": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOb0h1UDJMSUdrbnZDcXRGXy04aERhY1pEc1JNRUsyNEh2NXdJRVpvaXR3c2FuMlc2bWJqOV9ReUJiR2tiNm1oVjZPQVd0cXJueGVqM2JhRVI4QzlLdHFLWHZuSDctN21EY0lXTlpOR3FkTk4tdTduTC1RS3MwOXRRcWtIT0Vmb2ZoSl9GaWozZXBGTjJiU2hwZl9ZbFo3aS1Nd2luMGdObw?oc=5",
+    "d": "06 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "BPOST shares fall to €0.92, a record low after its target was cut",
-    "l": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNc0pjSTdpVjNBbzJXa19mT1QzVU9tcnJXQUxIVUpQS3poUk10SERVanl3cWQzOXNIUGc1RWx6NmRZS3pBeXBOQW1wLXBLVlN5dzFsLXYycTFVUnQ2akdOb1FvTVZuOGhUV3I3Ti1VNXpobGdsTUdtMmVmVEtGU09VLVFwbHJqbVZwb0NPbGlTdldFcnhiOGRYN0dEOHF3d0lfMlRSampVa0o4dl9EYjVpLTRaa1YxdjFIa0UzOEFOdWNsRWs?oc=5",
-    "d": "06 Nov",
+    "t": "Bpost / : and National Lottery strengthen their partnership with 260,000 additional parcels per year",
+    "l": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbTc2UU5hNGdnazhxeFdTM000Sy1GeUhqZUhBQmx6U2R6MEM2VTVoUEg2SjVvVk9NLW9LTU0wSXJCRHFhLWdncVhjTnZlTXh4THA0b0VOaEp2QXFZdURiOThBUW5mSGNPcVo1RnE1amR6ZDhOTnVsV29sMVZjUzh0TXNFYXhCUjVDUDFzWWVKOUlsZnZ5cTN0SjNQZmRiYUg4Y2QtZC02dUEtMElEOUliZ0tkMVUxUks4WFlTX2dLQ2Vua0NjclFYLVd4ZVUzOHNjU1pwQ0p3SElTV1VzeEliRkUxcw?oc=5",
+    "d": "12 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "BRK-B": {
-  "price": 577.37,
+  "price": 577.21,
   "currency": "USD",
-  "day": 0.8753258048534329,
-  "wk": -1.6003160563359153,
-  "mo": 5.251931910240404,
-  "ma200": 503.2867498779297,
+  "day": 0.8473713698658569,
+  "wk": -1.6275798680934983,
+  "mo": 5.222769531422555,
+  "ma200": 503.285950012207,
   "closes": [
-   507.80999755859375,
    508.57000732421875,
    511.2300109863281,
    513.8099975585938,
@@ -1110,7 +1106,7 @@
    572.0399780273438,
    570.0,
    572.3599853515625,
-   577.3699951171875
+   577.2100219726562
   ],
   "news": [
    {
@@ -1128,25 +1124,25 @@
     "s": "De Tijd"
    },
    {
-    "t": "Apple Is Now 25% of Berkshire Hathaway's Stock Portfolio. Here's What Holding Every Share Tells Investors.",
-    "l": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTGlwRjNCLVc0LW1XMUY3VjVfSW5NSlp2UUx2NFVhN04yMlg5aVg2elF6cG9VbHFmSXU1cWpWd3ZYajhaSFppRzRRTC1pVmdJOTVHZDRPb25lRzhQNlJFU2wyUlIwSG96QzM5RXJ5RmtfYVpxLXltdlM5Vm9xWnNjejFpTlVzQUx0UENUVVI2WktjQkxRTjlQcGlpVENnQQ?oc=5",
-    "d": "22 Nov",
+    "t": "The Gates Foundation Trust Sold 2.2 Million Berkshire Shares and Opened a $155 Million Dollar Tree Stake",
+    "l": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVnhES0VHeUoyNWtiTlctX3VLTHluZ3FTWS1QRnBMWEpRd0Y3TEt0MVVLdjB1VTZRdGd2U2ZUeE9STjhEalZmY0cwdFlaTDZpRUkzdDlNMUhPb3RIWGgyS2dmMVJwSUVya2U3eVdRMTY5eEFyUi1tek93dFBMakZKUlg2cHF5QWwzV3Bucy15TkdrclN6bVp3aTBR?oc=5",
+    "d": "24 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "BY6.VI": {
   "price": 7.097,
   "currency": "EUR",
-  "day": -2.647461767667403,
-  "wk": -3.9128083971370353,
-  "mo": -12.716756836259469,
-  "ma200": 9.771740028858185,
+  "day": -1.279734706355462,
+  "wk": -3.3797231525830806,
+  "mo": -6.944091665703434,
+  "ma200": 9.78935502767563,
   "closes": [
    10.529999732971191,
    10.619999885559082,
@@ -1399,8 +1395,7 @@
    7.4029998779296875,
    7.294000148773193,
    7.189000129699707,
-   7.289999961853027,
-   7.0970001220703125
+   7.289999961853027
   ],
   "news": [
    {
@@ -1418,27 +1413,26 @@
     "s": "De Tijd"
    },
    {
-    "t": "Court bans China’s BYD from selling ‘Defender clone’ SUV in EU",
-    "l": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQk93T0hOOW5MbS1yRXF3N045SldhYVNVY1kxdFRDcTdVLWh0dFMwbGxwN3VqbjJjOEpfWnVvVm40YUJTbHpBcnBFTEc0UWNLYUJTSWE4Z2xWQ01LcXNIbzV0SjdxZ3Vya3hOS0xYejFHTnVqUk1lZTZlZHd1SVhHbWZ6b1RMMl9qRnVocUlGOTBPSVlXY3o5LXpKa3hXV044ZGJNMw?oc=5",
-    "d": "23 Nov",
+    "t": "China's BYD in talks to buy French car factory from Ineos Automotive",
+    "l": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMTVFdHUtZkhnUVF2LW9BQW1HWXUtSnFvUmFaOFN0TkY1RWtqZUx3bTBjY2p2ck5wNGpLT003cnF5dW9zQWRhX0lmcjBMS2dUc2ctdU44YW8wazA3NzkyX1M4SUhkdy1LNlc0bnJRVm1ySTVtUlRnMFJqaEJvR0tqX0w5T0dmdEdadDNfNW91dW16REg2R1BTaHhxODZET2hoSEhVemJRWGdkd0U4OW40QXJxbzRYc1ByX0RHZHpjWQ?oc=5",
+    "d": "24 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "AI": {
-  "price": 9.807,
+  "price": 9.84,
   "currency": "USD",
-  "day": -1.5361449554315176,
-  "wk": -1.440201600045088,
-  "mo": -23.32525580878255,
-  "ma200": 9.949883480072021,
+  "day": -1.2048196554956925,
+  "wk": -1.1055242089031747,
+  "mo": -23.064893026299416,
+  "ma200": 9.950049982070922,
   "closes": [
-   13.520000457763672,
    14.180000305175781,
    14.15999984741211,
    14.449999809265137,
@@ -1689,20 +1683,20 @@
    10.039999961853027,
    9.130000114440918,
    9.960000038146973,
-   9.806699752807617
+   9.84000015258789
   ],
   "news": [
    {
-    "t": "Cummins’ $23 Million Secrets Loss to C3.ai Cut to $1.5 Million",
-    "l": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbmJJbkpEbXdxeXNSUnoybFZWQ1RXa05ZTVcxY25XeXJoZlBMbTNxMlJaSm5zZUJLLThIRk40TW51T01xWWtMZzdVanNtcjF0RFB6Rzkxb1ZrUDE2bWVPVUNsVVVyZXdDanA4bEZET1NjOW5UVWsxc3A5YVVGQnNzT0NhbGE2c2VrTkpRc0FIUmlDUzhGV2tYdktfZWw?oc=5",
-    "d": "23 Nov",
+    "t": "C3.ai, Inc. (AI) Suffers a Larger Drop Than the General Market: Key Insights",
+    "l": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4zQ2VkN3pMQVVPNGhGRG5PYkdhTG53djcya0RfRktnZHVHd2VyZHYtOW5SQVNQb1FjT1Y5ZkJXeVRIYWduY0hzVm1wTkFhY2ZBdnVDVVZQNFUyWDNDcDJzbXRaRDYxUXJDZndFbURpX3Ywc09ST0hqVA?oc=5",
+    "d": "24 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "Slashed C3.ai award exposes vulnerability of software trade secret damages",
-    "l": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNS1loVWo5ZUdXemxGaHI4d1ZSY1dxSThxbDRtdzdLSkM1dWNjWTRMRkQ4SGcwd0RHem5Jc3RrTUduTVRYUnJDQUQzQnROSDVmWXRvSm5XN0s1Z0VfSUVNNS1lSjQ1aS1ma3UzNVRGSzZXSHJrTTBDZ0tjSG9LOXdhWGc0LVBpanBVMTZWSlRwZFpmZHl3anR0OGM5MWx2MmpTNlpCcHg5eXRYVm5lalViODg3T1RoaTJxNXc5bk1aeFpFcXFnY1BTclk3WWU4ci1NeXVJeExR0gFaQVVfeXFMTmZfSkFHVVEwbm9BSC1SWE0ta0J6TkptdTVrVHQ4SmtYS19NN0pNbWtsdGpvUTJkVno4NzRkN2tPbG9fbHNzako4aWZ5SXJsZW1sVzl0Z3cyRURB?oc=5",
-    "d": "24 Nov",
+    "t": "Cummins’ $23 Million Secrets Loss to C3.ai Cut to $1.5 Million",
+    "l": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbmJJbkpEbXdxeXNSUnoybFZWQ1RXa05ZTVcxY25XeXJoZlBMbTNxMlJaSm5zZUJLLThIRk40TW51T01xWWtMZzdVanNtcjF0RFB6Rzkxb1ZrUDE2bWVPVUNsVVVyZXdDanA4bEZET1NjOW5UVWsxc3A5YVVGQnNzT0NhbGE2c2VrTkpRc0FIUmlDUzhGV2tYdktfZWw?oc=5",
+    "d": "23 Nov",
     "nl": false,
     "s": ""
    },
@@ -1714,18 +1708,18 @@
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "CPINV.BR": {
   "price": 12.72,
   "currency": "EUR",
-  "day": 0.6329086590532329,
-  "wk": -0.31347931924397,
-  "mo": 1.9230828012472445,
-  "ma200": 12.577300038337707,
+  "day": 1.2738819668621115,
+  "wk": -1.863352243678007,
+  "mo": 1.4446252377584345,
+  "ma200": 12.5785000371933,
   "closes": [
    11.699999809265137,
    11.720000267028809,
@@ -1981,8 +1975,7 @@
    12.760000228881836,
    12.680000305175781,
    12.5600004196167,
-   12.640000343322754,
-   12.720000267028809
+   12.640000343322754
   ],
   "news": [
    {
@@ -2000,18 +1993,18 @@
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "GTT.PA": {
   "price": 182.5,
   "currency": "EUR",
-  "day": -1.0840108401083959,
-  "wk": -0.9766701150039081,
-  "mo": 0.7730501652684296,
-  "ma200": 199.9180000305176,
+  "day": 0.27472527472527375,
+  "wk": -1.284105925553758,
+  "mo": -9.999999999999998,
+  "ma200": 199.89300003051758,
   "closes": [
    170.5,
    170.3000030517578,
@@ -2267,8 +2260,7 @@
    187.6999969482422,
    187.1999969482422,
    182.0,
-   184.5,
-   182.5
+   184.5
   ],
   "news": [
    {
@@ -2279,25 +2271,32 @@
     "s": ""
    },
    {
-    "t": "GTT wins order for tank design of five LNG carriers at Hudong-Zhonghua",
-    "l": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQmZZaWhsX1RtYlNfakd4U1ZVM3I5d0w5N3AxTEhocmtwWi1yalIyUWptV1ZENDN5aXBUYUdoS0QzR1ltRlYtcHdvXzNwMkZJc0ZaQTdwckhLQ0tWbnRXYkEybjZ5cFdVOWYzS1VOYkF4Vl83cXdnVmVxSndpLTBNd19BSTV6ZlRqelE3TmEzemJfMEVxaUhpdWZIMjRuc1A4d2pLWUhLM0E3aUJuazF4QXY5SnlIekp6VU1qWFpjWWJQVTFIQ2kxR09oYk0tdw?oc=5",
-    "d": "17 Nov",
+    "t": "GTT Energy receives tank design order from Hudong-Zhonghua Shipbuilding shipyard",
+    "l": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNM3pMSnQ3TldZWllpVlNfSFNITk10Y1dYRUZ4NFBCZmI0OElmSHdRdHBkcXFoQVdTY1lqeUM1X2RidHhtNHdXMFZheVFpaXppeGVZcExpb19OcGRiUWs5WWhCWDRtOXlNUW81dm1DbGZ2el9aSW01THl5TDdLVGlEcGY1VmpoVXVWMWV1Z25HQVdFck9QQ0c0N3JlanAydElia3JvbV9kTHpNRWRZQUctNkhVazgtbTZPaFZaSXNSLXpLNlFIbjM1dkpPRQ?oc=5",
+    "d": "18 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
+    "t": "Goldman Sachs upgrades GTT as LNG vessel orders point to further growth",
+    "l": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTF9lb3VLNVJ0MzE0emdVbkQ3c2QyY3JxTTI0MTJMeFlUdEptWTllbi1zRm1FOHBIVTdlbTZCa3ZjQUExLTFNQm96V0l1UFU1QmdVU3VHWjY3WG1yOWdNRndxRlZEWWlrVXVHR1NXdFoxaFlLX3ZPQ1Y4ZEFwaWlxb1h4VGpMSVFhOGJ5aUJldENOX3VnT0JlUV8wTEdiRU1BalRrMllmendDWTdiZVpOOVVqRXpyYjY3Q3dCUmFZZ0ZxRHF1Q2Vz?oc=5",
+    "d": "28 Oct",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "GBLB.BR": {
   "price": 78.45,
   "currency": "EUR",
-  "day": -0.06369426751592355,
-  "wk": -0.8844024815436557,
-  "mo": 3.291639368601529,
-  "ma200": 77.90699989318847,
+  "day": 0.7060314035274962,
+  "wk": -2.1196970236037505,
+  "mo": 3.5620011075706337,
+  "ma200": 77.93124992370605,
   "closes": [
    73.55000305175781,
    73.69999694824219,
@@ -2553,21 +2552,13 @@
    79.69999694824219,
    78.94999694824219,
    77.9000015258789,
-   78.5,
-   78.44999694824219
+   78.5
   ],
   "news": [
    {
-    "t": "De transformatie van GBL krijgt vorm, maar de korting loopt op tot 30 procent",
-    "l": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRmd5bHdOdjV6TlpzODd1Z1VyT3MyUXY0RzYzZU1JZFBNMUhnRUozTG5JZ0VTcHAyR2N6Y0pLUFQ2LXg2ckRfdHpON0xPSFBOblllTXFvRkp1bmdsT3FpSzVLY25QaExxMkxkZ0UyVG1oNW9uU0dMWjhzanhiSExhcUw5c3RDOTRpQ3E5Q2gwZTloQXV4VFcxbk8wSGlQalNHNF9rQmw5RW51Q2x0Y2xrWVpZY0pIamVZb1lGVFZrR0llQzUxUW5KQjVwS1g4Zw?oc=5",
-    "d": "06 Nov",
-    "nl": true,
-    "s": "De Belegger"
-   },
-   {
-    "t": "Beursgenoteerde belangen wegen op intrinsieke waarde GBL",
-    "l": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcjlfanUzbFQ0R3VnRGJIYmdxSmJacUpTSjRlaGgweW9aNzhuZk5DaGlodU5oYUx4VEVuRXM3QXhyd1JpVTl2R21nZ05MVHdJUzZ5MzNtd0N1dGxMVHNDUDlUNkIwRUpSUGl1bzhNM1JfT1NGZkFDb3VMbWtoQjVnYnlhVWRSZ0hPdVM1QWl6MlVzbklMZHNmSVF4QU5xcmhCX2lFUFF3bm5OV19BQUUxbWgwOUlKZEV4MnEwb2pIQ1dXTS1xNUE?oc=5",
-    "d": "05 Nov",
+    "t": "GBL krijgt zijn grootste investering ooit rond: Italiaanse farmareus Recordati ingelijfd",
+    "l": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWXFJQmdSRE9SblRPMFBXSFpiVG80azRRUzliTEJjSHFCU2o0LVMyNndCcGt4VThHMkFjYlFWUWFZRUYycHRwbDlHRWxQQ3ZNRWk4WEEwS3RqdjlNQ2otSnByUUpRcW9adFNiMFBSM0dBMk1UTFJCTDY4Y2RYZVY4LXllZnQ0YmdzMXZyRUYzZHE2eVB1MXZPVzRqd1RhX0FwRnBrblNwUWpjNmREWHhyNHAwSDB5QVR5Z0lNWXl6UTdQNW1MVHJNWEtuSlpUUTgyZ0tqd1F6MTIzWHlGelZJ?oc=5",
+    "d": "24 Nov",
     "nl": true,
     "s": "De Tijd"
    },
@@ -2577,20 +2568,27 @@
     "d": "16 Nov",
     "nl": false,
     "s": ""
+   },
+   {
+    "t": "GBL Round 8 (Regular Season): PAOK beats Aris in a derby game",
+    "l": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQXFkZ1JKQnIwX05LekV4ZV9yTUNrN21aMW1SQ0F1Vjl3cFYyVlBEWWllaTJfandkUkNJdWdBcDRWVFdzdUI1U3dneUJ6NXQ4ZUxZN0psTi1xUmZoVnVfWThqTWVYT0NHNlNCSDVNTzh0VFJFODVDZDExc3NNbXVOVXphTGRRQ3lUNHRjbmNKVlZkVkFCZENXVjJuWmxlaDlDSW55UVA4MGE?oc=5",
+    "d": "23 Nov",
+    "nl": false,
+    "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "INRG.MI": {
   "price": 7.296,
   "currency": "EUR",
-  "day": -3.0560725775804376,
-  "wk": -6.819922415000579,
-  "mo": -8.502633248598157,
-  "ma200": 9.287750012874604,
+  "day": -0.8695670156712909,
+  "wk": -6.879482443459517,
+  "mo": -8.129886896699457,
+  "ma200": 9.296955013275147,
   "closes": [
    8.060999870300293,
    8.081000328063965,
@@ -2843,17 +2841,9 @@
    7.747000217437744,
    7.660999774932861,
    7.360000133514404,
-   7.526000022888184,
-   7.296000003814697
+   7.526000022888184
   ],
   "news": [
-   {
-    "t": "iShares Global Clean Energy Transition UCITS ETF (Dist) | IE00B1XNHC34 | A0MW0M",
-    "l": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1udV81VDNBVldwTmNkQlJUYWxOMUxEWlk0WXgwVm1ia191WjBMemwyRUh3YUo0bkd2akx0LTVURVJWMUI4MFVFb3NFek0tZ0tScVNxVTFnR0JObWIt?oc=5",
-    "d": "19 Nov",
-    "nl": false,
-    "s": ""
-   },
    {
     "t": "Alerian MLP ETF vs. iShares Global Clean Energy ETF: Alerian MLP ETF vs. iShares Global Clean Energy ETF: Oil Prices Are Rising, but Which Energy ETF Offers More Upside?",
     "l": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPVGlma1R1b3VHcnJ3QmV1YjkxNHZ6ZEZ2RGdsUHBXVHpNcjlTZnNNa3NvcUM1bi02QjNkLU5sQ1liSTd2RHRHWDhzOGNKUjlKeHVLTjJQYUVuRzA0dWhkNUc0UnFGRDVZeWJYMko2b3RoY0JkWFVHS1A4YnVMY1Z0YUg3azJxa3VaVTBSbjVzOWZDMldCMTlkVWlobmI0bWhneWpMa29sd3lsd1o5LTR6dXRUVFNQbndwRXBpR05odUVsNmE2TG4tb1prS0lON09kVGVVUThEX0c4RFF2c0JEQThBYUhGYWlUNWhpejdRQ2VOX2pQYzU4eDZiZTJsMmtYRjZURUNsV3UwSV9BQ3ZKNjZTZU1PY2U2YmRhTHo3WGxnelRuZndfSVQxTDctQUFmcnpLSQ?oc=5",
@@ -2862,18 +2852,18 @@
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "KBCA.BR": {
   "price": 89.8,
   "currency": "EUR",
-  "day": -1.7505486861790542,
-  "wk": -5.073991014573187,
-  "mo": -4.162213472257259,
-  "ma200": 84.79849979400635,
+  "day": -3.398393888520701e-06,
+  "wk": -5.088267259187241,
+  "mo": -0.21833728337745661,
+  "ma200": 84.73349979400635,
   "closes": [
    71.5,
    71.69999694824219,
@@ -3129,8 +3119,7 @@
    93.19999694824219,
    92.30000305175781,
    89.80000305175781,
-   91.4000015258789,
-   89.80000305175781
+   91.4000015258789
   ],
   "news": [
    {
@@ -3155,18 +3144,18 @@
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "NN.AS": {
   "price": 77.74,
   "currency": "EUR",
-  "day": -0.33333333333334103,
-  "wk": -4.000994515748745,
-  "mo": 1.0660422703380634,
-  "ma200": 75.06919998168945,
+  "day": 0.9872650167895181,
+  "wk": -4.011816454010364,
+  "mo": 2.5236568385065494,
+  "ma200": 75.03279998779297,
   "closes": [
    60.459999084472656,
    61.08000183105469,
@@ -3422,8 +3411,7 @@
    79.12000274658203,
    78.0999984741211,
    76.9800033569336,
-   78.0,
-   77.73999786376953
+   78.0
   ],
   "news": [
    {
@@ -3448,18 +3436,18 @@
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "PNL.AS": {
   "price": 0.793,
   "currency": "EUR",
-  "day": -0.8750014770775749,
-  "wk": -0.18891819075137484,
-  "mo": -4.690315696738157,
-  "ma200": 0.9500000005960465,
+  "day": 2.8534334052248367,
+  "wk": -1.3563474390801522,
+  "mo": 0.7556652561235611,
+  "ma200": 0.9519275003671646,
   "closes": [
    0.9660000205039978,
    0.987500011920929,
@@ -3715,8 +3703,7 @@
    0.7885000109672546,
    0.781000018119812,
    0.7710000276565552,
-   0.800000011920929,
-   0.7925000190734863
+   0.800000011920929
   ],
   "news": [
    {
@@ -3741,18 +3728,18 @@
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "SHELL.AS": {
   "price": 42.58,
   "currency": "EUR",
-  "day": -0.5837072621216244,
-  "wk": -3.88261272150755,
-  "mo": -11.125021985666583,
-  "ma200": 39.33325006484986,
+  "day": -0.5720975098066461,
+  "wk": -3.9470695570990144,
+  "mo": -11.315864054436863,
+  "ma200": 39.286350059509275,
   "closes": [
    31.594999313354492,
    31.6200008392334,
@@ -4008,8 +3995,7 @@
    43.34000015258789,
    42.849998474121094,
    42.82500076293945,
-   42.83000183105469,
-   42.58000183105469
+   42.83000183105469
   ],
   "news": [
    {
@@ -4027,25 +4013,25 @@
     "s": "De Tijd"
    },
    {
-    "t": "THE SHELL LEAKS FILES — 23 NOVEMBER 2026",
-    "l": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVy1HTTAxSmFtTmlEWUNmcnFic0tETHBSWUVLYmN6UWpRR20yamR5dVFtR0QtRU5nSXEwcnpWSmx1SzB0dURJZ1pvY2VrNGdoejd2UWZScnAyR2tGNENmeUlieTZvSldqLWl2R2RUaVBsTGVGOHY3SnUxWkdMQVYxcGZfZlNTRWpG?oc=5",
-    "d": "23 Nov",
+    "t": "THE SHELL LEAKS FILES — 24 NOVEMBER 2026",
+    "l": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUGl1V1NzQUdJSkdFZWVPTFJmZEhPZDFqWEFTRGd4ak1VamJMM3BkdTRsTUM3dGFCY3NxZ3cyMmRDYXhBLVJuSi1lSmhpcjFScFhLd01yMkJvTDlZMk5kZmR0TEFsUl81Y1hqb2JCUnZiU25ZblNzRjQtSTJKa1dzbUVMZTVSNFJI?oc=5",
+    "d": "24 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "SOF.BR": {
   "price": 269.4,
   "currency": "EUR",
-  "day": 1.3544064606335837,
-  "wk": 1.4307182626674075,
-  "mo": -0.07418850241214248,
-  "ma200": 238.0489998626709,
+  "day": 3.218390804597693,
+  "wk": -0.6726525670745165,
+  "mo": 0.6818135579427009,
+  "ma200": 237.9489998626709,
   "closes": [
    241.8000030517578,
    243.0,
@@ -4301,8 +4287,7 @@
    267.79998779296875,
    268.0,
    261.0,
-   265.79998779296875,
-   269.3999938964844
+   265.79998779296875
   ],
   "news": [
    {
@@ -4313,25 +4298,32 @@
     "s": "De Tijd"
    },
    {
-    "t": "Belang Sofina in TikTok-moeder ByteDance is 600 miljoen euro waard",
-    "l": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObVZzeTZEbEVuN1hKbjlzUFBqTnZ2c0VXaktSWVpYWFBnS1NmaEI1WjV1a1VYcEhiWmZFNXRpaVpXcWpicUx6X3dfN3A1OGpxWGdSd3V4OWhlbWpEcDh2VlpDUGpwSlZsaGotVE54cTMzN3B4dFhqNFJxcW5yVjNYbG1HbTItTnhobHFfOXZ0LW91T2lSeTdyOUpqV0NZZzZSdllBX2JuWF9qNEl6Nm5yV0VabXYtUUxCcnc?oc=5",
-    "d": "13 Nov",
+    "t": "Na de stevige rit hoger: we verwijderen holding Sofina uit onze kooptips",
+    "l": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTkhoVU1CczZhMnZ4NzROTG5jTFNrb05BX1FGcU9RQ0U5eUlkdkdYdHo3QlgyNU42N0J1RXd6bVJQS3hUNVE4SFVpNFhoUU1IWTFxeVJfbERBOHJGUDRaSnJXc1Rya3pKTllSUVktX2NzTEVZczgxd3k2WnU3aG9rd2RiN1Vsa2hfZFNVX2gxQVRfdHl4WXhXeXNDX1FWWURfazZUMnVhRUVIZm15WFdDY05BNjJ5VUlDWmVZVzVFank2TWZmSzJr?oc=5",
+    "d": "03 Nov",
     "nl": true,
-    "s": "De Tijd"
+    "s": "De Belegger"
+   },
+   {
+    "t": "Sofina Société Anonyme (OTCPK:SFNX.F) - Stock Analysis",
+    "l": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUmdnMVpDamFuY1BrSjEwMldNN1hJTVpXbUdRTmxiWE1TQ2hQcjlXcUR2U3o2NXlRR3Q1cVgxNENZeC1DZVdoaDZnT2JocWlTZUk0MThScUsxVkdoQVRUTHhmQnJwMlRrckVlOWloNUpCdzk4eDNPTDlvZlc3blZ3ZVdJYjFGODd1cVJUcDlqT2Y0dw?oc=5",
+    "d": "15 Nov",
+    "nl": false,
+    "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "WEB.BR": {
   "price": 37.9,
   "currency": "EUR",
   "day": -0.2631578947368429,
-  "wk": 0.79788048918219,
-  "mo": 4.407719896547091,
-  "ma200": 39.30649995803833,
+  "wk": 0.5291025581380504,
+  "mo": 3.26087170602698,
+  "ma200": 39.32399995803833,
   "closes": [
    37.0,
    37.20000076293945,
@@ -4587,8 +4579,7 @@
    37.900001525878906,
    38.0,
    38.0,
-   38.0,
-   37.900001525878906
+   38.0
   ],
   "news": [
    {
@@ -4599,18 +4590,18 @@
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "3CP.DU": {
-  "price": 3.076,
+  "price": 3.104,
   "currency": "EUR",
-  "day": -4.472050538222527,
-  "wk": -9.103002178498176,
-  "mo": 1.217704130749886,
-  "ma200": 3.177740010023117,
+  "day": -0.6561061290399572,
+  "wk": -3.708136026636144,
+  "mo": 6.218041274450492,
+  "ma200": 3.1819975101947784,
   "closes": [
    4.441500186920166,
    4.491000175476074,
@@ -4864,10 +4855,16 @@
    3.374000072479248,
    3.2695000171661377,
    3.124500036239624,
-   3.2200000286102295,
-   3.075500011444092
+   3.2200000286102295
   ],
   "news": [
+   {
+    "t": "Xiaomi's Sales Slip After Memory Shortages Weigh on Smartphones",
+    "l": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSFQzVVo0NVMtVTJwTkZEaVZVaWdsclhITHhxOUpodkRCWlNxdm9OY0N3SmJRNHdGUjQtNU0zRUNZTTV1VVdmLVU1ZGhwcG9iZ1dIbzd0dmM5dzd0UG5VaWc3cl9ENDNCaHlKT20zUmY5Mzd3eDBtWDNhN2VJWFpWdndHOVlzTlduSEhRV0FLaVRmcjVTei1MTzlQWUFycDdo?oc=5",
+    "d": "24 Nov",
+    "nl": false,
+    "s": ""
+   },
    {
     "t": "Xiaomi profit falls as China auto downturn weighs, eyes Europe car market",
     "l": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVTdNQlhOOXJOaGNReUtEVmRIekJ3cG5hbzJhbUM5SFVlc2M0SUIwMDA1eU81NHBQN0x3MEZEd0VyNnR3Y2NWTVBueTBZTHUzNDNRZlJsQy03RG5tdkFybi13cGt6OFdfZG91a1UzT0Nabnk1dHN0emdfZUhCWE51WHBORFJJRWgyQlNFbUtUNkluRU9qdlprNjJXRlZkVFBD?oc=5",
@@ -4876,32 +4873,25 @@
     "s": ""
    },
    {
-    "t": "Xiaomi’s Profit Continues to Fall Amid Weaker Revenue Across Businesses",
-    "l": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNR0F1SlV1M1B0a19vZzVkWWluMkZqQ2ExbXB4S2dpQlF2QW01NnJjY21jUjczTkdpaUo5ck12NHRBdzVvWDFHX2p5dlltS1NXSnoxY3BJY2NCYjhUb2hJS0hRZmhPeU95ZWJtc1F6SmtzYVRETDBCWGdrQ2ZJWDJKR2ZPZnpqOFptdlUxMnlmNTllQkt4bFkyRUptdWo3bGkyS2V2b2dkYXRmUjNkbzk5M0UzcDdSbk1l?oc=5",
-    "d": "24 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
     "t": "Xiaomi’s Sales Slip After Memory Shortages Weigh on Smartphones",
     "l": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNX2dod004NmN4ZEUtVXdyQ2pud2dXanNMYkEtVlB5MzlBS2o1QlVOMzVaWE5QaWtsZHFSMW9mSUV6WDh4V0ctUHNBMC1XbFh5WmFuMDVhQW1raFVlOU4tVkpKRHZsTUtycUpNQ3lLS0lrTTc5ZzN3T0gzVXc0QllEcDBldUVES2diUzUwMHVINnBDWE11Zl9HMnlmVHJtMXplWGFWYlhjVjVZSXJIOHJvbldYU2s?oc=5",
-    "d": "24 Nov",
+    "d": "25 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "XIOR.BR": {
   "price": 24.6,
   "currency": "EUR",
-  "day": 0.6134937929650697,
-  "wk": -2.1868757272477723,
-  "mo": 1.234572649498844,
-  "ma200": 26.71150001525879,
+  "day": 1.0266924624794838,
+  "wk": -4.492185942945093,
+  "mo": 0.20492272619221374,
+  "ma200": 26.731250009536744,
   "closes": [
    28.0,
    28.200000762939453,
@@ -5157,21 +5147,20 @@
    24.950000762939453,
    24.5,
    24.350000381469727,
-   24.450000762939453,
-   24.600000381469727
+   24.450000762939453
   ],
   "news": [
    {
-    "t": "Zorgen over schuldenlast duwen Xior naar laagste koers in ruim tien jaar",
-    "l": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWjlmVXRnQmJpT0MyZnhXZHRocHB5SkdLQ1Z4b29oWlA3QVVlejNLSnJmRzVhdHUxcFZNR0JtbDk2VEhnNlRIdEROcnp3OTdyWW5CQ095TFhXLUVVTFJmaHM4MndESnQ2WTU2ZzQwbElsNExjazlFOGV3VFc4V3EzX3JtWENMMkF2bmhSaWRYMlVIbGdRc0dxZU1lWlZSNjZQMkp3R2RsLU9VdndmMVdkU085U0U2THZ0SW9lQmZB?oc=5",
-    "d": "19 Nov",
+    "t": "'Kotmadam' Xior blijft worstelen met hoge schuldgraad",
+    "l": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNU94UHdMeVlIaEtrTVdJbkIweUFIUXpyb0xTa2kwcFZocWRxSnA5MkwwSGdNaFp4S3JBczdqeDVab1kzbmVsamlTcVUwRjI3ci1admpyc3hvZHpQa1J0R0RlT0g3R1pldGtSOHRXMDZPdi04YlBOcDZmUEQ0UHpUaTFsWFRpWEx2WTUtYWZaczk4cnFpeDJ5NXpTdkFmQkFxalE?oc=5",
+    "d": "24 Nov",
     "nl": true,
     "s": "De Tijd"
    },
    {
-    "t": "'Kotmadam' Xior blijft worstelen met hoge schuldgraad",
-    "l": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNU94UHdMeVlIaEtrTVdJbkIweUFIUXpyb0xTa2kwcFZocWRxSnA5MkwwSGdNaFp4S3JBczdqeDVab1kzbmVsamlTcVUwRjI3ci1admpyc3hvZHpQa1J0R0RlT0g3R1pldGtSOHRXMDZPdi04YlBOcDZmUEQ0UHpUaTFsWFRpWEx2WTUtYWZaczk4cnFpeDJ5NXpTdkFmQkFxalE?oc=5",
-    "d": "02 Nov",
+    "t": "Zorgen over schuldenlast duwen Xior naar laagste koers in ruim tien jaar",
+    "l": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWjlmVXRnQmJpT0MyZnhXZHRocHB5SkdLQ1Z4b29oWlA3QVVlejNLSnJmRzVhdHUxcFZNR0JtbDk2VEhnNlRIdEROcnp3OTdyWW5CQ095TFhXLUVVTFJmaHM4MndESnQ2WTU2ZzQwbElsNExjazlFOGV3VFc4V3EzX3JtWENMMkF2bmhSaWRYMlVIbGdRc0dxZU1lWlZSNjZQMkp3R2RsLU9VdndmMVdkU085U0U2THZ0SW9lQmZB?oc=5",
+    "d": "19 Nov",
     "nl": true,
     "s": "De Tijd"
    },
@@ -5183,17 +5172,13 @@
     "s": ""
    }
   ],
-  "when": "24 Nov 2026, 18:40 UTC",
+  "when": "25 Nov 2026, 02:56 UTC",
   "stale": false,
-  "usdeur": 1.0972,
-  "nokeur": 10.7345
+  "usdeur": 1.0958,
+  "nokeur": 10.7527
  },
  "~buffett": {
   "daily": [
-   [
-    "2025-11-17",
-    210.91080132066966
-   ],
    [
     "2025-11-18",
     209.43059282785427
@@ -6197,6 +6182,10 @@
    [
     "2026-11-23",
     218.54421315232736
+   ],
+   [
+    "2026-11-24",
+    217.56695353952352
    ]
   ],
   "monthly": [
@@ -6245,12 +6234,12 @@
     228.7683764946515
    ],
    [
-    "2026-11-23",
-    218.54421315232736
+    "2026-11-24",
+    217.56695353952352
    ]
   ],
-  "cur": 218.54421315232736,
-  "when": "24 Nov 2026, 18:40 UTC",
+  "cur": 217.56695353952352,
+  "when": "25 Nov 2026, 02:57 UTC",
   "stale": false
  }
 }
