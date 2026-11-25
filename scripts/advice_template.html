@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recent advice - alex0708mylife</title>
+<meta name="description" content="Biweekly stock-by-stock review of the watchlist: a short verdict and the reasoning per company, with sources. A personal watchlist, not investment advice.">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  /* recent-advice page - verdict cards on the site's dark theme */
+  .advice-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; margin: 26px 0; }
+  @media (max-width: 460px) { .advice-grid { grid-template-columns: 1fr; } }
+  .advice-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; }
+
+  .adv-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .adv-name { font-size: 1.06rem; font-weight: 650; margin: 0; }
+  .adv-tick { font-size: 0.7rem; color: var(--ink-3); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; font-variant-numeric: tabular-nums; }
+  .adv-verdict { font-size: 0.72rem; font-weight: 650; letter-spacing: 0.04em; border-radius: 999px; padding: 2px 10px; text-transform: uppercase; }
+  .v-keep   { color: #0ca30c; border: 1px solid #0ca30c; }
+  .v-reduce { color: #d9a441; border: 1px solid #d9a441; }
+  .v-add    { color: #3987e5; border: 1px solid #3987e5; }
+  .v-review { color: #898781; border: 1px solid #898781; }
+  .v-sell   { color: #e66767; border: 1px solid #e66767; }
+
+  .adv-lines { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
+  .adv-lines li { font-size: 0.84rem; line-height: 1.45; color: var(--ink-2); padding-left: 14px; position: relative; }
+  .adv-lines li::before { content: "\2022"; position: absolute; left: 0; color: var(--ink-3); }
+
+  .adv-src { border-top: 1px solid var(--border); padding-top: 8px; font-size: 0.72rem; color: var(--ink-3); display: flex; flex-direction: column; gap: 3px; }
+  .adv-src a { color: var(--ink-3); }
+  .adv-src a:hover { color: var(--blue); }
+
+  .adv-legend { display: flex; gap: 12px; flex-wrap: wrap; font-size: 0.75rem; color: var(--ink-2); margin: 14px 0 0; }
+  .adv-next { color: var(--ink-3); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="../pc-network/index.html">PC &amp; Network</a>
+      <a href="index.html" class="active">Investing</a>
+      <a href="../time/index.html">Time</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Investing</a> / Recent advice</p>
+  <h1>Recent advice</h1>
+  <p class="tagline">A twice-a-month, stock-by-stock review of the watchlist &mdash; one verdict per company, with the reasoning and sources.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">Reviewed <strong>{{STAMP}}</strong> &middot; <span class="adv-next">next review {{NEXT}}</span>. Each company gets one of five verdicts &mdash; keep, reduce, add, review or sell &mdash; based on the latest reports, prices and news at the time of the review. The verdicts are the author's personal view of his own watchlist; <strong>nothing here is financial advice</strong>, and positions, weights and amounts are deliberately not shown.</p>
+
+  <p class="adv-legend">
+    <span class="adv-verdict v-keep">Keep</span>
+    <span class="adv-verdict v-reduce">Reduce</span>
+    <span class="adv-verdict v-add">Add</span>
+    <span class="adv-verdict v-review">Review</span>
+    <span class="adv-verdict v-sell">Sell</span>
+  </p>
+
+  <div class="advice-grid">
+{{ROWS}}
+  </div>
+
+  <div class="callout">
+    <span class="title">How this works</span>
+    <p>This page is rebuilt every two weeks by a script in the repository (<code>scripts/update_advice.py</code>, content in <code>scripts/advice_content.json</code>), driven by a scheduled review: fresh prices, latest company reports and news per stock. The same pattern as the price page and the Space news page. Facts come from company publications and financial press, linked on each card; dates are given where they matter. A personal watchlist, not investment advice.</p>
+  </div>
+
+  <a class="back-top" href="index.html">&larr; Back to Investing</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Verdicts are the author's personal view of his own watchlist, refreshed every two weeks. Not investment advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>

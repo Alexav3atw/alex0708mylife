@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recent advice - alex0708mylife</title>
+<meta name="description" content="Biweekly stock-by-stock review of the watchlist: a short verdict and the reasoning per company, with sources. A personal watchlist, not investment advice.">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  /* recent-advice page - verdict cards on the site's dark theme */
+  .advice-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; margin: 26px 0; }
+  @media (max-width: 460px) { .advice-grid { grid-template-columns: 1fr; } }
+  .advice-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; }
+
+  .adv-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .adv-name { font-size: 1.06rem; font-weight: 650; margin: 0; }
+  .adv-tick { font-size: 0.7rem; color: var(--ink-3); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; font-variant-numeric: tabular-nums; }
+  .adv-verdict { font-size: 0.72rem; font-weight: 650; letter-spacing: 0.04em; border-radius: 999px; padding: 2px 10px; text-transform: uppercase; }
+  .v-keep   { color: #0ca30c; border: 1px solid #0ca30c; }
+  .v-reduce { color: #d9a441; border: 1px solid #d9a441; }
+  .v-add    { color: #3987e5; border: 1px solid #3987e5; }
+  .v-review { color: #898781; border: 1px solid #898781; }
+  .v-sell   { color: #e66767; border: 1px solid #e66767; }
+
+  .adv-lines { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
+  .adv-lines li { font-size: 0.84rem; line-height: 1.45; color: var(--ink-2); padding-left: 14px; position: relative; }
+  .adv-lines li::before { content: "\2022"; position: absolute; left: 0; color: var(--ink-3); }
+
+  .adv-src { border-top: 1px solid var(--border); padding-top: 8px; font-size: 0.72rem; color: var(--ink-3); display: flex; flex-direction: column; gap: 3px; }
+  .adv-src a { color: var(--ink-3); }
+  .adv-src a:hover { color: var(--blue); }
+
+  .adv-legend { display: flex; gap: 12px; flex-wrap: wrap; font-size: 0.75rem; color: var(--ink-2); margin: 14px 0 0; }
+  .adv-next { color: var(--ink-3); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="../index.html">alex0708mylife<span class="dot">.</span></a>
+    <nav class="top">
+      <a href="../index.html">Home</a>
+      <a href="../space/index.html">Space</a>
+      <a href="../kuifje/index.html">Kuifje</a>
+      <a href="../pc-network/index.html">PC &amp; Network</a>
+      <a href="index.html" class="active">Investing</a>
+      <a href="../time/index.html">Time</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Investing</a> / Recent advice</p>
+  <h1>Recent advice</h1>
+  <p class="tagline">A twice-a-month, stock-by-stock review of the watchlist &mdash; one verdict per company, with the reasoning and sources.</p>
+</section>
+
+<article class="wrap">
+  <p class="lede">Reviewed <strong>25 Nov 2026</strong> &middot; <span class="adv-next">next review 1 Dec 2026</span>. Each company gets one of five verdicts &mdash; keep, reduce, add, review or sell &mdash; based on the latest reports, prices and news at the time of the review. The verdicts are the author's personal view of his own watchlist; <strong>nothing here is financial advice</strong>, and positions, weights and amounts are deliberately not shown.</p>
+
+  <p class="adv-legend">
+    <span class="adv-verdict v-keep">Keep</span>
+    <span class="adv-verdict v-reduce">Reduce</span>
+    <span class="adv-verdict v-add">Add</span>
+    <span class="adv-verdict v-review">Review</span>
+    <span class="adv-verdict v-sell">Sell</span>
+  </p>
+
+  <div class="advice-grid">
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">Warehouses Estates Belgium <span class="adv-tick">WEB.BR</span></h2>
+        <span class="adv-verdict v-reduce">Reduce</span>
+      </div>
+      <ul class="adv-lines">
+      <li>Dividend flat since FY2023 (€3.35) while the payout ratio runs at ~94% — above the company&#x27;s own 90% target.</li>
+      <li>H1 2026 rental income fell 3.4%; the largest tenant (Ikanbi, 4.6% of rent) terminated early.</li>
+      <li>Trades at ~0.69x EPRA NAV with a ~8.9% yield — the discount is the market pricing the risk, not a free lunch.</li>
+      <li>Small cap with limited liquidity and a Wallonia-only portfolio: the review recommends a smaller position.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://quartr.com/events/warehouses-estates-belgium-s-c-a-web-h1-2026_FVVcqNmE" target="_blank" rel="noopener">WEB H1 2026 report</a>
+      <a href="https://w-e-b.be/wp-content/uploads/2026/03/WEB-SA-RFA-2025-EN.pdf" target="_blank" rel="noopener">WEB FY2025 annual report</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">Care Property Invest <span class="adv-tick">CPINV.BR</span></h2>
+        <span class="adv-verdict v-keep">Keep</span>
+      </div>
+      <ul class="adv-lines">
+      <li>Yield ~7.7%, dividend unchanged at €1.00; FY2026 EPS guidance raised (4 Nov 2026).</li>
+      <li>Debt ratio sits at ~49% against the 50% RREC ceiling — little headroom, and a Dec 2025 capital increase shows dilution risk.</li>
+      <li>Korian care sites integrated, Apricusa sites re-let. Keep, but watch the balance sheet, not just the yield.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://carepropertyinvest.be/content/uploads/2026/11/Tussentijdsfinancieelverslag-Q3-2026-CarePropertyInvest.pdf" target="_blank" rel="noopener">CPINV Q3 2026 report</a>
+      <a href="https://kbcheadstart.tijd.be/markten-live/nieuws/aandelen-brussel/care-property-invest-oplossing-voor-twee-van-de-drie-apricusa-sites/10644492.html" target="_blank" rel="noopener">De Tijd — Apricusa resolution</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">Xior Student Housing <span class="adv-tick">XIOR.BR</span></h2>
+        <span class="adv-verdict v-review">Review</span>
+      </div>
+      <ul class="adv-lines">
+      <li>Cheapest of the Belgian REITs: ~0.63x EPRA NTA, yield ~7.6%, dividend raised +4%, occupancy 98.5%.</li>
+      <li>LTV 51.3% — above its own &lt;50% target; divestments promised, none signed yet.</li>
+      <li>Review: either a conviction position or not at all — a token stake does nothing.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://xior.prezly.com/9m-2026-strong-operational-performance" target="_blank" rel="noopener">Xior 9M 2026 release</a>
+      <a href="https://xior.prezly.com/xior-closes-2025-strongly-and-commits-to-renewed-eps-growth-for-2026-2027" target="_blank" rel="noopener">Xior FY2025 release</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">Ascencio <span class="adv-tick">ASCE.BR</span></h2>
+        <span class="adv-verdict v-keep">Keep</span>
+      </div>
+      <ul class="adv-lines">
+      <li>Narrowest discount of the group (~0.80x NTA), yield ~8.5% maintained; lowest-cost balance sheet (cost of debt 2.25%, LTV 44.8%).</li>
+      <li>Portfolio ~9.7% over-rented — expect negative reversion; Carrefour holds break options on 4.4% of rent.</li>
+      <li>FY2025/26 results published 25 Nov 2026 after the close — check them before acting.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://www.ascencio.be/wp-content/uploads/2026/05/rapport-financier-semestriel-31-03-2026_uk.pdf" target="_blank" rel="noopener">Ascencio H1 FY2025/26 report</a>
+      <a href="https://quartr.com/events/ascencio-sa-asce-q3-2026_FVV50hOv" target="_blank" rel="noopener">Ascencio Q3 FY2025/26</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">Aedifica (ex-Cofinimmo) <span class="adv-tick">AED.BR</span></h2>
+        <span class="adv-verdict v-keep">Keep</span>
+      </div>
+      <ul class="adv-lines">
+      <li>Cofinimmo was absorbed by Aedifica on 1 July 2026 (1.17842 AED per COFB share; COFB delisted) — holders should verify their broker statement shows Aedifica.</li>
+      <li>Healthcare real estate is the most defensive REIT sub-sector: indexed, state-linked rents; LTV 42.2%, ~90% hedged.</li>
+      <li>€16m+ merger synergies targeted by 2027; dividend raised +5% (€4.95 per former COFB share).</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://www.dhnet.be/dernieres-depeches/2026/07/01/aedifica-a-officiellement-absorbe-cofinimmo-KNQ6CHTNBJEG5J6UBG64P57HAQ/" target="_blank" rel="noopener">DH — merger completed, 1 Jul 2026</a>
+      <a href="https://aedifica.eu/wp-content/uploads/2026/09/AED_Slides_H1-2026_2026-09-01_LV.pdf" target="_blank" rel="noopener">Aedifica H1 2026 slides</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">NN Group <span class="adv-tick">NN.AS</span></h2>
+        <span class="adv-verdict v-reduce">Reduce</span>
+      </div>
+      <ul class="adv-lines">
+      <li>Strong fundamentals: ~9.5x forward earnings, ~5% yield, dividend +12.8% (2026 interim +12%), Solvency II 224%, €350m annual buyback.</li>
+      <li>The reduce verdict is a diversification call (one more rate-sensitive European financial), not a quality call.</li>
+      <li>CEO succession underway (Bosklopper from Mar 2027) — routine, but watch the first strategic update.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://www.nn-group.com/news/continued-strong-commercial-performance-in-the-first-half-of-2026-resulting-in-5-growth-in-operating-capital-generation/" target="_blank" rel="noopener">NN H1 2026 results</a>
+      <a href="https://www.nn-group.com/news/tjeerd-bosklopper-to-succeed-david-knibbe-as-ceo-of-nn-group/" target="_blank" rel="noopener">NN CEO succession</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">Shell <span class="adv-tick">SHELL.AS</span></h2>
+        <span class="adv-verdict v-reduce">Reduce</span>
+      </div>
+      <ul class="adv-lines">
+      <li>8.2x trailing earnings, dividend raised +9% y/y, new $5bn buyback (to Jan 2027), gearing 16.6%.</li>
+      <li>Q3 was driven by record refining margins ($42/bbl vs $24 in Q2) — exactly the cyclical number that mean-reverts.</li>
+      <li>Reduce is a sizing call on a pure commodity-cycle bet; the cash machine itself is in good shape.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://www.investegate.co.uk/announcement/gnw/shell--shel/shell-plc-3rd-quarter-2026-and-nine-months-un-/9846826" target="_blank" rel="noopener">Shell Q3 2026 results</a>
+      <a href="https://www.investegate.co.uk/index.php/announcement/gnw/shell--shel/shell-announces-commencement-of-a-share-buyba-/9847163" target="_blank" rel="noopener">Shell buyback announcement</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">BYD <span class="adv-tick">1211.HK</span></h2>
+        <span class="adv-verdict v-reduce">Reduce</span>
+      </div>
+      <ul class="adv-lines">
+      <li>H-shares at 14.3x trailing / 11x forward — cheap next to the Shenzhen A-share line (~22x).</li>
+      <li>Q3 profit +28%; October sales 490k units (best since Dec 2024); Hungary production started; exclusive talks for the Ineos Hambach plant in France.</li>
+      <li>But: China volume −28% YTD (price war), gross margin −0.9pp QoQ, exports fell two months running, the EU minimum-price undertaking is not yet confirmed, and a Dutch court barred the Ti7 model in the EU.</li>
+      <li>Reduce toward a calmer single-stock size; keep only the part you&#x27;d buy today.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://www.bitauto.my/en/news/byd-october-2026-sales-reach-490168-units-overseas-sales-cli-1004589/" target="_blank" rel="noopener">Bitauto — BYD October sales</a>
+      <a href="https://www.marketscreener.com/news/chinaese-carmaker-byd-eyes-ineos-factory-in-france-ce7851dbdd8af42c" target="_blank" rel="noopener">MarketScreener — BYD/Ineos Hambach</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">Groupe Bruxelles Lambert <span class="adv-tick">GBLB.BR</span></h2>
+        <span class="adv-verdict v-keep">Keep</span>
+      </div>
+      <ul class="adv-lines">
+      <li>~20% discount to NAV (€99.21 at 30 Sep 2026); dividend €5.125 (~6.5% yield, intended stable).</li>
+      <li>Aggressive structural buybacks (ninth €500m envelope approved; €888m returned YTD) — the mechanism that actually closes discounts.</li>
+      <li>Recordati take-private completed 24 Nov 2026; core book of quality (SGS, Affidea, Imerys, Pernod Ricard).</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://www.gbl.com/en/media/4401/results-sept-2026-en.pdf" target="_blank" rel="noopener">GBL 9M 2026 results</a>
+      <a href="https://live.euronext.com/sites/default/files/company_press_releases/attachments/2026/11/24/Connect_20261124-recordati-closing.pdf" target="_blank" rel="noopener">GBL — Recordati closing</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">KBC Ancora <span class="adv-tick">KBCA.BR</span></h2>
+        <span class="adv-verdict v-keep">Keep</span>
+      </div>
+      <ul class="adv-lines">
+      <li>Discount to its KBC stake narrowed from ~31.5% (Jun) to ~19% — much of the easy re-rating has happened.</li>
+      <li>KBC Group underneath: 9M profit +11%, RoTE 18%, CET1 14.6%; KBCA dividend +23% to €4.32 (4.9% yield).</li>
+      <li>A single-asset vehicle (18.6% of KBC) — keep it as the Belgian bank exposure, not as a diversifier.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://www.kbcancora.be/en/news/2026/20260828_jaarlijks_financieel_verslag" target="_blank" rel="noopener">KBC Ancora FY2025/26 results</a>
+      <a href="https://www.kbc.com/content/dam/kbccom/doc/newsroom/pressreleases/2026/3q2026-pb-nl.pdf" target="_blank" rel="noopener">KBC Group Q3 2026</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">Sofina <span class="adv-tick">SOF.BR</span></h2>
+        <span class="adv-verdict v-keep">Keep</span>
+      </div>
+      <ul class="adv-lines">
+      <li>NAV discount ~17% (it was ~25–30% in Sep–Oct); H1 NAV +6.8%.</li>
+      <li>The underlying book is venture capital in disguise: ByteDance largest direct holding; funds hold SpaceX, Stripe, Anthropic, OpenAI.</li>
+      <li>Yield 1.35% — this is a growth position, not an income one.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://www.sofinagroup.com/~/media/Files/S/Sofina-Corp/news-alerts-pdfs/2026/2026-half-year-results.pdf" target="_blank" rel="noopener">Sofina H1 2026 results</a>
+      <a href="https://www.sofinagroup.com/~/media/Files/S/Sofina-Corp/annual-report/2026/half-year-report-2026.pdf" target="_blank" rel="noopener">Sofina half-year report 2026</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">Berkshire Hathaway <span class="adv-tick">BRK-B</span></h2>
+        <span class="adv-verdict v-keep">Keep</span>
+      </div>
+      <ul class="adv-lines">
+      <li>16.1x trailing earnings, 1.61x book; record $377B cash; record $9.6B quarterly buybacks under CEO Greg Abel.</li>
+      <li>Watch item: insurance underwriting weakening (GEICO pretax −45%); net seller of equities 15 of the last 16 quarters.</li>
+      <li>The only internally diversified, non-European position on the list — keep as core.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://ca.investing.com/news/stock-market-news/berkshire-hathaway-accelerates-stock-buybacks-operating-profit-falls-4941143" target="_blank" rel="noopener">Reuters — Berkshire Q3</a>
+      <a href="https://www.ainvest.com/news/berkshire-hathaway-earnings-377-billion-cash-pile-9-6-billion-stock-buybacks-2611/" target="_blank" rel="noopener">AInvest — $377B cash, $9.6B buybacks</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">Xiaomi <span class="adv-tick">1810.HK</span></h2>
+        <span class="adv-verdict v-review">Review</span>
+      </div>
+      <ul class="adv-lines">
+      <li>Q3 (24 Nov): revenue −5.2%, adjusted profit −57%, gross margin 20.2% (−2.7pp) on the DRAM memory-cost shock; smartphone shipments −29% in a −22% market.</li>
+      <li>EV business still loss-making (~RMB 3.4B operating loss) at ~100k deliveries a quarter; Europe entry only in 2027.</li>
+      <li>Review: the phone thesis is broken near-term and the EV thesis is unproven — hold only as a declared 2027-Europe bet.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://hk.marketscreener.com/news/xiaomi-third-quarter-profit-falls-57-as-ev-sales-decline-ce7851dbd98af224" target="_blank" rel="noopener">MarketScreener — Xiaomi Q3</a>
+      <a href="https://www.zonamovilidad.es/xiaomi-confirma-llegada-coches-electricos-europa-2027" target="_blank" rel="noopener">ZonaMovilidad — Europe 2027</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">C3.ai <span class="adv-tick">AI</span></h2>
+        <span class="adv-verdict v-sell">Sell</span>
+      </div>
+      <ul class="adv-lines">
+      <li>Revenue −25% YoY and still guiding a $123–155M annual operating loss; Tom Siebel back as CEO, ~26% of staff cut.</li>
+      <li>Merger talks with Automation Anywhere (Jan 2026) never confirmed; $651M cash is the buffer.</li>
+      <li>6.8x sales for a shrinking, loss-making business has no floor — sell, or hold only as a declared lottery ticket.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://www.businesswirenews.com/news/home/20260902624813/en/C3-AI-Announces-Fiscal-First-Quarter-2027-Results" target="_blank" rel="noopener">BusinessWire — C3.ai Q1 FY2027</a>
+      <a href="https://markets.businessinsider.com/news/stocks/c3-ai-in-discussions-to-merge-with-automation-anywhere-the-information-reports-1035756398" target="_blank" rel="noopener">Business Insider — AA merger talks</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">bpost (bnode) <span class="adv-tick">BPOST.BR</span></h2>
+        <span class="adv-verdict v-sell">Sell</span>
+      </div>
+      <ul class="adv-lines">
+      <li>No dividend for a second consecutive year.</li>
+      <li>Q3 2026: net loss €49.2m; FY2026 EBIT guidance cut again; mail volumes −16.4%; newspaper distribution in Wallonia ends 1 May 2027; press tax credit expires 31 Dec 2026 (extension blocked in parliament).</li>
+      <li>A structurally declining, politically dependent business — the clearest exit on the list.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://quartr.com/events/bpost-nv-sa-bpost-q3-2026_F3Hk1Qgb" target="_blank" rel="noopener">Quartr — bpost Q3 2026</a>
+      <a href="https://www.lalibre.be/dernieres-depeches/2026/03/06/pas-de-dividende-pour-bnode-cette-annee-F7JYIY7CLJHKDKLA6HCSEXFFU4/" target="_blank" rel="noopener">La Libre — no dividend, 6 Mar 2026</a>
+      </div>
+    </div>
+    <div class="advice-card">
+      <div class="adv-head">
+        <h2 class="adv-name">Gaztransport &amp; Technigaz <span class="adv-tick">GTT.PA</span></h2>
+        <span class="adv-verdict v-add">Add</span>
+      </div>
+      <ul class="adv-lines">
+      <li>Niche monopoly in LNG containment: order book 299 units / €1.8bn; 10-year demand forecast raised to ~550 ships.</li>
+      <li>Dividend +19% (FY2025) then +7.5% (FY2026 interim); ~80% payout; FY2026 guidance confirmed.</li>
+      <li>Genuinely independent of Belgium and of interest rates — the review&#x27;s preferred home for new dividend capital.</li>
+      </ul>
+      <div class="adv-src">
+        <span>Sources</span>
+      <a href="https://live.euronext.com/nb/node/12918370" target="_blank" rel="noopener">GTT Q3 2026 activity update</a>
+      <a href="https://en.portnews.ru/news/print/394896/" target="_blank" rel="noopener">PortNews — 10-year forecast</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <span class="title">How this works</span>
+    <p>This page is rebuilt every two weeks by a script in the repository (<code>scripts/update_advice.py</code>, content in <code>scripts/advice_content.json</code>), driven by a scheduled review: fresh prices, latest company reports and news per stock. The same pattern as the price page and the Space news page. Facts come from company publications and financial press, linked on each card; dates are given where they matter. A personal watchlist, not investment advice.</p>
+  </div>
+
+  <a class="back-top" href="index.html">&larr; Back to Investing</a>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
+    <div class="credits">Verdicts are the author's personal view of his own watchlist, refreshed every two weeks. Not investment advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>

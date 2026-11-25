@@ -14,5 +14,6 @@ Alex's scratchpad for requests and remarks that don't need a chat session.
 - Alex edits pages **directly on GitHub** — always `git pull` before working in the local copy.
 - Free to edit on GitHub: `index.html`, `space/`, `kuifje/`, `pc-network/`, `time/`.
 - Never edit `space/news.html` or `investing/index.html` directly — the daily GitHub Actions regenerate them and would silently overwrite Alex's changes. Edits go in `scripts/news_template.html`, `scripts/investing_template.html`, `scripts/update_investing.py` instead.
+- Never edit `investing/advice.html` directly either — the biweekly portfolio review regenerates it from `scripts/advice_content.json` + `scripts/advice_template.html` (generator: `scripts/update_advice.py`). Public page shows share names + verdicts ONLY (no counts, no weights, no amounts — Alex's privacy rule).
 - Stock list and descriptions live in the `STOCKS` list in `scripts/update_investing.py` — code-like, Claude territory.
 - Small text edits: Alex does them on GitHub. Structure, new pages, nav links, layout, scripts: Claude.

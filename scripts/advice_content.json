@@ -1,0 +1,232 @@
+{
+  "reviewed": "25 Nov 2026",
+  "next": "1 Dec 2026",
+  "entries": [
+    {
+      "tick": "WEB.BR",
+      "name": "Warehouses Estates Belgium",
+      "verdict": "Reduce",
+      "lines": [
+        "Dividend flat since FY2023 (€3.35) while the payout ratio runs at ~94% — above the company's own 90% target.",
+        "H1 2026 rental income fell 3.4%; the largest tenant (Ikanbi, 4.6% of rent) terminated early.",
+        "Trades at ~0.69x EPRA NAV with a ~8.9% yield — the discount is the market pricing the risk, not a free lunch.",
+        "Small cap with limited liquidity and a Wallonia-only portfolio: the review recommends a smaller position."
+      ],
+      "sources": [
+        ["WEB H1 2026 report", "https://quartr.com/events/warehouses-estates-belgium-s-c-a-web-h1-2026_FVVcqNmE"],
+        ["WEB FY2025 annual report", "https://w-e-b.be/wp-content/uploads/2026/03/WEB-SA-RFA-2025-EN.pdf"]
+      ]
+    },
+    {
+      "tick": "CPINV.BR",
+      "name": "Care Property Invest",
+      "verdict": "Keep",
+      "lines": [
+        "Yield ~7.7%, dividend unchanged at €1.00; FY2026 EPS guidance raised (4 Nov 2026).",
+        "Debt ratio sits at ~49% against the 50% RREC ceiling — little headroom, and a Dec 2025 capital increase shows dilution risk.",
+        "Korian care sites integrated, Apricusa sites re-let. Keep, but watch the balance sheet, not just the yield."
+      ],
+      "sources": [
+        ["CPINV Q3 2026 report", "https://carepropertyinvest.be/content/uploads/2026/11/Tussentijdsfinancieelverslag-Q3-2026-CarePropertyInvest.pdf"],
+        ["De Tijd — Apricusa resolution", "https://kbcheadstart.tijd.be/markten-live/nieuws/aandelen-brussel/care-property-invest-oplossing-voor-twee-van-de-drie-apricusa-sites/10644492.html"]
+      ]
+    },
+    {
+      "tick": "XIOR.BR",
+      "name": "Xior Student Housing",
+      "verdict": "Review",
+      "lines": [
+        "Cheapest of the Belgian REITs: ~0.63x EPRA NTA, yield ~7.6%, dividend raised +4%, occupancy 98.5%.",
+        "LTV 51.3% — above its own <50% target; divestments promised, none signed yet.",
+        "Review: either a conviction position or not at all — a token stake does nothing."
+      ],
+      "sources": [
+        ["Xior 9M 2026 release", "https://xior.prezly.com/9m-2026-strong-operational-performance"],
+        ["Xior FY2025 release", "https://xior.prezly.com/xior-closes-2025-strongly-and-commits-to-renewed-eps-growth-for-2026-2027"]
+      ]
+    },
+    {
+      "tick": "ASCE.BR",
+      "name": "Ascencio",
+      "verdict": "Keep",
+      "lines": [
+        "Narrowest discount of the group (~0.80x NTA), yield ~8.5% maintained; lowest-cost balance sheet (cost of debt 2.25%, LTV 44.8%).",
+        "Portfolio ~9.7% over-rented — expect negative reversion; Carrefour holds break options on 4.4% of rent.",
+        "FY2025/26 results published 25 Nov 2026 after the close — check them before acting."
+      ],
+      "sources": [
+        ["Ascencio H1 FY2025/26 report", "https://www.ascencio.be/wp-content/uploads/2026/05/rapport-financier-semestriel-31-03-2026_uk.pdf"],
+        ["Ascencio Q3 FY2025/26", "https://quartr.com/events/ascencio-sa-asce-q3-2026_FVV50hOv"]
+      ]
+    },
+    {
+      "tick": "AED.BR",
+      "name": "Aedifica (ex-Cofinimmo)",
+      "verdict": "Keep",
+      "lines": [
+        "Cofinimmo was absorbed by Aedifica on 1 July 2026 (1.17842 AED per COFB share; COFB delisted) — holders should verify their broker statement shows Aedifica.",
+        "Healthcare real estate is the most defensive REIT sub-sector: indexed, state-linked rents; LTV 42.2%, ~90% hedged.",
+        "€16m+ merger synergies targeted by 2027; dividend raised +5% (€4.95 per former COFB share)."
+      ],
+      "sources": [
+        ["DH — merger completed, 1 Jul 2026", "https://www.dhnet.be/dernieres-depeches/2026/07/01/aedifica-a-officiellement-absorbe-cofinimmo-KNQ6CHTNBJEG5J6UBG64P57HAQ/"],
+        ["Aedifica H1 2026 slides", "https://aedifica.eu/wp-content/uploads/2026/09/AED_Slides_H1-2026_2026-09-01_LV.pdf"]
+      ]
+    },
+    {
+      "tick": "NN.AS",
+      "name": "NN Group",
+      "verdict": "Reduce",
+      "lines": [
+        "Strong fundamentals: ~9.5x forward earnings, ~5% yield, dividend +12.8% (2026 interim +12%), Solvency II 224%, €350m annual buyback.",
+        "The reduce verdict is a diversification call (one more rate-sensitive European financial), not a quality call.",
+        "CEO succession underway (Bosklopper from Mar 2027) — routine, but watch the first strategic update."
+      ],
+      "sources": [
+        ["NN H1 2026 results", "https://www.nn-group.com/news/continued-strong-commercial-performance-in-the-first-half-of-2026-resulting-in-5-growth-in-operating-capital-generation/"],
+        ["NN CEO succession", "https://www.nn-group.com/news/tjeerd-bosklopper-to-succeed-david-knibbe-as-ceo-of-nn-group/"]
+      ]
+    },
+    {
+      "tick": "SHELL.AS",
+      "name": "Shell",
+      "verdict": "Reduce",
+      "lines": [
+        "8.2x trailing earnings, dividend raised +9% y/y, new $5bn buyback (to Jan 2027), gearing 16.6%.",
+        "Q3 was driven by record refining margins ($42/bbl vs $24 in Q2) — exactly the cyclical number that mean-reverts.",
+        "Reduce is a sizing call on a pure commodity-cycle bet; the cash machine itself is in good shape."
+      ],
+      "sources": [
+        ["Shell Q3 2026 results", "https://www.investegate.co.uk/announcement/gnw/shell--shel/shell-plc-3rd-quarter-2026-and-nine-months-un-/9846826"],
+        ["Shell buyback announcement", "https://www.investegate.co.uk/index.php/announcement/gnw/shell--shel/shell-announces-commencement-of-a-share-buyba-/9847163"]
+      ]
+    },
+    {
+      "tick": "1211.HK",
+      "name": "BYD",
+      "verdict": "Reduce",
+      "lines": [
+        "H-shares at 14.3x trailing / 11x forward — cheap next to the Shenzhen A-share line (~22x).",
+        "Q3 profit +28%; October sales 490k units (best since Dec 2024); Hungary production started; exclusive talks for the Ineos Hambach plant in France.",
+        "But: China volume −28% YTD (price war), gross margin −0.9pp QoQ, exports fell two months running, the EU minimum-price undertaking is not yet confirmed, and a Dutch court barred the Ti7 model in the EU.",
+        "Reduce toward a calmer single-stock size; keep only the part you'd buy today."
+      ],
+      "sources": [
+        ["Bitauto — BYD October sales", "https://www.bitauto.my/en/news/byd-october-2026-sales-reach-490168-units-overseas-sales-cli-1004589/"],
+        ["MarketScreener — BYD/Ineos Hambach", "https://www.marketscreener.com/news/chinaese-carmaker-byd-eyes-ineos-factory-in-france-ce7851dbdd8af42c"]
+      ]
+    },
+    {
+      "tick": "GBLB.BR",
+      "name": "Groupe Bruxelles Lambert",
+      "verdict": "Keep",
+      "lines": [
+        "~20% discount to NAV (€99.21 at 30 Sep 2026); dividend €5.125 (~6.5% yield, intended stable).",
+        "Aggressive structural buybacks (ninth €500m envelope approved; €888m returned YTD) — the mechanism that actually closes discounts.",
+        "Recordati take-private completed 24 Nov 2026; core book of quality (SGS, Affidea, Imerys, Pernod Ricard)."
+      ],
+      "sources": [
+        ["GBL 9M 2026 results", "https://www.gbl.com/en/media/4401/results-sept-2026-en.pdf"],
+        ["GBL — Recordati closing", "https://live.euronext.com/sites/default/files/company_press_releases/attachments/2026/11/24/Connect_20261124-recordati-closing.pdf"]
+      ]
+    },
+    {
+      "tick": "KBCA.BR",
+      "name": "KBC Ancora",
+      "verdict": "Keep",
+      "lines": [
+        "Discount to its KBC stake narrowed from ~31.5% (Jun) to ~19% — much of the easy re-rating has happened.",
+        "KBC Group underneath: 9M profit +11%, RoTE 18%, CET1 14.6%; KBCA dividend +23% to €4.32 (4.9% yield).",
+        "A single-asset vehicle (18.6% of KBC) — keep it as the Belgian bank exposure, not as a diversifier."
+      ],
+      "sources": [
+        ["KBC Ancora FY2025/26 results", "https://www.kbcancora.be/en/news/2026/20260828_jaarlijks_financieel_verslag"],
+        ["KBC Group Q3 2026", "https://www.kbc.com/content/dam/kbccom/doc/newsroom/pressreleases/2026/3q2026-pb-nl.pdf"]
+      ]
+    },
+    {
+      "tick": "SOF.BR",
+      "name": "Sofina",
+      "verdict": "Keep",
+      "lines": [
+        "NAV discount ~17% (it was ~25–30% in Sep–Oct); H1 NAV +6.8%.",
+        "The underlying book is venture capital in disguise: ByteDance largest direct holding; funds hold SpaceX, Stripe, Anthropic, OpenAI.",
+        "Yield 1.35% — this is a growth position, not an income one."
+      ],
+      "sources": [
+        ["Sofina H1 2026 results", "https://www.sofinagroup.com/~/media/Files/S/Sofina-Corp/news-alerts-pdfs/2026/2026-half-year-results.pdf"],
+        ["Sofina half-year report 2026", "https://www.sofinagroup.com/~/media/Files/S/Sofina-Corp/annual-report/2026/half-year-report-2026.pdf"]
+      ]
+    },
+    {
+      "tick": "BRK-B",
+      "name": "Berkshire Hathaway",
+      "verdict": "Keep",
+      "lines": [
+        "16.1x trailing earnings, 1.61x book; record $377B cash; record $9.6B quarterly buybacks under CEO Greg Abel.",
+        "Watch item: insurance underwriting weakening (GEICO pretax −45%); net seller of equities 15 of the last 16 quarters.",
+        "The only internally diversified, non-European position on the list — keep as core."
+      ],
+      "sources": [
+        ["Reuters — Berkshire Q3", "https://ca.investing.com/news/stock-market-news/berkshire-hathaway-accelerates-stock-buybacks-operating-profit-falls-4941143"],
+        ["AInvest — $377B cash, $9.6B buybacks", "https://www.ainvest.com/news/berkshire-hathaway-earnings-377-billion-cash-pile-9-6-billion-stock-buybacks-2611/"]
+      ]
+    },
+    {
+      "tick": "1810.HK",
+      "name": "Xiaomi",
+      "verdict": "Review",
+      "lines": [
+        "Q3 (24 Nov): revenue −5.2%, adjusted profit −57%, gross margin 20.2% (−2.7pp) on the DRAM memory-cost shock; smartphone shipments −29% in a −22% market.",
+        "EV business still loss-making (~RMB 3.4B operating loss) at ~100k deliveries a quarter; Europe entry only in 2027.",
+        "Review: the phone thesis is broken near-term and the EV thesis is unproven — hold only as a declared 2027-Europe bet."
+      ],
+      "sources": [
+        ["MarketScreener — Xiaomi Q3", "https://hk.marketscreener.com/news/xiaomi-third-quarter-profit-falls-57-as-ev-sales-decline-ce7851dbd98af224"],
+        ["ZonaMovilidad — Europe 2027", "https://www.zonamovilidad.es/xiaomi-confirma-llegada-coches-electricos-europa-2027"]
+      ]
+    },
+    {
+      "tick": "AI",
+      "name": "C3.ai",
+      "verdict": "Sell",
+      "lines": [
+        "Revenue −25% YoY and still guiding a $123–155M annual operating loss; Tom Siebel back as CEO, ~26% of staff cut.",
+        "Merger talks with Automation Anywhere (Jan 2026) never confirmed; $651M cash is the buffer.",
+        "6.8x sales for a shrinking, loss-making business has no floor — sell, or hold only as a declared lottery ticket."
+      ],
+      "sources": [
+        ["BusinessWire — C3.ai Q1 FY2027", "https://www.businesswirenews.com/news/home/20260902624813/en/C3-AI-Announces-Fiscal-First-Quarter-2027-Results"],
+        ["Business Insider — AA merger talks", "https://markets.businessinsider.com/news/stocks/c3-ai-in-discussions-to-merge-with-automation-anywhere-the-information-reports-1035756398"]
+      ]
+    },
+    {
+      "tick": "BPOST.BR",
+      "name": "bpost (bnode)",
+      "verdict": "Sell",
+      "lines": [
+        "No dividend for a second consecutive year.",
+        "Q3 2026: net loss €49.2m; FY2026 EBIT guidance cut again; mail volumes −16.4%; newspaper distribution in Wallonia ends 1 May 2027; press tax credit expires 31 Dec 2026 (extension blocked in parliament).",
+        "A structurally declining, politically dependent business — the clearest exit on the list."
+      ],
+      "sources": [
+        ["Quartr — bpost Q3 2026", "https://quartr.com/events/bpost-nv-sa-bpost-q3-2026_F3Hk1Qgb"],
+        ["La Libre — no dividend, 6 Mar 2026", "https://www.lalibre.be/dernieres-depeches/2026/03/06/pas-de-dividende-pour-bnode-cette-annee-F7JYIY7CLJHKDKLA6HCSEXFFU4/"]
+      ]
+    },
+    {
+      "tick": "GTT.PA",
+      "name": "Gaztransport & Technigaz",
+      "verdict": "Add",
+      "lines": [
+        "Niche monopoly in LNG containment: order book 299 units / €1.8bn; 10-year demand forecast raised to ~550 ships.",
+        "Dividend +19% (FY2025) then +7.5% (FY2026 interim); ~80% payout; FY2026 guidance confirmed.",
+        "Genuinely independent of Belgium and of interest rates — the review's preferred home for new dividend capital."
+      ],
+      "sources": [
+        ["GTT Q3 2026 activity update", "https://live.euronext.com/nb/node/12918370"],
+        ["PortNews — 10-year forecast", "https://en.portnews.ru/news/print/394896/"]
+      ]
+    }
+  ]
+}
