@@ -13,8 +13,15 @@ modes also run locally:
   python scripts/update_investing.py [--quick]
 
 Design rules, mirroring the space-news updater:
-- Prices come from Yahoo Finance's chart API (free, no key); headlines come
+- Prices come from Yahoo Finance (free, no key): the quote API (cookie+crumb
+  flow) for the current quote and the chart API for history. Headlines come
   from Google News RSS and link back to their sources - nothing is rewritten.
+- Every card carries the time of its own last trade (CET). When a stock's
+  market is open but its last trade is over 45 minutes old (illiquid), the
+  stamp turns into a "last trade" warning instead of silently looking fresh.
+- Foreign stocks quote their home market: BYD and Xiaomi trade on the Hong
+  Kong exchange (1211.HK / 1810.HK), not thin Vienna/Dusseldorf listings, and
+  show a euro indication converted at the current rate like USD/NOK stocks.
 - A per-stock cache (scripts/investing_cache.json) keeps the last good values:
   if one stock fails to fetch, its card shows the cached data with a "data of"
   note instead of disappearing. If every stock fails, the existing page is
@@ -26,6 +33,7 @@ Design rules, mirroring the space-news updater:
 """
 import calendar
 import html
+import http.cookiejar
 import json
 import re
 import sys
@@ -110,7 +118,7 @@ STOCKS = [
     ("ASCE.BR", "Ascencio SA", "Belgian real-estate investment trust (SIR) focused on out-of-town retail: retail parks and supermarkets in Belgium and France.", ["+Ascencio shopping centres"], ["+Ascencio site:tijd.be", "+Ascencio site:deaandeelhouder.nl"]),
     ("BPOST.BR", "bpost NV/SA", "Belgian postal operator: mail, parcels and e-commerce logistics in Belgium and abroad.", ["bpost", "bpost Belgium"], ["+bpost site:tijd.be", "+bpost site:deaandeelhouder.nl"]),
     ("BRK-B", "Berkshire Hathaway Inc.", "Warren Buffett's US holding company: insurance, railroads, energy and a large portfolio of listed companies.", ["Berkshire Hathaway", "Warren Buffett"], ["+Berkshire Hathaway site:tijd.be", "+Berkshire Hathaway site:deaandeelhouder.nl"]),
-    ("BY6.VI", "BYD Company Limited", "Chinese maker of electric vehicles and batteries, among the world's largest EV producers.", ["BYD", "BYD Company"], ["+BYD site:tijd.be", "+BYD site:deaandeelhouder.nl"]),
+    ("1211.HK", "BYD Company Limited", "Chinese maker of electric vehicles and batteries, among the world's largest EV producers.", ["BYD", "BYD Company"], ["+BYD site:tijd.be", "+BYD site:deaandeelhouder.nl"]),
     ("AI", "C3.ai", "US enterprise software company offering AI applications for industry and government.", ["C3.ai", "C3 AI"], ["+C3.ai site:tijd.be", "+C3.ai site:deaandeelhouder.nl"]),
     ("CPINV.BR", "Care Property Invest NV", "Belgian healthcare real-estate investor: care homes and housing with care in Belgium, the Netherlands, Spain and Ireland.", ["Care Property Invest"], ["+Care Property Invest site:tijd.be", "+Care Property Invest site:deaandeelhouder.nl"]),
     ("GTT.PA", "Gaztransport & Technigaz SA", "French engineering company: cryogenic membrane containment systems for LNG carriers and tanks.", ["Gaztransport Technigaz", "+GTT LNG"], ["+GTT site:tijd.be", "+GTT site:deaandeelhouder.nl"]),
@@ -122,9 +130,17 @@ STOCKS = [
     ("SHELL.AS", "Shell plc", "British oil and gas major active across the whole energy chain, investing in the energy transition.", ["Shell plc", "Shell"], ["+Shell site:tijd.be", "+Shell site:deaandeelhouder.nl"]),
     ("SOF.BR", "Sofina S.A.", "Belgian family holding company (Boël) investing in private and listed growth companies across Europe, North America and Asia.", ["+Sofina invests", "+Sofina-backed", "Sofina Société Anonyme"], ["+Sofina site:tijd.be", "+Sofina site:deaandeelhouder.nl"]),
     ("WEB.BR", "Warehouses Estates Belgium S.C.A.", "Belgian property investment company (SIR) owning mainly out-of-town retail plus semi-industrial property, mostly in Wallonia.", ["Warehouses Estates Belgium", "+Warehouses Estates"], ["+Warehouses Estates site:tijd.be", "+Warehouses Estates site:deaandeelhouder.nl"]),
-    ("3CP.DU", "Xiaomi Corp", "Chinese consumer-electronics company: smartphones, smart devices and a connected ecosystem.", ["Xiaomi"], ["+Xiaomi site:tijd.be", "+Xiaomi site:deaandeelhouder.nl"]),
+    ("1810.HK", "Xiaomi Corp", "Chinese consumer-electronics company: smartphones, smart devices and a connected ecosystem.", ["Xiaomi"], ["+Xiaomi site:tijd.be", "+Xiaomi site:deaandeelhouder.nl"]),
     ("XIOR.BR", "Xior Student Housing NV", "Belgian real-estate investment trust specialising in student housing across Europe.", ["Xior", "Xior Student Housing"], ["+Xior site:tijd.be", "+Xior site:deaandeelhouder.nl"]),
 ]
+
+# FX rates converted to EUR on the cards: (Yahoo pair, cache key). The rate
+# is "currency per euro", so a EUR price is price / rate.
+FX_PAIRS = (("EURUSD=X", "usdeur"), ("EURNOK=X", "nokeur"), ("EURHKD=X", "hkdeur"))
+
+# A stock whose own market is open but has not traded for this long gets a
+# visible "last trade" warning instead of a silent stale-looking price.
+STALE_TRADE_MIN = 45
 
 
 def http_get(url):
@@ -173,10 +189,83 @@ def yahoo_history(symbol, span="3mo"):
         if prev is None:
             prev = closes[-1][1]
         return {"price": price, "currency": meta.get("currency", ""),
-                "prev": prev, "closes": closes}
+                "prev": prev, "closes": closes,
+                "rtime": meta.get("regularMarketTime"),
+                "state": meta.get("marketState")}
     except Exception as exc:  # noqa: BLE001
         print(f"  parse error for {symbol}: {exc}")
         return None
+
+
+def yahoo_quote(symbols):
+    """Current quotes for several symbols in one call, via Yahoo's quote API.
+
+    That endpoint needs a crumb that is tied to a session cookie, so this
+    seeds a cookie (any yahoo.com response sets one, 404 included), fetches
+    the crumb, then the quotes. Returns {symbol: {"price", "prev", "rtime",
+    "state", "ccy"}} - empty on any failure, so callers fall back to the
+    chart API. One request for the whole watchlist beats 18 separate calls
+    and gives each stock's last-trade time, market state and the previous
+    close straight from the exchange."""
+    out = {}
+    jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
+    try:
+        opener.open(urllib.request.Request("https://fc.yahoo.com",
+                    headers={"User-Agent": UA}), timeout=15).read()
+    except Exception:  # noqa: BLE001 - 404/redirect is fine, the cookie is set
+        pass
+    host = crumb = None
+    for h in ("query1.finance.yahoo.com", "query2.finance.yahoo.com"):
+        try:
+            with opener.open(urllib.request.Request(
+                    f"https://{h}/v1/test/getcrumb",
+                    headers={"User-Agent": UA}), timeout=15) as resp:
+                crumb = resp.read().decode().strip()
+            if crumb:
+                host = h
+                break
+        except Exception as exc:  # noqa: BLE001
+            print(f"  crumb error {h}: {exc}")
+    if not host or not crumb:
+        return out
+    url = (f"https://{host}/v7/finance/quote?"
+           f"symbols={urllib.parse.quote(','.join(symbols))}&crumb={crumb}")
+    try:
+        with opener.open(urllib.request.Request(url,
+                         headers={"User-Agent": UA}), timeout=20) as resp:
+            payload = json.loads(resp.read())
+    except Exception as exc:  # noqa: BLE001
+        print(f"  quote api error: {exc}")
+        return out
+    for q in (payload.get("quoteResponse") or {}).get("result") or []:
+        sym = q.get("symbol")
+        if not sym or q.get("regularMarketPrice") is None:
+            continue
+        out[sym] = {
+            "price": q.get("regularMarketPrice"),
+            "prev": q.get("regularMarketPreviousClose"),
+            "rtime": q.get("regularMarketTime"),
+            "state": q.get("marketState"),
+            "ccy": q.get("currency"),
+        }
+    return out
+
+
+def cet_hhmm(ts):
+    """Format an epoch second as HH:MM Belgian wall-clock time (CET/CEST).
+
+    GitHub runs on UTC while the reader lives in Belgium, so the EU
+    daylight-saving rule (last Sundays of March/October, 01:00 UTC) is
+    applied by hand: +1 hour in winter, +2 in summer."""
+    t = time.gmtime(ts)
+    y, mo, d = t.tm_year, t.tm_mon, t.tm_mday
+    last_sunday = lambda m: 31 - (calendar.weekday(y, m, 31) - 6) % 7  # noqa: E731
+    start, end = (3, last_sunday(3)), (10, last_sunday(10))
+    in_dst = (start < (mo, d) < end
+              or ((mo, d) == start and t.tm_hour >= 1)
+              or ((mo, d) == end and t.tm_hour < 1))
+    return time.strftime("%H:%M", time.gmtime(ts + (7200 if in_dst else 3600)))
 
 
 # Dutch financial press searched per stock: Google News site:-searches for
@@ -620,10 +709,24 @@ def build_card(sym, entry):
         eur_html = f'<span class="sc-eur">&asymp; &euro;{fmt_num(price / entry["usdeur"])}</span>'
     elif ccy == "NOK" and entry.get("nokeur"):
         eur_html = f'<span class="sc-eur">&asymp; &euro;{fmt_num(price / entry["nokeur"])}</span>'
+    elif ccy == "HKD" and entry.get("hkdeur"):
+        eur_html = f'<span class="sc-eur">&asymp; &euro;{fmt_num(price / entry["hkdeur"])}</span>'
+
+    # Every card says when its price was actually traded (CET). When the
+    # stock's own market is open but the last trade is old, that is the
+    # illiquidity warning rather than a neutral stamp.
+    when_html = ""
+    if not stale and entry.get("qtime"):
+        age_min = (time.time() - entry["qtime"]) / 60.0
+        if entry.get("state") == "REGULAR" and age_min > STALE_TRADE_MIN:
+            when_html = (f'<span class="sc-old">last trade {cet_hhmm(entry["qtime"])} CET</span>')
+        else:
+            when_html = (f'<span class="sc-when">price of {cet_hhmm(entry["qtime"])} CET</span>')
 
     quote = " ".join(
         [f'<span class="sc-price">{fmt_num(price)} <span class="sc-ccy">{ccy}</span></span>',
          f'<span class="sc-day {day_cls}">{day_arrow} {fmt_pct(entry["day"])}</span>']
+        + ([when_html] if when_html else [])
         + ([eur_html] if eur_html else [])
     )
 
@@ -689,12 +792,20 @@ def main():
     quick = "--quick" in sys.argv
     print(f"Fetching portfolio data ({'quick' if quick else 'full'} run)...")
     cache = load_cache()
+
+    # One quote-API call covers the whole watchlist plus the three FX rates;
+    # anything missing there falls back to the chart API per symbol below.
+    quotes = yahoo_quote([s for s, *_ in STOCKS] + [p for p, _ in FX_PAIRS])
     fx = {}
-    for pair, key in (("EURUSD=X", "usdeur"), ("EURNOK=X", "nokeur")):
-        hist = yahoo_history(pair)
-        if hist:
-            fx[key] = hist["price"]
-    print(f"  FX rates: USDEUR={fx.get('usdeur')}, NOKEUR={fx.get('nokeur')}")
+    for pair, key in FX_PAIRS:
+        q = quotes.get(pair) or {}
+        val = q.get("price")
+        if val is None:
+            hist = yahoo_history(pair)
+            val = hist["price"] if hist else None
+        if val:
+            fx[key] = val
+    print(f"  FX rates: USDEUR={fx.get('usdeur')}, NOKEUR={fx.get('nokeur')}, EURHKD={fx.get('hkdeur')}")
 
     when = time.strftime("%d %b %Y, %H:%M UTC", time.gmtime())
     data = {}
@@ -706,10 +817,15 @@ def main():
             hist = yahoo_history(sym, "1y")
             if hist is None:
                 raise RuntimeError("no history from Yahoo")
+            q = quotes.get(sym) or {}
+            price = q.get("price") if q.get("price") is not None else hist["price"]
+            prev = q.get("prev") if q.get("prev") is not None else hist["prev"]
+            qtime = q.get("rtime") or hist.get("rtime")
+            state = q.get("state") or hist.get("state")
             closes = hist["closes"]
             n = len(closes)
             last_close = closes[-1][1]
-            day = (hist["price"] / hist["prev"] - 1.0) * 100.0 if hist["prev"] else 0.0
+            day = (price / prev - 1.0) * 100.0 if prev else 0.0
             wk = (last_close / closes[-6][1] - 1.0) * 100.0 if n >= 6 else \
                  (last_close / closes[0][1] - 1.0) * 100.0 if n >= 2 else 0.0
             mo = (last_close / closes[-22][1] - 1.0) * 100.0 if n >= 22 else wk
@@ -721,9 +837,10 @@ def main():
             news = ((cache.get(sym) or {}).get("news") or []) if quick \
                 else google_news(nl_queries + queries)
             entry = {
-                "price": hist["price"], "currency": hist["currency"],
+                "price": price, "currency": hist["currency"],
                 "day": day, "wk": wk, "mo": mo, "ma200": ma200,
                 "closes": [c for _, c in closes],
+                "qtime": qtime, "state": state,
                 "news": news, "when": when, "stale": False,
             }
         except Exception as exc:  # noqa: BLE001

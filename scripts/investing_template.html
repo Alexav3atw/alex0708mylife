@@ -90,6 +90,8 @@
   .sc-ccy { font-size: 0.8rem; color: var(--ink-3); font-weight: 400; }
   .sc-day { font-size: 0.95rem; font-weight: 600; font-variant-numeric: tabular-nums; }
   .sc-eur { font-size: 0.8rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .sc-when { font-size: 0.72rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .sc-old { font-size: 0.72rem; color: #d9a441; font-weight: 600; font-variant-numeric: tabular-nums; }
 
   .sc-trends { display: flex; gap: 8px; flex-wrap: wrap; }
   .tb { font-size: 0.75rem; border-radius: 6px; padding: 2px 8px; border: 1px solid var(--border); font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -139,7 +141,7 @@
   </div>
 
 <article class="wrap">
-  <p class="lede">This page updates itself automatically: <strong>prices every 15 minutes on trading days</strong> (09:00 to 17:30 Belgian time), with the latest headlines refreshed several times a day. A script on GitHub's servers fetches the latest price and up to three recent headlines per stock &mdash; prices from Yahoo Finance, headlines from Google News, with De Tijd and De Aandeelhouder searched first, each linking to its source. Each card also shows the <strong>200-day moving average</strong>, and the <strong>Buffett indicator</strong> below tracks the overall US market's valuation. Last update: <strong>{{STAMP}}</strong>.</p>
+  <p class="lede">This page updates itself automatically: <strong>prices every 15 minutes on trading days</strong> (09:00 to 17:30 Belgian time), with the latest headlines refreshed several times a day. A script on GitHub's servers fetches the latest price and up to three recent headlines per stock &mdash; prices from Yahoo Finance, headlines from Google News, with De Tijd and De Aandeelhouder searched first, each linking to its source. Each card shows <strong>the time of its own last trade</strong>; Brussels quotes are 15 minutes delayed (exchange licence) and foreign stocks quote their home market with a euro indication. Each card also shows the <strong>200-day moving average</strong>, and the <strong>Buffett indicator</strong> below tracks the overall US market's valuation. Last update: <strong>{{STAMP}}</strong>.</p>
 
   <div class="summary">
 {{SUMMARY}}
@@ -166,7 +168,7 @@
 <footer class="site">
   <div class="wrap">
     <div>&copy; 2026 alex0708mylife <img class="visit-counter" src="https://api.visitorbadge.io/api/visitors?path=alexav3atw-alex0708mylife&amp;label=visits&amp;labelColor=%23222220&amp;countColor=%231a1a19" alt="Site visitor counter" title="Site visits" loading="lazy"></div>
-    <div class="credits">Prices and index data from Yahoo Finance, headlines from Google News, US GDP from FRED (St. Louis Fed). A personal watchlist, not investment advice. Prices updated every 15 minutes on trading days, headlines several times a day, by GitHub Actions.</div>
+    <div class="credits">Prices and index data from Yahoo Finance (Brussels quotes 15 minutes delayed; foreign stocks at their home market), headlines from Google News, US GDP from FRED (St. Louis Fed). A personal watchlist, not investment advice. Prices updated every 15 minutes on trading days, headlines several times a day, by GitHub Actions.</div>
   </div>
 </footer>
 
