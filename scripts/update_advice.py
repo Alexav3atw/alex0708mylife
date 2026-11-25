@@ -22,6 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "scripts" / "advice_template.html"
 CONTENT = ROOT / "scripts" / "advice_content.json"
+DEEPDIVE = ROOT / "scripts" / "advice_deepdive.html"
 OUTPUT = ROOT / "investing" / "advice.html"
 
 VERDICTS = {"Keep", "Reduce", "Add", "Review", "Sell"}
@@ -59,8 +60,12 @@ def main():
     content = json.loads(CONTENT.read_text(encoding="utf-8"))
     entries = content.get("entries") or []
     rows = "\n".join(card(e) for e in entries)
+    # The deep-dive section lives in its own file so the biweekly card
+    # refresh never overwrites it; missing file = empty section.
+    deepdive = DEEPDIVE.read_text(encoding="utf-8") if DEEPDIVE.exists() else ""
     page = (TEMPLATE.read_text(encoding="utf-8")
                     .replace("{{ROWS}}", rows)
+                    .replace("{{DEEPDIVE}}", deepdive)
                     .replace("{{STAMP}}", html.escape(content.get("reviewed", "")))
                     .replace("{{NEXT}}", html.escape(content.get("next", ""))))
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
