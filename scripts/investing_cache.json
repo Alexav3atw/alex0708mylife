@@ -3,9 +3,9 @@
   "price": 1050.0,
   "currency": "NOK",
   "day": 0.3824091778202643,
-  "wk": -1.8761726078799223,
-  "mo": -10.902896081771718,
-  "ma200": 1211.68,
+  "wk": 1.5473887814313247,
+  "mo": -11.016949152542377,
+  "ma200": 1212.38,
   "closes": [
    782.0,
    789.0,
@@ -256,7 +256,8 @@
    1080.0,
    1032.0,
    1030.0,
-   1046.0
+   1046.0,
+   1050.0
   ],
   "qtime": 1795793120,
   "state": "CLOSED",
@@ -283,7 +284,7 @@
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -293,9 +294,9 @@
   "price": 54.3,
   "currency": "EUR",
   "day": 0.9293680297397744,
-  "wk": 2.087283601890677,
-  "mo": 1.3182688946415055,
-  "ma200": 51.66574996948242,
+  "wk": 3.6259497249122807,
+  "mo": 1.8761726347355845,
+  "ma200": 51.672249965667724,
   "closes": [
    52.400001525878906,
    52.400001525878906,
@@ -551,20 +552,13 @@
    52.79999923706055,
    53.20000076293945,
    53.400001525878906,
-   53.79999923706055
+   53.79999923706055,
+   54.29999923706055
   ],
   "qtime": 1795797302,
   "state": "CLOSED",
-  "news": [
-   {
-    "t": "Vastgoedvennootschap Ascencio heeft nog ruimte om het dividend te verhogen",
-    "l": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNT2UwLWdVSUg4ZDI1MzVQdl93TzlsU2J6RzhFS2hYbVhqTWlsTjhvaUsxQnF1LVpmWG1NVDV6MGRHbjRzcG5MY2VaR1I0MG9QZEhBZjJlM3lBb3hJOVlhdjcyV1FzM1phZWJPYlJQcEdETE9vR3NWdVVUREJ3eWJNdk1FZFZyaHUxdmJfM1A0RW5VNU03TjFvY19zZEE1MW5rVGdjSnYtT1B2Z1JRR1dsUFBSdk9nYVJ5YkV3SHBTQmxQbXBCQjhYUEE2WQ?oc=5",
-    "d": "26 Nov",
-    "nl": true,
-    "s": "De Belegger"
-   }
-  ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "news": [],
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -574,9 +568,9 @@
   "price": 0.801,
   "currency": "EUR",
   "day": 8.683853459972868,
-  "wk": -0.9408641022943809,
-  "mo": -30.47169543959215,
-  "ma200": 1.5097350043058395,
+  "wk": 12.816904683691144,
+  "mo": -24.57627384999521,
+  "ma200": 1.5024150037765502,
   "closes": [
    1.8619999885559082,
    1.9019999504089355,
@@ -832,34 +826,35 @@
    0.6909999847412109,
    0.6899999976158142,
    0.718999981880188,
-   0.7369999885559082
+   0.7369999885559082,
+   0.8009999990463257
   ],
   "qtime": 1795797318,
   "state": "CLOSED",
   "news": [
    {
     "t": "Marktaandeel Bpost daalt voor het eerst onder de 50 procent",
-    "l": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPd2Rqd1hfT2hHOGJUaDdMZnZiOVJHN1picmZhTEF6NGVZY09BbWxmU0FBeTdrZERfWTdwek9ncjdHYkI3amRFb0t1YWJlMzZqU3hyeXdvMEJkTnVUZ1hES08xQ0VtVzdjMTJIczl1VWxXUUNHYUg5RmVGbUNlQTJGVUJyMlZsTXUxcUpNdkltTEttMnBwa1kyczZCanY4ZmtJcDk1QWNHZUlYZWJBTGc?oc=5",
+    "l": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcHNVdEFLenpkRjJyRGZlYWNsYkhkNnlleE45R05nbW1HZzAweGgxcHgxbjZCUzZFM3IxUGs3V2hKdmJKNnBtbVR0aWR4a2N1YkFHbW81dW43NXBFRXE0UE9JaFZ4Q1pPN0JyVDNFZ1hiRGt1RGNnMEMwR1Q2eE9KQlF0UlEySFJmTDkyR2Z2WmpxX1A5SFRYdm94LVNIWEtlVVRYaWpkOXpWWXEtTDBidWNmbXo?oc=5",
     "d": "27 Nov",
     "nl": true,
     "s": "De Tijd"
    },
    {
-    "t": "Nicolas Baise nieuwe CEO van Bpost, Chris Peeters blijft Bnode leiden",
-    "l": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWHZOUzBOSGpiZ05NRG1zOHlxbmpHOGFSbHBlb3BsM1c3X1hHdW5FcXVRNG4yZm5SQTk1Z29qMlFBOWhkOVFzNzlwZjRQbUxzd3dXMkxBQ0dMX0J1X25FcEJxcHBVWjIzMW1UdW93aU9rS2Zfd19mbWNFLTRKVm1ZMWZjcWw3TDllTGZkbnhYZVgtOUt4ZV9VQk9GQm5zZWdaWjFxX2JmSHNhUGU1YWVmSkRNVEYxaHJzaFE?oc=5",
-    "d": "25 Nov",
-    "nl": true,
-    "s": "De Tijd"
+    "t": "BPOST: Mail declines and regulatory headwinds drove a sharp FY26 EBIT guidance cut",
+    "l": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPYjhFejdoWUozOFppdXRxU0R2R1lCTUk4SjNNbXBxems0dzdrV2hCXzRLZ0tjckVCeFJBS3RwUW1IU3JQa1gtUG9QQXZhTFhBZm1Rb01MQ19XdVJzTXdadm5mWlJjVHY1N2FjYlV0WTJHdHpXbGxaZExGaDRnenlpdUtYWTU3eHhxYkg5RURPSTFQWEhmV3dWcjFQZmx5SEJ3OHF5dXRRc0pLcjhNTGpYaGZRZ2p3NnY4TnJyZElvT1JpQnRXT01MSlp5M1NySXhyU3FhWVhVREdibjZLSHpVX0tKUnBSaVBReGU1MGp3WXF1SGFRTE4w?oc=5",
+    "d": "05 Nov",
+    "nl": false,
+    "s": ""
    },
    {
-    "t": "bpost Q3 2026 Earnings Call Is Live",
-    "l": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOb0h1UDJMSUdrbnZDcXRGXy04aERhY1pEc1JNRUsyNEh2NXdJRVpvaXR3c2FuMlc2bWJqOV9ReUJiR2tiNm1oVjZPQVd0cXJueGVqM2JhRVI4QzlLdHFLWHZuSDctN21EY0lXTlpOR3FkTk4tdTduTC1RS3MwOXRRcWtIT0Vmb2ZoSl9GaWozZXBGTjJiU2hwZl9ZbFo3aS1Nd2luMGdObw?oc=5",
-    "d": "06 Nov",
+    "t": "Bpost shares hit a record low of €0.826, RSI at 24",
+    "l": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUy1ZZF9Sd0w4cjBvbXhtaGZEdzEteTlCX1FkSWpsd3Rva3d3SWdYUUVYT1dxeHpCN3JZRk5pTUk2QUF3anRfbFYyR0ttZGJqYmdRUUFIWjFZRzMxbEYxTDdLQW9WZHNlMEN2WWxjMnRJazhIYTBaVFdNNFU2d3M3aDhLNmx5T2JnaERYQmVBcHNWYTRCUWZIc3ZkeGhMSFQ4VDZxbW5aNTZkQ1oydmNV?oc=5",
+    "d": "13 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -869,9 +864,9 @@
   "price": 580.79,
   "currency": "USD",
   "day": 0.25374577090380157,
-  "wk": 0.8179339819305742,
-  "mo": 6.69073422037898,
-  "ma200": 503.6810501098633,
+  "wk": 1.5296133725083427,
+  "mo": 7.486017907515596,
+  "ma200": 504.08490005493167,
   "closes": [
    513.8099975585938,
    508.54998779296875,
@@ -1122,10 +1117,11 @@
    570.0,
    572.3599853515625,
    577.2100219726562,
-   579.3200073242188
+   579.3200073242188,
+   580.7899780273438
   ],
   "qtime": 1795802402,
-  "state": "POSTPOST",
+  "state": "CLOSED",
   "news": [
    {
     "t": "Berkshire Hathaway verliest beurskorting en krijgt een adviesverlaging",
@@ -1142,14 +1138,14 @@
     "s": "De Tijd"
    },
    {
-    "t": "How 2 Quick Calls Sealed Berkshire Hathaway’s $930M Bending Spoons Investment",
-    "l": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUm5DdzVueDRtNjAta2lfWkxCZFZNNjhUUlhqU0FucEJhQWN2ZzdGWVhUeFhNUXFkT0haSUhDLS1jaWRJbUdNREloNlk1U0xMY2NGMUJTalUtN1Y3ZUVsMW15STVZUjNaQlY0OUpCcFlTa2FhV3F0dEMtNGpxbHRvUW5NVzdLWHBpU1BuTW96aw?oc=5",
-    "d": "25 Nov",
+    "t": "The Oracle Of OMAH Likely Beats Berkshire Hathaway In Round 3",
+    "l": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWHZ3TU5pZ1RjbC11cFlKdExZZHFTNHRLV05RejVWRE4yOHQ3bDZpLURXNkx5MDNSQ1g4aFNFTHVSVmpLOUhOc01od2hrYklBYngxY2ZDcVhpVGpEUnZBQ0w3YkFjQUk5YWI4Nl8tTDJobjlTS0wzWTRzNmY5bEVQRjlUd3RFUWJMWEp6dE9Ba0FzR2xzRjNCN2NjSXdnMi1GYXM1dQ?oc=5",
+    "d": "27 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -1422,21 +1418,21 @@
     "s": "De Tijd"
    },
    {
-    "t": "BYD’s flagship electric minivan debuts with a new style and 559 miles of range",
-    "l": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQT1FzdVllLXV3UHF5aENrZXU5Q21CYnI4REktcUhlSkJTQzVTSDRnWDlwa3pSWVhjSjlfbmdHSXN1UEdCOUxJWER3TnJrTEphTkk3NlJLZDB0bmtZUE9BYXdaNmdfck5DUEdTTEtnSTUtamRhTzVDMjc2X3ppRkU1MjVjRFBKemJjaUI4RjhBNGE0VmQt?oc=5",
+    "t": "BYD unveils Ocean lineup's first flagship MPV Whale, set to launch in Q1 2027",
+    "l": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ITm8tWjRGY1lReHVTeEhhUnJqdHAxWHMxUWVORGV2aU1vOVJuV09SZklIQnluZWtmcjlPbFRmc2JDSGFrTnFLanVJa3hMeGNYakl1US1WckstLVRxVmk1X2dDeUZaVmdmb3lMUUhkaHoyQ0FKMEE?oc=5",
     "d": "27 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "Charlie Munger Said BYD Was ‘So Much Ahead Of Tesla, It’s Almost Ridiculous’ in 2023. BYD Then Outsold Tesla, But Berkshire Sold Every Share.",
-    "l": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR1A4eDNZUHpJcEdwZ2VaV0l2TV80OW1fWnc1T0V5M0tIalplZEJTMG4tMmZzc1RZUndNMHptSzd0TUlUbHdHLXBwYlVwOHRublltcnZmVW9TMVFYMmVUZHZsaGhzUVZKTFlCYVRXbzl5dGM3TE5jX2VTSkcwMTFBQ2lhbnl5cDNrN1RuMzB4TUlxeV9CcWFoQQ?oc=5",
-    "d": "26 Nov",
+    "t": "BYD’s flagship electric minivan debuts with a new style and 559 miles of range",
+    "l": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQT1FzdVllLXV3UHF5aENrZXU5Q21CYnI4REktcUhlSkJTQzVTSDRnWDlwa3pSWVhjSjlfbmdHSXN1UEdCOUxJWER3TnJrTEphTkk3NlJLZDB0bmtZUE9BYXdaNmdfck5DUEdTTEtnSTUtamRhTzVDMjc2X3ppRkU1MjVjRFBKemJjaUI4RjhBNGE0VmQt?oc=5",
+    "d": "27 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -1446,9 +1442,9 @@
   "price": 10.22,
   "currency": "USD",
   "day": 2.200000000000002,
-  "wk": -0.1996053577839385,
-  "mo": -18.63303473523975,
-  "ma200": 9.942649984359742,
+  "wk": 1.7928317316702413,
+  "mo": -17.112730492564665,
+  "ma200": 9.939549984931945,
   "closes": [
    14.449999809265137,
    14.09000015258789,
@@ -1699,21 +1695,15 @@
    9.130000114440918,
    9.960000038146973,
    9.84000015258789,
-   10.0
+   10.0,
+   10.220000267028809
   ],
   "qtime": 1795802402,
-  "state": "POSTPOST",
+  "state": "CLOSED",
   "news": [
    {
     "t": "C3.ai vs. UiPath: Which Technology Stock Is a Better Buy for 2027?",
     "l": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaC1IU3p2NEU2OTV0TllvRzN4ZWhFdlF2Q2hSalhRUE5wQ1RQMnVKQm1yR2s4NW9MMTdpYXk2RnR5WGExT1dQRVk3WjdHeVZmU2p0alpJczFZQlRheFJ0SlZnM3MyTW9EeVlZclFMS2NZNG5qT0tPclZEbV9vUnVwWE9YNC1sUUY4dE5fSDhoTFNNX0ZRMnNnMHVlblFIc08wUjF0dFBfTjFOUzIwYmozM25OWjFLUQ?oc=5",
-    "d": "27 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
-    "t": "Delaware court cuts C3.AI verdict against Cummins from $23 million to $1.5 million",
-    "l": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNaG9vdFpaTUVSUmJYeHFDaS00U1hSSUxUcEVSUWZXbzlJcndTZDF5Mkc0dGZDcmUxRTloOUFYRVhIRmJmanUxSnprallRNmtKNS1YYmlWVjdtYmYtX2V5V0FaN05HSm0takdFSDd3Z19CdU9XeEVjUzE0d3lSTi1MeEh6X3VmQi1WeHo1OF9VUzBlaGwtMEN2UWVxUllwQ3hkMFFFM3JOcVI3S0dYUjlKLTVXTktCem1PUnhPMlZfbkhGZTRHNV90dlBDQmprWWVLZ0F4akZLaW4?oc=5",
     "d": "27 Nov",
     "nl": false,
     "s": ""
@@ -1724,9 +1714,16 @@
     "d": "26 Nov",
     "nl": false,
     "s": ""
+   },
+   {
+    "t": "Delaware court cuts C3.AI verdict against Cummins from $23 million to $1.5 million",
+    "l": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOM3hxQ0VYeXBQSWtHamFLaUNNWmhrVzVtajU3OTBLTTY1V2ZTVWxJS0MyTlFNVGFkS0xSeGRaaG5jcXBjRXJkU2dJQWg4S0JGOFJDblFIc2dZTmpyTkJ3V0trdTFyV0FrVnlyZmZXT0pVcER6TE5KQVlFZ2ZPRjRFT21YWE5lVGc2eDhmdlE0WE1XbFpmSUpGRmpIRlYzVnBERmNBVXkyRFdjeFVxQ1pnR3RmU3VZMEdDeFBRMXhLMkx4WlQzR1FxQkVMX2FZMGx4RVdiMXhzQjJCSlZIeXd1clljdVZCRFRqRmw3bGpqMA?oc=5",
+    "d": "27 Nov",
+    "nl": false,
+    "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -1736,9 +1733,9 @@
   "price": 13.06,
   "currency": "EUR",
   "day": -0.45731707317072656,
-  "wk": 3.4700281529465027,
-  "mo": 6.320905375415364,
-  "ma200": 12.575400037765503,
+  "wk": 3.9808915867477257,
+  "mo": 5.322587269278101,
+  "ma200": 12.572200040817261,
   "closes": [
    11.947196006774902,
    11.927448272705078,
@@ -1994,7 +1991,8 @@
    12.640000343322754,
    12.720000267028809,
    12.859999656677246,
-   13.119999885559082
+   13.119999885559082,
+   13.0600004196167
   ],
   "qtime": 1795797314,
   "state": "CLOSED",
@@ -2014,7 +2012,7 @@
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -2024,9 +2022,9 @@
   "price": 186.9,
   "currency": "EUR",
   "day": 1.5209125475285301,
-  "wk": -1.655978042341344,
-  "mo": -3.763720247455604,
-  "ma200": 199.92700004577637,
+  "wk": 2.692304338727669,
+  "mo": -2.248955606898795,
+  "ma200": 199.95950004577637,
   "closes": [
    171.8000030517578,
    172.3000030517578,
@@ -2282,7 +2280,8 @@
    184.5,
    182.5,
    180.39999389648438,
-   184.10000610351562
+   184.10000610351562,
+   186.89999389648438
   ],
   "qtime": 1795797303,
   "state": "CLOSED",
@@ -2302,7 +2301,7 @@
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -2312,9 +2311,9 @@
   "price": 81.45,
   "currency": "EUR",
   "day": 1.3690105787181217,
-  "wk": 1.7732762254528245,
-  "mo": 4.350647368988425,
-  "ma200": 77.87399990081786,
+  "wk": 4.5571185530515645,
+  "mo": 5.232552122119993,
+  "ma200": 77.86224987030029,
   "closes": [
    73.94999694824219,
    74.55000305175781,
@@ -2570,18 +2569,12 @@
    78.5,
    78.44999694824219,
    78.6500015258789,
-   80.3499984741211
+   80.3499984741211,
+   81.44999694824219
   ],
   "qtime": 1795797311,
   "state": "CLOSED",
   "news": [
-   {
-    "t": "Beursgenoteerde belangen wegen op intrinsieke waarde GBL",
-    "l": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPalJTTFpjTk16cDhaeWVJTy1oNG9BWElEbUZyQ2plc1lkbGdib1d0X1JLZE1ZUldoamhVZ3RLZVduXzA1OWlBVlM0T19qUW9KbnU3NU1vQ19MX3h4eGFBZEpfd3Z6Y1oyeVBMRjI2U0JzYzBSOW9mZHRDbXRxQTBjTVV3a2RmZFpIUFdGMGQyQm1WVkhSVzZieTBOTmdad1N6ZWZtQ0hTTnl3SlZQbm1aUVREMC1kcE5oNjNNSWFjYw?oc=5",
-    "d": "27 Nov",
-    "nl": true,
-    "s": "De Tijd"
-   },
    {
     "t": "Holding GBL en CVC nemen het Italiaanse farmabedrijf Recordati over – we behouden ons advies",
     "l": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQSlRxQUVhVmU3a05tSVowZVdrX2hyVTA0TFpKUTRVMVRmck8yaUxwc3NsVFpualBHSkxobmdmMHhBYjNsNDZfR0E5X1BQMkgzb2xNWHUxV1pjWl83MmlaUllaVFgyWEQ1RXdIVXEzd1J3aVRwdHdhbjFGNU9XLWRzOTZnSzZtV0NMOG1YU3lMVUEzOXF5LTVjSWpGNng0ZG9IZzg0Y0YyVWlTSzJ3a1puUzdOMzJyal96VUdIWWFIa0tkRnR2T3VZNTAwbGJaQmRnOHFUQkJTT2dzVGo0MzM1UA?oc=5",
@@ -2590,14 +2583,21 @@
     "s": "De Belegger"
    },
    {
+    "t": "GBL krijgt zijn grootste investering ooit rond: Italiaanse farmareus Recordati ingelijfd",
+    "l": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWXFJQmdSRE9SblRPMFBXSFpiVG80azRRUzliTEJjSHFCU2o0LVMyNndCcGt4VThHMkFjYlFWUWFZRUYycHRwbDlHRWxQQ3ZNRWk4WEEwS3RqdjlNQ2otSnByUUpRcW9adFNiMFBSM0dBMk1UTFJCTDY4Y2RYZVY4LXllZnQ0YmdzMXZyRUYzZHE2eVB1MXZPVzRqd1RhX0FwRnBrblNwUWpjNmREWHhyNHAwSDB5QVR5Z0lNWXl6UTdQNW1MVHJNWEtuSlpUUTgyZ0tqd1F6MTIzWHlGelZJ?oc=5",
+    "d": "25 Nov",
+    "nl": true,
+    "s": "De Tijd"
+   },
+   {
     "t": "Groupe Bruxelles Lambert (ENXTBR:GBLB) Stock May Trade At A Discount After A Recordati Deal",
-    "l": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTkVIOHJpemFHWG5kLXpiN1NJaXBiakJpeDdub2d4cGE3WkhaUjRLWUo2S0I2NlNIRDJPc0tsa24zRS1oUTFNa1BoWmM5Q3pzcVcwbVpmZ3RnQXg3UG9ITE5OZ0ZoUmRiaVhCd2pfOU5OcFpNVmVwVWc2d01QR0g1Z1VxNERROEF5RkdRQy1R?oc=5",
+    "l": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZFdEWllQRWpNY0NOZGo2emtfREFEMTgyazF0Tzh6UzFHZ05qcXUxWVRGcGE0ZHVMajYtR0pKaDdONXNvc0RYc0hfOUJPclJYeGwtTE93aDVZVDhIemQ2RldEc29tSjZIaWZ1OS1UQzNXaVlObGRWSlZpbTdUeHc2ZEZ6RkVJdFZoUlFhNUVR?oc=5",
     "d": "27 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -2607,9 +2607,9 @@
   "price": 7.692,
   "currency": "EUR",
   "day": 3.4844611866003072,
-  "wk": -2.9761087833581445,
-  "mo": -7.733362549672506,
-  "ma200": 9.271265008449554,
+  "wk": 4.510866477240527,
+  "mo": -4.553916147188907,
+  "ma200": 9.264815006256104,
   "closes": [
    8.246000289916992,
    8.314000129699707,
@@ -2862,7 +2862,8 @@
    7.526000022888184,
    7.296000003814697,
    7.184999942779541,
-   7.433000087738037
+   7.433000087738037,
+   7.691999912261963
   ],
   "qtime": 1795797311,
   "state": "CLOSED",
@@ -2875,21 +2876,21 @@
     "s": "De Belegger"
    },
    {
-    "t": "Which Business Screens Does the iShares Global Clean Energy ETF (NASDAQ:ICLN) Apply to Its 102 Holdings?",
-    "l": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRUFFa1FwWng5X011V2hHU3NISjhTcnhlREtlTDNfNjBHQW10S3NaMDVpVFlaT3VXR1ZfeEtXblptdTdZaENxMWdTaXJGY0VpeV83VTUwc1JsN2dpNnpkM1ZiMjhyd1BuOGY3dDJBbmJZM0dhdTdSSWZWTnppeFRnRjV5RGIyVnU5WFQzRlFmOU9vaUJKOC1BMHJERWVKb0wwOUlUZjZPcE9lejBKSUlsTENXTS00dmZzUVdzOHRua0ZicUZOazNvaGZ6NFAwaC15?oc=5",
-    "d": "26 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
     "t": "Alerian MLP ETF vs. iShares Global Clean Energy ETF: Alerian MLP ETF vs. iShares Global Clean Energy ETF: Oil Prices Are Rising, but Which Energy ETF Offers More Upside?",
     "l": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPVGlma1R1b3VHcnJ3QmV1YjkxNHZ6ZEZ2RGdsUHBXVHpNcjlTZnNNa3NvcUM1bi02QjNkLU5sQ1liSTd2RHRHWDhzOGNKUjlKeHVLTjJQYUVuRzA0dWhkNUc0UnFGRDVZeWJYMko2b3RoY0JkWFVHS1A4YnVMY1Z0YUg3azJxa3VaVTBSbjVzOWZDMldCMTlkVWlobmI0bWhneWpMa29sd3lsd1o5LTR6dXRUVFNQbndwRXBpR05odUVsNmE2TG4tb1prS0lON09kVGVVUThEX0c4RFF2c0JEQThBYUhGYWlUNWhpejdRQ2VOX2pQYzU4eDZiZTJsMmtYRjZURUNsV3UwSV9BQ3ZKNjZTZU1PY2U2YmRhTHo3WGxnelRuZndfSVQxTDctQUFmcnpLSQ?oc=5",
     "d": "02 Nov",
     "nl": false,
     "s": ""
+   },
+   {
+    "t": "Which Business Screens Does the iShares Global Clean Energy ETF (NASDAQ:ICLN) Apply to Its 102 Holdings?",
+    "l": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRUFFa1FwWng5X011V2hHU3NISjhTcnhlREtlTDNfNjBHQW10S3NaMDVpVFlaT3VXR1ZfeEtXblptdTdZaENxMWdTaXJGY0VpeV83VTUwc1JsN2dpNnpkM1ZiMjhyd1BuOGY3dDJBbmJZM0dhdTdSSWZWTnppeFRnRjV5RGIyVnU5WFQzRlFmOU9vaUJKOC1BMHJERWVKb0wwOUlUZjZPcE9lejBKSUlsTENXTS00dmZzUVdzOHRua0ZicUZOazNvaGZ6NFAwaC15?oc=5",
+    "d": "26 Nov",
+    "nl": false,
+    "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -2899,9 +2900,9 @@
   "price": 90.2,
   "currency": "EUR",
   "day": 0.8948545861297452,
-  "wk": -3.14193004333132,
-  "mo": -5.795574195539044,
-  "ma200": 84.92649978637695,
+  "wk": 0.4454274865155927,
+  "mo": -4.4491573196482666,
+  "ma200": 84.99449977874755,
   "closes": [
    72.30000305175781,
    71.9000015258789,
@@ -3157,7 +3158,8 @@
    91.4000015258789,
    89.80000305175781,
    87.19999694824219,
-   89.4000015258789
+   89.4000015258789,
+   90.19999694824219
   ],
   "qtime": 1795797485,
   "state": "CLOSED",
@@ -3184,7 +3186,7 @@
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -3194,9 +3196,9 @@
   "price": 79.54,
   "currency": "EUR",
   "day": 1.4799693799438796,
-  "wk": 0.3585131687162013,
-  "mo": 0.8491971466143333,
-  "ma200": 75.16439994812012,
+  "wk": 3.3255357845644706,
+  "mo": 1.6355721241468002,
+  "ma200": 75.21869995117187,
   "closes": [
    62.560001373291016,
    62.47999954223633,
@@ -3452,7 +3454,8 @@
    78.0,
    77.73999786376953,
    76.9000015258789,
-   78.37999725341797
+   78.37999725341797,
+   79.54000091552734
   ],
   "qtime": 1795797314,
   "state": "CLOSED",
@@ -3479,7 +3482,7 @@
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -3489,9 +3492,9 @@
   "price": 0.8265,
   "currency": "EUR",
   "day": 2.289603960396036,
-  "wk": 3.457107475948651,
-  "mo": -0.4312981744526212,
-  "ma200": 0.946300000846386,
+  "wk": 7.1984395489095965,
+  "mo": 2.607079877700591,
+  "ma200": 0.9446725010871887,
   "closes": [
    1.0190000534057617,
    1.0149999856948853,
@@ -3747,34 +3750,35 @@
    0.800000011920929,
    0.7925000190734863,
    0.7860000133514404,
-   0.8080000281333923
+   0.8080000281333923,
+   0.8264999985694885
   ],
   "qtime": 1795797315,
   "state": "CLOSED",
   "news": [
    {
-    "t": "Picnic PostNL’s problems are already taking their toll: the team loses one of its biggest prospects due to its delayed license",
-    "l": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNSXJkWjBEVkJpVFZ2ZHh5TmxBZjBvaU0ya3Rzb1dBeVRxYm1zLUlvdHJ1NkpqQTlBdS0wai1OMVk3OFQ4cWdsQ2JvcFBmQ25ZbTZyZ29aR2hfb29DTC1EQm5SMTZRVHFIc2YzSFFwOFdPOWFKVU44N2xoR1ZOWmliekdESS1hYXlXS3dQQzlfS3d5OW1VaE5wbmhaRlRQVXZ0SEh5cEM0VnFaWEtTaU16bW9GV1N0NkNGYzZOUUd1OVZDOEItNXBmWjE3b2NuWE9wSDZ1U1RZNkFWVThyZ0VaclpNZkNUUVE?oc=5",
-    "d": "25 Nov",
+    "t": "From plumbing to Picnic PostNL – The Dutch team's newest recruit with dreams of Amstel Gold Race and riding with Wout van Aert",
+    "l": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNalZuVEtXR2JkT3BqeS0tNEVRdTFPMk5ibk9BdDRuckRfSlBKR293LWU5ZlJZeUZmWFVJVHBqQmlkeEhJRHFKZmpTNWZxQVA5eU82dVM2d0dDckhkdElUcnRZWmtvMGFjYkUwQUdjc0NPa241OVd0MUE2aGYyMUVTbEdxMnNGc2JVek9wcmlFeUJ6QnVXakstOFl4UU5BTEFrdzhHcURmTEZ5bDFFUHQ2OHdxQmQ1aVA2endJZTJBNzRzM2N4dFdKYlZ5dDZmVWJOVGRmcGM4UWtCTWdGLS1GQ2hWWkxGbEp0NVNGSVY5dW5GWDNUSEhGZlBpYjZQRHRCM3pZWlIzUWc?oc=5",
+    "d": "20 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "Matt Winston credits Romain Bardet with 'major role' in his move from Picnic PostNL to Decathlon",
-    "l": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQU3hfVkoxMVBHcFpJcktfNWVyTGRtYzZqbHRQajdISlA4bzdyTm5fZWFlWmZWY3UtaWxheURobFRkMU9OYmRQUE83LTRUZ05WeTU3TlVqMkZ3U05lYVpBS3lTLVJ2T1UzNnBoNFJjcEpoQm4tcjhWQVNOX3B0OWJteEM3OWRPM1c5VE5vaGFibV9RckdBaW5TaktvMHhlZnY4eEtNWkJjT0xwUDRiRmoyb3dTbW9ZVGhtYWtMUlctN0l0cnlIWW0yTkhYa0I?oc=5",
-    "d": "24 Nov",
+    "t": "PostNL delays funeral notices, leaving families unable to attend services",
+    "l": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOY1UtbkRrV1lldnMxMXhQc0Zhbk9lbzZFSzNFenBQal8ySm5YZGJmd0tPX3JzcTA3ZXBOMk1CaGoxX1dLZnpwbGd1bzlUdDgtRThjLUJMcE9UZHo3TzE0T3VKWEstQU5VdjMtOWxtdHhwNks0ekdFclRqY2U5UGF4MWdyMnl2bTREU3Yyd0xmdU0yN3hMZDNna2FNYy01ZjU1?oc=5",
+    "d": "09 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "Picnic-PostNL signs Gaia Realini",
-    "l": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kVlV5NVZyN2VoTmdHNkEteXVQOWVnZE13ZURjU29PVjVITlFlLVBoaGNuX3YwNjQzRWJUWDlGb3A4czM2NV9EODRmZGxMOE90a2dJSEFaREZUcjhDSUJZekt0NWRuZGYyR3ZfQ2pPWQ?oc=5",
-    "d": "12 Nov",
+    "t": "PostNL expects 1.7 million parcels per day during the year-end peak",
+    "l": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMnFTamFFQnctdkFfdlNSTG8wdS1GTWgyTW5od05uQ2Y4VV93TVBhdUF2VW9vbjVlcTFfcXctMHpyUUFFX0tpbjBUSmFEZVRBQjZ2M05vZ1VvakUtZVdEejNsbXdPaWFmamdsTkVQWERMUUVsUlV2U2pLcGhLOHlySVlYY2doS2xlWEFiVGRZQ21tM1BhUkdPT0Y4QWdCQ1lKbXVIX3VCM0lic1p1UUtfYXBNODdqMndJX1lDNkFFN1A2U3ll?oc=5",
+    "d": "11 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -3784,9 +3788,9 @@
   "price": 43.745,
   "currency": "EUR",
   "day": 0.8995502248875686,
-  "wk": 1.1785322896107564,
-  "mo": -8.50479882251155,
-  "ma200": 39.432025051116945,
+  "wk": 2.148273561133185,
+  "mo": -9.636440673892555,
+  "ma200": 39.48652503967285,
   "closes": [
    31.549999237060547,
    31.860000610351562,
@@ -4042,7 +4046,8 @@
    42.83000183105469,
    42.58000183105469,
    42.564998626708984,
-   43.35499954223633
+   43.35499954223633,
+   43.744998931884766
   ],
   "qtime": 1795797496,
   "state": "CLOSED",
@@ -4055,21 +4060,21 @@
     "s": "De Belegger"
    },
    {
-    "t": "Raffinagebonanza bezorgt Shell en TotalEnergies miljardenwinsten",
-    "l": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSEVKZTNuSWNRNndGeXVCS1lGbzRxZnFRMlVzcFJMQ0FHRlpGdzdqQzRaTTBkMmNybElvTHFhNGN3QmVocm9UcnhwLUVWazNUUGdTY3dxZVN0SWxMMFZQVl9ONXFWeF9icFA4VWhvNlZlWllGTmVheldGUTJjQWdoNGFBX3dlUHI5cHc0cXhlalVYZzVTU0c4OXN1ZC1pVl91RzhSeWdrTFVXZ3pVM2hjZEZGYXc2TWZkYXdBUXhHeUF5UQ?oc=5",
-    "d": "29 Oct",
+    "t": "shell plc",
+    "l": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tanBqN1oxVjRnOVM0NXRBUVhQdGg0RG8xMkVsZFBseWRXNVdfdDlMckZyeGp0Nm96ZGVXUms2aFF2M2ZTUHpxSHpsZGZ3WmJIX1ZQcEdKS2VFMGpxR21zOFlwWWd4SHo2YXc?oc=5",
+    "d": "28 Nov",
     "nl": true,
     "s": "De Tijd"
    },
    {
-    "t": "Australia Passes Gas Reservation Legislation — A Deep Dive into Shell’s Uncontracted Gas and the Battle for Domestic Energy Security",
-    "l": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNNG5yT1ZKdlVuTlZEenhITmFOby1DX1BEaGl2Z3Q4SFliTVljY1FNWjFYczZLQWllSjFqRXhTSkVwdmlGdmRKWExwd3AtdXBvMUNjd2RYYkt1Zkl0T1k0X3V2UUtfNkpqMjlTcnZhMXROb3BTbl84a2RyUXpCbW1qMVNMUVRaNmFCRnlhNTlSYTk4dlA2Rko1ekxLdnBoS0VyTG1TTDdJdWxJZFFGY0NtYzA3azN6T2hfaDBPb2dYN2JMY2M5ZEhXeEJIWElBTm04empTelV5UG1jaHpzY29uTFcwdHFUU0EzcWotVUFkNXVleGhHdnptMEctcTJjaTBtUGc?oc=5",
-    "d": "27 Nov",
+    "t": "Shell starts gas production from Egypt's Mina West field",
+    "l": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONFpPcFd2Y19laU1VYmh0dTYtVjRYQUhBQ2F4YTVZbE9UX1l6TWRfNjAyWnZXY2tKell3NDYzTHZYa2RIUnlfQ0tld2MwY24wSDBKYWZLUnl2cWpJcExYaTRLTW8waWxLS3cxWmxNX2ZFMGw5ay1HR3ZJLW5qVTlSejVoR09QeVdtMl8yUnp0UWhqMjRqbGs5TDF0SW5lUHR2bmE2Rw?oc=5",
+    "d": "15 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -4079,9 +4084,9 @@
   "price": 279.4,
   "currency": "EUR",
   "day": 1.6739446870451147,
-  "wk": 2.53730887797341,
-  "mo": 1.2527612280570644,
-  "ma200": 238.31599983215332,
+  "wk": 7.049806090607036,
+  "mo": 2.344320108602327,
+  "ma200": 238.49899978637694,
   "closes": [
    244.39999389648438,
    243.1999969482422,
@@ -4337,7 +4342,8 @@
    265.79998779296875,
    269.3999938964844,
    267.6000061035156,
-   274.79998779296875
+   274.79998779296875,
+   279.3999938964844
   ],
   "qtime": 1795797310,
   "state": "CLOSED",
@@ -4355,16 +4361,9 @@
     "d": "03 Nov",
     "nl": true,
     "s": "De Belegger"
-   },
-   {
-    "t": "Sofina Société Anonyme (OTCPK:SFNX.F) - Stock Analysis",
-    "l": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUmdnMVpDamFuY1BrSjEwMldNN1hJTVpXbUdRTmxiWE1TQ2hQcjlXcUR2U3o2NXlRR3Q1cVgxNENZeC1DZVdoaDZnT2JocWlTZUk0MThScUsxVkdoQVRUTHhmQnJwMlRrckVlOWloNUpCdzk4eDNPTDlvZlc3blZ3ZVdJYjFGODd1cVJUcDlqT2Y0dw?oc=5",
-    "d": "15 Nov",
-    "nl": false,
-    "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -4374,9 +4373,9 @@
   "price": 37.2,
   "currency": "EUR",
   "day": -2.1052631578947323,
-  "wk": 0.0,
-  "mo": 2.425880223436394,
-  "ma200": 39.27099996566773,
+  "wk": -2.105261150159332,
+  "mo": -1.8469676378811695,
+  "ma200": 39.248999977111815,
   "closes": [
    37.0,
    36.79999923706055,
@@ -4632,20 +4631,28 @@
    38.0,
    37.900001525878906,
    37.900001525878906,
-   38.0
+   38.0,
+   37.20000076293945
   ],
   "qtime": 1795797318,
   "state": "CLOSED",
   "news": [
    {
-    "t": "Lincoln Properties & DRA Advisors Acquire Pay $45 Million for Portland Warehouses",
-    "l": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMjZSNVlxOWRKRkROQ2VPeHRSbGxCb29JMDVyWWpOVWVxYld0MEFyLUN6cTVjckcyaENyMXhyZDBxdkZGQzFIb2dyNVh3ZFFWSmczcUxKeFlxQW1hSmlLeTBZeHdxdjRtLU1zTG9SWVlrUnVxN25oSXhGN2VNRFpPUnJOdnE2TnM?oc=5",
+    "t": "Georgia warehouses purchased by ICE to turn into detention centers up for sale after plan scrapped",
+    "l": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR2ZwVE5oNEQtWVpiWTI1aUI4WVdNazZ5MG9DSmZLWUQwTC1mNk5YeVdqY3BucjZuUEtwdnVZWHpwejI2SllQRjA3Mi1yWS0zbHZZR3R2M0R5bmRLbTVIaHNFTXpuSGVwelVRaDJZSmJVRGJoMkt3QzRIWVZnUVhCZld6cFZVb3NpYk9SOE9lT0RrT3ZiVjZEUndyNnpFaFVLcUN6NFJvVjBldGR3UmpwbE5zM3FhcDNTOGEwU3huOV9JSEttWWEwdnVVZUFWcGZQY3c?oc=5",
     "d": "12 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
+    "t": "ICE bought Georgia warehouses for detention center plan for far above value, federal agency finds",
+    "l": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQa2Jad00wekVxSG1ycnlkb1pFcWdjY0tEQ2R1LU5zWU9mcmo0bHJkclM3T1JOVW9Ibi1HbUFMWWlTRmRBVHdjZjFvVmhjR1I0aXI2Z0xiZkI4LXNpUGhRbTV5MmJ5bVlFdEFpcHNLemptOVhHU3RsV2duNndOMUowWmN3ZHI2ZDZJS0kwNVRIeXBSUkttZzIwWnZ3dE5IMDRfel91a3l5S1JTcFhHcjFKVEJweWo0eUdLSGF0UHZSeURiOUFSc3IyeFM3TWNPcGM?oc=5",
+    "d": "26 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -4911,28 +4918,28 @@
   "state": "CLOSED",
   "news": [
    {
-    "t": "Xiaomi Hints at UK Plans as EV Newcomer Readies For Europe Entry",
-    "l": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcWgzY19ReUlrbmFMSlpjbTlLNnk0MjBoY3JxdXZjekY4QXdGY1FwTHhBT3VWd0ZueVlGMFZqZTNhVEtGWGJKSUM2aURVTm9FZVZVUnoxRlF5MmV3RzBlLURQTmgxSnA2X0hZMjJTdk9ST0VfRWJQZVI0RVVNemlQZmNOZ2gzaFR2Tm8xdWpFMkVqWldwT2xVQzFsSTJfbjlBYm5yOEJGS1ZvSkdhQUU4WUdDV0VwQQ?oc=5",
-    "d": "25 Nov",
-    "nl": false,
-    "s": ""
-   },
-   {
-    "t": "Xiaomi Redmi K100 Ultra said to get major upgrades, led by three 50 MP cameras",
-    "l": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZm9HM3ZDNVUxOHhWbjdBU20tZ2RxZjNoSDJNQm1vczVjWDhnc08waVhNMVpoYmVqTDBZYU8yOVJaZHc5V2JyUDJaUnM1eFBTY0Nrb1dKTUc3Vm5lTGNfX0d4andmRUJhUmxsUUpXT01FdlBuVEZDSmQ1MDhaUzluSW9qUTV3TjFMRjFPM0pwWjIydS00Z2N4cV91b1dwQmFseFFqQVEzOEhjeTk1UThSeGVoNlNqSlY1Z1hiYkdudw?oc=5",
+    "t": "Xiaomi Sound INF: Large 150-watt speaker with Bluetooth 6.0 appears in Europe",
+    "l": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPajBTai1HTjlLUllwRE9aNDRxdVdhMzdlSFBIWHNnQk9QQzZEUE1CQkV3cVZYUTFONElKalVucW5QbmNVZ005Qkp2WHg2Ym9hcTRUYVlYZHByaTR4UWdxakJTdEx0TVUweTdpZ0U3M2ZocjF5cEliakg5a3h5RFZMWTF3Q1hySDdYMzZzUGNab2tuRHd3anVkc0NMbzNSUk1SR2FnOUdvNnJPYjJJdUlPLUExNzllem0wT2FSeGRn?oc=5",
     "d": "26 Nov",
     "nl": false,
     "s": ""
    },
    {
-    "t": "Xiaomi Ends Software Support for 7 Phones, but Redmi Note 12 Gets a Surprise",
-    "l": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMDRjbXZUVlBIVG1UM21XdUo5cGM1a1VpY3NGOFJOWlQtM25NV1pkWlFLbW8yZVlBR0pyZ3haVWlWcGxnV1djMzQ4cElsVzEtYUlCenVSRFIyMkVibkZYSXBseHhDREhWQkpWdnh2NmZmQlhuZ0pWWkJJYmZYel9PXy1EQVZZWXhCbjRYMWhaNVc4SXlRSnZ2ZXczQjNXNnBxWl9rNjkzeGF0Rm14QlFSTmpzdHg?oc=5",
-    "d": "27 Nov",
+    "t": "The Xiaomi 18 Pro Max has a built-in Privacy Display — and it's borderline useless compared to the Galaxy S26 Ultra",
+    "l": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPYXlYLTR0V3RmbHR3VFpmQklXQ2ZsTDBxRXZVOXhnMkZaLVhwOFM0azdfU2N1bjF6UzBvYjVVZ3R1UTlHcGc1OVFPVUNhY3YwblVsNmxPekRLXzg5MGxHN1lBSzJEMUpMZWpPS1FSdFMxcTA3SF9IRl82YUgtT25xVk9vZWR2Mmx3WkVabDdwb01nYkhQcUd6a3F6eUpkQzV6a1RIV1h2MUdKWDA2M0JJQ01HYi1Pekd3ekJxLV80ZjNGSk1FXzZvcnU2VzFxRkpNRkhybVg4X1NkODdKTTFtMHJlX2dLeEFZVXRBbkl1TUl1QQ?oc=5",
+    "d": "28 Nov",
+    "nl": false,
+    "s": ""
+   },
+   {
+    "t": "Xiaomi's New SU7 Ultra Wants To Take The Taycan's Nurburgring Crown",
+    "l": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xenYxUExlSXhWREtKaTVlV2ZVQ3dHMlNmd1didDR1VVRnSWo2RnFka3BtR0JTRTlNcTVzRlEyTGk1TDdDbFNSQTY3bUh4LWotMkZ0X3FPbG5VazZrYWh0MW1mdGlod3c?oc=5",
+    "d": "26 Nov",
     "nl": false,
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -4942,9 +4949,9 @@
   "price": 25.55,
   "currency": "EUR",
   "day": 0.39292730844793233,
-  "wk": 3.877554134446748,
-  "mo": 4.732516715988244,
-  "ma200": 26.673000020980837,
+  "wk": 4.928126639800867,
+  "mo": 4.073319882187221,
+  "ma200": 26.65150001525879,
   "closes": [
    29.350000381469727,
    29.25,
@@ -5200,7 +5207,8 @@
    24.450000762939453,
    24.600000381469727,
    24.950000762939453,
-   25.450000762939453
+   25.450000762939453,
+   25.549999237060547
   ],
   "qtime": 1795797321,
   "state": "CLOSED",
@@ -5227,7 +5235,7 @@
     "s": ""
    }
   ],
-  "when": "28 Nov 2026, 01:47 UTC",
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false,
   "usdeur": 1.0938525,
   "nokeur": 10.72205,
@@ -5235,10 +5243,6 @@
  },
  "~buffett": {
   "daily": [
-   [
-    "2025-11-19",
-    210.12596379349486
-   ],
    [
     "2025-11-20",
     206.76828597391886
@@ -6242,6 +6246,10 @@
    [
     "2026-11-25",
     217.01307089020477
+   ],
+   [
+    "2026-11-27",
+    220.52574368568588
    ]
   ],
   "monthly": [
@@ -6290,12 +6298,12 @@
     228.44887368794292
    ],
    [
-    "2026-11-25",
-    217.01307089020477
+    "2026-11-27",
+    220.52574368568588
    ]
   ],
-  "cur": 217.01307089020477,
-  "when": "28 Nov 2026, 01:47 UTC",
+  "cur": 220.52574368568588,
+  "when": "28 Nov 2026, 15:58 UTC",
   "stale": false
  }
 }
